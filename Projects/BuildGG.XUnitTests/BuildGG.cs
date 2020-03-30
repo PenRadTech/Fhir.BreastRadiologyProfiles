@@ -733,16 +733,16 @@ namespace BreastRadiology.XUnitTests
                 @"MGBreastDensity",
                 Filter("", "MG Breast Density"));
 
-            WriteIds("BreastBodyLocation_ClockPositions",
+            WriteIds("BreastBodyLocation-ClockPositions",
                 @"BreastBodyLocationExtension",
                 "1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "1010", "1011", "1012");
-            WriteIds("BreastBodyLocation_Depth",
+            WriteIds("BreastBodyLocationDepth",
                 @"BreastBodyLocationExtension",
                 "1017", "1018", "1019");
-            WriteIds("BreastBodyLocation_Quadrants",
+            WriteIds("BreastBodyLocationQuadrants",
                 @"BreastBodyLocationExtension",
                 "1024", "1025", "1022", "1023");
-            WriteIds("BreastBodyLocation_Regions",
+            WriteIds("BreastBodyLocationRegions",
                 @"BreastBodyLocationExtension",
                 "1015", "1014", "AxillaI", "AxillaII", "AxillaIII", "1515", "1511", "1013");
             WriteIds("AssociatedFeature",
