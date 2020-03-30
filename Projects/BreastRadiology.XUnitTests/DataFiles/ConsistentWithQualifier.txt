@@ -1,0 +1,5 @@
+﻿MG,MRI,NM,US,ID_MAMMO,LISTBOX_NAME,Structure,ITEM_NAME,,Dicom_code,Code_meaning,SnoMed,one-many,snomed description,ID10CT,comments,UMLS,,,,,,,,,
+MG,MRI,NM,US,536,Classification Consistent with,Consistent qualifier MG MRI NM US,Likely represents,,,Qualifier,,,,,,,,,,,,,,,
+MG,,,US,581,Classification Consistent with,Consistent qualifier MG MRI NM US,Most likely,,,Qualifier,,,,,,,,,,,,,,,
+MG,MRI,NM,US,580,Classification Consistent with,Consistent qualifier MG MRI NM US,Resembles,,,Qualifier,,,,,,,,,,,,,,,
+MG,MRI,NM,US,561,Classification Consistent with,Consistent qualifier MG MRI NM US,w/differential diagnosis,,,Qualifier,,,,,,,,,,,,,,,

@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.94.2" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReaderHelper" Version="1.0.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.1.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Svg" Version="3.0.102" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SVGLib\SVGLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CommonMark">
+      <HintPath>..\..\Lib\CommonMark.dll</HintPath>
+    </Reference>
+    <Reference Include="FhirKhit.Tools">
+      <HintPath>..\..\Lib\FhirKhit.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="FhirKhit.Tools.R4">
+      <HintPath>..\..\Lib\FhirKhit.Tools.R4.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.ElementModel">
+      <HintPath>..\..\Lib\Hl7.Fhir.ElementModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.R4.Core">
+      <HintPath>..\..\Lib\Hl7.Fhir.R4.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.R4.Specification">
+      <HintPath>..\..\Lib\Hl7.Fhir.R4.Specification.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.Serialization">
+      <HintPath>..\..\Lib\Hl7.Fhir.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.Support">
+      <HintPath>..\..\Lib\Hl7.Fhir.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.Fhir.Support.Poco">
+      <HintPath>..\..\Lib\Hl7.Fhir.Support.Poco.dll</HintPath>
+    </Reference>
+    <Reference Include="Hl7.FhirPath">
+      <HintPath>..\..\Lib\Hl7.FhirPath.dll</HintPath>
+    </Reference>
+    <Reference Include="PreFhir">
+      <HintPath>..\..\Lib\PreFhir.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.0.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.1.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.5.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.6.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.9.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="C:\Users\Kurt.Gjoll.000\.nuget\packages\fhirkhit.tools.r4\2.0.0\contentFiles\any\netcoreapp2.2\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy $(SolutionDir)\Lib\Specification.zip $(TargetDir)" />
+  </Target>
+
+  <Import Project="..\SharedStuff\SharedStuff.projitems" Label="Shared" />
+
+</Project>
