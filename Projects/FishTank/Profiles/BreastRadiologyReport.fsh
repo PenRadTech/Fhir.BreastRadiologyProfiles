@@ -1,9 +1,10 @@
 Alias: LOINC = http://loinc.org 
 
-Profile:        BreastRadiologyReport
-Parent:         DiagnosticReport
-Id:             breastRadiologyReport
-Title:          "Breast Radiology Report"
+Profile:    BreastRadiologyReport
+Parent:     DiagnosticReport
+Id:         breastRadiologyReport
+Title:      "Breast Radiology Report"
+Mixins: 	Header
 Description:    """
 	Breast Radiology Diagnostic Report.
 
@@ -23,7 +24,4 @@ Description:    """
   * code = LOINC#10193-1
   * specimen 0..0
   * result 0..0
-  * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
-  * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
-  //* ^contact[0].telecom = "xxyyz"
   
