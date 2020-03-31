@@ -1,6 +1,6 @@
-CodeSystem:  BiRadsCS
-Title: "BiRads CodeSystem"
-Description:  "BiRads CodeSystem"
+CodeSystem:  BiRadsAssessmentCategoryCS
+Title: "BiRadsAssessmentCategory CodeSystem"
+Description:  "BiRadsAssessmentCategory CodeSystem"
 //+ Codes
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
   * #Category0 "Category 0 (Incomplete)"

@@ -1,5 +1,5 @@
 ValueSet:  MGBreastDensityVS
-Title: "MGBreastDensity CodeSystem"
+Title: "MGBreastDensity ValueSet"
 Description:  "MGBreastDensity Value Set"
 //+ Codes
   * codes from system MGBreastDensityCS

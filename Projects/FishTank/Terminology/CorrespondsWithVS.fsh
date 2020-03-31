@@ -1,5 +1,5 @@
 ValueSet:  CorrespondsWithVS
-Title: "CorrespondsWith CodeSystem"
+Title: "CorrespondsWith ValueSet"
 Description:  "CorrespondsWith Value Set"
 //+ Codes
   * codes from system CorrespondsWithCS

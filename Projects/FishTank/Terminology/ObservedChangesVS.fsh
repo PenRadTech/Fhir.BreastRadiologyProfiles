@@ -1,5 +1,5 @@
 ValueSet:  ObservedChangesVS
-Title: "ObservedChanges CodeSystem"
+Title: "ObservedChanges ValueSet"
 Description:  "ObservedChanges Value Set"
 //+ Codes
   * codes from system ObservedChangesCS

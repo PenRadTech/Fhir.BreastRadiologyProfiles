@@ -1,5 +1,5 @@
 ValueSet:  MarginVS
-Title: "Margin CodeSystem"
+Title: "Margin ValueSet"
 Description:  "Margin Value Set"
 //+ Codes
   * codes from system MarginCS

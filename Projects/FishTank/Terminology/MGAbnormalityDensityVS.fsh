@@ -1,5 +1,5 @@
 ValueSet:  MGAbnormalityDensityVS
-Title: "MGAbnormalityDensity CodeSystem"
+Title: "MGAbnormalityDensity ValueSet"
 Description:  "MGAbnormalityDensity Value Set"
 //+ Codes
   * codes from system MGAbnormalityDensityCS

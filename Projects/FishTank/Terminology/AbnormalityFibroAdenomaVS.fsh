@@ -1,5 +1,5 @@
 ValueSet:  AbnormalityFibroAdenomaVS
-Title: "AbnormalityFibroAdenoma CodeSystem"
+Title: "AbnormalityFibroAdenoma ValueSet"
 Description:  "AbnormalityFibroAdenoma Value Set"
 //+ Codes
   * codes from system AbnormalityFibroAdenomaCS

@@ -1,5 +1,5 @@
 ValueSet:  ShapeVS
-Title: "Shape CodeSystem"
+Title: "Shape ValueSet"
 Description:  "Shape Value Set"
 //+ Codes
   * codes from system ShapeCS

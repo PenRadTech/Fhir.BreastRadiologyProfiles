@@ -1,5 +1,5 @@
 ValueSet:  BreastBodyLocationRegionsVS
-Title: "BreastBodyLocationRegions CodeSystem"
+Title: "BreastBodyLocationRegions ValueSet"
 Description:  "BreastBodyLocationRegions Value Set"
 //+ Codes
   * codes from system BreastBodyLocationRegionsCS

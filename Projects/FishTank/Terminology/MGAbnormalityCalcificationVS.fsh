@@ -1,5 +1,5 @@
 ValueSet:  MGAbnormalityCalcificationVS
-Title: "MGAbnormalityCalcification CodeSystem"
+Title: "MGAbnormalityCalcification ValueSet"
 Description:  "MGAbnormalityCalcification Value Set"
 //+ Codes
   * codes from system MGAbnormalityCalcificationCS

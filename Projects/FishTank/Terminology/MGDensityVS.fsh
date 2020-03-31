@@ -1,5 +1,5 @@
 ValueSet:  MGDensityVS
-Title: "MGDensity CodeSystem"
+Title: "MGDensity ValueSet"
 Description:  "MGDensity Value Set"
 //+ Codes
   * codes from system MGDensityCS

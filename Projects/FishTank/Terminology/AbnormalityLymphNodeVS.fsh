@@ -1,5 +1,5 @@
 ValueSet:  AbnormalityLymphNodeVS
-Title: "AbnormalityLymphNode CodeSystem"
+Title: "AbnormalityLymphNode ValueSet"
 Description:  "AbnormalityLymphNode Value Set"
 //+ Codes
   * codes from system AbnormalityLymphNodeCS

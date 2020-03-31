@@ -223,12 +223,10 @@ namespace BreastRadiology.XUnitTests
         }
 
         void WriteIds(String className,
-            String outputCodePath,
             params String[] penIds)
         {
             IEnumerable<String> penIds2 = penIds;
             WriteIds(className, 
-                outputCodePath,
                 penIds2);
         }
 
@@ -340,15 +338,14 @@ namespace BreastRadiology.XUnitTests
         //}
 
         void WriteIds(String className,
-            String outputCodePath,
             IEnumerable<String> penIdsEnum)
         {
             String[] penIds = penIdsEnum.ToArray();
 
             CodeEditor csEditor = new CodeEditor();
             CodeEditor vsEditor = new CodeEditor();
-            String csOutputPath = $"{TerminologyPath(outputCodePath)}CS.fsh";
-            String vsOutputPath = $"{TerminologyPath(outputCodePath)}VS.fsh";
+            String csOutputPath = $"{TerminologyPath(className)}CS.fsh";
+            String vsOutputPath = $"{TerminologyPath(className)}VS.fsh";
             File.Delete(csOutputPath);
             File.Delete(vsOutputPath);
 
@@ -370,7 +367,7 @@ namespace BreastRadiology.XUnitTests
             {
                 vsEditor.IgnoreMacrosInQuotedStrings = false;
                 vsEditor.AddUserMacro("Name", $"{className}VS");
-                vsEditor.AddUserMacro("Title", $"{className} CodeSystem");
+                vsEditor.AddUserMacro("Title", $"{className} ValueSet");
                 vsEditor.AddUserMacro("Description", $"{className} Value Set");
                 vsEditor.Load(TerminologyPath("Template.vs.txt"));
                 vsEditor.SavePath = vsOutputPath;
@@ -560,97 +557,68 @@ namespace BreastRadiology.XUnitTests
             //    @"FindingMG\MGAbnormalityFatNecrosis.cs", "688");
             //WriteIntroDocDescription("TumorSatellite", "IntroDocDescription", @"Common\TumorSatellite.cs", "623");
 
-            WriteIds("BiRads",
-                @"BiRadsAssessmentCategory",
+            WriteIds("BiRadsAssessmentCategory",
                 Filter("Impression", "Birads").Remove("790", "791", "174", "173"));
 
             WriteIds("AbnormalityCyst",
-                @"AbnormalityCyst",
                 "69", "610", "657", "617", "636", "609", "661");
             WriteIds("AbnormalityDuct",
-                @"AbnormalityDuct",
                 "692", "694.602", "693.614");
             WriteIds("AbnormalityFibroAdenoma",
-                @"AbnormalityFibroAdenoma",
                 "70", "695");
             WriteIds("AbnormalityLymphNode",
-                @"AbnormalityLymphNode",
                 "648", "649", "662", "665", "650", "651", "652", "666", "663");
             WriteIds("AbnormalityMass",
-                @"AbnormalityMass",
                 "58", "621", "697", "613", "608");
             WriteIds("AbnormalityForeignObject",
-                @"AbnormalityForeignObject",
                 Filter("Finding foreign body", "foreign body"));
 
             WriteIds("ServiceRecommendation",
-                @"ServiceRecommendation",
                 Filter("Recommendations", "Recommendation"));
 
             WriteIds("CorrespondsWith",
-                @"CorrespondsWith",
                 Filter("Corresponds", "Corresponds with"));
             WriteIds("ConsistentWith",
-                @"ConsistentWith",
                 Filter("Classification Consistent with", "Consistent with"));
             WriteIds("ConsistentWithQualifier",
-                @"ConsistentWithQualifier",
                 Filter("Classification Consistent with", "Consistent qualifier"));
             WriteIds("NotPreviouslySeen",
-                @"NotPreviouslySeen",
                 Filter("Not Prev Seen On", "not previous seen"));
             WriteIds("Margin",
-                @"Margin",
                 Filter("Profile Abnormality", "margin"));
             WriteIds("Orientation",
-                @"Orientation",
                 Filter("Size and Distance", "Orientation"));
             WriteIds("PreviouslyDemonstratedBy",
-                @"PreviouslyDemonstratedBy",
                 Filter("Dem. By Prior", "previous demostrated by"));
             WriteIds("Shape",
-                @"Shape",
                 Filter("Profile Abnormality", "shape"));
             WriteIds("ObservedChanges",
-                @"ObservedChanges",
                 Filter("Change From Prior", "Change From Prior"));
             WriteIds("CalcificationDistribution",
-                @"CalcificationDistribution",
                 Filter("Assoc Calcs distribution", "calcification distribution"));
 
             WriteIds("MGAbnormalityAsymmetry",
-                @"MGAbnormalityAsymmetry",
                 "691", "643", "644", "Row542");
             WriteIds("MGAbnormalityDensity",
-                @"MGAbnormalityDensity",
                 "686", "645", "646", "647");
             WriteIds("MGAbnormalityCalcification",
-                @"MGAbnormalityCalcification",
                 Filter("Assoc Cal", "calcification type"));
             WriteIds("MGDensity",
-                @"MGDensity",
                 Filter("Profile Abnormality", "density"));
             WriteIds("MGBreastDensity",
-                @"MGBreastDensity",
                 Filter("", "MG Breast Density"));
 
             WriteIds("BreastBodyLocationClockPositions",
-                @"BreastBodyLocationExtension",
                 "1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "1010", "1011", "1012");
             WriteIds("BreastBodyLocationDepth",
-                @"BreastBodyLocationExtension",
                 "1017", "1018", "1019");
             WriteIds("BreastBodyLocationQuadrants",
-                @"BreastBodyLocationExtension",
                 "1024", "1025", "1022", "1023");
             WriteIds("BreastBodyLocationRegions",
-                @"BreastBodyLocationExtension",
                 "1015", "1014", "AxillaI", "AxillaII", "AxillaIII", "1515", "1511", "1013");
             WriteIds("AssociatedFeature",
-                @"AssociatedFeature",
                 RemovePlurals(Filter("Associated findings", "Associated findings")));
             WriteIds("AssociatedFeature",
-                @"AssociatedFeature",
                 Filter("Associated findings", "Associated findings cal"));
 
             this.spreadSheetData.Save();

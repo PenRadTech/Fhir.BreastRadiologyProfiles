@@ -1,6 +1,6 @@
-ValueSet:  BiRadsVS
-Title: "BiRads CodeSystem"
-Description:  "BiRads Value Set"
+ValueSet:  BiRadsAssessmentCategoryVS
+Title: "BiRadsAssessmentCategory ValueSet"
+Description:  "BiRadsAssessmentCategory Value Set"
 //+ Codes
-  * codes from system BiRadsCS
+  * codes from system BiRadsAssessmentCategoryCS
 //- Codes

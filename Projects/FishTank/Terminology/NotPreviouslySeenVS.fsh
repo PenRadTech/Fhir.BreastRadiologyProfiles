@@ -1,5 +1,5 @@
 ValueSet:  NotPreviouslySeenVS
-Title: "NotPreviouslySeen CodeSystem"
+Title: "NotPreviouslySeen ValueSet"
 Description:  "NotPreviouslySeen Value Set"
 //+ Codes
   * codes from system NotPreviouslySeenCS

@@ -1,5 +1,5 @@
 ValueSet:  CalcificationDistributionVS
-Title: "CalcificationDistribution CodeSystem"
+Title: "CalcificationDistribution ValueSet"
 Description:  "CalcificationDistribution Value Set"
 //+ Codes
   * codes from system CalcificationDistributionCS

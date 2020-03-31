@@ -1,5 +1,5 @@
 ValueSet:  ServiceRecommendationVS
-Title: "ServiceRecommendation CodeSystem"
+Title: "ServiceRecommendation ValueSet"
 Description:  "ServiceRecommendation Value Set"
 //+ Codes
   * codes from system ServiceRecommendationCS
