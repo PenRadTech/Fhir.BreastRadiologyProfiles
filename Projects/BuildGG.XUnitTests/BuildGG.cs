@@ -536,105 +536,6 @@ namespace BreastRadiology.XUnitTests
             return retVal;
         }
 
-        //[TestMethod]
-        //public void Cleanup()
-        //{
-        //    ExcelData source;
-
-        //    bool IsGargage(String text)
-        //    {
-        //        text = text.ToUpper();
-        //        if ((text.Length == 0) || (text[0] != 'C'))
-        //            return false;
-        //        for (Int32 i = 1; i < text.Length; i++)
-        //            if (Char.IsDigit(text[i]) == false)
-        //                return false;
-        //        return true;
-        //    }
-
-        //    bool FixCitations(String text, out String text2, out String citation)
-        //    {
-        //        bool FindAnchor(String anchor, out String t2, out String c)
-        //        {
-        //            t2 = null;
-        //            c = null;
-        //            Int32 i = text.ToUpper().IndexOf(anchor);
-        //            if (i < 0)
-        //                return false;
-        //            t2 = text.Substring(0, i);
-        //            c = text.Substring(i).Trim();
-        //            return true;
-        //        }
-
-        //        if (FindAnchor("HTTP://", out text2, out citation))
-        //        {
-        //            citation = $"###URL#{citation}";
-        //        }
-        //        else if (FindAnchor("HTTPS://", out text2, out citation))
-        //        {
-        //            citation = $"###URL#{citation}";
-        //            return true;
-        //        }
-        //        else if (FindAnchor("FIFTH EDITION", out text2, out citation))
-        //        {
-        //            Int32 index = citation.ToUpper().IndexOf("PG");
-        //            if (index > 0)
-        //                citation = $"###ACRMG#{citation.Substring(index + 2).Trim()}";
-        //            else
-        //                citation = $"###ACRMG#";
-        //            return true;
-        //        }
-        //        else if (FindAnchor("SECOND ADDITION", out text2, out citation))
-        //        {
-        //            String name = null;
-        //            if (citation.Contains("Ultrasound"))
-        //                name = "ACRUS";
-        //            else if (citation.Contains("Magnetic Resonance Imaging"))
-        //                name = "ACRMRI";
-        //            else
-        //                Debugger.Break();
-
-        //            Int32 index = citation.ToUpper().IndexOf("PG");
-        //            if (index > 0)
-        //                citation = $"###{name}#{citation.Substring(index + 2).Trim()}";
-        //            else
-        //                citation = $"###{name}#";
-        //            return true;
-        //        }
-        //        return false;
-        //    }
-
-        //    void CleanupUMLS(DataRow row)
-        //    {
-        //        String text = row[source.umlsCol].ToString();
-        //        if (IsGargage(text))
-        //            text = "";
-
-        //        if (FixCitations(text, out String text2, out String citation) == true)
-        //            text = text2;
-        //        List<String> lines = FormatText(text).ToList();
-        //        StringBuilder sb = new StringBuilder();
-        //        for (Int32 i = 0; i < lines.Count; i++)
-        //            sb.AppendLine(lines[i]);
-        //        if (String.IsNullOrEmpty(citation) == false)
-        //            sb.AppendLine(citation);
-        //        row[source.umlsCol] = sb.ToString();
-        //    }
-
-        //    String baseDir = DirHelper.FindParentDir("BreastRadiologyProfiles");
-        //    String filePath = Path.Combine(baseDir,
-        //        "..",
-        //        "BRDocs",
-        //        "BreastData.xlsx");
-        //    source = new ExcelData(new Info(), filePath, "Sheet3");
-
-        //    foreach (DataRow row in source.rows.Values)
-        //    {
-        //        CleanupUMLS(row);
-        //    }
-        //    source.Save();
-        //}
-
 
         [TestMethod]
         public void WriteCode()
@@ -733,7 +634,7 @@ namespace BreastRadiology.XUnitTests
                 @"MGBreastDensity",
                 Filter("", "MG Breast Density"));
 
-            WriteIds("BreastBodyLocation-ClockPositions",
+            WriteIds("BreastBodyLocationClockPositions",
                 @"BreastBodyLocationExtension",
                 "1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "1010", "1011", "1012");
             WriteIds("BreastBodyLocationDepth",
