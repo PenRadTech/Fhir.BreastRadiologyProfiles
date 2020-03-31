@@ -19,7 +19,7 @@ namespace BreastRadiology.XUnitTests
                         .Description("Observation Leaf Node Fragment",
                             new Markdown()
                                 .Paragraph(
-                                    "Fragment that constrains observations leaf nodes (no hasMembers references).")
+                                    "")
                         )
                     ;
                 s = e.SDef;

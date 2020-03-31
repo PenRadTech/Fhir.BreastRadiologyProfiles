@@ -1,14 +1,14 @@
 Alias: LOINC = http://loinc.org 
 
-Profile:    BreastRadiologyReport
-Parent:     DiagnosticReport
-Id:         breastRadiologyReport
-Title:      "Breast Radiology Report"
-Mixins: 	Header
-Description:    """
+Profile: BreastRadiologyReport
+Parent: DiagnosticReport
+Id: breastRadiologyReport
+Title: "Breast Radiology Report"
+Mixins: Header
+Description: """
 	Breast Radiology Diagnostic Report.
 
-    This resource is one of the components of a Breast Radiology Document.
+    This profile is one of the components of a Breast Radiology Document.
     Each Breast Radiology Document bundle will contain exactly one
     Breast Radiology Document instance that is referenced in the
     document's 'Report' section.
