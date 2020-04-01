@@ -64,7 +64,33 @@ namespace AutoValidate
             }
         }
 
+        AutoResetEvent wake = new AutoResetEvent(false);
+        bool doneFlag = false;
+
         void RunCommand()
+        {
+            while (true)
+            {
+                try
+                {
+                    // Wait for no events for timeout.
+                    wake.WaitOne();
+                    while ((this.doneFlag == false) && (wake.WaitOne(1000) == true))
+                        Console.WriteLine("Additional wake events received. Restarting wait");
+
+                    if (this.doneFlag == true)
+                        return;
+                    this.ExecuteCommand();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+        }
+
+
+        void ExecuteCommand()
         {
             using (Mutex gMtx = new Mutex(false, "AutoMate"))
             {
@@ -76,14 +102,7 @@ namespace AutoValidate
                 Thread.Sleep(100);
 
                 Console.WriteLine($"{executionCounter++}. Executing {this.exePath} {this.exeArgs}");
-                try
-                {
-                    this.Execute(this.exeDir, this.exePath, this.exeArgs);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
+                this.Execute(this.exeDir, this.exePath, this.exeArgs);
             }
 
             Console.WriteLine("Command complete");
@@ -177,17 +196,23 @@ namespace AutoValidate
             // Begin watching.
             watcher.EnableRaisingEvents = true;
 
+            Task runTask = new Task(() => this.RunCommand());
+            runTask.Start();
+
             // Wait for the user to quit the program.
             do
             {
-                RunCommand();
+                this.wake.Set();
             } while (Console.Read() != 'q');
+
+            this.doneFlag = true;
+            this.wake.Set();
         }
 
         void OnChanged(object source, FileSystemEventArgs e)
         {
             this.watcher.EnableRaisingEvents = false;
-            RunCommand();
+            this.wake.Set();
             this.watcher.EnableRaisingEvents = true;
         }
 
