@@ -65,9 +65,9 @@ namespace PreFrier
             {
                 String line = info.InputLines[i++];
                 retVal = line.Trim().Replace(" ", "");
+                lines.Add(line);
                 if (retVal.StartsWith("//+Mixins:"))
                     return retVal;
-                lines.Add(line);
             }
 
             return null;
