@@ -4,7 +4,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PreFrier
+namespace FishFactory
 {
     class Program
     {
@@ -26,18 +26,19 @@ namespace PreFrier
                     arg = arg.Substring(1, arg.Length - 2);
                 return arg;
             }
+            Converter em = new Converter();
 
             while (i < args.Length)
             {
                 String arg = GetArg("arg").ToUpper();
                 switch (arg)
                 {
+                    case "-O":
+                        em.OutputDir = GetArg("-o");
+                        break;
+
                     case "-M":
-                        {
-                            ExpandMixins em = new ExpandMixins();
-                            em.AddMixinDir(GetArg("RuleSets"));
-                            em.Process();
-                        }
+                        em.ConvertDir(GetArg("-m"));
                         break;
 
                     default:

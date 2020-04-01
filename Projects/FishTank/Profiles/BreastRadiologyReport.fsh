@@ -4,7 +4,7 @@ Profile: BreastRadiologyReport
 Parent: DiagnosticReport
 Id: breastRadiologyReport
 Title: "Breast Radiology Report"
-Mixins: Header
+Mixins: HeaderFragment
 Description: """
 	Breast Radiology Diagnostic Report.
 

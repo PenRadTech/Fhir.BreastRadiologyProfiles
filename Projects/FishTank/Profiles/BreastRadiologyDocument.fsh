@@ -4,7 +4,7 @@ Profile: BreastRadiologyDocument
 Parent: Bundle
 Id: breastRadiologyDocument
 Title: "Breast Radiology Document"
-Mixins: Header
+Mixins: HeaderFragment
 Description: """
     This is the top level container for the Breast Radiology FHIR Document.
     This profile is based on FHIR Bundle resource.

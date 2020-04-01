@@ -4,7 +4,7 @@ Profile: BreastRadiologyComposition
 Parent: Composition
 Id: breastRadiologyComposition
 Title: "Breast Radiology Composition"
-Mixins: Header
+Mixins: HeaderFragment
 Description: """
     This profile defines the composition instance for the Breast Radiology FHIR Document.
     This profile is based on FHIR Composition resource.
