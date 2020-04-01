@@ -43,6 +43,7 @@ namespace PreFrier
 
         public void AddMixinDir(String dir)
         {
+            Console.WriteLine($"note Expanding mixins in {dir}");
             foreach (String fileName in Directory.GetFiles(dir, "*.fsh"))
             {
                 String[] lines = File.ReadAllLines(fileName);
@@ -131,11 +132,27 @@ namespace PreFrier
 
         public void Process()
         {
+            String Text(IEnumerable<String> lines)
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (String line in lines)
+                    sb.AppendLine(line);
+                return sb.ToString();
+            }
+
             foreach (MixinInfo info in this.mixins.Values)
                 this.Process(info);
 
             foreach (MixinInfo info in this.mixins.Values)
-                File.WriteAllLines(info.Path, info.OutputLines);
+            {
+                String inputText = Text(info.InputLines);
+                String outputText = Text(info.OutputLines);
+                if (String.Compare(inputText, outputText) != 0)
+                {
+                    Console.WriteLine($"note Modifying {info.Path}");
+                    File.WriteAllLines(info.Path, info.OutputLines);
+                }
+            }
         }
     }
 }

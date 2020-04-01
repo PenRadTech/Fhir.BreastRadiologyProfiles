@@ -2,7 +2,8 @@
   "profiles": {
     "AutoValidate": {
       "commandName": "Project",
-      "commandLineArgs": "-d C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank -w . -c \"C:\\Users\\Kurt\\AppData\\Roaming\\npm\\sushi.cmd\" -a \".\""
+      "commandLineArgs": "-d C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank -w . -c \"FishFry.bat\"",
+      "workingDirectory": "C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank"
     }
   }
 }

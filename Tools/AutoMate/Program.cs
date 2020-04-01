@@ -84,14 +84,18 @@ namespace AutoValidate
         void Message(ConsoleColor fgColor, String msg)
         {
             String msgLevel = msg.Trim().ToUpper();
-            if (msgLevel.StartsWith("INFO "))
+            if (msgLevel.StartsWith("INFO"))
+            {
+                if (showInfo == false)
+                    return;
                 fgColor = ConsoleColor.White;
-            else if (msgLevel.StartsWith("WARN "))
+            }
+            else if (msgLevel.StartsWith("NOTE"))
+                fgColor = ConsoleColor.Green;
+            else if (msgLevel.StartsWith("WARN"))
                 fgColor = ConsoleColor.DarkYellow;
-            else if (msgLevel.StartsWith("ERROR "))
+            else if (msgLevel.StartsWith("ERROR"))
                 fgColor = ConsoleColor.Red;
-            if ((fgColor == ConsoleColor.White) && (showInfo == false))
-                return;
 
             Console.ForegroundColor = fgColor;
             Console.WriteLine(msg);
