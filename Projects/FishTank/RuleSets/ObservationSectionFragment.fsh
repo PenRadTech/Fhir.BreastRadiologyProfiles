@@ -3,7 +3,7 @@
 
 // IncompatibleFragment ObservationLeafFragment
 
-RuleSet: ObservationLeafFragment
+RuleSet: ObservationSectionFragment
 //+Mixins: ObservationFragment, ObservationNoComponentFragment, ObservationNoValueFragment
 //-Mixins:
   * interpretation 0..0

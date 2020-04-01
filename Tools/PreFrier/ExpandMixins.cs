@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
@@ -8,33 +9,31 @@ namespace PreFrier
 {
     class ExpandMixins
     {
-        struct MixinInfo
+        class MixinInfo
         {
-            public String[] Lines;
+            public List<String> InputLines;
+            public List<String> OutputLines;
             public String Path;
         };
 
         private Dictionary<String, MixinInfo> mixins = new Dictionary<string, MixinInfo>();
 
-        String FirstNonCommentLine(String[] lines)
-        {
-            foreach (String line in lines)
-            {
-                String s = line.Trim();
-                if (s.StartsWith("//") == false)
-                    return s;
-            }
-            return null;
-        }
-
         bool IsMixin(String[] lines, out String name)
         {
             name = null;
-            String firstLine = FirstNonCommentLine(lines);
-            if (firstLine == null)
+            Int32 i = 0;
+            String firstLine = null;
+            while (i < lines.Length)
+            {
+                firstLine = lines[i].Trim();
+                if (firstLine.StartsWith("RuleSet:") == true)
+                    break;
+                i += 1;
+            }
+
+            if (i >= lines.Length)
                 return false;
-            if (firstLine.StartsWith("RuleSet:") == false)
-                return false;
+
             name = firstLine.Substring(8).Trim();
             Int32 spaceIndex = name.IndexOf(" ");
             if (spaceIndex > 0)
@@ -51,7 +50,7 @@ namespace PreFrier
                 {
                     MixinInfo info = new MixinInfo
                     {
-                        Lines = lines,
+                        InputLines = lines.ToList(),
                         Path = fileName
                     };
                     mixins.Add(mixinName, info);
@@ -59,62 +58,84 @@ namespace PreFrier
             }
         }
 
+        String Mixins(MixinInfo info, List<String> lines, ref Int32 i)
+        {
+            String retVal = null;
+            while (i < info.InputLines.Count)
+            {
+                String line = info.InputLines[i++];
+                retVal = line.Trim().Replace(" ", "");
+                if (retVal.StartsWith("//+Mixins:"))
+                    return retVal;
+                lines.Add(line);
+            }
+
+            return null;
+        }
+
+        bool SkipTo(List<String> lines, String text, ref Int32 i)
+        {
+            while (i < lines.Count)
+            {
+                String line = lines[i++];
+                String s = line.Trim().Replace(" ", "");
+                if (s.StartsWith(text))
+                    return true;
+            }
+
+            return false;
+        }
+
+        void AddMixin(List<String> lines, 
+            String mixinName)
+        {
+            if (this.mixins.TryGetValue(mixinName, out MixinInfo info) == false)
+                throw new Exception($"Mixin {mixinName} not found");
+            Process(info);
+            Int32 i = 0;
+            if (SkipTo(info.OutputLines, "RuleSet:", ref i) == false)
+                throw new Exception("Cant find RuleSet in fsh file");
+            Int32 j = i;
+            if (SkipTo(info.OutputLines, "//-Mixins:", ref j) == true)
+                i = j;
+            while (i < info.OutputLines.Count)
+                lines.Add(info.OutputLines[i++]);
+        }
+
         void Process(MixinInfo info)
         {
+            // already processed?
+            if (info.OutputLines != null)
+                return;
+
             List<String> lines = new List<string>();
             Int32 i = 0;
 
-            String Mixins()
+
+            while (i < info.InputLines.Count)
             {
-                String retVal = null;
-                while (i < info.Lines.Length)
-                {
-                    String line = info.Lines[i++];
-                    retVal = line.Trim().Replace(" ", "");
-                    if (retVal.StartsWith("//+Mixins:"))
-                        return retVal;
-                    lines.Add(line);
-                }
-
-                return null;
-            }
-
-            void SkipToMixinEnd()
-            {
-                while (i < info.Lines.Length)
-                {
-                    String line = info.Lines[i++];
-                    String s = line.Trim().Replace(" ", "");
-                    if (s.StartsWith("//Mixins:"))
-                        return;
-                    lines.Add(line);
-                }
-                throw new Exception("Mixin terminator not found");
-            }
-
-            void AddMixin(String mixin)
-            {
-
-            }
-
-            while (i < info.Lines.Length)
-            {
-                String s = Mixins();
+                String s = Mixins(info, lines, ref i);
                 if (s == null)
                     break;
+                if (SkipTo(info.InputLines, "//-Mixins:", ref i) == false)
+                    throw new Exception("Cant find terminator '//-Mixins'");
+                s = s.Substring(s.IndexOf(':') + 1);
                 String[] mixins = s.Split(',');
                 foreach (String mixin in mixins)
-                    AddMixin(mixin);
+                    AddMixin(lines, mixin);
                 lines.Add("  //- Mixins:");
-                SkipToMixinEnd();
             }
-            File.WriteAllLines(info.Path, lines);
+
+            info.OutputLines = lines;
         }
 
         public void Process()
         {
             foreach (MixinInfo info in this.mixins.Values)
                 this.Process(info);
+
+            foreach (MixinInfo info in this.mixins.Values)
+                File.WriteAllLines(info.Path, info.OutputLines);
         }
     }
 }

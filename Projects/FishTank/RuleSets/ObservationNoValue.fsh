@@ -1,7 +1,7 @@
 // ObservationNoValueFragment
 // Observations that have no explicit value.
 
-RuleSet: ObservationNoComponentFragment
+RuleSet: ObservationNoValueFragment
 //+Mixins: ObservationFragment
 //-Mixins:
   * dataAbsentReason 0..0

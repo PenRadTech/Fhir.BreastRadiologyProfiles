@@ -1,7 +1,7 @@
 // ObservationFragment
 // Common constraints used in all breast radiology observations.
 
-RuleSet: ObservationLeafFragment
+RuleSet: ObservationFragment
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
