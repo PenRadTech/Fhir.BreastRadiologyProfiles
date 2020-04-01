@@ -51,9 +51,14 @@ namespace FishFactory
         {
             try
             {
-                Program p = new Program();
-                p.ParseArguments(args);
-                return 0;
+                using (Mutex gMtx = new Mutex(false, "AutoMate"))
+                {
+                    gMtx.WaitOne(10 * 1000);
+                    Program p = new Program();
+                    p.ParseArguments(args);
+                    gMtx.ReleaseMutex();
+                    return 0;
+                }
             }
             catch (Exception e)
             {

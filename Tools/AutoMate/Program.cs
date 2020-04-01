@@ -64,19 +64,28 @@ namespace AutoValidate
             }
         }
 
-        void RunCommand() {
-            Console.Clear();
-            Thread.Sleep(500);
+        void RunCommand()
+        {
+            using (Mutex gMtx = new Mutex(false, "AutoMate"))
+            {
+                Console.Clear();
+                DateTime dt = DateTime.Now;
+                gMtx.WaitOne(10 * 1000);
+                TimeSpan ts = DateTime.Now - dt;
+                Console.WriteLine($"Waited {ts.TotalMilliseconds}ms for access");
+                Thread.Sleep(100);
 
-            Console.WriteLine($"{executionCounter++}. Executing {this.exePath} {this.exeArgs}");
-            try
-            {
-                this.Execute(this.exeDir, this.exePath, this.exeArgs);
+                Console.WriteLine($"{executionCounter++}. Executing {this.exePath} {this.exeArgs}");
+                try
+                {
+                    this.Execute(this.exeDir, this.exePath, this.exeArgs);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
             }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+
             Console.WriteLine("Command complete");
             Console.WriteLine("Press 'q' to quit.");
         }
