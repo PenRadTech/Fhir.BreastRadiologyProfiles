@@ -4,6 +4,7 @@
 // IncompatibleFragment ObservationLeafFragment
 
 RuleSet: ObservationLeafFragment
-//%Mixins: ObservationFragment, ObservationNoComponentFragment, ObservationNoValueFragment
+//+Mixins: ObservationFragment, ObservationNoComponentFragment, ObservationNoValueFragment
+//-Mixins:
   * interpretation 0..0
   * method 0..0

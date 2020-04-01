@@ -20,8 +20,6 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedStuff", "Projects\Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildGG.XUnitTests", "Projects\BuildGG.XUnitTests\BuildGG.XUnitTests.csproj", "{6F278C6D-21F0-4904-8153-E561696ED1C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoValidate", "Projects\AutoValidate\AutoValidate.csproj", "{81A156E1-1ED8-467B-9915-9B0D57F0C86F}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Projects\SharedStuff\SharedStuff.projitems*{6f278c6d-21f0-4904-8153-e561696ed1c7}*SharedItemsImports = 5
@@ -54,10 +52,6 @@ Global
 		{6F278C6D-21F0-4904-8153-E561696ED1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F278C6D-21F0-4904-8153-E561696ED1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F278C6D-21F0-4904-8153-E561696ED1C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81A156E1-1ED8-467B-9915-9B0D57F0C86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81A156E1-1ED8-467B-9915-9B0D57F0C86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81A156E1-1ED8-467B-9915-9B0D57F0C86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81A156E1-1ED8-467B-9915-9B0D57F0C86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
