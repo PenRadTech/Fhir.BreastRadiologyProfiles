@@ -15,7 +15,33 @@ namespace FishFactory
         void ConvertCodeSystem(String fileName,
             CodeSystem cs)
         {
-            String outputPath = Path.Combine(this.OutputDir, cs.Name.ToMachineName());
+            String outputPath = Path.Combine(this.OutputDir, 
+                $"{cs.Name.ToMachineName()}.fsh");
+            CodeEditor ce = new CodeEditor();
+            CodeBlockNested code = ce.Blocks.AppendBlock();
+            code
+                .AppendRaw($"CodeSystem: {cs.Name}")
+                .AppendRaw($"Title: {cs.Title}")
+                .AppendRaw($"Description: {cs.Description}")
+                .DefineBlock(out CodeBlockNested concepts, "Codes")
+                ;
+
+            foreach (var concept in cs.Concept)
+            {
+                String codeStr = concept.Code;
+                String display = concept.Display;
+                String definition = concept.Definition.Replace("\r", "");
+                concepts.AppendRaw($"#{codeStr} \"{display}\"");
+                //$if (String.IsNullOrWhiteSpace(definition) == false)
+                //{
+                //    concepts.AppendRaw($"    \"\"\"");
+                //    foreach (String line in definition.Split("\n"))
+                //        concepts.AppendRaw($"    {line}");
+                //    concepts.AppendRaw($"    \"\"\"");
+                //}
+            }
+
+            ce.Save(outputPath);
         }
 
 
