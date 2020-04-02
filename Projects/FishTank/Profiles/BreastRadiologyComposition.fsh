@@ -36,6 +36,33 @@ Description: """
 
   * type = LOINC#42132-1 "US Breast screening"
 
+	// Create Section graph node.
+  * extension contains GNode named nodeSection 1..1
+  * extension[nodeSection].extension[graph].valueString = "focus"
+  * extension[nodeSection].extension[group].valueString = "sections"
+  * extension[nodeSection].extension[cssClass].valueString = "#section"
+  * extension[nodeSection].extension[child].valueString = "$#sectionMembers"
+
+  * section ^slicing.discriminator.type = #pattern  
+  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.rules = #open
+  * section ^slicing.ordered = false
+  * section ^slicing.description = "Breast Radiology Report Section"  
+  * section contains
+      reportSection 1..1 
+  * section[reportSection].code = CompositionSectionSliceCodesCS#sectionReport
+  * section[reportSection].title = "Breast Radiology Report"
+  * section[reportSection].entry 1..1
+  * section[reportSection].entry only Reference(BreastRadiologyReport)
+
+	// Create report graph node
+  * extension contains GNode named nodeSectionReport 1..1
+  * extension[nodeSectionReport].extension[graph].valueString = "focus"
+  * extension[nodeSectionReport].extension[group].valueString = "sectionMember"
+  * extension[nodeSectionReport].extension[cssClass].valueString = "#sectionMember"
+  * extension[nodeSectionReport].extension[child].valueString = "$#sectionMembers"
+
+
     //// Report Section
     //{
     //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);

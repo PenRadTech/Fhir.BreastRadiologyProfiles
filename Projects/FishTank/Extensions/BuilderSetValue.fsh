@@ -1,6 +1,6 @@
-Extension: SetValueExtension
-Id:   setValue
-Title:  "Set Value Extension"
+Extension: BuilderSetValue
+Id:   builderetValue
+Title:  "Builder Set Value Extension"
 Description: """
 	This element extension defines the value that element should be set to.
 

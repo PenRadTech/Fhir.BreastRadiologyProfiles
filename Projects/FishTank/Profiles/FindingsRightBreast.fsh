@@ -15,7 +15,7 @@ Description: """
 
   * bodySite 1..1
   * bodySite = SNOMED#73056007 "Right breast structure (body structure)"
-  * bodySite.extension contains SetValueExtension named setValue 1..1
+  * bodySite.extension contains BuilderSetValue named setValue 1..1
   * bodySite.extension[setValue].valueCodeableConcept = SNOMED#73056007 "Right breast structure (body structure)"
 
   * value[x] ^definition = """
