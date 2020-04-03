@@ -36,12 +36,11 @@ Description: """
 
   * type = LOINC#42132-1 "US Breast screening"
 
-	// Create Section graph node.
+	// Create Report section graph node.
   * extension contains GNode named nodeSection 1..1
   * extension[nodeSection].extension[graph].valueString = "focus"
-  * extension[nodeSection].extension[group].valueString = "sections"
-  * extension[nodeSection].extension[cssClass].valueString = "#section"
-  * extension[nodeSection].extension[child].valueString = "$#sectionMembers"
+  * extension[nodeSection].extension[display].valueString = "Breast/Radiology/Composition"
+  * extension[nodeSection].extension[targets].valueString = "^Composition.section"
 
   * section ^slicing.discriminator.type = #pattern  
   * section ^slicing.discriminator.path = "code"
@@ -55,13 +54,14 @@ Description: """
   * section[reportSection].entry 1..1
   * section[reportSection].entry only Reference(BreastRadiologyReport)
 
-	// Create report graph node
-  * extension contains GNode named nodeSectionReport 1..1
-  * extension[nodeSectionReport].extension[graph].valueString = "focus"
-  * extension[nodeSectionReport].extension[group].valueString = "sectionMember"
-  * extension[nodeSectionReport].extension[cssClass].valueString = "#sectionMember"
-  * extension[nodeSectionReport].extension[child].valueString = "$#sectionMembers"
-
+	// Create Report section graph node.
+  * section[reportSection].extension contains GNode named nodeSection 1..1
+  * section[reportSection].extension[nodeSection].extension[graph].valueString = "focus"
+  * section[reportSection].extension[nodeSection].extension[display].valueString = "Report/Section"
+  * section[reportSection].extension[nodeSection].extension[group].valueString = "section"
+  * section[reportSection].extension[nodeSection].extension[targets].valueString = "^entry"
+  * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%card^"
+  * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%card^.entry"
 
     //// Report Section
     //{
