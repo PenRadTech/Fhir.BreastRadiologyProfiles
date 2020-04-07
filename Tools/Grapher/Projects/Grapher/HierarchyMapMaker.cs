@@ -2,12 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Net;
 using System.Text;
 
 namespace Grapher
 {
     internal class HierarchyMapMaker : MapMaker
     {
+        private const Int32 TextLen = 32;
+
         public HierarchyMapMaker(ResourceMap map) : base(map)
         {
         }
@@ -31,7 +35,10 @@ namespace Grapher
                 throw new Exception($"Node {baseName} not found");
 
 
-            SENode node = this.CreateResourceNode(focusNode, Color.LightCyan, null);
+            SENode node = this.CreateResourceNode(focusNode, 
+                this.SplitTitle(focusNode.Title, TextLen),
+                Color.LightCyan, 
+                null);
             group.AppendNode(node);
 
             foreach (String childUrl in this.map.Children(baseName))

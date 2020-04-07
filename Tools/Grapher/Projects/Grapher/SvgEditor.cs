@@ -327,8 +327,8 @@ namespace Grapher
             out float width,
             out float height)
         {
-            const float CharMod = 0.5f;
-            const float CharSlop = 0f;
+            const float CharMod = 0.55f;
+            const float CharSlop = 1f;
 
             //Debug.Assert((this.RenderTestPoint == null) || node.AllText().Contains(RenderTestPoint) == false);
             height = node.TextLines.Count * this.LineHeight + 2 * this.BorderMargin;

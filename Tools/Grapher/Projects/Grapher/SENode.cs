@@ -10,9 +10,9 @@ namespace Grapher
     public class SENode
     {
         private float width;
-        public List<SEText> TextLines = new List<SEText>();
-        public Color FillColor { get; }
-        public String HRef { get; }
+        public List<SEText> TextLines { get; set; } = new List<SEText>();
+        public Color FillColor { get; set; }
+        public String HRef { get; set; }
 
         public float Width
         {
