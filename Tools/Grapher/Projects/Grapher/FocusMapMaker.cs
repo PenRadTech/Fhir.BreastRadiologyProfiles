@@ -13,7 +13,6 @@ using Hl7.Fhir.Model;
 using Hl7.Fhir.Specification.Navigation;
 using System.Net;
 using System.Net.Http;
-using HtmlAgilityPack;
 
 namespace Grapher
 {
@@ -160,83 +159,84 @@ namespace Grapher
                 }
             }
 
-            void ProcessLoincCode(ElementDefinition e,
-                CodeableConcept codeableConcept)
-            {
-                this.loincCode = codeableConcept.Coding[0].Code;
-                if (codeableConcept.Coding[0].System != "http://loinc.org")
-                    throw new Exception("Expecting loinc code");
-                String htmlData = GetLoincData(codeableConcept.Coding[0].Code);
-                var doc = new HtmlDocument();
-                doc.LoadHtml(htmlData);
+            // Requires nget package HTMLAgilityPack 
+            //void ProcessLoincCode(ElementDefinition e,
+            //    CodeableConcept codeableConcept)
+            //{
+            //    this.loincCode = codeableConcept.Coding[0].Code;
+            //    if (codeableConcept.Coding[0].System != "http://loinc.org")
+            //        throw new Exception("Expecting loinc code");
+            //    String htmlData = GetLoincData(codeableConcept.Coding[0].Code);
+            //    var doc = new HtmlDocument();
+            //    doc.LoadHtml(htmlData);
 
-                void ParseLoinc()
-                {
-                    this.loincLongName = new StringBuilder();
-                    this.loincTermDescription = new StringBuilder();
-                    HtmlNode node = doc.DocumentNode.SelectSingleNode("//h1[@data-label=\"LOINC Code\"]").ParentNode;
-                    if (node == null)
-                        throw new Exception($"Cant find 'LOINC Code' node");
-                    Int32 i = 0;
-                    StringBuilder c = null;
-                    while (i < node.ChildNodes.Count())
-                    {
-                        HtmlNode child = node.ChildNodes[i++];
-                        switch (child.Name)
-                        {
-                            case "div":
-                            case "h1":
-                            case "h2":
-                                c = null;
-                                break;
+            //    void ParseLoinc()
+            //    {
+            //        this.loincLongName = new StringBuilder();
+            //        this.loincTermDescription = new StringBuilder();
+            //        HtmlNode node = doc.DocumentNode.SelectSingleNode("//h1[@data-label=\"LOINC Code\"]").ParentNode;
+            //        if (node == null)
+            //            throw new Exception($"Cant find 'LOINC Code' node");
+            //        Int32 i = 0;
+            //        StringBuilder c = null;
+            //        while (i < node.ChildNodes.Count())
+            //        {
+            //            HtmlNode child = node.ChildNodes[i++];
+            //            switch (child.Name)
+            //            {
+            //                case "div":
+            //                case "h1":
+            //                case "h2":
+            //                    c = null;
+            //                    break;
 
-                            case "h3":
-                                c = null;
-                                if (child.ChildNodes.Count == 1)
-                                {
-                                    switch (child.ChildNodes[0].InnerText)
-                                    {
-                                        case "Long Common Name":
-                                            c = this.loincLongName;
-                                            break;
-                                        case "Term Description":
-                                            c = this.loincTermDescription;
-                                            break;
-                                    }
-                                }
-                                break;
+            //                case "h3":
+            //                    c = null;
+            //                    if (child.ChildNodes.Count == 1)
+            //                    {
+            //                        switch (child.ChildNodes[0].InnerText)
+            //                        {
+            //                            case "Long Common Name":
+            //                                c = this.loincLongName;
+            //                                break;
+            //                            case "Term Description":
+            //                                c = this.loincTermDescription;
+            //                                break;
+            //                        }
+            //                    }
+            //                    break;
 
-                            default:
-                                if (c != null)
-                                    c.AppendLine(child.OuterHtml);
-                                break;
-                        }
-                    }
-                }
+            //                default:
+            //                    if (c != null)
+            //                        c.AppendLine(child.OuterHtml);
+            //                    break;
+            //            }
+            //        }
+            //    }
 
-                ParseLoinc();
-            }
+            //    ParseLoinc();
+            //}
 
-            String GetLoincData(String loincCode)
-            {
-                string url = @"https://loinc.org/94562-6/";
+            //String GetLoincData(String loincCode)
+            //{
+            //    string url = @"https://loinc.org/94562-6/";
 
-                try
-                {
-                    using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
-                    {
-                        client.BaseAddress = new Uri(url);
-                        HttpResponseMessage response = client.GetAsync(url).Result;
-                        string result = response.Content.ReadAsStringAsync().Result;
-                        return result;
-                    }
-                }
-                catch (Exception exception)
-                {
-                    Console.WriteLine(exception);
-                    throw;
-                }
-            }
+            //    try
+            //    {
+            //        using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
+            //        {
+            //            client.BaseAddress = new Uri(url);
+            //            HttpResponseMessage response = client.GetAsync(url).Result;
+            //            string result = response.Content.ReadAsStringAsync().Result;
+            //            return result;
+            //        }
+            //    }
+            //    catch (Exception exception)
+            //    {
+            //        Console.WriteLine(exception);
+            //        throw;
+            //    }
+            //}
 
             void AddDiffChildren()
             {
@@ -255,6 +255,7 @@ namespace Grapher
                     else
                         type = type.ToMachineName();
 
+                    Debug.Assert(type != "HasMember");
                     node.AddTextLine(type, hRef);
                     if (diff.Binding != null)
                     {
@@ -266,7 +267,13 @@ namespace Grapher
                             SENodeGroup vsGroup = new SENodeGroup("vs", true);
                             childGroup.AppendChild(vsGroup);
                             SENode vsNode = new SENode(0, Color.LightGreen, null, hRefVs);
-                            vsNode.AddTextLine(vsUrl.LastUriPart(), hRefVs);
+                            String vsName = vsUrl.LastUriPart();
+                            if (this.map.TryGetResource(vsUrl, out DomainResource vsResource) == true)
+                            {
+                                ValueSet vs = (ValueSet) vsResource;
+                                vsName = vs.Name;
+                            }
+                            vsNode.AddTextLine(vsName, hRefVs);
                             vsGroup.AppendNode(vsNode);
                         }
                     }
@@ -283,8 +290,8 @@ namespace Grapher
                         switch (p)
                         {
                             case CodeableConcept codeableConcept:
-                                if (diff.Path == "Observation.code")
-                                    ProcessLoincCode(diff, codeableConcept);
+                                //if (diff.Path == "Observation.code")
+                                //    ProcessLoincCode(diff, codeableConcept);
                                 AddIfNotNull(codeableConcept.Coding[0].Code);
                                 AddIfNotNull(codeableConcept.Coding[0].System);
                                 if (

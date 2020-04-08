@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 using Hl7.Fhir.Model;
-using Markdig;
-using Markdig.Extensions.Tables;
 
 namespace Grapher
 {

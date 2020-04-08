@@ -12,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
-    <PackageReference Include="Markdig" Version="0.18.3" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
@@ -27,9 +25,6 @@
     </Reference>
     <Reference Include="FhirKhit.Tools.R4">
       <HintPath>..\..\..\..\Lib\FhirKhit.Tools.R4.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.ElementModel">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.ElementModel.dll</HintPath>
     </Reference>
     <Reference Include="Hl7.Fhir.R4.Core">
       <HintPath>..\..\..\..\Lib\Hl7.Fhir.R4.Core.dll</HintPath>
@@ -45,9 +40,6 @@
     </Reference>
     <Reference Include="Hl7.Fhir.Support.Poco">
       <HintPath>..\..\..\..\Lib\Hl7.Fhir.Support.Poco.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.FhirPath">
-      <HintPath>..\..\..\..\Lib\Hl7.FhirPath.dll</HintPath>
     </Reference>
   </ItemGroup>
 
