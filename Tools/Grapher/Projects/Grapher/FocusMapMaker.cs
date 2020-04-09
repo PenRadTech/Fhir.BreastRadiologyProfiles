@@ -255,7 +255,7 @@ namespace Grapher
                     else
                         type = type.ToMachineName();
 
-                    Debug.Assert(type != "HasMember");
+                    //Debug.Assert(type != "HasMember");
                     node.AddTextLine(type, hRef);
                     if (diff.Binding != null)
                     {
