@@ -93,9 +93,11 @@ namespace Grapher
 
         protected String HRef(ResourceMap.Node mapNode)
         {
+            String FocusMapName(ResourceMap.Node mapNode) => $"Focus-{mapNode.Name}.svg";
+
             if (mapNode.ResourceUrl.StartsWith("http://hl7.org/fhir/StructureDefinition/"))
                 return mapNode.ResourceUrl;
-            return $"./{mapNode.StructureName}-{mapNode.Name}.html";
+            return FocusMapName(mapNode);
         }
 
         protected Color ReferenceColor(ResourceMap.Node refNode)

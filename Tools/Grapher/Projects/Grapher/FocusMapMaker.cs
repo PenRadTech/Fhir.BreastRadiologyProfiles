@@ -90,14 +90,16 @@ namespace Grapher
 
         String ResourceAnchor(DomainResource r)
         {
-            String resourceName = r.GetUrl().LastUriPart();
-            return $"{r.TypeName}-{resourceName}.html";
+            //String resourceName = r.GetUrl().LastUriPart();
+            //return $"{r.TypeName}-{resourceName}.html";
+            return null;
         }
 
         String ElementAnchor(DomainResource r, ElementDefinition e)
         {
-            String resourceName = r.GetUrl().LastUriPart();
-            return $"{r.TypeName}-{resourceName}-definitions.html#{e.ElementId}";
+            return null;
+            //String resourceName = r.GetUrl().LastUriPart();
+            //return $"{r.TypeName}-{resourceName}-definitions.html#{e.ElementId}";
         }
 
         bool GraphNode(ResourceMap.Node focusNode)
