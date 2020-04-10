@@ -12,36 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Eir.CodeEditor" Version="1.3.0" />
+    <PackageReference Include="Eir.FhirKhit" Version="1.0.0" />
+    <PackageReference Include="Eir.FhirKhit.R4" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SVGLib\SVGLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="FhirKhit.Tools">
-      <HintPath>..\..\..\..\Lib\FhirKhit.Tools.dll</HintPath>
-    </Reference>
-    <Reference Include="FhirKhit.Tools.R4">
-      <HintPath>..\..\..\..\Lib\FhirKhit.Tools.R4.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.R4.Core">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.R4.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.R4.Specification">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.R4.Specification.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.Serialization">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.Support">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.Support.dll</HintPath>
-    </Reference>
-    <Reference Include="Hl7.Fhir.Support.Poco">
-      <HintPath>..\..\..\..\Lib\Hl7.Fhir.Support.Poco.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
   <ItemGroup>

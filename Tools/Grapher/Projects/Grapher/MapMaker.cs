@@ -8,21 +8,21 @@ using System.Text;
 
 namespace Grapher
 {
-    class MapMaker
+    public partial class MapMaker
     {
-        protected ResourceMap map;
-        protected bool showCardinality = true;
+        public ResourceMap Map;
+        public bool showCardinality = true;
 
-        protected Color focusColor = Color.White;
-        protected Color fhirColor = Color.LightGray;
+        public Color focusColor = Color.White;
+        public Color fhirColor = Color.LightGray;
 
-        protected Color extensionColor = Color.LightSalmon;
-        protected Color valueSetColor = Color.LightGreen;
-        protected Color targetColor = Color.LightCyan;
-        protected Color componentColor = Color.LightYellow;
-        protected Color extensionReferenceColor = Color.LightBlue;
+        public Color extensionColor = Color.LightSalmon;
+        public Color valueSetColor = Color.LightGreen;
+        public Color targetColor = Color.LightCyan;
+        public Color componentColor = Color.LightYellow;
+        public Color extensionReferenceColor = Color.LightBlue;
 
-        protected String[] SplitTitle(String title, Int32 lineLength)
+        public String[] SplitTitle(String title, Int32 lineLength)
         {
             List<String> retVal = new List<string>();
             String[] stringBits = title.Split(' ');
@@ -67,7 +67,7 @@ namespace Grapher
             return retVal.ToArray();
         }
 
-        protected SENode CreateResourceNode(ResourceMap.Node mapNode,
+        public SENode CreateResourceNode(ResourceMap.Node mapNode,
             String[] text,
             Color color,
             String[] annotations,
@@ -88,7 +88,7 @@ namespace Grapher
 
         public MapMaker(ResourceMap map)
         {
-            this.map = map;
+            this.Map = map;
         }
 
         protected String HRef(ResourceMap.Node mapNode)

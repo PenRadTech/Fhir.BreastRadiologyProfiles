@@ -1,4 +1,5 @@
-﻿using FhirKhit.Tools;
+﻿using Eir.DevTools;
+using FhirKhit.Tools;
 using Hl7.Fhir.Model;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace Grapher
 {
-    partial class ResourceMap
+    public partial class ResourceMap
     {
         [DebuggerDisplay("{Name}")]
         public class Node

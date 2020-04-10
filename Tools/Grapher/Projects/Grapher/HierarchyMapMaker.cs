@@ -31,7 +31,7 @@ namespace Grapher
             SENodeGroup group, 
             String baseName)
         {
-            if (this.map.TryGetNode(baseName, out ResourceMap.Node focusNode) == false)
+            if (this.Map.TryGetNode(baseName, out ResourceMap.Node focusNode) == false)
                 throw new Exception($"Node {baseName} not found");
 
 
@@ -41,7 +41,7 @@ namespace Grapher
                 null);
             group.AppendNode(node);
 
-            foreach (String childUrl in this.map.Children(baseName))
+            foreach (String childUrl in this.Map.Children(baseName))
             {
                 SENodeGroup childrenGroup = new SENodeGroup("children", true);
                 group.AppendChild(childrenGroup);

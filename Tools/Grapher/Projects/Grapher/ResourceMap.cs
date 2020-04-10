@@ -1,4 +1,5 @@
-﻿using FhirKhit.Tools;
+﻿using Eir.DevTools;
+using FhirKhit.Tools;
 using FhirKhit.Tools.R4;
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
