@@ -1,3 +1,3 @@
-..\..\Tools\Bin\PreFrier\PreFrier.exe -m RuleSets
-"C:\Users\Kurt\AppData\Roaming\npm\sushi.cmd" "."
+..\..\..\..\Tools\Eir.FSHpp\Projects\FSHpp\bin\Debug\FSHpp.exe
+rem "C:\Users\Kurt\AppData\Roaming\npm\sushi.cmd" "."
 

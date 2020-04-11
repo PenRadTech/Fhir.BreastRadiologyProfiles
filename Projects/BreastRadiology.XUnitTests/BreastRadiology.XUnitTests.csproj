@@ -30,10 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SVGLib\SVGLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="CommonMark">
       <HintPath>..\..\Lib\CommonMark.dll</HintPath>
     </Reference>
@@ -120,7 +116,5 @@
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy $(SolutionDir)\Lib\Specification.zip $(TargetDir)" />
   </Target>
-
-  <Import Project="..\SharedStuff\SharedStuff.projitems" Label="Shared" />
 
 </Project>

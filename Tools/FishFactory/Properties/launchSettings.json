@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "AutoValidate": {
-      "commandName": "Project",
-      "commandLineArgs": "-o C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank\\Terminology -m C:\\Development\\HL7\\BreastRadiologyProfilesV2\\IG\\Content\\Resources",
-      "workingDirectory": "C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank"
-    }
-  }
-}

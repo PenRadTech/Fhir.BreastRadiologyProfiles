@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "AutoValidate": {
-      "commandName": "Project",
-      "commandLineArgs": "-m RuleSets",
-      "workingDirectory": "C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\FishTank"
-    }
-  }
-}
