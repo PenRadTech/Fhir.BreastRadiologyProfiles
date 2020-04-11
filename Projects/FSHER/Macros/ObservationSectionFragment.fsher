@@ -1,0 +1,11 @@
+// ObservationSectionFragment
+// Constrains a generic observation to be a observation section.
+
+// IncompatibleFragment ObservationLeafFragment
+
+Macro: ObservationSectionFragment
+  Macro ObservationFragment
+  Macro ObservationNoComponentFragment
+  Macro ObservationNoValueFragment
+  * interpretation 0..0
+  * method 0..0

@@ -1,0 +1,5 @@
+ValueSet:  %Name%
+Title: "%Title%"
+Description:  "%Description%"
+//+ Codes
+//- Codes

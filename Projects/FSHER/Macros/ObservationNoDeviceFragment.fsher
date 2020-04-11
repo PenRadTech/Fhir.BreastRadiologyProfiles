@@ -1,0 +1,6 @@
+// ObservationNoDeviceFragment
+// Fragment for all observations that have no device.
+
+Macro: ObservationNoDeviceFragment
+  Macro ObservationFragment
+  * device 0..0

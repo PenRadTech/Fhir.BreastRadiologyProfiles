@@ -1,0 +1,6 @@
+// ObservationNoComponentFragment
+// Used by all BreastRad observations that do not have components.
+
+Macro: ObservationNoComponentFragment
+  Macro ObservationFragment
+  * component 0..0
