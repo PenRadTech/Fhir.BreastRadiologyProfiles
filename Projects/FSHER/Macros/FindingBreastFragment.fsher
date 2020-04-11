@@ -1,7 +1,7 @@
 // FindingBreastFragment
 // Fragment definition for finding section of left or right breast
 
-Macro: FindingBreastFragment
+MacroDef: FindingBreastFragment
   Macro HeaderFragment
   Macro ObservationNoDeviceFragment
   * value[x] only CodeableConcept

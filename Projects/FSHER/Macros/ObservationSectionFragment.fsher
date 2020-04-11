@@ -3,7 +3,7 @@
 
 // IncompatibleFragment ObservationLeafFragment
 
-Macro: ObservationSectionFragment
+MacroDef: ObservationSectionFragment
   Macro ObservationFragment
   Macro ObservationNoComponentFragment
   Macro ObservationNoValueFragment

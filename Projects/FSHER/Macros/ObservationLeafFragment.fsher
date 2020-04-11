@@ -1,5 +1,5 @@
 // ObservationLeafFragment
 // Fragment that constrains observations leaf nodes (no hasMembers references).
 
-Macro: ObservationLeafFragment
+MacroDef: ObservationLeafFragment
   * hasMember 0..0

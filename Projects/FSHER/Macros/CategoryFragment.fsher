@@ -2,7 +2,7 @@
 // This fragment slices Observation.category and 
 // fixes the observation.code value to 'imaging'.
 
-Macro: CategoryFragment
+MacroDef: CategoryFragment
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
