@@ -1,2 +1,2 @@
-..\..\..\Tools\Bin\AutoMate\Eir.AutoMate.exe -n -d . -w FSH -c "Fish.bat" -n -d . -w FSHER -c "Fisher.bat" 
+..\..\..\Tools\Bin\AutoMate\Eir.AutoMate.exe -n FSHer -d . -w FSHER -c "Fisher.bat" -n FSH -d . -w FSH -c "Fish.bat"
 
