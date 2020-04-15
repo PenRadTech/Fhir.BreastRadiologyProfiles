@@ -55,54 +55,6 @@
   "differential": {
     "element": [
       {
-        "id": "Composition.extension",
-        "path": "Composition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Composition.extension:nodeSection",
-        "path": "Composition.extension",
-        "sliceName": "nodeSection",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/gNode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.extension:nodeSection.extension:graph.valueString",
-        "path": "Composition.extension.extension.valueString",
-        "min": 0,
-        "patternString": "focus"
-      },
-      {
-        "id": "Composition.extension:nodeSection.extension:display.valueString",
-        "path": "Composition.extension.extension.valueString",
-        "min": 0,
-        "patternString": "Breast/Radiology/Composition"
-      },
-      {
-        "id": "Composition.extension:nodeSection.extension:targets.valueString",
-        "path": "Composition.extension.extension.valueString",
-        "min": 0,
-        "patternString": "^Composition.section"
-      },
-      {
         "id": "Composition.type",
         "path": "Composition.type",
         "patternCodeableConcept": {
@@ -137,72 +89,6 @@
         "sliceName": "reportSection",
         "min": 1,
         "max": "1"
-      },
-      {
-        "id": "Composition.section:reportSection.extension",
-        "path": "Composition.section.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection",
-        "path": "Composition.section.extension",
-        "sliceName": "nodeSection",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/gNode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:graph.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "focus"
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:group.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "section"
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:display.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "Report/Section"
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:targets.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "^entry"
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:lhsText.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "%card^"
-      },
-      {
-        "id": "Composition.section:reportSection.extension:nodeSection.extension:rhsText.valueString",
-        "path": "Composition.section.extension.extension.valueString",
-        "min": 0,
-        "patternString": "%card^.entry"
       },
       {
         "id": "Composition.section:reportSection.title",

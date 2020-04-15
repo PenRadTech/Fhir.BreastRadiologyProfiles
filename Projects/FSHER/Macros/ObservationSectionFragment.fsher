@@ -4,6 +4,7 @@
 // IncompatibleFragment ObservationLeafFragment
 
 MacroDef: ObservationSectionFragment
+Parent: Observation
   Macro ObservationFragment
   Macro ObservationNoComponentFragment
   Macro ObservationNoValueFragment

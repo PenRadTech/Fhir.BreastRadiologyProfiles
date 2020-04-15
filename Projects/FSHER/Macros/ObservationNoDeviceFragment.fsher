@@ -2,5 +2,6 @@
 // Fragment for all observations that have no device.
 
 MacroDef: ObservationNoDeviceFragment
+Parent: Observation
   Macro ObservationFragment
   * device 0..0

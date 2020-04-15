@@ -1,2 +1,2 @@
-..\..\..\Tools\Eir.FSHer\Projects\FSHer\bin\Debug\FSHer.exe -d FSHer -o FSH
+..\..\..\Tools\Eir.FSHer\Projects\FSHer\bin\Debug\netcoreapp3.1\Eir.FSHer.exe -d FSHer -o FSH
 

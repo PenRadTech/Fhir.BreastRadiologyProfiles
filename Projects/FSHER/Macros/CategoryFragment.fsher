@@ -3,6 +3,7 @@
 // fixes the observation.code value to 'imaging'.
 
 MacroDef: CategoryFragment
+Parent: Observation
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

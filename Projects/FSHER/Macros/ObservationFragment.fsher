@@ -2,6 +2,7 @@
 // Common constraints used in all breast radiology observations.
 
 MacroDef: ObservationFragment
+Parent: Observation
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0

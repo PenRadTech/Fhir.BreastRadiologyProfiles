@@ -2,6 +2,7 @@
 // Observations that have no explicit value.
 
 MacroDef: ObservationNoValueFragment
+Parent: Observation
     Macro ObservationFragment
   * dataAbsentReason 0..0
   * value[x]") 0..0

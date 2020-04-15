@@ -41,12 +41,8 @@ Description: """
   * ^version = "0.0.2"
   // End Macro HeaderFragment
   * type = LOINC#42132-1 "US Breast screening"
-
-	// Create Report section graph node.
-  * extension contains GNode named nodeSection 1..1
-  * extension[nodeSection].extension[graph].valueString = "focus"
-  * extension[nodeSection].extension[display].valueString = "Breast/Radiology/Composition"
-  * extension[nodeSection].extension[targets].valueString = "^Composition.section"
+  // Start Macro GraphNode
+  // End Macro GraphNode
 
   * section ^slicing.discriminator.type = #pattern  
   * section ^slicing.discriminator.path = "code"
@@ -55,16 +51,10 @@ Description: """
   * section ^slicing.description = "Breast Radiology Report Section"  
   * section contains
       reportSection 1..1 
+
   * section[reportSection].code = CompositionSectionSliceCodesCS#sectionReport
   * section[reportSection].title = "Breast Radiology Report"
   * section[reportSection].entry 1..1
   * section[reportSection].entry only Reference(BreastRadiologyReport)
-
-	// Create Report section graph node.
-  * section[reportSection].extension contains GNode named nodeSection 1..1
-  * section[reportSection].extension[nodeSection].extension[graph].valueString = "focus"
-  * section[reportSection].extension[nodeSection].extension[display].valueString = "Report/Section"
-  * section[reportSection].extension[nodeSection].extension[group].valueString = "section"
-  * section[reportSection].extension[nodeSection].extension[targets].valueString = "^entry"
-  * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%card^"
-  * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%card^.entry"
+  // Start Macro GraphNode
+  // End Macro GraphNode

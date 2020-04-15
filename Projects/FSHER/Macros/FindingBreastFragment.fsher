@@ -2,6 +2,7 @@
 // Fragment definition for finding section of left or right breast
 
 MacroDef: FindingBreastFragment
+Parent: Observation
   Macro HeaderFragment
   Macro ObservationNoDeviceFragment
   * value[x] only CodeableConcept
