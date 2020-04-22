@@ -1,0 +1,30 @@
+#include "Common.inc"
+#use "FindingBreastFragment.inc"
+#use "ObservationFragment.inc"
+
+
+Profile: FindingsRightBreast
+Parent: Observation
+Id: findingsRightBreast
+Title: "Findings RightRight Breast"
+Description: """
+	Findings Right Breast Section
+	
+	This Observation contains references to all the observations
+	and exam information related to the Right breast.
+	"""  
+
+  #apply FindingBreastFragment()
+  * bodySite 1..1
+  * bodySite = SNOMED#73056007 "Right breast structure (body structure)"
+  * bodySite.extension contains BuilderSetValue named setValue 1..1
+  * bodySite.extension[setValue].valueCodeableConcept = SNOMED#73056007 "Right breast structure (body structure)"
+
+  * value[x] ^definition = """
+	Composite BiRad value for Right Breast.
+	
+	Typically this is the most severe of all the BiRad 
+	codes set in any of the child observations of the Right breast.
+    """
+
+  * code = ObservationCodesCS#findingsRightBreastObservation

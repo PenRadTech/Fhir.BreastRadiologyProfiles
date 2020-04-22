@@ -1,5 +1,5 @@
-Alias: LOINC = http://loinc.org 
-Alias: SNOMED = http://snomed.info/sct 
+#include "Common.inc"
+#use "HeaderFragment.inc"
 
 Profile: BreastRadiologyDocument
 Parent: Bundle
@@ -17,12 +17,7 @@ Description: """
 	This index composition entry must be an instance of the BreastRadiologyComposition profile.
     """
 
-  * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
-  * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
-  * ^date = "2019-11-01"
-  * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
-  * ^publisher = "Hl7-Clinical Interoperability Council"
-  * ^version = "0.0.2"
+  #apply HeaderFragment()
   * entry ^slicing.discriminator.type = #value
   * entry ^slicing.discriminator.path = "fullUrl"
   * entry ^slicing.rules = #open

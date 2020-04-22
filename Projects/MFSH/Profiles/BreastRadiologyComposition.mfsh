@@ -1,5 +1,7 @@
-Alias: LOINC = http://loinc.org 
-Alias: SNOMED = http://snomed.info/sct 
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "BreastRadiologyCompositionMacros.inc"
+#use "NodeGraph.inc"
 
 
 Profile: BreastRadiologyComposition
@@ -31,28 +33,11 @@ Description: """
     the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
 	"""
 
-  * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
-  * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
-  * ^date = "2019-11-01"
-  * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
-  * ^publisher = "Hl7-Clinical Interoperability Council"
-  * ^version = "0.0.2"
+  #apply HeaderFragment()
   * type = LOINC#42132-1 "US Breast screening"
 
-  // * section[reportSection].extension contains GNode named nodeSection 1..1
-  // * section[reportSection].extension[nodeSection].extension[graph].valueString = "%graphName%"
-  // * section[reportSection].extension[nodeSection].extension[display].valueString = "%displayName%"
-  // * section[reportSection].extension[nodeSection].extension[group].valueString = "%group%"
-  // * section[reportSection].extension[nodeSection].extension[targets].valueString = "%target%"
-  // * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%lhs%"
-  // * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%rhs%"
-  * section ^slicing.discriminator.type = #pattern
-  * section ^slicing.discriminator.path = "code"
-  * section ^slicing.rules = #open
-  * section ^slicing.ordered = false
-  * section ^slicing.description = """
-    Breast Radiology Report Section
-    """
+  #apply GraphNode("focus","Breast/Radiology/Composition","","^Composition.section","","")
+  #apply StartSectionSlicing()
 
   * section contains
       report 1..1 MS and
@@ -60,71 +45,10 @@ Description: """
       findingsRightBreast 0..1 MS and
       findingsLeftBreast 0..1 MS
 
-  //! TODO: Create Report section graph node.
-  * section[report] ^definition = """
-    This section references the Breast Radiology Report.
-
-    One and only one Breast Radiology Report must be included in this section.
-  """
-  * section[report] 1..1
-  * section[report] ^short = "Report Section."
-  * section[report].code = CompositionSectionSliceCodesCS#sectionReport
-  * section[report].title = "Breast Radiology Report"
-
-  * section[report].entry 1..1
-  * section[report].entry only Reference(BreastRadiologyReport)
-  * section[report].entry ^short = "Breast Radiology Report reference"
-  * section[report].entry ^definition = """
-    Reference to the Breast Radiology Report.
-	"""
-  //! TODO: Create graph node.
-  * section[impressions] ^definition = """
-    This section contains references to the report's clinical impressions.
-    """
-  * section[impressions] 0..1
-  * section[impressions] ^short = "Clinical Impressions Section."
-  * section[impressions].code = CompositionSectionSliceCodesCS#sectionReport
-  * section[impressions].title = "Clinical Impressions"
-
-
-  * section[impressions].entry 0..*
-  * section[impressions].entry only Reference(ClinicalImpression)
-  * section[impressions].entry ^short = "Clinical Impression reference"
-  * section[impressions].entry ^definition = """
-    Reference to the clinical impression(s).
-    """
-  //! TODO: Create graph node.
-  * section[findingsRightBreast] ^definition = """
-    This section contains references to the report's findings 
-    for the right breast.
-  """
-  * section[findingsRightBreast] ^short = "Findings Right Breast Section."
-  * section[findingsRightBreast].code = CompositionSectionSliceCodesCS#findingsRightBreast
-  * section[findingsRightBreast].title = "Findings Right Breast Section"
-  * section[findingsRightBreast] 0..1
-
-  * section[findingsRightBreast].entry 0..*
-  * section[findingsRightBreast].entry only Reference(FindingsRightBreast)
-  * section[findingsRightBreast].entry ^short = "Finding Right breast reference"
-  * section[findingsRightBreast].entry ^definition = """
-  Reference to the finding for the Right breast.
-  """
-  //! TODO: Create graph node.
-  * section[findingsLeftBreast] ^definition = """
-    This section contains references to the report's findings 
-    for the left breast.
-  """
-  * section[findingsLeftBreast] ^short = "Findings Left Breast Section."
-  * section[findingsLeftBreast].code = CompositionSectionSliceCodesCS#findingsLeftBreast
-  * section[findingsLeftBreast].title = "Findings Left Breast Section"
-  * section[findingsLeftBreast] 0..1
-
-  * section[findingsLeftBreast].entry 0..*
-  * section[findingsLeftBreast].entry only Reference(FindingsLeftBreast)
-  * section[findingsLeftBreast].entry ^short = "Finding Left breast reference"
-  * section[findingsLeftBreast].entry ^definition = """
-  Reference to the finding for the Left breast.
-  """
+  #apply ReportSection("report") 
+  #apply ImpressionsSection("impressions")
+  #apply FindingsRightBreastSection("findingsRightBreast")
+  #apply FindingsLeftBreastSection("findingsLeftBreast")
 
 
     //// Related Resources Section
@@ -228,4 +152,4 @@ Description: """
     //            "Section",
     //            targets);
     //    }
-    //}
+    //}	

@@ -1,7 +1,0 @@
-// ObservationNoComponentFragment
-// Used by all BreastRad observations that do not have components.
-
-MacroDef: ObservationNoComponentFragment
-Parent: Observation
-  Macro ObservationFragment
-  * component 0..0
