@@ -4,7 +4,6 @@ Alias: SNOMED = http://snomed.info/sct
 
 Profile: FindingsLeftBreast
 Parent: Observation
-Id: findingsLeftBreast
 Title: "Findings Left Breast"
 Description: """
 	Findings Left Breast Section

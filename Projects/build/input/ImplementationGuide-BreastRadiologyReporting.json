@@ -17,7 +17,7 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/breastRadiologyComposition"
+          "reference": "StructureDefinition/BreastRadiologyComposition"
         },
         "name": "Breast Radiology Composition",
         "description": "This profile defines the composition instance for the Breast Radiology FHIR Document.\nThis profile is based on FHIR Composition resource.\n\nThe composition object is a required part of the FHIR Document structure.\nOne composition must exist, and it must be the first resource stored in the FHIR document bundle.\n\nThe other exam related resources are referenced through the \nsections defined in this resource.\n\nThis composition creates the following sections.\n\nA. Report Section.\nThis contains a single reference to the Breast Radiology Report\nAll Breast Radiology Findings are referenced by the reports results element.\n\nB. Impressions Section.\nAll of the clinical impressions created for this exam are referenced in this section.\n\nC. Recommendations Section.\nAll of the service and medication recommendations created for this exam are referenced in this section.\nIf a recommendation is in response to a particular observation or finding, then \nthe recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.",
@@ -25,7 +25,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/breastRadiologyDocument"
+          "reference": "StructureDefinition/BreastRadiologyDocument"
         },
         "name": "Breast Radiology Document",
         "description": "   This is the top level container for the Breast Radiology FHIR Document.\n   This profile is based on FHIR Bundle resource.\n\n   A FHIR Document is a Bundle that provides a single item containing all the \nresource instances that are a part of the Breast Radiology Diagnostic Report.\n\nThe first entry in the bundle is a composition instance that provides an index\nto all the other FHIR resource instances that are part of this document.\nThis index composition entry must be an instance of the BreastRadiologyComposition profile.",
@@ -33,7 +33,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/breastRadiologyReport"
+          "reference": "StructureDefinition/BreastRadiologyReport"
         },
         "name": "Breast Radiology Report",
         "description": "Breast Radiology Diagnostic Report.\n\n   This profile is one of the components of a Breast Radiology Document.\n   Each Breast Radiology Document bundle will contain exactly one\n   Breast Radiology Document instance that is referenced in the\n   document's 'Report' section.\n\n   This instance will contain the top level results of the exam,\n   including the narrative result.\n\nThis resource is a profile of the FHIR DiagnosticReport\n   base resource.\t",
@@ -41,7 +41,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/findingsLeftBreast"
+          "reference": "StructureDefinition/FindingsLeftBreast"
         },
         "name": "Findings Left Breast",
         "description": "Findings Left Breast Section\n\nThis Observation contains references to all the observations\nand exam information related to the left breast.",
@@ -49,7 +49,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/findingsRightBreast"
+          "reference": "StructureDefinition/FindingsRightBreast"
         },
         "name": "Findings RightRight Breast",
         "description": "Findings Right Breast Section\n\nThis Observation contains references to all the observations\nand exam information related to the Right breast.",
@@ -73,18 +73,26 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/gNode"
+          "reference": "StructureDefinition/GString"
         },
-        "name": "Graph Node Extension",
-        "description": "Defines an extension used to embed info used in creating\nthe FHRI graphs.\n",
+        "name": "Graph String Extension",
+        "description": "Defines a string extension.\nIf starts with ^, then string is a fhir path expression.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/gString"
+          "reference": "StructureDefinition/GraphLinkByName"
         },
-        "name": "Graph String Extension",
-        "description": "Defines a string extension.\nIf starts with ^, then string is a fhir path expression.",
+        "name": "GraphLinkByName",
+        "description": "Link parent and child nodes by name.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GraphNode"
+        },
+        "name": "GraphNode",
+        "description": "Defines an extension used to embed info used in creating\nthe FHIR graphs.",
         "exampleBoolean": false
       },
       {

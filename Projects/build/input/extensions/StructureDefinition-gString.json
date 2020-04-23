@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gString",
-  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/gString",
+  "id": "GString",
+  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString",
   "version": "0.2.0",
   "name": "GString",
   "title": "Graph String Extension",
@@ -36,7 +36,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/gString"
+        "fixedUri": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString"
       },
       {
         "id": "Extension.value[x]",

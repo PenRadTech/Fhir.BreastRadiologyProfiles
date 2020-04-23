@@ -3,7 +3,6 @@ Alias: SNOMED = http://snomed.info/sct
 
 Profile: BreastRadiologyReport
 Parent: DiagnosticReport
-Id: breastRadiologyReport
 Title: "Breast Radiology Report"
 Description: """
 	Breast Radiology Diagnostic Report.

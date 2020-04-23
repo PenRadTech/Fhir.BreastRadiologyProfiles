@@ -39,8 +39,7 @@ namespace Grapher
 
         void ParseArgs()
         {
-            Int32 i = 0;
-            while (i < args.Length)
+            while (argIndex < args.Length)
             {
                 String arg = this.GetArg();
                 switch (arg)
@@ -61,7 +60,6 @@ namespace Grapher
                         this.Usage();
                         break;
                 }
-                i += 1;
             }
         }
 

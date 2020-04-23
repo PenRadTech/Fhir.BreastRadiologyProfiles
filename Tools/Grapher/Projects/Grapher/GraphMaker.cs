@@ -1,10 +1,12 @@
 ﻿using Hl7.Fhir.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
 using Eir.DevTools;
 using System.Globalization;
+using System.Linq;
 using FhirKhit.Tools.R4;
 using Hl7.Fhir.Serialization;
 
@@ -29,29 +31,26 @@ namespace Grapher
             }
         }
 
-        void AddResourceInFile(String path)
+        DomainResource LoadResourceInFile(String path)
         {
-            const String fcn = "AddResourceInFile";
+            const String fcn = "LoadResourceInFile";
 
             this.ConversionInfo(this.GetType().Name,
                 fcn,
                 $"Adding FHIR file {path}");
 
-            DomainResource domainResource;
             switch (Path.GetExtension(path).ToUpper(CultureInfo.InvariantCulture))
             {
                 case ".XML":
                     {
                         FhirXmlParser parser = new FhirXmlParser();
-                        domainResource = parser.Parse<DomainResource>(File.ReadAllText(path));
-                        break;
+                        return parser.Parse<DomainResource>(File.ReadAllText(path));
                     }
 
                 case ".JSON":
                     {
                         FhirJsonParser parser = new FhirJsonParser();
-                        domainResource = parser.Parse<DomainResource>(File.ReadAllText(path));
-                        break;
+                        return parser.Parse<DomainResource>(File.ReadAllText(path));
                     }
 
                 default:
@@ -59,12 +58,19 @@ namespace Grapher
             }
         }
 
+        void AddResourceInFile(String path)
+        {
+            DomainResource dr = this.LoadResourceInFile(path);
+            AddResource(dr);
+        }
+
+
         void AddResourcesInDir(String dirPath)
         {
             const String fcn = "AddResourcesInDir";
 
             this.ConversionInfo(this.GetType().Name,
-                fcn, 
+                fcn,
                 $"Adding FHIR files in directory {dirPath}");
 
             foreach (String subDir in Directory.GetDirectories(dirPath))
@@ -100,17 +106,48 @@ namespace Grapher
 
         public Int32 Process()
         {
-            this.GraphicsOutputDir = this.ProcessPath(this.GraphicsOutputDir);
-            LoadGraphicData();
+            const String fcn = "Process";
+
+            try
+            {
+                this.GraphicsOutputDir = this.ProcessPath(this.GraphicsOutputDir);
+                LoadGraphicData();
+                return 0;
+            }
+            catch (Exception e)
+            {
+                this.ConversionInfo(this.GetType().Name,
+                    fcn,
+                    $"error {e.Message}");
+
+                return -1;
+            }
         }
 
         void LoadGraphicData(StructureDefinition sDef)
         {
+            const String fcn = "LoadGraphicData";
+
             sDef.Snapshot = null;
             SnapshotCreator.Create(sDef);
-            
+            foreach (ElementDefinition item in sDef.Snapshot.Element.ExtensionSlices())
+            {
+                String profile = item.Type[0].Profile.FirstOrDefault();
+                switch (profile.LastUriPart())
+                {
+                    case "GraphNode":
+                        this.ConversionInfo(this.GetType().Name,
+                            fcn,
+                            $"Processing {item.ElementId}");
+                        break;
+                    case "GraphLinkByName":
+                        this.ConversionInfo(this.GetType().Name,
+                            fcn,
+                            $"Processing {item.ElementId}");
+                        break;
+                }
+            }
         }
-
 
         void LoadGraphicData()
         {

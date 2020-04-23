@@ -3,7 +3,6 @@ Alias: SNOMED = http://snomed.info/sct
 
 Profile: BreastRadiologyDocument
 Parent: Bundle
-Id: breastRadiologyDocument
 Title: "Breast Radiology Document"
 Description: """
     This is the top level container for the Breast Radiology FHIR Document.

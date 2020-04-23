@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "GraphNode",
+  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GraphNode",
+  "version": "0.2.0",
+  "name": "GraphNode",
+  "status": "active",
+  "description": "Defines an extension used to embed info used in creating\nthe FHIR graphs.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 3
+      },
+      {
+        "id": "Extension.extension:graphName",
+        "path": "Extension.extension",
+        "sliceName": "graphName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:nodeName",
+        "path": "Extension.extension",
+        "sliceName": "nodeName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:displayName",
+        "path": "Extension.extension",
+        "sliceName": "displayName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cssClass",
+        "path": "Extension.extension",
+        "sliceName": "cssClass",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GString"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/GraphNode"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

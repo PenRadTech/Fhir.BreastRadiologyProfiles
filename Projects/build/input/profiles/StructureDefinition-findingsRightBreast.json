@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "findingsRightBreast",
-  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/findingsRightBreast",
+  "id": "FindingsRightBreast",
+  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
   "version": "0.0.2",
   "name": "FindingsRightBreast",
   "title": "Findings RightRight Breast",

@@ -1,10 +1,8 @@
 Alias: LOINC = http://loinc.org 
 Alias: SNOMED = http://snomed.info/sct 
 
-
 Profile: FindingsRightBreast
 Parent: Observation
-Id: findingsRightBreast
 Title: "Findings RightRight Breast"
 Description: """
 	Findings Right Breast Section

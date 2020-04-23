@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "breastRadiologyDocument",
-  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/breastRadiologyDocument",
+  "id": "BreastRadiologyDocument",
+  "url": "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyDocument",
   "version": "0.0.2",
   "name": "BreastRadiologyDocument",
   "title": "Breast Radiology Document",
@@ -84,7 +84,7 @@
           {
             "code": "Composition",
             "profile": [
-              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/breastRadiologyComposition"
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition"
             ]
           }
         ]
