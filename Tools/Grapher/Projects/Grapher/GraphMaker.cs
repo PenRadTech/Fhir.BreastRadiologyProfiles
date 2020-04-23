@@ -13,8 +13,6 @@ namespace Grapher
     public class GraphMaker : ConverterBase
     {
         Dictionary<String, StructureDefinition> structDefDict = new Dictionary<string, StructureDefinition>();
-        Dictionary<String, ValueSet> valueSetDict = new Dictionary<string, ValueSet>();
-        Dictionary<String, CodeSystem> codeSystemDict = new Dictionary<string, CodeSystem>();
 
         public String GraphicsOutputDir { get; set; } = ".";
         public String Graph { get; set; } = "focus";
@@ -26,14 +24,8 @@ namespace Grapher
                 case StructureDefinition sDef:
                     this.structDefDict.Add(sDef.Url, sDef);
                     break;
-                case ValueSet valueSet:
-                    this.valueSetDict.Add(valueSet.Url, valueSet);
-                    break;
-                case CodeSystem codeSystem:
-                    this.codeSystemDict.Add(codeSystem.Url, codeSystem);
-                    break;
                 default:
-                    throw new NotImplementedException($"Fhir resource type '{resource.TypeName}' not implemented.");
+                    break;
             }
         }
 
@@ -109,7 +101,21 @@ namespace Grapher
         public Int32 Process()
         {
             this.GraphicsOutputDir = this.ProcessPath(this.GraphicsOutputDir);
-            throw new NotImplementedException();
+            LoadGraphicData();
+        }
+
+        void LoadGraphicData(StructureDefinition sDef)
+        {
+            sDef.Snapshot = null;
+            SnapshotCreator.Create(sDef);
+            
+        }
+
+
+        void LoadGraphicData()
+        {
+            foreach (StructureDefinition sDef in this.structDefDict.Values)
+                this.LoadGraphicData(sDef);
         }
     }
 }

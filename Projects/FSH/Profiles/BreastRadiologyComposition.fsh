@@ -47,26 +47,22 @@ Description: """
   // * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%lhs%"
   // * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%rhs%"
   * section ^slicing.discriminator.type = #pattern
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "path"
   * section ^slicing.rules = #open
   * section ^slicing.ordered = false
   * section ^slicing.description = """
-    Breast Radiology Report Section
-    """
+  Breast Radiology Report Section
+  """
 
   * section contains
       report 1..1 MS and
-      impressions 0..1 MS and
-      findingsRightBreast 0..1 MS and
-      findingsLeftBreast 0..1 MS
+      impressions 0..1 MS
 
-  //! TODO: Create Report section graph node.
   * section[report] ^definition = """
-    This section references the Breast Radiology Report.
+  This section references the Breast Radiology Report.
 
-    One and only one Breast Radiology Report must be included in this section.
+  One and only one Breast Radiology Report must be included in this section.
   """
-  * section[report] 1..1
   * section[report] ^short = "Report Section."
   * section[report].code = CompositionSectionSliceCodesCS#sectionReport
   * section[report].title = "Breast Radiology Report"
@@ -75,57 +71,95 @@ Description: """
   * section[report].entry only Reference(BreastRadiologyReport)
   * section[report].entry ^short = "Breast Radiology Report reference"
   * section[report].entry ^definition = """
-    Reference to the Breast Radiology Report.
-	"""
-  //! TODO: Create graph node.
+  Reference to the Breast Radiology Report.
+  """
+  //! TODO: Create Report section graph node.
   * section[impressions] ^definition = """
-    This section contains references to the report's clinical impressions.
-    """
-  * section[impressions] 0..1
+  This section contains references to the report's clinical impressions.
+  """
   * section[impressions] ^short = "Clinical Impressions Section."
   * section[impressions].code = CompositionSectionSliceCodesCS#sectionReport
   * section[impressions].title = "Clinical Impressions"
 
-
   * section[impressions].entry 0..*
-  * section[impressions].entry only Reference(ClinicalImpression)
+  * section[impressions].entry only Reference(BreastRadiologyReport)
   * section[impressions].entry ^short = "Clinical Impression reference"
   * section[impressions].entry ^definition = """
-    Reference to the clinical impression(s).
-    """
-  //! TODO: Create graph node.
-  * section[findingsRightBreast] ^definition = """
-    This section contains references to the report's findings 
-    for the right breast.
-  """
-  * section[findingsRightBreast] ^short = "Findings Right Breast Section."
-  * section[findingsRightBreast].code = CompositionSectionSliceCodesCS#findingsRightBreast
-  * section[findingsRightBreast].title = "Findings Right Breast Section"
-  * section[findingsRightBreast] 0..1
-
-  * section[findingsRightBreast].entry 0..*
-  * section[findingsRightBreast].entry only Reference(FindingsRightBreast)
-  * section[findingsRightBreast].entry ^short = "Finding Right breast reference"
-  * section[findingsRightBreast].entry ^definition = """
-  Reference to the finding for the Right breast.
+  Reference to the clinical impression(s).
   """
   //! TODO: Create graph node.
-  * section[findingsLeftBreast] ^definition = """
-    This section contains references to the report's findings 
-    for the left breast.
-  """
-  * section[findingsLeftBreast] ^short = "Findings Left Breast Section."
-  * section[findingsLeftBreast].code = CompositionSectionSliceCodesCS#findingsLeftBreast
-  * section[findingsLeftBreast].title = "Findings Left Breast Section"
-  * section[findingsLeftBreast] 0..1
 
-  * section[findingsLeftBreast].entry 0..*
-  * section[findingsLeftBreast].entry only Reference(FindingsLeftBreast)
-  * section[findingsLeftBreast].entry ^short = "Finding Left breast reference"
-  * section[findingsLeftBreast].entry ^definition = """
-  Reference to the finding for the Left breast.
-  """
+    //// Findings Right Breast Section
+    //{
+    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
+    //    {
+    //        String[] targets = new string[] {Self.FindingsRightBreast.Value().Url};
 
+    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
+    //            "findingsRightBreast",
+    //            "Findings Right Breast",
+    //            Self.SectionCodeFindingsRightBreast,
+    //            out ElementDefinition entry);
+    //        entry
+    //            .ZeroToOne()
+    //            .Type("Reference", null, targets)
+    //            .Short("Finding Right breast reference")
+    //            .Definition("Reference to the finding for the right breast.")
+    //            ;
+    //        sectionSlice.ElementDefinition
+    //            .ZeroToOne()
+    //            .SetShort($"Findings Section Right Breast.")
+    //            .SetDefinition(
+    //    new Markdown()
+    //        .Paragraph(
+    //            $"This section contains references to the report's findings for the right breast.")
+    //            )
+    //            .MustSupport();
+    //        ;
+    //        e.AddComponentLink("Findings Right Breast",
+    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
+    //            new SDefEditor.Cardinality(entry),
+    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
+    //            "Section",
+    //            targets);
+    //    }
+    //}
+
+    //// Findings Left Breast Section
+    //{
+    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
+    //    {
+    //        String[] targets = new string[] {Self.FindingsLeftBreast.Value().Url};
+
+    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
+    //            "findingsLeftBreast",
+    //            "Findings Left Breast",
+    //            Self.SectionCodeFindingsLeftBreast,
+    //            out ElementDefinition entry);
+    //        entry
+    //            .ZeroToOne()
+    //            .Type("Reference", null, targets)
+    //            .Short("Finding left breast reference")
+    //            .Definition("Reference to the finding for the left breast.")
+    //            ;
+    //        sectionSlice.ElementDefinition
+    //            .ZeroToOne()
+    //            .SetShort($"Findings Section Left Breast.")
+    //            .SetDefinition(
+    //    new Markdown()
+    //        .Paragraph(
+    //            $"This section contains references to the report's findings for the left breast.")
+    //            )
+    //            .MustSupport();
+    //        ;
+    //        e.AddComponentLink("Findings Left Breast",
+    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
+    //            new SDefEditor.Cardinality(entry),
+    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
+    //            "Section",
+    //            targets);
+    //    }
+    //}
 
     //// Related Resources Section
     //{

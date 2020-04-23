@@ -74,7 +74,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "code"
+              "path": "path"
             }
           ],
           "rules": "open",
@@ -161,87 +161,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/ClinicalImpression"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:findingsRightBreast",
-        "path": "Composition.section",
-        "sliceName": "findingsRightBreast",
-        "short": "Findings Right Breast Section.",
-        "definition": "This section contains references to the report's findings \nfor the right breast.",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section:findingsRightBreast.title",
-        "path": "Composition.section.title",
-        "patternString": "Findings Right Breast Section"
-      },
-      {
-        "id": "Composition.section:findingsRightBreast.code",
-        "path": "Composition.section.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "findingsRightBreast",
-              "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/CompositionSectionSliceCodesCS"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Composition.section:findingsRightBreast.entry",
-        "path": "Composition.section.entry",
-        "short": "Finding Right breast reference",
-        "definition": "Reference to the finding for the Right breast.",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/findingsRightBreast"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Composition.section:findingsLeftBreast",
-        "path": "Composition.section",
-        "sliceName": "findingsLeftBreast",
-        "short": "Findings Left Breast Section.",
-        "definition": "This section contains references to the report's findings \nfor the left breast.",
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section:findingsLeftBreast.title",
-        "path": "Composition.section.title",
-        "patternString": "Findings Left Breast Section"
-      },
-      {
-        "id": "Composition.section:findingsLeftBreast.code",
-        "path": "Composition.section.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "findingsLeftBreast",
-              "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/CompositionSectionSliceCodesCS"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Composition.section:findingsLeftBreast.entry",
-        "path": "Composition.section.entry",
-        "short": "Finding Left breast reference",
-        "definition": "Reference to the finding for the Left breast.",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/findingsLeftBreast"
+              "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/breastRadiologyReport"
             ]
           }
         ]
