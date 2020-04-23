@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Eir.DevTools;
+using CodeBlockNested = Eir.CodeEditor.CodeBlockNested;
+using CodeEditorXml = Eir.CodeEditor.CodeEditorXml;
 
 namespace BreastRadiology.XUnitTests
 {
@@ -129,7 +132,6 @@ namespace BreastRadiology.XUnitTests
             return this;
         }
 
-        [Obsolete]
         public IntroDoc MissingDescription()
         {
             //CodeBlockNested d = CreateDescriptionBlock();

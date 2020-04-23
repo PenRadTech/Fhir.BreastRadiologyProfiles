@@ -3,6 +3,7 @@ using FhirKhit.Tools.R4;
 using Hl7.Fhir.Model;
 using System;
 using System.Linq;
+using Eir.DevTools;
 
 namespace BreastRadiology.XUnitTests
 {

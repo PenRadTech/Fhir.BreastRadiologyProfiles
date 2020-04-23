@@ -2,13 +2,14 @@
 using FhirKhit.Tools.R4;
 using Hl7.Fhir.Model;
 using Newtonsoft.Json.Linq;
-using PreFhir;
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Eir.DevTools;
 
 namespace BreastRadiology.XUnitTests
 {
@@ -122,10 +123,10 @@ namespace BreastRadiology.XUnitTests
 
             // Make sure that all Observation resources that are not fragments, have Observation.code
             // fixed properly.
-            if (
-                (this.sDef.IsFragment() == false) &&
-                (this.sDef.BaseDefinition == Global.ObservationUrl)
-            )
+            //if (
+            //    (this.sDef.IsFragment() == false) &&
+            //    (this.sDef.BaseDefinition == Global.ObservationUrl)
+            //)
             {
                 if (this.snapNode.TryGetElementNode("Observation.code", out ElementTreeNode codeNode) == false)
                     throw new Exception("Observation.code not found");
@@ -308,27 +309,27 @@ namespace BreastRadiology.XUnitTests
 
         public SDefEditor SetIsFrag()
         {
-            this.SDef.Extension.Add(new Extension
-            {
-                Url = PreFhirGenerator.IsFragmentUrl,
-                Value = new FhirBoolean(true)
-            });
+            //this.SDef.Extension.Add(new Extension
+            //{
+            //    Url = PreFhirGenerator.IsFragmentUrl,
+            //    Value = new FhirBoolean(true)
+            //});
             return this;
         }
 
         public SDefEditor AddFragRef(StructureDefinition sd)
         {
-            if (sd.IsFragment() == false)
-                throw new Exception("Expected a fragment");
+            //if (sd.IsFragment() == false)
+            //    throw new Exception("Expected a fragment");
 
             String fragRef = sd.Url;
             if (String.IsNullOrWhiteSpace(fragRef))
                 throw new Exception($"Fragment Url must not be empty");
-            this.SDef.Extension.Add(new Extension
-            {
-                Url = PreFhirGenerator.FragmentUrl,
-                Value = new FhirUrl(fragRef)
-            });
+            //this.SDef.Extension.Add(new Extension
+            //{
+            //    Url = PreFhirGenerator.FragmentUrl,
+            //    Value = new FhirUrl(fragRef)
+            //});
 
             dynamic packet = new JObject();
             packet.LinkType = "fragment";

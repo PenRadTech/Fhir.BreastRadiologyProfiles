@@ -6,11 +6,12 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Eir.DevTools;
 using FhirKhit.Tools;
 using FhirKhit.Tools.R4;
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
-using PreFhir;
+
 
 namespace BreastRadiology.XUnitTests
 {
@@ -161,9 +162,9 @@ namespace BreastRadiology.XUnitTests
             SDefEditor retVal = this.CreateEditor(name, title, mapName, baseDefinition, groupPath);
 
             retVal.IntroDoc = new IntroDoc();
-            retVal.IntroDoc.TryAddUserMacro("FocusPath", FocusMapMaker.FocusMapName(retVal.SDef.Url.LastUriPart()));
-            retVal.IntroDoc.TryAddUserMacro("TitleArticle", this.Article(title));
-            retVal.IntroDoc.TryAddUserMacro("Title", title);
+            //retVal.IntroDoc.TryAddUserMacro("FocusPath", FocusMapMaker.FocusMapName(retVal.SDef.Url.LastUriPart()));
+            //retVal.IntroDoc.TryAddUserMacro("TitleArticle", this.Article(title));
+            //retVal.IntroDoc.TryAddUserMacro("Title", title);
             retVal.IntroDoc.Load(docTemplateName, Path.Combine(this.pageDir, $"StructureDefinition-{name}-intro.xml"));
 
             return retVal;
@@ -183,8 +184,8 @@ namespace BreastRadiology.XUnitTests
             retVal.SDef.Abstract = true;
 
             retVal.IntroDoc = new IntroDoc();
-            retVal.IntroDoc.TryAddUserMacro("FragPath",
-                FragmentMapMaker.FragmentMapName(retVal.SDef.Url.LastUriPart()));
+            //retVal.IntroDoc.TryAddUserMacro("FragPath",
+            //    FragmentMapMaker.FragmentMapName(retVal.SDef.Url.LastUriPart()));
             retVal.IntroDoc.TryAddUserMacro("TitleArticle", this.Article(title));
             retVal.IntroDoc.TryAddUserMacro("Title", title);
             retVal.IntroDoc.Load("Fragment",
@@ -215,7 +216,7 @@ namespace BreastRadiology.XUnitTests
                 Content = CodeSystem.CodeSystemContentMode.Complete,
                 Count = codes.Count(),
             };
-            cs.AddFragRef(this.HeaderFragment);
+            //cs.AddFragRef(this.HeaderFragment);
 
             // store groupPath as an extension. This is an unregistered extension that will be removed before
             // processing is complete.
@@ -257,7 +258,7 @@ namespace BreastRadiology.XUnitTests
                 Title = title,
                 Description = new Markdown(description)
             };
-            vs.AddFragRef(this.HeaderFragment);
+            //vs.AddFragRef(this.HeaderFragment);
 
             // store groupPath as an extension. This is an unregistered extension that will be removed before
             // processing is complete.
@@ -357,7 +358,7 @@ namespace BreastRadiology.XUnitTests
             IntroDoc doc = new IntroDoc();
             doc.TryAddUserMacro("TitleArticle", this.Article(binding.Title));
             doc.TryAddUserMacro("Title", binding.Title);
-            doc.TryAddUserMacro("FocusPath", FocusMapMaker.FocusMapName(binding.Name));
+            //doc.TryAddUserMacro("FocusPath", FocusMapMaker.FocusMapName(binding.Name));
             doc.Load("ValueSet",
                 Path.Combine(Self.pageDir, $"ValueSet-{binding.Name}-intro.xml"));
             return doc;
