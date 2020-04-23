@@ -6,12 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Lib\specification.zip" Link="specification.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Eir.FhirKhit" Version="1.0.0" />
     <PackageReference Include="Eir.FhirKhit.R4" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
@@ -19,6 +13,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SVGLib\SVGLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="C:\Users\Kurt\.nuget\packages\eir.fhirkhit.r4\1.0.0\contentFiles\any\netstandard2.0\specification.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
