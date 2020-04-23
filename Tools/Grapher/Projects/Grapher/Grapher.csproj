@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Eir.DevTools" Version="1.7.0" />
     <PackageReference Include="Eir.FhirKhit" Version="1.0.0" />
     <PackageReference Include="Eir.FhirKhit.R4" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
@@ -22,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="IntroDoc.template">
+    <None Update="Old\IntroDoc.template">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

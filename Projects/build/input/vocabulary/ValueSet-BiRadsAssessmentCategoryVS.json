@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BiRadsAssessmentCategoryVS",
+  "id": "BiRadsAssessmentCategoryVS",
+  "title": "BiRadsAssessmentCategory ValueSet",
+  "description": "BiRadsAssessmentCategory Value Set",
+  "version": "0.2.0",
+  "url": "http://hl7.org/fhir/us/breast-radiology/ValueSet/BiRadsAssessmentCategoryVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS"
+      }
+    ]
+  }
+}

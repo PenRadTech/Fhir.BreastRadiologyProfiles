@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Grapher": {
+      "commandName": "Project",
+      "commandLineArgs": "-o ^BreastRadiologyProfilesV3\\Projects\\build\\input\\images -i ^BreastRadiologyProfilesV3\\Projects\\build\\input\\profiles ^BreastRadiologyProfilesV3\\Projects\\build\\input\\vocalbulary ^Projects\\build\\extensions"
+    }
+  }
+}

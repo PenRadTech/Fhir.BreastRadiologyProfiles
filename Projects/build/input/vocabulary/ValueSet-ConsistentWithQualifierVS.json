@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ConsistentWithQualifierVS",
+  "id": "ConsistentWithQualifierVS",
+  "title": "ConsistentWithQualifier ValueSet",
+  "description": "ConsistentWithQualifier Value Set",
+  "version": "0.2.0",
+  "url": "http://hl7.org/fhir/us/breast-radiology/ValueSet/ConsistentWithQualifierVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS"
+      }
+    ]
+  }
+}

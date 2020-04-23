@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Grapher
 {
-    public partial class MapMaker
+    public class MapMaker
     {
         public ResourceMap Map;
         public bool showCardinality = true;
