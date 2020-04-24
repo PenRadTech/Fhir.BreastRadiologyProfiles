@@ -37,20 +37,6 @@ Description: """
   * ^version = "0.0.2"
   * type = LOINC#42132-1 "US Breast screening"
 
-   * extension contains GraphNode named Main 1..1
-   * extension[Main].extension[graphName].valueString = "focus" (exactly)
-   * extension[Main].extension[nodeName].valueString = "Main" (exactly)
-   * extension[Main].extension[displayName].valueString = "Breast/Radiology/Composition" (exactly)
-   * extension[Main].extension[cssClass].valueString = "" (exactly)
-  // * section[reportSection].extension[nodeSection].extension[display].valueString = "%displayName%" exactly
-  // * section[reportSection].extension[nodeSection].extension[group].valueString = "%group%" exactly
-  // * section[reportSection].extension[nodeSection].extension[targets].valueString = "%target%" exactly
-  // * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%lhs%"
-  // * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%rhs%"
-   * extension contains GraphLinkByName named MainSectionLink 1..1
-   * extension[MainSectionLink].extension[graphName].valueString = "focus" (exactly)
-   * extension[MainSectionLink].extension[parentName].valueString = "Main" (exactly)
-   * extension[MainSectionLink].extension[childName].valueString = "SectionNodes" (exactly)
   //#apply GraphNode("", "focus","Breast/Radiology/Composition","","^Composition.section","","")
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"

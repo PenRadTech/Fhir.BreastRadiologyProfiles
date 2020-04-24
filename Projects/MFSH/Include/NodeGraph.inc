@@ -1,4 +1,4 @@
-#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass)
+#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("GraphNodes.json")
    * %Path%extension contains GraphNode named NodeName 1..1
    * %Path%extension[NodeName].extension[graphName].valueString = "GraphName" (exactly)
    * %Path%extension[NodeName].extension[nodeName].valueString = "NodeName" (exactly)
@@ -11,7 +11,7 @@
   // * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%rhs%"
 #end
 
-#macro GraphLinkByName(GraphName, LinkName, ParentName, ChildName)
+#macro GraphLinkByName(GraphName, LinkName, ParentName, ChildName) > jsonArray("GraphLinkByName.json")
    * extension contains GraphLinkByName named LinkName 1..1
    * extension[LinkName].extension[graphName].valueString = "GraphName" (exactly)
    * extension[LinkName].extension[parentName].valueString = "ParentName" (exactly)
