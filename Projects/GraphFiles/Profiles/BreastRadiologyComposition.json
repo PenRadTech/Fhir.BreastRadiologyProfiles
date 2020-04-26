@@ -1,0 +1,18 @@
+[
+  {
+    "graphNode" : {
+	  "graphName" : "focus",
+	  "nodeName" : "BreastRadiologyComposition/Main",
+	  "displayName" : "Breast/Radiology/Composition",
+	  "cssClass" : ""
+	}
+  },
+  {
+    "graphLinkByName" : {
+	  "graphName" : "focus",
+	  "source" : "ParentName",
+	  "target" : "BreastRadiologyComposition/SectionNode/*"
+	  }
+	}
+  },
+]

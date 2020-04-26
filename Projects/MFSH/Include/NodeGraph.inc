@@ -2,7 +2,7 @@
   {
     "graphNode" : {
 	  "graphName" : "GraphName",
-	  "nodeName" : "%CurrentClass%/NodeName",
+	  "nodeName" : "NodeName",
 	  "displayName" : "DisplayName",
 	  "cssClass" : "CssClass"
 	}
