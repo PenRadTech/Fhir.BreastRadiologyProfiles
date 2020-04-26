@@ -16,7 +16,7 @@
    Compositon section for Breast Radiology Report.
    */
   #macro ReportSection(SliceName) 
-  //! TODO: Create Report section graph node.
+  #apply GraphNode("focus", "%CurrentClass%/SectionNode/SliceName", "", "Report Section", "")
   * section[SliceName] ^definition = """
     This section references the Breast Radiology Report.
 
@@ -40,7 +40,7 @@
    Compositon section for Impressions.
    */
   #macro ImpressionsSection(SliceName) 
-  //! TODO: Create graph node.
+  #apply GraphNode("focus", "%CurrentClass%/SectionNode/SliceName", "", "Impressions Section", "")
   * section[SliceName] ^definition = """
     This section contains references to the report's clinical impressions.
     """
@@ -67,7 +67,7 @@
    Compositon section for Left Breast Findings.
    */
   #macro FindingsLeftBreastSection(SliceName) 
-  //! TODO: Create graph node.
+  #apply GraphNode("focus", "%CurrentClass%/SectionNode/SliceName", "", "Findings/Left Breast/Section", "")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
@@ -94,7 +94,7 @@
    Compositon section for Right Breast Findings.
    */
   #macro FindingsRightBreastSection(SliceName) 
-  //! TODO: Create graph node.
+  #apply GraphNode("focus", "%CurrentClass%/SectionNode/SliceName", "", "Findings/Right Breast/Section", "")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
