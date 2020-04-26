@@ -51,6 +51,7 @@ Description: """
       findingsRightBreast 0..1 MS and
       findingsLeftBreast 0..1 MS
 
+  //! TODO: Create Report section graph node.
   * section[report] ^definition = """
     This section references the Breast Radiology Report.
 
@@ -67,6 +68,7 @@ Description: """
   * section[report].entry ^definition = """
     Reference to the Breast Radiology Report.
 	"""
+  //! TODO: Create graph node.
   * section[impressions] ^definition = """
     This section contains references to the report's clinical impressions.
     """
@@ -82,6 +84,7 @@ Description: """
   * section[impressions].entry ^definition = """
     Reference to the clinical impression(s).
     """
+  //! TODO: Create graph node.
   * section[findingsRightBreast] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
@@ -97,6 +100,7 @@ Description: """
   * section[findingsRightBreast].entry ^definition = """
   Reference to the finding for the Right breast.
   """
+  //! TODO: Create graph node.
   * section[findingsLeftBreast] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
