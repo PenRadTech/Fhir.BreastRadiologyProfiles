@@ -1,21 +1,24 @@
-#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("GraphNodes.json")
-   * %Path%extension contains GraphNode named NodeName 1..1
-   * %Path%extension[NodeName].extension[graphName].valueString = "GraphName" (exactly)
-   * %Path%extension[NodeName].extension[nodeName].valueString = "NodeName" (exactly)
-   * %Path%extension[NodeName].extension[displayName].valueString = "DisplayName" (exactly)
-   * %Path%extension[NodeName].extension[cssClass].valueString = "CssClass" (exactly)
-  // * section[reportSection].extension[nodeSection].extension[display].valueString = "%displayName%" exactly
-  // * section[reportSection].extension[nodeSection].extension[group].valueString = "%group%" exactly
-  // * section[reportSection].extension[nodeSection].extension[targets].valueString = "%target%" exactly
-  // * section[reportSection].extension[nodeSection].extension[lhsText].valueString = "%lhs%"
-  // * section[reportSection].extension[nodeSection].extension[rhsText].valueString = "%rhs%"
+#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("%GraphDir%\\%BasePath%.json")
+  {
+    "graphNode" : {
+	  "graphName" : "GraphName",
+	  "nodeName" : "%CurrentClass%/NodeName",
+	  "displayName" : "DisplayName",
+	  "cssClass" : "CssClass"
+	}
+  },
 #end
 
-#macro GraphLinkByName(GraphName, LinkName, ParentName, ChildName) > jsonArray("GraphLinkByName.json")
-   * extension contains GraphLinkByName named LinkName 1..1
-   * extension[LinkName].extension[graphName].valueString = "GraphName" (exactly)
-   * extension[LinkName].extension[parentName].valueString = "ParentName" (exactly)
-   * extension[LinkName].extension[childName].valueString = "ChildName" (exactly)
+
+#macro GraphLinkByName(GraphName, LinkName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.json")
+  {
+    "graphLinkByName" : {
+	  "graphName" : "GraphName",
+	  "source" : "ParentName",
+	  "target" : "TargetName"
+	  }
+	}
+  },
 #end
 
 #macro ComponentLink(Title, CardLeft, CardRight, ComponentRef, Types, Targets)

@@ -37,7 +37,6 @@ Description: """
   * ^version = "0.0.2"
   * type = LOINC#42132-1 "US Breast screening"
 
-  //#apply GraphNode("", "focus","Breast/Radiology/Composition","","^Composition.section","","")
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
