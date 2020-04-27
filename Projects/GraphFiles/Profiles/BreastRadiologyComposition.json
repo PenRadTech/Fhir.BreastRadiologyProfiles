@@ -1,50 +1,48 @@
 [
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
+     "displayName" : "Report Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
+     "displayName" : "Impressions Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
+     "displayName" : "Findings/Left Breast/Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
+     "displayName" : "Findings/Right Breast/Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "BreastRadiologyComposition/Main",
+     "displayName" : "Breast/Radiology/Composition",
+     "cssClass" : ""
+   }
+ },
   {
-    "graphNode" : {
-	  "graphName" : "focus",
-	  "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-	  "displayName" : "Report Section",
-	  "cssClass" : ""
-	}
-  },
-  {
-    "graphNode" : {
-	  "graphName" : "focus",
-	  "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-	  "displayName" : "Impressions Section",
-	  "cssClass" : ""
-	}
-  },
-  {
-    "graphNode" : {
-	  "graphName" : "focus",
-	  "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-	  "displayName" : "Findings/Left Breast/Section",
-	  "cssClass" : ""
-	}
-  },
-  {
-    "graphNode" : {
-	  "graphName" : "focus",
-	  "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-	  "displayName" : "Findings/Right Breast/Section",
-	  "cssClass" : ""
-	}
-  },
-  {
-    "graphNode" : {
-	  "graphName" : "focus",
-	  "nodeName" : "BreastRadiologyComposition/Main",
-	  "displayName" : "Breast/Radiology/Composition",
-	  "cssClass" : ""
-	}
-  },
-  {
-    "graphLinkByName" : {
-	  "graphName" : "focus",
-	  "source" : "ParentName",
-	  "target" : "BreastRadiologyComposition/SectionNode/*"
-	  }
-	}
-  },
+ "graphLinkByName" : {
+   "graphName" : "focus",
+   "source" : "ParentName",
+   "target" : "BreastRadiologyComposition/SectionNode/*"
+   },
 ]
