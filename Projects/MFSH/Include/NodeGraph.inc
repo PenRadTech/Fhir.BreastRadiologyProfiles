@@ -1,22 +1,24 @@
-#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("%GraphDir%\\%BasePath%.json")
-  ` {
-  `   "graphNode" : {
-  `     "graphName" : "GraphName",
-  `     "nodeName" : "NodeName",
-  `     "displayName" : "DisplayName",
-  `     "cssClass" : "CssClass"
-  `   }
-  ` },
+#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+  `  {
+  `    "graphNode" : {
+  `      "graphName" : "GraphName",
+  `      "nodeName" : "NodeName",
+  `      "displayName" : "DisplayName",
+  `      "cssClass" : "CssClass"
+  `    }
+  `  },
 #end
 
 
-#macro GraphLinkByName(GraphName, LinkName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.json")
+#macro GraphLinkByName(GraphName, LinkName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   {
-    ` "graphLinkByName" : {
-	`   "graphName" : "GraphName",
-	`   "source" : "ParentName",
-	`   "target" : "TargetName"
-	`   },
+  `  {
+  `    "graphLinkByName" : {
+  `      "graphName" : "GraphName",
+  `      "source" : "ParentName",
+  `      "target" : "TargetName"
+  `    }
+  `  },
 #end
 
 #macro ComponentLink(Title, CardLeft, CardRight, ComponentRef, Types, Targets)
