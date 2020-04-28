@@ -11,7 +11,6 @@
 
 
 #macro GraphLinkByName(GraphName, LinkName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
-  {
   `  {
   `    "graphLinkByName" : {
   `      "graphName" : "GraphName",
