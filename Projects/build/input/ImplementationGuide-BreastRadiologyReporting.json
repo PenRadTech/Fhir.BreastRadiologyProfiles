@@ -65,6 +65,38 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/gBool"
+        },
+        "name": "Graph Bool Extension",
+        "description": "Defines a bool extension.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GString"
+        },
+        "name": "Graph String Extension",
+        "description": "Defines a string extension.\nIf starts with ^, then string is a fhir path expression.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GraphLinkByName"
+        },
+        "name": "GraphLinkByName",
+        "description": "Link parent and child nodes by name.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/GraphNode"
+        },
+        "name": "GraphNode",
+        "description": "Defines an extension used to embed info used in creating\nthe FHIR graphs.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/AbnormalityCystVS"
         },
         "name": "AbnormalityCyst ValueSet",

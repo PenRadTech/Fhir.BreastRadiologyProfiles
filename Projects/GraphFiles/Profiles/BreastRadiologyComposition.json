@@ -2,38 +2,6 @@
  {
    "graphNode" : {
      "graphName" : "focus",
-     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-     "displayName" : "Report Section",
-     "cssClass" : ""
-   }
- },
- {
-   "graphNode" : {
-     "graphName" : "focus",
-     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-     "displayName" : "Impressions Section",
-     "cssClass" : ""
-   }
- },
- {
-   "graphNode" : {
-     "graphName" : "focus",
-     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-     "displayName" : "Findings/Left Breast/Section",
-     "cssClass" : ""
-   }
- },
- {
-   "graphNode" : {
-     "graphName" : "focus",
-     "nodeName" : "%CurrentClass%/SectionNode/SliceName",
-     "displayName" : "Findings/Right Breast/Section",
-     "cssClass" : ""
-   }
- },
- {
-   "graphNode" : {
-     "graphName" : "focus",
      "nodeName" : "BreastRadiologyComposition/Main",
      "displayName" : "Breast/Radiology/Composition",
      "cssClass" : ""
@@ -45,4 +13,36 @@
    "source" : "ParentName",
    "target" : "BreastRadiologyComposition/SectionNode/*"
    },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "BreastRadiologyComposition/SectionNode/report",
+     "displayName" : "Report Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "BreastRadiologyComposition/SectionNode/impressions",
+     "displayName" : "Impressions Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "BreastRadiologyComposition/SectionNode/findingsRightBreast",
+     "displayName" : "Findings/Right Breast/Section",
+     "cssClass" : ""
+   }
+ },
+ {
+   "graphNode" : {
+     "graphName" : "focus",
+     "nodeName" : "BreastRadiologyComposition/SectionNode/findingsLeftBreast",
+     "displayName" : "Findings/Left Breast/Section",
+     "cssClass" : ""
+   }
+ },
 ]
