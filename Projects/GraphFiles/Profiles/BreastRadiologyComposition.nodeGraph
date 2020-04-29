@@ -3,6 +3,7 @@
     "graphNode" : {
       "graphName" : "focus",
       "nodeName" : "BreastRadiologyComposition/Main",
+      "anchorPath" : "BreastRadiologyComposition",
       "displayName" : "Breast/Radiology/Composition",
       "cssClass" : ""
     }
@@ -10,7 +11,7 @@
   {
     "graphLinkByName" : {
       "graphName" : "focus",
-      "source" : "ParentName",
+      "source" : "BreastRadiologyComposition/Main",
       "target" : "BreastRadiologyComposition/SectionNode/*"
     }
   },
@@ -18,6 +19,7 @@
     "graphNode" : {
       "graphName" : "focus",
       "nodeName" : "BreastRadiologyComposition/SectionNode/report",
+      "anchorPath" : "BreastRadiologyComposition.section:report",
       "displayName" : "Report Section",
       "cssClass" : ""
     }
@@ -26,6 +28,7 @@
     "graphNode" : {
       "graphName" : "focus",
       "nodeName" : "BreastRadiologyComposition/SectionNode/impressions",
+      "anchorPath" : "BreastRadiologyComposition.section:impressions",
       "displayName" : "Impressions Section",
       "cssClass" : ""
     }
@@ -34,6 +37,7 @@
     "graphNode" : {
       "graphName" : "focus",
       "nodeName" : "BreastRadiologyComposition/SectionNode/findingsRightBreast",
+      "anchorPath" : "BreastRadiologyComposition.section:findingsRightBreast",
       "displayName" : "Findings/Right Breast/Section",
       "cssClass" : ""
     }
@@ -42,6 +46,7 @@
     "graphNode" : {
       "graphName" : "focus",
       "nodeName" : "BreastRadiologyComposition/SectionNode/findingsLeftBreast",
+      "anchorPath" : "BreastRadiologyComposition.section:findingsLeftBreast",
       "displayName" : "Findings/Left Breast/Section",
       "cssClass" : ""
     }

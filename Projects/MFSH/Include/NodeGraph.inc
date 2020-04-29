@@ -3,6 +3,7 @@
   `    "graphNode" : {
   `      "graphName" : "GraphName",
   `      "nodeName" : "NodeName",
+  `      "anchorPath" : "%Profile%%Path%",
   `      "displayName" : "DisplayName",
   `      "cssClass" : "CssClass"
   `    }
@@ -13,7 +14,7 @@
   `  {
   `    "graphLinkByName" : {
   `      "graphName" : "GraphName",
-  `      "source" : "ParentName",
+  `      "source" : "SourceName",
   `      "target" : "TargetName"
   `    }
   `  },
