@@ -1,0 +1,10 @@
+[
+  {
+    "graphNode" : {
+      "nodeName" : "ClinicalImpression/main",
+      "elementId" : "ClinicalImpression",
+      "displayName" : "ClinicalImpression",
+      "cssClass" : "baseResource"
+    }
+  },
+]

@@ -1,0 +1,12 @@
+rect.focus {
+    fill: white;
+    stroke: Black;
+}
+rect.profile {
+    fill: LightBlue;
+    stroke: Black;
+}
+rect.element {
+    fill: LightYellow;
+    stroke: Black;
+}

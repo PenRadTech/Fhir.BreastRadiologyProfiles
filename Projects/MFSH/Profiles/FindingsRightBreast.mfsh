@@ -1,6 +1,7 @@
 #include "Common.inc"
 #use "FindingBreastFragment.inc"
 #use "ObservationFragment.inc"
+#use "NodeGraph.inc"
 
 Profile: FindingsRightBreast
 Parent: Observation
@@ -13,6 +14,7 @@ Description: """
 	"""  
 
   #apply FindingBreastFragment()
+  #apply GraphNodeProfile("Findings/Right Breast")
   * bodySite 1..1
   * bodySite = SNOMED#73056007 "Right breast structure (body structure)"
   * bodySite.extension contains BuilderSetValue named setValue 1..1

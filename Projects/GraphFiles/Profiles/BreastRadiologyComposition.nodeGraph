@@ -1,54 +1,62 @@
 [
   {
     "graphNode" : {
-      "graphName" : "focus",
-      "nodeName" : "BreastRadiologyComposition/Main",
-      "anchorPath" : "BreastRadiologyComposition",
+      "nodeName" : "BreastRadiologyComposition/main",
+      "elementId" : "BreastRadiologyComposition",
       "displayName" : "Breast/Radiology/Composition",
-      "cssClass" : ""
+      "cssClass" : "profile"
     }
   },
   {
     "graphLinkByName" : {
-      "graphName" : "focus",
-      "source" : "BreastRadiologyComposition/Main",
-      "target" : "BreastRadiologyComposition/SectionNode/*"
+      "traversalName" : "focus",
+      "source" : "BreastRadiologyComposition/main",
+      "target" : "BreastRadiologyComposition/section:*",
+      "depth": 1
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastRadiologyComposition/section:*",
+      "elementId" : ".entry",
+      "depth": 1
     }
   },
   {
     "graphNode" : {
-      "graphName" : "focus",
-      "nodeName" : "BreastRadiologyComposition/SectionNode/report",
-      "anchorPath" : "BreastRadiologyComposition.section:report",
+      "nodeName" : "BreastRadiologyComposition/section:report",
+      "elementId" : "BreastRadiologyComposition.section:report",
       "displayName" : "Report Section",
-      "cssClass" : ""
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:report"
     }
   },
   {
     "graphNode" : {
-      "graphName" : "focus",
-      "nodeName" : "BreastRadiologyComposition/SectionNode/impressions",
-      "anchorPath" : "BreastRadiologyComposition.section:impressions",
+      "nodeName" : "BreastRadiologyComposition/section:impressions",
+      "elementId" : "BreastRadiologyComposition.section:impressions",
       "displayName" : "Impressions Section",
-      "cssClass" : ""
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:impressions"
     }
   },
   {
     "graphNode" : {
-      "graphName" : "focus",
-      "nodeName" : "BreastRadiologyComposition/SectionNode/findingsRightBreast",
-      "anchorPath" : "BreastRadiologyComposition.section:findingsRightBreast",
+      "nodeName" : "BreastRadiologyComposition/section:findingsRightBreast",
+      "elementId" : "BreastRadiologyComposition.section:findingsRightBreast",
       "displayName" : "Findings/Right Breast/Section",
-      "cssClass" : ""
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsRightBreast"
     }
   },
   {
     "graphNode" : {
-      "graphName" : "focus",
-      "nodeName" : "BreastRadiologyComposition/SectionNode/findingsLeftBreast",
-      "anchorPath" : "BreastRadiologyComposition.section:findingsLeftBreast",
+      "nodeName" : "BreastRadiologyComposition/section:findingsLeftBreast",
+      "elementId" : "BreastRadiologyComposition.section:findingsLeftBreast",
       "displayName" : "Findings/Left Breast/Section",
-      "cssClass" : ""
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsLeftBreast"
     }
   },
 ]

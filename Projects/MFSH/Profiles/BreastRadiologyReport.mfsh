@@ -1,4 +1,5 @@
 #include "Common.inc"
+#include "NodeGraph.inc"
 #use "HeaderFragment.inc"
 
 Profile: BreastRadiologyReport
@@ -19,6 +20,7 @@ Description: """
     base resource.	
 	"""
   #apply HeaderFragment()
+  #apply GraphNodeProfile("Report")
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
   * code = LOINC#10193-1
   * specimen 0..0

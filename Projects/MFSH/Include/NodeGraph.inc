@@ -1,21 +1,50 @@
-#macro GraphNode(GraphName, NodeName, %Path%, DisplayName, CssClass) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+//
+// Make a graph node that refers to a profile.
+//
+#macro GraphNodeProfile(DisplayName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphNode" : {
-  `      "graphName" : "GraphName",
-  `      "nodeName" : "NodeName",
-  `      "anchorPath" : "%Profile%%Path%",
+  `      "nodeName" : "%Profile%/main",
+  `      "elementId" : "%Profile%",
   `      "displayName" : "DisplayName",
-  `      "cssClass" : "CssClass"
+  `      "cssClass" : "profile"
   `    }
   `  },
 #end
 
-#macro GraphLinkByName(GraphName, LinkName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+//
+// Make a graph node that refers to an element in a profile.
+//
+#macro GraphNodeElement(%Path%, DisplayName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "%Profile%/%Path%",
+  `      "elementId" : "%Profile%.%Path%",
+  `      "displayName" : "DisplayName",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^%Profile%.%Path%"
+  `    }
+  `  },
+#end
+
+#macro GraphLinkByName(TraversalName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphLinkByName" : {
-  `      "graphName" : "GraphName",
+  `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
-  `      "target" : "TargetName"
+  `      "target" : "TargetName",
+  `      "depth": 1
+  `    }
+  `  },
+#end
+
+#macro GraphLinkByReference(TraversalName, SourceName, ElementId) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+  `  {
+  `    "graphLinkByReference" : {
+  `      "traversalName" : "TraversalName",
+  `      "source" : "SourceName",
+  `      "elementId" : "ElementId",
+  `      "depth": 1
   `    }
   `  },
 #end

@@ -1,5 +1,6 @@
 #include "Common.inc"
 #use "HeaderFragment.inc"
+#use "NodeGraph.inc"
 
 Profile: BreastRadiologyDocument
 Parent: Bundle
@@ -17,6 +18,7 @@ Description: """
     """
 
   #apply HeaderFragment()
+  #apply GraphNodeProfile("Breast/Radiology/Document")
   * entry ^slicing.discriminator.type = #value
   * entry ^slicing.discriminator.path = "fullUrl"
   * entry ^slicing.rules = #open

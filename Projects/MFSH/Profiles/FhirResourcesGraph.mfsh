@@ -1,0 +1,12 @@
+#macro GraphNodeFhirResource(BaseResource) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BaseResource/main",
+  `      "elementId" : "BaseResource",
+  `      "displayName" : "BaseResource",
+  `      "cssClass" : "baseResource"
+  `    }
+  `  },
+#end
+
+#apply GraphNodeFhirResource("ClinicalImpression")

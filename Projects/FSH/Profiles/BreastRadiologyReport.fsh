@@ -1,5 +1,15 @@
 Alias: LOINC = http://loinc.org 
 Alias: SNOMED = http://snomed.info/sct 
+//
+// Make a graph node that refers to a profile.
+//
+
+//
+// Make a graph node that refers to an element in a profile.
+//
+
+
+
 
 Profile: BreastRadiologyReport
 Parent: DiagnosticReport
