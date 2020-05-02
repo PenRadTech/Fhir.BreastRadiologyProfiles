@@ -1,7 +1,7 @@
 [
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/main",
+      "nodeName" : "BreastRadiologyComposition",
       "elementId" : "BreastRadiologyComposition",
       "displayName" : "Breast/Radiology/Composition",
       "cssClass" : "profile"
@@ -10,15 +10,15 @@
   {
     "graphLinkByName" : {
       "traversalName" : "focus",
-      "source" : "BreastRadiologyComposition/main",
-      "target" : "BreastRadiologyComposition/section:*",
+      "source" : "^BreastRadiologyComposition$",
+      "target" : "^BreastRadiologyComposition/section:",
       "depth": 1
     }
   },
   {
     "graphLinkByReference" : {
       "traversalName" : "focus",
-      "source" : "BreastRadiologyComposition/section:*",
+      "source" : "^BreastRadiologyComposition/section:",
       "elementId" : ".entry",
       "depth": 1
     }

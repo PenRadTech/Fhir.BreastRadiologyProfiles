@@ -1,7 +1,7 @@
 [
   {
     "graphNode" : {
-      "nodeName" : "FindingsRightBreast/main",
+      "nodeName" : "FindingsRightBreast",
       "elementId" : "FindingsRightBreast",
       "displayName" : "Findings/Right Breast",
       "cssClass" : "profile"

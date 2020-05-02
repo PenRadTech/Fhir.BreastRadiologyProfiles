@@ -4,7 +4,7 @@
 #macro GraphNodeProfile(DisplayName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Profile%/main",
+  `      "nodeName" : "%Profile%",
   `      "elementId" : "%Profile%",
   `      "displayName" : "DisplayName",
   `      "cssClass" : "profile"

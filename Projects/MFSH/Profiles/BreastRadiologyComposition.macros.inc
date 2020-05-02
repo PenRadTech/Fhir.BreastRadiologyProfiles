@@ -17,6 +17,7 @@
    */
   #macro ReportSection(SliceName) 
   #apply GraphNodeElement("section:SliceName", "Report Section")
+  
   * section[SliceName] ^definition = """
     This section references the Breast Radiology Report.
 

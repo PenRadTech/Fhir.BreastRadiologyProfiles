@@ -1,7 +1,7 @@
 [
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyDocument/main",
+      "nodeName" : "BreastRadiologyDocument",
       "elementId" : "BreastRadiologyDocument",
       "displayName" : "Breast/Radiology/Document",
       "cssClass" : "profile"

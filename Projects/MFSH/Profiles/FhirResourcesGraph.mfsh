@@ -1,7 +1,7 @@
 #macro GraphNodeFhirResource(BaseResource) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "BaseResource/main",
+  `      "nodeName" : "BaseResource",
   `      "elementId" : "BaseResource",
   `      "displayName" : "BaseResource",
   `      "cssClass" : "baseResource"
