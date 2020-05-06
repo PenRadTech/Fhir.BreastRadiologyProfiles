@@ -1,0 +1,29 @@
+//
+// Make a graph node that refers to a profile.
+//
+#macro IntroDoc(%Doc%) > text("%PageContent%\\StructureDefinition-%Profile%-intro.xml")
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `   %Doc%
+  `   </p>
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of:
+  `     <ul>
+  `       <li>which fragments are included in this fragment</li>
+  `       <li>which fragments include this fragment</li>
+  `     </ul>
+  `     <p>
+  `       Click on any of the elements of the graph to go to a section describing that element.
+  `     </p>
+  `   </p>
+  `   <object data="Frag-ObservedSizeFragment.svg" type="image/svg+xml">
+  `     <img src="Frag-ObservedSizeFragment.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
+#end
+
