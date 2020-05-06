@@ -2,7 +2,9 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyReport",
-      "elementId" : "BreastRadiologyReport",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyReport"
+      },
       "displayName" : "Report",
       "cssClass" : "profile"
     }
@@ -10,7 +12,10 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyReport/code",
-      "elementId" : "BreastRadiologyReport.code",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyReport",
+        "item" : "code"
+      },
       "displayName" : "Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyReport.code"
@@ -28,7 +33,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastRadiologyReport/",
-      "elementId" : "",
+      "item" : "",
       "depth": 1
     }
   },

@@ -5,7 +5,9 @@
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Profile%",
-  `      "elementId" : "%Profile%",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "profile"
   `    }
@@ -19,7 +21,10 @@
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Profile%/%Path%",
-  `      "elementId" : "%Profile%.%Path%",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "%Path%"
+  `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
   `      "lhsAnnotationText": "^%Profile%.%Path%"
@@ -38,12 +43,12 @@
   `  },
 #end
 
-#macro GraphLinkByReference(TraversalName, SourceName, ElementId) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphLinkByReference(TraversalName, SourceName, Item) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphLinkByReference" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
-  `      "elementId" : "ElementId",
+  `      "item" : "Item",
   `      "depth": 1
   `    }
   `  },

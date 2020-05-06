@@ -2,7 +2,9 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyDocument",
-      "elementId" : "BreastRadiologyDocument",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyDocument"
+      },
       "displayName" : "Breast/Radiology/Document",
       "cssClass" : "profile"
     }

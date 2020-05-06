@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FocusGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="574.5" height="63.75">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="774" height="82.5">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.875" refY="1.875">
 <circle fill="Black" stroke-width="0" cx="1.875" cy="1.875" r="1.875" />
@@ -36,6 +36,24 @@
 <g transform="translate(427.5 7.5)">
 <rect class="element" fill="White" stroke="Black" stroke-width="1.875" x="0" y="0" width="57" height="33.75" rx="3.75" ry="3.75" />
 <text x="28.5" y="22.5" text-anchor="middle" class="element">Code</text>
+</g>
+<line stroke="Black" stroke-width="1.875" marker-end="url(#arrowEnd)" x1="529.5" y1="33.75" x2="574.5" y2="33.75" />
+<text x="533.25" y="30" text-anchor="left">pattern </text>
+<line stroke="Black" stroke-width="1.875" marker-start="url(#arrowStart)" x1="484.5" y1="24.375" x2="529.5" y2="24.375" />
+<text x="488.25" y="20.625" text-anchor="left"></text>
+<line stroke="Black" stroke-width="1.875" x1="529.5" y1="24.375" x2="529.5" y2="33.75" />
+</g>
+<g>
+<g transform="translate(574.5 7.5)">
+<a href="http://loinc.org" target="_top">
+<rect fill="White" stroke="Black" stroke-width="1.875" x="0" y="0" width="109.49999" height="52.5" rx="3.75" ry="3.75" />
+</a>
+<a href="http://loinc.org" target="_top">
+<text x="54.749996" y="22.5" text-anchor="middle">10193-1</text>
+</a>
+<a href="http://loinc.org" target="_top">
+<text x="54.749996" y="41.25" text-anchor="middle">loinc.org</text>
+</a>
 </g>
 </g>
 </svg>

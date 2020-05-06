@@ -2,7 +2,9 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition",
-      "elementId" : "BreastRadiologyComposition",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition"
+      },
       "displayName" : "Breast/Radiology/Composition",
       "cssClass" : "profile"
     }
@@ -19,14 +21,17 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastRadiologyComposition/section:",
-      "elementId" : ".entry",
+      "item" : ".entry",
       "depth": 1
     }
   },
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition/section:report",
-      "elementId" : "BreastRadiologyComposition.section:report",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:report"
+      },
       "displayName" : "Report Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:report"
@@ -35,7 +40,10 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition/section:impressions",
-      "elementId" : "BreastRadiologyComposition.section:impressions",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:impressions"
+      },
       "displayName" : "Impressions Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:impressions"
@@ -44,7 +52,10 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition/section:findingsRightBreast",
-      "elementId" : "BreastRadiologyComposition.section:findingsRightBreast",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:findingsRightBreast"
+      },
       "displayName" : "Findings/Right Breast/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsRightBreast"
@@ -53,7 +64,10 @@
   {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition/section:findingsLeftBreast",
-      "elementId" : "BreastRadiologyComposition.section:findingsLeftBreast",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:findingsLeftBreast"
+      },
       "displayName" : "Findings/Left Breast/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsLeftBreast"

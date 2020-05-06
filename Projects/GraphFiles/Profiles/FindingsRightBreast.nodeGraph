@@ -2,7 +2,9 @@
   {
     "graphNode" : {
       "nodeName" : "FindingsRightBreast",
-      "elementId" : "FindingsRightBreast",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast"
+      },
       "displayName" : "Findings/Right Breast",
       "cssClass" : "profile"
     }
