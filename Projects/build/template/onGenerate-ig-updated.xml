@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="BreastRadiologyReporting"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h2>BreastRadiologyReporting</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>http://hl7.org/fhir/us/breast-radiology/ImplementationGuide/BreastRadiologyReporting</pre>
+         <div>
+            <p>Breast Radiology Reporting Implementation Guide</p>
+         </div>
+      </div>
+   </text>
+   <url value="http://hl7.org/fhir/us/breast-radiology/ImplementationGuide/BreastRadiologyReporting"/>
+   <version value="0.2.0"/>
+   <name value="BreastRadiologyReporting"/>
+   <title value="Breast Radiology Reporting"/>
+   <status value="active"/>
+   <date value="2020-05-06T17:53:28-05:00"/>
+   <publisher value="Kurt X. Allen"/>
+   <description value="Breast Radiology Reporting Implementation Guide"/>
+   <packageId value="BreastRadiologyReporting"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <definition>
+
+
+
+
+
+
+      <grouping id="_str_profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources that need to be complied with by conformant implementations"/>
+      </grouping>
+
+      <grouping id="_str_extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types that need to be complied with by conformant implementations"/>
+      </grouping>
+      <grouping id="_term_valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming with this implementation guide"/>
+      </grouping>
+      <grouping id="_term_codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming with this implementation guide"/>
+      </grouping>
+
+
+
+
+
+
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-BreastRadiologyComposition.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/BreastRadiologyComposition"/>
+         </reference>
+         <name value="Breast Radiology Composition"/>
+         <description value="This profile defines the composition instance for the Breast Radiology FHIR Document."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-BreastRadiologyDocument.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/BreastRadiologyDocument"/>
+         </reference>
+         <name value="Breast Radiology Document"/>
+         <description value="   This is the top level container for the Breast Radiology FHIR Document.&#xA;   This profile is based on FHIR Bundle resource.&#xA;&#xA;   A FHIR Document is a Bundle that provides a single item containing all the &#xA;resource instances that are a part of the Breast Radiology Diagnostic Report.&#xA;&#xA;The first entry in the bundle is a composition instance that provides an index&#xA;to all the other FHIR resource instances that are part of this document.&#xA;This index composition entry must be an instance of the BreastRadiologyComposition profile."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-BreastRadiologyReport.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/BreastRadiologyReport"/>
+         </reference>
+         <name value="Breast Radiology Report"/>
+         <description value="Breast Radiology Diagnostic Report.&#xA;&#xA;   This profile is one of the components of a Breast Radiology Document.&#xA;   Each Breast Radiology Document bundle will contain exactly one&#xA;   Breast Radiology Document instance that is referenced in the&#xA;   document's 'Report' section.&#xA;&#xA;   This instance will contain the top level results of the exam,&#xA;   including the narrative result.&#xA;&#xA;This resource is a profile of the FHIR DiagnosticReport&#xA;   base resource.&#x9;"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-FindingsLeftBreast.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/FindingsLeftBreast"/>
+         </reference>
+         <name value="Findings Left Breast"/>
+         <description value="Findings Left Breast Section&#xA;&#xA;This Observation contains references to all the observations&#xA;and exam information related to the left breast."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-FindingsRightBreast.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/FindingsRightBreast"/>
+         </reference>
+         <name value="Findings RightRight Breast"/>
+         <description value="Findings Right Breast Section&#xA;&#xA;This Observation contains references to all the observations&#xA;and exam information related to the Right breast."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-builderetValue.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/builderetValue"/>
+         </reference>
+         <name value="Builder Set Value Extension"/>
+         <description value="This element extension defines the value that element should be set to.&#xA;&#xA;This is used by local tooling and i stripped from the profile before it is completed."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-gBool.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/gBool"/>
+         </reference>
+         <name value="Graph Bool Extension"/>
+         <description value="Defines a bool extension."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-GString.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/GString"/>
+         </reference>
+         <name value="Graph String Extension"/>
+         <description value="Defines a string extension.&#xA;If starts with ^, then string is a fhir path expression."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-GraphLinkByName.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/GraphLinkByName"/>
+         </reference>
+         <name value="GraphLinkByName"/>
+         <description value="Link parent and child nodes by name."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-GraphNode.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/GraphNode"/>
+         </reference>
+         <name value="GraphNode"/>
+         <description value="Defines an extension used to embed info used in creating&#xA;the FHIR graphs."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_str_extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityCystVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityCystVS"/>
+         </reference>
+         <name value="AbnormalityCyst ValueSet"/>
+         <description value="AbnormalityCyst Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityDuctVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityDuctVS"/>
+         </reference>
+         <name value="AbnormalityDuct ValueSet"/>
+         <description value="AbnormalityDuct Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityFibroAdenomaVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityFibroAdenomaVS"/>
+         </reference>
+         <name value="AbnormalityFibroAdenoma ValueSet"/>
+         <description value="AbnormalityFibroAdenoma Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityForeignObjectVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityForeignObjectVS"/>
+         </reference>
+         <name value="AbnormalityForeignObject ValueSet"/>
+         <description value="AbnormalityForeignObject Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityLymphNodeVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityLymphNodeVS"/>
+         </reference>
+         <name value="AbnormalityLymphNode ValueSet"/>
+         <description value="AbnormalityLymphNode Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AbnormalityMassVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AbnormalityMassVS"/>
+         </reference>
+         <name value="AbnormalityMass ValueSet"/>
+         <description value="AbnormalityMass Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-AssociatedFeatureVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/AssociatedFeatureVS"/>
+         </reference>
+         <name value="AssociatedFeature ValueSet"/>
+         <description value="AssociatedFeature Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-BiRadsAssessmentCategoryVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/BiRadsAssessmentCategoryVS"/>
+         </reference>
+         <name value="BiRadsAssessmentCategory ValueSet"/>
+         <description value="BiRadsAssessmentCategory Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-BreastBodyLocationClockPositionsVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/BreastBodyLocationClockPositionsVS"/>
+         </reference>
+         <name value="BreastBodyLocationClockPositions ValueSet"/>
+         <description value="BreastBodyLocationClockPositions Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-BreastBodyLocationDepthVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/BreastBodyLocationDepthVS"/>
+         </reference>
+         <name value="BreastBodyLocationDepth ValueSet"/>
+         <description value="BreastBodyLocationDepth Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-BreastBodyLocationQuadrantsVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/BreastBodyLocationQuadrantsVS"/>
+         </reference>
+         <name value="BreastBodyLocationQuadrants ValueSet"/>
+         <description value="BreastBodyLocationQuadrants Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-BreastBodyLocationRegionsVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/BreastBodyLocationRegionsVS"/>
+         </reference>
+         <name value="BreastBodyLocationRegions ValueSet"/>
+         <description value="BreastBodyLocationRegions Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-CalcificationDistributionVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/CalcificationDistributionVS"/>
+         </reference>
+         <name value="CalcificationDistribution ValueSet"/>
+         <description value="CalcificationDistribution Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ConsistentWithQualifierVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ConsistentWithQualifierVS"/>
+         </reference>
+         <name value="ConsistentWithQualifier ValueSet"/>
+         <description value="ConsistentWithQualifier Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ConsistentWithVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ConsistentWithVS"/>
+         </reference>
+         <name value="ConsistentWith ValueSet"/>
+         <description value="ConsistentWith Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-CorrespondsWithVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/CorrespondsWithVS"/>
+         </reference>
+         <name value="CorrespondsWith ValueSet"/>
+         <description value="CorrespondsWith Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MGAbnormalityAsymmetryVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MGAbnormalityAsymmetryVS"/>
+         </reference>
+         <name value="MGAbnormalityAsymmetry ValueSet"/>
+         <description value="MGAbnormalityAsymmetry Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MGAbnormalityCalcificationVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MGAbnormalityCalcificationVS"/>
+         </reference>
+         <name value="MGAbnormalityCalcification ValueSet"/>
+         <description value="MGAbnormalityCalcification Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MGAbnormalityDensityVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MGAbnormalityDensityVS"/>
+         </reference>
+         <name value="MGAbnormalityDensity ValueSet"/>
+         <description value="MGAbnormalityDensity Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MGBreastDensityVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MGBreastDensityVS"/>
+         </reference>
+         <name value="MGBreastDensity ValueSet"/>
+         <description value="MGBreastDensity Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MGDensityVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MGDensityVS"/>
+         </reference>
+         <name value="MGDensity ValueSet"/>
+         <description value="MGDensity Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-MarginVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/MarginVS"/>
+         </reference>
+         <name value="Margin ValueSet"/>
+         <description value="Margin Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-NotPreviouslySeenVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/NotPreviouslySeenVS"/>
+         </reference>
+         <name value="NotPreviouslySeen ValueSet"/>
+         <description value="NotPreviouslySeen Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ObservedChangesVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ObservedChangesVS"/>
+         </reference>
+         <name value="ObservedChanges ValueSet"/>
+         <description value="ObservedChanges Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-OrientationVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/OrientationVS"/>
+         </reference>
+         <name value="Orientation ValueSet"/>
+         <description value="Orientation Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-PreviouslyDemonstratedByVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/PreviouslyDemonstratedByVS"/>
+         </reference>
+         <name value="PreviouslyDemonstratedBy ValueSet"/>
+         <description value="PreviouslyDemonstratedBy Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ServiceRecommendationVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ServiceRecommendationVS"/>
+         </reference>
+         <name value="ServiceRecommendation ValueSet"/>
+         <description value="ServiceRecommendation Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-ShapeVS.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/ShapeVS"/>
+         </reference>
+         <name value="Shape ValueSet"/>
+         <description value="Shape Value Set"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityCystCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityCystCS"/>
+         </reference>
+         <name value="AbnormalityCyst CodeSystem"/>
+         <description value="AbnormalityCyst CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityCystTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityCystTypeCS"/>
+         </reference>
+         <name value="Cyst Type CodeSystem"/>
+         <description value="Cyst abnormality type CodeSystem."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityDuctCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityDuctCS"/>
+         </reference>
+         <name value="AbnormalityDuct CodeSystem"/>
+         <description value="AbnormalityDuct CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityDuctTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityDuctTypeCS"/>
+         </reference>
+         <name value="Duct Type CodeSystem"/>
+         <description value="Duct abnormality types code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityFibroAdenomaCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityFibroAdenomaCS"/>
+         </reference>
+         <name value="AbnormalityFibroAdenoma CodeSystem"/>
+         <description value="AbnormalityFibroAdenoma CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityForeignObjectCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityForeignObjectCS"/>
+         </reference>
+         <name value="AbnormalityForeignObject CodeSystem"/>
+         <description value="AbnormalityForeignObject CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityLymphNodeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityLymphNodeCS"/>
+         </reference>
+         <name value="AbnormalityLymphNode CodeSystem"/>
+         <description value="AbnormalityLymphNode CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityLymphNodeTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityLymphNodeTypeCS"/>
+         </reference>
+         <name value="Lymph Node Type CodeSystem"/>
+         <description value="Lymph node abnormality types code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AbnormalityMassCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AbnormalityMassCS"/>
+         </reference>
+         <name value="AbnormalityMass CodeSystem"/>
+         <description value="AbnormalityMass CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-AssociatedFeatureCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/AssociatedFeatureCS"/>
+         </reference>
+         <name value="Associated Feature CodeSystem"/>
+         <description value="Associated Feature seen during a breast examination."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BiRadsAssessmentCategoriesCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BiRadsAssessmentCategoriesCS"/>
+         </reference>
+         <name value="BiRads(r) Assessment Category Codes CodeSystem"/>
+         <description value="BiRads(r) Assessment Category code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BiRadsAssessmentCategoryCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BiRadsAssessmentCategoryCS"/>
+         </reference>
+         <name value="BiRadsAssessmentCategory CodeSystem"/>
+         <description value="BiRadsAssessmentCategory CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastBodyLocationClockPositionsCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastBodyLocationClockPositionsCS"/>
+         </reference>
+         <name value="BreastBodyLocationClockPositions CodeSystem"/>
+         <description value="BreastBodyLocationClockPositions CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastBodyLocationDepthCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastBodyLocationDepthCS"/>
+         </reference>
+         <name value="BreastBodyLocationDepth CodeSystem"/>
+         <description value="BreastBodyLocationDepth CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastBodyLocationQuadrantsCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastBodyLocationQuadrantsCS"/>
+         </reference>
+         <name value="BreastBodyLocationQuadrants CodeSystem"/>
+         <description value="BreastBodyLocationQuadrants CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastBodyLocationRegionsCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastBodyLocationRegionsCS"/>
+         </reference>
+         <name value="BreastBodyLocationRegions CodeSystem"/>
+         <description value="BreastBodyLocationRegions CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastLocationClockCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastLocationClockCS"/>
+         </reference>
+         <name value="Breast Location Clock CodeSystem"/>
+         <description value="Breast body location angles (expressed in clock-face units) code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastLocationDepthCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastLocationDepthCS"/>
+         </reference>
+         <name value="Breast Location Depth CodeSystem"/>
+         <description value="Breast body location depth code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastLocationQuadrantCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastLocationQuadrantCS"/>
+         </reference>
+         <name value="Breast Location Quadrant CodeSystem"/>
+         <description value="Breast body location quadrant code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-BreastLocationRegionCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/BreastLocationRegionCS"/>
+         </reference>
+         <name value="Breast Location Region CodeSystem"/>
+         <description value="Breast body location region code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-CalcificationDistributionCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/CalcificationDistributionCS"/>
+         </reference>
+         <name value="Calcification Distribution CodeSystem"/>
+         <description value="Calcification Distribution in an abnormality code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-CompositionSectionSliceCodes.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/CompositionSectionSliceCodes"/>
+         </reference>
+         <name value="Composition Section Slice Codes CodeSystem"/>
+         <description value="Composition Section Slice Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-CompositionSectionSliceCodesCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/CompositionSectionSliceCodesCS"/>
+         </reference>
+         <name value="Composition Section Slice Codes CodeSystem"/>
+         <description value="Composition Section Slice Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ConsistentWithCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ConsistentWithCS"/>
+         </reference>
+         <name value="ConsistentWith CodeSystem"/>
+         <description value="ConsistentWith CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ConsistentWithCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ConsistentWithCodeSystemCS"/>
+         </reference>
+         <name value="Consistent With CodeSystem"/>
+         <description value="ConsistentWith code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ConsistentWithQualifierCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ConsistentWithQualifierCS"/>
+         </reference>
+         <name value="ConsistentWith Qualifier CodeSystem"/>
+         <description value="ConsistentWithQualifier  code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-CorrespondsWithCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/CorrespondsWithCS"/>
+         </reference>
+         <name value="CorrespondsWith CodeSystem"/>
+         <description value="CorrespondsWith CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-CorrespondsWithCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/CorrespondsWithCodeSystemCS"/>
+         </reference>
+         <name value="Consistent With CodeSystem"/>
+         <description value="CorrespondsWith code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-FibroadenomaCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/FibroadenomaCodeSystemCS"/>
+         </reference>
+         <name value="Fibroadenoma CodeSystem"/>
+         <description value="Fibroadenoma values code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ForeignObjectCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ForeignObjectCS"/>
+         </reference>
+         <name value="Foreign Object CodeSystem"/>
+         <description value="Foreign objects observed during a Breast Radiology exam code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGAbnormalityAsymmetryCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGAbnormalityAsymmetryCS"/>
+         </reference>
+         <name value="MGAbnormalityAsymmetry CodeSystem"/>
+         <description value="MGAbnormalityAsymmetry CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGAbnormalityAsymmetryTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGAbnormalityAsymmetryTypeCS"/>
+         </reference>
+         <name value="Mammography Asymmetry Type CodeSystem"/>
+         <description value="Mammography asymmetry abnormality type code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGAbnormalityCalcificationCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGAbnormalityCalcificationCS"/>
+         </reference>
+         <name value="MGAbnormalityCalcification CodeSystem"/>
+         <description value="MGAbnormalityCalcification CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGAbnormalityDensityCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGAbnormalityDensityCS"/>
+         </reference>
+         <name value="MGAbnormalityDensity CodeSystem"/>
+         <description value="MGAbnormalityDensity CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGAbnormalityDensityTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGAbnormalityDensityTypeCS"/>
+         </reference>
+         <name value="Mammography Density Type CodeSystem"/>
+         <description value="Mammography density abnormality refinement types code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGBreastDensityCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGBreastDensityCS"/>
+         </reference>
+         <name value="Mammography Breast Density CodeSystem"/>
+         <description value="Mammography breast density values code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MGDensityCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MGDensityCS"/>
+         </reference>
+         <name value="Mammography Density CodeSystem"/>
+         <description value="Mammography density code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MammoCalcificationTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MammoCalcificationTypeCS"/>
+         </reference>
+         <name value="Mammography Calcification Type CodeSystem"/>
+         <description value="Mammography calcification type code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MarginCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MarginCS"/>
+         </reference>
+         <name value="MarginCodeSystem"/>
+         <description value="Margin code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-MassTypeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/MassTypeCS"/>
+         </reference>
+         <name value="Mass Type CodeSystem"/>
+         <description value="Codes defining mass refinements."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-NotPreviouslySeenCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/NotPreviouslySeenCS"/>
+         </reference>
+         <name value="NotPreviouslySeen CodeSystem"/>
+         <description value="NotPreviouslySeen CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-NotPreviouslySeenCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/NotPreviouslySeenCodeSystemCS"/>
+         </reference>
+         <name value="Not Previously Seen CodeSystem"/>
+         <description value="NotPreviouslySeen code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ObservationCodes.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ObservationCodes"/>
+         </reference>
+         <name value="Observation Codes CodeSystem"/>
+         <description value="Observation Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ObservationCodesCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ObservationCodesCS"/>
+         </reference>
+         <name value="Observation Codes CodeSystem"/>
+         <description value="Observation Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ObservationComponentSliceCodes.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ObservationComponentSliceCodes"/>
+         </reference>
+         <name value="Component Slice Codes CodeSystem"/>
+         <description value="Component Slice Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ObservationComponentSliceCodesCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ObservationComponentSliceCodesCS"/>
+         </reference>
+         <name value="Component Slice Codes CodeSystem"/>
+         <description value="Component Slice Codes code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ObservedChangesCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ObservedChangesCS"/>
+         </reference>
+         <name value="Observed Changes CodeSystem"/>
+         <description value="Observed changes in an abnormality code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-OrientationCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/OrientationCS"/>
+         </reference>
+         <name value="Orientation CodeSystem"/>
+         <description value="Orientation CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-PreviouslyDemonstratedByCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/PreviouslyDemonstratedByCS"/>
+         </reference>
+         <name value="PreviouslyDemonstratedBy CodeSystem"/>
+         <description value="PreviouslyDemonstratedBy CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-PreviouslyDemonstratedByCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/PreviouslyDemonstratedByCodeSystemCS"/>
+         </reference>
+         <name value="Not Previously Seen CodeSystem"/>
+         <description value="PreviouslyDemonstratedBy code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-RecommendationsCodeSystemCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/RecommendationsCodeSystemCS"/>
+         </reference>
+         <name value="Recommendations CodeSystem"/>
+         <description value="Recommendations code system"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ServiceRecommendationCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ServiceRecommendationCS"/>
+         </reference>
+         <name value="ServiceRecommendation CodeSystem"/>
+         <description value="ServiceRecommendation CodeSystem"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-ShapeCS.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/ShapeCS"/>
+         </reference>
+         <name value="Shape CodeSystem"/>
+         <description value="Shape values code system."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="_term_codesystem"/>
+      </resource>
+      <page>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="StructureDefinition-BreastRadiologyComposition.html"/>
+               <title value="Breast Radiology Composition"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-BreastRadiologyDocument.html"/>
+               <title value="Breast Radiology Document"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-BreastRadiologyReport.html"/>
+               <title value="Breast Radiology Report"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-FindingsLeftBreast.html"/>
+               <title value="Findings Left Breast"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-FindingsRightBreast.html"/>
+               <title value="Findings RightRight Breast"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-builderetValue.html"/>
+               <title value="Builder Set Value Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-gBool.html"/>
+               <title value="Graph Bool Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-GString.html"/>
+               <title value="Graph String Extension"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-GraphLinkByName.html"/>
+               <title value="GraphLinkByName"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-GraphNode.html"/>
+               <title value="GraphNode"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityCystVS.html"/>
+               <title value="AbnormalityCyst ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityDuctVS.html"/>
+               <title value="AbnormalityDuct ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityFibroAdenomaVS.html"/>
+               <title value="AbnormalityFibroAdenoma ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityForeignObjectVS.html"/>
+               <title value="AbnormalityForeignObject ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityLymphNodeVS.html"/>
+               <title value="AbnormalityLymphNode ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AbnormalityMassVS.html"/>
+               <title value="AbnormalityMass ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-AssociatedFeatureVS.html"/>
+               <title value="AssociatedFeature ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-BiRadsAssessmentCategoryVS.html"/>
+               <title value="BiRadsAssessmentCategory ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-BreastBodyLocationClockPositionsVS.html"/>
+               <title value="BreastBodyLocationClockPositions ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-BreastBodyLocationDepthVS.html"/>
+               <title value="BreastBodyLocationDepth ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-BreastBodyLocationQuadrantsVS.html"/>
+               <title value="BreastBodyLocationQuadrants ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-BreastBodyLocationRegionsVS.html"/>
+               <title value="BreastBodyLocationRegions ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-CalcificationDistributionVS.html"/>
+               <title value="CalcificationDistribution ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ConsistentWithQualifierVS.html"/>
+               <title value="ConsistentWithQualifier ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ConsistentWithVS.html"/>
+               <title value="ConsistentWith ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-CorrespondsWithVS.html"/>
+               <title value="CorrespondsWith ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MGAbnormalityAsymmetryVS.html"/>
+               <title value="MGAbnormalityAsymmetry ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MGAbnormalityCalcificationVS.html"/>
+               <title value="MGAbnormalityCalcification ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MGAbnormalityDensityVS.html"/>
+               <title value="MGAbnormalityDensity ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MGBreastDensityVS.html"/>
+               <title value="MGBreastDensity ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MGDensityVS.html"/>
+               <title value="MGDensity ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-MarginVS.html"/>
+               <title value="Margin ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-NotPreviouslySeenVS.html"/>
+               <title value="NotPreviouslySeen ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ObservedChangesVS.html"/>
+               <title value="ObservedChanges ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-OrientationVS.html"/>
+               <title value="Orientation ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-PreviouslyDemonstratedByVS.html"/>
+               <title value="PreviouslyDemonstratedBy ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ServiceRecommendationVS.html"/>
+               <title value="ServiceRecommendation ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-ShapeVS.html"/>
+               <title value="Shape ValueSet"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityCystCS.html"/>
+               <title value="AbnormalityCyst CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityCystTypeCS.html"/>
+               <title value="Cyst Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityDuctCS.html"/>
+               <title value="AbnormalityDuct CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityDuctTypeCS.html"/>
+               <title value="Duct Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityFibroAdenomaCS.html"/>
+               <title value="AbnormalityFibroAdenoma CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityForeignObjectCS.html"/>
+               <title value="AbnormalityForeignObject CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityLymphNodeCS.html"/>
+               <title value="AbnormalityLymphNode CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityLymphNodeTypeCS.html"/>
+               <title value="Lymph Node Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AbnormalityMassCS.html"/>
+               <title value="AbnormalityMass CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-AssociatedFeatureCS.html"/>
+               <title value="Associated Feature CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BiRadsAssessmentCategoriesCS.html"/>
+               <title value="BiRads(r) Assessment Category Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BiRadsAssessmentCategoryCS.html"/>
+               <title value="BiRadsAssessmentCategory CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastBodyLocationClockPositionsCS.html"/>
+               <title value="BreastBodyLocationClockPositions CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastBodyLocationDepthCS.html"/>
+               <title value="BreastBodyLocationDepth CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastBodyLocationQuadrantsCS.html"/>
+               <title value="BreastBodyLocationQuadrants CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastBodyLocationRegionsCS.html"/>
+               <title value="BreastBodyLocationRegions CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastLocationClockCS.html"/>
+               <title value="Breast Location Clock CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastLocationDepthCS.html"/>
+               <title value="Breast Location Depth CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastLocationQuadrantCS.html"/>
+               <title value="Breast Location Quadrant CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-BreastLocationRegionCS.html"/>
+               <title value="Breast Location Region CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-CalcificationDistributionCS.html"/>
+               <title value="Calcification Distribution CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-CompositionSectionSliceCodes.html"/>
+               <title value="Composition Section Slice Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-CompositionSectionSliceCodesCS.html"/>
+               <title value="Composition Section Slice Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ConsistentWithCS.html"/>
+               <title value="ConsistentWith CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ConsistentWithCodeSystemCS.html"/>
+               <title value="Consistent With CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ConsistentWithQualifierCS.html"/>
+               <title value="ConsistentWith Qualifier CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-CorrespondsWithCS.html"/>
+               <title value="CorrespondsWith CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-CorrespondsWithCodeSystemCS.html"/>
+               <title value="Consistent With CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-FibroadenomaCodeSystemCS.html"/>
+               <title value="Fibroadenoma CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ForeignObjectCS.html"/>
+               <title value="Foreign Object CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGAbnormalityAsymmetryCS.html"/>
+               <title value="MGAbnormalityAsymmetry CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGAbnormalityAsymmetryTypeCS.html"/>
+               <title value="Mammography Asymmetry Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGAbnormalityCalcificationCS.html"/>
+               <title value="MGAbnormalityCalcification CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGAbnormalityDensityCS.html"/>
+               <title value="MGAbnormalityDensity CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGAbnormalityDensityTypeCS.html"/>
+               <title value="Mammography Density Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGBreastDensityCS.html"/>
+               <title value="Mammography Breast Density CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MGDensityCS.html"/>
+               <title value="Mammography Density CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MammoCalcificationTypeCS.html"/>
+               <title value="Mammography Calcification Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MarginCS.html"/>
+               <title value="MarginCodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-MassTypeCS.html"/>
+               <title value="Mass Type CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-NotPreviouslySeenCS.html"/>
+               <title value="NotPreviouslySeen CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-NotPreviouslySeenCodeSystemCS.html"/>
+               <title value="Not Previously Seen CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ObservationCodes.html"/>
+               <title value="Observation Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ObservationCodesCS.html"/>
+               <title value="Observation Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ObservationComponentSliceCodes.html"/>
+               <title value="Component Slice Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ObservationComponentSliceCodesCS.html"/>
+               <title value="Component Slice Codes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ObservedChangesCS.html"/>
+               <title value="Observed Changes CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-OrientationCS.html"/>
+               <title value="Orientation CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-PreviouslyDemonstratedByCS.html"/>
+               <title value="PreviouslyDemonstratedBy CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-PreviouslyDemonstratedByCodeSystemCS.html"/>
+               <title value="Not Previously Seen CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-RecommendationsCodeSystemCS.html"/>
+               <title value="Recommendations CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ServiceRecommendationCS.html"/>
+               <title value="ServiceRecommendation CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-ShapeCS.html"/>
+               <title value="Shape CodeSystem"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2019+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="STU1"/>
+      </parameter>
+      <parameter>
+         <code value="show-inherited-invariants"/>
+         <value value="false"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="http://hl7.org/fhir/us/breast-radiology/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>

@@ -1,0 +1,15 @@
+{
+	"graphName": "focus",
+	"inputPath": "GraphFiles",
+	"outputDir": "build\\input\\images",
+	"resourcePaths": [
+		"build\\input\\profiles",
+		"build\\input\\vocabulary"
+	],
+	"traversals": [
+		{
+			"name": "focus",
+			"cssFile": "FocusGraph.css"
+		}
+	]
+}

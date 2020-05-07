@@ -2,34 +2,39 @@
 #use "HeaderFragment.inc"
 #use "BreastRadiologyComposition.macros.inc"
 #use "NodeGraph.inc"
+#use "IntroDoc.inc"
 
 Profile: BreastRadiologyComposition
 Parent: Composition
 Title: "Breast Radiology Composition"
 Description: """
     This profile defines the composition instance for the Breast Radiology FHIR Document.
-    This profile is based on FHIR Composition resource.
+"""
 
-    The composition object is a required part of the FHIR Document structure.
-    One composition must exist, and it must be the first resource stored in the FHIR document bundle.
-
-    The other exam related resources are referenced through the 
-    sections defined in this resource.
-
-    This composition creates the following sections.
-
-    A. Report Section.
-    This contains a single reference to the Breast Radiology Report
-    All Breast Radiology Findings are referenced by the reports results element.
-
-    B. Impressions Section.
-    All of the clinical impressions created for this exam are referenced in this section.
-
-    C. Recommendations Section.
-    All of the service and medication recommendations created for this exam are referenced in this section.
-    If a recommendation is in response to a particular observation or finding, then 
-    the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
-	"""
+#apply IntroDoc("""
+#    This profile defines the composition instance for the Breast Radiology FHIR Document.
+#    This profile is based on FHIR Composition resource.
+#
+#    The composition object is a required part of the FHIR Document structure.
+#    One composition must exist, and it must be the first resource stored in the FHIR document bundle.
+#
+#    The other exam related resources are referenced through the 
+#    sections defined in this resource.#
+#
+#    This composition creates the following sections.
+#
+#    A. Report Section.
+#    This contains a single reference to the Breast Radiology Report
+#    All Breast Radiology Findings are referenced by the reports results element.
+#
+#    B. Impressions Section.
+#    All of the clinical impressions created for this exam are referenced in this section.
+#
+#    C. Recommendations Section.
+#    All of the service and medication recommendations created for this exam are referenced in this section.
+#    If a recommendation is in response to a particular observation or finding, then 
+#    the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+#	""")
 
   #apply HeaderFragment()
   * type = LOINC#42132-1 "US Breast screening"

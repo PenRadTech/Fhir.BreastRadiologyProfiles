@@ -1,5 +1,7 @@
 //
-// Make a graph node that refers to a profile.
+// Write out an intro doc.
+// The output of this gets automatically put at the start of the profile
+// web page.
 //
 #macro IntroDoc(%Doc%) > text("%PageContent%\\StructureDefinition-%Profile%-intro.xml")
   ` <div xmlns="http://www.w3.org/1999/xhtml"
@@ -12,17 +14,13 @@
   `     <u style="font-size:large;">Graphical Overview</u>
   `   </p>
   `   <p>
-  `     This graph provides an overview of:
-  `     <ul>
-  `       <li>which fragments are included in this fragment</li>
-  `       <li>which fragments include this fragment</li>
-  `     </ul>
-  `     <p>
-  `       Click on any of the elements of the graph to go to a section describing that element.
-  `     </p>
+  `     This graph provides an overview of this profile, and its dependencies.
   `   </p>
-  `   <object data="Frag-ObservedSizeFragment.svg" type="image/svg+xml">
-  `     <img src="Frag-ObservedSizeFragment.svg" alt="image/svg+xml" />
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FocusGraph-%Profile%.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-%Profile%.svg" alt="image/svg+xml" />
   `   </object>
   ` </div>
 #end

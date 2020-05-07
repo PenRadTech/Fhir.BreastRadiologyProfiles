@@ -1,11 +1,21 @@
 {
-  "baseInputDir" : "MFSH",
-  "baseOutputDir" : "FSH",
-  "baseUrl" : "http://hl7.org/fhir/us/breast-radiology",
-  "includeDirs": [ "MFSH/Include" ],
-  "mfshPaths": [ "MFSH" ],
-  "defines": {
-    "%GraphDir%" : "..\\GraphFiles",
-	"%PageContent%" : "..\\build\\input\\pagecontent"
-  }
-} 
+	"baseInputDir": "MFSH",
+	"baseOutputDir": "FSH",
+	"baseUrl": "http://hl7.org/fhir/us/breast-radiology",
+	"includeDirs": [
+		"MFSH/Include"
+	],
+	"mfshPaths": [
+		"MFSH"
+	],
+	"defines": [
+		{
+			"name": "%GraphDir%",
+			"value": "..\\GraphFiles"
+		},
+		{
+			"name": "%PageContent%",
+			"value": "..\\build\\input\\pagecontent"
+		}
+	]
+}
