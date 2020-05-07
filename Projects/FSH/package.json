@@ -1,18 +1,18 @@
 {
- "name": "BreastRadiologyReporting",
- "version" : "0.2.0",  
- "canonical" : "http://hl7.org/fhir/us/breast-radiology",
- "url" : "http://hl7.org/fhir/us/breast-radiology",
- "title" : "Breast Radiology Reporting",
- "description": "Breast Radiology Reporting Implementation Guide",
- "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1"
- },
- "keywords": [
-   "Breast Radiology",
-   "Radiology"
- ],
- "language": "en",
- "author": "Kurt X. Allen",
- "license": "CC0-1.0"
+    "name": "Breast_Radiology_Reporting_2nd_STU_ballot",
+    "version": "0.2.0",
+    "canonical": "http://hl7.org/fhir/us/breast-radiology",
+    "url": "http://hl7.org/fhir/us/breast-radiology",
+    "title": "Breast Radiology Reporting - 2nd STU ballot",
+    "description": "Breast Radiology Reporting Implementation Guide",
+    "dependencies": {
+        "hl7.fhir.r4.core": "4.0.1"
+    },
+    "keywords": [
+        "Breast Radiology",
+        "Radiology"
+    ],
+    "language": "en",
+    "author": "Kurt X. Allen",
+    "license": "CC0-1.0"
 }
