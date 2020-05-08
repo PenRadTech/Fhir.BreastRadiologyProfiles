@@ -1,6 +1,6 @@
 {
-  "package-id": "Breast_Radiology_Reporting_2nd_STU_ballot",
-  "title": "Breast Radiology Reporting - 2nd STU ballot",
+  "package-id": "hl7.fhir.us.breast-radiology",
+  "title": "HL7 FHIR Profile: Breast Radiology Report (BRR)",
   "canonical": "http://hl7.org/fhir/us/breast-radiology",
   "introduction": "Breast Radiology Reporting Implementation Guide",
   "list": [

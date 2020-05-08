@@ -1,6 +1,6 @@
 {
-    "name": "Breast_Radiology_Reporting_2nd_STU_ballot",
-    "version": "0.2.0",
+    "name": "hl7.fhir.us.breast-radiology",
+    "version": "0.3.0",
     "canonical": "http://hl7.org/fhir/us/breast-radiology",
     "url": "http://hl7.org/fhir/us/breast-radiology",
     "title": "Breast Radiology Reporting - 2nd STU ballot",
