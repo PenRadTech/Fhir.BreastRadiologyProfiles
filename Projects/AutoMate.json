@@ -19,6 +19,10 @@
 				{
 					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
 					"cmdArgs": "FSH"
+				},
+				{
+					"cmdPath": "FGraph",
+					"cmdArgs": "fgraph.json"
 				}
 			]
 		}
