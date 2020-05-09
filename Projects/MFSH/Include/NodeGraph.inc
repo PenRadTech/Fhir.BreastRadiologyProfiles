@@ -32,24 +32,24 @@
   `  },
 #end
 
-#macro GraphLinkByName(TraversalName, SourceName, TargetName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphLinkByName(TraversalName, SourceName, TargetName, Depth) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphLinkByName" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "target" : "TargetName",
-  `      "depth": 1
+  `      "depth": Depth
   `    }
   `  },
 #end
 
-#macro GraphLinkByReference(TraversalName, SourceName, Item) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphLinkByReference(TraversalName, SourceName, Item, Depth) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
   `  {
   `    "graphLinkByReference" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
-  `      "depth": 1
+  `      "depth": Depth
   `    }
   `  },
 #end

@@ -10,3 +10,7 @@ rect.element {
     fill: LightYellow;
     stroke: Black;
 }
+rect.fhir {
+    fill: LightCoral;
+    stroke: Black;
+}

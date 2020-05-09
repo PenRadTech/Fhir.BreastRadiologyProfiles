@@ -14,7 +14,7 @@
       "traversalName" : "focus",
       "source" : "^BreastRadiologyComposition$",
       "target" : "^BreastRadiologyComposition/section:",
-      "depth": 1
+      "depth": 0
     }
   },
   {

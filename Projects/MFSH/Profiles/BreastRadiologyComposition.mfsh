@@ -36,8 +36,8 @@ Description: """
   * type = LOINC#42132-1 "US Breast screening"
 
   #apply GraphNodeProfile("Breast/Radiology/Composition")
-  #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/section:")
-  #apply GraphLinkByReference("focus", "^%Profile%/section:", ".entry")
+  #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/section:", "0")
+  #apply GraphLinkByReference("focus", "^%Profile%/section:", ".entry", "1")
   #apply StartSectionSlicing()
 
   * section contains

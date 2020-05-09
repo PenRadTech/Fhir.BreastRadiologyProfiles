@@ -1,4 +1,5 @@
 {
+    "baseUrl" : "http://hl7.org/fhir/us/breast-radiology/",
 	"graphName": "focus",
 	"inputPath": "GraphFiles",
 	"outputDir": "build\\input\\images",
