@@ -2,7 +2,7 @@
 	"watchs": [
 		{
 			"name": "MFSH",
-			"watchPath": "MFSH",
+			"watchPaths": ["MFSH"],
 			"workingDir": ".",
 			"commands": [
 				{
@@ -13,7 +13,7 @@
 		},
 		{
 			"name": "FSH",
-			"watchPath": "FSH",
+			"watchPaths": ["FSH", "GraphFiles"],
 			"workingDir": ".",
 			"commands": [
 				{

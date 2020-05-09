@@ -5,8 +5,28 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast"
       },
-      "displayName" : "Findings/Left Breast",
+      "displayName" : "Findings/left Breast",
       "cssClass" : "profile"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsLeftBreast/bodySite",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
+        "item" : "bodySite"
+      },
+      "displayName" : "Body Site",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsLeftBreast.bodySite"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsLeftBreast$",
+      "target" : "^FindingsLeftBreast/",
+      "depth": 1
     }
   },
 ]

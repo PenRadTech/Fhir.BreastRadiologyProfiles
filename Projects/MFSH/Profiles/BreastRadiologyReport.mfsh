@@ -1,30 +1,28 @@
 #include "Common.inc"
 #include "NodeGraph.inc"
 #use "HeaderFragment.inc"
+#use "IntroDoc.inc"
 
 Profile: BreastRadiologyReport
 Parent: DiagnosticReport
 Title: "Breast Radiology Report"
 Description: """
-	Breast Radiology Diagnostic Report.
-
-    This profile is one of the components of a Breast Radiology Document.
+	Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
+	
     Each Breast Radiology Document bundle will contain exactly one
     Breast Radiology Document instance that is referenced in the
     document's 'Report' section.
     
     This instance will contain the top level results of the exam,
     including the narrative result.
-    
-	This resource is a profile of the FHIR DiagnosticReport
-    base resource.	
 	"""
+
+  #apply IntroDocGraph()
   #apply HeaderFragment()
   #apply GraphNodeProfile("Report")
   #apply GraphNodeElement("code", "Code")
   #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/")
   #apply GraphLinkByReference("focus", "^%Profile%/", "")
-
   
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
   * code = LOINC#10193-1

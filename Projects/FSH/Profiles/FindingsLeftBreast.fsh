@@ -3,12 +3,12 @@ Alias: SNOMED = http://snomed.info/sct
 
 Profile: FindingsLeftBreast
 Parent: Observation
-Title: "Findings Left Breast"
+Title: "Findings left Breast"
 Description: """
-	Findings Left Breast Section
+	The Findings left Breast profile contains references to all the observations
+	and exam information related to the Right breast.
 	
-	This Observation contains references to all the observations
-	and exam information related to the left breast.
+	There is only 0 or 1 of these items in any Breast Radiology Document.
 	"""  
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
@@ -25,10 +25,17 @@ Description: """
   * specimen 0..0
   * contained 0..0
   * device 0..0
+
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
-  
+  * value[x] ^definition = """
+	Composite BiRad value for left Breast.
+	
+	Typically this is the most severe of all the BiRad 
+	codes set in any of the child observations of the left Breast.
+    """
+	
   //$ e.AddComponentLink("Finding Value",
   // new SDefEditor.Cardinality(valueXDef),
   // null,
@@ -53,16 +60,10 @@ Description: """
   // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.USFinding.Value(), 0, "1");
   // 	slice.ElementDefinition.MustSupport();
   // }
+
   * bodySite 1..1
   * bodySite = SNOMED#80248007 "Left breast structure (body structure)"
   * bodySite.extension contains BuilderSetValue named setValue 1..1
   * bodySite.extension[setValue].valueCodeableConcept = SNOMED#80248007 "Left breast structure (body structure)"
-
-  * value[x] ^definition = """
-	Composite BiRad value for Left Breast.
-	
-	Typically this is the most severe of all the BiRad 
-	codes set in any of the child observations of the left breast.
-    """
 
   * code = ObservationCodesCS#findingsLeftBreastObservation

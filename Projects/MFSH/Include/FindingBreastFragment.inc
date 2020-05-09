@@ -2,14 +2,36 @@
 // Fragment definition for finding section of left or right breast
 #use "HeaderFragment.inc"
 #use "ObservationFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
 
-#macro FindingBreastFragment()
+#macro FindingBreastFragment(%Laterality%)
+Parent: Observation
+Title: "Findings %Laterality% Breast"
+Description: """
+	The Findings %Laterality% Breast profile contains references to all the observations
+	and exam information related to the Right breast.
+	
+	There is only 0 or 1 of these items in any Breast Radiology Document.
+	"""  
+
+  #apply IntroDocGraph()
   #apply HeaderFragment()
   #apply ObservationNoDeviceFragment()
+  #apply GraphNodeProfile("Findings/%Laterality% Breast")
+  #apply GraphNodeElement("bodySite", "Body Site")
+  #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/")
+
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
-  
+  * value[x] ^definition = """
+	Composite BiRad value for %Laterality% Breast.
+	
+	Typically this is the most severe of all the BiRad 
+	codes set in any of the child observations of the %Laterality% Breast.
+    """
+	
   //$ e.AddComponentLink("Finding Value",
   // new SDefEditor.Cardinality(valueXDef),
   // null,

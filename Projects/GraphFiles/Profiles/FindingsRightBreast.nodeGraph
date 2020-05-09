@@ -9,4 +9,24 @@
       "cssClass" : "profile"
     }
   },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsRightBreast/bodySite",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
+        "item" : "bodySite"
+      },
+      "displayName" : "Body Site",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsRightBreast.bodySite"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast$",
+      "target" : "^FindingsRightBreast/",
+      "depth": 1
+    }
+  },
 ]

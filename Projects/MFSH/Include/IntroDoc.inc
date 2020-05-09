@@ -3,13 +3,10 @@
 // The output of this gets automatically put at the start of the profile
 // web page.
 //
-#macro IntroDoc(%Doc%) > text("%PageContent%\\StructureDefinition-%Profile%-intro.xml")
+#macro IntroDocGraph() > text("%PageContent%\\StructureDefinition-%Profile%-intro.xml")
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  `   <p>
-  `   %Doc%
-  `   </p>
   `   <p>
   `     <u style="font-size:large;">Graphical Overview</u>
   `   </p>
