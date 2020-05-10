@@ -7,6 +7,9 @@
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
   `   %Description%
   `   <p>
   `     <u style="font-size:large;">Graphical Overview</u>
