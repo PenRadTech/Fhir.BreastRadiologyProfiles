@@ -73,4 +73,40 @@
       "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsLeftBreast"
     }
   },
+  {
+    "graphNode" : {
+      "nodeName" : "BreastRadiologyComposition/section:relatedResources",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:relatedResources"
+      },
+      "displayName" : "Related Resources/Section",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:relatedResources"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "BreastRadiologyComposition/section:recommendations",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:recommendations"
+      },
+      "displayName" : "Recommendations/Section",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:recommendations"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "BreastRadiologyComposition/section:admin",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
+        "item" : "section:admin"
+      },
+      "displayName" : "Admin/Section",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BreastRadiologyComposition.section:admin"
+    }
+  },
 ]

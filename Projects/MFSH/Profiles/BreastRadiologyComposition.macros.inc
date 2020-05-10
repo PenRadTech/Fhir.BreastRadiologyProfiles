@@ -15,7 +15,7 @@
   /*
    Compositon section for Breast Radiology Report.
    */
-  #macro ReportSection(SliceName) 
+#macro ReportSection(SliceName) 
   #apply GraphNodeElement("section:SliceName", "Report Section")
   
   * section[SliceName] ^definition = """
@@ -40,7 +40,7 @@
   /*
    Compositon section for Impressions.
    */
-  #macro ImpressionsSection(SliceName) 
+#macro ImpressionsSection(SliceName) 
   #apply GraphNodeElement("section:SliceName", "Impressions Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's clinical impressions.
@@ -67,7 +67,7 @@
   /*
    Compositon section for Left Breast Findings.
    */
-  #macro FindingsLeftBreastSection(SliceName) 
+#macro FindingsLeftBreastSection(SliceName) 
   #apply GraphNodeElement("section:SliceName", "Findings/Left Breast/Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -94,7 +94,7 @@
   /*
    Compositon section for Right Breast Findings.
    */
-  #macro FindingsRightBreastSection(SliceName) 
+#macro FindingsRightBreastSection(SliceName) 
   #apply GraphNodeElement("section:SliceName", "Findings/Right Breast/Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -110,5 +110,87 @@
   * section[SliceName].entry ^short = "Finding Right breast reference"
   * section[SliceName].entry ^definition = """
   Reference to the finding for the Right breast.
+  """
+#end
+
+
+
+
+
+
+  /*
+   Compositon section for Related Resources.
+   */
+#macro RelatedResourcesSection(SliceName) 
+  #apply GraphNodeElement("section:SliceName", "Related Resources/Section")
+  * section[SliceName] ^definition = """
+    References to FHIR clinical resources used during the exam or referenced by this report.
+  """
+  * section[SliceName] ^short = "Related Clinical Resources Section."
+  * section[SliceName].code = CompositionSectionSliceCodesCS#relatedResources
+  * section[SliceName].title = "Related Clinical Resources Section."
+  * section[SliceName] 0..1
+
+  * section[SliceName].entry 0..*
+  * section[SliceName].entry only Reference(RESOURCEURL)
+  * section[SliceName].entry ^short = "Finding Right breast reference"
+  * section[SliceName].entry ^definition = """
+  Reference to related resources.
+  """
+#end
+
+
+
+
+
+
+  /*
+   Compositon section for recommendations.
+   */
+#macro RecommendationsSection(SliceName) 
+  #apply GraphNodeElement("section:SliceName", "Recommendations/Section")
+  * section[SliceName] ^definition = """
+    This section contains references to recommended actions 
+	taken in response to the observations and findings of this report.
+  """
+  * section[SliceName] ^short = "Recommendation/Follow up Resources Section."
+  * section[SliceName].code = CompositionSectionSliceCodesCS#recommendations
+  * section[SliceName].title = "Recommendations Section."
+  * section[SliceName] 0..1
+
+  * section[SliceName].entry 0..*
+  * section[SliceName].entry only Reference(MEDICATIONREQUESTURL)
+                                  or Reference(SERVICEREQUESTURL)
+								  //$or Reference(ServiceRecommendation)
+								  
+  * section[SliceName].entry ^short = "Recommendation resources"
+  * section[SliceName].entry ^definition = """
+  Reference to any recommendations.
+  """
+#end
+
+
+
+
+
+
+  /*
+   Administrative section.
+   */
+#macro AdminSection(SliceName) 
+  #apply GraphNodeElement("section:SliceName", "Admin/Section")
+  * section[SliceName] ^definition = """
+    References to all administrative resources go here.
+  """
+  * section[SliceName] ^short = "Administrative section."
+  * section[SliceName].code = CompositionSectionSliceCodesCS#admin
+  * section[SliceName].title = "Administrative Section."
+  * section[SliceName] 0..1
+
+  * section[SliceName].entry 0..*
+  * section[SliceName].entry only Reference(RESOURCEURL)
+  * section[SliceName].entry ^short = "Administrative resources"
+  * section[SliceName].entry ^definition = """
+  Reference to any administrative resource.
   """
 #end

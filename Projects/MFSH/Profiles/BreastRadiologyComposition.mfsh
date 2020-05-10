@@ -44,113 +44,15 @@ Description: """
       report 1..1 MS and
       impressions 0..1 MS and
       findingsRightBreast 0..1 MS and
-      findingsLeftBreast 0..1 MS
+      findingsLeftBreast 0..1 MS and
+      relatedResources 0..1 MS and
+      recommendations 0..1 MS and
+      admin 0..1 MS
 
   #apply ReportSection("report") 
   #apply ImpressionsSection("impressions")
   #apply FindingsRightBreastSection("findingsRightBreast")
   #apply FindingsLeftBreastSection("findingsLeftBreast")
-
-
-    //// Related Resources Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[] {Global.ResourceUrl};
-
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "relatedResources",
-    //            "Related Resources",
-    //            Self.SectionCodeRelatedResources,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Related Resource reference")
-    //            .Definition("Reference to the related resource.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Related Clinical Resources Section")
-    //            .Definition(
-    //    "References to FHIR clinical resources used during the exam or referenced by this report.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Related Resources",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}
-
-    //// Recommendations Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[]
-    //        {
-    //            Global.MedicationRequestUrl, Global.ServiceRequestUrl,
-    //            Self.ServiceRecommendation.Value().Url
-    //        };
-
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "recommendations",
-    //            "Recommendations",
-    //            Self.SectionCodeRecommendations,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Recommendation reference")
-    //            .Definition("Reference to the recommended action.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Recommendations Section")
-    //            .Definition(
-    //    "This section contains references to recommended actions taken in response to the observations and findings of this report.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Recommendations",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}
-
-    //// Admin Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[] { Global.ResourceUrl };
-
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "admin",
-    //            "Admin",
-    //            Self.SectionCodeAdmin,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Administrative section")
-    //            .Definition("References to all administrative resources go here.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Administrative section")
-    //            .Definition(
-    //    "References to all administrative resources go here.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Admin",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}	
+  #apply RelatedResourcesSection("relatedResources")
+  #apply RecommendationsSection("recommendations")
+  #apply AdminSection("admin")

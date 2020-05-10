@@ -1,5 +1,19 @@
 Alias: LOINC = http://loinc.org 
 Alias: SNOMED = http://snomed.info/sct 
+Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
+Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
+Alias: CLINICALIMPRESSIONURL = http://hl7.org/fhir/StructureDefinition/ClinicalImpression
+Alias: DIAGNOSTICREPORTURL = http://hl7.org/fhir/StructureDefinition/DiagnosticReport
+Alias: DOMAINRESOURCEURL = http://hl7.org/fhir/StructureDefinition/DomainResource
+Alias: EXTENSIONURL = http://hl7.org/fhir/StructureDefinition/Extension
+Alias: IMAGINGSTUDYURL = http://hl7.org/fhir/StructureDefinition/ImagingStudy
+Alias: MEDICATIONREQUESTURL = http://hl7.org/fhir/StructureDefinition/MedicationRequest
+Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
+Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
+Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
+Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
+
+Alias: CONTACTURL = http://hl7.org/Special/committees/cic
 
 Profile: BreastRadiologyComposition
 Parent: Composition
@@ -48,7 +62,10 @@ Description: """
       report 1..1 MS and
       impressions 0..1 MS and
       findingsRightBreast 0..1 MS and
-      findingsLeftBreast 0..1 MS
+      findingsLeftBreast 0..1 MS and
+      relatedResources 0..1 MS and
+      recommendations 0..1 MS and
+      admin 0..1 MS
 
   
   * section[report] ^definition = """
@@ -112,107 +129,49 @@ Description: """
   * section[findingsLeftBreast].entry ^definition = """
   Reference to the finding for the Left breast.
   """
+  * section[relatedResources] ^definition = """
+    References to FHIR clinical resources used during the exam or referenced by this report.
+  """
+  * section[relatedResources] ^short = "Related Clinical Resources Section."
+  * section[relatedResources].code = CompositionSectionSliceCodesCS#relatedResources
+  * section[relatedResources].title = "Related Clinical Resources Section."
+  * section[relatedResources] 0..1
 
+  * section[relatedResources].entry 0..*
+  * section[relatedResources].entry only Reference(RESOURCEURL)
+  * section[relatedResources].entry ^short = "Finding Right breast reference"
+  * section[relatedResources].entry ^definition = """
+  Reference to related resources.
+  """
+  * section[recommendations] ^definition = """
+    This section contains references to recommended actions 
+	taken in response to the observations and findings of this report.
+  """
+  * section[recommendations] ^short = "Recommendation/Follow up Resources Section."
+  * section[recommendations].code = CompositionSectionSliceCodesCS#recommendations
+  * section[recommendations].title = "Recommendations Section."
+  * section[recommendations] 0..1
 
-    //// Related Resources Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[] {Global.ResourceUrl};
+  * section[recommendations].entry 0..*
+  * section[recommendations].entry only Reference(MEDICATIONREQUESTURL)
+                                  or Reference(SERVICEREQUESTURL)
+								  //$or Reference(ServiceRecommendation)
+								  
+  * section[recommendations].entry ^short = "Recommendation resources"
+  * section[recommendations].entry ^definition = """
+  Reference to any recommendations.
+  """
+  * section[admin] ^definition = """
+    References to all administrative resources go here.
+  """
+  * section[admin] ^short = "Administrative section."
+  * section[admin].code = CompositionSectionSliceCodesCS#admin
+  * section[admin].title = "Administrative Section."
+  * section[admin] 0..1
 
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "relatedResources",
-    //            "Related Resources",
-    //            Self.SectionCodeRelatedResources,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Related Resource reference")
-    //            .Definition("Reference to the related resource.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Related Clinical Resources Section")
-    //            .Definition(
-    //    "References to FHIR clinical resources used during the exam or referenced by this report.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Related Resources",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}
-
-    //// Recommendations Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[]
-    //        {
-    //            Global.MedicationRequestUrl, Global.ServiceRequestUrl,
-    //            Self.ServiceRecommendation.Value().Url
-    //        };
-
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "recommendations",
-    //            "Recommendations",
-    //            Self.SectionCodeRecommendations,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Recommendation reference")
-    //            .Definition("Reference to the recommended action.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Recommendations Section")
-    //            .Definition(
-    //    "This section contains references to recommended actions taken in response to the observations and findings of this report.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Recommendations",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}
-
-    //// Admin Section
-    //{
-    //    ElementTreeNode sliceElementDef = StartSectionSlicing(e);
-    //    {
-    //        String[] targets = new string[] { Global.ResourceUrl };
-
-    //        ElementTreeSlice sectionSlice = SliceSection(sliceElementDef,
-    //            "admin",
-    //            "Admin",
-    //            Self.SectionCodeAdmin,
-    //            out ElementDefinition entry);
-    //        entry
-    //            .ZeroToMany()
-    //            .Type("Reference", null, targets)
-    //            .Short("Administrative section")
-    //            .Definition("References to all administrative resources go here.")
-    //            ;
-    //        sectionSlice.ElementDefinition
-    //            .ZeroToOne()
-    //            .Short("Administrative section")
-    //            .Definition(
-    //    "References to all administrative resources go here.")
-    //            .MustSupport();
-    //        ;
-    //        e.AddComponentLink("Admin",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
-    //    }
-    //}
+  * section[admin].entry 0..*
+  * section[admin].entry only Reference(RESOURCEURL)
+  * section[admin].entry ^short = "Administrative resources"
+  * section[admin].entry ^definition = """
+  Reference to any administrative resource.
+  """
