@@ -8,31 +8,42 @@ Profile: BreastRadiologyComposition
 Parent: Composition
 Title: "Breast Radiology Composition"
 Description: """
-    This profile defines the composition instance for the Breast Radiology FHIR Document.
-
-    The composition object is a required part of the FHIR Document structure.
-    One composition must exist, and it must be the first resource stored in the FHIR document bundle.
-
-    The other exam related resources are referenced through the 
-    sections defined in this resource.
-
-    This composition creates the following sections.
-
-    A. Report Section.
-    This contains a single reference to the Breast Radiology Report
-    All Breast Radiology Findings are referenced by the reports results element.
-
-    B. Impressions Section.
-    All of the clinical impressions created for this exam are referenced in this section.
-
-    C. Recommendations Section.
-    All of the service and medication recommendations created for this exam are referenced in this section.
-    If a recommendation is in response to a particular observation or finding, then 
-    the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+    Composition instance for the Breast Radiology FHIR Document.
 """
 
-  #apply IntroDocGraph()
+  #apply IntroDocGraph("""
+  # <P>
+  # This profile defines the composition instance for the Breast Radiology FHIR Document.
+  # </P>
+  # <P>
+  # The composition object is a required part of the FHIR Document structure.
+  # One composition must exist, and it must be the first resource stored in the FHIR document bundle.
+  # </P>
+  # <P>
+  # The other exam related resources are referenced through the 
+  # sections defined in this resource.
+  # </P>
+  # <P>
+  # This composition creates the following sections.
+  # </P>
+  # <P>
+  # A. Report Section.
+  # This contains a single reference to the Breast Radiology Report
+  # All Breast Radiology Findings are referenced by the reports results element.
+  # </P>
+  # <P>
+  # B. Impressions Section.
+  # All of the clinical impressions created for this exam are referenced in this section.
+  # </P>
+  # <P>
+  # C. Recommendations Section.
+  # All of the service and medication recommendations created for this exam are referenced in this section.
+  # If a recommendation is in response to a particular observation or finding, then 
+  # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+  # </P>
+  # """)
   #apply HeaderFragment()
+  * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
   #apply GraphNodeProfile("Breast/Radiology/Composition")

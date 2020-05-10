@@ -9,13 +9,18 @@
 Parent: Observation
 Title: "Findings %Laterality% Breast"
 Description: """
-	The Findings %Laterality% Breast profile contains references to all the observations
-	and exam information related to the Right breast.
-	
-	There is only 0 or 1 of these items in any Breast Radiology Document.
+	Findings %Laterality% Breast profile.
 	"""  
 
-  #apply IntroDocGraph()
+  #apply IntroDocGraph("""
+  #<p>
+  # The Findings %Laterality% Breast profile contains references to all the observations
+  # and exam information related to the Right breast.
+  #</p>
+  #<p>
+  # There are only 0 or 1 of these items in any Breast Radiology Document.
+  #</p>
+  # """)
   #apply HeaderFragment()
   #apply ObservationNoDeviceFragment()
   #apply GraphNodeProfile("Findings/%Laterality% Breast")

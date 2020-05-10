@@ -19,10 +19,7 @@ Profile: FindingsLeftBreast
 Parent: Observation
 Title: "Findings left Breast"
 Description: """
-	The Findings left Breast profile contains references to all the observations
-	and exam information related to the Right breast.
-	
-	There is only 0 or 1 of these items in any Breast Radiology Document.
+	Findings left Breast profile.
 	"""  
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url

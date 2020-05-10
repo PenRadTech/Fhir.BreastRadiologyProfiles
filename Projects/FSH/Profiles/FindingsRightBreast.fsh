@@ -19,10 +19,7 @@ Profile: FindingsRightBreast
 Parent: Observation
 Title: "Findings Right Breast"
 Description: """
-	The Findings Right Breast profile contains references to all the observations
-	and exam information related to the Right breast.
-	
-	There is only 0 or 1 of these items in any Breast Radiology Document.
+	Findings Right Breast profile.
 	"""  
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url

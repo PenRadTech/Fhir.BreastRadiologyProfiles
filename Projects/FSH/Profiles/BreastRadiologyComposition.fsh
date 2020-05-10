@@ -19,27 +19,7 @@ Profile: BreastRadiologyComposition
 Parent: Composition
 Title: "Breast Radiology Composition"
 Description: """
-    This profile defines the composition instance for the Breast Radiology FHIR Document.
-
-    The composition object is a required part of the FHIR Document structure.
-    One composition must exist, and it must be the first resource stored in the FHIR document bundle.
-
-    The other exam related resources are referenced through the 
-    sections defined in this resource.
-
-    This composition creates the following sections.
-
-    A. Report Section.
-    This contains a single reference to the Breast Radiology Report
-    All Breast Radiology Findings are referenced by the reports results element.
-
-    B. Impressions Section.
-    All of the clinical impressions created for this exam are referenced in this section.
-
-    C. Recommendations Section.
-    All of the service and medication recommendations created for this exam are referenced in this section.
-    If a recommendation is in response to a particular observation or finding, then 
-    the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+    Composition instance for the Breast Radiology FHIR Document.
 """
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
@@ -48,6 +28,7 @@ Description: """
   * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
   * ^publisher = "Hl7-Clinical Interoperability Council"
   * ^version = "0.0.2"
+  * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
   * section ^slicing.discriminator.type = #pattern

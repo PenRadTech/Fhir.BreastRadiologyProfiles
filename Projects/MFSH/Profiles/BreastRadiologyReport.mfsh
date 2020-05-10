@@ -7,17 +7,23 @@ Profile: BreastRadiologyReport
 Parent: DiagnosticReport
 Title: "Breast Radiology Report"
 Description: """
-	Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
-	
-    Each Breast Radiology Document bundle will contain exactly one
-    Breast Radiology Document instance that is referenced in the
-    document's 'Report' section.
-    
-    This instance will contain the top level results of the exam,
-    including the narrative result.
+	Breast Radiology Diagnostic Report.
 	"""
 
-  #apply IntroDocGraph()
+  #apply IntroDocGraph( """
+  # <p>
+  # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
+  # </p>
+  # <p>
+  # Each Breast Radiology Document bundle will contain exactly one
+  # Breast Radiology Document instance that is referenced in the
+  # document's 'Report' section.
+  # </p>
+  # <p>
+  # This instance will contain the top level results of the exam,
+  # including the narrative result.
+  # </p>
+  # """)
   #apply HeaderFragment()
   #apply GraphNodeProfile("Report")
   #apply GraphNodeElement("code", "Code")

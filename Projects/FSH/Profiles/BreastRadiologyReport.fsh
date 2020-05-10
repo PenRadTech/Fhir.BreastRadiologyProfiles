@@ -29,14 +29,7 @@ Profile: BreastRadiologyReport
 Parent: DiagnosticReport
 Title: "Breast Radiology Report"
 Description: """
-	Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
-	
-    Each Breast Radiology Document bundle will contain exactly one
-    Breast Radiology Document instance that is referenced in the
-    document's 'Report' section.
-    
-    This instance will contain the top level results of the exam,
-    including the narrative result.
+	Breast Radiology Diagnostic Report.
 	"""
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
