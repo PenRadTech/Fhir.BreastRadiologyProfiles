@@ -8,8 +8,5 @@ Profile: FindingsLeftBreast
   #apply FindingBreastFragment("left")
 
   * bodySite 1..1
-  * bodySite = SNOMED#80248007 "Left breast structure (body structure)"
-  * bodySite.extension contains BuilderSetValue named setValue 1..1
-  * bodySite.extension[setValue].valueCodeableConcept = SNOMED#80248007 "Left breast structure (body structure)"
-
+  * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"
   * code = ObservationCodesCS#findingsLeftBreastObservation

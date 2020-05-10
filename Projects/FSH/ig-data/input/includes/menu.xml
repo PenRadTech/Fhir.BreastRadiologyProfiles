@@ -1,11 +1,59 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="artifacts.html">Artifacts Summary</a></li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
+    </a>
     <ul class="dropdown-menu">
-      <li><a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+      <li>
+        <a href="background.html">Background</a>
+      </li>
     </ul>
   </li>
-</ul>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="fullGraph.html">Complete Graph of Elements</a>
+      </li>
+      <li>
+        <a href="overview.html">Breast Radiology Report</a>
+      </li>
+      <li>
+        <a href="imageContextOverview.html">Image Context Extensions</a>
+      </li>
+      <li>
+        <a href="mgfinding.html">Mammography Finding</a>
+      </li>
+      <li>
+        <a href="usfinding.html">Ultra-Sound Finding</a>
+      </li>
+      <li>
+        <a href="mrifinding.html">MRI Finding</a>
+      </li>
+      <li>
+        <a href="nmfinding.html">Nuclear Medicine Finding</a>
+      </li>
+      <li>
+        <a href="fragments.html">Resource Fragments</a>
+      </li>
+    </ul>
+  </li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
