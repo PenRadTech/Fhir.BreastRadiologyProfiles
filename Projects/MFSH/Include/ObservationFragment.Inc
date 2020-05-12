@@ -10,6 +10,12 @@
   * contained 0..0
 #end
 
+// ObservationHasMemberFragment
+// constrains observations with hasMembers references).
+#macro ObservationHasMemberFragment()
+#end
+
+
 // ObservationLeafFragment
 // constrains observations leaf nodes (no hasMembers references).
 #macro ObservationLeafFragment()
