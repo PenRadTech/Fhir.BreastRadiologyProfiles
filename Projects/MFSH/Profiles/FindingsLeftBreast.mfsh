@@ -3,9 +3,11 @@
 #use "ObservationFragment.inc"
 #use "NodeGraph.inc"
 #use "IntroDoc.inc"
+#use "IGBuilder.inc"
 
 Profile: FindingsLeftBreast
   #apply FindingBreastFragment("left")
+  #apply IGGroupMemberProfile("BaseResources", "C")
 
   * bodySite 1..1
   * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"

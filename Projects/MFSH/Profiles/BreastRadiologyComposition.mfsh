@@ -3,6 +3,7 @@
 #use "BreastRadiologyComposition.macros.inc"
 #use "NodeGraph.inc"
 #use "IntroDoc.inc"
+#use "IGBuilder.inc"
 
 Profile: BreastRadiologyComposition
 Parent: Composition
@@ -10,6 +11,8 @@ Title: "Breast Radiology Composition"
 Description: """
     Composition instance for the Breast Radiology FHIR Document.
 """
+
+  #apply IGGroupMemberProfile("BaseResources", "B")
 
   #apply IntroDocGraph("""
   # <P>

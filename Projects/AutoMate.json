@@ -23,6 +23,10 @@
 				{
 					"cmdPath": "FGraph",
 					"cmdArgs": "fgraph.json"
+				},
+				{
+					"cmdPath": "IGBuilder",
+					"cmdArgs": "igbuilder.json"
 				}
 			]
 		}

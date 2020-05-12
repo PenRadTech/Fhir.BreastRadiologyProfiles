@@ -2,6 +2,7 @@
 #include "NodeGraph.inc"
 #use "HeaderFragment.inc"
 #use "IntroDoc.inc"
+#use "IGBuilder.inc"
 
 Profile: BreastRadiologyReport
 Parent: DiagnosticReport
@@ -10,6 +11,7 @@ Description: """
 	Breast Radiology Diagnostic Report.
 	"""
 
+  #apply IGGroupMemberProfile("BaseResources", "C")
   #apply IntroDocGraph( """
   # <p>
   # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
