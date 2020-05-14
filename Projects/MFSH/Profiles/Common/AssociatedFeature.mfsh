@@ -29,13 +29,13 @@ Description: """
     # </p>
     # """)
 
+    #apply GraphNodeProfile("AssociatedFeature")
+    #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/", "0")
+
     #apply once ObservationLeafFragment()
     #apply once ObservationNoDeviceFragment()
     #apply once ObservationNoValueFragment()
     //#apply LocationRequiredFragment()
-
-    #apply GraphNodeProfile("AssociatedFeature")
-    #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/component:", "0")
 
 	#apply once ComponentSlicing()
     #apply once ObservedCountFragment()
@@ -47,9 +47,12 @@ Description: """
 	  The feature observed is defined by the codeable concept in the value[x] field.
 	  """
 	  
+    #apply GraphNodeElement("code", "code")
 	* code = ObservationCodes#associatedFeaturesObservation
 
     * component contains featureType 1..1
+
+    #apply GraphNodeObservationComponent(featureType, "Associated Feature")
 	* component[featureType] ^short = "Associated Feature Type component."
 	* component[featureType] ^comment = "This is one component of a group of components that are part of the observation."
 	* component[featureType] ^definition = """
