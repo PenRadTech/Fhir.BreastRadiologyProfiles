@@ -12,7 +12,7 @@
 // The references are required, meaning that the breast body location must exist.
 
 #macro BreastBodyLocationRequiredFragment()
-    #apply HeaderFragment()
+    #apply once HeaderFragment()
 #end
     //   "differential": {
     //     "element": [

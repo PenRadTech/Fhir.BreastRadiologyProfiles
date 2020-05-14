@@ -5,55 +5,27 @@
 #use "IntroDoc.inc"
 #use "IGBuilder.inc"
 // ObservedCount Fragment
-// <b>Fragment that adds 'Observed Count' element to profile.</b>
+// Fragment that adds 'Observed Count' element to profile.
 
 #macro ObservedCountFragment()
+  #incompatible ObservationNoComponentFragment
+  #apply once ComponentSlicing()
+
+  * component contains observedCount 0..1
+  * component ^short = "Observed Count component."
+  * component ^comment = "This is one component of a group of components that are part of the observation."
+  * component ^definition = """
+    This component slice contains the number of items observed.
+	This can be a quantity (i.e. 5), or a range (1 to 5).
+	
+	If the lower bound of the range is set but not the upper bound,
+	then it means {lower bound} or more.
+	
+	If the lower bound of the range is not set but the upper bound is,
+	then it means {upper bound} or less.
+	"""
+
 #end
-    //   "differential": {
-    //     "element": [
-    //       {
-    //         "id": "Observation",
-    //         "path": "Observation",
-    //         "short": "Fragment that adds 'Observed Count' element to profile.",
-    //         "base": {
-    //           "path": "Observation",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
-    //       {
-    //         "id": "Observation.component",
-    //         "path": "Observation.component",
-    //         "slicing": {
-    //           "discriminator": [
-    //             {
-    //               "type": "pattern",
-    //               "path": "code"
-    //             }
-    //           ],
-    //           "rules": "open"
-    //         },
-    //         "base": {
-    //           "path": "Observation.component",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
-    //       {
-    //         "id": "Observation.component:obsCount",
-    //         "path": "Observation.component",
-    //         "sliceName": "obsCount",
-    //         "short": "Observed Count component.",
-    //         "definition": "This component slice contains the number of items observed.\n This can be a quantity (i.e. 5), or a range (1 to 5).\n\nIf the lower bound of the range is set but not the upper bound,\n then it means {lower bound} or more.\n\nIf the lower bound of the range is not set but the upper bound is,\n then it means {upper bound} or less.",
-    //         "comment": "This is one component of a group of components that are part of the observation.",
-    //         "min": 0,
-    //         "max": "1",
-    //         "base": {
-    //           "path": "Observation.component",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
     //       {
     //         "id": "Observation.component:obsCount.code",
     //         "extension": [

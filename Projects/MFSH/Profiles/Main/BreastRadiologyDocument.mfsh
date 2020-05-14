@@ -32,7 +32,7 @@ Description: """
   # </P>
   # """)
 
-  #apply HeaderFragment()
+  #apply once HeaderFragment()
   #apply GraphNodeProfile("Breast/Radiology/Document")
   #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/entry:", "0")
   #apply GraphLinkByReference("focus", "^%Profile%/entry:", ".resource", "1")

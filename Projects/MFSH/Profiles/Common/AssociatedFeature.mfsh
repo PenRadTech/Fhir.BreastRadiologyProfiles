@@ -1,5 +1,118 @@
+
 #include "Common.inc"
 #use "HeaderFragment.inc"
 #use "NodeGraph.inc"
 #use "IntroDoc.inc"
 #use "IGBuilder.inc"
+#use "ObservationMacros.inc"
+#use "ObservedCountFragment.inc"
+
+Profile: AssociatedFeature
+Parent: Observation
+Title: "Associated Feature"
+Description: """
+    Associated Feature
+    """
+
+    #apply IGGroupMemberProfile("CommonResources/AssociatedFeature/AssociatedFeature", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Associated Feature Observation</b>
+    # </p>
+    # <p>
+    # This resource and referenced child resources contain 
+    # information about a associated feature observations
+    # </p>
+    # <p>
+    # The feature observed is defined by the codeable concept in the value[x] field.
+    # </p>
+    # """)
+
+    #apply once ObservationLeafFragment()
+    #apply once ObservationNoDeviceFragment()
+    #apply once ObservationNoValueFragment()
+    //#apply LocationRequiredFragment()
+
+    #apply GraphNodeProfile("AssociatedFeature")
+    #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/component:", "0")
+
+	#apply once ComponentSlicing()
+    #apply once ObservedCountFragment()
+
+    * . ^definition = """
+      This resource and referenced child resources contain 
+      information about a associated feature observations
+		 
+	  The feature observed is defined by the codeable concept in the value[x] field.
+	  """
+	  
+	* code = ObservationCodes#associatedFeaturesObservation
+
+    * component contains featureType 1..1
+	* component[featureType] ^short = "Associated Feature Type component."
+	* component[featureType] ^comment = "This is one component of a group of components that are part of the observation."
+	* component[featureType] ^definition = """
+      This slice contains the required component that 
+	  define the observed feature. The value of this 
+	  component is a codeable concept chosen from the 
+	  AssociatedFeatureVS valueset.",
+	  """
+
+	* component[featureType].code 1..1
+	* component[featureType].code ^short = "Associated Feature Type component code"
+	* component[featureType].code ^definition = """
+      This code identifies the Associated Feature Type component.
+      Its value shall always be the concept 'Component code for 'Feature Type' slice'",
+	  """
+	* component[featureType].code = ObservationComponentSliceCodes#featureType
+	
+	* component[featureType].value[x] 1..1
+	* component[featureType].value[x] only CodeableConcept
+	* component[featureType].value[x] from AssociatedFeatureVS
+
+
+ValueSet:  AssociatedFeatureVS
+Title: "AssociatedFeature ValueSet"
+Description:  "AssociatedFeature Value Set"
+//+ Codes
+  * codes from system AssociatedFeatureCS
+//- Codes
+
+
+CodeSystem: AssociatedFeatureCS
+Title: "Associated Feature CodeSystem"
+Description: "Associated Feature seen during a breast examination."
+//+ Codes
+  * #ArchitecturalDistortion "Architectural distortion"
+  * #AxillaryAdenopathy "Axillary adenopathy"
+  * #BiopsyClip "Biopsy clip"
+  * #BrachytherapyTube "Brachytherapy tube"
+  * #ChestWallInvasion "Chest wall invasion"
+  * #CooperDistorted "Cooper distorted"
+  * #CooperThickened "Cooper thickened"
+  * #Edema "Edema"
+  * #EdemaAdj "Edema adj"
+  * #GoldSeed "Gold Seed"
+  * #Hematoma "Hematoma"
+  * #NippleRetraction "Nipple retraction"
+  * #NOChestWallInvasion "NO Chest wall invasion"
+  * #PectoralisMuscleInvasion "Pectoralis muscle invasion"
+  * #PectoralisMuscleInvolvement "Pectoralis muscle involvement"
+  * #PectoralisMuscleTenting "Pectoralis muscle tenting"
+  * #PostSurgicalScar "Post surgical scar"
+  * #Seroma "Seroma"
+  * #SkinInvolvement "Skin involvement"
+  * #SkinLesion "Skin lesion"
+  * #SkinRetraction "Skin retraction"
+  * #SkinThickening "Skin thickening"
+  * #SurgicalClip "Surgical clip"
+  * #TrabecularThickening "Trabecular thickening"
+  * #CalcificationInMass "Calcification in mass"
+  * #CalcificationNotOnMammogarm "Calcification Not on mammogarm"
+  * #CalcificationOnMammogram "Calcification on mammogram"
+  * #Calcifications "Calcifications"
+  * #MicroCalcifications "Micro calcifications"
+  * #MilkOfCalcium "Milk of calcium"
+  * #RimCalcifications "Rim calcifications"
+//- Codes

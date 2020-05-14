@@ -1,6 +1,13 @@
 [
   {
     "member" : {
+      "groupingId" : "CommonResources/AssociatedFeature/AssociatedFeature",
+      "sort": "",
+      "reference" : "StructureDefinition/AssociatedFeature"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "BaseResources",
       "sort": "B",
       "reference" : "StructureDefinition/BreastRadiologyComposition"

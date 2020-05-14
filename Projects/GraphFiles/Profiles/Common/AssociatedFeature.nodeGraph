@@ -1,0 +1,20 @@
+[
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
+      },
+      "displayName" : "AssociatedFeature",
+      "cssClass" : "profile"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature$",
+      "target" : "^AssociatedFeature/component:",
+      "depth": 0
+    }
+  },
+]

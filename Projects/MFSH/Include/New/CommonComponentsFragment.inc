@@ -21,9 +21,9 @@
 // </ul>
 
 #macro CommonComponentsFragment()
-    #apply BreastBodyLocationRequiredFragment()
-    #apply ObservedChangesFragment()
-    #apply BiRadFragment()
+    #apply once BreastBodyLocationRequiredFragment()
+    #apply once ObservedChangesFragment()
+    #apply once BiRadFragment()
 #end
     //   "differential": {
     //     "element": [

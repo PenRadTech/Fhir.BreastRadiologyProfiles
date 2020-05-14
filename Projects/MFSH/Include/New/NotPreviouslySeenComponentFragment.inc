@@ -11,7 +11,7 @@
 // Adds NotPreviously Seen Component slice.
 
 #macro NotPreviouslySeenComponentFragment()
-    #apply BreastBodyLocationRequiredFragment()
+    #apply once BreastBodyLocationRequiredFragment()
 #end
     //   "differential": {
     //     "element": [

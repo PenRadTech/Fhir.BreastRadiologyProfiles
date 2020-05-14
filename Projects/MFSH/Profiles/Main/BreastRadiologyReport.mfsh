@@ -26,7 +26,7 @@ Description: """
   # including the narrative result.
   # </p>
   # """)
-  #apply HeaderFragment()
+  #apply once HeaderFragment()
   #apply GraphNodeProfile("Report")
   #apply GraphNodeElement("code", "Code")
   #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/", "0")

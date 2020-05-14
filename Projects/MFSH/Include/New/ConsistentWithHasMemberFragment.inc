@@ -10,7 +10,7 @@
 // This fragment adds the references for the ConsistentWith HasMember.
 
 #macro ConsistentWithHasMemberFragment()
-    #apply HeaderFragment()
+    #apply once HeaderFragment()
 #end
     //   "differential": {
     //     "element": [

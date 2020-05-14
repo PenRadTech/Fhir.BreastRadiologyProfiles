@@ -40,14 +40,13 @@ Description: """
     Breast Radiology Report Section
     """
 
-  * section contains
-      report 1..1 MS and
-      impressions 0..1 MS and
-      findingsRightBreast 0..1 MS and
-      findingsLeftBreast 0..1 MS and
-      relatedResources 0..1 MS and
-      recommendations 0..1 MS and
-      admin 0..1 MS
+  * section contains report 1..1 MS
+  * section contains impressions 0..1 MS
+  * section contains findingsRightBreast 0..1 MS
+  * section contains findingsLeftBreast 0..1 MS
+  * section contains relatedResources 0..1 MS
+  * section contains recommendations 0..1 MS
+  * section contains admin 0..1 MS
 
   
   * section[report] ^definition = """

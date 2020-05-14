@@ -25,14 +25,14 @@
 // ObservationNoDeviceFragment
 // for all observations that have no device.
 #macro ObservationNoDeviceFragment()
-  #apply ObservationFragment()
+  #apply once ObservationFragment()
   * device 0..0
 #end
 
 // ObservationNoValueFragment
 // Observations that have no explicit value.
 #macro ObservationNoValueFragment()
-  #apply ObservationFragment()
+  #apply once ObservationFragment()
   * dataAbsentReason 0..0
   * value[x] 0..0
   * interpretation 0..0
@@ -42,20 +42,26 @@
 // ObservationNoComponentFragment
 // Used by all BreastRad observations that do not have components.
 #macro ObservationNoComponentFragment()
-Parent: Observation
-  #apply ObservationFragment()
+  #apply once ObservationFragment()
   * component 0..0
 #end
 
 // ObservationSectionFragment
 // Constrains a generic observation to be a observation section.
-
-// IncompatibleFragment ObservationLeafFragment
-
 #macro ObservationSectionFragment()
-  #apply ObservationFragment()
-  #apply ObservationNoComponentFragment()
-  #apply ObservationNoValueFragment()
+  #incompatible ObservationLeafFragment
+  #apply once ObservationFragment()
+  #apply once ObservationNoComponentFragment()
+  #apply once ObservationNoValueFragment()
   * interpretation 0..0
   * method 0..0
+#end
+
+
+#macro ComponentSlicing()
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
 #end

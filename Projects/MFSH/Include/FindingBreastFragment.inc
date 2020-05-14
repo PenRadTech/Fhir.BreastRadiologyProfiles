@@ -1,7 +1,7 @@
 // FindingBreastFragment
 // Fragment definition for finding section of left or right breast
 #use "HeaderFragment.inc"
-#use "ObservationFragment.inc"
+#use "ObservationMacros.inc"
 #use "NodeGraph.inc"
 #use "IntroDoc.inc"
 
@@ -21,8 +21,8 @@ Description: """
   # There are only 0 or 1 of these items in any Breast Radiology Document.
   #</p>
   # """)
-  #apply HeaderFragment()
-  #apply ObservationNoDeviceFragment()
+  #apply once HeaderFragment()
+  #apply once ObservationNoDeviceFragment()
   #apply GraphNodeProfile("Findings/%Laterality% Breast")
   #apply GraphNodeElement("bodySite", "Body Site")
   #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/", "0")
