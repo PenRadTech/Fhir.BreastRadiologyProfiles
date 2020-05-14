@@ -1,5 +1,4 @@
-[
-  {
+{
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition",
       "anchor" : {
@@ -109,4 +108,3 @@
       "lhsAnnotationText": "^BreastRadiologyComposition.section:admin"
     }
   },
-]

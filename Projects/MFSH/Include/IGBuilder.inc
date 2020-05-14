@@ -1,7 +1,7 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro IGGroup(%Id%, %Name%, %Description%) > jsonArray("%GraphDir%\\IGFile.cmds")
+#macro IGGroup(%Id%, %Name%, %Description%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "group" : {
   `      "id" : "%Id%",
@@ -11,7 +11,7 @@
   `  },
 #end
 
-#macro IGGroupMemberProfile(%Id%, %Sort%) > jsonArray("%GraphDir%\\IGFile.cmds")
+#macro IGGroupMemberProfile(%Id%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
   `      "groupingId" : "%Id%",

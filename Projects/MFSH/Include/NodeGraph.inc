@@ -1,7 +1,7 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro GraphNodeProfile(DisplayName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphNodeProfile(DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Profile%",
@@ -17,7 +17,7 @@
 //
 // Make a graph node that refers to an element in a profile.
 //
-#macro GraphNodeElement(%Path%, DisplayName) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphNodeElement(%Path%, DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Profile%/%Path%",
@@ -32,7 +32,10 @@
   `  },
 #end
 
-#macro GraphLinkByName(TraversalName, SourceName, TargetName, Depth) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphNodeObservationComponent(Alpha, Beta)
+#end
+
+#macro GraphLinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByName" : {
   `      "traversalName" : "TraversalName",
@@ -43,7 +46,7 @@
   `  },
 #end
 
-#macro GraphLinkByReference(TraversalName, SourceName, Item, Depth) > jsonArray("%GraphDir%\\%BasePath%.nodeGraph")
+#macro GraphLinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByReference" : {
   `      "traversalName" : "TraversalName",

@@ -1,5 +1,4 @@
-[
-  {
+{
     "member" : {
       "groupingId" : "CommonResources/AssociatedFeature/AssociatedFeature",
       "sort": "",
@@ -153,4 +152,3 @@
       "description" : " This section contains code systems used specifically in a Nuclear Medicine exam."
     }
   },
-]

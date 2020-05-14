@@ -1,5 +1,4 @@
-[
-  {
+{
     "graphNode" : {
       "nodeName" : "AssociatedFeature",
       "anchor" : {
@@ -13,8 +12,19 @@
     "graphLinkByName" : {
       "traversalName" : "focus",
       "source" : "^AssociatedFeature$",
-      "target" : "^AssociatedFeature/component:",
+      "target" : "^AssociatedFeature/",
       "depth": 0
     }
   },
-]
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature/code",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "code"
+      },
+      "displayName" : "code",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.code"
+    }
+  },

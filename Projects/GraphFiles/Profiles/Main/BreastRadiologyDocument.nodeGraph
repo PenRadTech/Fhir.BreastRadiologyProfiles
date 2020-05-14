@@ -1,5 +1,4 @@
-[
-  {
+{
     "graphNode" : {
       "nodeName" : "BreastRadiologyDocument",
       "anchor" : {
@@ -37,4 +36,3 @@
       "lhsAnnotationText": "^BreastRadiologyDocument.entry:index"
     }
   },
-]

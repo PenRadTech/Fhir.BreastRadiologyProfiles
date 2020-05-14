@@ -52,7 +52,7 @@ Description: """
 
     * component contains featureType 1..1
 
-    #apply GraphNodeObservationComponent(featureType, "Associated Feature")
+    #apply GraphNodeObservationComponent("featureType", "Associated Feature")
 	* component[featureType] ^short = "Associated Feature Type component."
 	* component[featureType] ^comment = "This is one component of a group of components that are part of the observation."
 	* component[featureType] ^definition = """

@@ -1,5 +1,4 @@
-[
-  {
+{
     "graphNode" : {
       "nodeName" : "FindingsLeftBreast",
       "anchor" : {
@@ -29,4 +28,3 @@
       "depth": 0
     }
   },
-]
