@@ -29,16 +29,6 @@ Description: """
     # </p>
     # """)
 
-    #apply GraphNodeProfile("AssociatedFeature")
-    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
-
-    #apply once ObservationLeafFragment()
-    #apply once ObservationNoDeviceFragment()
-    #apply once ObservationNoValueFragment()
-    //#apply LocationRequiredFragment()
-
-	#apply once ComponentSlicing()
-    #apply once ObservedCountFragment()
 
     * . ^definition = """
       This resource and referenced child resources contain 
@@ -46,35 +36,30 @@ Description: """
 		 
 	  The feature observed is defined by the codeable concept in the value[x] field.
 	  """
-	  
-    #apply GraphNodeElement("code", "code")
+
+    #apply GraphNodeProfile("AssociatedFeature")
+    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+
+	* code 1..1
 	* code = ObservationCodes#associatedFeaturesObservation
 
-    * component contains featureType 1..1
+    #apply once ObservationLeafFragment()
+    #apply once ObservationNoDeviceFragment()
+    #apply once ObservationNoValueFragment()
+    //$#apply LocationRequiredFragment()
 
-    #apply GraphNodeObservationComponent("featureType", "Associated Feature")
-	* component[featureType] ^short = "Associated Feature Type component."
-	* component[featureType] ^comment = "This is one component of a group of components that are part of the observation."
-	* component[featureType] ^definition = """
-      This slice contains the required component that 
-	  define the observed feature. The value of this 
-	  component is a codeable concept chosen from the 
-	  AssociatedFeatureVS valueset.",
-	  """
+    #apply once ObservedCountFragment()
 
-	* component[featureType].code 1..1
-	* component[featureType].code ^short = "Associated Feature Type component code"
-	* component[featureType].code ^definition = """
-      This code identifies the Associated Feature Type component.
-      Its value shall always be the concept 'Component code for 'Feature Type' slice'",
-	  """
-	* component[featureType].code = ObservationComponentSliceCodes#featureType
+	#apply ObservationAddComponent("featureType", "1..1", "Associated Feature Type",
+	#	"""
+    #   This slice contains the required component that 
+	#   defines the observed feature. The value of this 
+	#   component is a codeable concept chosen from the 
+	#   AssociatedFeatureVS valueset.",
+	#	""",
+    #   "ObservationComponentSliceCodes#featureType")
 	
-	* component[featureType].value[x] 1..1
-	* component[featureType].value[x] only CodeableConcept
-	* component[featureType].value[x] from AssociatedFeatureVS
-
-
+	#apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
 
 
 ValueSet:  AssociatedFeatureVS

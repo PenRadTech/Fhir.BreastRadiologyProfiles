@@ -7,6 +7,13 @@
   },
   {
     "member" : {
+      "groupingId" : "CommonResources/ConsistentWith",
+      "sort": "",
+      "reference" : "StructureDefinition/ConsistentWith"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "BaseResources",
       "sort": "B",
       "reference" : "StructureDefinition/BreastRadiologyComposition"

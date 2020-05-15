@@ -25,20 +25,6 @@
     }
   },
   {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^BreastRadiologyComposition/",
-      "item" : ".title",
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^BreastRadiologyComposition/",
-      "item" : ".code",
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "BreastRadiologyComposition/section:report/",
       "anchor" : {

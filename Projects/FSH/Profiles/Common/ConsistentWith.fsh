@@ -1,3 +1,130 @@
+Alias: LOINC = http://loinc.org 
+Alias: SNOMED = http://snomed.info/sct 
+Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
+Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
+Alias: CLINICALIMPRESSIONURL = http://hl7.org/fhir/StructureDefinition/ClinicalImpression
+Alias: DIAGNOSTICREPORTURL = http://hl7.org/fhir/StructureDefinition/DiagnosticReport
+Alias: DOMAINRESOURCEURL = http://hl7.org/fhir/StructureDefinition/DomainResource
+Alias: EXTENSIONURL = http://hl7.org/fhir/StructureDefinition/Extension
+Alias: IMAGINGSTUDYURL = http://hl7.org/fhir/StructureDefinition/ImagingStudy
+Alias: MEDICATIONREQUESTURL = http://hl7.org/fhir/StructureDefinition/MedicationRequest
+Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
+Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
+Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
+Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
+
+Alias: CONTACTURL = http://hl7.org/Special/committees/cic
+
+Profile: ConsistentWith
+Parent: Observation
+Title: "Consistent With"
+Description: """
+    Consistent With
+    """
+
+
+
+	* code 1..1
+	* code = ObservationCodes#consistentWithObservation
+
+  * hasMember 0..0
+  * interpretation 0..0
+  * referenceRange 0..0
+  * basedOn 0..0
+  * partOf 0..0
+  * focus 0..0
+  * specimen 0..0
+  * contained 0..0
+  * device 0..0
+  * interpretation 0..0
+  * referenceRange 0..0
+  * basedOn 0..0
+  * partOf 0..0
+  * focus 0..0
+  * specimen 0..0
+  * contained 0..0
+  * dataAbsentReason 0..0
+  * value[x] 0..0
+  * interpretation 0..0
+  * referenceRange 0..0
+
+	// Define Consistent With Slice
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
+    * component contains featureType 1..1
+
+	* component[featureType] ^short = "Consistent With component."
+	* component[featureType] ^comment = """
+      This is one component of a group of components that are part of the observation.
+	  """
+	* component[featureType] ^definition = """
+	   This slice contains the required component that defines what this 
+   observation is consistent with.
+
+   The value of this component is a codeable concept chosen from the 
+   ConsistentWithVS valueset.
+	"""
+	
+	
+	* component[featureType].code 1..1
+	* component[featureType].code ^short = "Consistent With component code."
+	* component[featureType].code ^definition = """
+      This code identifies the Consistent With component.
+	  """
+	* component[featureType].code = ObservationComponentSliceCodes#consistentWithValue
+	
+
+	* component[featureType].value[x] 1..1
+	* component[featureType].value[x] only CodeableConcept
+	* component[featureType].value[x] from ConsistentWithVS
+
+
+	// Define Consistent With Qualifier Slice
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
+    * component contains qualifier 0..*
+
+	* component[qualifier] ^short = "Consistent With Qualifier component."
+	* component[qualifier] ^comment = """
+      This is one component of a group of components that are part of the observation.
+	  """
+	* component[qualifier] ^definition = """
+	   This slice contains the optional components that qualify the 'consistentWith' slice component value.
+   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
+	"""
+	
+	
+	* component[qualifier].code 1..1
+	* component[qualifier].code ^short = "Consistent With Qualifier component code."
+	* component[qualifier].code ^definition = """
+      This code identifies the Consistent With Qualifier component.
+	  """
+	* component[qualifier].code = ObservationComponentSliceCodes#consistentWithQualifier
+	
+
+	* component[qualifier].value[x] 0..1
+	* component[qualifier].value[x] only CodeableConcept
+	* component[qualifier].value[x] from ConsistentWithQualifierVS
+
+
+
+
+ValueSet:  ConsistentWithVS
+Title: "ConsistentWith ValueSet"
+Description:  "ConsistentWith Value Set"
+//+ Codes
+  * codes from system ConsistentWithCS
+//- Codes
+
+
+
+
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
@@ -217,4 +344,23 @@ Description:  "ConsistentWith CodeSystem"
   // .SnomedDescription ClinicalFinding | 71897006 | Venous stasis (Finding) | [0/0] | I87.8
   * #VenousStasis "Venous stasis"
 
+//- Codes
+
+
+ValueSet:  ConsistentWithQualifierVS
+Title: "ConsistentWithQualifier ValueSet"
+Description:  "ConsistentWithQualifier Value Set"
+//+ Codes
+  * codes from system ConsistentWithQualifierCS
+//- Codes
+
+
+CodeSystem: ConsistentWithQualifierCS
+Title: "ConsistentWith Qualifier CodeSystem"
+Description: "ConsistentWithQualifier  code system"
+//+ Codes
+  * #DifferentialDiagnosis "Differential diagnosis"
+  * #LikelyRepresents "Likely represents"
+  * #MostLikely "Most likely"
+  * #Resembles "Resembles"
 //- Codes
