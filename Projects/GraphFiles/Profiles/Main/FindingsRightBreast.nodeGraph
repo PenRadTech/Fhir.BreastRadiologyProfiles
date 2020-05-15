@@ -1,6 +1,6 @@
 {
     "graphNode" : {
-      "nodeName" : "FindingsRightBreast",
+      "nodeName" : "FindingsRightBreast/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast"
       },
@@ -10,7 +10,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "FindingsRightBreast/bodySite",
+      "nodeName" : "FindingsRightBreast/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
         "item" : "bodySite"
@@ -23,7 +23,7 @@
   {
     "graphLinkByName" : {
       "traversalName" : "focus",
-      "source" : "^FindingsRightBreast$",
+      "source" : "^FindingsRightBreast/$",
       "target" : "^FindingsRightBreast/",
       "depth": 0
     }

@@ -1,6 +1,6 @@
 {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyDocument",
+      "nodeName" : "BreastRadiologyDocument/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyDocument"
       },
@@ -11,7 +11,7 @@
   {
     "graphLinkByName" : {
       "traversalName" : "focus",
-      "source" : "^BreastRadiologyDocument$",
+      "source" : "^BreastRadiologyDocument/$",
       "target" : "^BreastRadiologyDocument/entry:",
       "depth": 0
     }
@@ -26,7 +26,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyDocument/entry:index",
+      "nodeName" : "BreastRadiologyDocument/entry:index/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyDocument",
         "item" : "entry:index"

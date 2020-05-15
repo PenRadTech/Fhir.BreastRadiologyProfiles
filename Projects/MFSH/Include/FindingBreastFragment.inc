@@ -25,7 +25,7 @@ Description: """
   #apply once ObservationNoDeviceFragment()
   #apply GraphNodeProfile("Findings/%Laterality% Breast")
   #apply GraphNodeElement("bodySite", "Body Site")
-  #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/", "0")
+  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)

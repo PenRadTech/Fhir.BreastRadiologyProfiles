@@ -30,7 +30,7 @@ Description: """
     # """)
 
     #apply GraphNodeProfile("AssociatedFeature")
-    #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/", "0")
+    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
     #apply once ObservationLeafFragment()
     #apply once ObservationNoDeviceFragment()

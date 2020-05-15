@@ -4,7 +4,7 @@
 #macro GraphNodeProfile(DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Profile%",
+  `      "nodeName" : "%Profile%/",
   `      "anchor" : {
   `        "url" : "%ProfileUrl%"
   `      },
@@ -20,7 +20,7 @@
 #macro GraphNodeElement(%Path%, DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Profile%/%Path%",
+  `      "nodeName" : "%Profile%/%Path%/",
   `      "anchor" : {
   `        "url" : "%ProfileUrl%",
   `        "item" : "%Path%"

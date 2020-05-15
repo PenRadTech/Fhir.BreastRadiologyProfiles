@@ -1,6 +1,6 @@
 {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition",
+      "nodeName" : "BreastRadiologyComposition/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition"
       },
@@ -11,7 +11,7 @@
   {
     "graphLinkByName" : {
       "traversalName" : "focus",
-      "source" : "^BreastRadiologyComposition$",
+      "source" : "^BreastRadiologyComposition/$",
       "target" : "^BreastRadiologyComposition/section:",
       "depth": 0
     }
@@ -26,7 +26,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:report",
+      "nodeName" : "BreastRadiologyComposition/section:report/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:report"
@@ -38,7 +38,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:impressions",
+      "nodeName" : "BreastRadiologyComposition/section:impressions/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:impressions"
@@ -50,7 +50,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:findingsRightBreast",
+      "nodeName" : "BreastRadiologyComposition/section:findingsRightBreast/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:findingsRightBreast"
@@ -62,7 +62,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:findingsLeftBreast",
+      "nodeName" : "BreastRadiologyComposition/section:findingsLeftBreast/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:findingsLeftBreast"
@@ -74,7 +74,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:relatedResources",
+      "nodeName" : "BreastRadiologyComposition/section:relatedResources/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:relatedResources"
@@ -86,7 +86,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:recommendations",
+      "nodeName" : "BreastRadiologyComposition/section:recommendations/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:recommendations"
@@ -98,7 +98,7 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BreastRadiologyComposition/section:admin",
+      "nodeName" : "BreastRadiologyComposition/section:admin/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyComposition",
         "item" : "section:admin"

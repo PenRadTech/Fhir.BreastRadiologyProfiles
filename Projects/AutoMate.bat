@@ -1,1 +1,0 @@
-AutoMate.exe automate.json

@@ -34,7 +34,7 @@ Description: """
 
   #apply once HeaderFragment()
   #apply GraphNodeProfile("Breast/Radiology/Document")
-  #apply GraphLinkByName("focus", "^%Profile%$", "^%Profile%/entry:", "0")
+  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/entry:", "0")
   #apply GraphLinkByReference("focus", "^%Profile%/entry:", ".resource", "1")
 
   #apply GraphNodeElement("entry:index", "Composition index")
