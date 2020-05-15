@@ -52,6 +52,9 @@ Description: """
   #apply GraphNodeProfile("Breast/Radiology/Composition")
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/section:", "0")
   #apply GraphLinkByReference("focus", "^%Profile%/section:", ".entry", "1")
+  #apply GraphLinkByBinding("focus", "^%Profile%/", ".title")
+  #apply GraphLinkByBinding("focus", "^%Profile%/", ".code")
+
   #apply once StartSectionSlicing()
 
   * section contains report 1..1 MS

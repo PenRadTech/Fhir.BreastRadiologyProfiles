@@ -46,6 +46,16 @@
   `  },
 #end
 
+#macro GraphLinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BasePath%.nodeGraph"
+  `  {
+  `    "graphLinkByBinding" : {
+  `      "traversalName" : "TraversalName",
+  `      "source" : "SourceName",
+  `      "item" : "Item",
+  `    }
+  `  },
+#end
+
 #macro GraphLinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByReference" : {

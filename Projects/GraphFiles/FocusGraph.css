@@ -14,3 +14,8 @@ rect.fhir {
     fill: LightCoral;
     stroke: Black;
 }
+
+rect.value {
+    fill: cornsilk;
+    stroke: Black;
+}

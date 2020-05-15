@@ -32,6 +32,7 @@ Description: """
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
+
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
