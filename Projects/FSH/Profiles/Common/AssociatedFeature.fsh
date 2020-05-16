@@ -45,13 +45,6 @@ Description: """
   * specimen 0..0
   * contained 0..0
   * device 0..0
-  * interpretation 0..0
-  * referenceRange 0..0
-  * basedOn 0..0
-  * partOf 0..0
-  * focus 0..0
-  * specimen 0..0
-  * contained 0..0
   * dataAbsentReason 0..0
   * value[x] 0..0
   * interpretation 0..0
@@ -79,11 +72,6 @@ Description: """
 	"""
 
 
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
     * component contains featureType 1..1
 
 	* component[featureType] ^short = "Associated Feature Type component."
