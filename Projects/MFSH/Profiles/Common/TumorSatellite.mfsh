@@ -1,0 +1,84 @@
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+#use "ObservationMacros.inc"
+
+/*
+ Common Tumor Satellite Observation
+ */
+Profile: TumorSatellite
+Parent: Observation
+Title: "Tumor Satellite"
+Description: """
+    Tumor Satellite
+    """
+  #apply IGGroupMemberProfile("CommonResources/TumorSatellite", "")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>'Tumor Satellite' Observation</b>
+  # </p>
+  # <p>
+  # If a tumor observation's Observation.hasMember field contains a referrence 
+  # to a 'Tumor Satellite' observation, then it is a satellite tumor.
+  #  The tumor that it is a satellite of is called the index tumor.
+  # </p>
+  # <p>
+  # The 'Tumor Satellite' observation may contain a reference to the index tumor observation.
+  # </p>
+  # <p>
+  # The 'Tumor Satellite' observation may contain a distance to the index tumor.
+  # </p>
+  #""")
+
+  * . ^definition = """
+    Tumor Satellite Observation.
+	"""
+
+    #apply GraphNodeProfile("ConsistentWith")
+    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+
+	* code 1..1
+	* code = ObservationCodes#tumorSatelliteObservation
+
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoComponentFragment()
+
+  * value[x] 0..1
+  //#apply SliceValue()
+  //* value[x] contains quantity and range 0..1
+  //* value[x][quantity] ^ pattern.system = "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
+  
+  //       {
+  //         "id": "Observation.value[x]:valueRange",
+  //         "path": "Observation.value[x]",
+  //         "sliceName": "valueRange",
+  //         "min": 0,
+  //         "max": "1",
+  //         "base": {
+  //           "path": "Observation.value[x]",
+  //           "min": 0,
+  //           "max": "1"
+  //         },
+  //         "type": [
+  //           {
+  //             "code": "Range"
+  //           }
+  //         ],
+  //         "patternRange": {
+  //           "low": {
+  //             "system": "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
+  //           },
+  //           "high": {
+  //             "system": "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
+  //           }
+  //         }
+  //       },
+
+  #apply ObservationAddDerivedFrom("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
+  #  """
+  #  This derivedFrom slice references the index tumor.
+  #  """,
+  #  "OBSERVATIONURL")

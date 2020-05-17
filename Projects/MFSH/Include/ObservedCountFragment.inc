@@ -9,7 +9,7 @@
 
 #macro ObservedCountFragment()
   #incompatible ObservationNoComponentFragment
-  #apply once ComponentSlicing()
+  #apply once SliceComponent()
   #apply ObservationAddComponent("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
   #   This component slice contains the number of items observed.

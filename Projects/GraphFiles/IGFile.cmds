@@ -14,6 +14,13 @@
   },
   {
     "member" : {
+      "groupingId" : "CommonResources/TumorSatellite",
+      "sort": "",
+      "reference" : "StructureDefinition/TumorSatellite"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "BaseResources",
       "sort": "B",
       "reference" : "StructureDefinition/BreastRadiologyComposition"

@@ -12,62 +12,61 @@ Description: """
     Consistent With
     """
 
-    #apply IGGroupMemberProfile("CommonResources/ConsistentWith", "")
+  #apply IGGroupMemberProfile("CommonResources/ConsistentWith", "")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>'Consistent With' Observation</b>
-    # </p>
-    # <p>
-    # This resource contains information about a determination 
-    # that the parent abnormality is consistent with 
-    # the finding described in this resource.
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>'Consistent With' Observation</b>
+  # </p>
+  # <p>
+  # This resource contains information about a determination 
+  # that the parent abnormality is consistent with 
+  # the finding described in this resource.
+  # </p>
+  #""")
 
-    * . ^definition = """
-      This resource contains information about a determination
-	  that the parent abnormality is consistent with
-	  the finding described in this resource..
-	  """
+  * . ^definition = """
+    Consistent With Observation.
+	"""
 
-    #apply GraphNodeProfile("ConsistentWith")
-    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+  #apply GraphNodeProfile("ConsistentWith")
+  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
-	* code 1..1
-	* code = ObservationCodes#consistentWithObservation
+  * code 1..1
+  * code = ObservationCodes#consistentWithObservation
 
-    #apply ObservationLeafFragment()
-    #apply ObservationNoDeviceFragment()
-    #apply ObservationNoValueFragment()
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
 
-	// Define Consistent With Slice
-	#apply ObservationAddComponent("consistentWith", "1..1", "Consistent With", "Consistent With",
-	#	"""
-    #   This slice contains the required component that defines what this 
-	#   observation is consistent with.
-    #
-    #   The value of this component is a codeable concept chosen from the 
-	#   ConsistentWithVS valueset.
-	#	""",
-    #   "ObservationComponentSliceCodes#consistentWithValue")
+  // Define Consistent With Slice
+  #apply ObservationAddComponent("consistentWith", "1..1", "Consistent With", "Consistent With",
+  #	"""
+  #   This slice contains the required component that defines what this 
+  #   observation is consistent with.
+  #
+  #   The value of this component is a codeable concept chosen from the 
+  #   ConsistentWithVS valueset.
+  #	""",
+  #   "ObservationComponentSliceCodes#consistentWithValue")
 
-	#apply ObservationSetComponentConcept("consistentWith", "1..1", "ConsistentWithVS")
+  #apply ObservationSetComponentConcept("consistentWith", "1..1", "ConsistentWithVS")
 
 
-	// Define Consistent With Qualifier Slice
-	#apply ObservationAddComponent("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
-	#	"""
-    #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
-	#   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
-	#	""",
-    #   "ObservationComponentSliceCodes#consistentWithQualifier")
+  // Define Consistent With Qualifier Slice
+  #apply ObservationAddComponent("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
+  #	"""
+  #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
+  #   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
+  #	""",
+  #   "ObservationComponentSliceCodes#consistentWithQualifier")
 
-	#apply ObservationSetComponentConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
-
-
+  #apply ObservationSetComponentConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
 
 
+/*
+   Value set that defines Consistent With codes.
+ */
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
@@ -78,6 +77,9 @@ Description:  "ConsistentWith Value Set"
 
 
 
+/*
+   Code system that defines Consistent With codes.
+ */
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"

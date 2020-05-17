@@ -24,15 +24,13 @@ Description: """
 
 
 
-    * . ^definition = """
-      This resource contains information about a determination
-	  that the parent abnormality is consistent with
-	  the finding described in this resource..
-	  """
+  * . ^definition = """
+    Consistent With Observation.
+	"""
 
 
-	* code 1..1
-	* code = ObservationCodes#consistentWithObservation
+  * code 1..1
+  * code = ObservationCodes#consistentWithObservation
 
   * hasMember 0..0
   * interpretation 0..0
@@ -48,7 +46,7 @@ Description: """
   * interpretation 0..0
   * referenceRange 0..0
 
-	// Define Consistent With Slice
+  // Define Consistent With Slice
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -80,7 +78,7 @@ Description: """
   * component[consistentWith].value[x] from ConsistentWithVS
 
 
-	// Define Consistent With Qualifier Slice
+  // Define Consistent With Qualifier Slice
 
   * component contains qualifier 0..*
   * component[qualifier] ^short = "Consistent With Qualifier component."
@@ -104,8 +102,9 @@ Description: """
   * component[qualifier].value[x] from ConsistentWithQualifierVS
 
 
-
-
+/*
+   Value set that defines Consistent With codes.
+ */
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
@@ -116,6 +115,9 @@ Description:  "ConsistentWith Value Set"
 
 
 
+/*
+   Code system that defines Consistent With codes.
+ */
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"

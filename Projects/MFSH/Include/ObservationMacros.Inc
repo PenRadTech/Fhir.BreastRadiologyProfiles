@@ -59,8 +59,10 @@
   * method 0..0
 #end
 
-// Set up component slicing on an Observation derived profile.
-#macro ComponentSlicing()
+/*
+ Slice Observation.component.
+ */
+#macro SliceComponent()
   #incompatible ObservationNoComponentFragment
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -69,14 +71,39 @@
   * component ^slicing.description = "Component slicing"
 #end
 
-// Set up hasMember slicing on an Observation derived profile.
-#macro HasMemberSlicing()
+/*
+ Slice Observation.value[x]
+ */
+#macro SliceValue()
+  #incompatible ObservationNoValueFragment
+  * value[x] ^slicing.discriminator.type = #type
+  * value[x] ^slicing.discriminator.path = "$this"
+  * value[x] ^slicing.rules = #open
+  * value[x] ^slicing.ordered = false
+  * value[x] ^slicing.description = "Value[x] type slicing"
+#end
+
+/*
+ Slice Observation.hasMember.
+ */
+#macro SliceHasMember()
   #incompatible ObservationLeafFragment
-  * component ^slicing.discriminator.type = #value
-  * component ^slicing.discriminator.path = "url"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
+  * hasMember ^slicing.discriminator.type = #value
+  * hasMember ^slicing.discriminator.path = "url"
+  * hasMember ^slicing.rules = #open
+  * hasMember ^slicing.ordered = false
+  * hasMember ^slicing.description = "Component slicing"
+#end
+
+/*
+ Slice Observation.derivedFrom.
+ */
+#macro SliceDerivedFrom()
+  * derivedFrom ^slicing.discriminator.type = #value
+  * derivedFrom ^slicing.discriminator.path = "url"
+  * derivedFrom ^slicing.rules = #open
+  * derivedFrom ^slicing.ordered = false
+  * derivedFrom ^slicing.description = "derivedFrom slicing"
 #end
 
 /*
@@ -87,21 +114,30 @@
 #macro ObservationAddHasMember(SliceName, Cardinality, DisplayName, ShortDesc, Definition)
   #apply GraphNodeElement("component:SliceName", "DisplayName/Component")
 
-  #apply once HasMemberSlicing()
+  #apply once SliceHasMember()
   * hasMember contains SliceName Cardinality
-  * component[SliceName] ^short = "ShortDesc component."
-  * component[SliceName] ^comment = """
-    This is one component of a group of components that are part of the observation.
+  * hasMember[SliceName] ^short = "ShortDesc hasMember."
+  * component[SliceName].code = ComponentCode
+#end
+
+/*
+ Add a derivedFrom slice to an observation.
+ This adds the component slicing discriminator.
+ It does not constrain the hasMember target.
+ */
+#macro ObservationAddDerivedFrom(SliceName, Cardinality, DisplayName, ShortDesc, Definition, Url)
+  #apply GraphNodeElement("derivedFrom:SliceName", "DisplayName/Component")
+
+  #apply once SliceDerivedFrom()
+  * derivedFrom contains SliceName Cardinality
+  * derivedFrom[SliceName] ^short = "ShortDesc component."
+  * derivedFrom[SliceName] ^comment = """
+    This observation is derived from a 'ShortDesc' observation.
     """
-  * component[SliceName] ^definition = """
+  * derivedFrom[SliceName] ^definition = """
     Definition
     """
-  * component[SliceName].code 1..1
-  * component[SliceName].code ^short = "ShortDesc component code."
-  * component[SliceName].code ^definition = """
-    This code identifies the ShortDesc component.
-	"""
-  * component[SliceName].code = ComponentCode
+  * derivedFrom[SliceName] only Reference(Url)
 #end
 
 /*
@@ -112,7 +148,7 @@
 #macro ObservationAddComponent(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
   #apply GraphNodeElement("component:SliceName", "DisplayName/Component")
 
-  #apply once ComponentSlicing()
+  #apply once SliceComponent()
   * component contains SliceName Cardinality
   * component[SliceName] ^short = "ShortDesc component."
   * component[SliceName] ^comment = """

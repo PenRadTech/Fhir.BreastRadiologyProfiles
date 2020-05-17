@@ -8,7 +8,7 @@
 // BiRad Fragment
 // <b>Fragment that adds 'BiRad code' element to profile.</b>
 #macro BiRadFragment()
-  #apply once ComponentSlicing()
+  #apply once SliceComponent()
   #apply ObservationAddComponent("biRadsAssessmentCategory", "0..1", "BiRads", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that define the BiRAD risk code.

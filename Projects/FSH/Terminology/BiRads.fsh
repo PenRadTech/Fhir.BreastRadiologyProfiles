@@ -1,8 +1,15 @@
+/*
+  Value set for ACR birads codes.
+ */
+ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRadsAssessmentCategory ValueSet"
 Description:  "BiRadsAssessmentCategory Value Set"
   * codes from system BiRadsAssessmentCategoryCS
 
 
+/*
+  Code system for ACR birads codes.
+ */
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRadsAssessmentCategory CodeSystem"
 Description:  "BiRadsAssessmentCategory CodeSystem"
