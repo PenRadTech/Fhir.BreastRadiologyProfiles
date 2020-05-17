@@ -1,7 +1,11 @@
+Title: "BiRadsAssessmentCategory ValueSet"
+Description:  "BiRadsAssessmentCategory Value Set"
+  * codes from system BiRadsAssessmentCategoryCS
+
+
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRadsAssessmentCategory CodeSystem"
 Description:  "BiRadsAssessmentCategory CodeSystem"
-//+ Codes
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
   * #Category0 "Category 0 (Incomplete)"
 
@@ -27,5 +31,3 @@ Description:  "BiRadsAssessmentCategory CodeSystem"
   * #Category5 "Category 5 (Highly Suggestive of Malignancy)"
 
   * #Category6 "Category 6 (Known Biopsy-Proven Malignancy)"
-
-//- Codes
