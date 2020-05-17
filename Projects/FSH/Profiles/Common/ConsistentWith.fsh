@@ -24,6 +24,13 @@ Description: """
 
 
 
+    * . ^definition = """
+      This resource contains information about a determination
+	  that the parent abnormality is consistent with
+	  the finding described in this resource..
+	  """
+
+
 	* code 1..1
 	* code = ObservationCodes#consistentWithObservation
 
@@ -42,63 +49,67 @@ Description: """
   * referenceRange 0..0
 
 	// Define Consistent With Slice
+
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-    * component contains featureType 1..1
+  * component contains consistentWith 1..1
 
-	* component[featureType] ^short = "Consistent With component."
-	* component[featureType] ^comment = """
-      This is one component of a group of components that are part of the observation.
-	  """
-	* component[featureType] ^definition = """
-	   This slice contains the required component that defines what this 
+  * component[consistentWith] ^short = "Consistent With component."
+  * component[consistentWith] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[consistentWith] ^definition = """
+     This slice contains the required component that defines what this 
    observation is consistent with.
 
    The value of this component is a codeable concept chosen from the 
    ConsistentWithVS valueset.
+  """
+	
+	
+  * component[consistentWith].code 1..1
+  * component[consistentWith].code ^short = "Consistent With component code."
+  * component[consistentWith].code ^definition = """
+    This code identifies the Consistent With component.
 	"""
-	
-	
-	* component[featureType].code 1..1
-	* component[featureType].code ^short = "Consistent With component code."
-	* component[featureType].code ^definition = """
-      This code identifies the Consistent With component.
-	  """
-	* component[featureType].code = ObservationComponentSliceCodes#consistentWithValue
+  * component[consistentWith].code = ObservationComponentSliceCodes#consistentWithValue
 	
 
-	* component[featureType].value[x] 1..1
-	* component[featureType].value[x] only CodeableConcept
-	* component[featureType].value[x] from ConsistentWithVS
+
+  * component[consistentWith].value[x] 1..1
+  * component[consistentWith].value[x] only CodeableConcept
+  * component[consistentWith].value[x] from ConsistentWithVS
 
 
 	// Define Consistent With Qualifier Slice
-    * component contains qualifier 0..*
 
-	* component[qualifier] ^short = "Consistent With Qualifier component."
-	* component[qualifier] ^comment = """
-      This is one component of a group of components that are part of the observation.
-	  """
-	* component[qualifier] ^definition = """
-	   This slice contains the optional components that qualify the 'consistentWith' slice component value.
+  * component contains qualifier 0..*
+
+  * component[qualifier] ^short = "Consistent With Qualifier component."
+  * component[qualifier] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[qualifier] ^definition = """
+     This slice contains the optional components that qualify the 'consistentWith' slice component value.
    The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
+  """
+	
+	
+  * component[qualifier].code 1..1
+  * component[qualifier].code ^short = "Consistent With Qualifier component code."
+  * component[qualifier].code ^definition = """
+    This code identifies the Consistent With Qualifier component.
 	"""
-	
-	
-	* component[qualifier].code 1..1
-	* component[qualifier].code ^short = "Consistent With Qualifier component code."
-	* component[qualifier].code ^definition = """
-      This code identifies the Consistent With Qualifier component.
-	  """
-	* component[qualifier].code = ObservationComponentSliceCodes#consistentWithQualifier
+  * component[qualifier].code = ObservationComponentSliceCodes#consistentWithQualifier
 	
 
-	* component[qualifier].value[x] 0..1
-	* component[qualifier].value[x] only CodeableConcept
-	* component[qualifier].value[x] from ConsistentWithQualifierVS
+
+  * component[qualifier].value[x] 0..1
+  * component[qualifier].value[x] only CodeableConcept
+  * component[qualifier].value[x] from ConsistentWithQualifierVS
 
 
 

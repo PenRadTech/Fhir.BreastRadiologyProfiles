@@ -19,22 +19,21 @@ Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
 Description: """
-    Associated Feature
-    """
+  Associated Feature
+  """
 
 
 
+  * . ^definition = """
+    This resource and referenced child resources contain 
+    information about a associated feature observations
+     
+  The feature observed is defined by the codeable concept in the value[x] field.
+  """
 
-    * . ^definition = """
-      This resource and referenced child resources contain 
-      information about a associated feature observations
-		 
-	  The feature observed is defined by the codeable concept in the value[x] field.
-	  """
 
-
-	* code 1..1
-	* code = ObservationCodes#associatedFeaturesObservation
+  * code 1..1
+  * code = ObservationCodes#associatedFeaturesObservation
 
   * hasMember 0..0
   * interpretation 0..0
@@ -49,7 +48,7 @@ Description: """
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
-    //$#apply LocationRequiredFragment()
+  //$#apply LocationRequiredFragment()
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -58,59 +57,73 @@ Description: """
   * component ^slicing.description = "Component slicing"
 
   * component contains observedCount 0..1
-  * component ^short = "Observed Count component."
-  * component ^comment = "This is one component of a group of components that are part of the observation."
-  * component ^definition = """
-    This component slice contains the number of items observed.
-	This can be a quantity (i.e. 5), or a range (1 to 5).
+
+  * component[observedCount] ^short = "Observed Count component. component."
+  * component[observedCount] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[observedCount] ^definition = """
+     This component slice contains the number of items observed.
+   This can be a quantity (i.e. 5), or a range (1 to 5).
+ 
+   If the lower bound of the range is set but not the upper bound,
+   then it means {lower bound} or more.
+ 
+   If the lower bound of the range is not set but the upper bound is,
+   then it means {upper bound} or less.
+  """
 	
-	If the lower bound of the range is set but not the upper bound,
-	then it means {lower bound} or more.
 	
-	If the lower bound of the range is not set but the upper bound is,
-	then it means {upper bound} or less.
+  * component[observedCount].code 1..1
+  * component[observedCount].code ^short = "Observed Count component. component code."
+  * component[observedCount].code ^definition = """
+    This code identifies the Observed Count component. component.
 	"""
+  * component[observedCount].code = ObservationComponentSliceCodes#obsCount
+	
+	
+  * component[observedCount].value[x] 1..1
+  * component[observedCount].value[x] only Quantity or Range
 
 
-    * component contains featureType 1..1
 
-	* component[featureType] ^short = "Associated Feature Type component."
-	* component[featureType] ^comment = """
-      This is one component of a group of components that are part of the observation.
-	  """
-	* component[featureType] ^definition = """
-	   This slice contains the required component that 
+  * component contains featureType 1..1
+
+  * component[featureType] ^short = "Associated Feature Type component."
+  * component[featureType] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[featureType] ^definition = """
+     This slice contains the required component that 
    defines the observed feature. The value of this 
    component is a codeable concept chosen from the 
    AssociatedFeatureVS valueset.",
+  """
+	
+	
+  * component[featureType].code 1..1
+  * component[featureType].code ^short = "Associated Feature Type component code."
+  * component[featureType].code ^definition = """
+    This code identifies the Associated Feature Type component.
 	"""
+  * component[featureType].code = ObservationComponentSliceCodes#featureType
 	
-	
-	* component[featureType].code 1..1
-	* component[featureType].code ^short = "Associated Feature Type component code."
-	* component[featureType].code ^definition = """
-      This code identifies the Associated Feature Type component.
-	  """
-	* component[featureType].code = ObservationComponentSliceCodes#featureType
-	
-	
-	* component[featureType].value[x] 1..1
-	* component[featureType].value[x] only CodeableConcept
-	* component[featureType].value[x] from AssociatedFeatureVS
+  
+
+  * component[featureType].value[x] 1..1
+  * component[featureType].value[x] only CodeableConcept
+  * component[featureType].value[x] from AssociatedFeatureVS
 
 
 ValueSet:  AssociatedFeatureVS
 Title: "AssociatedFeature ValueSet"
 Description:  "AssociatedFeature Value Set"
-//+ Codes
   * codes from system AssociatedFeatureCS
-//- Codes
 
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
-//+ Codes
   * #ArchitecturalDistortion "Architectural distortion"
   * #AxillaryAdenopathy "Axillary adenopathy"
   * #BiopsyClip "Biopsy clip"
@@ -142,4 +155,3 @@ Description: "Associated Feature seen during a breast examination."
   * #MicroCalcifications "Micro calcifications"
   * #MilkOfCalcium "Milk of calcium"
   * #RimCalcifications "Rim calcifications"
-//- Codes

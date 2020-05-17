@@ -1,8 +1,11 @@
 {
-    "baseUrl" : "http://hl7.org/fhir/us/breast-radiology/",
+	"baseUrl": "http://hl7.org/fhir/us/breast-radiology/",
 	"graphName": "focus",
 	"inputPath": "GraphFiles",
 	"outputDir": "build\\input\\images",
+	"cssBinding": "valueSet",
+	"cssFix": "value",
+	"cssPattern": "value",
 	"resourcePaths": [
 		"build\\input\\profiles",
 		"build\\input\\vocabulary"

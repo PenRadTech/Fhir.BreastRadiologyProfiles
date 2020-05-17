@@ -1,6 +1,6 @@
 {
     "member" : {
-      "groupingId" : "CommonResources/AssociatedFeature/AssociatedFeature",
+      "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
       "reference" : "StructureDefinition/AssociatedFeature"
     }

@@ -11,69 +11,65 @@ Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
 Description: """
-    Associated Feature
-    """
+  Associated Feature
+  """
 
-    #apply IGGroupMemberProfile("CommonResources/AssociatedFeature/AssociatedFeature", "")
+  #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Associated Feature Observation</b>
-    # </p>
-    # <p>
-    # This resource and referenced child resources contain 
-    # information about a associated feature observations
-    # </p>
-    # <p>
-    # The feature observed is defined by the codeable concept in the value[x] field.
-    # </p>
-    # """)
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Associated Feature Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a associated feature observations
+  # </p>
+  # <p>
+  # The feature observed is defined by the codeable concept in the value[x] field.
+  # </p>
+  # """)
 
+  * . ^definition = """
+    This resource and referenced child resources contain 
+    information about a associated feature observations
+     
+  The feature observed is defined by the codeable concept in the value[x] field.
+  """
 
-    * . ^definition = """
-      This resource and referenced child resources contain 
-      information about a associated feature observations
-		 
-	  The feature observed is defined by the codeable concept in the value[x] field.
-	  """
+  #apply GraphNodeProfile("AssociatedFeature")
+  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
-    #apply GraphNodeProfile("AssociatedFeature")
-    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+  * code 1..1
+  * code = ObservationCodes#associatedFeaturesObservation
 
-	* code 1..1
-	* code = ObservationCodes#associatedFeaturesObservation
+  #apply once ObservationLeafFragment()
+  #apply once ObservationNoDeviceFragment()
+  #apply once ObservationNoValueFragment()
+  //$#apply LocationRequiredFragment()
 
-    #apply once ObservationLeafFragment()
-    #apply once ObservationNoDeviceFragment()
-    #apply once ObservationNoValueFragment()
-    //$#apply LocationRequiredFragment()
+  #apply once ObservedCountFragment()
 
-    #apply once ObservedCountFragment()
-
-	#apply ObservationAddComponent("featureType", "1..1", "Associated Feature Type",
-	#	"""
-    #   This slice contains the required component that 
-	#   defines the observed feature. The value of this 
-	#   component is a codeable concept chosen from the 
-	#   AssociatedFeatureVS valueset.",
-	#	""",
-    #   "ObservationComponentSliceCodes#featureType")
-	
-	#apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
+  #apply ObservationAddComponent("featureType", "1..1", "Feature Type", "Associated Feature Type",
+  #	  """
+  #   This slice contains the required component that 
+  #   defines the observed feature. The value of this 
+  #   component is a codeable concept chosen from the 
+  #   AssociatedFeatureVS valueset.",
+  #  """,
+  #   "ObservationComponentSliceCodes#featureType")
+  
+  #apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
 
 
 ValueSet:  AssociatedFeatureVS
 Title: "AssociatedFeature ValueSet"
 Description:  "AssociatedFeature Value Set"
-//+ Codes
   * codes from system AssociatedFeatureCS
-//- Codes
 
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
-//+ Codes
   * #ArchitecturalDistortion "Architectural distortion"
   * #AxillaryAdenopathy "Axillary adenopathy"
   * #BiopsyClip "Biopsy clip"
@@ -105,4 +101,3 @@ Description: "Associated Feature seen during a breast examination."
   * #MicroCalcifications "Micro calcifications"
   * #MilkOfCalcium "Milk of calcium"
   * #RimCalcifications "Rim calcifications"
-//- Codes

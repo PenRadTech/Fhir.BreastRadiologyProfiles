@@ -1,3 +1,5 @@
+#use "NodeGraph.inc"
+
 // ObservationFragment
 // constraints used in all breast radiology observations.
 #macro ObservationFragment()
@@ -72,25 +74,27 @@
  This addes the component slicing discriminator.
  It does not restrict the component value.
  */
-#macro ObservationAddComponent(SliceName, Cardinality, ShortDesc, Definition, ComponentCode)
-	#apply once ComponentSlicing()
-    * component contains SliceName Cardinality
+#macro ObservationAddComponent(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
+  #apply GraphNodeElement("component:SliceName", "DisplayName/Component")
 
-	* component[SliceName] ^short = "ShortDesc component."
-	* component[SliceName] ^comment = """
-      This is one component of a group of components that are part of the observation.
-	  """
-	* component[SliceName] ^definition = """
-	Definition
+  #apply once ComponentSlicing()
+  * component contains SliceName Cardinality
+
+  * component[SliceName] ^short = "ShortDesc component."
+  * component[SliceName] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[SliceName] ^definition = """
+  Definition
+  """
+	
+	
+  * component[SliceName].code 1..1
+  * component[SliceName].code ^short = "ShortDesc component code."
+  * component[SliceName].code ^definition = """
+    This code identifies the ShortDesc component.
 	"""
-	
-	
-	* component[SliceName].code 1..1
-	* component[SliceName].code ^short = "ShortDesc component code."
-	* component[SliceName].code ^definition = """
-      This code identifies the ShortDesc component.
-	  """
-	* component[SliceName].code = ComponentCode
+  * component[SliceName].code = ComponentCode
 	
 #end
 
@@ -98,7 +102,9 @@
   Restrict a  component slice value.
  */
 #macro ObservationSetComponentConcept(SliceName, Cardinality, ValueSet)
-	* component[SliceName].value[x] Cardinality
-	* component[SliceName].value[x] only CodeableConcept
-	* component[SliceName].value[x] from ValueSet
+  #apply GraphLinkByBinding("focus", "^%Profile%/component:SliceName/$", ".value[x]")
+
+  * component[SliceName].value[x] Cardinality
+  * component[SliceName].value[x] only CodeableConcept
+  * component[SliceName].value[x] from ValueSet
 #end

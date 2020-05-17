@@ -32,9 +32,6 @@
   `  },
 #end
 
-#macro GraphNodeObservationComponent(Alpha, Beta)
-#end
-
 #macro GraphLinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByName" : {
@@ -65,13 +62,4 @@
   `      "depth": Depth
   `    }
   `  },
-#end
-
-#macro ComponentLink(Title, CardLeft, CardRight, ComponentRef, Types, Targets)
-    //        e.AddComponentLink("Report",
-    //            new SDefEditor.Cardinality(sectionSlice.ElementDefinition),
-    //            new SDefEditor.Cardinality(entry),
-    //            Global.ElementAnchor(sectionSlice.ElementDefinition),
-    //            "Section",
-    //            targets);
 #end

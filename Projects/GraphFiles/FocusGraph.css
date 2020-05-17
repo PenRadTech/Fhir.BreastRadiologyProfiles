@@ -19,3 +19,8 @@ rect.value {
     fill: cornsilk;
     stroke: Black;
 }
+
+rect.valueSet {
+    fill: lightgreen;
+    stroke: Black;
+}

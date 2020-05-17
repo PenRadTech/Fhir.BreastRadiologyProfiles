@@ -1,4 +1,3 @@
-
 #include "Common.inc"
 #use "HeaderFragment.inc"
 #use "NodeGraph.inc"
@@ -26,6 +25,15 @@ Description: """
     # </p>
     #""")
 
+    * . ^definition = """
+      This resource contains information about a determination
+	  that the parent abnormality is consistent with
+	  the finding described in this resource..
+	  """
+
+    #apply GraphNodeProfile("ConsistentWith")
+    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+
 	* code 1..1
 	* code = ObservationCodes#consistentWithObservation
 
@@ -34,7 +42,7 @@ Description: """
     #apply ObservationNoValueFragment()
 
 	// Define Consistent With Slice
-	#apply ObservationAddComponent("featureType", "1..1", "Consistent With",
+	#apply ObservationAddComponent("consistentWith", "1..1", "Consistent With", "Consistent With",
 	#	"""
     #   This slice contains the required component that defines what this 
 	#   observation is consistent with.
@@ -44,11 +52,11 @@ Description: """
 	#	""",
     #   "ObservationComponentSliceCodes#consistentWithValue")
 
-	#apply ObservationSetComponentConcept("featureType", "1..1", "ConsistentWithVS")
+	#apply ObservationSetComponentConcept("consistentWith", "1..1", "ConsistentWithVS")
 
 
 	// Define Consistent With Qualifier Slice
-	#apply ObservationAddComponent("qualifier", "0..*", "Consistent With Qualifier",
+	#apply ObservationAddComponent("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
 	#	"""
     #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
 	#   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
