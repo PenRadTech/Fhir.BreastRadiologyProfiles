@@ -14,6 +14,13 @@
   },
   {
     "member" : {
+      "groupingId" : "BaseResources",
+      "sort": "",
+      "reference" : "StructureDefinition/ServiceRecommendation"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources/TumorSatellite",
       "sort": "",
       "reference" : "StructureDefinition/TumorSatellite"

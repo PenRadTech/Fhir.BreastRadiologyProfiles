@@ -108,11 +108,7 @@ Description: """
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
-//+ Codes
   * codes from system ConsistentWithCS
-//- Codes
-
-
 
 
 /*
@@ -121,7 +117,6 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
-//+ Codes
   * #Abscess "Abscess"
 
   // .Snomed 404057003
@@ -337,23 +332,23 @@ Description:  "ConsistentWith CodeSystem"
   // .SnomedDescription ClinicalFinding | 71897006 | Venous stasis (Finding) | [0/0] | I87.8
   * #VenousStasis "Venous stasis"
 
-//- Codes
 
-
+/*
+   Value set that defines consistent with qualifier codes.
+ */
 ValueSet:  ConsistentWithQualifierVS
 Title: "ConsistentWithQualifier ValueSet"
 Description:  "ConsistentWithQualifier Value Set"
-//+ Codes
   * codes from system ConsistentWithQualifierCS
-//- Codes
 
 
+/*
+   Code system that defines consistent with qualifier codes.
+ */
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
-//+ Codes
   * #DifferentialDiagnosis "Differential diagnosis"
   * #LikelyRepresents "Likely represents"
   * #MostLikely "Most likely"
   * #Resembles "Resembles"
-//- Codes
