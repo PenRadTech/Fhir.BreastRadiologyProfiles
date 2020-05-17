@@ -1,0 +1,50 @@
+
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+// ObservedChanges Fragment
+// <b>Fragment that adds 'Observed Changes' element to profile.</b>
+
+#macro ObservedChangesFragment()
+  // Define Consistent With Slice
+  #apply ObservationAddComponent("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
+  #	"""
+  # This slice contains the optional components that define observed changes in this abnormality.
+  # The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
+  #	""",
+  #   "ObservationComponentSliceCodes#obsChanges")
+
+  #apply ObservationSetComponentConcept("obsChanges", "1..1", "ObservedChangesVS")
+#end
+
+/*
+   Value Set that defines Observed Change codes.
+ */
+ValueSet:  ObservedChangesVS
+Title: "ObservedChanges ValueSet"
+Description:  "ObservedChanges Value Set"
+  * codes from system ObservedChangesCS
+
+/*
+   Code system that defines Observed Change codes.
+ */
+CodeSystem: ObservedChangesCS
+Title: "Observed Changes CodeSystem"
+Description: "Observed changes in an abnormality code system."
+  * #DecreaseInCalcifications "Decrease in calcifications"
+  * #DecreaseInNumber "Decrease in number"
+  * #DecreaseInSize "Decrease in size"
+  * #IncreaseInCalcifications "Increase in calcifications"
+  * #IncreaseInNumber "Increase in number"
+  * #IncreaseInSize "Increase in size"
+  * #LessProminent "Less prominent"
+  * #MoreProminent "More prominent"
+  * #New "New"
+  * #NoLongerSeen "No longer seen"
+  * #NotSignificantChanged "Not significant changed"
+  * #PartiallyRemoved "Partially removed"
+  * #RepresentsChange "Represents change"
+  * #Stable "Stable"
+  
