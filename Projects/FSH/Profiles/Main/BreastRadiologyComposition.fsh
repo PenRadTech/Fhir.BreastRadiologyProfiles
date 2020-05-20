@@ -1,20 +1,3 @@
-Alias: LOINC = http://loinc.org 
-Alias: SNOMED = http://snomed.info/sct 
-Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
-Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
-Alias: CLINICALIMPRESSIONURL = http://hl7.org/fhir/StructureDefinition/ClinicalImpression
-Alias: DIAGNOSTICREPORTURL = http://hl7.org/fhir/StructureDefinition/DiagnosticReport
-Alias: DOMAINRESOURCEURL = http://hl7.org/fhir/StructureDefinition/DomainResource
-Alias: EXTENSIONURL = http://hl7.org/fhir/StructureDefinition/Extension
-Alias: IMAGINGSTUDYURL = http://hl7.org/fhir/StructureDefinition/ImagingStudy
-Alias: MEDICATIONREQUESTURL = http://hl7.org/fhir/StructureDefinition/MedicationRequest
-Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
-Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
-Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
-Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
-
-Alias: CONTACTURL = http://hl7.org/Special/committees/cic
-
 Profile: BreastRadiologyComposition
 Parent: Composition
 Title: "Breast Radiology Composition"
@@ -22,7 +5,62 @@ Description: """
     Composition instance for the Breast Radiology FHIR Document.
 """
 
+  `  {
+  `    "member" : {
+  `      "groupingId" : "BaseResources",
+  `      "sort": "B",
+  `      "reference" : "StructureDefinition/BreastRadiologyComposition"
+  `    }
+  `  },
 
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   <P>
+This profile defines the composition instance for the Breast Radiology FHIR Document.
+</P>
+<P>
+The composition object is a required part of the FHIR Document structure.
+One composition must exist, and it must be the first resource stored in the FHIR document bundle.
+</P>
+<P>
+The other exam related resources are referenced through the 
+sections defined in this resource.
+</P>
+<P>
+This composition creates the following sections.
+</P>
+<P>
+A. Report Section.
+This contains a single reference to the Breast Radiology Report
+All Breast Radiology Findings are referenced by the reports results element.
+</P>
+<P>
+B. Impressions Section.
+All of the clinical impressions created for this exam are referenced in this section.
+</P>
+<P>
+C. Recommendations Section.
+All of the service and medication recommendations created for this exam are referenced in this section.
+If a recommendation is in response to a particular observation or finding, then 
+the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+</P>
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profile, and its dependencies.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FocusGraph-BreastRadiologyComposition.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-BreastRadiologyComposition.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -32,6 +70,32 @@ Description: """
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "Breast/Radiology/Composition",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^BreastRadiologyComposition/$",
+  `      "target" : "^BreastRadiologyComposition/section:",
+  `      "depth": 0
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByReference" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^BreastRadiologyComposition/section:",
+  `      "item" : ".entry",
+  `      "depth": 1
+  `    }
+  `  },
 
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
@@ -49,6 +113,18 @@ Description: """
   * section contains recommendations 0..1 MS
   * section contains admin 0..1 MS
 
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:report/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:report"
+  `      },
+  `      "displayName" : "Report Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:report"
+  `    }
+  `  },
   
   * section[report] ^definition = """
     This section references the Breast Radiology Report.
@@ -66,6 +142,18 @@ Description: """
   * section[report].entry ^definition = """
     Reference to the Breast Radiology Report.
 	"""
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:impressions/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:impressions"
+  `      },
+  `      "displayName" : "Impressions Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:impressions"
+  `    }
+  `  },
   * section[impressions] ^definition = """
     This section contains references to the report's clinical impressions.
     """
@@ -81,6 +169,18 @@ Description: """
   * section[impressions].entry ^definition = """
     Reference to the clinical impression(s).
     """
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:findingsRightBreast/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:findingsRightBreast"
+  `      },
+  `      "displayName" : "Findings/Right Breast/Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsRightBreast"
+  `    }
+  `  },
   * section[findingsRightBreast] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
@@ -96,6 +196,18 @@ Description: """
   * section[findingsRightBreast].entry ^definition = """
   Reference to the finding for the Right breast.
   """
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:findingsLeftBreast/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:findingsLeftBreast"
+  `      },
+  `      "displayName" : "Findings/Left Breast/Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsLeftBreast"
+  `    }
+  `  },
   * section[findingsLeftBreast] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
@@ -111,6 +223,18 @@ Description: """
   * section[findingsLeftBreast].entry ^definition = """
   Reference to the finding for the Left breast.
   """
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:relatedResources/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:relatedResources"
+  `      },
+  `      "displayName" : "Related Resources/Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:relatedResources"
+  `    }
+  `  },
   * section[relatedResources] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
   """
@@ -125,6 +249,18 @@ Description: """
   * section[relatedResources].entry ^definition = """
   Reference to related resources.
   """
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:recommendations/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:recommendations"
+  `      },
+  `      "displayName" : "Recommendations/Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:recommendations"
+  `    }
+  `  },
   * section[recommendations] ^definition = """
     This section contains references to recommended actions 
 	taken in response to the observations and findings of this report.
@@ -143,6 +279,18 @@ Description: """
   * section[recommendations].entry ^definition = """
   Reference to any recommendations.
   """
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyComposition/section:admin/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "section:admin"
+  `      },
+  `      "displayName" : "Admin/Section",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyComposition.section:admin"
+  `    }
+  `  },
   * section[admin] ^definition = """
     References to all administrative resources go here.
   """

@@ -1,20 +1,3 @@
-Alias: LOINC = http://loinc.org 
-Alias: SNOMED = http://snomed.info/sct 
-Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
-Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
-Alias: CLINICALIMPRESSIONURL = http://hl7.org/fhir/StructureDefinition/ClinicalImpression
-Alias: DIAGNOSTICREPORTURL = http://hl7.org/fhir/StructureDefinition/DiagnosticReport
-Alias: DOMAINRESOURCEURL = http://hl7.org/fhir/StructureDefinition/DomainResource
-Alias: EXTENSIONURL = http://hl7.org/fhir/StructureDefinition/Extension
-Alias: IMAGINGSTUDYURL = http://hl7.org/fhir/StructureDefinition/ImagingStudy
-Alias: MEDICATIONREQUESTURL = http://hl7.org/fhir/StructureDefinition/MedicationRequest
-Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
-Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
-Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
-Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
-
-Alias: CONTACTURL = http://hl7.org/Special/committees/cic
-
 /*
  Common Tumor Satellite Observation
  */
@@ -24,15 +7,52 @@ Title: "Tumor Satellite"
 Description: """
     Tumor Satellite
     """
-
-  * . ^definition = """
-    Tumor Satellite Observation.
-	"""
-
-
-	* code 1..1
-	* code = ObservationCodes#tumorSatelliteObservation
-
+  `  {
+  `    "member" : {
+  `      "groupingId" : "CommonResources/TumorSatellite",
+  `      "sort": "",
+  `      "reference" : "StructureDefinition/TumorSatellite"
+  `    }
+  `  },
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   <p>
+<b>'Tumor Satellite' Observation</b>
+</p>
+<p>
+If a tumor observation's Observation.hasMember field contains a referrence 
+to a 'Tumor Satellite' observation, then it is a satellite tumor.
+ The tumor that it is a satellite of is called the index tumor.
+</p>
+<p>
+The 'Tumor Satellite' observation may contain a reference to the index tumor observation.
+</p>
+<p>
+The 'Tumor Satellite' observation may contain a distance to the index tumor.
+</p>
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profile, and its dependencies.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FocusGraph-TumorSatellite.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-TumorSatellite.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
+  * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
+  * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
+  * ^date = "2019-11-01"
+  * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
+  * ^publisher = "Hl7-Clinical Interoperability Council"
+  * ^version = "0.0.2"
   * hasMember 0..0
   * interpretation 0..0
   * referenceRange 0..0
@@ -43,6 +63,32 @@ Description: """
   * contained 0..0
   * device 0..0
   * component 0..0
+
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "TumorSatellite/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "ConsistentWith",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^TumorSatellite/$",
+  `      "target" : "^TumorSatellite/",
+  `      "depth": 0
+  `    }
+  `  },
+
+  * . ^definition = """
+    Tumor Satellite Observation.
+	"""
+
+  * code 1..1
+  * code = ObservationCodes#tumorSatelliteObservation
 
   * value[x] 0..1
   //#apply SliceValue()
@@ -75,6 +121,18 @@ Description: """
   //         }
   //       },
 
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "TumorSatellite/derivedFrom:indexTumor/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "derivedFrom:indexTumor"
+  `      },
+  `      "displayName" : "Derived From/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor"
+  `    }
+  `  },
 
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
@@ -87,6 +145,6 @@ Description: """
     This observation is derived from a 'Tumor Observation reference' observation.
     """
   * derivedFrom[indexTumor] ^definition = """
-      This derivedFrom slice references the index tumor.
+    This derivedFrom slice references the index tumor.
     """
   * derivedFrom[indexTumor] only Reference(OBSERVATIONURL)

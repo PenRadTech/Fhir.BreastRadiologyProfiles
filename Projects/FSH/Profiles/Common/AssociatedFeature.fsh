@@ -1,20 +1,3 @@
-Alias: LOINC = http://loinc.org 
-Alias: SNOMED = http://snomed.info/sct 
-Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
-Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
-Alias: CLINICALIMPRESSIONURL = http://hl7.org/fhir/StructureDefinition/ClinicalImpression
-Alias: DIAGNOSTICREPORTURL = http://hl7.org/fhir/StructureDefinition/DiagnosticReport
-Alias: DOMAINRESOURCEURL = http://hl7.org/fhir/StructureDefinition/DomainResource
-Alias: EXTENSIONURL = http://hl7.org/fhir/StructureDefinition/Extension
-Alias: IMAGINGSTUDYURL = http://hl7.org/fhir/StructureDefinition/ImagingStudy
-Alias: MEDICATIONREQUESTURL = http://hl7.org/fhir/StructureDefinition/MedicationRequest
-Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
-Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
-Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
-Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
-
-Alias: CONTACTURL = http://hl7.org/Special/committees/cic
-
 Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
@@ -22,7 +5,43 @@ Description: """
   Associated Feature
   """
 
+  `  {
+  `    "member" : {
+  `      "groupingId" : "CommonResources/AssociatedFeature",
+  `      "sort": "",
+  `      "reference" : "StructureDefinition/AssociatedFeature"
+  `    }
+  `  },
 
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   <p>
+<b>Associated Feature Observation</b>
+</p>
+<p>
+This resource and referenced child resources contain 
+information about a associated feature observations
+</p>
+<p>
+The feature observed is defined by the codeable concept in the value[x] field.
+</p>
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profile, and its dependencies.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FocusGraph-AssociatedFeature.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-AssociatedFeature.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
 
   * . ^definition = """
     This resource and referenced child resources contain 
@@ -31,6 +50,24 @@ Description: """
   The feature observed is defined by the codeable concept in the value[x] field.
   """
 
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "AssociatedFeature/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "AssociatedFeature",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^AssociatedFeature/$",
+  `      "target" : "^AssociatedFeature/",
+  `      "depth": 0
+  `    }
+  `  },
 
   * code 1..1
   * code = ObservationCodes#associatedFeaturesObservation
@@ -55,6 +92,18 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "AssociatedFeature/component:observedCount/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "component:observedCount"
+  `      },
+  `      "displayName" : "Observed Count/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^AssociatedFeature.component:observedCount"
+  `    }
+  `  },
 
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
@@ -62,14 +111,14 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[observedCount] ^definition = """
-       This component slice contains the number of items observed.
-   This can be a quantity (i.e. 5), or a range (1 to 5).
- 
-   If the lower bound of the range is set but not the upper bound,
-   then it means {lower bound} or more.
- 
-   If the lower bound of the range is not set but the upper bound is,
-   then it means {upper bound} or less.
+      This component slice contains the number of items observed.
+  This can be a quantity (i.e. 5), or a range (1 to 5).
+
+  If the lower bound of the range is set but not the upper bound,
+  then it means {lower bound} or more.
+
+  If the lower bound of the range is not set but the upper bound is,
+  then it means {upper bound} or less.
     """
   * component[observedCount].code 1..1
   * component[observedCount].code ^short = "Observed Count component. component code."
@@ -82,6 +131,18 @@ Description: """
   * component[observedCount].value[x] only Quantity or Range
 
 
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "AssociatedFeature/component:featureType/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "component:featureType"
+  `      },
+  `      "displayName" : "Feature Type/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^AssociatedFeature.component:featureType"
+  `    }
+  `  },
 
   * component contains featureType 1..1
   * component[featureType] ^short = "Associated Feature Type component."
@@ -89,10 +150,10 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[featureType] ^definition = """
-       This slice contains the required component that 
-   defines the observed feature. The value of this 
-   component is a codeable concept chosen from the 
-   AssociatedFeatureVS valueset.",
+    This slice contains the required component that 
+defines the observed feature. The value of this 
+component is a codeable concept chosen from the 
+AssociatedFeatureVS valueset.",
     """
   * component[featureType].code 1..1
   * component[featureType].code ^short = "Associated Feature Type component code."
@@ -101,6 +162,13 @@ Description: """
 	"""
   * component[featureType].code = ObservationComponentSliceCodes#featureType
   
+  `  {
+  `    "graphLinkByBinding" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^AssociatedFeature/component:featureType/$",
+  `      "item" : ".value[x]",
+  `    }
+  `  },
 
   * component[featureType].value[x] 1..1
   * component[featureType].value[x] only CodeableConcept
