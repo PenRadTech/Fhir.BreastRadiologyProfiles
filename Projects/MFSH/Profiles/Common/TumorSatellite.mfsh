@@ -31,20 +31,20 @@ Description: """
   # The 'Tumor Satellite' observation may contain a distance to the index tumor.
   # </p>
   #""")
+  #apply once HeaderFragment()
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoComponentFragment()
+
+  #apply GraphNodeProfile("ConsistentWith")
+  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
   * . ^definition = """
     Tumor Satellite Observation.
 	"""
 
-    #apply GraphNodeProfile("ConsistentWith")
-    #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
-
-	* code 1..1
-	* code = ObservationCodes#tumorSatelliteObservation
-
-  #apply ObservationLeafFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoComponentFragment()
+  * code 1..1
+  * code = ObservationCodes#tumorSatelliteObservation
 
   * value[x] 0..1
   //#apply SliceValue()
