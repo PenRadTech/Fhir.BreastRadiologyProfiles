@@ -1,10 +1,3 @@
-#include "Common.inc"
-#use "FindingBreastFragment.inc"
-#use "ObservationMacros.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-
 Profile: FindingsLeftBreast
   #apply FindingBreastFragment("left")
   #apply IGGroupMemberProfile("BaseResources", "C")

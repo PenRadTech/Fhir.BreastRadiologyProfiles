@@ -1,15 +1,9 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
 // ObservedCount Fragment
 // Fragment that adds 'Observed Count' element to profile.
 
-#macro ObservedCountFragment()
+#macro once ObservedCountFragment()
   #incompatible ObservationNoComponentFragment
-  #apply once SliceComponent()
+  #apply SliceComponent()
   #apply ObservationAddComponent("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
   #   This component slice contains the number of items observed.

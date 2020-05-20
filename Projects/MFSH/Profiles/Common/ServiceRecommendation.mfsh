@@ -1,9 +1,3 @@
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-
 Profile: ServiceRecommendation
 Parent: ServiceRequest
 Title: "Service Recommendation"
@@ -28,7 +22,7 @@ Description: """
   #  but is not limited to only ServiceRecommendation instances.
   # </p>
   #""")
-  #apply once HeaderFragment()
+  #apply HeaderFragment()
 
   #apply GraphNodeProfile("ServiceRecommendation")
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")

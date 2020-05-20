@@ -1,10 +1,3 @@
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "BreastRadiologyComposition.macros.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-
 Profile: BreastRadiologyComposition
 Parent: Composition
 Title: "Breast Radiology Composition"
@@ -45,7 +38,7 @@ Description: """
   # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
   # </P>
   # """)
-  #apply once HeaderFragment()
+  #apply HeaderFragment()
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
@@ -53,7 +46,7 @@ Description: """
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/section:", "0")
   #apply GraphLinkByReference("focus", "^%Profile%/section:", ".entry", "1")
 
-  #apply once StartSectionSlicing()
+  #apply StartSectionSlicing()
 
   * section contains report 1..1 MS
   * section contains impressions 0..1 MS

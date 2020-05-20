@@ -1,0 +1,11 @@
+/*
+ Slice Observation.value[x]
+ */
+#macro SliceValue()
+  #incompatible ObservationNoValueFragment
+  * value[x] ^slicing.discriminator.type = #type
+  * value[x] ^slicing.discriminator.path = "$this"
+  * value[x] ^slicing.rules = #open
+  * value[x] ^slicing.ordered = false
+  * value[x] ^slicing.description = "Value[x] type slicing"
+#end

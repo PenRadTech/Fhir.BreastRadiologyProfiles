@@ -1,9 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
 // PreviouslyDemonstratedBy Fragment
 // <b>Observation 'Demonstrated By' Component Fragment</b>
 

@@ -1,9 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
 // ObservedDistribution Fragment
 // <b>Fragment that adds 'Observed Distribution' components to Observation.</b>
 

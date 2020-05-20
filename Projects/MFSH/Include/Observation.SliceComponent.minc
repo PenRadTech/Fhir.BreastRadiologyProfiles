@@ -1,0 +1,11 @@
+/*
+ Slice Observation.component.
+ */
+#macro once SliceComponent()
+  #incompatible ObservationNoComponentFragment
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
+#end

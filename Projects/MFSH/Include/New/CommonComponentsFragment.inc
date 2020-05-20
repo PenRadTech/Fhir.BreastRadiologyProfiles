@@ -1,12 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-#use "BreastBodyLocationRequiredFragment.inc"
-#use "ObservedChangesFragment.inc"
-#use "BiRadFragment.inc"
 // Common Components Fragment
 // <b>Common Components fragment</b>
 // 
@@ -21,9 +12,9 @@
 // </ul>
 
 #macro CommonComponentsFragment()
-    #apply once BreastBodyLocationRequiredFragment()
-    #apply once ObservedChangesFragment()
-    #apply once BiRadFragment()
+    #apply BreastBodyLocationRequiredFragment()
+    #apply ObservedChangesFragment()
+    #apply BiRadFragment()
 #end
     //   "differential": {
     //     "element": [

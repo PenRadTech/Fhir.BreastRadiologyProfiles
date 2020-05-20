@@ -1,10 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-#use "BreastBodyLocationRequiredFragment.inc"
 // Shape Components Fragment
 // <b>Shape component slice fragment</b>
 // 

@@ -1,9 +1,3 @@
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-
 // Adds NotPreviously Seen Component slice.
 #macro NotPreviouslySeenComponentFragment()
 

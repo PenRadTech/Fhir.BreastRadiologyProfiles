@@ -1,0 +1,13 @@
+/*
+ Add a hasmember slice to an observation.
+ This adds the component slicing discriminator.
+ It does not constrain the hasMember target.
+ */
+#macro ObservationAddHasMember(SliceName, Cardinality, DisplayName, ShortDesc, Definition)
+  #apply GraphNodeElement("component:SliceName", "DisplayName/Component")
+
+  #apply SliceHasMember()
+  * hasMember contains SliceName Cardinality
+  * hasMember[SliceName] ^short = "ShortDesc hasMember."
+  * component[SliceName].code = ComponentCode
+#end

@@ -1,9 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
 // CorrespondsWith Fragment
 // <b>Observation 'Consistent With' Component Fragment</b>
 

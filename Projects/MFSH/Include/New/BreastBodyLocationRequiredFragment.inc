@@ -1,9 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
 // Breast Body Location (Required) Fragment
 // <b>Required Breast Body Location fragment</b>
 // 
@@ -11,8 +5,8 @@
 // 
 // The references are required, meaning that the breast body location must exist.
 
-#macro BreastBodyLocationRequiredFragment()
-    #apply once HeaderFragment()
+#macro once BreastBodyLocationRequiredFragment()
+    #apply HeaderFragment()
 #end
     //   "differential": {
     //     "element": [

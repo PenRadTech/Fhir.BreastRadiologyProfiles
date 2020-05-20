@@ -1,0 +1,19 @@
+/*
+ Add a derivedFrom slice to an observation.
+ This adds the component slicing discriminator.
+ It does not constrain the hasMember target.
+ */
+#macro ObservationAddDerivedFrom(SliceName, Cardinality, DisplayName, ShortDesc, Definition, Url)
+  #apply GraphNodeElement("derivedFrom:SliceName", "DisplayName/Component")
+
+  #apply SliceDerivedFrom()
+  * derivedFrom contains SliceName Cardinality
+  * derivedFrom[SliceName] ^short = "ShortDesc component."
+  * derivedFrom[SliceName] ^comment = """
+    This observation is derived from a 'ShortDesc' observation.
+    """
+  * derivedFrom[SliceName] ^definition = """
+    Definition
+    """
+  * derivedFrom[SliceName] only Reference(Url)
+#end

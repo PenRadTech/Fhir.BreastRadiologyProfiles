@@ -1,8 +1,5 @@
 // This file sets up the ImplementationGuide groups.
 
-#use "IGBuilder.inc"
-
-
 #apply IGGroup("BaseResources", 
 # "Main Resources", 
 # """

@@ -1,9 +1,3 @@
-#include "Common.inc"
-#include "NodeGraph.inc"
-#use "HeaderFragment.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-
 Profile: BreastRadiologyReport
 Parent: DiagnosticReport
 Title: "Breast Radiology Report"
@@ -26,7 +20,7 @@ Description: """
   # including the narrative result.
   # </p>
   # """)
-  #apply once HeaderFragment()
+  #apply HeaderFragment()
   #apply GraphNodeProfile("Report")
   #apply GraphNodeElement("code", "Code")
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")

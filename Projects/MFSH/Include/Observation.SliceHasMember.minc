@@ -1,0 +1,11 @@
+/*
+ Slice Observation.hasMember.
+ */
+#macro once SliceHasMember()
+  #incompatible ObservationLeafFragment
+  * hasMember ^slicing.discriminator.type = #value
+  * hasMember ^slicing.discriminator.path = "url"
+  * hasMember ^slicing.rules = #open
+  * hasMember ^slicing.ordered = false
+  * hasMember ^slicing.description = "Component slicing"
+#end

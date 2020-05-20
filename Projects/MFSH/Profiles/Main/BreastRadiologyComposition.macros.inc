@@ -1,7 +1,4 @@
-#include "Common.inc"
-#use "NodeGraph.inc"
-
-#macro StartSectionSlicing()
+#macro once StartSectionSlicing()
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
