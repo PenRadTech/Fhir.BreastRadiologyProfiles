@@ -34,10 +34,9 @@ Description: """
 
   * value[x] 0..1
   * value[x] only Quantity or Range
-  * valueQuantity units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
-  * valueRange.low units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
-  * valueRange.high units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
- 
+  * valueQuantity units from UNITSOFLENGTH
+  * valueRange.low units from UNITSOFLENGTH
+  * valueRange.high units from UNITSOFLENGTH
 
 
   * derivedFrom ^slicing.discriminator.type = #value
