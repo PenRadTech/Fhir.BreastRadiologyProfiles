@@ -40,35 +40,11 @@ Description: """
   * code = ObservationCodes#tumorSatelliteObservation
 
   * value[x] 0..1
-  //#apply SliceValue()
-  //* value[x] contains quantity and range 0..1
-  //* value[x][quantity] ^ pattern.system = "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
-  
-  //       {
-  //         "id": "Observation.value[x]:valueRange",
-  //         "path": "Observation.value[x]",
-  //         "sliceName": "valueRange",
-  //         "min": 0,
-  //         "max": "1",
-  //         "base": {
-  //           "path": "Observation.value[x]",
-  //           "min": 0,
-  //           "max": "1"
-  //         },
-  //         "type": [
-  //           {
-  //             "code": "Range"
-  //           }
-  //         ],
-  //         "patternRange": {
-  //           "low": {
-  //             "system": "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
-  //           },
-  //           "high": {
-  //             "system": "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS"
-  //           }
-  //         }
-  //       },
+  * value[x] only Quantity or Range
+  * valueQuantity units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
+  * valueRange.low units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
+  * valueRange.high units from http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
+ 
 
   #apply ObservationAddDerivedFrom("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
   #  """
