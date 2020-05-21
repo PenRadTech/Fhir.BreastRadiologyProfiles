@@ -1,0 +1,30 @@
+`  {
+  `    "graphNode" : {
+  `      "nodeName" : "TumorSatellite/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "ConsistentWith",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^TumorSatellite/$",
+  `      "target" : "^TumorSatellite/",
+  `      "depth": 0
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "TumorSatellite/derivedFrom:indexTumor/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "derivedFrom:indexTumor"
+  `      },
+  `      "displayName" : "Derived From/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor"
+  `    }
+  `  },

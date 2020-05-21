@@ -5,46 +5,7 @@ Description: """
   Service Recommendation
   """
 
-  `  {
-  `    "member" : {
-  `      "groupingId" : "BaseResources",
-  `      "sort": "",
-  `      "reference" : "StructureDefinition/ServiceRecommendation"
-  `    }
-  `  },
 
-  ` <div xmlns="http://www.w3.org/1999/xhtml"
-  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  `   <p>
-  `     <u style="font-size:large;">Description</u>
-  `   </p>
-  `   <p>
-Recommended follow-up action to be taken in response to the 
-findings of this exam.
-</p>
-<p>
-This resource is a profile of ServiceRequest. It's ServiceRequest.code is bound to a value set of common
- breast radiology recommendations. This list is not meant to be comprehensive, just commonly used items will
- will be included in the list.
-</p>
-<p>
-The Breast Radiology Report contains references to zero or more recommendations, which may include ServiceRecommendation instances
- but is not limited to only ServiceRecommendation instances.
-</p>
-  `   <p>
-  `     <u style="font-size:large;">Graphical Overview</u>
-  `   </p>
-  `   <p>
-  `     This graph provides an overview of this profile, and its dependencies.
-  `   </p>
-  `   <p>
-  `     Click on any of the elements of the graph to go to a section describing that element.
-  `   </p>
-  `   <object data="FocusGraph-ServiceRecommendation.svg" type="image/svg+xml">
-  `     <img src="FocusGraph-ServiceRecommendation.svg" alt="image/svg+xml" />
-  `   </object>
-  ` </div>
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -52,43 +13,6 @@ The Breast Radiology Report contains references to zero or more recommendations,
   * ^publisher = "Hl7-Clinical Interoperability Council"
   * ^version = "0.0.2"
 
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "ServiceRecommendation/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%"
-  `      },
-  `      "displayName" : "ServiceRecommendation",
-  `      "cssClass" : "profile"
-  `    }
-  `  },
-  `  {
-  `    "graphLinkByName" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^ServiceRecommendation/$",
-  `      "target" : "^ServiceRecommendation/",
-  `      "depth": 0
-  `    }
-  `  },
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "ServiceRecommendation/code/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
-  `        "item" : "code"
-  `      },
-  `      "displayName" : "code",
-  `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^ServiceRecommendation.code"
-  `    }
-  `  },
-  `  {
-  `    "graphLinkByBinding" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^ServiceRecommendation/code/$",
-  `      "item" : "",
-  `    }
-  `  },
 
   * . ^definition = """
     Followup Service Recommendation.

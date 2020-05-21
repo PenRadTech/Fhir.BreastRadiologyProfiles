@@ -13,7 +13,7 @@
     This is one component of a group of components that are part of the observation.
     """
   * component[SliceName] ^definition = """
-    Definition
+Definition
     """
   * component[SliceName].code 1..1
   * component[SliceName].code ^short = "ShortDesc component code."

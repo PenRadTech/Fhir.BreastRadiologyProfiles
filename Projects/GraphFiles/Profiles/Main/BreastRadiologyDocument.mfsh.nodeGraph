@@ -1,0 +1,38 @@
+`  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyDocument/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "Breast/Radiology/Document",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^BreastRadiologyDocument/$",
+  `      "target" : "^BreastRadiologyDocument/entry:",
+  `      "depth": 0
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByReference" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^BreastRadiologyDocument/entry:",
+  `      "item" : ".resource",
+  `      "depth": 1
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "BreastRadiologyDocument/entry:index/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "entry:index"
+  `      },
+  `      "displayName" : "Composition index",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^BreastRadiologyDocument.entry:index"
+  `    }
+  `  },

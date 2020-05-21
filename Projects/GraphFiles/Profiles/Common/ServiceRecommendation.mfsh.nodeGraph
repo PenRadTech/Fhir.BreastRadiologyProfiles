@@ -1,0 +1,37 @@
+`  {
+  `    "graphNode" : {
+  `      "nodeName" : "ServiceRecommendation/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "ServiceRecommendation",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^ServiceRecommendation/$",
+  `      "target" : "^ServiceRecommendation/",
+  `      "depth": 0
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "ServiceRecommendation/code/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "code"
+  `      },
+  `      "displayName" : "code",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^ServiceRecommendation.code"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByBinding" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^ServiceRecommendation/code/$",
+  `      "item" : "",
+  `    }
+  `  },

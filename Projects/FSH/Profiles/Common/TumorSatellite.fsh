@@ -7,46 +7,6 @@ Title: "Tumor Satellite"
 Description: """
     Tumor Satellite
     """
-  `  {
-  `    "member" : {
-  `      "groupingId" : "CommonResources/TumorSatellite",
-  `      "sort": "",
-  `      "reference" : "StructureDefinition/TumorSatellite"
-  `    }
-  `  },
-  ` <div xmlns="http://www.w3.org/1999/xhtml"
-  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  `   <p>
-  `     <u style="font-size:large;">Description</u>
-  `   </p>
-  `   <p>
-<b>'Tumor Satellite' Observation</b>
-</p>
-<p>
-If a tumor observation's Observation.hasMember field contains a referrence 
-to a 'Tumor Satellite' observation, then it is a satellite tumor.
- The tumor that it is a satellite of is called the index tumor.
-</p>
-<p>
-The 'Tumor Satellite' observation may contain a reference to the index tumor observation.
-</p>
-<p>
-The 'Tumor Satellite' observation may contain a distance to the index tumor.
-</p>
-  `   <p>
-  `     <u style="font-size:large;">Graphical Overview</u>
-  `   </p>
-  `   <p>
-  `     This graph provides an overview of this profile, and its dependencies.
-  `   </p>
-  `   <p>
-  `     Click on any of the elements of the graph to go to a section describing that element.
-  `   </p>
-  `   <object data="FocusGraph-TumorSatellite.svg" type="image/svg+xml">
-  `     <img src="FocusGraph-TumorSatellite.svg" alt="image/svg+xml" />
-  `   </object>
-  ` </div>
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -64,24 +24,6 @@ The 'Tumor Satellite' observation may contain a distance to the index tumor.
   * device 0..0
   * component 0..0
 
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "TumorSatellite/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%"
-  `      },
-  `      "displayName" : "ConsistentWith",
-  `      "cssClass" : "profile"
-  `    }
-  `  },
-  `  {
-  `    "graphLinkByName" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^TumorSatellite/$",
-  `      "target" : "^TumorSatellite/",
-  `      "depth": 0
-  `    }
-  `  },
 
   * . ^definition = """
     Tumor Satellite Observation.
@@ -121,18 +63,6 @@ The 'Tumor Satellite' observation may contain a distance to the index tumor.
   //         }
   //       },
 
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "TumorSatellite/derivedFrom:indexTumor/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
-  `        "item" : "derivedFrom:indexTumor"
-  `      },
-  `      "displayName" : "Derived From/Component",
-  `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor"
-  `    }
-  `  },
 
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
@@ -145,6 +75,6 @@ The 'Tumor Satellite' observation may contain a distance to the index tumor.
     This observation is derived from a 'Tumor Observation reference' observation.
     """
   * derivedFrom[indexTumor] ^definition = """
-    This derivedFrom slice references the index tumor.
+This derivedFrom slice references the index tumor.
     """
   * derivedFrom[indexTumor] only Reference(OBSERVATIONURL)

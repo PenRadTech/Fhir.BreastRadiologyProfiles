@@ -2,8 +2,8 @@ Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
 Description: """
-  Associated Feature
-  """
+    Associated Feature
+    """
 
   #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
 
@@ -24,8 +24,8 @@ Description: """
     This resource and referenced child resources contain 
     information about a associated feature observations
      
-  The feature observed is defined by the codeable concept in the value[x] field.
-  """
+    The feature observed is defined by the codeable concept in the value[x] field.
+    """
 
   #apply GraphNodeProfile("AssociatedFeature")
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
@@ -41,11 +41,11 @@ Description: """
   #apply ObservedCountFragment()
 
   #apply ObservationAddComponent("featureType", "1..1", "Feature Type", "Associated Feature Type",
-  #	  """
-  #   This slice contains the required component that 
-  #   defines the observed feature. The value of this 
-  #   component is a codeable concept chosen from the 
-  #   AssociatedFeatureVS valueset.",
+  #	 """
+  #  This slice contains the required component that 
+  #  defines the observed feature. The value of this 
+  #  component is a codeable concept chosen from the 
+  #  AssociatedFeatureVS valueset.",
   #  """,
   #   "ObservationComponentSliceCodes#featureType")
   

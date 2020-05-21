@@ -13,7 +13,7 @@
     This observation is derived from a 'ShortDesc' observation.
     """
   * derivedFrom[SliceName] ^definition = """
-    Definition
+Definition
     """
   * derivedFrom[SliceName] only Reference(Url)
 #end

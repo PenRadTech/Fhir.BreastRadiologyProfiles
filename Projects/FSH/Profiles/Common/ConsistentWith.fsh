@@ -5,64 +5,12 @@ Description: """
     Consistent With
     """
 
-  `  {
-  `    "member" : {
-  `      "groupingId" : "CommonResources/ConsistentWith",
-  `      "sort": "",
-  `      "reference" : "StructureDefinition/ConsistentWith"
-  `    }
-  `  },
 
-  ` <div xmlns="http://www.w3.org/1999/xhtml"
-  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
-  `   <p>
-  `     <u style="font-size:large;">Description</u>
-  `   </p>
-  `   <p>
-<b>'Consistent With' Observation</b>
-</p>
-<p>
-This resource contains information about a determination 
-that the parent abnormality is consistent with 
-the finding described in this resource.
-</p>
-  `   <p>
-  `     <u style="font-size:large;">Graphical Overview</u>
-  `   </p>
-  `   <p>
-  `     This graph provides an overview of this profile, and its dependencies.
-  `   </p>
-  `   <p>
-  `     Click on any of the elements of the graph to go to a section describing that element.
-  `   </p>
-  `   <object data="FocusGraph-ConsistentWith.svg" type="image/svg+xml">
-  `     <img src="FocusGraph-ConsistentWith.svg" alt="image/svg+xml" />
-  `   </object>
-  ` </div>
 
   * . ^definition = """
     Consistent With Observation.
 	"""
 
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "ConsistentWith/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%"
-  `      },
-  `      "displayName" : "ConsistentWith",
-  `      "cssClass" : "profile"
-  `    }
-  `  },
-  `  {
-  `    "graphLinkByName" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^ConsistentWith/$",
-  `      "target" : "^ConsistentWith/",
-  `      "depth": 0
-  `    }
-  `  },
 
   * code 1..1
   * code = ObservationCodes#consistentWithObservation
@@ -82,18 +30,6 @@ the finding described in this resource.
   * referenceRange 0..0
 
   // Define Consistent With Slice
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "ConsistentWith/component:consistentWith/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
-  `        "item" : "component:consistentWith"
-  `      },
-  `      "displayName" : "Consistent With/Component",
-  `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^ConsistentWith.component:consistentWith"
-  `    }
-  `  },
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -106,7 +42,7 @@ the finding described in this resource.
     This is one component of a group of components that are part of the observation.
     """
   * component[consistentWith] ^definition = """
-       This slice contains the required component that defines what this 
+   This slice contains the required component that defines what this 
    observation is consistent with.
 
    The value of this component is a codeable concept chosen from the 
@@ -119,13 +55,6 @@ the finding described in this resource.
 	"""
   * component[consistentWith].code = ObservationComponentSliceCodes#consistentWithValue
 
-  `  {
-  `    "graphLinkByBinding" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^ConsistentWith/component:consistentWith/$",
-  `      "item" : ".value[x]",
-  `    }
-  `  },
 
   * component[consistentWith].value[x] 1..1
   * component[consistentWith].value[x] only CodeableConcept
@@ -133,18 +62,6 @@ the finding described in this resource.
 
 
   // Define Consistent With Qualifier Slice
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "ConsistentWith/component:qualifier/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
-  `        "item" : "component:qualifier"
-  `      },
-  `      "displayName" : "Qualifier/Component",
-  `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^ConsistentWith.component:qualifier"
-  `    }
-  `  },
 
   * component contains qualifier 0..*
   * component[qualifier] ^short = "Consistent With Qualifier component."
@@ -152,7 +69,7 @@ the finding described in this resource.
     This is one component of a group of components that are part of the observation.
     """
   * component[qualifier] ^definition = """
-    This slice contains the optional components that qualify the 'consistentWith' slice component value.
+This slice contains the optional components that qualify the 'consistentWith' slice component value.
 The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
     """
   * component[qualifier].code 1..1
@@ -162,13 +79,6 @@ The value of this component is a codeable concept chosen from the ConsistentWith
 	"""
   * component[qualifier].code = ObservationComponentSliceCodes#consistentWithQualifier
 
-  `  {
-  `    "graphLinkByBinding" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^ConsistentWith/component:qualifier/$",
-  `      "item" : ".value[x]",
-  `    }
-  `  },
 
   * component[qualifier].value[x] 0..1
   * component[qualifier].value[x] only CodeableConcept

@@ -1,0 +1,56 @@
+`  {
+  `    "graphNode" : {
+  `      "nodeName" : "ConsistentWith/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "ConsistentWith",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^ConsistentWith/$",
+  `      "target" : "^ConsistentWith/",
+  `      "depth": 0
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "ConsistentWith/component:consistentWith/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "component:consistentWith"
+  `      },
+  `      "displayName" : "Consistent With/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^ConsistentWith.component:consistentWith"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByBinding" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^ConsistentWith/component:consistentWith/$",
+  `      "item" : ".value[x]",
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "ConsistentWith/component:qualifier/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "component:qualifier"
+  `      },
+  `      "displayName" : "Qualifier/Component",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^ConsistentWith.component:qualifier"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByBinding" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^ConsistentWith/component:qualifier/$",
+  `      "item" : ".value[x]",
+  `    }
+  `  },

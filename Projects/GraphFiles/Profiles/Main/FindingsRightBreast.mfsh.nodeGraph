@@ -1,0 +1,30 @@
+`  {
+  `    "graphNode" : {
+  `      "nodeName" : "FindingsRightBreast/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%"
+  `      },
+  `      "displayName" : "Findings/Right Breast",
+  `      "cssClass" : "profile"
+  `    }
+  `  },
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "FindingsRightBreast/bodySite/",
+  `      "anchor" : {
+  `        "url" : "%ProfileUrl%",
+  `        "item" : "bodySite"
+  `      },
+  `      "displayName" : "Body Site",
+  `      "cssClass" : "element",
+  `      "lhsAnnotationText": "^FindingsRightBreast.bodySite"
+  `    }
+  `  },
+  `  {
+  `    "graphLinkByName" : {
+  `      "traversalName" : "focus",
+  `      "source" : "^FindingsRightBreast/$",
+  `      "target" : "^FindingsRightBreast/",
+  `      "depth": 0
+  `    }
+  `  },

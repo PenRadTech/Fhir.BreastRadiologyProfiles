@@ -1,5 +1,5 @@
 CodeSystem: CorrespondsWithCodeSystemCS
-Title: "Consistent With CodeSystem"
+Title: "Corresponds With CodeSystem"
 Description: "CorrespondsWith code system"
 //+ Codes
   * #Aspiration "Aspiration"
