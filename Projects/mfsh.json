@@ -2,11 +2,22 @@
 	"baseInputDir": "MFSH",
 	"baseOutputDir": "FSH",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology",
-	"includeDirs": [
-		"MFSH/Include"
-	],
 	"mfshPaths": [
 		"MFSH"
+	],
+	"cleanDirs": [
+		{
+			"path": "..\\build\\input\\pagecontent",
+			"filter": "StructureDefinition-*-intro.xml"
+		},
+		{
+			"path": "fsh",
+			"filter": "*.fsh"
+		},
+		{
+			"path": "..\\GraphFiles",
+			"filter": "*.nodeGraph"
+		}
 	],
 	"defines": [
 		{

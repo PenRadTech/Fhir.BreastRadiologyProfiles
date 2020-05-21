@@ -1,30 +1,30 @@
-`  {
-  `    "graphNode" : {
-  `      "nodeName" : "FindingsRightBreast/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%"
-  `      },
-  `      "displayName" : "Findings/Right Breast",
-  `      "cssClass" : "profile"
-  `    }
-  `  },
-  `  {
-  `    "graphNode" : {
-  `      "nodeName" : "FindingsRightBreast/bodySite/",
-  `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
-  `        "item" : "bodySite"
-  `      },
-  `      "displayName" : "Body Site",
-  `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^FindingsRightBreast.bodySite"
-  `    }
-  `  },
-  `  {
-  `    "graphLinkByName" : {
-  `      "traversalName" : "focus",
-  `      "source" : "^FindingsRightBreast/$",
-  `      "target" : "^FindingsRightBreast/",
-  `      "depth": 0
-  `    }
-  `  },
+{
+    "graphNode" : {
+      "nodeName" : "FindingsRightBreast/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast"
+      },
+      "displayName" : "Findings/Right Breast",
+      "cssClass" : "profile"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsRightBreast/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
+        "item" : "bodySite"
+      },
+      "displayName" : "Body Site",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsRightBreast.bodySite"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/$",
+      "target" : "^FindingsRightBreast/",
+      "depth": 0
+    }
+  },
