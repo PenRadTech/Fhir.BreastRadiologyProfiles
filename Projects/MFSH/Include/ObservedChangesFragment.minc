@@ -4,11 +4,11 @@
 #macro once ObservedChangesFragment()
   // Define Consistent With Slice
   #apply ObservationAddComponent("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
-  #	"""
-  # This slice contains the optional components that define observed changes in this abnormality.
-  # The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
-  #	""",
-  #   "ObservationComponentSliceCodes#obsChanges")
+  #	 """
+  #  This slice contains the optional components that define observed changes in this abnormality.
+  #  The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodes#obsChanges")
 
   #apply ObservationSetComponentConcept("obsChanges", "1..1", "ObservedChangesVS")
 #end
