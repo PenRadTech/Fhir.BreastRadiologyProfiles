@@ -30,7 +30,7 @@ Description: """
 	"""
 
   * code 1..1
-  * code = ObservationCodes#tumorSatelliteObservation
+  * code = ObservationCodesCS#tumorSatelliteObservation
 
   * value[x] 0..1
   * value[x] only Quantity or Range

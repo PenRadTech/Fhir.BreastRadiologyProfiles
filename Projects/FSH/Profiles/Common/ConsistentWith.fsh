@@ -13,7 +13,7 @@ Description: """
 
 
   * code 1..1
-  * code = ObservationCodes#consistentWithObservation
+  * code = ObservationCodesCS#consistentWithObservation
 
   * hasMember 0..0
   * interpretation 0..0
@@ -53,7 +53,7 @@ Description: """
   * component[consistentWith].code ^definition = """
     This code identifies the Consistent With component.
 	"""
-  * component[consistentWith].code = ObservationComponentSliceCodes#consistentWithValue
+  * component[consistentWith].code = ObservationComponentSliceCodesCS#consistentWithValue
 
 
   * component[consistentWith].value[x] 1..1
@@ -77,7 +77,7 @@ The value of this component is a codeable concept chosen from the ConsistentWith
   * component[qualifier].code ^definition = """
     This code identifies the Consistent With Qualifier component.
 	"""
-  * component[qualifier].code = ObservationComponentSliceCodes#consistentWithQualifier
+  * component[qualifier].code = ObservationComponentSliceCodesCS#consistentWithQualifier
 
 
   * component[qualifier].value[x] 0..1

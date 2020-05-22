@@ -60,7 +60,7 @@
     //             "valueCodeableConcept": {
     //               "coding": [
     //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //                   "code": "orientation",
     //                   "display": "Component code for 'Orientation' slice"
     //                 }
@@ -82,7 +82,7 @@
     //         "patternCodeableConcept": {
     //           "coding": [
     //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //               "code": "orientation"
     //             }
     //           ]
@@ -133,7 +133,7 @@
     //             "valueCodeableConcept": {
     //               "coding": [
     //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //                   "code": "shape",
     //                   "display": "Component code for 'Shape' slice"
     //                 }
@@ -155,7 +155,7 @@
     //         "patternCodeableConcept": {
     //           "coding": [
     //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //               "code": "shape"
     //             }
     //           ]
@@ -206,7 +206,7 @@
     //             "valueCodeableConcept": {
     //               "coding": [
     //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //                   "code": "margin",
     //                   "display": "Component code for 'Margin' slice"
     //                 }
@@ -228,7 +228,7 @@
     //         "patternCodeableConcept": {
     //           "coding": [
     //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //               "code": "margin"
     //             }
     //           ]
@@ -279,7 +279,7 @@
     //             "valueCodeableConcept": {
     //               "coding": [
     //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //                   "code": "mgDensity",
     //                   "display": "Component code for 'MG Density' slice"
     //                 }
@@ -301,7 +301,7 @@
     //         "patternCodeableConcept": {
     //           "coding": [
     //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //               "code": "mgDensity"
     //             }
     //           ]

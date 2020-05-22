@@ -1,0 +1,48 @@
+/*
+  ObservedDistribution Fragment
+  Fragment that adds 'Observed Distribution' components to Observation.
+  */
+
+
+#macro ObservedDistributionFragment()
+  #incompatible ObservationNoComponentFragment
+
+  // define calcification distribution slice
+  #apply ObservationAddComponent("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
+  #	 """
+  #  This slice contains the optional components that describe the distribution of
+  #  a group of abnormalities.
+  #  The value of this component is a codeable concept chosen from the 
+  #  CalcificationDistributionVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#obsDistribution")
+ 
+  #apply ObservationSetComponentConcept("obsDistribution", "1..1", "CalcificationDistributionVS")
+ 
+
+  // Define distribution region size.
+  #apply ObservationAddComponent("obsDistRegionSize", "0..1", "Observed Distribution Region Size", "Observed size of distribution region.",
+  #	 """
+  #  This component slice contains the size of an region inside of which there 
+  #  is a distribution of abnormalities.
+  #  
+  #  There may be one, two, or three values indicating a size of
+  #  one dimension (length), two dimensions (area), or three dimensions (volume).
+  #  
+  #  Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
+  #  
+  #  If the lower bound of the range is set but not the upper bound, 
+  #  then the size is {lower bound} or greater.
+  #  
+  #  If the upper bound of the range is set but not the lower bound, 
+  #  
+  #  then the size is {upper bound} or less.
+  #	  """,
+  #  "ObservationComponentSliceCodesCS#obsDistRegionSize")
+	
+  * component[obsDistRegionSize].value[x] 1..1
+  * component[obsDistRegionSize].value[x] only Quantity or Range
+  * component[obsDistRegionSize]valueQuantity units from UNITSOFLENGTH
+  * component[obsDistRegionSize]valueRange.low units from UNITSOFLENGTH
+  * component[obsDistRegionSize]valueRange.high units from UNITSOFLENGTH
+#end

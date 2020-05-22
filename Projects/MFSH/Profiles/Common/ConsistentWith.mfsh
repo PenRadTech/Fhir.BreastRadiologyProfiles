@@ -26,7 +26,7 @@ Description: """
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
   * code 1..1
-  * code = ObservationCodes#consistentWithObservation
+  * code = ObservationCodesCS#consistentWithObservation
 
   #apply ObservationLeafFragment()
   #apply ObservationNoDeviceFragment()
@@ -41,7 +41,7 @@ Description: """
   #   The value of this component is a codeable concept chosen from the 
   #   ConsistentWithVS valueset.
   #	""",
-  #   "ObservationComponentSliceCodes#consistentWithValue")
+  #   "ObservationComponentSliceCodesCS#consistentWithValue")
 
   #apply ObservationSetComponentConcept("consistentWith", "1..1", "ConsistentWithVS")
 
@@ -52,7 +52,7 @@ Description: """
   #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
   #   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
   #	""",
-  #   "ObservationComponentSliceCodes#consistentWithQualifier")
+  #   "ObservationComponentSliceCodesCS#consistentWithQualifier")
 
   #apply ObservationSetComponentConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
 

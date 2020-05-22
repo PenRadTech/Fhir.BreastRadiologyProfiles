@@ -31,7 +31,7 @@ Description: """
   #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
 
   * code 1..1
-  * code = ObservationCodes#associatedFeaturesObservation
+  * code = ObservationCodesCS#associatedFeaturesObservation
 
   #apply ObservationLeafFragment()
   #apply ObservationNoDeviceFragment()
@@ -47,7 +47,7 @@ Description: """
   #  component is a codeable concept chosen from the 
   #  AssociatedFeatureVS valueset.",
   #  """,
-  #   "ObservationComponentSliceCodes#featureType")
+  #   "ObservationComponentSliceCodesCS#featureType")
   
   #apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
 

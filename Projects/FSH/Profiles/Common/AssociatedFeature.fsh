@@ -16,7 +16,7 @@ Description: """
 
 
   * code 1..1
-  * code = ObservationCodes#associatedFeaturesObservation
+  * code = ObservationCodesCS#associatedFeaturesObservation
 
   * hasMember 0..0
   * interpretation 0..0
@@ -59,7 +59,7 @@ Description: """
   * component[observedCount].code ^definition = """
     This code identifies the Observed Count component. component.
 	"""
-  * component[observedCount].code = ObservationComponentSliceCodes#obsCount
+  * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
@@ -82,7 +82,7 @@ AssociatedFeatureVS valueset.",
   * component[featureType].code ^definition = """
     This code identifies the Associated Feature Type component.
 	"""
-  * component[featureType].code = ObservationComponentSliceCodes#featureType
+  * component[featureType].code = ObservationComponentSliceCodesCS#featureType
   
 
   * component[featureType].value[x] 1..1

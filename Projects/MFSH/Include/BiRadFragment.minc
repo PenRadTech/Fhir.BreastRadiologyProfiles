@@ -8,7 +8,7 @@
   #  This slice contains the optional component that define the BiRAD risk code.
   #  The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
   #	 """,
-  #  "ObservationComponentSliceCodes#targetBiRads")
+  #  "ObservationComponentSliceCodesCS#targetBiRads")
 	
   #apply ObservationSetComponentConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 #end

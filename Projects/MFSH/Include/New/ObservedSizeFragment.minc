@@ -56,7 +56,7 @@
     //             "valueCodeableConcept": {
     //               "coding": [
     //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //                   "code": "obsSize",
     //                   "display": "Component code for 'Observed Size' slice"
     //                 }
@@ -76,7 +76,7 @@
     //         "patternCodeableConcept": {
     //           "coding": [
     //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodesCS",
     //               "code": "obsSize"
     //             }
     //           ]
