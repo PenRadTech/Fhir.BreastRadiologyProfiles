@@ -23,7 +23,7 @@ Description: """
   #apply HeaderFragment()
   #apply GraphNodeProfile("Report")
   #apply GraphNodeElement("code", "Code")
-  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
   
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
   * code = LOINC#10193-1

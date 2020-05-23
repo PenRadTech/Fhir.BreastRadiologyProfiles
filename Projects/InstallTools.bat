@@ -5,7 +5,7 @@ dotnet tool uninstall --global Eir.IGBuilder
 
 
 dotnet tool install --global Eir.AutoMate --version 1.4.0
-dotnet tool install --global Eir.MFSH --version 2.0.6
+dotnet tool install --global Eir.MFSH --version 2.0.7
 dotnet tool install --global Eir.FGraph --version 2.0.0
 dotnet tool install --global Eir.IGBuilder --version 1.4.3
 

@@ -28,7 +28,7 @@ Description: """
     """
 
   #apply GraphNodeProfile("AssociatedFeature")
-  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation

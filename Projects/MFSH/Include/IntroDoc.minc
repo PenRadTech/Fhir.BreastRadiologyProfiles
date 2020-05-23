@@ -3,7 +3,7 @@
 // The output of this gets automatically put at the start of the profile
 // web page.
 //
-#macro IntroDocGraph(%Description%) > "%PageContent%\\StructureDefinition-%Profile%-intro.xml"
+#macro IntroDocGraph(%Description%) > "%PageContent%\\StructureDefinition-%Id%-intro.xml"
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
@@ -20,8 +20,8 @@
   `   <p>
   `     Click on any of the elements of the graph to go to a section describing that element.
   `   </p>
-  `   <object data="FocusGraph-%Profile%.svg" type="image/svg+xml">
-  `     <img src="FocusGraph-%Profile%.svg" alt="image/svg+xml" />
+  `   <object data="FocusGraph-%Id%.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-%Id%.svg" alt="image/svg+xml" />
   `   </object>
   ` </div>
 #end

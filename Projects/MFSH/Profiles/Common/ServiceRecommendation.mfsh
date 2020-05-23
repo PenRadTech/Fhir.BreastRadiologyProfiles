@@ -25,9 +25,9 @@ Description: """
   #apply HeaderFragment()
 
   #apply GraphNodeProfile("ServiceRecommendation")
-  #apply GraphLinkByName("focus", "^%Profile%/$", "^%Profile%/", "0")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
   #apply GraphNodeElement("code", "code")
-  #apply GraphLinkByBinding("focus", "^%Profile%/code/$", "")
+  #apply GraphLinkByBinding("focus", "^%Id%/code/$", "")
 
   * . ^definition = """
     Followup Service Recommendation.

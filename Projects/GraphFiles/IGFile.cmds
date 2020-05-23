@@ -2,70 +2,70 @@
     "member" : {
       "groupingId" : "ExtensionResources/BreastBodyLocation",
       "sort": "",
-      "reference" : "StructureDefinition/%Profile%"
+      "reference" : "StructureDefinition/ExtensionResources/BreastBodyLocation"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
-      "reference" : "StructureDefinition/AssociatedFeature"
+      "reference" : "StructureDefinition/CommonResources/AssociatedFeature"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources/ConsistentWith",
       "sort": "",
-      "reference" : "StructureDefinition/ConsistentWith"
+      "reference" : "StructureDefinition/CommonResources/ConsistentWith"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "",
-      "reference" : "StructureDefinition/ServiceRecommendation"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources/TumorSatellite",
       "sort": "",
-      "reference" : "StructureDefinition/TumorSatellite"
+      "reference" : "StructureDefinition/CommonResources/TumorSatellite"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "B",
-      "reference" : "StructureDefinition/BreastRadiologyComposition"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "A",
-      "reference" : "StructureDefinition/BreastRadiologyDocument"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/BreastRadiologyReport"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/FindingsLeftBreast"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/FindingsRightBreast"
+      "reference" : "StructureDefinition/BaseResources"
     }
   },
   {

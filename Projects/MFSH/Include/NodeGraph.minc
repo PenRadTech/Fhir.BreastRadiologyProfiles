@@ -4,7 +4,7 @@
 #macro GraphNodeProfile(DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Profile%/",
+  `      "nodeName" : "%Id%/",
   `      "anchor" : {
   `        "url" : "%ProfileUrl%"
   `      },
@@ -20,14 +20,14 @@
 #macro GraphNodeElement(%Path%, DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Profile%/%Path%/",
+  `      "nodeName" : "%Id%/%Path%/",
   `      "anchor" : {
   `        "url" : "%ProfileUrl%",
   `        "item" : "%Path%"
   `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^%Profile%.%Path%"
+  `      "lhsAnnotationText": "^%Id%.%Path%"
   `    }
   `  },
 #end
