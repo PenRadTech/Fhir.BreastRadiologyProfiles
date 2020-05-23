@@ -1,0 +1,13 @@
+// Tumor Satellite Fragment
+// Tumor Satellite fragment
+// 
+// This fragment adds the references for the Tumor Satellite extension.
+
+#macro TumorSatelliteHasMemberFragment()
+  #apply ObservationHasMemberSlice("tumorSatellite", "0..*", "Tumor Satellite",
+  #  "'Tumor Satellite' reference.",
+  #  """
+  #  This slice references the target 'Consistent With'.
+  #  """,
+  #  "Reference(TumorSatellite)")
+#end

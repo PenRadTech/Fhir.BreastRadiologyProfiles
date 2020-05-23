@@ -2,7 +2,7 @@
 // <b>Fragment that adds 'Observed Changes' element to profile.</b>
 
 #macro once ObservedChangesFragment()
-  // Define Consistent With Slice
+  // Define Observed Changes Slice
   #apply ObservationAddComponent("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.

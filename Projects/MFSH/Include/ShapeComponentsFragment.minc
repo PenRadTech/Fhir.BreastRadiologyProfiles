@@ -1,0 +1,40 @@
+// Shape Components Fragment
+// <b>Shape component slice fragment</b>
+// 
+// Adds Orientation, Shape, Margin, and Density Components
+
+#macro ShapeComponentsFragment()
+  #apply BreastBodyLocationRequiredFragment()
+
+  // Define Orientation Slice
+  #apply ObservationAddComponent("orientation", "0..1", "Orientation", "Orientation",
+  #	 """
+  #  This slice contains the optional component that define the orientation of the abnormality.
+  #  The value of this component is a codeable concept chosen from the OrientationVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#orientation")
+
+  #apply ObservationSetComponentConcept("orientation", "1..1", "OrientationVS")
+
+
+  // Define Shape Slice
+  #apply ObservationAddComponent("shape", "0..1", "Shape", "Shape",
+  #	 """
+  #  This slice contains the optional component that define the shape of the abnormality.
+  #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#shape")
+
+  #apply ObservationSetComponentConcept("shape", "1..1", "ShapeVS")
+
+  // Define Margin Slice
+  #apply ObservationAddComponent("margin", "0..1", "Margin", "Margin",
+  #	 """
+  #  This slice contains the optional component that define the margin of the abnormality.
+  #  The value of this component is a codeable concept chosen from the MarginVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#margin")
+
+  #apply ObservationSetComponentConcept("margin", "1..1", "ShapeVS")
+
+#end

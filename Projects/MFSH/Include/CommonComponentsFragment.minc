@@ -1,0 +1,10 @@
+// Common Components Fragment
+// 
+// Adds commonly used component slice values, including:
+//$ Get rid of this macro!!
+
+#macro CommonComponentsFragment()
+    #apply BreastBodyLocationRequiredFragment()
+    #apply ObservedChangesFragment()
+    #apply BiRadFragment()
+#end

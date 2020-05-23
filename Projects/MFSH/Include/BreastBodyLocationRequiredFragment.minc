@@ -4,34 +4,11 @@
 // This fragment adds the references for the breast body location extension.
 // 
 // The references are required, meaning that the breast body location must exist.
+//$ Incomplete
 
 #macro once BreastBodyLocationRequiredFragment()
-    #apply HeaderFragment()
+  *  bodySite 1..1
 #end
-    //   "differential": {
-    //     "element": [
-    //       {
-    //         "id": "Observation",
-    //         "path": "Observation",
-    //         "short": "Required Breast Body Location fragment",
-    //         "definition": "This fragment adds the references for the breast body location extension.\n\nThe references are required, meaning that the breast body location must exist.",
-    //         "base": {
-    //           "path": "Observation",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
-    //       {
-    //         "id": "Observation.bodySite",
-    //         "path": "Observation.bodySite",
-    //         "min": 1,
-    //         "max": "1",
-    //         "base": {
-    //           "path": "Observation.bodySite",
-    //           "min": 0,
-    //           "max": "1"
-    //         }
-    //       },
     //       {
     //         "id": "Observation.bodySite.extension",
     //         "path": "Observation.bodySite.extension",

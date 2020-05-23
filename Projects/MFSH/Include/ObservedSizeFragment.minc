@@ -1,0 +1,30 @@
+// ObservedSize Fragment
+// Fragment that adds 'Observed Size' components to Observation.
+
+#macro ObservedSizeFragment()
+
+  #incompatible ObservationNoComponentFragment
+
+  // Define distribution region size.
+  #apply ObservationAddComponent("obsSize", "0..3", "Observed Size", "Observed size.",
+  #	 """
+  #  This component slice contains the size of an item observed.
+  #  There may be one, two, or three values indicating a size of
+  #  one dimension (length), two dimensions (area), or three dimensions (volume).
+  #
+  #  Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
+  #
+  #  If the lower bound of the range is set but not the upper bound, 
+  #  then the size is {lower bound} or greater.
+  # 
+  #  If the upper bound of the range is set but not the lower bound,
+  #  then the size is {upper bound} or less.
+  #	 """,
+  # "ObservationComponentSliceCodesCS#obsSize")
+	
+  * component[obsSize].value[x] 1..1
+  * component[obsSize].value[x] only Quantity or Range
+  * component[obsSize]valueQuantity units from UNITSOFLENGTH
+  * component[obsSize]valueRange.low units from UNITSOFLENGTH
+  * component[obsSize]valueRange.high units from UNITSOFLENGTH
+#end

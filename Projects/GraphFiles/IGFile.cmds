@@ -1,5 +1,12 @@
 {
     "member" : {
+      "groupingId" : "ExtensionResources/BreastBodyLocation",
+      "sort": "",
+      "reference" : "StructureDefinition/%Profile%"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
       "reference" : "StructureDefinition/AssociatedFeature"
