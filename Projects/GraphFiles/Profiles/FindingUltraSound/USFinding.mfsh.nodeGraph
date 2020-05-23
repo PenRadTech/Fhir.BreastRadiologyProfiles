@@ -1,0 +1,10 @@
+{
+    "graphNode" : {
+      "nodeName" : "USFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
+      },
+      "displayName" : "Ultra-Sound/Findings",
+      "cssClass" : "profile"
+    }
+  },

@@ -1,0 +1,260 @@
+{
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst"
+      },
+      "displayName" : "Cyst Abnormality",
+      "cssClass" : "profile"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:cystType/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:cystType"
+      },
+      "displayName" : "Cyst Type/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:cystType"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:cystType/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:tumorSatellite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:tumorSatellite"
+      },
+      "displayName" : "Tumor Satellite/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:tumorSatellite"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:obsChanges/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:obsChanges"
+      },
+      "displayName" : "Observed Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:obsChanges"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:obsChanges/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:biRadsAssessmentCategory/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:biRadsAssessmentCategory"
+      },
+      "displayName" : "BiRads/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:biRadsAssessmentCategory"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:biRadsAssessmentCategory/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:orientation/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:orientation"
+      },
+      "displayName" : "Orientation/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:orientation"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:orientation/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:shape/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:shape"
+      },
+      "displayName" : "Shape/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:shape"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:shape/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:margin/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:margin"
+      },
+      "displayName" : "Margin/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:margin"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:margin/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:observedCount/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:observedCount"
+      },
+      "displayName" : "Observed Count/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:observedCount"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:obsDistribution/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:obsDistribution"
+      },
+      "displayName" : "Observed Distribution/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:obsDistribution"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:obsDistribution/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:obsDistRegionSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:obsDistRegionSize"
+      },
+      "displayName" : "Observed Distribution Region Size/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:obsDistRegionSize"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:obsSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:obsSize"
+      },
+      "displayName" : "Observed Size/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:obsSize"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:notPreviouslySeen/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:notPreviouslySeen"
+      },
+      "displayName" : "Not Previously Seen/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:notPreviouslySeen"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:notPreviouslySeen/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:correspondsWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:correspondsWith"
+      },
+      "displayName" : "Observed Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:correspondsWith"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:correspondsWith/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:prevDemBy/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:prevDemBy"
+      },
+      "displayName" : "Previously/Demonstrated by Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:prevDemBy"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component:prevDemBy/$",
+      "item" : ".value[x]",
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component:consistentWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component:consistentWith"
+      },
+      "displayName" : "Consistent With/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component:consistentWith"
+    }
+  },

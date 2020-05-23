@@ -1,0 +1,29 @@
+Profile: MRIFinding
+Parent: Observation
+Title: "MRI Finding"
+Description: """
+    MRI Finding
+    """
+
+  #apply IGGroupMemberProfile("MRIResources", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>MRI Finding</b>
+  # </p>
+  # <p>
+  # This Observation contains all references to all the observations
+  #  and exam information related to a Magnetic Resonance Imaging (MRI) exam.
+  # </p>
+  # <p>
+  # As of this ballot, the child observations of an MRI Exam have not
+  #  been defined. They will be defined in a later ballot.
+  # </p>
+  #""")
+
+  #apply GraphNodeProfile("MRI Findings")
+
+  #apply ObservationSectionFragment()
+  
+  * code 1..1
+  * code = ObservationCodesCS#mriFindingObservation

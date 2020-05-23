@@ -14,6 +14,13 @@
   },
   {
     "member" : {
+      "groupingId" : "CommonResources/AbnormalityCyst",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityCyst"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
       "reference" : "StructureDefinition/CommonResources/AssociatedFeature"
@@ -38,6 +45,27 @@
       "groupingId" : "CommonResources/TumorSatellite",
       "sort": "",
       "reference" : "StructureDefinition/CommonResources/TumorSatellite"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "MRIResources",
+      "sort": "",
+      "reference" : "StructureDefinition/MRIResources"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "NMResources",
+      "sort": "",
+      "reference" : "StructureDefinition/NMResources"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "USResources",
+      "sort": "",
+      "reference" : "StructureDefinition/USResources"
     }
   },
   {

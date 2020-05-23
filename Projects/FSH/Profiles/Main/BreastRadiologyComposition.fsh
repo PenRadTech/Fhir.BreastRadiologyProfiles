@@ -6,6 +6,8 @@ Description: """
 """
 
 
+
+
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -14,7 +16,6 @@ Description: """
   * ^version = "0.0.2"
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
-
 
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"

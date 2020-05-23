@@ -1,0 +1,47 @@
+Profile: AbnormalityCyst
+Parent: Observation
+Title: "Cyst"
+Description: """
+  Cyst
+  """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityCyst", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Cyst Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a cyst abnormality observation 
+  # </p>
+  #""")
+
+  #apply GraphNodeProfile("Cyst Abnormality")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityCyst
+
+  #apply ObservationAddComponent("cystType", "0..1", "Cyst Type", "Cyst Type",
+  #	 """
+  #  This slice contains the optional component that refine the cyst type.
+  #  The value of this component is a codeable concept chosen from the AbnormalityCystTypeVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#abnormalityCystType")
+
+  #apply ObservationSetComponentConcept("cystType", "1..1", "AbnormalityCystTypeVS")
+
+
+  #apply TumorSatelliteHasMemberFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()
+  #apply ObservationHasMemberFragment()

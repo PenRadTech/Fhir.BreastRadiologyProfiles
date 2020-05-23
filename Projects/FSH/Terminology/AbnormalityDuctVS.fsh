@@ -1,6 +1,4 @@
 ValueSet:  AbnormalityDuctVS
 Title: "AbnormalityDuct ValueSet"
-Description:  "AbnormalityDuct Value Set"
-//+ Codes
+Description: "AbnormalityDuct Value Set"
   * codes from system AbnormalityDuctCS
-//- Codes

@@ -38,13 +38,14 @@ Description: """
   # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
   # </P>
   # """)
-  #apply HeaderFragment()
-  * . ^short = "US Core Race Extension"
-  * type = LOINC#42132-1 "US Breast screening"
 
   #apply GraphNodeProfile("Breast/Radiology/Composition")
   #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
   #apply GraphLinkByReference("focus", "^%Id%/section:", ".entry", "1")
+
+  #apply HeaderFragment()
+  * . ^short = "US Core Race Extension"
+  * type = LOINC#42132-1 "US Breast screening"
 
   #apply StartSectionSlicing()
 

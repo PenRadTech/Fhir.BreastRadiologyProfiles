@@ -1,0 +1,171 @@
+Profile: AbnormalityFibroadenoma
+Parent: Observation
+Title: "Fibroadenoma"
+Description: """
+  Fibroadenoma
+  """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityFibroadenoma", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Fibroadenoma Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a fibroadenoma abnormality observation 
+  # </p>
+  #""")
+
+  #apply ObservationLeafFragment()
+  #apply BreastRadObservationNoDeviceFragment()
+  #apply BreastRadObservationNoValueFragment()
+  #apply BreastRadObservationNoComponentFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()
+
+// Differential
+  //   "differential": {
+  //   "element": [
+  //     {
+  //     "id": "Observation",
+  //     "path": "Observation",
+  //     "short": "Fibroadenoma Abnormality Observation",
+  //     "definition": "This resource and referenced child resources contain \ninformation about a fibroadenoma abnormality observation",
+  //     "base": {
+  //       "path": "Observation",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.code",
+  //     "extension": [
+  //       {
+  //       "url": "http://www.fragment.com/DefaultValue",
+  //       "valueCodeableConcept": {
+  //         "coding": [
+  //         {
+  //           "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+  //           "code": "abnormalityFibroadenomaObservation",
+  //           "display": "Abnormality Fibroadenoma observation"
+  //         }
+  //         ],
+  //         "text": "Abnormality Fibroadenoma observation"
+  //       }
+  //       }
+  //     ],
+  //     "path": "Observation.code",
+  //     "base": {
+  //       "path": "Observation.code",
+  //       "min": 1,
+  //       "max": "1"
+  //     },
+  //     "patternCodeableConcept": {
+  //       "coding": [
+  //       {
+  //         "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+  //         "code": "abnormalityFibroadenomaObservation"
+  //       }
+  //       ]
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component",
+  //     "path": "Observation.component",
+  //     "slicing": {
+  //       "discriminator": [
+  //       {
+  //         "type": "pattern",
+  //         "path": "code"
+  //       }
+  //       ],
+  //       "rules": "open"
+  //     },
+  //     "base": {
+  //       "path": "Observation.component",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:fibroAdenomaType",
+  //     "path": "Observation.component",
+  //     "sliceName": "fibroAdenomaType",
+  //     "short": "FibroAdenoma Type component.",
+  //     "definition": "This slice contains the optional component that refine the fibroadenema type.\n The value of this component is a codeable concept chosen from the FibroadenomaVS valueset.",
+  //     "comment": "This is one component of a group of components that are part of the observation.",
+  //     "min": 0,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:fibroAdenomaType.code",
+  //     "extension": [
+  //       {
+  //       "url": "http://www.fragment.com/DefaultValue",
+  //       "valueCodeableConcept": {
+  //         "coding": [
+  //         {
+  //           "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+  //           "code": "mgAbnormalityFibroAdenomaType",
+  //           "display": "Component code for 'FibroAdenoma Type' slice"
+  //         }
+  //         ],
+  //         "text": "Component code for 'FibroAdenoma Type' slice"
+  //       }
+  //       }
+  //     ],
+  //     "path": "Observation.component.code",
+  //     "short": "FibroAdenoma Type component code",
+  //     "definition": "This code identifies the FibroAdenoma Type component.\n Its value shall always be the concept 'Component code for 'FibroAdenoma Type' slice'",
+  //     "min": 1,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component.code",
+  //       "min": 1,
+  //       "max": "1"
+  //     },
+  //     "patternCodeableConcept": {
+  //       "coding": [
+  //       {
+  //         "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+  //         "code": "mgAbnormalityFibroAdenomaType"
+  //       }
+  //       ]
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:fibroAdenomaType.value[x]",
+  //     "path": "Observation.component.value[x]",
+  //     "short": "FibroAdenoma Type component value",
+  //     "definition": "Value is a codeable concept.",
+  //     "min": 1,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component.value[x]",
+  //       "min": 0,
+  //       "max": "1"
+  //     },
+  //     "type": [
+  //       {
+  //       "code": "CodeableConcept"
+  //       }
+  //     ],
+  //     "binding": {
+  //       "strength": "required",
+  //       "valueSet": "http://hl7.org/fhir/us/breast-radiology/ValueSet/FibroadenomaVS"
+  //     }
+  //     }
+  //   ]
+  //   }
+  // }

@@ -1,0 +1,174 @@
+Profile: AbnormalityLymphNode
+Parent: Observation
+Title: "LymphNode"
+Description: """
+  LymphNode
+  """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityLymphNode", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>LymphNode Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a lymph node abnormality observation 
+  # </p>
+  #""")
+
+  #apply ObservationLeafFragment()
+  #apply TumorSatelliteFragment()
+  #apply BreastRadObservationNoDeviceFragment()
+  #apply BreastRadObservationNoValueFragment()
+  #apply BreastRadObservationNoComponentFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()
+
+// Differential
+  //   "differential": {
+  //   "element": [
+  //     {
+  //     "id": "Observation",
+  //     "path": "Observation",
+  //     "short": "LymphNode Abnormality Observation",
+  //     "definition": "This resource and referenced child resources contain \ninformation about a lymph node abnormality observation",
+  //     "base": {
+  //       "path": "Observation",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.code",
+  //     "extension": [
+  //       {
+  //       "url": "http://www.fragment.com/DefaultValue",
+  //       "valueCodeableConcept": {
+  //         "coding": [
+  //         {
+  //           "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+  //           "code": "abnormalityLymphNodeObservation",
+  //           "display": "Abnormality Lymph Node observation"
+  //         }
+  //         ],
+  //         "text": "Abnormality Lymph Node observation"
+  //       }
+  //       }
+  //     ],
+  //     "path": "Observation.code",
+  //     "base": {
+  //       "path": "Observation.code",
+  //       "min": 1,
+  //       "max": "1"
+  //     },
+  //     "patternCodeableConcept": {
+  //       "coding": [
+  //       {
+  //         "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+  //         "code": "abnormalityLymphNodeObservation"
+  //       }
+  //       ]
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component",
+  //     "path": "Observation.component",
+  //     "slicing": {
+  //       "discriminator": [
+  //       {
+  //         "type": "pattern",
+  //         "path": "code"
+  //       }
+  //       ],
+  //       "rules": "open"
+  //     },
+  //     "base": {
+  //       "path": "Observation.component",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:lymphNodeType",
+  //     "path": "Observation.component",
+  //     "sliceName": "lymphNodeType",
+  //     "short": "Lymph Node Type component.",
+  //     "definition": "This slice contains the optional component that refine the lymph node type.\n The value of this component is a codeable concept chosen from the AbnormalityLymphNodeTypeVS valueset.",
+  //     "comment": "This is one component of a group of components that are part of the observation.",
+  //     "min": 0,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component",
+  //       "min": 0,
+  //       "max": "*"
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:lymphNodeType.code",
+  //     "extension": [
+  //       {
+  //       "url": "http://www.fragment.com/DefaultValue",
+  //       "valueCodeableConcept": {
+  //         "coding": [
+  //         {
+  //           "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+  //           "code": "abnormalityLymphNodeType",
+  //           "display": "Component code for 'Lymph Node Type' slice"
+  //         }
+  //         ],
+  //         "text": "Component code for 'Lymph Node Type' slice"
+  //       }
+  //       }
+  //     ],
+  //     "path": "Observation.component.code",
+  //     "short": "Lymph Node Type component code",
+  //     "definition": "This code identifies the Lymph Node Type component.\n Its value shall always be the concept 'Component code for 'Lymph Node Type' slice'",
+  //     "min": 1,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component.code",
+  //       "min": 1,
+  //       "max": "1"
+  //     },
+  //     "patternCodeableConcept": {
+  //       "coding": [
+  //       {
+  //         "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+  //         "code": "abnormalityLymphNodeType"
+  //       }
+  //       ]
+  //     }
+  //     },
+  //     {
+  //     "id": "Observation.component:lymphNodeType.value[x]",
+  //     "path": "Observation.component.value[x]",
+  //     "short": "Lymph Node Type component value",
+  //     "definition": "Value is a codeable concept.",
+  //     "min": 1,
+  //     "max": "1",
+  //     "base": {
+  //       "path": "Observation.component.value[x]",
+  //       "min": 0,
+  //       "max": "1"
+  //     },
+  //     "type": [
+  //       {
+  //       "code": "CodeableConcept"
+  //       }
+  //     ],
+  //     "binding": {
+  //       "strength": "required",
+  //       "valueSet": "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityLymphNodeTypeVS"
+  //     }
+  //     }
+  //   ]
+  //   }
+  // }
