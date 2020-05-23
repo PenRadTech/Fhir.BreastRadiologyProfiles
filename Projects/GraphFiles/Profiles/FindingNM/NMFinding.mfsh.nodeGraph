@@ -5,6 +5,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NMFinding"
       },
       "displayName" : "Nuclear Medicine/Findings",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "NMFinding.mfsh#9"
     }
   },

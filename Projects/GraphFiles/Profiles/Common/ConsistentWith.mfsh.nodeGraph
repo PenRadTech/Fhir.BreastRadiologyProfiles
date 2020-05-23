@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith"
       },
       "displayName" : "ConsistentWith",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "ConsistentWith.mfsh#9"
     }
   },
   {
@@ -13,7 +14,8 @@
       "traversalName" : "focus",
       "source" : "^ConsistentWith/$",
       "target" : "^ConsistentWith/",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "ConsistentWith.mfsh#10"
     }
   },
   {
@@ -25,7 +27,8 @@
       },
       "displayName" : "Consistent With/Component",
       "cssClass" : "element",
-      "lhsAnnotationText": "^ConsistentWith.component:consistentWith"
+      "lhsAnnotationText": "^ConsistentWith.component:consistentWith",
+      "traceMsg" : "ObservationAddComponent.minc#7"
     }
   },
   {
@@ -33,6 +36,7 @@
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:consistentWith/$",
       "item" : ".value[x]",
+      "traceMsg" : "ObservationSetComponentConcept.minc#5"
     }
   },
   {
@@ -44,7 +48,8 @@
       },
       "displayName" : "Qualifier/Component",
       "cssClass" : "element",
-      "lhsAnnotationText": "^ConsistentWith.component:qualifier"
+      "lhsAnnotationText": "^ConsistentWith.component:qualifier",
+      "traceMsg" : "ObservationAddComponent.minc#7"
     }
   },
   {
@@ -52,5 +57,6 @@
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:qualifier/$",
       "item" : ".value[x]",
+      "traceMsg" : "ObservationSetComponentConcept.minc#5"
     }
   },

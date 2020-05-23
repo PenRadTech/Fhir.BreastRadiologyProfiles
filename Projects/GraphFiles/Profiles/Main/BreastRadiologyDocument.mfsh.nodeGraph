@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyDocument"
       },
       "displayName" : "Breast/Radiology/Document",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "BreastRadiologyDocument.mfsh#9"
     }
   },
   {
@@ -13,7 +14,8 @@
       "traversalName" : "focus",
       "source" : "^BreastRadiologyDocument/$",
       "target" : "^BreastRadiologyDocument/entry:",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "BreastRadiologyDocument.mfsh#10"
     }
   },
   {
@@ -21,7 +23,8 @@
       "traversalName" : "focus",
       "source" : "^BreastRadiologyDocument/entry:",
       "item" : ".resource",
-      "depth": 1
+      "depth": 1,
+      "traceMsg" : "BreastRadiologyDocument.mfsh#11"
     }
   },
   {
@@ -33,6 +36,7 @@
       },
       "displayName" : "Composition index",
       "cssClass" : "element",
-      "lhsAnnotationText": "^BreastRadiologyDocument.entry:index"
+      "lhsAnnotationText": "^BreastRadiologyDocument.entry:index",
+      "traceMsg" : "BreastRadiologyDocument.mfsh#12"
     }
   },

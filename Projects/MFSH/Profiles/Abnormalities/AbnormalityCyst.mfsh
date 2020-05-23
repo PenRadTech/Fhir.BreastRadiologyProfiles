@@ -5,7 +5,8 @@ Description: """
   Cyst
   """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityCyst", "")
+  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityCyst", "")
+  #apply GraphNodeProfile("Cyst Abnormality")
 
   #apply IntroDocGraph("""
   # <p>
@@ -17,7 +18,6 @@ Description: """
   # </p>
   #""")
 
-  #apply GraphNodeProfile("Cyst Abnormality")
 
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst

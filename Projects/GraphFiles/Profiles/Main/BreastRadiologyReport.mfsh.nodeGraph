@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastRadiologyReport"
       },
       "displayName" : "Report",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "BreastRadiologyReport.mfsh#9"
     }
   },
   {
@@ -17,7 +18,8 @@
       },
       "displayName" : "Code",
       "cssClass" : "element",
-      "lhsAnnotationText": "^BreastRadiologyReport.code"
+      "lhsAnnotationText": "^BreastRadiologyReport.code",
+      "traceMsg" : "BreastRadiologyReport.mfsh#10"
     }
   },
   {
@@ -25,6 +27,7 @@
       "traversalName" : "focus",
       "source" : "^BreastRadiologyReport/$",
       "target" : "^BreastRadiologyReport/",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "BreastRadiologyReport.mfsh#11"
     }
   },

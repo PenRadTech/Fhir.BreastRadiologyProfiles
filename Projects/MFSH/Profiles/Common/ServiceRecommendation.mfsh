@@ -6,6 +6,11 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("BaseResources", "")
+  #apply GraphNodeProfile("ServiceRecommendation")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply GraphNodeElement("code", "code")
+  #apply GraphLinkByBinding("focus", "^%Id%/code/$", "")
+
 
   #apply IntroDocGraph("""
   # <p>
@@ -23,11 +28,6 @@ Description: """
   # </p>
   #""")
   #apply HeaderFragment()
-
-  #apply GraphNodeProfile("ServiceRecommendation")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
-  #apply GraphNodeElement("code", "code")
-  #apply GraphLinkByBinding("focus", "^%Id%/code/$", "")
 
   * . ^definition = """
     Followup Service Recommendation.

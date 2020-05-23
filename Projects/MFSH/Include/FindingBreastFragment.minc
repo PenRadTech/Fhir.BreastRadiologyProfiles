@@ -8,7 +8,12 @@ Description: """
 	Findings %Laterality% Breast profile.
 	"""  
 
-  #apply IntroDocGraph("""
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityDuct", "")
+  #apply GraphNodeProfile("Findings/%Laterality% Breast")
+  #apply GraphNodeElement("bodySite", "Body Site")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
+ #apply IntroDocGraph("""
   #<p>
   # The Findings %Laterality% Breast profile contains references to all the observations
   # and exam information related to the Right breast.
@@ -19,10 +24,7 @@ Description: """
   # """)
   #apply HeaderFragment()
   #apply ObservationNoDeviceFragment()
-  #apply GraphNodeProfile("Findings/%Laterality% Breast")
-  #apply GraphNodeElement("bodySite", "Body Site")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
-
+ 
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
@@ -33,28 +35,35 @@ Description: """
 	codes set in any of the child observations of the %Laterality% Breast.
     """
 	
-  //$ e.AddComponentLink("Finding Value",
-  // new SDefEditor.Cardinality(valueXDef),
-  // null,
-  // Global.ElementAnchor(valueXDef),
-  // "CodeableConcept",
-  // binding.Url);
-  // ElementTreeNode sliceElementDef = e.ConfigureSliceByUrlDiscriminator("hasMember", false);
-  // 
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.MGFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.MRIFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.NMFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.USFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
+  //#apply ObservationHasMemberSlice("mgFinding", "0..1", "MG Finding",
+  //#  "'MG Finding' reference.",
+  //#  """
+  //#  This slice references the Mammography findings section.
+  //#  """,
+  //#  "Reference(MGFinding)")
+
+  #apply ObservationHasMemberSlice("mriFinding", "0..1", "MRI Finding",
+  #  "'Magnetic Resonance Imaging Finding' reference.",
+  #  """
+  #  This slice references the MRI findings section.
+  #  """,
+  #  "Reference(MRIFinding)")
+  * hasMember[mriFinding] MS
+
+  #apply ObservationHasMemberSlice("nmFinding", "0..1", "NM Finding",
+  #  "'Nuclear Medicine Finding' reference.",
+  #  """
+  #  This slice references the NM findings section.
+  #  """,
+  #  "Reference(NMFinding)")
+  * hasMember[nmFinding] MS
+
+  #apply ObservationHasMemberSlice("usFinding", "0..1", "US Finding",
+  #  "'Ultra Sound Finding' reference.",
+  #  """
+  #  This slice references the Ultra Sound findings section.
+  #  """,
+  #  "Reference(USFinding)")
+  * hasMember[usFinding] MS
+ 
 #end

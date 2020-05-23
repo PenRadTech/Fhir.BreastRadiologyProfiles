@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast"
       },
       "displayName" : "Findings/left Breast",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "FindingBreastFragment.minc#12"
     }
   },
   {
@@ -17,7 +18,8 @@
       },
       "displayName" : "Body Site",
       "cssClass" : "element",
-      "lhsAnnotationText": "^FindingsLeftBreast.bodySite"
+      "lhsAnnotationText": "^FindingsLeftBreast.bodySite",
+      "traceMsg" : "FindingBreastFragment.minc#13"
     }
   },
   {
@@ -25,6 +27,46 @@
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/$",
       "target" : "^FindingsLeftBreast/",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "FindingBreastFragment.minc#14"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsLeftBreast/hasMember:mriFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
+        "item" : "hasMember:mriFinding"
+      },
+      "displayName" : "MRI Finding/hasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsLeftBreast.hasMember:mriFinding",
+      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsLeftBreast/hasMember:nmFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
+        "item" : "hasMember:nmFinding"
+      },
+      "displayName" : "NM Finding/hasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsLeftBreast.hasMember:nmFinding",
+      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "FindingsLeftBreast/hasMember:usFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
+        "item" : "hasMember:usFinding"
+      },
+      "displayName" : "US Finding/hasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsLeftBreast.hasMember:usFinding",
+      "traceMsg" : "ObservationHasMemberSlice.minc#7"
     }
   },

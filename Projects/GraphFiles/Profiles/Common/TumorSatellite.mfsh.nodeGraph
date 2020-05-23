@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite"
       },
       "displayName" : "ConsistentWith",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "TumorSatellite.mfsh#12"
     }
   },
   {
@@ -13,7 +14,8 @@
       "traversalName" : "focus",
       "source" : "^TumorSatellite/$",
       "target" : "^TumorSatellite/",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "TumorSatellite.mfsh#13"
     }
   },
   {
@@ -25,6 +27,7 @@
       },
       "displayName" : "Derived From/Component",
       "cssClass" : "element",
-      "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor"
+      "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor",
+      "traceMsg" : "ObservationAddDerivedFrom.minc#7"
     }
   },

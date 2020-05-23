@@ -14,9 +14,23 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonResources/AbnormalityCyst",
+      "groupingId" : "AbnormalityResources/AbnormalityCyst",
       "sort": "",
-      "reference" : "StructureDefinition/CommonResources/AbnormalityCyst"
+      "reference" : "StructureDefinition/AbnormalityResources/AbnormalityCyst"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "AbnormalityResources/AbnormalityDuct",
+      "sort": "",
+      "reference" : "StructureDefinition/AbnormalityResources/AbnormalityDuct"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources/AbnormalityFibroadenoma",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityFibroadenoma"
     }
   },
   {
@@ -91,9 +105,23 @@
   },
   {
     "member" : {
+      "groupingId" : "CommonResources/AbnormalityDuct",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityDuct"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
       "reference" : "StructureDefinition/BaseResources"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources/AbnormalityDuct",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityDuct"
     }
   },
   {

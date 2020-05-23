@@ -6,6 +6,7 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MRIResources", "")
+  #apply GraphNodeProfile("MRI Findings")
 
   #apply IntroDocGraph("""
   # <p>
@@ -20,10 +21,8 @@ Description: """
   #  been defined. They will be defined in a later ballot.
   # </p>
   #""")
-
-  #apply GraphNodeProfile("MRI Findings")
-
-  #apply ObservationSectionFragment()
-  
+ 
   * code 1..1
   * code = ObservationCodesCS#mriFindingObservation
+
+  #apply ObservationSectionFragment()

@@ -6,6 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
+  #apply GraphNodeProfile("AssociatedFeature")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -26,9 +28,6 @@ Description: """
      
     The feature observed is defined by the codeable concept in the value[x] field.
     """
-
-  #apply GraphNodeProfile("AssociatedFeature")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation

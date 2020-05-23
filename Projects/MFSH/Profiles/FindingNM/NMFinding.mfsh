@@ -6,6 +6,7 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("NMResources", "")
+  #apply GraphNodeProfile("Nuclear Medicine/Findings")
 
   #apply IntroDocGraph("""
   # <p>
@@ -21,9 +22,7 @@ Description: """
   # </p>
   #""")
 
-  #apply GraphNodeProfile("Nuclear Medicine/Findings")
-
-  #apply ObservationSectionFragment()
-
   * code 1..1
   * code = ObservationCodesCS#nmFindingObservation
+
+  #apply ObservationSectionFragment()

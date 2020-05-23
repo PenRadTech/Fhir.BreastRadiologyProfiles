@@ -6,6 +6,11 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("BaseResources", "A")
+  #apply GraphNodeProfile("Breast/Radiology/Document")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/entry:", "0")
+  #apply GraphLinkByReference("focus", "^%Id%/entry:", ".resource", "1")
+  #apply GraphNodeElement("entry:index", "Composition index")
+
   #apply IntroDocGraph( """
   # <P>
   # A Breast Radiology Document is an implementation of a Fhir Document. 
@@ -27,11 +32,7 @@ Description: """
   # """)
 
   #apply HeaderFragment()
-  #apply GraphNodeProfile("Breast/Radiology/Document")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/entry:", "0")
-  #apply GraphLinkByReference("focus", "^%Id%/entry:", ".resource", "1")
 
-  #apply GraphNodeElement("entry:index", "Composition index")
   * entry ^slicing.discriminator.type = #value
   * entry ^slicing.discriminator.path = "fullUrl"
   * entry ^slicing.rules = #open

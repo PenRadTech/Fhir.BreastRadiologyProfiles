@@ -6,7 +6,9 @@ Description: """
     """
 
 
-
+ 
+  * code 1..1
+  * code = ObservationCodesCS#mriFindingObservation
 
   * interpretation 0..0
   * referenceRange 0..0
@@ -22,7 +24,4 @@ Description: """
   * referenceRange 0..0
 
   * interpretation 0..0
-  * method 0..0  
-  
-  * code 1..1
-  * code = ObservationCodesCS#mriFindingObservation
+  * method 0..0

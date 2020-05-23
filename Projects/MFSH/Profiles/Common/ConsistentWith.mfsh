@@ -6,6 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("CommonResources/ConsistentWith", "")
+  #apply GraphNodeProfile("ConsistentWith")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -22,8 +24,6 @@ Description: """
     Consistent With Observation.
 	"""
 
-  #apply GraphNodeProfile("ConsistentWith")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   * code 1..1
   * code = ObservationCodesCS#consistentWithObservation

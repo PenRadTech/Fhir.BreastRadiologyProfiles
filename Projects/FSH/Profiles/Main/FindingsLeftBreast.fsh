@@ -5,6 +5,7 @@ Description: """
 	Findings left Breast profile.
 	"""  
 
+
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -19,7 +20,7 @@ Description: """
   * specimen 0..0
   * contained 0..0
   * device 0..0
-
+ 
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
@@ -30,30 +31,36 @@ Description: """
 	codes set in any of the child observations of the left Breast.
     """
 	
-  //$ e.AddComponentLink("Finding Value",
-  // new SDefEditor.Cardinality(valueXDef),
-  // null,
-  // Global.ElementAnchor(valueXDef),
-  // "CodeableConcept",
-  // binding.Url);
-  // ElementTreeNode sliceElementDef = e.ConfigureSliceByUrlDiscriminator("hasMember", false);
-  // 
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.MGFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.MRIFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.NMFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
-  // {
-  // 	ElementTreeSlice slice = e.SliceTargetReference(sliceElementDef, Self.USFinding.Value(), 0, "1");
-  // 	slice.ElementDefinition.MustSupport();
-  // }
+  //#apply ObservationHasMemberSlice("mgFinding", "0..1", "MG Finding",
+  //#  "'MG Finding' reference.",
+  //#  """
+  //#  This slice references the Mammography findings section.
+  //#  """,
+  //#  "Reference(MGFinding)")
+
+
+  * hasMember ^slicing.discriminator.type = #value
+  * hasMember ^slicing.discriminator.path = "url"
+  * hasMember ^slicing.rules = #open
+  * hasMember ^slicing.ordered = false
+  * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains mriFinding 0..1
+  * hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
+  * hasMember[mriFinding] only Reference(MRIFinding)
+  * hasMember[mriFinding] MS
+
+
+  * hasMember contains nmFinding 0..1
+  * hasMember[nmFinding] ^short = "'Nuclear Medicine Finding' reference. hasMember."
+  * hasMember[nmFinding] only Reference(NMFinding)
+  * hasMember[nmFinding] MS
+
+
+  * hasMember contains usFinding 0..1
+  * hasMember[usFinding] ^short = "'Ultra Sound Finding' reference. hasMember."
+  * hasMember[usFinding] only Reference(USFinding)
+  * hasMember[usFinding] MS
+ 
 
   * bodySite 1..1
   * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"

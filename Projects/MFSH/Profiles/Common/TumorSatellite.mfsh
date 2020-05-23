@@ -7,7 +7,11 @@ Title: "Tumor Satellite"
 Description: """
     Tumor Satellite
     """
+
   #apply IGGroupMemberProfile("CommonResources/TumorSatellite", "")
+  #apply GraphNodeProfile("ConsistentWith")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
   #apply IntroDocGraph("""
   # <p>
   # <b>'Tumor Satellite' Observation</b>
@@ -28,9 +32,6 @@ Description: """
   #apply ObservationLeafFragment()
   #apply ObservationNoDeviceFragment()
   #apply ObservationNoComponentFragment()
-
-  #apply GraphNodeProfile("ConsistentWith")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   * . ^definition = """
     Tumor Satellite Observation.

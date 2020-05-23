@@ -14,7 +14,6 @@ Description: """
     The feature observed is defined by the codeable concept in the value[x] field.
     """
 
-
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
 

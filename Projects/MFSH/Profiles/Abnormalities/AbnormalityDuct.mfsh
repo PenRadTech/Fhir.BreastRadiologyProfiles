@@ -1,0 +1,44 @@
+Profile: AbnormalityDuct
+Parent: Observation
+Title: "Duct"
+Description: """
+  Duct
+  """
+
+  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityDuct", "")
+  #apply GraphNodeProfile("Duct Abnormality")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Duct Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a duct abnormality observation 
+  # </p>
+  # """)
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityCyst
+
+  #apply ObservationAddComponent("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
+  #	 """
+  #  This resource and referenced child resources contain
+  #  information about a duct abnormality observation
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#abnormalityDuctObservation")
+
+  #apply ObservationSetComponentConcept("ductType", "1..1", "AbnormalityDuctTypeVS")
+
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()

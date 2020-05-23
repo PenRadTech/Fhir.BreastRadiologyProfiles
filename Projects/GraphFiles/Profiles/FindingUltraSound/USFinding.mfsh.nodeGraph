@@ -5,6 +5,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
       },
       "displayName" : "Ultra-Sound/Findings",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "USFinding.mfsh#26"
     }
   },

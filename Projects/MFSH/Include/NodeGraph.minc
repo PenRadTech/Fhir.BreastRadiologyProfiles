@@ -9,7 +9,8 @@
   `        "url" : "%ProfileUrl%"
   `      },
   `      "displayName" : "DisplayName",
-  `      "cssClass" : "profile"
+  `      "cssClass" : "profile",
+  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
   `    }
   `  },
 #end
@@ -27,7 +28,8 @@
   `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^%Id%.%Path%"
+  `      "lhsAnnotationText": "^%Id%.%Path%",
+  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
   `    }
   `  },
 #end
@@ -38,7 +40,8 @@
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "target" : "TargetName",
-  `      "depth": Depth
+  `      "depth": Depth,
+  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
   `    }
   `  },
 #end
@@ -49,6 +52,7 @@
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
+  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
   `    }
   `  },
 #end
@@ -59,7 +63,8 @@
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
-  `      "depth": Depth
+  `      "depth": Depth,
+  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
   `    }
   `  },
 #end

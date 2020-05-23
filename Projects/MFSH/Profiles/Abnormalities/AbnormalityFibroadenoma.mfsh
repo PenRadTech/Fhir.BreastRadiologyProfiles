@@ -1,0 +1,43 @@
+Profile: AbnormalityFibroadenoma
+Parent: Observation
+Title: "Fibroadenoma"
+Description: """
+  Fibroadenoma
+  """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityFibroadenoma", "")
+  #apply GraphNodeProfile("Fibroadenoma Abnormality")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Fibroadenoma Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a fibroadenoma abnormality observation 
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityFibroadenomaObservation
+
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()
+
+  #apply ObservationAddComponent("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
+  #	 """
+  #  This resource and referenced child resources contain
+  #  information about a Fibroadenoma abnormality observation
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#mgAbnormalityFibroAdenomaType")
+
+  #apply ObservationSetComponentConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
+

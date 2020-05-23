@@ -5,6 +5,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MRIFinding"
       },
       "displayName" : "MRI Findings",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "MRIFinding.mfsh#9"
     }
   },

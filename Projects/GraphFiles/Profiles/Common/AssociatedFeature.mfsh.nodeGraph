@@ -5,7 +5,8 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
       },
       "displayName" : "AssociatedFeature",
-      "cssClass" : "profile"
+      "cssClass" : "profile",
+      "traceMsg" : "AssociatedFeature.mfsh#9"
     }
   },
   {
@@ -13,7 +14,8 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/",
-      "depth": 0
+      "depth": 0,
+      "traceMsg" : "AssociatedFeature.mfsh#10"
     }
   },
   {
@@ -25,7 +27,8 @@
       },
       "displayName" : "Observed Count/Component",
       "cssClass" : "element",
-      "lhsAnnotationText": "^AssociatedFeature.component:observedCount"
+      "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
+      "traceMsg" : "ObservationAddComponent.minc#7"
     }
   },
   {
@@ -37,7 +40,8 @@
       },
       "displayName" : "Feature Type/Component",
       "cssClass" : "element",
-      "lhsAnnotationText": "^AssociatedFeature.component:featureType"
+      "lhsAnnotationText": "^AssociatedFeature.component:featureType",
+      "traceMsg" : "ObservationAddComponent.minc#7"
     }
   },
   {
@@ -45,5 +49,6 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
+      "traceMsg" : "ObservationSetComponentConcept.minc#5"
     }
   },

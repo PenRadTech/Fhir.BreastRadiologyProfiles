@@ -6,6 +6,10 @@ Description: """
 	"""
 
   #apply IGGroupMemberProfile("BaseResources", "C")
+  #apply GraphNodeProfile("Report")
+  #apply GraphNodeElement("code", "Code")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
   #apply IntroDocGraph( """
   # <p>
   # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
@@ -21,9 +25,6 @@ Description: """
   # </p>
   # """)
   #apply HeaderFragment()
-  #apply GraphNodeProfile("Report")
-  #apply GraphNodeElement("code", "Code")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
   
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
   * code = LOINC#10193-1
