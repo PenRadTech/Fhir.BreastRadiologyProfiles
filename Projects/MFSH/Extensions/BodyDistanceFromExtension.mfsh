@@ -1,0 +1,34 @@
+Extension: BodyDistanceFromExtension
+Parent: Extension
+Title: "Body Distance From Extension"
+Description: """
+    Body Distance From Extension
+    """
+
+    #apply IGGroupMemberProfile("ExtensionResources/BreastBodyLocation", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Body Distance From extension</b>
+    # </p>
+    # <p>
+    # This complex extension adds fields that form a distance measurement from a specified body landmark.
+    #  The body landmark is defined by a codeable concept
+    #  The distance is defined by a quantity of metric distance units (cm, mm, etc).
+    # </p>
+    #""")
+
+  * . ^short = "Body Distance From extension"
+
+  #apply ExtensionCodeableConcept("landMark", "1..1", "BreastLocationQuadrantVS", "Body landmark. Origin of distance measurement.",
+  #  """
+  #  Body landmark which defines the origin of the measurement.
+  #
+  #  Currently the value set this is bound to does not contain the required breast 
+  #  landmarks like nipple.  
+  #  """)
+
+  #apply ExtensionQuantity("distanceFromLandMark", "1..1", "UNITSOFLENGTH", "Distance from landmark", 
+  #  """
+  #	 Distance from body landmark to body location
+  #  """)

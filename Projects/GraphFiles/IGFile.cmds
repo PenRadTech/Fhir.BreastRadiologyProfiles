@@ -7,6 +7,13 @@
   },
   {
     "member" : {
+      "groupingId" : "ExtensionResources/BreastBodyLocation",
+      "sort": "",
+      "reference" : "StructureDefinition/ExtensionResources/BreastBodyLocation"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
       "reference" : "StructureDefinition/CommonResources/AssociatedFeature"
