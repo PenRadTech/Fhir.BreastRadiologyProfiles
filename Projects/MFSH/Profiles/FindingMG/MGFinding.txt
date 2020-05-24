@@ -8,17 +8,19 @@ Description: """
     Mammography Finding
     """
 
-    #apply IGGroupMemberProfile("MGResources", "")
+  #apply IGGroupMemberProfile("MG Findings", "")
+  #apply GraphNodeProfile("Mg Finding")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Mammography Finding</b>
-    # </p>
-    # <p>
-    # This Observation contains all references to all the observations
-    #  and exam information related to a Mammography (MG) exam.
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Mammography Finding</b>
+  # </p>
+  # <p>
+  # This Observation contains all references to all the observations
+  #  and exam information related to a Mammography (MG) exam.
+  # </p>
+  #""")
 
     #apply ObservationSectionFragment()
 

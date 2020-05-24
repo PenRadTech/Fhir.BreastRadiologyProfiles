@@ -5,27 +5,29 @@ Description: """
     Mammography Density
     """
 
-    #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
+  #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
+  #apply GraphNodeProfile("Density")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Mammography Density Abnormality Observation</b>
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Mammography Density Abnormality Observation</b>
+  # </p>
+  #""")
 
-    #apply ObservationLeafFragment()
-    #apply ObservationNoDeviceFragment()
-    #apply ObservationNoComponentFragment()
-    #apply ObservationNoValueFragment()
-    #apply CommonComponentsFragment()
-    #apply ShapeComponentsFragment()
-    #apply NotPreviouslySeenComponentFragment()
-    #apply ObservedCountFragment()
-    #apply ObservedSizeFragment()
-    #apply ObservedDistributionFragment()
-    #apply CorrespondsWithFragment()
-    #apply PreviouslyDemonstratedByFragment()
-    #apply ConsistentWithHasMemberFragment()
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoComponentFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()
 
 // Differential
     //   "differential": {

@@ -1,0 +1,20 @@
+{
+    "graphNode" : {
+      "nodeName" : "BreastBodyLocationExtension/",
+      "anchor" : {
+        "url" : "%ProfileUrl%"
+      },
+      "displayName" : "BreastBodyLocation",
+      "cssClass" : "profile",
+      "traceMsg" : "BreastBodyLocationExtension.mfsh#12"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BreastBodyLocationExtension/$",
+      "target" : "^BreastBodyLocationExtension/",
+      "depth": 0,
+      "traceMsg" : "BreastBodyLocationExtension.mfsh#13"
+    }
+  },

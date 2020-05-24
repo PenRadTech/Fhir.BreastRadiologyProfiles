@@ -5,17 +5,19 @@ Description: """
     Mammography Breast Density
     """
 
-    #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
+  #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
+  #apply GraphNodeProfile("Breast Density")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Breast Density Observation</b>
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Breast Density Observation</b>
+  # </p>
+  #""")
 
-    #apply ObservationLeafFragment()
-    #apply ObservationNoComponentFragment()
-    #apply ObservationNoDeviceFragment()
+  #apply ObservationLeafFragment()
+  #apply ObservationNoComponentFragment()
+  #apply ObservationNoDeviceFragment()
 
 // Differential
     //   "differential": {

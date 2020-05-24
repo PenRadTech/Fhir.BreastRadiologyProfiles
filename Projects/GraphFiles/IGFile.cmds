@@ -119,9 +119,9 @@
   },
   {
     "member" : {
-      "groupingId" : "USResources",
+      "groupingId" : "USFindings",
       "sort": "",
-      "reference" : "StructureDefinition/USResources"
+      "reference" : "StructureDefinition/USFindings"
     }
   },
   {

@@ -4,8 +4,28 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
       },
+      "displayName" : "US Findings",
+      "cssClass" : "profile",
+      "traceMsg" : "USFinding.mfsh#9"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^USFinding/$",
+      "target" : "^USFinding/",
+      "depth": 0,
+      "traceMsg" : "USFinding.mfsh#10"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "USFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
+      },
       "displayName" : "Ultra-Sound/Findings",
       "cssClass" : "profile",
-      "traceMsg" : "USFinding.mfsh#26"
+      "traceMsg" : "USFinding.mfsh#28"
     }
   },

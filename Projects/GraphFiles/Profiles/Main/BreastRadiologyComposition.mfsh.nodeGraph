@@ -6,7 +6,7 @@
       },
       "displayName" : "Breast/Radiology/Composition",
       "cssClass" : "profile",
-      "traceMsg" : "BreastRadiologyComposition.mfsh#42"
+      "traceMsg" : "BreastRadiologyComposition.mfsh#9"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^BreastRadiologyComposition/$",
       "target" : "^BreastRadiologyComposition/section:",
       "depth": 0,
-      "traceMsg" : "BreastRadiologyComposition.mfsh#43"
+      "traceMsg" : "BreastRadiologyComposition.mfsh#10"
     }
   },
   {
@@ -24,7 +24,7 @@
       "source" : "^BreastRadiologyComposition/section:",
       "item" : ".entry",
       "depth": 1,
-      "traceMsg" : "BreastRadiologyComposition.mfsh#44"
+      "traceMsg" : "BreastRadiologyComposition.mfsh#11"
     }
   },
   {

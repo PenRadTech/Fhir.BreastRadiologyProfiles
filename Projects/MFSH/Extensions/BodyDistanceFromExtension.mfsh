@@ -5,18 +5,20 @@ Description: """
     Body Distance From Extension
     """
 
-    #apply IGGroupMemberProfile("ExtensionResources/BreastBodyLocation", "")
+  #apply IGGroupMemberProfile("ExtensionResources/BreastBodyLocation", "")
+  #apply GraphNodeProfile("BreastDistanceFrom")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Body Distance From extension</b>
-    # </p>
-    # <p>
-    # This complex extension adds fields that form a distance measurement from a specified body landmark.
-    #  The body landmark is defined by a codeable concept
-    #  The distance is defined by a quantity of metric distance units (cm, mm, etc).
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Body Distance From extension</b>
+  # </p>
+  # <p>
+  # This complex extension adds fields that form a distance measurement from a specified body landmark.
+  #  The body landmark is defined by a codeable concept
+  #  The distance is defined by a quantity of metric distance units (cm, mm, etc).
+  # </p>
+  #""")
 
   * . ^short = "Body Distance From extension"
 

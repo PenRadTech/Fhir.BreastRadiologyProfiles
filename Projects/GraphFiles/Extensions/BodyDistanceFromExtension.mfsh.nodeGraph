@@ -1,0 +1,20 @@
+{
+    "graphNode" : {
+      "nodeName" : "BodyDistanceFromExtension/",
+      "anchor" : {
+        "url" : "%ProfileUrl%"
+      },
+      "displayName" : "BreastDistanceFrom",
+      "cssClass" : "profile",
+      "traceMsg" : "BodyDistanceFromExtension.mfsh#9"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/$",
+      "target" : "^BodyDistanceFromExtension/",
+      "depth": 0,
+      "traceMsg" : "BodyDistanceFromExtension.mfsh#10"
+    }
+  },

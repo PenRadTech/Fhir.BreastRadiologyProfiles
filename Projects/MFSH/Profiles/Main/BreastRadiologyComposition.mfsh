@@ -6,6 +6,10 @@ Description: """
 """
 
   #apply IGGroupMemberProfile("BaseResources", "B")
+  #apply GraphNodeProfile("Breast/Radiology/Composition")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
+  #apply GraphLinkByReference("focus", "^%Id%/section:", ".entry", "1")
+
 
   #apply IntroDocGraph("""
   # <P>
@@ -38,10 +42,6 @@ Description: """
   # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
   # </P>
   # """)
-
-  #apply GraphNodeProfile("Breast/Radiology/Composition")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
-  #apply GraphLinkByReference("focus", "^%Id%/section:", ".entry", "1")
 
   #apply HeaderFragment()
   * . ^short = "US Core Race Extension"

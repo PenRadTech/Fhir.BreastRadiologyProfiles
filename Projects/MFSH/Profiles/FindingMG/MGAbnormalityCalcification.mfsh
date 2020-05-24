@@ -6,6 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MGResources/CalcificationAbnormality", "")
+  #apply GraphNodeProfile("Calcification")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

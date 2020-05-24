@@ -6,6 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityArchitecturalDistortion", "")
+  #apply GraphNodeProfile("Architectural Distortion")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

@@ -5,30 +5,32 @@ Description: """
     Mammography Fat Necrosis
     """
 
-    #apply IGGroupMemberProfile("MGResources/AbnormalityFatNecrosis", "")
+  #apply IGGroupMemberProfile("MGResources/AbnormalityFatNecrosis", "")
+  #apply GraphNodeProfile("Fat Necrosis")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-    #apply IntroDocGraph("""
-    # <p>
-    # <b>Fat Necrosis Abnormality Observation</b>
-    # </p>
-    # <p>
-    # [PR]
-    # </p>
-    #""")
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Fat Necrosis Abnormality Observation</b>
+  # </p>
+  # <p>
+  # [PR]
+  # </p>
+  #""")
 
-    #apply ObservationLeafFragment()
-    #apply ObservationNoDeviceFragment()
-    #apply ObservationNoComponentFragment()
-    #apply ObservationNoValueFragment()
-    #apply CommonComponentsFragment()
-    #apply ShapeComponentsFragment()
-    #apply NotPreviouslySeenComponentFragment()
-    #apply ObservedCountFragment()
-    #apply ObservedSizeFragment()
-    #apply ObservedDistributionFragment()
-    #apply CorrespondsWithFragment()
-    #apply PreviouslyDemonstratedByFragment()
-    #apply ConsistentWithHasMemberFragment()
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoComponentFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()
 
 // Differential
     //   "differential": {

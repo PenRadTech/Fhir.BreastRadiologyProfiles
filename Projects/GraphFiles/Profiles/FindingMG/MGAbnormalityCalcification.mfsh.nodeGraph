@@ -1,5 +1,25 @@
 {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification"
+      },
+      "displayName" : "Calcification",
+      "cssClass" : "profile",
+      "traceMsg" : "MGAbnormalityCalcification.mfsh#9"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/$",
+      "target" : "^MGAbnormalityCalcification/",
+      "depth": 0,
+      "traceMsg" : "MGAbnormalityCalcification.mfsh#10"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityCalcification/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",

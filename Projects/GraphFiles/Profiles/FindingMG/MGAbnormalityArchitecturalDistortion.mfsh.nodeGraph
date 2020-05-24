@@ -1,5 +1,25 @@
 {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityArchitecturalDistortion/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion"
+      },
+      "displayName" : "Architectural Distortion",
+      "cssClass" : "profile",
+      "traceMsg" : "MGAbnormalityArchitecturalDistortion.mfsh#9"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/$",
+      "target" : "^MGAbnormalityArchitecturalDistortion/",
+      "depth": 0,
+      "traceMsg" : "MGAbnormalityArchitecturalDistortion.mfsh#10"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityArchitecturalDistortion/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",

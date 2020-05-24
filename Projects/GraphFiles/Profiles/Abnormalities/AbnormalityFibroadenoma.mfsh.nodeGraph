@@ -10,6 +10,15 @@
     }
   },
   {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityFibroadenoma/$",
+      "target" : "^AbnormalityFibroadenoma/",
+      "depth": 0,
+      "traceMsg" : "AbnormalityFibroadenoma.mfsh#10"
+    }
+  },
+  {
     "graphNode" : {
       "nodeName" : "AbnormalityFibroadenoma/component:fibroAdenomaType/",
       "anchor" : {

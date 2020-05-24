@@ -5,7 +5,9 @@ Description: """
     Ultra-Sound Finding
     """
 
-  #apply IGGroupMemberProfile("USResources", "")
+  #apply IGGroupMemberProfile("USFindings", "")
+  #apply GraphNodeProfile("US Findings")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
