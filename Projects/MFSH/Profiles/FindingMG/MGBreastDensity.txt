@@ -1,0 +1,95 @@
+
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+#use "ObservationLeafFragment.inc"
+#use "BreastRadObservationNoComponentFragment.inc"
+#use "BreastRadObservationNoDeviceFragment.inc"
+
+Profile: MGBreastDensity
+Parent: Observation
+Title: "Mammography Breast Density"
+Description: """
+    Mammography Breast Density
+    """
+
+    #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Breast Density Observation</b>
+    # </p>
+    #""")
+
+    #apply ObservationLeafFragment()
+    #apply BreastRadObservationNoComponentFragment()
+    #apply BreastRadObservationNoDeviceFragment()
+
+// Differential
+    //   "differential": {
+    //     "element": [
+    //       {
+    //         "id": "Observation",
+    //         "path": "Observation",
+    //         "short": "Breast Density Observation",
+    //         "base": {
+    //           "path": "Observation",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.code",
+    //         "extension": [
+    //           {
+    //             "url": "http://www.fragment.com/DefaultValue",
+    //             "valueCodeableConcept": {
+    //               "coding": [
+    //                 {
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //                   "code": "mgBreastDensityObservation",
+    //                   "display": "MG Breast Density observation"
+    //                 }
+    //               ],
+    //               "text": "MG Breast Density observation"
+    //             }
+    //           }
+    //         ],
+    //         "path": "Observation.code",
+    //         "base": {
+    //           "path": "Observation.code",
+    //           "min": 1,
+    //           "max": "1"
+    //         },
+    //         "patternCodeableConcept": {
+    //           "coding": [
+    //             {
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //               "code": "mgBreastDensityObservation"
+    //             }
+    //           ]
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.value[x]",
+    //         "path": "Observation.value[x]",
+    //         "base": {
+    //           "path": "Observation.value[x]",
+    //           "min": 0,
+    //           "max": "1"
+    //         },
+    //         "type": [
+    //           {
+    //             "code": "CodeableConcept"
+    //           }
+    //         ],
+    //         "binding": {
+    //           "strength": "required",
+    //           "valueSet": "http://hl7.org/fhir/us/breast-radiology/ValueSet/MGBreastDensityVS"
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }

@@ -1,0 +1,93 @@
+
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+#use "ObservationLeafFragment.inc"
+#use "BreastRadObservationNoDeviceFragment.inc"
+#use "BreastRadObservationNoComponentFragment.inc"
+#use "BreastRadObservationNoValueFragment.inc"
+#use "CommonComponentsFragment.inc"
+#use "ShapeComponentsFragment.inc"
+#use "NotPreviouslySeenComponentFragment.inc"
+#use "CorrespondsWithFragment.inc"
+#use "PreviouslyDemonstratedByFragment.inc"
+#use "ObservationHasMemberFragment.inc"
+#use "ConsistentWithHasMemberFragment.inc"
+
+Profile: MGAbnormalityArchitecturalDistortion
+Parent: Observation
+Title: "Mammography Architectural Distortion"
+Description: """
+    Mammography Architectural Distortion
+    """
+
+    #apply IGGroupMemberProfile("MGResources/AbnormalityArchitecturalDistortion", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Architectural Distortion Observation</b>
+    # </p>
+    #""")
+
+    #apply ObservationLeafFragment()
+    #apply BreastRadObservationNoDeviceFragment()
+    #apply BreastRadObservationNoComponentFragment()
+    #apply BreastRadObservationNoValueFragment()
+    #apply CommonComponentsFragment()
+    #apply ShapeComponentsFragment()
+    #apply NotPreviouslySeenComponentFragment()
+    #apply CorrespondsWithFragment()
+    #apply PreviouslyDemonstratedByFragment()
+    #apply ObservationHasMemberFragment()
+    #apply ConsistentWithHasMemberFragment()
+
+// Differential
+    //   "differential": {
+    //     "element": [
+    //       {
+    //         "id": "Observation",
+    //         "path": "Observation",
+    //         "short": "Architectural Distortion Observation",
+    //         "base": {
+    //           "path": "Observation",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.code",
+    //         "extension": [
+    //           {
+    //             "url": "http://www.fragment.com/DefaultValue",
+    //             "valueCodeableConcept": {
+    //               "coding": [
+    //                 {
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //                   "code": "mgAbnormalityArchitecturalDistortionObservation",
+    //                   "display": "Abnormality Architectural Distortion observation"
+    //                 }
+    //               ],
+    //               "text": "Abnormality Architectural Distortion observation"
+    //             }
+    //           }
+    //         ],
+    //         "path": "Observation.code",
+    //         "base": {
+    //           "path": "Observation.code",
+    //           "min": 1,
+    //           "max": "1"
+    //         },
+    //         "patternCodeableConcept": {
+    //           "coding": [
+    //             {
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //               "code": "mgAbnormalityArchitecturalDistortionObservation"
+    //             }
+    //           ]
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }

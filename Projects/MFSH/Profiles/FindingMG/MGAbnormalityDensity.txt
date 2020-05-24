@@ -1,0 +1,201 @@
+
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+#use "ObservationLeafFragment.inc"
+#use "BreastRadObservationNoDeviceFragment.inc"
+#use "BreastRadObservationNoComponentFragment.inc"
+#use "BreastRadObservationNoValueFragment.inc"
+#use "CommonComponentsFragment.inc"
+#use "ShapeComponentsFragment.inc"
+#use "NotPreviouslySeenComponentFragment.inc"
+#use "ObservedCountFragment.inc"
+#use "ObservedSizeFragment.inc"
+#use "ObservedDistributionFragment.inc"
+#use "CorrespondsWithFragment.inc"
+#use "PreviouslyDemonstratedByFragment.inc"
+#use "ObservationHasMemberFragment.inc"
+#use "ConsistentWithHasMemberFragment.inc"
+
+Profile: MGAbnormalityDensity
+Parent: Observation
+Title: "Mammography Density"
+Description: """
+    Mammography Density
+    """
+
+    #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Mammography Density Abnormality Observation</b>
+    # </p>
+    #""")
+
+    #apply ObservationLeafFragment()
+    #apply BreastRadObservationNoDeviceFragment()
+    #apply BreastRadObservationNoComponentFragment()
+    #apply BreastRadObservationNoValueFragment()
+    #apply CommonComponentsFragment()
+    #apply ShapeComponentsFragment()
+    #apply NotPreviouslySeenComponentFragment()
+    #apply ObservedCountFragment()
+    #apply ObservedSizeFragment()
+    #apply ObservedDistributionFragment()
+    #apply CorrespondsWithFragment()
+    #apply PreviouslyDemonstratedByFragment()
+    #apply ObservationHasMemberFragment()
+    #apply ConsistentWithHasMemberFragment()
+
+// Differential
+    //   "differential": {
+    //     "element": [
+    //       {
+    //         "id": "Observation",
+    //         "path": "Observation",
+    //         "short": "Mammography Density Abnormality Observation",
+    //         "base": {
+    //           "path": "Observation",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.code",
+    //         "extension": [
+    //           {
+    //             "url": "http://www.fragment.com/DefaultValue",
+    //             "valueCodeableConcept": {
+    //               "coding": [
+    //                 {
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //                   "code": "mgAbnormalityDensityObservation",
+    //                   "display": "MG Abnormality Density observation"
+    //                 }
+    //               ],
+    //               "text": "MG Abnormality Density observation"
+    //             }
+    //           }
+    //         ],
+    //         "path": "Observation.code",
+    //         "base": {
+    //           "path": "Observation.code",
+    //           "min": 1,
+    //           "max": "1"
+    //         },
+    //         "patternCodeableConcept": {
+    //           "coding": [
+    //             {
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //               "code": "mgAbnormalityDensityObservation"
+    //             }
+    //           ]
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.value[x]",
+    //         "path": "Observation.value[x]",
+    //         "min": 0,
+    //         "max": "0",
+    //         "base": {
+    //           "path": "Observation.value[x]",
+    //           "min": 0,
+    //           "max": "1"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.component",
+    //         "path": "Observation.component",
+    //         "slicing": {
+    //           "discriminator": [
+    //             {
+    //               "type": "pattern",
+    //               "path": "code"
+    //             }
+    //           ],
+    //           "rules": "open"
+    //         },
+    //         "base": {
+    //           "path": "Observation.component",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.component:densityType",
+    //         "path": "Observation.component",
+    //         "sliceName": "densityType",
+    //         "short": "Density Type component.",
+    //         "definition": "This slice contains the required component that refine the density type.\n The value of this component is a codeable concept chosen from the MGAbnormalityDensityTypeVS valueset.",
+    //         "comment": "This is one component of a group of components that are part of the observation.",
+    //         "min": 1,
+    //         "max": "1",
+    //         "base": {
+    //           "path": "Observation.component",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.component:densityType.code",
+    //         "extension": [
+    //           {
+    //             "url": "http://www.fragment.com/DefaultValue",
+    //             "valueCodeableConcept": {
+    //               "coding": [
+    //                 {
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //                   "code": "mgAbnormalityDensityType",
+    //                   "display": "Component code for 'Abnormality Density Type' slice"
+    //                 }
+    //               ],
+    //               "text": "Component code for 'Abnormality Density Type' slice"
+    //             }
+    //           }
+    //         ],
+    //         "path": "Observation.component.code",
+    //         "short": "Density Type component code",
+    //         "definition": "This code identifies the Density Type component.\n Its value shall always be the concept 'Component code for 'Abnormality Density Type' slice'",
+    //         "min": 1,
+    //         "max": "1",
+    //         "base": {
+    //           "path": "Observation.component.code",
+    //           "min": 1,
+    //           "max": "1"
+    //         },
+    //         "patternCodeableConcept": {
+    //           "coding": [
+    //             {
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationComponentSliceCodes",
+    //               "code": "mgAbnormalityDensityType"
+    //             }
+    //           ]
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.component:densityType.value[x]",
+    //         "path": "Observation.component.value[x]",
+    //         "short": "Density Type component value",
+    //         "definition": "Value is a codeable concept.",
+    //         "min": 1,
+    //         "max": "1",
+    //         "base": {
+    //           "path": "Observation.component.value[x]",
+    //           "min": 0,
+    //           "max": "1"
+    //         },
+    //         "type": [
+    //           {
+    //             "code": "CodeableConcept"
+    //           }
+    //         ],
+    //         "binding": {
+    //           "strength": "required",
+    //           "valueSet": "http://hl7.org/fhir/us/breast-radiology/ValueSet/MGAbnormalityDensityTypeVS"
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }

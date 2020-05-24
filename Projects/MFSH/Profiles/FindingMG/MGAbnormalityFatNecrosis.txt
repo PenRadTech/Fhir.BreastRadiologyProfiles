@@ -1,0 +1,121 @@
+
+#include "Common.inc"
+#use "HeaderFragment.inc"
+#use "NodeGraph.inc"
+#use "IntroDoc.inc"
+#use "IGBuilder.inc"
+#use "ObservationLeafFragment.inc"
+#use "BreastRadObservationNoDeviceFragment.inc"
+#use "BreastRadObservationNoComponentFragment.inc"
+#use "BreastRadObservationNoValueFragment.inc"
+#use "CommonComponentsFragment.inc"
+#use "ShapeComponentsFragment.inc"
+#use "NotPreviouslySeenComponentFragment.inc"
+#use "ObservedCountFragment.inc"
+#use "ObservedSizeFragment.inc"
+#use "ObservedDistributionFragment.inc"
+#use "CorrespondsWithFragment.inc"
+#use "PreviouslyDemonstratedByFragment.inc"
+#use "ObservationHasMemberFragment.inc"
+#use "ConsistentWithHasMemberFragment.inc"
+
+Profile: MGAbnormalityFatNecrosis
+Parent: Observation
+Title: "Mammography Fat Necrosis"
+Description: """
+    Mammography Fat Necrosis
+    """
+
+    #apply IGGroupMemberProfile("MGResources/AbnormalityFatNecrosis", "")
+
+    #apply IntroDocGraph("""
+    # <p>
+    # <b>Fat Necrosis Abnormality Observation</b>
+    # </p>
+    # <p>
+    # [PR]
+    # </p>
+    #""")
+
+    #apply ObservationLeafFragment()
+    #apply BreastRadObservationNoDeviceFragment()
+    #apply BreastRadObservationNoComponentFragment()
+    #apply BreastRadObservationNoValueFragment()
+    #apply CommonComponentsFragment()
+    #apply ShapeComponentsFragment()
+    #apply NotPreviouslySeenComponentFragment()
+    #apply ObservedCountFragment()
+    #apply ObservedSizeFragment()
+    #apply ObservedDistributionFragment()
+    #apply CorrespondsWithFragment()
+    #apply PreviouslyDemonstratedByFragment()
+    #apply ObservationHasMemberFragment()
+    #apply ConsistentWithHasMemberFragment()
+
+// Differential
+    //   "differential": {
+    //     "element": [
+    //       {
+    //         "id": "Observation",
+    //         "path": "Observation",
+    //         "short": "Fat Necrosis Abnormality Observation",
+    //         "definition": "[PR]",
+    //         "base": {
+    //           "path": "Observation",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.code",
+    //         "extension": [
+    //           {
+    //             "url": "http://www.fragment.com/DefaultValue",
+    //             "valueCodeableConcept": {
+    //               "coding": [
+    //                 {
+    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //                   "code": "mgAbnormalityFatNecrosisObservation",
+    //                   "display": "MG Abnormality FatNecrosis observation"
+    //                 }
+    //               ],
+    //               "text": "MG Abnormality FatNecrosis observation"
+    //             }
+    //           }
+    //         ],
+    //         "path": "Observation.code",
+    //         "base": {
+    //           "path": "Observation.code",
+    //           "min": 1,
+    //           "max": "1"
+    //         },
+    //         "patternCodeableConcept": {
+    //           "coding": [
+    //             {
+    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
+    //               "code": "mgAbnormalityFatNecrosisObservation"
+    //             }
+    //           ]
+    //         }
+    //       },
+    //       {
+    //         "id": "Observation.component",
+    //         "path": "Observation.component",
+    //         "slicing": {
+    //           "discriminator": [
+    //             {
+    //               "type": "pattern",
+    //               "path": "code"
+    //             }
+    //           ],
+    //           "rules": "open"
+    //         },
+    //         "base": {
+    //           "path": "Observation.component",
+    //           "min": 0,
+    //           "max": "*"
+    //         }
+    //       }
+    //     ]
+    //   }
+    // }
