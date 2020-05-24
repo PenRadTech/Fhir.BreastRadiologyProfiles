@@ -1,22 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-#use "ObservationLeafFragment.inc"
-#use "BreastRadObservationNoDeviceFragment.inc"
-#use "BreastRadObservationNoComponentFragment.inc"
-#use "BreastRadObservationNoValueFragment.inc"
-#use "CommonComponentsFragment.inc"
-#use "ShapeComponentsFragment.inc"
-#use "NotPreviouslySeenComponentFragment.inc"
-#use "ObservedCountFragment.inc"
-#use "CorrespondsWithFragment.inc"
-#use "PreviouslyDemonstratedByFragment.inc"
-#use "ObservationHasMemberFragment.inc"
-#use "ConsistentWithHasMemberFragment.inc"
-
 Profile: MGAbnormalityAsymmetry
 Parent: Observation
 Title: "Mammography Asymmetry"
@@ -33,9 +14,9 @@ Description: """
     #""")
 
     #apply ObservationLeafFragment()
-    #apply BreastRadObservationNoDeviceFragment()
-    #apply BreastRadObservationNoComponentFragment()
-    #apply BreastRadObservationNoValueFragment()
+    #apply ObservationNoDeviceFragment()
+    #apply ObservationNoComponentFragment()
+    #apply ObservationNoValueFragment()
     #apply CommonComponentsFragment()
     #apply ShapeComponentsFragment()
     #apply NotPreviouslySeenComponentFragment()

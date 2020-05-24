@@ -1,13 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-#use "ObservationLeafFragment.inc"
-#use "BreastRadObservationNoComponentFragment.inc"
-#use "BreastRadObservationNoDeviceFragment.inc"
-
 Profile: MGBreastDensity
 Parent: Observation
 Title: "Mammography Breast Density"
@@ -24,8 +14,8 @@ Description: """
     #""")
 
     #apply ObservationLeafFragment()
-    #apply BreastRadObservationNoComponentFragment()
-    #apply BreastRadObservationNoDeviceFragment()
+    #apply ObservationNoComponentFragment()
+    #apply ObservationNoDeviceFragment()
 
 // Differential
     //   "differential": {

@@ -1,0 +1,27 @@
+Profile: MGAbnormalityArchitecturalDistortion
+Parent: Observation
+Title: "Mammography Architectural Distortion"
+Description: """
+    Mammography Architectural Distortion
+    """
+
+  #apply IGGroupMemberProfile("MGResources/AbnormalityArchitecturalDistortion", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # Architectural Distortion Observation
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#mgAbnormalityArchitecturalDistortionObservation
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()
+  #apply ConsistentWithHasMemberFragment()

@@ -84,6 +84,13 @@
   },
   {
     "member" : {
+      "groupingId" : "MGResources/AbnormalityArchitecturalDistortion",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/AbnormalityArchitecturalDistortion"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "MRIResources",
       "sort": "",
       "reference" : "StructureDefinition/MRIResources"

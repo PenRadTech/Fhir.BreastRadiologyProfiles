@@ -1,11 +1,6 @@
 
 #include "Common.inc"
 #use "HeaderFragment.inc"
-#use "NodeGraph.inc"
-#use "IntroDoc.inc"
-#use "IGBuilder.inc"
-#use "ObservationSectionFragment.inc"
-
 Profile: MGFinding
 Parent: Observation
 Title: "Mammography Finding"
