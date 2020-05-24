@@ -1,6 +1,6 @@
-CodeSystem:  AbnormalityForeignObjectCS
-Title: "AbnormalityForeignObject CodeSystem"
-Description:  "AbnormalityForeignObject CodeSystem"
+CodeSystem:  AbnormalityForeignObjectTypeCS
+Title: "Abnormality Foreign Object Type CodeSystem"
+Description:  "Abnormality Foreign Object Type CodeSystem"
 //+ Codes
   // .SnomedDescription ClinicalFinding | 283574001 | Pellet wound of breast (Disorder) | [0/0] | S21.039?
   * #BBPellet "BB pellet"

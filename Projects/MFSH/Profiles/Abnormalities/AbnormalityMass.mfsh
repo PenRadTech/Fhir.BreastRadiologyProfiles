@@ -1,11 +1,12 @@
 Profile: AbnormalityMass
 Parent: Observation
-Title: "Mass"
+Title: "Mass Abnormality"
 Description: """
-  Mass
+  Mass Abnormality
   """
 
-  #apply IGGroupMemberProfile("CommonResources/MassAbnormality", "")
+  #apply IGGroupMemberProfile("AbnormalityResources/MassAbnormality", "")
+  #apply GraphNodeProfile("Mass Abnormality")
 
   #apply IntroDocGraph("""
   # <p>
@@ -17,11 +18,19 @@ Description: """
   # </p>
   #""")
 
-  #apply ObservationLeafFragment()
-  #apply TumorSatelliteFragment()
-  #apply BreastRadObservationNoDeviceFragment()
-  #apply BreastRadObservationNoValueFragment()
-  #apply BreastRadObservationNoComponentFragment()
+  #apply ObservationAddComponent("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
+  #	 """
+  #  This slice contains the optional component that refine the Mass Abnormality type.
+  #  The value of this component is a codeable concept chosen from the AbnormalityMassTypeVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#abnormalityMassType")
+
+  #apply ObservationSetComponentConcept("massType", "1..1", "AbnormalityMassTypeVS")
+
+
+  #apply TumorSatelliteHasMemberFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
   #apply ObservedCountFragment()

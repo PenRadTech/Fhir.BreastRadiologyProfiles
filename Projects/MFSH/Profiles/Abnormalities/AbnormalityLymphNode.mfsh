@@ -1,0 +1,44 @@
+Profile: AbnormalityLymphNode
+Parent: Observation
+Title: "LymphNode Abnormality"
+Description: """
+  LymphNode Abnormality
+  """
+
+  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityLymphNode", "")
+  #apply GraphNodeProfile("Cyst Abnormality")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>LymphNode Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a lymph node abnormality observation 
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityLymphNodeObservation
+
+  #apply ObservationAddComponent("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
+  #	 """
+  #  This slice contains the optional component that refine the Lymph Node Abnormality type.
+  #  The value of this component is a codeable concept chosen from the AbnormalityLymphNodeTypeVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#abnormalityLymphNodeType")
+
+  #apply ObservationSetComponentConcept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
+
+  #apply TumorSatelliteHasMemberFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedDistributionFragment()
+  #apply ObservedSizeFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()

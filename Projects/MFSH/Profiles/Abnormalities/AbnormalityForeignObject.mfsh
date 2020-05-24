@@ -1,0 +1,46 @@
+Profile: AbnormalityForeignObject
+Parent: Observation
+Title: "Foreign Object"
+Description: """
+  Foreign Object
+  """
+
+  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityForeign", "")
+  #apply GraphNodeProfile("Foreign Abnormality")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Foreign Object Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about foreign objects observed
+  # </p>
+  # <p>
+  # A foreign object is some non-biological item observed in the patient.
+  #  These can include misplaced surgical items, trauma related items (bullet fragments), or 
+  # jewelery.
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityForeignObjectObservation
+
+  #apply ObservationAddComponent("abnormalityForeignObjectType", "1..1", "Foreign Object Type", "Foreign Object Type",
+  #	 """
+  #  This slice contains the optional component that refine the foreign object type.
+  #  The value of this component is a codeable concept chosen from the AbnormalityForeignObjectTypeVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#abnormalityForeignObjectType")
+
+  #apply ObservationSetComponentConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply CorrespondsWithFragment()
+  #apply BiRadFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ObservationHasMemberFragment()
+  #apply ConsistentWithHasMemberFragment()

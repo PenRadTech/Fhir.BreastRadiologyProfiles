@@ -35,6 +35,27 @@
   },
   {
     "member" : {
+      "groupingId" : "AbnormalityResources/AbnormalityForeign",
+      "sort": "",
+      "reference" : "StructureDefinition/AbnormalityResources/AbnormalityForeign"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "AbnormalityResources/AbnormalityLymphNode",
+      "sort": "",
+      "reference" : "StructureDefinition/AbnormalityResources/AbnormalityLymphNode"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "AbnormalityResources/MassAbnormality",
+      "sort": "",
+      "reference" : "StructureDefinition/AbnormalityResources/MassAbnormality"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources/AssociatedFeature",
       "sort": "",
       "reference" : "StructureDefinition/CommonResources/AssociatedFeature"

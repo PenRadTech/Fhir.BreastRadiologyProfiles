@@ -1,7 +1,6 @@
-CodeSystem:  AbnormalityMassCS
-Title: "AbnormalityMass CodeSystem"
-Description:  "AbnormalityMass CodeSystem"
-//+ Codes
+CodeSystem:  AbnormalityMassTypeCS
+Title: "Mass Abnormality Type CodeSystem"
+Description:  "Mass Abnormality Type CodeSystem"
   * #Mass "Mass"
 
   // .SnomedDescription ClinicalFinding | 369753003 | Intraductal tumor configuration (Finding)
@@ -14,5 +13,3 @@ Description:  "AbnormalityMass CodeSystem"
   * #MassSkinATLASIsSkinLesion "Mass skin ATLAS is skin lesion"
 
   * #MassSolid "Mass solid"
-
-//- Codes
