@@ -42,5 +42,4 @@ Description: """
   #apply CorrespondsWithFragment()
   #apply BiRadFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ObservationHasMemberFragment()
   #apply ConsistentWithHasMemberFragment()

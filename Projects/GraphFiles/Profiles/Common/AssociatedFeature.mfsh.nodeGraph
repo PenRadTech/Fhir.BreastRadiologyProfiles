@@ -20,19 +20,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "AssociatedFeature/component:observedCount/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
-        "item" : "component:observedCount"
-      },
-      "displayName" : "Observed Count/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AssociatedFeature/component:featureType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
@@ -50,5 +37,18 @@
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
       "traceMsg" : "ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature/component:observedCount/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "component:observedCount"
+      },
+      "displayName" : "Observed Count/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
+      "traceMsg" : "ObservationAddComponent.minc#7"
     }
   },

@@ -1,0 +1,38 @@
+Profile: MGAbnormalityAsymmetry
+Parent: Observation
+Title: "Mammography Asymmetry"
+Description: """
+    Mammography Asymmetry
+    """
+
+  #apply IGGroupMemberProfile("MGResources/AbnormalityAsymmetry", "")
+  #apply GraphNodeProfile("Asymmetry Abnormality")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Asymmetry Abnormality Observation</b>
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#mgAbnormalityAsymmetryObservation
+
+  #apply ObservationAddComponent("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
+  #	 """
+  #  This slice contains the optional component that refine the asymmetry type.
+  #  The value of this component is a codeable concept chosen from the MGAbnormalityAsymmetryTypeVS valueset.
+  #  """,
+  #   "ObservationComponentSliceCodesCS#mgAbnormalityAsymmetryType")
+  
+  #apply ObservationSetComponentConcept("asymmetryType", "1..1", "MGAbnormalityAsymmetryTypeVS")
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()

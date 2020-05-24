@@ -21,6 +21,15 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
 
+  #apply ObservationAddComponent("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
+  #	 """
+  #  This resource and referenced child resources contain
+  #  information about a Fibroadenoma abnormality observation
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#mgAbnormalityFibroAdenomaType")
+
+  #apply ObservationSetComponentConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
+
   #apply ObservationLeafFragment()
   #apply ObservationNoDeviceFragment()
   #apply ObservationNoValueFragment()
@@ -30,14 +39,4 @@ Description: """
   #apply ObservedDistributionFragment()
   #apply ObservedSizeFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ObservationHasMemberFragment()
-
-  #apply ObservationAddComponent("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
-  #	 """
-  #  This resource and referenced child resources contain
-  #  information about a Fibroadenoma abnormality observation
-  #	 """,
-  #  "ObservationComponentSliceCodesCS#mgAbnormalityFibroAdenomaType")
-
-  #apply ObservationSetComponentConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
 

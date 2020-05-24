@@ -91,6 +91,20 @@
   },
   {
     "member" : {
+      "groupingId" : "MGResources/AbnormalityAsymmetry",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/AbnormalityAsymmetry"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "MGResources/CalcificationAbnormality",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/CalcificationAbnormality"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "MRIResources",
       "sort": "",
       "reference" : "StructureDefinition/MRIResources"

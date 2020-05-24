@@ -15,7 +15,7 @@ Description: """
   # </p>
   # <p>
   # This resource and referenced child resources contain 
-  # information about a associated feature observations
+  # information about associated feature observations
   # </p>
   # <p>
   # The feature observed is defined by the codeable concept in the value[x] field.
@@ -24,20 +24,13 @@ Description: """
 
   * . ^definition = """
     This resource and referenced child resources contain 
-    information about a associated feature observations
+    information about associated feature observations
      
     The feature observed is defined by the codeable concept in the value[x] field.
     """
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
-
-  #apply ObservationLeafFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
-  //$#apply LocationRequiredFragment()
-
-  #apply ObservedCountFragment()
 
   #apply ObservationAddComponent("featureType", "1..1", "Feature Type", "Associated Feature Type",
   #	 """
@@ -49,6 +42,14 @@ Description: """
   #   "ObservationComponentSliceCodesCS#featureType")
   
   #apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
+
+
+  #apply ObservationLeafFragment()
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  //$#apply LocationRequiredFragment()
+
+  #apply ObservedCountFragment()
 
 
 ValueSet:  AssociatedFeatureVS

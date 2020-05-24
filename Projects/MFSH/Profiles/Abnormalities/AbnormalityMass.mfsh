@@ -39,7 +39,6 @@ Description: """
   #apply NotPreviouslySeenComponentFragment()
   #apply CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ObservationHasMemberFragment()
   #apply ConsistentWithHasMemberFragment()
 
 // Differential

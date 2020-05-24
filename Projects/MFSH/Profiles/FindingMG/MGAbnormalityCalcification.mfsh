@@ -1,0 +1,37 @@
+Profile: MGAbnormalityCalcification
+Parent: Observation
+Title: "Mammography Calcification"
+Description: """
+    Mammography Calcification
+    """
+
+  #apply IGGroupMemberProfile("MGResources/CalcificationAbnormality", "")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Calcification Abnormality Observation</b>
+  # </p>
+  #""")
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()
+
+  * code 1..1
+  * code = ObservationCodesCS#mgAbnormalityCalcificationObservation
+  
+  #apply ObservationAddComponent("calcificationType", "1..1", "Calcification Type", "Calcification Type",
+  #	 """
+  #  This slice contains the optional component that refines the calcification type.
+  #  The value of this component is a codeable concept chosen from the MammoCalcificationTypeVS valueset.
+  #  """,
+  #  "ObservationComponentSliceCodesCS#mgCalcificationType")
+  
+  #apply ObservationSetComponentConcept("calcificationType", "1..1", "MgCalcificationTypeVS")

@@ -44,4 +44,3 @@ Description: """
   #apply CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
   #apply ConsistentWithHasMemberFragment()
-  #apply ObservationHasMemberFragment()

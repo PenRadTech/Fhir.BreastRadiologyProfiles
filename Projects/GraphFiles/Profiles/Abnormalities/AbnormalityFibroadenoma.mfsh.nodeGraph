@@ -11,6 +11,27 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "AbnormalityFibroadenoma/component:fibroAdenomaType/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
+        "item" : "component:fibroAdenomaType"
+      },
+      "displayName" : "Fibroadenoma Abnormality/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityFibroadenoma.component:fibroAdenomaType",
+      "traceMsg" : "ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityFibroadenoma/component:fibroAdenomaType/$",
+      "item" : ".value[x]",
+      "traceMsg" : "ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "AbnormalityFibroadenoma/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
@@ -191,27 +212,6 @@
     "graphLinkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityFibroadenoma/component:prevDemBy/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "AbnormalityFibroadenoma/component:fibroAdenomaType/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
-        "item" : "component:fibroAdenomaType"
-      },
-      "displayName" : "Fibroadenoma Abnormality/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityFibroadenoma.component:fibroAdenomaType",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityFibroadenoma/component:fibroAdenomaType/$",
       "item" : ".value[x]",
       "traceMsg" : "ObservationSetComponentConcept.minc#5"
     }

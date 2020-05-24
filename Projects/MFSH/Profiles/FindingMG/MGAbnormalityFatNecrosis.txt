@@ -28,7 +28,6 @@ Description: """
     #apply ObservedDistributionFragment()
     #apply CorrespondsWithFragment()
     #apply PreviouslyDemonstratedByFragment()
-    #apply ObservationHasMemberFragment()
     #apply ConsistentWithHasMemberFragment()
 
 // Differential

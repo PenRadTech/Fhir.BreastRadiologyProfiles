@@ -1,7 +1,6 @@
-CodeSystem: MammoCalcificationTypeCS
+CodeSystem: MgCalcificationTypeCS
 Title: "Mammography Calcification Type CodeSystem"
 Description: "Mammography calcification type code system."
-//+ Codes
   * #Amorphous "Amorphous"
   * #Coarse "Coarse"
   * #Dystrophic "Dystrophic"
@@ -23,4 +22,3 @@ Description: "Mammography calcification type code system."
   * #Spherical "Spherical"
   * #Suture "Suture"
   * #Vascular "Vascular"
-//- Codes

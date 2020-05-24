@@ -9,13 +9,43 @@ Description: """
 
   * . ^definition = """
     This resource and referenced child resources contain 
-    information about a associated feature observations
+    information about associated feature observations
      
     The feature observed is defined by the codeable concept in the value[x] field.
     """
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
+
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
+  * component contains featureType 1..1
+  * component[featureType] ^short = "Associated Feature Type component."
+  * component[featureType] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[featureType] ^definition = """
+This slice contains the required component that 
+defines the observed feature. The value of this 
+component is a codeable concept chosen from the 
+AssociatedFeatureVS valueset.",
+    """
+  * component[featureType].code 1..1
+  * component[featureType].code ^short = "Associated Feature Type component code."
+  * component[featureType].code ^definition = """
+    This code identifies the Associated Feature Type component.
+	"""
+  * component[featureType].code = ObservationComponentSliceCodesCS#featureType
+  
+
+  * component[featureType].value[x] 1..1
+  * component[featureType].value[x] only CodeableConcept
+  * component[featureType].value[x] from AssociatedFeatureVS
+
 
   * hasMember 0..0
   * interpretation 0..0
@@ -32,11 +62,6 @@ Description: """
   * referenceRange 0..0
   //$#apply LocationRequiredFragment()
 
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
 
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
@@ -63,30 +88,6 @@ Description: """
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
 
-
-
-  * component contains featureType 1..1
-  * component[featureType] ^short = "Associated Feature Type component."
-  * component[featureType] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[featureType] ^definition = """
-This slice contains the required component that 
-defines the observed feature. The value of this 
-component is a codeable concept chosen from the 
-AssociatedFeatureVS valueset.",
-    """
-  * component[featureType].code 1..1
-  * component[featureType].code ^short = "Associated Feature Type component code."
-  * component[featureType].code ^definition = """
-    This code identifies the Associated Feature Type component.
-	"""
-  * component[featureType].code = ObservationComponentSliceCodesCS#featureType
-  
-
-  * component[featureType].value[x] 1..1
-  * component[featureType].value[x] only CodeableConcept
-  * component[featureType].value[x] from AssociatedFeatureVS
 
 
 ValueSet:  AssociatedFeatureVS
