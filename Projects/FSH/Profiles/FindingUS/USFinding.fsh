@@ -23,6 +23,5 @@ Description: """
   * interpretation 0..0
   * method 0..0  
 
-
   * code 1..1
   * code = ObservationCodesCS#usFindingObservation

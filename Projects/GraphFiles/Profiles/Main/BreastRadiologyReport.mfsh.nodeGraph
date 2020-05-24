@@ -6,7 +6,7 @@
       },
       "displayName" : "Report",
       "cssClass" : "profile",
-      "traceMsg" : "BreastRadiologyReport.mfsh#9"
+      "traceMsg" : "Profiles/Main/BreastRadiologyReport.mfsh#9"
     }
   },
   {
@@ -19,7 +19,7 @@
       "displayName" : "Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyReport.code",
-      "traceMsg" : "BreastRadiologyReport.mfsh#10"
+      "traceMsg" : "Profiles/Main/BreastRadiologyReport.mfsh#10"
     }
   },
   {
@@ -28,6 +28,6 @@
       "source" : "^BreastRadiologyReport/$",
       "target" : "^BreastRadiologyReport/",
       "depth": 0,
-      "traceMsg" : "BreastRadiologyReport.mfsh#11"
+      "traceMsg" : "Profiles/Main/BreastRadiologyReport.mfsh#11"
     }
   },

@@ -25,7 +25,5 @@ Description: """
 
   #apply ObservationSectionFragment()
 
-  #apply GraphNodeProfile("Ultra-Sound/Findings")
-
   * code 1..1
   * code = ObservationCodesCS#usFindingObservation

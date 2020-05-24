@@ -6,7 +6,7 @@
       },
       "displayName" : "Calcification",
       "cssClass" : "profile",
-      "traceMsg" : "MGAbnormalityCalcification.mfsh#9"
+      "traceMsg" : "Profiles/FindingMG/MGAbnormalityCalcification.mfsh#9"
     }
   },
   {
@@ -15,185 +15,7 @@
       "source" : "^MGAbnormalityCalcification/$",
       "target" : "^MGAbnormalityCalcification/",
       "depth": 0,
-      "traceMsg" : "MGAbnormalityCalcification.mfsh#10"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:obsChanges/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:obsChanges"
-      },
-      "displayName" : "Observed Changes/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsChanges",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:obsChanges/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:biRadsAssessmentCategory/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:biRadsAssessmentCategory"
-      },
-      "displayName" : "BiRads/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:biRadsAssessmentCategory",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:biRadsAssessmentCategory/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:notPreviouslySeen/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:notPreviouslySeen"
-      },
-      "displayName" : "Not Previously Seen/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:notPreviouslySeen",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:notPreviouslySeen/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:observedCount/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:observedCount"
-      },
-      "displayName" : "Observed Count/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:observedCount",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:obsSize/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:obsSize"
-      },
-      "displayName" : "Observed Size/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsSize",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:obsDistribution/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:obsDistribution"
-      },
-      "displayName" : "Observed Distribution/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistribution",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:obsDistribution/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:obsDistRegionSize/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:obsDistRegionSize"
-      },
-      "displayName" : "Observed Distribution Region Size/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistRegionSize",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:correspondsWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:correspondsWith"
-      },
-      "displayName" : "Observed Changes/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:correspondsWith",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:correspondsWith/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/component:prevDemBy/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "component:prevDemBy"
-      },
-      "displayName" : "Previously/Demonstrated by Changes/Component",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.component:prevDemBy",
-      "traceMsg" : "ObservationAddComponent.minc#7"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/component:prevDemBy/$",
-      "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/hasMember:consistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "hasMember:consistentWith"
-      },
-      "displayName" : "Consistent With/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.hasMember:consistentWith",
-      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Profiles/FindingMG/MGAbnormalityCalcification.mfsh#10"
     }
   },
   {
@@ -206,7 +28,7 @@
       "displayName" : "Calcification Type/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:calcificationType",
-      "traceMsg" : "ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
     }
   },
   {
@@ -214,6 +36,184 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:calcificationType/$",
       "item" : ".value[x]",
-      "traceMsg" : "ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:obsChanges/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:obsChanges"
+      },
+      "displayName" : "Observed Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsChanges",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:obsChanges/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:biRadsAssessmentCategory/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:biRadsAssessmentCategory"
+      },
+      "displayName" : "BiRads/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:biRadsAssessmentCategory",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:biRadsAssessmentCategory/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:notPreviouslySeen/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:notPreviouslySeen"
+      },
+      "displayName" : "Not Previously Seen/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:notPreviouslySeen",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:notPreviouslySeen/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:observedCount/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:observedCount"
+      },
+      "displayName" : "Observed Count/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:observedCount",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:obsSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:obsSize"
+      },
+      "displayName" : "Observed Size/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsSize",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:obsDistribution/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:obsDistribution"
+      },
+      "displayName" : "Observed Distribution/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistribution",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:obsDistribution/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:obsDistRegionSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:obsDistRegionSize"
+      },
+      "displayName" : "Observed Distribution Region Size/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistRegionSize",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:correspondsWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:correspondsWith"
+      },
+      "displayName" : "Observed Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:correspondsWith",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:correspondsWith/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/component:prevDemBy/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "component:prevDemBy"
+      },
+      "displayName" : "Previously/Demonstrated by Changes/Component",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.component:prevDemBy",
+      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/component:prevDemBy/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityCalcification/hasMember:consistentWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
+        "item" : "hasMember:consistentWith"
+      },
+      "displayName" : "Consistent With/hasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityCalcification.hasMember:consistentWith",
+      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
     }
   },

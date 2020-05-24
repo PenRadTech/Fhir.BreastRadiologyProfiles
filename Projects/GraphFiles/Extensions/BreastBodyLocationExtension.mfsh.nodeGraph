@@ -2,11 +2,11 @@
     "graphNode" : {
       "nodeName" : "BreastBodyLocationExtension/",
       "anchor" : {
-        "url" : "%ProfileUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension"
       },
       "displayName" : "BreastBodyLocation",
       "cssClass" : "profile",
-      "traceMsg" : "BreastBodyLocationExtension.mfsh#12"
+      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#12"
     }
   },
   {
@@ -15,6 +15,6 @@
       "source" : "^BreastBodyLocationExtension/$",
       "target" : "^BreastBodyLocationExtension/",
       "depth": 0,
-      "traceMsg" : "BreastBodyLocationExtension.mfsh#13"
+      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#13"
     }
   },

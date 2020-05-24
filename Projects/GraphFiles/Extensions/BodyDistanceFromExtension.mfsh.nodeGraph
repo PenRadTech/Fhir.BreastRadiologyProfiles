@@ -2,11 +2,11 @@
     "graphNode" : {
       "nodeName" : "BodyDistanceFromExtension/",
       "anchor" : {
-        "url" : "%ProfileUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BodyDistanceFromExtension"
       },
       "displayName" : "BreastDistanceFrom",
       "cssClass" : "profile",
-      "traceMsg" : "BodyDistanceFromExtension.mfsh#9"
+      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#9"
     }
   },
   {
@@ -15,6 +15,6 @@
       "source" : "^BodyDistanceFromExtension/$",
       "target" : "^BodyDistanceFromExtension/",
       "depth": 0,
-      "traceMsg" : "BodyDistanceFromExtension.mfsh#10"
+      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#10"
     }
   },

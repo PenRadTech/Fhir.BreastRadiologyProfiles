@@ -6,7 +6,7 @@
       },
       "displayName" : "ServiceRecommendation",
       "cssClass" : "profile",
-      "traceMsg" : "ServiceRecommendation.mfsh#9"
+      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#9"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^ServiceRecommendation/$",
       "target" : "^ServiceRecommendation/",
       "depth": 0,
-      "traceMsg" : "ServiceRecommendation.mfsh#10"
+      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#10"
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "code",
       "cssClass" : "element",
       "lhsAnnotationText": "^ServiceRecommendation.code",
-      "traceMsg" : "ServiceRecommendation.mfsh#11"
+      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#11"
     }
   },
   {
@@ -36,6 +36,6 @@
       "traversalName" : "focus",
       "source" : "^ServiceRecommendation/code/$",
       "item" : "",
-      "traceMsg" : "ServiceRecommendation.mfsh#12"
+      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#12"
     }
   },

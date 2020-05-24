@@ -6,7 +6,7 @@
       },
       "displayName" : "ConsistentWith",
       "cssClass" : "profile",
-      "traceMsg" : "TumorSatellite.mfsh#12"
+      "traceMsg" : "Profiles/Common/TumorSatellite.mfsh#12"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^TumorSatellite/$",
       "target" : "^TumorSatellite/",
       "depth": 0,
-      "traceMsg" : "TumorSatellite.mfsh#13"
+      "traceMsg" : "Profiles/Common/TumorSatellite.mfsh#13"
     }
   },
   {
@@ -28,6 +28,6 @@
       "displayName" : "Derived From/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor",
-      "traceMsg" : "ObservationAddDerivedFrom.minc#7"
+      "traceMsg" : "Include/ObservationMacros/ObservationAddDerivedFrom.minc#7"
     }
   },

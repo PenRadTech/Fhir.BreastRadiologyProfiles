@@ -6,7 +6,7 @@
   `    "graphNode" : {
   `      "nodeName" : "%Id%/",
   `      "anchor" : {
-  `        "url" : "%ProfileUrl%"
+  `        "url" : "%Url%"
   `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "profile",
@@ -23,7 +23,7 @@
   `    "graphNode" : {
   `      "nodeName" : "%Id%/%Path%/",
   `      "anchor" : {
-  `        "url" : "%ProfileUrl%",
+  `        "url" : "%Url%",
   `        "item" : "%Path%"
   `      },
   `      "displayName" : "DisplayName",

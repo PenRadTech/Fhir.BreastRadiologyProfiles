@@ -15,17 +15,6 @@ Description: """
   # </p>
   #""")
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
-  #apply CommonComponentsFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedSizeFragment()
-  #apply ObservedDistributionFragment()
-  #apply CorrespondsWithFragment()
-  #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
-
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityCalcificationObservation
   
@@ -37,3 +26,14 @@ Description: """
   #  "ObservationComponentSliceCodesCS#mgCalcificationType")
   
   #apply ObservationSetComponentConcept("calcificationType", "1..1", "MgCalcificationTypeVS")
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()

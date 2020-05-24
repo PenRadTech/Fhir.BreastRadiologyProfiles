@@ -105,6 +105,13 @@
   },
   {
     "member" : {
+      "groupingId" : "MGResources/AbnormalityDensity",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/AbnormalityDensity"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "MRIResources",
       "sort": "",
       "reference" : "StructureDefinition/MRIResources"

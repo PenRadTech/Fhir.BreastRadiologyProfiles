@@ -6,7 +6,7 @@
       },
       "displayName" : "Findings/Right Breast",
       "cssClass" : "profile",
-      "traceMsg" : "FindingBreastFragment.minc#12"
+      "traceMsg" : "Include/FindingBreastFragment.minc#12"
     }
   },
   {
@@ -19,7 +19,7 @@
       "displayName" : "Body Site",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.bodySite",
-      "traceMsg" : "FindingBreastFragment.minc#13"
+      "traceMsg" : "Include/FindingBreastFragment.minc#13"
     }
   },
   {
@@ -28,7 +28,7 @@
       "source" : "^FindingsRightBreast/$",
       "target" : "^FindingsRightBreast/",
       "depth": 0,
-      "traceMsg" : "FindingBreastFragment.minc#14"
+      "traceMsg" : "Include/FindingBreastFragment.minc#14"
     }
   },
   {
@@ -41,7 +41,7 @@
       "displayName" : "MRI Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.hasMember:mriFinding",
-      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
     }
   },
   {
@@ -54,7 +54,7 @@
       "displayName" : "NM Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.hasMember:nmFinding",
-      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
     }
   },
   {
@@ -67,6 +67,6 @@
       "displayName" : "US Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.hasMember:usFinding",
-      "traceMsg" : "ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
     }
   },

@@ -6,7 +6,7 @@
       },
       "displayName" : "Nuclear Medicine/Findings",
       "cssClass" : "profile",
-      "traceMsg" : "NMFinding.mfsh#9"
+      "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#9"
     }
   },
   {
@@ -15,6 +15,6 @@
       "source" : "^NMFinding/$",
       "target" : "^NMFinding/",
       "depth": 0,
-      "traceMsg" : "NMFinding.mfsh#10"
+      "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#10"
     }
   },

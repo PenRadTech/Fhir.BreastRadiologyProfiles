@@ -1,41 +1,41 @@
-Profile: MGAbnormalityCalcification
+Profile: MGAbnormalityDensity
 Parent: Observation
-Title: "Mammography Calcification"
+Title: "Mammography Density"
 Description: """
-    Mammography Calcification
+    Mammography Density
     """
 
 
 
   * code 1..1
-  * code = ObservationCodesCS#mgAbnormalityCalcificationObservation
-  
+  * code = ObservationCodesCS#mgAbnormalityDensityObservation
+
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-  * component contains calcificationType 1..1
-  * component[calcificationType] ^short = "Calcification Type component."
-  * component[calcificationType] ^comment = """
+  * component contains densityType 1..1
+  * component[densityType] ^short = "Density Type component."
+  * component[densityType] ^comment = """
     This is one component of a group of components that are part of the observation.
     """
-  * component[calcificationType] ^definition = """
-This slice contains the optional component that refines the calcification type.
-The value of this component is a codeable concept chosen from the MammoCalcificationTypeVS valueset.
+  * component[densityType] ^definition = """
+This slice contains the optional component that refines the density type.
+The value of this component is a codeable concept chosen from the MGAbnormalityDensityTypeVS valueset.
     """
-  * component[calcificationType].code 1..1
-  * component[calcificationType].code ^short = "Calcification Type component code."
-  * component[calcificationType].code ^definition = """
-    This code identifies the Calcification Type component.
+  * component[densityType].code 1..1
+  * component[densityType].code ^short = "Density Type component code."
+  * component[densityType].code ^definition = """
+    This code identifies the Density Type component.
 	"""
-  * component[calcificationType].code = ObservationComponentSliceCodesCS#mgCalcificationType
+  * component[densityType].code = ObservationComponentSliceCodesCS#mgAbnormalityDensityType
   
 
-  * component[calcificationType].value[x] 1..1
-  * component[calcificationType].value[x] only CodeableConcept
-  * component[calcificationType].value[x] from MgCalcificationTypeVS
+  * component[densityType].value[x] 1..1
+  * component[densityType].value[x] only CodeableConcept
+  * component[densityType].value[x] from MGAbnormalityDensityTypeVS
 
   * interpretation 0..0
   * referenceRange 0..0
@@ -93,6 +93,77 @@ The value of this component is a codeable concept chosen from the BiRadsAssessme
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
+  // Define Orientation Slice
+
+  * component contains orientation 0..1
+  * component[orientation] ^short = "Orientation component."
+  * component[orientation] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[orientation] ^definition = """
+This slice contains the optional component that define the orientation of the abnormality.
+The value of this component is a codeable concept chosen from the OrientationVS valueset.
+    """
+  * component[orientation].code 1..1
+  * component[orientation].code ^short = "Orientation component code."
+  * component[orientation].code ^definition = """
+    This code identifies the Orientation component.
+	"""
+  * component[orientation].code = ObservationComponentSliceCodesCS#orientation
+
+
+  * component[orientation].value[x] 1..1
+  * component[orientation].value[x] only CodeableConcept
+  * component[orientation].value[x] from OrientationVS
+
+
+  // Define Shape Slice
+
+  * component contains shape 0..1
+  * component[shape] ^short = "Shape component."
+  * component[shape] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[shape] ^definition = """
+This slice contains the optional component that define the shape of the abnormality.
+The value of this component is a codeable concept chosen from the ShapeVS valueset.
+    """
+  * component[shape].code 1..1
+  * component[shape].code ^short = "Shape component code."
+  * component[shape].code ^definition = """
+    This code identifies the Shape component.
+	"""
+  * component[shape].code = ObservationComponentSliceCodesCS#shape
+
+
+  * component[shape].value[x] 1..1
+  * component[shape].value[x] only CodeableConcept
+  * component[shape].value[x] from ShapeVS
+
+  // Define Margin Slice
+
+  * component contains margin 0..1
+  * component[margin] ^short = "Margin component."
+  * component[margin] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[margin] ^definition = """
+This slice contains the optional component that define the margin of the abnormality.
+The value of this component is a codeable concept chosen from the MarginVS valueset.
+    """
+  * component[margin].code 1..1
+  * component[margin].code ^short = "Margin component code."
+  * component[margin].code ^definition = """
+    This code identifies the Margin component.
+	"""
+  * component[margin].code = ObservationComponentSliceCodesCS#margin
+
+
+  * component[margin].value[x] 1..1
+  * component[margin].value[x] only CodeableConcept
+  * component[margin].value[x] from ShapeVS
+
 
 
   * component contains notPreviouslySeen 0..*

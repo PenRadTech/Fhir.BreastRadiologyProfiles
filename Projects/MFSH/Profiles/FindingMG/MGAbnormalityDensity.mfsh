@@ -1,0 +1,40 @@
+Profile: MGAbnormalityDensity
+Parent: Observation
+Title: "Mammography Density"
+Description: """
+    Mammography Density
+    """
+
+  #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
+  #apply GraphNodeProfile("Density")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Mammography Density Abnormality Observation</b>
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#mgAbnormalityDensityObservation
+
+  #apply ObservationAddComponent("densityType", "1..1", "Density Type", "Density Type",
+  #	 """
+  #  This slice contains the optional component that refines the density type.
+  #  The value of this component is a codeable concept chosen from the MGAbnormalityDensityTypeVS valueset.
+  #  """,
+  #  "ObservationComponentSliceCodesCS#mgAbnormalityDensityType")
+  
+  #apply ObservationSetComponentConcept("densityType", "1..1", "MGAbnormalityDensityTypeVS")
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()

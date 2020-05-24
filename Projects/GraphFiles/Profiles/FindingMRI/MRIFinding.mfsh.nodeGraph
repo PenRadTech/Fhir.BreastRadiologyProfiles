@@ -6,7 +6,7 @@
       },
       "displayName" : "MRI Findings",
       "cssClass" : "profile",
-      "traceMsg" : "MRIFinding.mfsh#9"
+      "traceMsg" : "Profiles/FindingMRI/MRIFinding.mfsh#9"
     }
   },
   {
@@ -15,6 +15,6 @@
       "source" : "^MRIFinding/$",
       "target" : "^MRIFinding/",
       "depth": 0,
-      "traceMsg" : "MRIFinding.mfsh#10"
+      "traceMsg" : "Profiles/FindingMRI/MRIFinding.mfsh#10"
     }
   },

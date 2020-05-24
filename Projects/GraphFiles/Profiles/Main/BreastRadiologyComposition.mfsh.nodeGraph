@@ -6,7 +6,7 @@
       },
       "displayName" : "Breast/Radiology/Composition",
       "cssClass" : "profile",
-      "traceMsg" : "BreastRadiologyComposition.mfsh#9"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.mfsh#9"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^BreastRadiologyComposition/$",
       "target" : "^BreastRadiologyComposition/section:",
       "depth": 0,
-      "traceMsg" : "BreastRadiologyComposition.mfsh#10"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.mfsh#10"
     }
   },
   {
@@ -24,7 +24,7 @@
       "source" : "^BreastRadiologyComposition/section:",
       "item" : ".entry",
       "depth": 1,
-      "traceMsg" : "BreastRadiologyComposition.mfsh#11"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.mfsh#11"
     }
   },
   {
@@ -37,7 +37,7 @@
       "displayName" : "Report Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:report",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#16"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#16"
     }
   },
   {
@@ -50,7 +50,7 @@
       "displayName" : "Impressions Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:impressions",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#41"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#41"
     }
   },
   {
@@ -63,7 +63,7 @@
       "displayName" : "Findings/Right Breast/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsRightBreast",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#95"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#95"
     }
   },
   {
@@ -76,7 +76,7 @@
       "displayName" : "Findings/Left Breast/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:findingsLeftBreast",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#68"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#68"
     }
   },
   {
@@ -89,7 +89,7 @@
       "displayName" : "Related Resources/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:relatedResources",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#122"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#122"
     }
   },
   {
@@ -102,7 +102,7 @@
       "displayName" : "Recommendations/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:recommendations",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#148"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#148"
     }
   },
   {
@@ -115,6 +115,6 @@
       "displayName" : "Admin/Section",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyComposition.section:admin",
-      "traceMsg" : "BreastRadiologyComposition.macros.minc#178"
+      "traceMsg" : "Profiles/Main/BreastRadiologyComposition.macros.minc#178"
     }
   },
