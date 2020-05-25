@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
@@ -6,8 +8,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
-  #apply GraphNodeProfile("AssociatedFeature")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("AssociatedFeature")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -32,7 +34,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
 
-  #apply ObservationAddComponent("featureType", "1..1", "Feature Type", "Associated Feature Type",
+  #apply Component.Add("featureType", "1..1", "Feature Type", "Associated Feature Type",
   #	 """
   #  This slice contains the required component that 
   #  defines the observed feature. The value of this 
@@ -41,15 +43,15 @@ Description: """
   #  """,
   #   "ObservationComponentSliceCodesCS#featureType")
   
-  #apply ObservationSetComponentConcept("featureType", "1..1", "AssociatedFeatureVS")
+  #apply Observation.Component.SetConcept("featureType", "1..1", "AssociatedFeatureVS")
 
 
-  #apply ObservationLeafFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.LeafFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   //$#apply LocationRequiredFragment()
 
-  #apply ObservedCountFragment()
+  #apply Observation.Component.ObservedCountFragment()
 
 
 ValueSet:  AssociatedFeatureVS

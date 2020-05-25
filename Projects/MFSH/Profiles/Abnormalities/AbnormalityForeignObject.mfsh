@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityForeignObject
 Parent: Observation
 Title: "Foreign Object"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityForeign", "")
-  #apply GraphNodeProfile("Foreign Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Foreign Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -27,20 +29,20 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityForeignObjectObservation
 
-  #apply ObservationAddComponent("abnormalityForeignObjectType", "1..1", "Foreign Object Type", "Foreign Object Type",
+  #apply Component.Add("abnormalityForeignObjectType", "1..1", "Foreign Object Type", "Foreign Object Type",
   #	 """
   #  This slice contains the optional component that refine the foreign object type.
   #  The value of this component is a codeable concept chosen from the AbnormalityForeignObjectTypeVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityForeignObjectType")
 
-  #apply ObservationSetComponentConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
+  #apply Observation.Component.SetConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
-  #apply BiRadFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.BiRadFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

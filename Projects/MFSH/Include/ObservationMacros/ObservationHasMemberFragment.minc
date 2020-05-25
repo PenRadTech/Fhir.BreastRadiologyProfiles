@@ -1,5 +1,0 @@
-// ObservationHasMemberFragment
-// constrains observations with hasMembers references).
-#macro ObservationHasMemberFragment()
-  #incompatible ObservationLeafFragment
-#end

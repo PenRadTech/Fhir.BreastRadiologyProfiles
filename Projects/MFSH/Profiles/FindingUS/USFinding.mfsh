@@ -6,8 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("USFindings", "")
-  #apply GraphNodeProfile("US Findings")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("US Findings")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -23,7 +23,7 @@ Description: """
   # </p>
   #""")
 
-  #apply ObservationSectionFragment()
+  #apply Observation.SectionFragment()
 
   * code 1..1
   * code = ObservationCodesCS#usFindingObservation

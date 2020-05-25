@@ -6,9 +6,9 @@ Description: """
 """
 
   #apply IGGroupMemberProfile("BaseResources", "B")
-  #apply GraphNodeProfile("Breast/Radiology/Composition")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
-  #apply GraphLinkByReference("focus", "^%Id%/section:", ".entry", "1")
+  #apply Graph.NodeProfile("Breast/Radiology/Composition")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
+  #apply Graph.LinkByReference("focus", "^%Id%/section:", ".entry", "1")
 
 
   #apply IntroDocGraph("""

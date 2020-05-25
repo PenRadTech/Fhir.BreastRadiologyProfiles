@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityMass
 Parent: Observation
 Title: "Mass Abnormality"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("AbnormalityResources/MassAbnormality", "")
-  #apply GraphNodeProfile("Mass Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Mass Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -19,28 +21,28 @@ Description: """
   # </p>
   #""")
 
-  #apply ObservationAddComponent("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
+  #apply Component.Add("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
   #	 """
   #  This slice contains the optional component that refine the Mass Abnormality type.
   #  The value of this component is a codeable concept chosen from the AbnormalityMassTypeVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityMassType")
 
-  #apply ObservationSetComponentConcept("massType", "1..1", "AbnormalityMassTypeVS")
+  #apply Observation.Component.SetConcept("massType", "1..1", "AbnormalityMassTypeVS")
 
 
-  #apply TumorSatelliteHasMemberFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedSizeFragment()
-  #apply ObservedDistributionFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()
 
 // Differential
   //   "differential": {

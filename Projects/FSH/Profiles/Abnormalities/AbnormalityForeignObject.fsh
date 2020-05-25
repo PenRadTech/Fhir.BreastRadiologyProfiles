@@ -51,6 +51,7 @@ The value of this component is a codeable concept chosen from the AbnormalityFor
   * referenceRange 0..0
   *  bodySite 1..1
   // Define Observed Changes Slice
+  
 
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
@@ -116,6 +117,7 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
 
+
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Observed Change In Abnormality component."
   * component[correspondsWith] ^comment = """
@@ -137,6 +139,7 @@ The value of this component is a codeable concept chosen from the CorrespondsWit
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
  
+
 
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."

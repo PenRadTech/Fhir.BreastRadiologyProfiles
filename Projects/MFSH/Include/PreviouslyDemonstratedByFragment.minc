@@ -1,8 +1,13 @@
-// PreviouslyDemonstratedBy Fragment
-// <b>Observation 'Demonstrated By' Component Fragment</b>
+/*
+ PreviouslyDemonstratedBy Fragment
+ Observation 'Demonstrated By' Component Fragment
+ */
+
+#use Observation
 
 #macro PreviouslyDemonstratedByFragment()
-  #apply ObservationAddComponent("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
+
+  #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
   #  has been previously demonstrated by.
@@ -11,5 +16,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#prevDemBy")
 
-  #apply ObservationSetComponentConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
+  #apply Observation.Component.SetConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
 #end

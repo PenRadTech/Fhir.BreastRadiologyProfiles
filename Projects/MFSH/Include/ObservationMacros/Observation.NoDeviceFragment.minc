@@ -1,0 +1,9 @@
+/*
+ Observation.NoDeviceFragment
+ for all observations that have no device.
+ */
+ 
+#macro once Observation.NoDeviceFragment()
+  #apply Observation.Fragment()
+  * device 0..0
+#end

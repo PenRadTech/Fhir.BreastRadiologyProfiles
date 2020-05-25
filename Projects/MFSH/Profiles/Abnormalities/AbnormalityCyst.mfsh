@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityCyst
 Parent: Observation
 Title: "Cyst"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityCyst", "")
-  #apply GraphNodeProfile("Cyst Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Cyst Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -23,25 +25,25 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
-  #apply ObservationAddComponent("cystType", "0..1", "Cyst Type", "Cyst Type",
+  #apply Component.Add("cystType", "0..1", "Cyst Type", "Cyst Type",
   #	 """
   #  This slice contains the optional component that refine the cyst type.
   #  The value of this component is a codeable concept chosen from the AbnormalityCystTypeVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityCystType")
 
-  #apply ObservationSetComponentConcept("cystType", "1..1", "AbnormalityCystTypeVS")
+  #apply Observation.Component.SetConcept("cystType", "1..1", "AbnormalityCystTypeVS")
 
 
-  #apply TumorSatelliteHasMemberFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedDistributionFragment()
-  #apply ObservedSizeFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

@@ -1,0 +1,12 @@
+/*
+ Observation.NoValueFragment
+ Observations that have no explicit value.
+ */
+ 
+#macro once Observation.NoValueFragment()
+  #apply Observation.Fragment()
+  * dataAbsentReason 0..0
+  * value[x] 0..0
+  * interpretation 0..0
+  * referenceRange 0..0
+#end

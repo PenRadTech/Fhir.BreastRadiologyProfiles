@@ -1,7 +1,7 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro GraphNodeProfile(DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
+#macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Id%/",
@@ -18,7 +18,7 @@
 //
 // Make a graph node that refers to an element in a profile.
 //
-#macro GraphNodeElement(%Path%, DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
+#macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphNode" : {
   `      "nodeName" : "%Id%/%Path%/",
@@ -34,7 +34,7 @@
   `  },
 #end
 
-#macro GraphLinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
+#macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByName" : {
   `      "traversalName" : "TraversalName",
@@ -46,7 +46,7 @@
   `  },
 #end
 
-#macro GraphLinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BasePath%.nodeGraph"
+#macro Graph.LinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByBinding" : {
   `      "traversalName" : "TraversalName",
@@ -57,7 +57,7 @@
   `  },
 #end
 
-#macro GraphLinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
+#macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BasePath%.nodeGraph"
   `  {
   `    "graphLinkByReference" : {
   `      "traversalName" : "TraversalName",

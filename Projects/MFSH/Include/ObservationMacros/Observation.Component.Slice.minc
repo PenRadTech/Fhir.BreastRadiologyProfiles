@@ -1,8 +1,8 @@
 /*
  Slice Observation.component.
  */
-#macro once SliceComponent()
-  #incompatible ObservationNoComponentFragment
+#macro once Observation.Component.Slice()
+  #incompatible Observation.NoComponentFragment
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open

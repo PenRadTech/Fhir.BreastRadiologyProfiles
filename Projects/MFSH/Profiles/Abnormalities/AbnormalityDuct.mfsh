@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityDuct
 Parent: Observation
 Title: "Duct"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityDuct", "")
-  #apply GraphNodeProfile("Duct Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Duct Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -22,24 +24,24 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
-  #apply ObservationAddComponent("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
+  #apply Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
   #	 """
   #  This resource and referenced child resources contain
   #  information about a duct abnormality observation
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityDuctObservation")
 
-  #apply ObservationSetComponentConcept("ductType", "1..1", "AbnormalityDuctTypeVS")
+  #apply Observation.Component.SetConcept("ductType", "1..1", "AbnormalityDuctTypeVS")
 
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedDistributionFragment()
-  #apply ObservedSizeFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

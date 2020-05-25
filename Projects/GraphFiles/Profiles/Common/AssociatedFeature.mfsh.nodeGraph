@@ -6,7 +6,7 @@
       },
       "displayName" : "AssociatedFeature",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#9"
+      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/",
       "depth": 0,
-      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#10"
+      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#12"
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "Feature Type/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:featureType",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -36,7 +36,7 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -49,6 +49,6 @@
       "displayName" : "Observed Count/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },

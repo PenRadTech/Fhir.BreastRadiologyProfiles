@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: ServiceRecommendation
 Parent: ServiceRequest
 Title: "Service Recommendation"
@@ -6,10 +8,10 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("BaseResources", "")
-  #apply GraphNodeProfile("ServiceRecommendation")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
-  #apply GraphNodeElement("code", "code")
-  #apply GraphLinkByBinding("focus", "^%Id%/code/$", "")
+  #apply Graph.NodeProfile("ServiceRecommendation")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeElement("code", "code")
+  #apply Graph.LinkByBinding("focus", "^%Id%/code/$", "")
 
 
   #apply IntroDocGraph("""

@@ -5,6 +5,6 @@
 
 #macro CommonComponentsFragment()
     #apply BreastBodyLocationRequiredFragment()
-    #apply ObservedChangesFragment()
-    #apply BiRadFragment()
+    #apply Observation.Component.ObservedChangesFragment()
+    #apply Observation.Component.BiRadFragment()
 #end

@@ -6,7 +6,7 @@
       },
       "displayName" : "Cyst Abnormality",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityLymphNode.mfsh#9"
+      "traceMsg" : "Profiles/Abnormalities/AbnormalityLymphNode.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^AbnormalityLymphNode/",
       "depth": 0,
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityLymphNode.mfsh#10"
+      "traceMsg" : "Profiles/Abnormalities/AbnormalityLymphNode.mfsh#12"
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "Lymph Node Abnormality Type/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:lymphNodeType",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -36,7 +36,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:lymphNodeType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -49,7 +49,7 @@
       "displayName" : "Tumor Satellite/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.hasMember:tumorSatellite",
-      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
     }
   },
   {
@@ -62,7 +62,7 @@
       "displayName" : "Observed Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -70,7 +70,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -83,7 +83,7 @@
       "displayName" : "BiRads/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -91,7 +91,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -104,7 +104,7 @@
       "displayName" : "Orientation/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -112,7 +112,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -125,7 +125,7 @@
       "displayName" : "Shape/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:shape",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -133,7 +133,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -146,7 +146,7 @@
       "displayName" : "Margin/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:margin",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -154,7 +154,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -167,7 +167,7 @@
       "displayName" : "Observed Count/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -180,7 +180,7 @@
       "displayName" : "Observed Distribution/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:obsDistribution",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -188,7 +188,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:obsDistribution/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -201,7 +201,7 @@
       "displayName" : "Observed Distribution Region Size/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:obsDistRegionSize",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -214,7 +214,7 @@
       "displayName" : "Observed Size/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:obsSize",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -227,7 +227,7 @@
       "displayName" : "Not Previously Seen/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -235,7 +235,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -248,7 +248,7 @@
       "displayName" : "Observed Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -256,7 +256,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -269,7 +269,7 @@
       "displayName" : "Previously/Demonstrated by Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -277,6 +277,6 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },

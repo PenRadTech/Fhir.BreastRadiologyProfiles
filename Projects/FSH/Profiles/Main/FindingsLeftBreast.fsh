@@ -31,7 +31,7 @@ Description: """
 	codes set in any of the child observations of the left Breast.
     """
 	
-  //#apply ObservationHasMemberSlice("mgFinding", "0..1", "MG Finding",
+  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding",
   //#  "'MG Finding' reference.",
   //#  """
   //#  This slice references the Mammography findings section.

@@ -6,10 +6,10 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("BaseResources", "A")
-  #apply GraphNodeProfile("Breast/Radiology/Document")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/entry:", "0")
-  #apply GraphLinkByReference("focus", "^%Id%/entry:", ".resource", "1")
-  #apply GraphNodeElement("entry:index", "Composition index")
+  #apply Graph.NodeProfile("Breast/Radiology/Document")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/entry:", "0")
+  #apply Graph.LinkByReference("focus", "^%Id%/entry:", ".resource", "1")
+  #apply Graph.NodeElement("entry:index", "Composition index")
 
   #apply IntroDocGraph( """
   # <P>

@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityFibroadenoma
 Parent: Observation
 Title: "Fibroadenoma"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("CommonResources/AbnormalityFibroadenoma", "")
-  #apply GraphNodeProfile("Fibroadenoma Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Fibroadenoma Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -22,22 +24,22 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
 
-  #apply ObservationAddComponent("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
+  #apply Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
   #	 """
   #  This resource and referenced child resources contain
   #  information about a Fibroadenoma abnormality observation
   #	 """,
   #  "ObservationComponentSliceCodesCS#mgAbnormalityFibroAdenomaType")
 
-  #apply ObservationSetComponentConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
+  #apply Observation.Component.SetConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
 
-  #apply ObservationLeafFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.LeafFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedDistributionFragment()
-  #apply ObservedSizeFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.ObservedSizeFragment()
   #apply PreviouslyDemonstratedByFragment()
 

@@ -1,6 +1,9 @@
 /*
  Common Tumor Satellite Observation
  */
+ 
+#use Observation
+
 Profile: TumorSatellite
 Parent: Observation
 Title: "Tumor Satellite"
@@ -9,8 +12,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("CommonResources/TumorSatellite", "")
-  #apply GraphNodeProfile("ConsistentWith")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("ConsistentWith")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -29,9 +32,9 @@ Description: """
   # </p>
   #""")
   #apply HeaderFragment()
-  #apply ObservationLeafFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoComponentFragment()
+  #apply Observation.LeafFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoComponentFragment()
 
   * . ^definition = """
     Tumor Satellite Observation.
@@ -46,7 +49,7 @@ Description: """
   * valueRange.low units from UNITSOFLENGTH
   * valueRange.high units from UNITSOFLENGTH
 
-  #apply ObservationAddDerivedFrom("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
+  #apply DerivedFrom.Add("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
   #  """
   #  This derivedFrom slice references the index tumor.
   #  """,

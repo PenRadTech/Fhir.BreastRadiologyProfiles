@@ -1,0 +1,13 @@
+/*
+ ConsistentWith HasMember Fragment
+ This fragment adds the references for the ConsistentWith HasMember.
+ */
+ 
+#macro Observation.Component.ConsistentWithFragment()
+  #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With",
+  #  "'Consistent With' reference.",
+  #  """
+  #  This slice references the target 'Consistent With'.
+  #  """,
+  #  "Reference(ConsistentWith)")
+#end

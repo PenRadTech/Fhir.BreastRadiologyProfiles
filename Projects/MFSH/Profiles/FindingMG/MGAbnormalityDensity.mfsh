@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: MGAbnormalityDensity
 Parent: Observation
 Title: "Mammography Density"
@@ -6,8 +8,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
-  #apply GraphNodeProfile("Density")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Density")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -18,23 +20,23 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityDensityObservation
 
-  #apply ObservationAddComponent("densityType", "1..1", "Density Type", "Density Type",
+  #apply Component.Add("densityType", "1..1", "Density Type", "Density Type",
   #	 """
   #  This slice contains the optional component that refines the density type.
   #  The value of this component is a codeable concept chosen from the MGAbnormalityDensityTypeVS valueset.
   #  """,
   #  "ObservationComponentSliceCodesCS#mgAbnormalityDensityType")
   
-  #apply ObservationSetComponentConcept("densityType", "1..1", "MGAbnormalityDensityTypeVS")
+  #apply Observation.Component.SetConcept("densityType", "1..1", "MGAbnormalityDensityTypeVS")
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedSizeFragment()
-  #apply ObservedDistributionFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

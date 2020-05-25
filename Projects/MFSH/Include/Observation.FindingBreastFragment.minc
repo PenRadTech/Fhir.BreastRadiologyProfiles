@@ -1,7 +1,9 @@
 // FindingBreastFragment
 // Fragment definition for finding section of left or right breast
 
-#macro FindingBreastFragment(%Laterality%)
+#use Observation
+
+#macro Observation.FindingBreastFragment(%Laterality%)
 Parent: Observation
 Title: "Findings %Laterality% Breast"
 Description: """
@@ -9,9 +11,9 @@ Description: """
 	"""  
 
   #apply IGGroupMemberProfile("CommonResources/AbnormalityDuct", "")
-  #apply GraphNodeProfile("Findings/%Laterality% Breast")
-  #apply GraphNodeElement("bodySite", "Body Site")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Findings/%Laterality% Breast")
+  #apply Graph.NodeElement("bodySite", "Body Site")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
  #apply IntroDocGraph("""
   #<p>
@@ -23,7 +25,7 @@ Description: """
   #</p>
   # """)
   #apply HeaderFragment()
-  #apply ObservationNoDeviceFragment()
+  #apply Observation.NoDeviceFragment()
  
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
@@ -35,14 +37,14 @@ Description: """
 	codes set in any of the child observations of the %Laterality% Breast.
     """
 	
-  //#apply ObservationHasMemberSlice("mgFinding", "0..1", "MG Finding",
+  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding",
   //#  "'MG Finding' reference.",
   //#  """
   //#  This slice references the Mammography findings section.
   //#  """,
   //#  "Reference(MGFinding)")
 
-  #apply ObservationHasMemberSlice("mriFinding", "0..1", "MRI Finding",
+  #apply HasMember.Add("mriFinding", "0..1", "MRI Finding",
   #  "'Magnetic Resonance Imaging Finding' reference.",
   #  """
   #  This slice references the MRI findings section.
@@ -50,7 +52,7 @@ Description: """
   #  "Reference(MRIFinding)")
   * hasMember[mriFinding] MS
 
-  #apply ObservationHasMemberSlice("nmFinding", "0..1", "NM Finding",
+  #apply HasMember.Add("nmFinding", "0..1", "NM Finding",
   #  "'Nuclear Medicine Finding' reference.",
   #  """
   #  This slice references the NM findings section.
@@ -58,7 +60,7 @@ Description: """
   #  "Reference(NMFinding)")
   * hasMember[nmFinding] MS
 
-  #apply ObservationHasMemberSlice("usFinding", "0..1", "US Finding",
+  #apply HasMember.Add("usFinding", "0..1", "US Finding",
   #  "'Ultra Sound Finding' reference.",
   #  """
   #  This slice references the Ultra Sound findings section.

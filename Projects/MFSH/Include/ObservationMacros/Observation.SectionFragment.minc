@@ -1,10 +1,10 @@
 // Observation Section Fragment
 // this fragment constrains a generic observation to be a observation section.
 
-#macro ObservationSectionFragment()
-  #apply ObservationFragment()
-  #apply ObservationNoComponentFragment()
-  #apply ObservationNoValueFragment()
+#macro Observation.SectionFragment()
+  #apply Observation.Fragment()
+  #apply Observation.NoComponentFragment()
+  #apply Observation.NoValueFragment()
 
   * interpretation 0..0
   * method 0..0  

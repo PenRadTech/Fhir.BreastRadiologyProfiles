@@ -6,7 +6,7 @@
       },
       "displayName" : "Duct Abnormality",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#9"
+      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AbnormalityDuct/$",
       "target" : "^AbnormalityDuct/",
       "depth": 0,
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#10"
+      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#12"
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "Duct Abnormality/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:ductType",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -36,7 +36,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:ductType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -49,7 +49,7 @@
       "displayName" : "Observed Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -57,7 +57,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -70,7 +70,7 @@
       "displayName" : "BiRads/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -78,7 +78,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -91,7 +91,7 @@
       "displayName" : "Orientation/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -99,7 +99,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -112,7 +112,7 @@
       "displayName" : "Shape/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:shape",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -120,7 +120,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -133,7 +133,7 @@
       "displayName" : "Margin/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:margin",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -141,7 +141,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -154,7 +154,7 @@
       "displayName" : "Observed Count/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -167,7 +167,7 @@
       "displayName" : "Observed Distribution/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:obsDistribution",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -175,7 +175,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:obsDistribution/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -188,7 +188,7 @@
       "displayName" : "Observed Distribution Region Size/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:obsDistRegionSize",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -201,7 +201,7 @@
       "displayName" : "Observed Size/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:obsSize",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -214,7 +214,7 @@
       "displayName" : "Not Previously Seen/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -222,7 +222,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -235,7 +235,7 @@
       "displayName" : "Observed Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -243,7 +243,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -256,7 +256,7 @@
       "displayName" : "Previously/Demonstrated by Changes/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/ObservationAddComponent.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
     }
   },
   {
@@ -264,7 +264,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityDuct/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/ObservationSetComponentConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
   },
   {
@@ -277,6 +277,6 @@
       "displayName" : "Consistent With/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDuct.hasMember:consistentWith",
-      "traceMsg" : "Include/ObservationMacros/ObservationHasMemberSlice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
     }
   },

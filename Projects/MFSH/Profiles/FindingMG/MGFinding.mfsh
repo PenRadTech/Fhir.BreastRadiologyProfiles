@@ -6,8 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MG Findings", "")
-  #apply GraphNodeProfile("Mg Finding")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Mg Finding")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -23,7 +23,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgFindingObservation
 
-  #apply ObservationSectionFragment()
+  #apply Observation.SectionFragment()
 
     //       {
     //         "id": "Observation.hasMember:abnormalityCyst",

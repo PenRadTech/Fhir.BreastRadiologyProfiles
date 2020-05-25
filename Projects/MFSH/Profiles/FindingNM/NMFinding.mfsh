@@ -6,8 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("NMResources", "")
-  #apply GraphNodeProfile("Nuclear Medicine/Findings")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Nuclear Medicine/Findings")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -26,4 +26,4 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#nmFindingObservation
 
-  #apply ObservationSectionFragment()
+  #apply Observation.SectionFragment()

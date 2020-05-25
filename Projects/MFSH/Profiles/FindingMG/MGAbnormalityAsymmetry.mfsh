@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: MGAbnormalityAsymmetry
 Parent: Observation
 Title: "Mammography Asymmetry"
@@ -6,8 +8,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityAsymmetry", "")
-  #apply GraphNodeProfile("Asymmetry Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Asymmetry Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -18,21 +20,21 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityAsymmetryObservation
 
-  #apply ObservationAddComponent("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
+  #apply Component.Add("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
   #	 """
   #  This slice contains the optional component that refine the asymmetry type.
   #  The value of this component is a codeable concept chosen from the MGAbnormalityAsymmetryTypeVS valueset.
   #  """,
   #   "ObservationComponentSliceCodesCS#mgAbnormalityAsymmetryType")
   
-  #apply ObservationSetComponentConcept("asymmetryType", "1..1", "MGAbnormalityAsymmetryTypeVS")
+  #apply Observation.Component.SetConcept("asymmetryType", "1..1", "MGAbnormalityAsymmetryTypeVS")
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply ObservedCountFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

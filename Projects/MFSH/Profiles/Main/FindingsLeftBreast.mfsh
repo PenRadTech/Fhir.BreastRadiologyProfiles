@@ -1,5 +1,5 @@
 Profile: FindingsLeftBreast
-  #apply FindingBreastFragment("left")
+  #apply Observation.FindingBreastFragment("left")
   #apply IGGroupMemberProfile("BaseResources", "C")
 
   * bodySite 1..1

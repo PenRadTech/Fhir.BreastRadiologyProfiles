@@ -1,10 +1,15 @@
-// ObservedCount Fragment
-// Fragment that adds 'Observed Count' element to profile.
+/*
+ ObservedCount Fragment
+ Fragment that adds 'Observed Count' element to profile.
+ */
 
-#macro once ObservedCountFragment()
-  #incompatible ObservationNoComponentFragment
-  #apply SliceComponent()
-  #apply ObservationAddComponent("observedCount", "0..1", "Observed Count", "Observed Count component.",
+#use Observation
+
+#macro once Observation.Component.ObservedCountFragment()
+
+  #incompatible Observation.NoComponentFragment
+  #apply Observation.Component.Slice()
+  #apply Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
   #   This component slice contains the number of items observed.
   #   This can be a quantity (i.e. 5), or a range (1 to 5).

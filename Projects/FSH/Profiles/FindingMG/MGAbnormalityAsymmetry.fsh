@@ -51,6 +51,7 @@ The value of this component is a codeable concept chosen from the MGAbnormalityA
   * referenceRange 0..0
   *  bodySite 1..1
   // Define Observed Changes Slice
+  
 
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
@@ -93,6 +94,7 @@ The value of this component is a codeable concept chosen from the BiRadsAssessme
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
 
   // Define Orientation Slice
 
@@ -187,6 +189,7 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
 
+
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -213,6 +216,7 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
   * component[observedCount].value[x] only Quantity or Range
 
 
+
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Observed Change In Abnormality component."
   * component[correspondsWith] ^comment = """
@@ -234,6 +238,7 @@ The value of this component is a codeable concept chosen from the CorrespondsWit
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
  
+
 
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."

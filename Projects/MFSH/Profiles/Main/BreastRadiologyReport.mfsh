@@ -6,9 +6,9 @@ Description: """
 	"""
 
   #apply IGGroupMemberProfile("BaseResources", "C")
-  #apply GraphNodeProfile("Report")
-  #apply GraphNodeElement("code", "Code")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Report")
+  #apply Graph.NodeElement("code", "Code")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph( """
   # <p>

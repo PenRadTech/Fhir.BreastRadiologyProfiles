@@ -1,5 +1,0 @@
-// ObservationLeafFragment
-// constrains observations leaf nodes (no hasMembers references).
-#macro once ObservationLeafFragment()
-  * hasMember 0..0
-#end

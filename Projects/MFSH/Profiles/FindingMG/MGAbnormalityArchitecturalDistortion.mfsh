@@ -6,8 +6,8 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityArchitecturalDistortion", "")
-  #apply GraphNodeProfile("Architectural Distortion")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Architectural Distortion")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -18,11 +18,11 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityArchitecturalDistortionObservation
 
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
-  #apply ConsistentWithHasMemberFragment()
+  #apply Observation.Component.ConsistentWithFragment()

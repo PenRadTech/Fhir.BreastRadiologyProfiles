@@ -1,6 +1,0 @@
-// ObservationNoDeviceFragment
-// for all observations that have no device.
-#macro once ObservationNoDeviceFragment()
-  #apply ObservationFragment()
-  * device 0..0
-#end

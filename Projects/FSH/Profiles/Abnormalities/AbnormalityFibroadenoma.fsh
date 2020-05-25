@@ -52,6 +52,7 @@ information about a Fibroadenoma abnormality observation
   * referenceRange 0..0
   *  bodySite 1..1
   // Define Observed Changes Slice
+  
 
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
@@ -94,6 +95,7 @@ The value of this component is a codeable concept chosen from the BiRadsAssessme
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
 
   // Define Orientation Slice
 
@@ -166,6 +168,7 @@ The value of this component is a codeable concept chosen from the MarginVS value
   * component[margin].value[x] from ShapeVS
 
 
+
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -190,6 +193,7 @@ The value of this component is a codeable concept chosen from the MarginVS value
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
 
 
   // define calcification distribution slice
@@ -287,6 +291,7 @@ then the size is {upper bound} or less.
   * component[obsSize].valueQuantity units from UNITSOFLENGTH
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
+
 
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."

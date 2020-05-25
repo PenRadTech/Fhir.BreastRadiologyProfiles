@@ -3,10 +3,10 @@
  This addes the component slicing discriminator.
  It does not constrain the component value.
  */
-#macro ObservationAddComponent(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
-  #apply GraphNodeElement("component:SliceName", "DisplayName/Component")
+#macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
+  #apply Graph.NodeElement("component:SliceName", "DisplayName/Component")
 
-  #apply SliceComponent()
+  #apply Observation.Component.Slice()
   * component contains SliceName Cardinality
   * component[SliceName] ^short = "ShortDesc component."
   * component[SliceName] ^comment = """

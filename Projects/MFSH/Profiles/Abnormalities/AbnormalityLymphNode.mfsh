@@ -1,3 +1,5 @@
+#use Observation
+
 Profile: AbnormalityLymphNode
 Parent: Observation
 Title: "LymphNode Abnormality"
@@ -6,8 +8,8 @@ Description: """
   """
 
   #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityLymphNode", "")
-  #apply GraphNodeProfile("Cyst Abnormality")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  #apply Graph.NodeProfile("Cyst Abnormality")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
@@ -22,23 +24,23 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityLymphNodeObservation
 
-  #apply ObservationAddComponent("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
+  #apply Component.Add("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
   #	 """
   #  This slice contains the optional component that refine the Lymph Node Abnormality type.
   #  The value of this component is a codeable concept chosen from the AbnormalityLymphNodeTypeVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityLymphNodeType")
 
-  #apply ObservationSetComponentConcept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
+  #apply Observation.Component.SetConcept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
 
-  #apply TumorSatelliteHasMemberFragment()
-  #apply ObservationNoDeviceFragment()
-  #apply ObservationNoValueFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()
+  #apply Observation.NoDeviceFragment()
+  #apply Observation.NoValueFragment()
   #apply CommonComponentsFragment()
   #apply ShapeComponentsFragment()
-  #apply ObservedCountFragment()
-  #apply ObservedDistributionFragment()
-  #apply ObservedSizeFragment()
-  #apply NotPreviouslySeenComponentFragment()
-  #apply CorrespondsWithFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
   #apply PreviouslyDemonstratedByFragment()
