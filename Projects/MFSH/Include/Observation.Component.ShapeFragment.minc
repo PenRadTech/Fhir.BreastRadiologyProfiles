@@ -6,9 +6,9 @@
   
 #use Observation
 
-#macro ShapeComponentsFragment()
+#macro Observation.Component.ShapeFragment()
 
-  #apply BreastBodyLocationRequiredFragment()
+  #apply Observation.BreastBodyLocationRequiredFragment()
 
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

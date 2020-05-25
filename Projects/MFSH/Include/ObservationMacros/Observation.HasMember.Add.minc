@@ -12,7 +12,6 @@
 #      ShortDesc, 
 #      Definition, 
 #      Target)
-  #apply HasMember.Fragment()
   #apply Graph.NodeElement("hasMember:SliceName", "DisplayName/hasMember")
 
   #apply Observation.HasMember.Slice()

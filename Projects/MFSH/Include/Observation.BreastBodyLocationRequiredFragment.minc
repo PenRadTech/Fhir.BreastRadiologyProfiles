@@ -6,7 +6,7 @@
 // The references are required, meaning that the breast body location must exist.
 //$ Incomplete
 
-#macro once BreastBodyLocationRequiredFragment()
+#macro once Observation.BreastBodyLocationRequiredFragment()
   *  bodySite 1..1
 #end
     //       {

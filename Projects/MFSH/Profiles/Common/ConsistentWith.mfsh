@@ -31,8 +31,8 @@ Description: """
   * code = ObservationCodesCS#consistentWithObservation
 
   #apply Observation.LeafFragment()
-  #apply Observation.NoDeviceFragment()
-  #apply Observation.NoValueFragment()
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
 
   // Define Consistent With Slice
   #apply Component.Add("consistentWith", "1..1", "Consistent With", "Consistent With",

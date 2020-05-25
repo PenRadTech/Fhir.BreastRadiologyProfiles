@@ -2,7 +2,7 @@
  Slice Observation.component.
  */
 #macro once Observation.Component.Slice()
-  #incompatible Observation.NoComponentFragment
+  #incompatible Observation.Component.Zero
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open

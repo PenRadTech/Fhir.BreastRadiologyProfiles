@@ -49,7 +49,7 @@
       "displayName" : "Tumor Satellite/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.hasMember:tumorSatellite",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {

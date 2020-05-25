@@ -196,6 +196,6 @@
       "displayName" : "Consistent With/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.hasMember:consistentWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

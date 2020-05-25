@@ -41,7 +41,7 @@
       "displayName" : "MRI Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsLeftBreast.hasMember:mriFinding",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {
@@ -54,7 +54,7 @@
       "displayName" : "NM Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsLeftBreast.hasMember:nmFinding",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {
@@ -67,6 +67,6 @@
       "displayName" : "US Finding/hasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsLeftBreast.hasMember:usFinding",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#16"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

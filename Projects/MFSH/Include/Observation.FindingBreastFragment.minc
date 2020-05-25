@@ -25,7 +25,7 @@ Description: """
   #</p>
   # """)
   #apply HeaderFragment()
-  #apply Observation.NoDeviceFragment()
+  #apply Observation.Device.Zero()
  
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)

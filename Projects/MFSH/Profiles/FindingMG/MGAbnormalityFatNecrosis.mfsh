@@ -21,14 +21,16 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityFatNecrosisObservation
 
-  #apply Observation.NoDeviceFragment()
-  #apply Observation.NoValueFragment()
-  #apply CommonComponentsFragment()
-  #apply ShapeComponentsFragment()
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.ShapeFragment()
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.ObservedCountFragment()
   #apply Observation.Component.ObservedSizeFragment()
   #apply Observation.Component.ObservedDistributionFragment()
   #apply Observation.Component.CorrespondsWithFragment()
-  #apply PreviouslyDemonstratedByFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
   #apply Observation.Component.ConsistentWithFragment()

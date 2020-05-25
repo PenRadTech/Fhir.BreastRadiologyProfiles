@@ -38,11 +38,13 @@ Description: """
 
   #apply Observation.Component.SetConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
 
-  #apply Observation.NoDeviceFragment()
-  #apply Observation.NoValueFragment()
-  #apply CommonComponentsFragment()
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.CorrespondsWithFragment()
   #apply Observation.Component.BiRadFragment()
-  #apply PreviouslyDemonstratedByFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
   #apply Observation.Component.ConsistentWithFragment()

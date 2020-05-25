@@ -7,7 +7,7 @@
 
 #macro Observation.Component.ObservedDistributionFragment()
 
-  #incompatible Observation.NoComponentFragment
+  #incompatible Observation.Component.Zero
 
   // define calcification distribution slice
   #apply Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",

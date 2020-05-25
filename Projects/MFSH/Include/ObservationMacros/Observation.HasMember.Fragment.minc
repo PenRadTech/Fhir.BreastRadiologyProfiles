@@ -1,5 +1,0 @@
-// Observation.HasMember.Fragment
-// constrains observations with hasMembers references).
-#macro Observation.HasMember.Fragment()
-  #incompatible Observation.LeafFragment
-#end
