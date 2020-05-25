@@ -1,0 +1,34 @@
+Profile: MGAbnormalityFatNecrosis
+Parent: Observation
+Title: "Mammography Fat Necrosis"
+Description: """
+    Mammography Fat Necrosis
+    """
+
+  #apply IGGroupMemberProfile("MGResources/AbnormalityFatNecrosis", "")
+  #apply GraphNodeProfile("Fat Necrosis")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Fat Necrosis Abnormality Observation</b>
+  # </p>
+  # <p>
+  # [PR]
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#mgAbnormalityFatNecrosisObservation
+
+  #apply ObservationNoDeviceFragment()
+  #apply ObservationNoValueFragment()
+  #apply CommonComponentsFragment()
+  #apply ShapeComponentsFragment()
+  #apply NotPreviouslySeenComponentFragment()
+  #apply ObservedCountFragment()
+  #apply ObservedSizeFragment()
+  #apply ObservedDistributionFragment()
+  #apply CorrespondsWithFragment()
+  #apply PreviouslyDemonstratedByFragment()
+  #apply ConsistentWithHasMemberFragment()

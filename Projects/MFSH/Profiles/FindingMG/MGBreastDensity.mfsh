@@ -1,0 +1,27 @@
+Profile: MGBreastDensity
+Parent: Observation
+Title: "Mammography Breast Density"
+Description: """
+    Mammography Breast Density
+    """
+
+  #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
+  #apply GraphNodeProfile("Breast Density")
+  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Breast Density Observation</b>
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#mgBreastDensityObservation
+
+  #apply ObservationLeafFragment()
+  #apply ObservationNoComponentFragment()
+  #apply ObservationNoDeviceFragment()
+
+  * value[x] only CodeableConcept
+  * value[x] 1..1
+  * value[x] = ObservationCodesCS#MGBreastDensityVS

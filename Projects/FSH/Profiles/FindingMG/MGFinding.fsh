@@ -1,6 +1,3 @@
-
-#include "Common.inc"
-#use "HeaderFragment.inc"
 Profile: MGFinding
 Parent: Observation
 Title: "Mammography Finding"
@@ -8,87 +5,28 @@ Description: """
     Mammography Finding
     """
 
-  #apply IGGroupMemberProfile("MG Findings", "")
-  #apply GraphNodeProfile("Mg Finding")
-  #apply GraphLinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-  #apply IntroDocGraph("""
-  # <p>
-  # <b>Mammography Finding</b>
-  # </p>
-  # <p>
-  # This Observation contains all references to all the observations
-  #  and exam information related to a Mammography (MG) exam.
-  # </p>
-  #""")
 
-    #apply ObservationSectionFragment()
+ 
+  * code 1..1
+  * code = ObservationCodesCS#mgFindingObservation
 
-// Differential
-    //   "differential": {
-    //     "element": [
-    //       {
-    //         "id": "Observation",
-    //         "path": "Observation",
-    //         "short": "Mammography Finding",
-    //         "definition": "This Observation contains all references to all the observations\n and exam information related to a Mammography (MG) exam.",
-    //         "base": {
-    //           "path": "Observation",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
-    //       {
-    //         "id": "Observation.code",
-    //         "extension": [
-    //           {
-    //             "url": "http://www.fragment.com/DefaultValue",
-    //             "valueCodeableConcept": {
-    //               "coding": [
-    //                 {
-    //                   "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
-    //                   "code": "mgFindingObservationObservation",
-    //                   "display": "MG Finding observation"
-    //                 }
-    //               ],
-    //               "text": "MG Finding observation"
-    //             }
-    //           }
-    //         ],
-    //         "path": "Observation.code",
-    //         "base": {
-    //           "path": "Observation.code",
-    //           "min": 1,
-    //           "max": "1"
-    //         },
-    //         "patternCodeableConcept": {
-    //           "coding": [
-    //             {
-    //               "system": "http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodes",
-    //               "code": "mgFindingObservationObservation"
-    //             }
-    //           ]
-    //         }
-    //       },
-    //       {
-    //         "id": "Observation.hasMember",
-    //         "path": "Observation.hasMember",
-    //         "slicing": {
-    //           "discriminator": [
-    //             {
-    //               "type": "value",
-    //               "path": "url"
-    //             }
-    //           ],
-    //           "ordered": true,
-    //           "rules": "openAtEnd"
-    //         },
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         }
-    //       },
+  * interpretation 0..0
+  * referenceRange 0..0
+  * basedOn 0..0
+  * partOf 0..0
+  * focus 0..0
+  * specimen 0..0
+  * contained 0..0
+  * component 0..0
+  * dataAbsentReason 0..0
+  * value[x] 0..0
+  * interpretation 0..0
+  * referenceRange 0..0
+
+  * interpretation 0..0
+  * method 0..0  
+
     //       {
     //         "id": "Observation.hasMember:abnormalityCyst",
     //         "path": "Observation.hasMember",

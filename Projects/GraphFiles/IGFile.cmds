@@ -112,6 +112,27 @@
   },
   {
     "member" : {
+      "groupingId" : "MGResources/AbnormalityFatNecrosis",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/AbnormalityFatNecrosis"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "MGResources/BreastDensity",
+      "sort": "",
+      "reference" : "StructureDefinition/MGResources/BreastDensity"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "MG Findings",
+      "sort": "",
+      "reference" : "StructureDefinition/MG Findings"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "MRIResources",
       "sort": "",
       "reference" : "StructureDefinition/MRIResources"
