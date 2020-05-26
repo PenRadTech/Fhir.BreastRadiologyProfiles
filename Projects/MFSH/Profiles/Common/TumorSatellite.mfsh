@@ -12,7 +12,7 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("CommonResources/TumorSatellite", "")
-  #apply Graph.NodeProfile("ConsistentWith")
+  #apply Graph.NodeProfile("TumorSatellite")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""

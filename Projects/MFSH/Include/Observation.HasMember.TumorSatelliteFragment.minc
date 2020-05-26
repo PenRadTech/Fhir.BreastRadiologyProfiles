@@ -8,10 +8,9 @@
 #use Observation
 
 #macro Observation.HasMember.TumorSatelliteFragment()
-  #apply HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite",
+  #apply HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """
   #  This slice references the target 'Consistent With'.
-  #  """,
-  #  "Reference(TumorSatellite)")
+  #  """)
 #end

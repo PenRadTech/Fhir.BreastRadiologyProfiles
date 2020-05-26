@@ -9,14 +9,14 @@
 #macro Observation.HasMember.Add(SliceName, 
 #      Cardinality, 
 #      DisplayName, 
+#      Target,
 #      ShortDesc, 
-#      Definition, 
-#      Target)
-  #apply Graph.NodeElement("hasMember:SliceName", "DisplayName/hasMember")
+#      Definition)
+  #apply Graph.LinkByReference("focus", "^%Id%/$", "%Id%.hasMember:SliceName", "1")
 
   #apply Observation.HasMember.Slice()
   * hasMember contains SliceName Cardinality
   * hasMember[SliceName] ^short = "ShortDesc hasMember."
-  * hasMember[SliceName] only Target
+  * hasMember[SliceName] only Reference(Target)
 #end
 

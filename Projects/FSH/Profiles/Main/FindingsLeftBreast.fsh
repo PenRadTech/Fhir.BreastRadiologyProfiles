@@ -31,12 +31,11 @@ Description: """
 	codes set in any of the child observations of the left Breast.
     """
 	
-  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding",
+  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding", MGFinding, 
   //#  "'MG Finding' reference.",
   //#  """
   //#  This slice references the Mammography findings section.
-  //#  """,
-  //#  "Reference(MGFinding)")
+  //#  """)
 
 
   * hasMember ^slicing.discriminator.type = #value
@@ -59,6 +58,7 @@ Description: """
   * hasMember contains usFinding 0..1
   * hasMember[usFinding] ^short = "'Ultra Sound Finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
+  
   * hasMember[usFinding] MS
  
 

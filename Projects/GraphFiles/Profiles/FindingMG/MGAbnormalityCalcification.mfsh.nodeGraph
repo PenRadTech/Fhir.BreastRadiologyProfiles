@@ -169,7 +169,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
         "item" : "component:correspondsWith"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Corresponds With/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:correspondsWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -205,15 +205,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityCalcification/hasMember:consistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification",
-        "item" : "hasMember:consistentWith"
-      },
-      "displayName" : "Consistent With/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityCalcification.hasMember:consistentWith",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/$",
+      "item" : "MGAbnormalityCalcification.hasMember:consistentWith",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

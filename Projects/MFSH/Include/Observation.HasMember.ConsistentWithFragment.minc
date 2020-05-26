@@ -4,10 +4,9 @@
  */
  
 #macro Observation.Component.ConsistentWithFragment()
-  #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With",
+  #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """
   #  This slice references the target 'Consistent With'.
-  #  """,
-  #  "Reference(ConsistentWith)")
+  #  """)
 #end

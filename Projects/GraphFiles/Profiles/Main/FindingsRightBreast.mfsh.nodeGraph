@@ -32,41 +32,29 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "FindingsRightBreast/hasMember:mriFinding/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
-        "item" : "hasMember:mriFinding"
-      },
-      "displayName" : "MRI Finding/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^FindingsRightBreast.hasMember:mriFinding",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/$",
+      "item" : "FindingsRightBreast.hasMember:mriFinding",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "FindingsRightBreast/hasMember:nmFinding/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
-        "item" : "hasMember:nmFinding"
-      },
-      "displayName" : "NM Finding/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^FindingsRightBreast.hasMember:nmFinding",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/$",
+      "item" : "FindingsRightBreast.hasMember:nmFinding",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "FindingsRightBreast/hasMember:usFinding/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
-        "item" : "hasMember:usFinding"
-      },
-      "displayName" : "US Finding/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^FindingsRightBreast.hasMember:usFinding",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/$",
+      "item" : "FindingsRightBreast.hasMember:usFinding",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

@@ -218,7 +218,7 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
 
 
   * component contains correspondsWith 0..*
-  * component[correspondsWith] ^short = "Observed Change In Abnormality component."
+  * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
     This is one component of a group of components that are part of the observation.
     """
@@ -227,9 +227,9 @@ This slice contains the optional components that define what this observation co
 The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
     """
   * component[correspondsWith].code 1..1
-  * component[correspondsWith].code ^short = "Observed Change In Abnormality component code."
+  * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
   * component[correspondsWith].code ^definition = """
-    This code identifies the Observed Change In Abnormality component.
+    This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
  

@@ -211,7 +211,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
         "item" : "component:correspondsWith"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Corresponds With/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityFatNecrosis.component:correspondsWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -247,15 +247,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "MGAbnormalityFatNecrosis/hasMember:consistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
-        "item" : "hasMember:consistentWith"
-      },
-      "displayName" : "Consistent With/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^MGAbnormalityFatNecrosis.hasMember:consistentWith",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/$",
+      "item" : "MGAbnormalityFatNecrosis.hasMember:consistentWith",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

@@ -40,15 +40,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "AbnormalityMass/hasMember:tumorSatellite/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
-        "item" : "hasMember:tumorSatellite"
-      },
-      "displayName" : "Tumor Satellite/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityMass.hasMember:tumorSatellite",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/$",
+      "item" : "AbnormalityMass.hasMember:tumorSatellite",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
@@ -245,7 +241,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
         "item" : "component:correspondsWith"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Corresponds With/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:correspondsWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -281,15 +277,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "AbnormalityMass/hasMember:consistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
-        "item" : "hasMember:consistentWith"
-      },
-      "displayName" : "Consistent With/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityMass.hasMember:consistentWith",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/$",
+      "item" : "AbnormalityMass.hasMember:consistentWith",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

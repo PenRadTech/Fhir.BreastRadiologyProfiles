@@ -109,7 +109,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
         "item" : "component:correspondsWith"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Corresponds With/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:correspondsWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -145,15 +145,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "AbnormalityForeignObject/hasMember:consistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
-        "item" : "hasMember:consistentWith"
-      },
-      "displayName" : "Consistent With/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityForeignObject.hasMember:consistentWith",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityForeignObject/$",
+      "item" : "AbnormalityForeignObject.hasMember:consistentWith",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

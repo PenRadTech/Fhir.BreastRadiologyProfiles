@@ -40,15 +40,11 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "AbnormalityLymphNode/hasMember:tumorSatellite/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
-        "item" : "hasMember:tumorSatellite"
-      },
-      "displayName" : "Tumor Satellite/hasMember",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityLymphNode.hasMember:tumorSatellite",
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/$",
+      "item" : "AbnormalityLymphNode.hasMember:tumorSatellite",
+      "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
@@ -245,7 +241,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
         "item" : "component:correspondsWith"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Corresponds With/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityLymphNode.component:correspondsWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
