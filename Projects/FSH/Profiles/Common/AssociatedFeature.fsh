@@ -5,6 +5,7 @@ Description: """
     Associated Feature
     """
 
+  //#apply Graph.LinkByName("focus", "^AssociatedFeature/$", "^AssociatedFeature/", "0")
 
 
   * . ^definition = """
@@ -16,6 +17,7 @@ Description: """
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
+
 
 
   * component ^slicing.discriminator.type = #pattern

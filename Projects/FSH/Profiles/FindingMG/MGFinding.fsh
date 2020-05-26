@@ -5,6 +5,7 @@ Description: """
     Mammography Finding
     """
 
+  //#apply Graph.LinkByName("focus", "^MGFinding/$", "^MGFinding/", "0")
 
 
  

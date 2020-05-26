@@ -5,10 +5,12 @@ Description: """
   LymphNode Abnormality
   """
 
+  //#apply Graph.LinkByName("focus", "^AbnormalityLymphNode/$", "^AbnormalityLymphNode/", "0")
 
 
   * code 1..1
   * code = ObservationCodesCS#abnormalityLymphNodeObservation
+
 
 
   * component ^slicing.discriminator.type = #pattern
@@ -36,6 +38,7 @@ The value of this component is a codeable concept chosen from the AbnormalityLym
   * component[lymphNodeType].value[x] 1..1
   * component[lymphNodeType].value[x] only CodeableConcept
   * component[lymphNodeType].value[x] from AbnormalityLymphNodeTypeVS
+
 
 
   * hasMember ^slicing.discriminator.type = #value

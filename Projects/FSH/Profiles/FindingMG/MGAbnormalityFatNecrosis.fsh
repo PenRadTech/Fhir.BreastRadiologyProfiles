@@ -5,6 +5,7 @@ Description: """
     Mammography Fat Necrosis
     """
 
+  //#apply Graph.LinkByName("focus", "^MGAbnormalityFatNecrosis/$", "^MGAbnormalityFatNecrosis/", "0")
 
 
   * code 1..1
@@ -25,6 +26,7 @@ Description: """
   *  bodySite 1..1
   // Define Observed Changes Slice
   
+
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -337,6 +339,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

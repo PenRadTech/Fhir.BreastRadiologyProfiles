@@ -13,7 +13,7 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources/TumorSatellite", "")
   #apply Graph.NodeProfile("TumorSatellite")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

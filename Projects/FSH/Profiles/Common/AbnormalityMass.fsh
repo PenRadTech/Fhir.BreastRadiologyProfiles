@@ -5,6 +5,8 @@ Description: """
   Mass Abnormality
   """
 
+  //#apply Graph.LinkByName("focus", "^AbnormalityMass/$", "^AbnormalityMass/", "0")
+
 
 
 
@@ -33,6 +35,7 @@ The value of this component is a codeable concept chosen from the AbnormalityMas
   * component[massType].value[x] 1..1
   * component[massType].value[x] only CodeableConcept
   * component[massType].value[x] from AbnormalityMassTypeVS
+
 
 
 

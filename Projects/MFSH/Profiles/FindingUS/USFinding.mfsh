@@ -7,7 +7,7 @@ Description: """
 
   #apply IGGroupMemberProfile("USFindings", "")
   #apply Graph.NodeProfile("US Findings")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

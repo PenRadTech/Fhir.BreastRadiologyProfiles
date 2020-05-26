@@ -9,7 +9,7 @@ Description: """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityAsymmetry", "")
   #apply Graph.NodeProfile("Asymmetry Abnormality")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

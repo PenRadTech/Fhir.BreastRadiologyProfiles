@@ -5,10 +5,12 @@ Description: """
     Mammography Asymmetry
     """
 
+  //#apply Graph.LinkByName("focus", "^MGAbnormalityAsymmetry/$", "^MGAbnormalityAsymmetry/", "0")
 
 
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityAsymmetryObservation
+
 
 
   * component ^slicing.discriminator.type = #pattern
@@ -262,6 +264,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

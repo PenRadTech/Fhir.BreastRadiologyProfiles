@@ -22,12 +22,3 @@
       "traceMsg" : "Profiles/Main/BreastRadiologyReport.mfsh#10"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastRadiologyReport/$",
-      "target" : "^BreastRadiologyReport/",
-      "depth": 0,
-      "traceMsg" : "Profiles/Main/BreastRadiologyReport.mfsh#11"
-    }
-  },

@@ -5,11 +5,13 @@ Description: """
     Mammography Calcification
     """
 
+  //#apply Graph.LinkByName("focus", "^MGAbnormalityCalcification/$", "^MGAbnormalityCalcification/", "0")
 
 
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityCalcificationObservation
   
+
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
@@ -287,6 +289,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

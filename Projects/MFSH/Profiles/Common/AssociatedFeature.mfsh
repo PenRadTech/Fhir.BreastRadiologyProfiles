@@ -9,7 +9,7 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
   #apply Graph.NodeProfile("AssociatedFeature")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

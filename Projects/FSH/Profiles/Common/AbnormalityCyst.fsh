@@ -5,11 +5,13 @@ Description: """
   Cyst
   """
 
+  //#apply Graph.LinkByName("focus", "^AbnormalityCyst/$", "^AbnormalityCyst/", "0")
 
 
 
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
+
 
 
   * component ^slicing.discriminator.type = #pattern
@@ -37,6 +39,7 @@ The value of this component is a codeable concept chosen from the AbnormalityCys
   * component[cystType].value[x] 1..1
   * component[cystType].value[x] only CodeableConcept
   * component[cystType].value[x] from AbnormalityCystTypeVS
+
 
 
 

@@ -9,12 +9,3 @@
       "traceMsg" : "Profiles/FindingMG/MGBreastDensity.mfsh#9"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^MGBreastDensity/$",
-      "target" : "^MGBreastDensity/",
-      "depth": 0,
-      "traceMsg" : "Profiles/FindingMG/MGBreastDensity.mfsh#10"
-    }
-  },

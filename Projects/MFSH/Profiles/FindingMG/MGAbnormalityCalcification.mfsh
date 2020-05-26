@@ -9,7 +9,7 @@ Description: """
 
   #apply IGGroupMemberProfile("MGResources/CalcificationAbnormality", "")
   #apply Graph.NodeProfile("Calcification")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

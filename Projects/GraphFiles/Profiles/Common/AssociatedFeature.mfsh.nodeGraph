@@ -10,25 +10,47 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^AssociatedFeature/$",
-      "target" : "^AssociatedFeature/",
-      "depth": 0,
-      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#12"
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "AssociatedFeature/component:featureType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
         "item" : "component:featureType"
       },
-      "displayName" : "Feature Type/Component",
+      "displayName" : "Feature Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:featureType",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/$",
+      "target" : "^AssociatedFeature/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/component/$",
+      "target" : "^AssociatedFeature/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7"
     }
   },
   {
@@ -46,7 +68,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
         "item" : "component:observedCount"
       },
-      "displayName" : "Observed Count/Component",
+      "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"

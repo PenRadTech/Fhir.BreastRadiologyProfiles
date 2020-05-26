@@ -5,6 +5,9 @@ Description: """
   Service Recommendation
   """
 
+  //#apply Graph.LinkByName("focus", "^ServiceRecommendation/$", "^ServiceRecommendation/", "0")
+  //#apply Graph.NodeElement("code", "code")
+  //#apply Graph.LinkByBinding("focus", "^ServiceRecommendation/code/$", "")
 
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url

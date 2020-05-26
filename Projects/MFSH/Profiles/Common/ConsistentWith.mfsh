@@ -9,7 +9,7 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources/ConsistentWith", "")
   #apply Graph.NodeProfile("ConsistentWith")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

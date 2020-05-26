@@ -5,6 +5,7 @@ Description: """
     Mammography Breast Density
     """
 
+  //#apply Graph.LinkByName("focus", "^MGBreastDensity/$", "^MGBreastDensity/", "0")
 
 
   * code 1..1

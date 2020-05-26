@@ -9,9 +9,9 @@ Description: """
 
   #apply IGGroupMemberProfile("BaseResources", "")
   #apply Graph.NodeProfile("ServiceRecommendation")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
-  #apply Graph.NodeElement("code", "code")
-  #apply Graph.LinkByBinding("focus", "^%Id%/code/$", "")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.NodeElement("code", "code")
+  //#apply Graph.LinkByBinding("focus", "^%Id%/code/$", "")
 
 
   #apply IntroDocGraph("""

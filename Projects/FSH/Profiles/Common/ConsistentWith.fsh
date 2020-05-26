@@ -5,6 +5,7 @@ Description: """
     Consistent With
     """
 
+  //#apply Graph.LinkByName("focus", "^ConsistentWith/$", "^ConsistentWith/", "0")
 
 
   * . ^definition = """
@@ -30,6 +31,7 @@ Description: """
   * referenceRange 0..0
 
   // Define Consistent With Slice
+
 
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"

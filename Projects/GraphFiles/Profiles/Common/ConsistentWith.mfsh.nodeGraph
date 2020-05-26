@@ -10,25 +10,47 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^ConsistentWith/$",
-      "target" : "^ConsistentWith/",
-      "depth": 0,
-      "traceMsg" : "Profiles/Common/ConsistentWith.mfsh#12"
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "ConsistentWith/component:consistentWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
         "item" : "component:consistentWith"
       },
-      "displayName" : "Consistent With/Component",
+      "displayName" : "Consistent With",
       "cssClass" : "element",
       "lhsAnnotationText": "^ConsistentWith.component:consistentWith",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "ConsistentWith/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^ConsistentWith.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^ConsistentWith/$",
+      "target" : "^ConsistentWith/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^ConsistentWith/component/$",
+      "target" : "^ConsistentWith/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7"
     }
   },
   {
@@ -46,7 +68,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
         "item" : "component:qualifier"
       },
-      "displayName" : "Qualifier/Component",
+      "displayName" : "Qualifier",
       "cssClass" : "element",
       "lhsAnnotationText": "^ConsistentWith.component:qualifier",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"

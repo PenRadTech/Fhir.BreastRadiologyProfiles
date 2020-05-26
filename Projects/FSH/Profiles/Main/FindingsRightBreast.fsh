@@ -5,6 +5,7 @@ Description: """
 	Findings Right Breast profile.
 	"""  
 
+  //#apply Graph.LinkByName("focus", "^FindingsRightBreast/$", "^FindingsRightBreast/", "0")
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
@@ -36,6 +37,7 @@ Description: """
   //#  """
   //#  This slice references the Mammography findings section.
   //#  """)
+
 
 
   * hasMember ^slicing.discriminator.type = #value

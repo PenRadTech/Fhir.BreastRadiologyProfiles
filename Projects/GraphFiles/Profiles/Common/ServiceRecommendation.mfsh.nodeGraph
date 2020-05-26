@@ -9,33 +9,3 @@
       "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#11"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^ServiceRecommendation/$",
-      "target" : "^ServiceRecommendation/",
-      "depth": 0,
-      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#12"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ServiceRecommendation/code/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ServiceRecommendation",
-        "item" : "code"
-      },
-      "displayName" : "code",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^ServiceRecommendation.code",
-      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#13"
-    }
-  },
-  {
-    "graphLinkByBinding" : {
-      "traversalName" : "focus",
-      "source" : "^ServiceRecommendation/code/$",
-      "item" : "",
-      "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#14"
-    }
-  },

@@ -23,27 +23,49 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^FindingsRightBreast/$",
-      "target" : "^FindingsRightBreast/",
-      "depth": 0,
-      "traceMsg" : "Include/Observation.FindingBreastFragment.minc#16"
-    }
-  },
-  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
-      "source" : "^FindingsRightBreast/$",
+      "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:mriFinding",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {
-    "graphLinkByReference" : {
+    "graphNode" : {
+      "nodeName" : "FindingsRightBreast/hasMember/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
+        "item" : "hasMember"
+      },
+      "displayName" : "HasMembers",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^FindingsRightBreast.hasMember",
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5"
+    }
+  },
+  {
+    "graphLinkByName" : {
       "traversalName" : "focus",
       "source" : "^FindingsRightBreast/$",
+      "target" : "^FindingsRightBreast/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/hasMember/$",
+      "target" : "^FindingsRightBreast/hasMember:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:nmFinding",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
@@ -52,7 +74,7 @@
   {
     "graphLinkByReference" : {
       "traversalName" : "focus",
-      "source" : "^FindingsRightBreast/$",
+      "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:usFinding",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"

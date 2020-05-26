@@ -7,7 +7,7 @@ Description: """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityFatNecrosis", "")
   #apply Graph.NodeProfile("Fat Necrosis")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

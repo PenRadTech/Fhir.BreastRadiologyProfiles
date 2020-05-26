@@ -25,10 +25,41 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:fibroAdenomaType"
       },
-      "displayName" : "Fibroadenoma Abnormality/Component",
+      "displayName" : "Fibroadenoma Abnormality",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:fibroAdenomaType",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityFibroadenoma/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityFibroadenoma.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityFibroadenoma/$",
+      "target" : "^AbnormalityFibroadenoma/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityFibroadenoma/component/$",
+      "target" : "^AbnormalityFibroadenoma/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7"
     }
   },
   {
@@ -46,7 +77,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:obsChanges"
       },
-      "displayName" : "Observed Changes/Component",
+      "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:obsChanges",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -67,7 +98,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:biRadsAssessmentCategory"
       },
-      "displayName" : "BiRads/Component",
+      "displayName" : "BiRads",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:biRadsAssessmentCategory",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -88,7 +119,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:orientation"
       },
-      "displayName" : "Orientation/Component",
+      "displayName" : "Orientation",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:orientation",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -109,7 +140,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:shape"
       },
-      "displayName" : "Shape/Component",
+      "displayName" : "Shape",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:shape",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -130,7 +161,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:margin"
       },
-      "displayName" : "Margin/Component",
+      "displayName" : "Margin",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:margin",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -151,7 +182,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:observedCount"
       },
-      "displayName" : "Observed Count/Component",
+      "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:observedCount",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -164,7 +195,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:obsDistribution"
       },
-      "displayName" : "Observed Distribution/Component",
+      "displayName" : "Observed Distribution",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:obsDistribution",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -185,7 +216,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:obsDistRegionSize"
       },
-      "displayName" : "Observed Distribution Region Size/Component",
+      "displayName" : "Observed Distribution Region Size",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:obsDistRegionSize",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -198,7 +229,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:obsSize"
       },
-      "displayName" : "Observed Size/Component",
+      "displayName" : "Observed Size",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:obsSize",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
@@ -211,7 +242,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma",
         "item" : "component:prevDemBy"
       },
-      "displayName" : "Previously/Demonstrated by Changes/Component",
+      "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.component:prevDemBy",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"

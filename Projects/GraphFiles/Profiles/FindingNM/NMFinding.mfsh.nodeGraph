@@ -9,12 +9,3 @@
       "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#9"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^NMFinding/$",
-      "target" : "^NMFinding/",
-      "depth": 0,
-      "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#10"
-    }
-  },

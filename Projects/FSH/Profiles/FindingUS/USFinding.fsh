@@ -5,6 +5,7 @@ Description: """
     Ultra-Sound Finding
     """
 
+  //#apply Graph.LinkByName("focus", "^USFinding/$", "^USFinding/", "0")
 
 
   * interpretation 0..0

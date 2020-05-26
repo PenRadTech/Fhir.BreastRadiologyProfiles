@@ -5,10 +5,12 @@ Description: """
   Duct
   """
 
+  //#apply Graph.LinkByName("focus", "^AbnormalityDuct/$", "^AbnormalityDuct/", "0")
 
 
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
+
 
 
   * component ^slicing.discriminator.type = #pattern
@@ -360,6 +362,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

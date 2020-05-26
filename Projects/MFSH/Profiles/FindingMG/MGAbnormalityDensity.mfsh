@@ -9,7 +9,7 @@ Description: """
 
   #apply IGGroupMemberProfile("MGResources/AbnormalityDensity", "")
   #apply Graph.NodeProfile("Density")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>
