@@ -257,12 +257,3 @@
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityCalcification/hasMember/$",
-      "target" : "^MGAbnormalityCalcification/hasMember:",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
-    }
-  },

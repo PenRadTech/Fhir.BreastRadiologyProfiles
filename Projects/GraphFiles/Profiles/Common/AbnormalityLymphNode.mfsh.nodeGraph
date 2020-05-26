@@ -93,15 +93,6 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityLymphNode/hasMember/$",
-      "target" : "^AbnormalityLymphNode/hasMember:",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "AbnormalityLymphNode/component:obsChanges/",
       "anchor" : {

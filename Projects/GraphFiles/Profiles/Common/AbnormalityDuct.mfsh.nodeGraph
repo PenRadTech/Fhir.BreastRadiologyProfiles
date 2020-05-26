@@ -320,12 +320,3 @@
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityDuct/hasMember/$",
-      "target" : "^AbnormalityDuct/hasMember:",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
-    }
-  },

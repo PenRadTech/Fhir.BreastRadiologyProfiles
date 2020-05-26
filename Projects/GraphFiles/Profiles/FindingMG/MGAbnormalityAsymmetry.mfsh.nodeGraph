@@ -273,12 +273,3 @@
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
     }
   },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityAsymmetry/hasMember/$",
-      "target" : "^MGAbnormalityAsymmetry/hasMember:",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
-    }
-  },

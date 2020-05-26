@@ -93,15 +93,6 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityCyst/hasMember/$",
-      "target" : "^AbnormalityCyst/hasMember:",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#7"
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "AbnormalityCyst/component:obsChanges/",
       "anchor" : {
