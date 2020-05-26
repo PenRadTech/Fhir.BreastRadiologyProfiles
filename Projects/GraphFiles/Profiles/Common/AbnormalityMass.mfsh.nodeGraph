@@ -6,7 +6,7 @@
       },
       "displayName" : "Mass Abnormality",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityMass.mfsh#11"
+      "traceMsg" : "Profiles/Common/AbnormalityMass.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AbnormalityMass/$",
       "target" : "^AbnormalityMass/",
       "depth": 0,
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityMass.mfsh#12"
+      "traceMsg" : "Profiles/Common/AbnormalityMass.mfsh#12"
     }
   },
   {

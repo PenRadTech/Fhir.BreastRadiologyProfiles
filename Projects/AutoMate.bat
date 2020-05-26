@@ -1,0 +1,2 @@
+cd AutoMate
+automate.exe

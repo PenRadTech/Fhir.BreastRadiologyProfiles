@@ -6,7 +6,7 @@
       },
       "displayName" : "Duct Abnormality",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#11"
+      "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AbnormalityDuct/$",
       "target" : "^AbnormalityDuct/",
       "depth": 0,
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityDuct.mfsh#12"
+      "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#12"
     }
   },
   {

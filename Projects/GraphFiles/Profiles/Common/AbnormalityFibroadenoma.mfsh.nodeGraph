@@ -6,7 +6,7 @@
       },
       "displayName" : "Fibroadenoma Abnormality",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityFibroadenoma.mfsh#11"
+      "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#11"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^AbnormalityFibroadenoma/$",
       "target" : "^AbnormalityFibroadenoma/",
       "depth": 0,
-      "traceMsg" : "Profiles/Abnormalities/AbnormalityFibroadenoma.mfsh#12"
+      "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#12"
     }
   },
   {
