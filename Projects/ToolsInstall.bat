@@ -1,4 +1,4 @@
-dotnet nuget locals all --clear
+rem dotnet nuget locals all --clear
 
 dotnet tool uninstall --global Eir.AutoMate
 dotnet tool uninstall --global Eir.MFSH
