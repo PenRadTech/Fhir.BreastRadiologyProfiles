@@ -6,7 +6,7 @@
       },
       "displayName" : "Findings/left Breast",
       "cssClass" : "profile",
-      "traceMsg" : "Include/Observation.FindingBreastFragment.minc#14"
+      "traceMsg" : "Include/ObservationMacros/Observation.FindingBreastFragment.minc#14"
     }
   },
   {
@@ -19,7 +19,7 @@
       "displayName" : "Body Site",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsLeftBreast.bodySite",
-      "traceMsg" : "Include/Observation.FindingBreastFragment.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.FindingBreastFragment.minc#15"
     }
   },
   {

@@ -62,37 +62,6 @@
     }
   },
   {
-    "graphLinkByReference" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityMass/hasMember/$",
-      "item" : "AbnormalityMass.hasMember:tumorSatellite",
-      "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "AbnormalityMass/hasMember/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
-        "item" : "hasMember"
-      },
-      "displayName" : "HasMembers",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^AbnormalityMass.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^AbnormalityMass/$",
-      "target" : "^AbnormalityMass/hasMember/$",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
-    }
-  },
-  {
     "graphNode" : {
       "nodeName" : "AbnormalityMass/component:obsChanges/",
       "anchor" : {
@@ -193,6 +162,27 @@
     "graphLinkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:margin/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityMass/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityMass.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/component:mgBreastDensity/$",
       "item" : ".value[x]",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
     }
@@ -324,7 +314,47 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/hasMember/$",
+      "item" : "AbnormalityMass.hasMember:associatedFeature",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityMass/hasMember/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
+        "item" : "hasMember"
+      },
+      "displayName" : "HasMembers",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityMass.hasMember",
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/$",
+      "target" : "^AbnormalityMass/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityMass/hasMember/$",
+      "item" : "AbnormalityMass.hasMember:tumorSatellite",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }

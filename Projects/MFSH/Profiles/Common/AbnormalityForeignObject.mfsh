@@ -47,4 +47,6 @@ Description: """
   #apply Observation.Component.CorrespondsWithFragment()
   #apply Observation.Component.BiRadFragment()
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
-  #apply Observation.Component.ConsistentWithFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()

@@ -18,3 +18,83 @@
       "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#10"
     }
   },
+  {
+    "graphNode" : {
+      "nodeName" : "BodyDistanceFromExtension/extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BodyDistanceFromExtension",
+        "item" : "extension"
+      },
+      "displayName" : "Extensions",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BodyDistanceFromExtension.extension",
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/$",
+      "target" : "^BodyDistanceFromExtension/extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/extension/$",
+      "target" : "^BodyDistanceFromExtension/extension:",
+      "depth": 0,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/extension/$",
+      "item" : "BodyDistanceFromExtension.extension:landMark",
+      "depth": 1,
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "BodyDistanceFromExtension/extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BodyDistanceFromExtension",
+        "item" : "extension"
+      },
+      "displayName" : "Extensions",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^BodyDistanceFromExtension.extension",
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/$",
+      "target" : "^BodyDistanceFromExtension/extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/extension/$",
+      "target" : "^BodyDistanceFromExtension/extension:",
+      "depth": 0,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^BodyDistanceFromExtension/extension/$",
+      "item" : "BodyDistanceFromExtension.extension:distanceFromLandMark",
+      "depth": 1,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Quantity.minc#3"
+    }
+  },

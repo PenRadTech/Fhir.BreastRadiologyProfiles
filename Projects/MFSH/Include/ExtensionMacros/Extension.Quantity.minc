@@ -1,0 +1,14 @@
+#macro Extension.Quantity(SliceName, Cardinality, UnitsCS, Short, Definition)
+  #apply Extension.Configure()
+  #apply Graph.LinkByReference("focus", "^%Id%/extension/$", "%Id%.extension:SliceName", "1")
+  
+  * extension contains SliceName Cardinality
+  * extension[SliceName] ^short = "Short"
+  * extension[SliceName] ^definition =
+    """
+	Definition
+	"""
+  * extension[SliceName].value[x] 1..1
+  * extension[SliceName].value[x] only Quantity
+  * extension[SliceName].valueQuantity from UNITSOFLENGTH
+#end

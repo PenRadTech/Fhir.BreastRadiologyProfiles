@@ -41,4 +41,15 @@
 
   #apply Observation.Component.SetConcept("margin", "1..1", "ShapeVS")
 
+  // Define Breast Density
+  #apply Component.Add("mgBreastDensity", "0..1", "Density", "Density",
+  #	 """
+  #  This slice contains the optional component that define the 
+  #  observed density of the breast tissue.
+  #  The value of this component is a codeable concept chosen from the MarginVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#mgBreastDensity")
+
+  #apply Observation.Component.SetConcept("mgBreastDensity", "1..1", "MGBreastDensityVS")
+
 #end

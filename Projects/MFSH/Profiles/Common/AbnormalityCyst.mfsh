@@ -34,8 +34,6 @@ Description: """
 
   #apply Observation.Component.SetConcept("cystType", "1..1", "AbnormalityCystTypeVS")
 
-
-  #apply Observation.HasMember.TumorSatelliteFragment()
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
   #apply Observation.BreastBodyLocationRequiredFragment()
@@ -48,4 +46,7 @@ Description: """
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.CorrespondsWithFragment()
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
-  #apply Observation.Component.ConsistentWithFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()

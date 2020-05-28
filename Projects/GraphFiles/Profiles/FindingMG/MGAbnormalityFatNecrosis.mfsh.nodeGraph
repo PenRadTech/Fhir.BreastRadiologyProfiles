@@ -147,6 +147,27 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityFatNecrosis/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityFatNecrosis.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/component:mgBreastDensity/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityFatNecrosis/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
@@ -272,7 +293,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGAbnormalityFatNecrosis/hasMember/$",
-      "item" : "MGAbnormalityFatNecrosis.hasMember:consistentWith",
+      "item" : "MGAbnormalityFatNecrosis.hasMember:associatedFeature",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -297,5 +318,14 @@
       "target" : "^MGAbnormalityFatNecrosis/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/hasMember/$",
+      "item" : "MGAbnormalityFatNecrosis.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

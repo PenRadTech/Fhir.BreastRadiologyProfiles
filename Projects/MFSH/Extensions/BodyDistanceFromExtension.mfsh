@@ -22,7 +22,7 @@ Description: """
 
   * . ^short = "Body Distance From extension"
 
-  #apply ExtensionCodeableConcept("landMark", "1..1", "BreastLocationQuadrantVS", "Body landmark. Origin of distance measurement.",
+  #apply Extension.CodeableConcept("landMark", "1..1", "BreastLocationQuadrantVS", "Body landmark. Origin of distance measurement.",
   #  """
   #  Body landmark which defines the origin of the measurement.
   #
@@ -30,7 +30,7 @@ Description: """
   #  landmarks like nipple.  
   #  """)
 
-  #apply ExtensionQuantity("distanceFromLandMark", "1..1", "UNITSOFLENGTH", "Distance from landmark", 
+  #apply Extension.Quantity("distanceFromLandMark", "1..1", "UNITSOFLENGTH", "Distance from landmark", 
   #  """
   #	 Distance from body landmark to body location
   #  """)

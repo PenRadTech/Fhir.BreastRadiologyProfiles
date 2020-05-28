@@ -24,6 +24,7 @@ Description: """
   * interpretation 0..0
   * referenceRange 0..0
   *  bodySite 1..1
+  
   // Define Observed Changes Slice
   
 
@@ -146,6 +147,30 @@ The value of this component is a codeable concept chosen from the MarginVS value
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from ShapeVS
 
+  // Define Breast Density
+
+  * component contains mgBreastDensity 0..1
+  * component[mgBreastDensity] ^short = "Density component."
+  * component[mgBreastDensity] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[mgBreastDensity] ^definition = """
+This slice contains the optional component that define the 
+observed density of the breast tissue.
+The value of this component is a codeable concept chosen from the MarginVS valueset.
+    """
+  * component[mgBreastDensity].code 1..1
+  * component[mgBreastDensity].code ^short = "Density component code."
+  * component[mgBreastDensity].code ^definition = """
+    This code identifies the Density component.
+	"""
+  * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
+
+
+  * component[mgBreastDensity].value[x] 1..1
+  * component[mgBreastDensity].value[x] only CodeableConcept
+  * component[mgBreastDensity].value[x] from MGBreastDensityVS
+
 
 
   * component contains notPreviouslySeen 0..*
@@ -217,11 +242,16 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
 
 
+
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains associatedFeature 0..*
+  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)

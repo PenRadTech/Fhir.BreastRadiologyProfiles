@@ -168,6 +168,27 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityAsymmetry/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityAsymmetry.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityAsymmetry/component:mgBreastDensity/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityAsymmetry/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry",
@@ -246,7 +267,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGAbnormalityAsymmetry/hasMember/$",
-      "item" : "MGAbnormalityAsymmetry.hasMember:consistentWith",
+      "item" : "MGAbnormalityAsymmetry.hasMember:associatedFeature",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -271,5 +292,14 @@
       "target" : "^MGAbnormalityAsymmetry/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityAsymmetry/hasMember/$",
+      "item" : "MGAbnormalityAsymmetry.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

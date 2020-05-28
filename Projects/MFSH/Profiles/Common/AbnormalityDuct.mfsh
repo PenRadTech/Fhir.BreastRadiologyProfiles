@@ -46,4 +46,5 @@ Description: """
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.CorrespondsWithFragment()
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
-  #apply Observation.Component.ConsistentWithFragment()
+  
+  #apply Observation.HasMember.ConsistentWithFragment()

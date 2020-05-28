@@ -26,32 +26,32 @@ Description: """
   #""")
   * . ^short = "Breast Body Location extension"
 
-  #apply ExtensionCodeableConcept("laterality", "0..1", "LateralityVS", "Body side",
+  #apply Extension.CodeableConcept("laterality", "0..1", "LateralityVS", "Body side",
   #  """
   #  The side of the body being examined.
   #  """)
 
-  #apply ExtensionCodeableConcept("quadrant", "0..1", "BreastLocationQuadrantVS", "Quadrant of the body location",
+  #apply Extension.CodeableConcept("quadrant", "0..1", "BreastLocationQuadrantVS", "Quadrant of the body location",
   #  """
   #  The quadrant  of the body location.
   #  """)
 
-  #apply ExtensionCodeableConcept("region", "0..1", "BreastLocationRegionVS", "Region of the body location",
+  #apply Extension.CodeableConcept("region", "0..1", "BreastLocationRegionVS", "Region of the body location",
   #  """
   #  The region  of the body location.
   #  """)
 
-  #apply ExtensionCodeableConcept("clockDirection", "0..1", "BreastLocationClockVS", "Clock direction of the body location",
+  #apply Extension.CodeableConcept("clockDirection", "0..1", "BreastLocationClockVS", "Clock direction of the body location",
   #  """
   #  The clock direction of the body location.
   # """)
 
-  #apply ExtensionCodeableConcept("depth", "0..1", "BreastLocationDepthVS", "Depth of the body location",
+  #apply Extension.CodeableConcept("depth", "0..1", "BreastLocationDepthVS", "Depth of the body location",
   #  """
   #  The depth of the body location.
   # """)
 
-  #apply ExtensionExtension("distanceFromLandmark", "0..1", "BodyDistanceFromExtension", "distanceFromLandmark extension.",
+  #apply Extension.Extension("distanceFromLandmark", "0..1", "BodyDistanceFromExtension", "distanceFromLandmark extension.",
   #  """
   #  This extension slice contains the distanceFromLandmark extension.
   #  """)

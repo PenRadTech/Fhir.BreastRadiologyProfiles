@@ -230,7 +230,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/hasMember/$",
-      "item" : "MGAbnormalityCalcification.hasMember:consistentWith",
+      "item" : "MGAbnormalityCalcification.hasMember:associatedFeature",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -255,5 +255,14 @@
       "target" : "^MGAbnormalityCalcification/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityCalcification/hasMember/$",
+      "item" : "MGAbnormalityCalcification.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

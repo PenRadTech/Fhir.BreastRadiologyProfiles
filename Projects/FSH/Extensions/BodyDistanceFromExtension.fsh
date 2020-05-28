@@ -9,6 +9,7 @@ Description: """
 
   * . ^short = "Body Distance From extension"
 
+  
   * extension contains landMark 1..1
   * extension[landMark] ^short = "Body landmark. Origin of distance measurement."
   * extension[landMark] ^definition =
@@ -22,6 +23,7 @@ Description: """
   * extension[landMark].value[x] only CodeableConcept
   * extension[landMark].value[x] from BreastLocationQuadrantVS
 
+  
   * extension contains distanceFromLandMark 1..1
   * extension[distanceFromLandMark] ^short = "Distance from landmark"
   * extension[distanceFromLandMark] ^definition =

@@ -147,6 +147,27 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityArchitecturalDistortion/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/component:mgBreastDensity/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityArchitecturalDistortion/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",
@@ -212,7 +233,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
-      "item" : "MGAbnormalityArchitecturalDistortion.hasMember:consistentWith",
+      "item" : "MGAbnormalityArchitecturalDistortion.hasMember:associatedFeature",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -237,5 +258,14 @@
       "target" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
+      "item" : "MGAbnormalityArchitecturalDistortion.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

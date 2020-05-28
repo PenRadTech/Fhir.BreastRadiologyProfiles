@@ -170,7 +170,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/hasMember/$",
-      "item" : "AbnormalityForeignObject.hasMember:consistentWith",
+      "item" : "AbnormalityForeignObject.hasMember:associatedFeature",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -195,5 +195,14 @@
       "target" : "^AbnormalityForeignObject/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityForeignObject/hasMember/$",
+      "item" : "AbnormalityForeignObject.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },

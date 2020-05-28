@@ -33,11 +33,11 @@ Description: """
 
   #apply Observation.Component.SetConcept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
 
-  #apply Observation.HasMember.TumorSatelliteFragment()
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
   #apply Observation.BreastBodyLocationRequiredFragment()
   #apply Observation.Component.ObservedChangesFragment()
+
   #apply Observation.Component.BiRadFragment()
   #apply Observation.Component.ShapeFragment()
   #apply Observation.Component.ObservedCountFragment()
@@ -46,3 +46,6 @@ Description: """
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.CorrespondsWithFragment()
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()
