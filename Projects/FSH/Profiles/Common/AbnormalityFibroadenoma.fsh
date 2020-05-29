@@ -50,7 +50,10 @@ information about a Fibroadenoma abnormality observation
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
-  *  bodySite 1..1
+  * bodySite 1..1
+  * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
+  * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
+  * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   // Define Observed Changes Slice
   
 

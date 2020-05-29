@@ -7,48 +7,8 @@
 //$ Incomplete
 
 #macro once Observation.BreastBodyLocationRequiredFragment()
-  *  bodySite 1..1
+  * bodySite 1..1
+  * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
+  * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
+  * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 #end
-    //       {
-    //         "id": "Observation.bodySite.extension",
-    //         "path": "Observation.bodySite.extension",
-    //         "slicing": {
-    //           "discriminator": [
-    //             {
-    //               "type": "value",
-    //               "path": "url"
-    //             }
-    //           ],
-    //           "ordered": true,
-    //           "rules": "openAtEnd"
-    //         },
-    //         "min": 0,
-    //         "max": "*",
-    //         "type": [
-    //           {
-    //             "code": "Extension"
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.bodySite.extension:breastBodyLocation",
-    //         "path": "Observation.bodySite.extension",
-    //         "sliceName": "breastBodyLocation",
-    //         "short": "breastBodyLocation extension.",
-    //         "definition": "This extension slice contains the breastBodyLocation extension.",
-    //         "comment": "This is one component of a group of components that are part of the observation.",
-    //         "min": 1,
-    //         "max": "1",
-    //         "type": [
-    //           {
-    //             "code": "Extension",
-    //             "profile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension"
-    //             ]
-    //           }
-    //         ],
-    //         "isModifier": false
-    //       }
-    //     ]
-    //   }
-    // }
