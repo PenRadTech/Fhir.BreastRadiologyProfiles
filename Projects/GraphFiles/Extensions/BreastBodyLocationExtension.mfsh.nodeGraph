@@ -59,74 +59,12 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "BreastBodyLocationExtension/extension/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
-        "item" : "extension"
-      },
-      "displayName" : "Extensions",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/$",
-      "target" : "^BreastBodyLocationExtension/extension/$",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/extension/$",
-      "target" : "^BreastBodyLocationExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
-    }
-  },
-  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:quadrant",
       "depth": 1,
       "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "BreastBodyLocationExtension/extension/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
-        "item" : "extension"
-      },
-      "displayName" : "Extensions",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/$",
-      "target" : "^BreastBodyLocationExtension/extension/$",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/extension/$",
-      "target" : "^BreastBodyLocationExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
     }
   },
   {
@@ -139,37 +77,6 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "BreastBodyLocationExtension/extension/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
-        "item" : "extension"
-      },
-      "displayName" : "Extensions",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/$",
-      "target" : "^BreastBodyLocationExtension/extension/$",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/extension/$",
-      "target" : "^BreastBodyLocationExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
-    }
-  },
-  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
@@ -179,74 +86,12 @@
     }
   },
   {
-    "graphNode" : {
-      "nodeName" : "BreastBodyLocationExtension/extension/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
-        "item" : "extension"
-      },
-      "displayName" : "Extensions",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/$",
-      "target" : "^BreastBodyLocationExtension/extension/$",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/extension/$",
-      "target" : "^BreastBodyLocationExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
-    }
-  },
-  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:depth",
       "depth": 1,
       "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "BreastBodyLocationExtension/extension/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
-        "item" : "extension"
-      },
-      "displayName" : "Extensions",
-      "cssClass" : "element",
-      "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/$",
-      "target" : "^BreastBodyLocationExtension/extension/$",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BreastBodyLocationExtension/extension/$",
-      "target" : "^BreastBodyLocationExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
     }
   },
   {

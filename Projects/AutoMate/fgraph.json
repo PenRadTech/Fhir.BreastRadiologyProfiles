@@ -8,6 +8,7 @@
 	"cssPattern": "value",
 	"resourcePaths": [
 		"build\\input\\profiles",
+		"build\\input\\extensions",
 		"build\\input\\vocabulary"
 	],
 	"traversals": [
