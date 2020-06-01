@@ -26,7 +26,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^FindingsRightBreast/hasMember/$",
-      "item" : "FindingsRightBreast.hasMember:mriFinding",
+      "item" : "FindingsRightBreast.hasMember:mgFinding",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
@@ -45,12 +45,12 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graphLinkByReference" : {
       "traversalName" : "focus",
-      "source" : "^FindingsRightBreast/$",
-      "target" : "^FindingsRightBreast/hasMember/$",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
+      "source" : "^FindingsRightBreast/hasMember/$",
+      "item" : "FindingsRightBreast.hasMember:mriFinding",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
     }
   },
   {

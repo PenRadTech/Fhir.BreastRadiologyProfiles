@@ -388,6 +388,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
 
 
+  //#apply Graph.LinkByName("focus", "^AbnormalityMass/$", "^AbnormalityMass/hasMember/$", "0")
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

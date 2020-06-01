@@ -252,15 +252,6 @@
     }
   },
   {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^MGAbnormalityArchitecturalDistortion/$",
-      "target" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
-      "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6"
-    }
-  },
-  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",

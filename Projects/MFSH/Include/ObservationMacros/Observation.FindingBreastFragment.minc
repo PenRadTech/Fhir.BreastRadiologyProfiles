@@ -37,11 +37,12 @@ Description: """
 	codes set in any of the child observations of the %Laterality% Breast.
     """
 	
-  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding", MGFinding, 
-  //#  "'MG Finding' reference.",
-  //#  """
-  //#  This slice references the Mammography findings section.
-  //#  """)
+  #apply HasMember.Add("mgFinding", "0..1", "MG Finding", "MGFinding", 
+  #  "'MG Finding' reference.",
+  #  """
+  #  This slice references the Mammography findings section.
+  #  """)
+  * hasMember[mgFinding] MS
 
   #apply HasMember.Add("mriFinding", "0..1", "MRI Finding", "MRIFinding",
   #  "'Magnetic Resonance Imaging Finding' reference.",
@@ -62,7 +63,6 @@ Description: """
   #  """
   #  This slice references the Ultra Sound findings section.
   #  """)
-  
   * hasMember[usFinding] MS
  
 #end

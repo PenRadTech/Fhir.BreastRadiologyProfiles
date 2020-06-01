@@ -98,7 +98,7 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
-      "item" : "BreastBodyLocationExtension.extension:distanceFromLandmark",
+      "item" : "%ExtensionName$",
       "depth": 1,
       "traceMsg" : "Include/ExtensionMacros/Extension.Extension.minc#5"
     }

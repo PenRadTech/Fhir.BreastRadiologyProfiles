@@ -32,19 +32,20 @@ Description: """
 	codes set in any of the child observations of the Right Breast.
     """
 	
-  //#apply HasMember.Add("mgFinding", "0..1", "MG Finding", MGFinding, 
-  //#  "'MG Finding' reference.",
-  //#  """
-  //#  This slice references the Mammography findings section.
-  //#  """)
 
-
+  //#apply Graph.LinkByName("focus", "^FindingsRightBreast/$", "^FindingsRightBreast/hasMember/$", "0")
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains mgFinding 0..1
+  * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
+  * hasMember[mgFinding] only Reference(MGFinding)
+  * hasMember[mgFinding] MS
+
+
   * hasMember contains mriFinding 0..1
   * hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
   * hasMember[mriFinding] only Reference(MRIFinding)
@@ -60,7 +61,6 @@ Description: """
   * hasMember contains usFinding 0..1
   * hasMember[usFinding] ^short = "'Ultra Sound Finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
-  
   * hasMember[usFinding] MS
  
 
