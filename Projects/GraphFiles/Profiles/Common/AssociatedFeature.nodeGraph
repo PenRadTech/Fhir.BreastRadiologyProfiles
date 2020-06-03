@@ -19,7 +19,7 @@
       "displayName" : "Feature Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:featureType",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Profiles/Common/AssociatedFeature.mfsh#37  "
     }
   },
   {
@@ -32,7 +32,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/Common/AssociatedFeature.mfsh#37  "
     }
   },
   {
@@ -41,7 +41,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/Common/AssociatedFeature.mfsh#37  "
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^AssociatedFeature/component/$",
       "target" : "^AssociatedFeature/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/Common/AssociatedFeature.mfsh#37  "
     }
   },
   {
@@ -58,7 +58,7 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Profiles/Common/AssociatedFeature.mfsh#46  "
     }
   },
   {
@@ -71,6 +71,6 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#12  Profiles/Common/AssociatedFeature.mfsh#54  "
     }
   },

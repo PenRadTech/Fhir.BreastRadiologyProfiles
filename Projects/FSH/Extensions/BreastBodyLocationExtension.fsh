@@ -66,10 +66,11 @@ Description: """
   * extension[depth].value[x] only CodeableConcept
   * extension[depth].value[x] from BreastLocationDepthVS
 
+
   
   * extension contains BodyDistanceFromExtension named distanceFromLandmark 0..1
-  * extension[distanceFromLandmark] ^short = "distanceFromLandmark extension."
-  * extension[distanceFromLandmark] ^definition =
+  * extension[SliceName] ^short = "distanceFromLandmark extension."
+  * extension[SliceName] ^definition =
     """
-	This extension slice contains the distanceFromLandmark extension.
+    This extension slice contains the distanceFromLandmark extension.
 	"""

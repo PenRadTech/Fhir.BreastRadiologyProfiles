@@ -19,7 +19,7 @@
       "displayName" : "Body Site",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.FindingBreastFragment.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.FindingBreastFragment.minc#15  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },
   {
@@ -28,7 +28,7 @@
       "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:mgFinding",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.FindingBreastFragment.minc#40  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },
   {
@@ -41,7 +41,7 @@
       "displayName" : "HasMembers",
       "cssClass" : "element",
       "lhsAnnotationText": "^FindingsRightBreast.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5  Include/ObservationMacros/Observation.HasMember.Add.minc#17  Include/ObservationMacros/Observation.FindingBreastFragment.minc#40  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:mriFinding",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.FindingBreastFragment.minc#47  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },
   {
@@ -59,7 +59,7 @@
       "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:nmFinding",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.FindingBreastFragment.minc#54  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },
   {
@@ -68,6 +68,6 @@
       "source" : "^FindingsRightBreast/hasMember/$",
       "item" : "FindingsRightBreast.hasMember:usFinding",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.FindingBreastFragment.minc#61  Profiles/Main/FindingsRightBreast.mfsh#2  "
     }
   },

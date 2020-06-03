@@ -15,7 +15,7 @@
       "source" : "^BreastBodyLocationExtension/$",
       "target" : "^BreastBodyLocationExtension/",
       "depth": 0,
-      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#13"
+      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#13  "
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "Extensions",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastBodyLocationExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2"
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BreastBodyLocationExtension.mfsh#29  "
     }
   },
   {
@@ -37,7 +37,7 @@
       "source" : "^BreastBodyLocationExtension/$",
       "target" : "^BreastBodyLocationExtension/extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BreastBodyLocationExtension.mfsh#29  "
     }
   },
   {
@@ -46,7 +46,7 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "target" : "^BreastBodyLocationExtension/extension:",
       "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4"
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BreastBodyLocationExtension.mfsh#29  "
     }
   },
   {
@@ -55,7 +55,7 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:laterality",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BreastBodyLocationExtension.mfsh#29  "
     }
   },
   {
@@ -64,7 +64,7 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:quadrant",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BreastBodyLocationExtension.mfsh#34  "
     }
   },
   {
@@ -73,7 +73,7 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:region",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BreastBodyLocationExtension.mfsh#39  "
     }
   },
   {
@@ -82,7 +82,7 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:clockDirection",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BreastBodyLocationExtension.mfsh#44  "
     }
   },
   {
@@ -91,15 +91,15 @@
       "source" : "^BreastBodyLocationExtension/extension/$",
       "item" : "BreastBodyLocationExtension.extension:depth",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BreastBodyLocationExtension.mfsh#49  "
     }
   },
   {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
-      "item" : "%ExtensionName$",
+      "item" : "%BodyDistanceFromExtension$",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Extension.minc#5"
+      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#55  "
     }
   },

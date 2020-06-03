@@ -29,7 +29,7 @@
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
   `      "lhsAnnotationText": "^%Id%.%Path%",
-  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
+  `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end
@@ -41,7 +41,7 @@
   `      "source" : "SourceName",
   `      "target" : "TargetName",
   `      "depth": Depth,
-  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
+  `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end
@@ -52,7 +52,7 @@
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
-  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
+  `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end
@@ -64,7 +64,7 @@
   `      "source" : "SourceName",
   `      "item" : "Item",
   `      "depth": Depth,
-  `      "traceMsg" : "%ApplySourceFile%#%ApplyLineNumber%"
+  `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end

@@ -51,7 +51,12 @@ Description: """
   #  The depth of the body location.
   # """)
 
-  #apply Extension.Extension("distanceFromLandmark", "0..1", "BodyDistanceFromExtension", "distanceFromLandmark extension.",
-  #  """
-  #  This extension slice contains the distanceFromLandmark extension.
-  #  """)
+
+  #apply Graph.LinkByReference("focus", "^%Id%/extension/$", "%BodyDistanceFromExtension$", "1")
+  
+  * extension contains BodyDistanceFromExtension named distanceFromLandmark 0..1
+  * extension[SliceName] ^short = "distanceFromLandmark extension."
+  * extension[SliceName] ^definition =
+    """
+    This extension slice contains the distanceFromLandmark extension.
+	"""

@@ -19,7 +19,7 @@
       "displayName" : "Calcification Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:calcificationType",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#23  "
     }
   },
   {
@@ -32,7 +32,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#23  "
     }
   },
   {
@@ -41,7 +41,7 @@
       "source" : "^MGAbnormalityCalcification/$",
       "target" : "^MGAbnormalityCalcification/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#23  "
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^MGAbnormalityCalcification/component/$",
       "target" : "^MGAbnormalityCalcification/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7  Include/ObservationMacros/Observation.Component.Add.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#23  "
     }
   },
   {
@@ -58,7 +58,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:calcificationType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#30  "
     }
   },
   {
@@ -71,7 +71,7 @@
       "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#36  "
     }
   },
   {
@@ -79,7 +79,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#18  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#36  "
     }
   },
   {
@@ -92,7 +92,7 @@
       "displayName" : "BiRads",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.BiRadFragment.minc#10  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#37  "
     }
   },
   {
@@ -100,7 +100,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.BiRadFragment.minc#17  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#37  "
     }
   },
   {
@@ -113,7 +113,7 @@
       "displayName" : "Not Previously Seen",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#38  "
     }
   },
   {
@@ -121,7 +121,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#16  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#38  "
     }
   },
   {
@@ -134,7 +134,7 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#12  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#39  "
     }
   },
   {
@@ -147,7 +147,7 @@
       "displayName" : "Observed Size",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsSize",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#13  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#40  "
     }
   },
   {
@@ -160,7 +160,7 @@
       "displayName" : "Observed Distribution",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistribution",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#13  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#41  "
     }
   },
   {
@@ -168,7 +168,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:obsDistribution/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#22  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#41  "
     }
   },
   {
@@ -181,7 +181,7 @@
       "displayName" : "Observed Distribution Region Size",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:obsDistRegionSize",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#26  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#41  "
     }
   },
   {
@@ -194,7 +194,7 @@
       "displayName" : "Corresponds With",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#10  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#42  "
     }
   },
   {
@@ -202,7 +202,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#17  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#42  "
     }
   },
   {
@@ -215,7 +215,7 @@
       "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#10  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#43  "
     }
   },
   {
@@ -223,7 +223,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityCalcification/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#19  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#43  "
     }
   },
   {
@@ -232,7 +232,7 @@
       "source" : "^MGAbnormalityCalcification/hasMember/$",
       "item" : "MGAbnormalityCalcification.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#45  "
     }
   },
   {
@@ -245,7 +245,7 @@
       "displayName" : "HasMembers",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5  Include/ObservationMacros/Observation.HasMember.Add.minc#17  Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#45  "
     }
   },
   {
@@ -254,6 +254,6 @@
       "source" : "^MGAbnormalityCalcification/hasMember/$",
       "item" : "MGAbnormalityCalcification.hasMember:consistentWith",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#7  Profiles/FindingMG/MGAbnormalityCalcification.mfsh#46  "
     }
   },
