@@ -6,7 +6,7 @@
       },
       "displayName" : "Architectural Distortion",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#9  "
+      "traceMsg" : "Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#9//n"
     }
   },
   {
@@ -19,7 +19,7 @@
       "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25//n"
     }
   },
   {
@@ -32,7 +32,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5  Include/ObservationMacros/Observation.Component.Add.minc#9  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5//nInclude/ObservationMacros/Observation.Component.Add.minc#9//nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25//n"
     }
   },
   {
@@ -41,7 +41,7 @@
       "source" : "^MGAbnormalityArchitecturalDistortion/$",
       "target" : "^MGAbnormalityArchitecturalDistortion/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6  Include/ObservationMacros/Observation.Component.Add.minc#9  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6//nInclude/ObservationMacros/Observation.Component.Add.minc#9//nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25//n"
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^MGAbnormalityArchitecturalDistortion/component/$",
       "target" : "^MGAbnormalityArchitecturalDistortion/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7  Include/ObservationMacros/Observation.Component.Add.minc#9  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7//nInclude/ObservationMacros/Observation.Component.Add.minc#9//nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25//n"
     }
   },
   {
@@ -58,7 +58,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#18  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#18//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#25//n"
     }
   },
   {
@@ -71,7 +71,7 @@
       "displayName" : "BiRads",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.BiRadFragment.minc#10  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#26  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#10//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#26//n"
     }
   },
   {
@@ -79,7 +79,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.BiRadFragment.minc#17  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#26  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#17//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#26//n"
     }
   },
   {
@@ -92,7 +92,7 @@
       "displayName" : "Orientation",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#14  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#14//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -100,7 +100,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#21  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#21//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -113,7 +113,7 @@
       "displayName" : "Shape",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:shape",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#25  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#25//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -121,7 +121,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#32  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#32//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -134,7 +134,7 @@
       "displayName" : "Margin",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:margin",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#35  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#35//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -142,7 +142,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#42  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#42//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -155,7 +155,7 @@
       "displayName" : "Density",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:mgBreastDensity",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#45  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#45//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -163,7 +163,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:mgBreastDensity/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.ShapeFragment.minc#53  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#53//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#27//n"
     }
   },
   {
@@ -176,7 +176,7 @@
       "displayName" : "Not Previously Seen",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#9  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#28  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#9//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#28//n"
     }
   },
   {
@@ -184,7 +184,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#16  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#28  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#16//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#28//n"
     }
   },
   {
@@ -197,7 +197,7 @@
       "displayName" : "Corresponds With",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#10  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#29  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#10//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#29//n"
     }
   },
   {
@@ -205,7 +205,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#17  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#29  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#17//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#29//n"
     }
   },
   {
@@ -218,7 +218,7 @@
       "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7  Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#10  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#30  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7//nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#10//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#30//n"
     }
   },
   {
@@ -226,7 +226,7 @@
       "traversalName" : "focus",
       "source" : "^MGAbnormalityArchitecturalDistortion/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5  Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#19  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#30  "
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5//nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#19//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#30//n"
     }
   },
   {
@@ -235,7 +235,7 @@
       "source" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
       "item" : "MGAbnormalityArchitecturalDistortion.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#32  "
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15//nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#32//n"
     }
   },
   {
@@ -245,10 +245,19 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",
         "item" : "hasMember"
       },
-      "displayName" : "HasMembers",
+      "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5  Include/ObservationMacros/Observation.HasMember.Add.minc#17  Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#32  "
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5//nInclude/ObservationMacros/Observation.HasMember.Add.minc#17//nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#32//n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/$",
+      "target" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6//nInclude/ObservationMacros/Observation.HasMember.Add.minc#17//nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#32//n"
     }
   },
   {
@@ -257,6 +266,6 @@
       "source" : "^MGAbnormalityArchitecturalDistortion/hasMember/$",
       "item" : "MGAbnormalityArchitecturalDistortion.hasMember:consistentWith",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15  Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#7  Profiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#33  "
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15//nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#7//nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#33//n"
     }
   },

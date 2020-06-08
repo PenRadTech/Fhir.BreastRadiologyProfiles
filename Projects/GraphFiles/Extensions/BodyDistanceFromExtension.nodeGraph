@@ -6,7 +6,7 @@
       },
       "displayName" : "BreastDistanceFrom",
       "cssClass" : "profile",
-      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#9  "
+      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#9//n"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^BodyDistanceFromExtension/$",
       "target" : "^BodyDistanceFromExtension/",
       "depth": 0,
-      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#10  "
+      "traceMsg" : "Extensions/BodyDistanceFromExtension.mfsh#10//n"
     }
   },
   {
@@ -28,7 +28,7 @@
       "displayName" : "Extensions",
       "cssClass" : "element",
       "lhsAnnotationText": "^BodyDistanceFromExtension.extension",
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BodyDistanceFromExtension.mfsh#25  "
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#2//nInclude/ExtensionMacros/Extension.CodeableConcept.minc#2//nExtensions/BodyDistanceFromExtension.mfsh#25//n"
     }
   },
   {
@@ -37,16 +37,7 @@
       "source" : "^BodyDistanceFromExtension/$",
       "target" : "^BodyDistanceFromExtension/extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BodyDistanceFromExtension.mfsh#25  "
-    }
-  },
-  {
-    "graphLinkByName" : {
-      "traversalName" : "focus",
-      "source" : "^BodyDistanceFromExtension/extension/$",
-      "target" : "^BodyDistanceFromExtension/extension:",
-      "depth": 0,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#4  Include/ExtensionMacros/Extension.CodeableConcept.minc#2  Extensions/BodyDistanceFromExtension.mfsh#25  "
+      "traceMsg" : "Include/ExtensionMacros/Extension.Configure.minc#3//nInclude/ExtensionMacros/Extension.CodeableConcept.minc#2//nExtensions/BodyDistanceFromExtension.mfsh#25//n"
     }
   },
   {
@@ -55,7 +46,7 @@
       "source" : "^BodyDistanceFromExtension/extension/$",
       "item" : "BodyDistanceFromExtension.extension:landMark",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3  Extensions/BodyDistanceFromExtension.mfsh#25  "
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3//nExtensions/BodyDistanceFromExtension.mfsh#25//n"
     }
   },
   {
@@ -64,6 +55,6 @@
       "source" : "^BodyDistanceFromExtension/extension/$",
       "item" : "BodyDistanceFromExtension.extension:distanceFromLandMark",
       "depth": 1,
-      "traceMsg" : "Include/ExtensionMacros/Extension.Quantity.minc#3  Extensions/BodyDistanceFromExtension.mfsh#33  "
+      "traceMsg" : "Include/ExtensionMacros/Extension.Quantity.minc#3//nExtensions/BodyDistanceFromExtension.mfsh#33//n"
     }
   },

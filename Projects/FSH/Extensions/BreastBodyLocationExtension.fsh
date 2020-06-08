@@ -11,6 +11,7 @@ Description: """
 
   * . ^short = "Breast Body Location extension"
 
+  //$#apply Graph.LinkByName("focus", "^BreastBodyLocationExtension/extension/$", "^BreastBodyLocationExtension/extension:", "0")
   
   * extension contains laterality 0..1
   * extension[laterality] ^short = "Body side"

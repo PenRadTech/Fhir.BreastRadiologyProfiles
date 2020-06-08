@@ -33,7 +33,6 @@ Description: """
     """
 	
 
-  //#apply Graph.LinkByName("focus", "^FindingsRightBreast/$", "^FindingsRightBreast/hasMember/$", "0")
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

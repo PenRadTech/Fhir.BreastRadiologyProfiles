@@ -9,6 +9,7 @@ Description: """
 
   * . ^short = "Body Distance From extension"
 
+  //$#apply Graph.LinkByName("focus", "^BodyDistanceFromExtension/extension/$", "^BodyDistanceFromExtension/extension:", "0")
   
   * extension contains landMark 1..1
   * extension[landMark] ^short = "Body landmark. Origin of distance measurement."
