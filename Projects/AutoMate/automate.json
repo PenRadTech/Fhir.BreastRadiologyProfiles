@@ -1,4 +1,5 @@
 {
+    "traceFlag": true,
 	"watchs": [
 		{
 			"name": "MFSH",

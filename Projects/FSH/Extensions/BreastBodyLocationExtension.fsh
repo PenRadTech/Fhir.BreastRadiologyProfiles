@@ -69,8 +69,8 @@ Description: """
 
   
   * extension contains BodyDistanceFromExtension named distanceFromLandmark 0..1
-  * extension[SliceName] ^short = "distanceFromLandmark extension."
-  * extension[SliceName] ^definition =
+  * extension[distanceFromLandmark] ^short = "distanceFromLandmark extension."
+  * extension[distanceFromLandmark] ^definition =
     """
     This extension slice contains the distanceFromLandmark extension.
 	"""

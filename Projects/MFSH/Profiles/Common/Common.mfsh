@@ -14,5 +14,6 @@ Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessmen
 Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
 
 Alias: UNITSOFLENGTH = http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS
+Alias: UCUM = http://unitsofmeasure.org
 
 Alias: CONTACTURL = http://hl7.org/Special/committees/cic
