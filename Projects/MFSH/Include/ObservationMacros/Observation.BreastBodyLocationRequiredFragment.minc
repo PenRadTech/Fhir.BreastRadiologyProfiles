@@ -7,6 +7,12 @@
 //$ Incomplete
 
 #macro once Observation.BreastBodyLocationRequiredFragment()
+  #apply Graph.NodeElement("bodySite", "BodySite")
+  #apply Graph.NodeElement("bodySite.extension", "extension")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/bodySite/$", "0")
+  #apply Graph.LinkByName("focus", "^%Id%/bodySite/$", "^%Id%/bodySite.extension/$", "0")
+  #apply Graph.LinkByName("focus", "^%Id%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1")
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."

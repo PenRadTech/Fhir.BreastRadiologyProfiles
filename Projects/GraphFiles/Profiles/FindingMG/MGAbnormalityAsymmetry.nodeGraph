@@ -63,6 +63,59 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityAsymmetry/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityAsymmetry.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#10/nProfiles/FindingMG/MGAbnormalityAsymmetry.mfsh#32/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityAsymmetry/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityAsymmetry.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#11/nProfiles/FindingMG/MGAbnormalityAsymmetry.mfsh#32/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityAsymmetry/$",
+      "target" : "^MGAbnormalityAsymmetry/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/FindingMG/MGAbnormalityAsymmetry.mfsh#32/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityAsymmetry/bodySite/$",
+      "target" : "^MGAbnormalityAsymmetry/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/FindingMG/MGAbnormalityAsymmetry.mfsh#32/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityAsymmetry/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/FindingMG/MGAbnormalityAsymmetry.mfsh#32/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityAsymmetry/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry",

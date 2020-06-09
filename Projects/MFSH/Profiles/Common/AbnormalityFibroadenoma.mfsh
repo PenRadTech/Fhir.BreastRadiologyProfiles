@@ -8,7 +8,6 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources/AbnormalityFibroadenoma", "")
   #apply Graph.NodeProfile("Fibroadenoma Abnormality")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

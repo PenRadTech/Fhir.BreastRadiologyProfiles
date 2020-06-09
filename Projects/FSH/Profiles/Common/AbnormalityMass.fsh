@@ -47,6 +47,7 @@ The value of this component is a codeable concept chosen from the AbnormalityMas
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."

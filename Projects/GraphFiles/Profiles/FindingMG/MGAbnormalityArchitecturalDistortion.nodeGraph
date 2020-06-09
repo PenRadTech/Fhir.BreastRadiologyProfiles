@@ -11,6 +11,59 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityArchitecturalDistortion/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#10/nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#22/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityArchitecturalDistortion/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityArchitecturalDistortion.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#11/nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#22/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/$",
+      "target" : "^MGAbnormalityArchitecturalDistortion/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#22/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/bodySite/$",
+      "target" : "^MGAbnormalityArchitecturalDistortion/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#22/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityArchitecturalDistortion/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/FindingMG/MGAbnormalityArchitecturalDistortion.mfsh#22/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityArchitecturalDistortion/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion",

@@ -13,8 +13,16 @@
 	],
 	"traversals": [
 		{
+			"name": "single",
+			"cssFile": "FocusGraph.css",
+			"param1": "BreastRadiologyComposition/",
+			"param2": "TotalGraph",
+			"depth": 10000
+		},
+		{
 			"name": "focus",
-			"cssFile": "FocusGraph.css"
+			"cssFile": "FocusGraph.css",
+			"depth": 1
 		}
 	]
 }

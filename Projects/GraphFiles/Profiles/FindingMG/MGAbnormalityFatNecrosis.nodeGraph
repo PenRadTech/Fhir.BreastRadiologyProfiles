@@ -11,6 +11,59 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "MGAbnormalityFatNecrosis/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityFatNecrosis.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#10/nProfiles/FindingMG/MGAbnormalityFatNecrosis.mfsh#25/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "MGAbnormalityFatNecrosis/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^MGAbnormalityFatNecrosis.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#11/nProfiles/FindingMG/MGAbnormalityFatNecrosis.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/$",
+      "target" : "^MGAbnormalityFatNecrosis/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/FindingMG/MGAbnormalityFatNecrosis.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/bodySite/$",
+      "target" : "^MGAbnormalityFatNecrosis/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/FindingMG/MGAbnormalityFatNecrosis.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^MGAbnormalityFatNecrosis/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/FindingMG/MGAbnormalityFatNecrosis.mfsh#25/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "MGAbnormalityFatNecrosis/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis",

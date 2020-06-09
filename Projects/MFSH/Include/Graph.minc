@@ -16,6 +16,22 @@
 #end
 
 //
+// Make a graph node that refers to an extension.
+//
+#macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+  `  {
+  `    "graphNode" : {
+  `      "nodeName" : "%Id%/",
+  `      "anchor" : {
+  `        "url" : "%Url%"
+  `      },
+  `      "displayName" : "DisplayName",
+  `      "cssClass" : "extension",
+  `      "traceMsg" : "%ApplyStackFrame%"
+  `    }
+  `  },
+#end
+//
 // Make a graph node that refers to an element in a profile.
 //
 #macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"

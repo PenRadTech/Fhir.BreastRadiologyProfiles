@@ -6,6 +6,10 @@ rect.profile {
     fill: LightBlue;
     stroke: Black;
 }
+rect.extension {
+    fill: LightSalmon;
+    stroke: Black;
+}
 rect.element {
     fill: LightYellow;
     stroke: Black;

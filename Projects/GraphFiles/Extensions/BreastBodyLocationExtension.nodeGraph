@@ -5,7 +5,7 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension"
       },
       "displayName" : "BreastBodyLocation",
-      "cssClass" : "profile",
+      "cssClass" : "extension",
       "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#12/n"
     }
   },

@@ -9,7 +9,7 @@ Description: """
     """
 
   #apply IGGroupMemberProfile("ExtensionResources/BreastBodyLocation", "")
-  #apply Graph.NodeProfile("BreastBodyLocation")
+  #apply Graph.NodeExtension("BreastBodyLocation")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
