@@ -158,7 +158,7 @@
   * section[SliceName].entry 0..*
   * section[SliceName].entry only Reference(MEDICATIONREQUESTURL)
                                   or Reference(SERVICEREQUESTURL)
-								  //$or Reference(ServiceRecommendation)
+								  or Reference(ServiceRecommendation)
 								  
   * section[SliceName].entry ^short = "Recommendation resources"
   * section[SliceName].entry ^definition = """

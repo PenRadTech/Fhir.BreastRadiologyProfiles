@@ -28,292 +28,81 @@ Description: """
   * interpretation 0..0
   * method 0..0  
 
-    //       {
-    //         "id": "Observation.hasMember:abnormalityCyst",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityCyst",
-    //         "short": "'Cyst' reference.",
-    //         "definition": "This slice references the target 'Cyst'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:abnormalityDuct",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityDuct",
-    //         "short": "'Duct' reference.",
-    //         "definition": "This slice references the target 'Duct'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityDuct"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:abnormalityForeignObject",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityForeignObject",
-    //         "short": "'Foreign Object' reference.",
-    //         "definition": "This slice references the target 'Foreign Object'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:abnormalityLymphNode",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityLymphNode",
-    //         "short": "'LymphNode' reference.",
-    //         "definition": "This slice references the target 'LymphNode'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:abnormalityMass",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityMass",
-    //         "short": "'Mass' reference.",
-    //         "definition": "This slice references the target 'Mass'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:associatedFeature",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "associatedFeature",
-    //         "short": "'Associated Feature' reference.",
-    //         "definition": "This slice references the target 'Associated Feature'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:abnormalityFibroadenoma",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "abnormalityFibroadenoma",
-    //         "short": "'Fibroadenoma' reference.",
-    //         "definition": "This slice references the target 'Fibroadenoma'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGAbnormalityArchitecturalDistortion",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGAbnormalityArchitecturalDistortion",
-    //         "short": "'Mammography Architectural Distortion' reference.",
-    //         "definition": "This slice references the target 'Mammography Architectural Distortion'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityArchitecturalDistortion"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGAbnormalityAsymmetry",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGAbnormalityAsymmetry",
-    //         "short": "'Mammography Asymmetry' reference.",
-    //         "definition": "This slice references the target 'Mammography Asymmetry'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityAsymmetry"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGAbnormalityCalcification",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGAbnormalityCalcification",
-    //         "short": "'Mammography Calcification' reference.",
-    //         "definition": "This slice references the target 'Mammography Calcification'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityCalcification"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGAbnormalityDensity",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGAbnormalityDensity",
-    //         "short": "'Mammography Density' reference.",
-    //         "definition": "This slice references the target 'Mammography Density'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityDensity"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGAbnormalityFatNecrosis",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGAbnormalityFatNecrosis",
-    //         "short": "'Mammography Fat Necrosis' reference.",
-    //         "definition": "This slice references the target 'Mammography Fat Necrosis'.",
-    //         "min": 0,
-    //         "max": "*",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGAbnormalityFatNecrosis"
-    //             ]
-    //           }
-    //         ]
-    //       },
-    //       {
-    //         "id": "Observation.hasMember:mGBreastDensity",
-    //         "path": "Observation.hasMember",
-    //         "sliceName": "mGBreastDensity",
-    //         "short": "'Mammography Breast Density' reference.",
-    //         "definition": "This slice references the target 'Mammography Breast Density'.",
-    //         "min": 1,
-    //         "max": "1",
-    //         "base": {
-    //           "path": "Observation.hasMember",
-    //           "min": 0,
-    //           "max": "*"
-    //         },
-    //         "type": [
-    //           {
-    //             "code": "Reference",
-    //             "targetProfile": [
-    //               "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGBreastDensity"
-    //             ]
-    //           }
-    //         ]
-    //       }
-    //     ]
-    //   }
-    // }
+
+
+  * hasMember ^slicing.discriminator.type = #value
+  * hasMember ^slicing.discriminator.path = "url"
+  * hasMember ^slicing.rules = #open
+  * hasMember ^slicing.ordered = false
+  * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains abnormalityCyst 0..*
+  * hasMember[abnormalityCyst] ^short = "'Cyst' reference. hasMember."
+  * hasMember[abnormalityCyst] only Reference(AbnormalityCyst)
+
+
+  * hasMember contains abnormalityDuct 0..*
+  * hasMember[abnormalityDuct] ^short = "'Duct' reference. hasMember."
+  * hasMember[abnormalityDuct] only Reference(AbnormalityDuct)
+
+
+
+  * hasMember contains abnormalityForeignObject 0..*
+  * hasMember[abnormalityForeignObject] ^short = "'Foreign Object' reference. hasMember."
+  * hasMember[abnormalityForeignObject] only Reference(AbnormalityForeignObject)
+
+
+
+  * hasMember contains abnormalityLymphNode 0..*
+  * hasMember[abnormalityLymphNode] ^short = "'Lymph Node' reference. hasMember."
+  * hasMember[abnormalityLymphNode] only Reference(AbnormalityLymphNode)
+
+
+
+  * hasMember contains abnormalityMass 0..*
+  * hasMember[abnormalityMass] ^short = "'Mass' reference. hasMember."
+  * hasMember[abnormalityMass] only Reference(AbnormalityMass)
+
+
+
+  * hasMember contains associatedFeature 0..*
+  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+
+
+  * hasMember contains abnormalityFibroadenoma 0..*
+  * hasMember[abnormalityFibroadenoma] ^short = "'Fibroadenoma' reference. hasMember."
+  * hasMember[abnormalityFibroadenoma] only Reference(AbnormalityFibroadenoma)
+
+
+
+  * hasMember contains abnormalityArchDist 0..*
+  * hasMember[abnormalityArchDist] ^short = "'Architectural Distortion' reference. hasMember."
+  * hasMember[abnormalityArchDist] only Reference(MGAbnormalityArchitecturalDistortion)
+
+
+
+  * hasMember contains abnormalityAsymmetry 0..*
+  * hasMember[abnormalityAsymmetry] ^short = "'Asymmetry' reference. hasMember."
+  * hasMember[abnormalityAsymmetry] only Reference(AbnormalityAsymmetry)
+
+
+
+  * hasMember contains abnormalityCalcification 0..*
+  * hasMember[abnormalityCalcification] ^short = "'Calcification' reference. hasMember."
+  * hasMember[abnormalityCalcification] only Reference(AbnormalityCalcification)
+
+
+  * hasMember contains abnormalityDensity 0..*
+  * hasMember[abnormalityDensity] ^short = "'Density' reference. hasMember."
+  * hasMember[abnormalityDensity] only Reference(AbnormalityDensity)
+
+
+  * hasMember contains abnormalityFatNecrosis 0..*
+  * hasMember[abnormalityFatNecrosis] ^short = "'FatNecrosis' reference. hasMember."
+  * hasMember[abnormalityFatNecrosis] only Reference(AbnormalityFatNecrosis)
+
+
+  * hasMember contains mgBreastDensity 1..1
+  * hasMember[mgBreastDensity] ^short = "'Mammo Breast Density' reference. hasMember."
+  * hasMember[mgBreastDensity] only Reference(MGBreastDensity)

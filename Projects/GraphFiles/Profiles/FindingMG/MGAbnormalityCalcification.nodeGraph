@@ -285,7 +285,7 @@
       "source" : "^MGAbnormalityCalcification/hasMember/$",
       "item" : "MGAbnormalityCalcification.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
     }
   },
   {
@@ -298,7 +298,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGAbnormalityCalcification.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
     }
   },
   {
@@ -307,7 +307,7 @@
       "source" : "^MGAbnormalityCalcification/$",
       "target" : "^MGAbnormalityCalcification/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/FindingMG/MGAbnormalityCalcification.mfsh#42/n"
     }
   },
   {

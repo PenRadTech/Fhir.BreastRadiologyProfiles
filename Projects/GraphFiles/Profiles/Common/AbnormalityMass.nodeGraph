@@ -369,7 +369,7 @@
       "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/Common/AbnormalityMass.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityMass.mfsh#44/n"
     }
   },
   {
@@ -382,7 +382,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/Common/AbnormalityMass.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityMass.mfsh#44/n"
     }
   },
   {
@@ -391,7 +391,7 @@
       "source" : "^AbnormalityMass/$",
       "target" : "^AbnormalityMass/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#9/nProfiles/Common/AbnormalityMass.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityMass.mfsh#44/n"
     }
   },
   {
@@ -409,6 +409,6 @@
       "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:tumorSatellite",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#11/nProfiles/Common/AbnormalityMass.mfsh#46/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#9/nProfiles/Common/AbnormalityMass.mfsh#46/n"
     }
   },

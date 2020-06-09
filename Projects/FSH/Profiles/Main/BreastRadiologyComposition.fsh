@@ -121,7 +121,7 @@ Description: """
   * section[recommendations].entry 0..*
   * section[recommendations].entry only Reference(MEDICATIONREQUESTURL)
                                   or Reference(SERVICEREQUESTURL)
-								  //$or Reference(ServiceRecommendation)
+								  or Reference(ServiceRecommendation)
 								  
   * section[recommendations].entry ^short = "Recommendation resources"
   * section[recommendations].entry ^definition = """

@@ -46,6 +46,6 @@ Description: """
   #apply Observation.LeafFragment()
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
-  //$#apply LocationRequiredFragment()
+  #apply Observation.BreastBodyLocationRequiredFragment()
 
   #apply Observation.Component.ObservedCountFragment()

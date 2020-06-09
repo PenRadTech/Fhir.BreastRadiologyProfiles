@@ -1,8 +1,6 @@
 // FindingBreastFragment
 // Fragment definition for finding section of left or right breast
 
-#use Observation
-
 #macro Observation.FindingBreastFragment(%Laterality%)
 Parent: Observation
 Title: "Findings %Laterality% Breast"
@@ -37,28 +35,28 @@ Description: """
 	codes set in any of the child observations of the %Laterality% Breast.
     """
 	
-  #apply HasMember.Add("mgFinding", "0..1", "MG Finding", "MGFinding", 
+  #apply Observation.HasMember.Add("mgFinding", "0..1", "MG Finding", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """
   #  This slice references the Mammography findings section.
   #  """)
   * hasMember[mgFinding] MS
 
-  #apply HasMember.Add("mriFinding", "0..1", "MRI Finding", "MRIFinding",
+  #apply Observation.HasMember.Add("mriFinding", "0..1", "MRI Finding", "MRIFinding",
   #  "'Magnetic Resonance Imaging Finding' reference.",
   #  """
   #  This slice references the MRI findings section.
   #  """)
   * hasMember[mriFinding] MS
 
-  #apply HasMember.Add("nmFinding", "0..1", "NM Finding", "NMFinding", 
+  #apply Observation.HasMember.Add("nmFinding", "0..1", "NM Finding", "NMFinding", 
   #  "'Nuclear Medicine Finding' reference.",
   #  """
   #  This slice references the NM findings section.
   #  """)
   * hasMember[nmFinding] MS
 
-  #apply HasMember.Add("usFinding", "0..1", "US Finding", "USFinding",
+  #apply Observation.HasMember.Add("usFinding", "0..1", "US Finding", "USFinding",
   #  "'Ultra Sound Finding' reference.",
   #  """
   #  This slice references the Ultra Sound findings section.

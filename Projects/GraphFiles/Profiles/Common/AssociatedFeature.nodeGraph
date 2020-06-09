@@ -63,6 +63,59 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "AssociatedFeature/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#10/nProfiles/Common/AssociatedFeature.mfsh#49/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#11/nProfiles/Common/AssociatedFeature.mfsh#49/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/$",
+      "target" : "^AssociatedFeature/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/Common/AssociatedFeature.mfsh#49/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/bodySite/$",
+      "target" : "^AssociatedFeature/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/Common/AssociatedFeature.mfsh#49/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/Common/AssociatedFeature.mfsh#49/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "AssociatedFeature/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
