@@ -1,4 +1,3 @@
-#use Observation
 
 Profile: AbnormalityLymphNode
 Parent: Observation
@@ -24,7 +23,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityLymphNodeObservation
 
-  #apply Component.Add("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
+  #apply Observation.Component.Add("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
   #	 """
   #  This slice contains the optional component that refine the Lymph Node Abnormality type.
   #  The value of this component is a codeable concept chosen from the AbnormalityLymphNodeTypeVS valueset.

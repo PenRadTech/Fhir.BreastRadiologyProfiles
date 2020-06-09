@@ -3,11 +3,10 @@
  Fragment that adds 'BiRad code' element to profile
  */
 
-#use Observation
  
 #macro once Observation.Component.BiRadFragment()
   #apply Observation.Component.Slice()
-  #apply Component.Add("biRadsAssessmentCategory", "0..1", "BiRads", "BiRads Assessment Category component.",
+  #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that define the BiRAD risk code.
   #  The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.

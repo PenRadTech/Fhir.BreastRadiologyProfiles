@@ -1,4 +1,3 @@
-#use Observation
 
 Profile: AbnormalityDuct
 Parent: Observation
@@ -24,7 +23,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
-  #apply Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
+  #apply Observation.Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
   #	 """
   #  This resource and referenced child resources contain
   #  information about a duct abnormality observation

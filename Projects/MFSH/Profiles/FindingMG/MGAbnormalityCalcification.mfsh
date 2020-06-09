@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: MGAbnormalityCalcification
 Parent: Observation
 Title: "Mammography Calcification"
@@ -20,7 +18,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#mgAbnormalityCalcificationObservation
   
-  #apply Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
+  #apply Observation.Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
   #	 """
   #  This slice contains the optional component that refines the calcification type.
   #  The value of this component is a codeable concept chosen from the MammoCalcificationTypeVS valueset.

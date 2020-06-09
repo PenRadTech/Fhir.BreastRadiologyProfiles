@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: ServiceRecommendation
 Parent: ServiceRequest
 Title: "Service Recommendation"

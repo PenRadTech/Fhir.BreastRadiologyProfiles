@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: ConsistentWith
 Parent: Observation
 Title: "Consistent With"
@@ -35,7 +33,7 @@ Description: """
   #apply Observation.Value.Zero()
 
   // Define Consistent With Slice
-  #apply Component.Add("consistentWith", "1..1", "Consistent With", "Consistent With",
+  #apply Observation.Component.Add("consistentWith", "1..1", "Consistent With", "Consistent With",
   #	"""
   #   This slice contains the required component that defines what this 
   #   observation is consistent with.
@@ -49,7 +47,7 @@ Description: """
 
 
   // Define Consistent With Qualifier Slice
-  #apply Component.Add("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
+  #apply Observation.Component.Add("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
   #	"""
   #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
   #   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.

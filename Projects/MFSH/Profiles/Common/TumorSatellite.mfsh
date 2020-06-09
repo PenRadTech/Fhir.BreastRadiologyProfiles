@@ -2,8 +2,6 @@
  Common Tumor Satellite Observation
  */
  
-#use Observation
-
 Profile: TumorSatellite
 Parent: Observation
 Title: "Tumor Satellite"
@@ -49,7 +47,7 @@ Description: """
   * valueRange.low units from UNITSOFLENGTH
   * valueRange.high units from UNITSOFLENGTH
 
-  #apply DerivedFrom.Add("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
+  #apply Observation.DerivedFrom.Add("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
   #  """
   #  This derivedFrom slice references the index tumor.
   #  """,

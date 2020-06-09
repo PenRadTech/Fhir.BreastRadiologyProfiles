@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: AbnormalityCyst
 Parent: Observation
 Title: "Cyst"
@@ -25,7 +23,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
-  #apply Component.Add("cystType", "0..1", "Cyst Type", "Cyst Type",
+  #apply Observation.Component.Add("cystType", "0..1", "Cyst Type", "Cyst Type",
   #	 """
   #  This slice contains the optional component that refine the cyst type.
   #  The value of this component is a codeable concept chosen from the AbnormalityCystTypeVS valueset.

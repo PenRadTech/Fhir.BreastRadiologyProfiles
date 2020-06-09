@@ -3,12 +3,10 @@
  Fragment that adds 'Observed Changes' element to profile.
  */
 
-#use Observation
-
 #macro once Observation.Component.ObservedChangesFragment()
   // Define Observed Changes Slice
   
-  #apply Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
+  #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.
   #  The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.

@@ -2,7 +2,6 @@
  Common Tumor Satellite Observation
  */
  
-
 Profile: TumorSatellite
 Parent: Observation
 Title: "Tumor Satellite"

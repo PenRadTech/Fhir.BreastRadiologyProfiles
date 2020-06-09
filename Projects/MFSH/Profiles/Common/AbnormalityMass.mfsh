@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: AbnormalityMass
 Parent: Observation
 Title: "Mass Abnormality"
@@ -21,7 +19,7 @@ Description: """
   # </p>
   #""")
 
-  #apply Component.Add("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
+  #apply Observation.Component.Add("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
   #	 """
   #  This slice contains the optional component that refine the Mass Abnormality type.
   #  The value of this component is a codeable concept chosen from the AbnormalityMassTypeVS valueset.

@@ -3,14 +3,13 @@
   Fragment that adds 'Observed Distribution' components to Observation.
   */
 
-#use Observation
 
 #macro Observation.Component.ObservedDistributionFragment()
 
   #incompatible Observation.Component.Zero
 
   // define calcification distribution slice
-  #apply Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
+  #apply Observation.Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
   #	 """
   #  This slice contains the optional components that describe the distribution of
   #  a group of abnormalities.
@@ -23,7 +22,7 @@
  
 
   // Define distribution region size.
-  #apply Component.Add("obsDistRegionSize", "0..1", "Observed Distribution Region Size", "Observed size of distribution region.",
+  #apply Observation.Component.Add("obsDistRegionSize", "0..1", "Observed Distribution Region Size", "Observed size of distribution region.",
   #	 """
   #  This component slice contains the size of an region inside of which there 
   #  is a distribution of abnormalities.

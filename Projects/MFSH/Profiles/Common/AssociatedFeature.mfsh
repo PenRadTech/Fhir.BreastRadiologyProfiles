@@ -1,5 +1,3 @@
-#use Observation
-
 Profile: AssociatedFeature
 Parent: Observation
 Title: "Associated Feature"
@@ -34,7 +32,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
 
-  #apply Component.Add("featureType", "1..1", "Feature Type", "Associated Feature Type",
+  #apply Observation.Component.Add("featureType", "1..1", "Feature Type", "Associated Feature Type",
   #	 """
   #  This slice contains the required component that 
   #  defines the observed feature. The value of this 

@@ -1,4 +1,3 @@
-#use Observation
 
 Profile: AbnormalityFibroadenoma
 Parent: Observation
@@ -24,7 +23,7 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
 
-  #apply Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
+  #apply Observation.Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
   #	 """
   #  This resource and referenced child resources contain
   #  information about a Fibroadenoma abnormality observation

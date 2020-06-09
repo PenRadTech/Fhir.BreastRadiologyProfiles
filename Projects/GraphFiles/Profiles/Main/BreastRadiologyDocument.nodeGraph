@@ -6,7 +6,7 @@
       },
       "displayName" : "Breast/Radiology/Document",
       "cssClass" : "profile",
-      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#9//n"
+      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#9/n"
     }
   },
   {
@@ -15,7 +15,7 @@
       "source" : "^BreastRadiologyDocument/$",
       "target" : "^BreastRadiologyDocument/entry:",
       "depth": 0,
-      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#10//n"
+      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#10/n"
     }
   },
   {
@@ -24,7 +24,7 @@
       "source" : "^BreastRadiologyDocument/entry:",
       "item" : ".resource",
       "depth": 1,
-      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#11//n"
+      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#11/n"
     }
   },
   {
@@ -37,6 +37,6 @@
       "displayName" : "Composition index",
       "cssClass" : "element",
       "lhsAnnotationText": "^BreastRadiologyDocument.entry:index",
-      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#12//n"
+      "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#12/n"
     }
   },
