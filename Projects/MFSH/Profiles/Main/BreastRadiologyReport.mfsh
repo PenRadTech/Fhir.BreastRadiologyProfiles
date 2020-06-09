@@ -8,7 +8,6 @@ Description: """
   #apply IGGroupMemberProfile("BaseResources", "C")
   #apply Graph.NodeProfile("Report")
   #apply Graph.NodeElement("code", "Code")
-  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph( """
   # <p>

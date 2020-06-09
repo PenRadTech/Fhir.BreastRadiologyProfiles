@@ -5,7 +5,6 @@ Description: """
   Mass Abnormality
   """
 
-  //#apply Graph.LinkByName("focus", "^AbnormalityMass/$", "^AbnormalityMass/", "0")
 
 
 

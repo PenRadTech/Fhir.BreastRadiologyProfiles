@@ -7,7 +7,6 @@ Description: """
 
   #apply IGGroupMemberProfile("AbnormalityResources/MassAbnormality", "")
   #apply Graph.NodeProfile("Mass Abnormality")
-  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

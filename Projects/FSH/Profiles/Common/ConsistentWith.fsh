@@ -5,7 +5,6 @@ Description: """
     Consistent With
     """
 
-  //#apply Graph.LinkByName("focus", "^ConsistentWith/$", "^ConsistentWith/", "0")
 
 
   * . ^definition = """

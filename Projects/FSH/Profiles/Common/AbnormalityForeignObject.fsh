@@ -5,7 +5,6 @@ Description: """
   Foreign Object
   """
 
-  //#apply Graph.LinkByName("focus", "^AbnormalityForeignObject/$", "^AbnormalityForeignObject/", "0")
 
 
   * code 1..1

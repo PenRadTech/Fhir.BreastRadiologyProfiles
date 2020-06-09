@@ -19,7 +19,7 @@
       "displayName" : "Feature Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:featureType",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AssociatedFeature.mfsh#34/n"
     }
   },
   {
@@ -32,7 +32,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#34/n"
     }
   },
   {
@@ -41,7 +41,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#34/n"
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^AssociatedFeature/component/$",
       "target" : "^AssociatedFeature/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#34/n"
     }
   },
   {
@@ -58,7 +58,7 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AssociatedFeature.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AssociatedFeature.mfsh#43/n"
     }
   },
   {
@@ -71,6 +71,6 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#10/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#10/nProfiles/Common/AssociatedFeature.mfsh#51/n"
     }
   },

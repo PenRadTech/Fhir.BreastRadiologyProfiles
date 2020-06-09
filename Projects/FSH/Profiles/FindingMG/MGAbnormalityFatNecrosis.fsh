@@ -5,7 +5,6 @@ Description: """
     Mammography Fat Necrosis
     """
 
-  //#apply Graph.LinkByName("focus", "^MGAbnormalityFatNecrosis/$", "^MGAbnormalityFatNecrosis/", "0")
 
 
   * code 1..1

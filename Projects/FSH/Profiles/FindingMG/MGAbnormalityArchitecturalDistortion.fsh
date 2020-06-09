@@ -5,7 +5,6 @@ Description: """
     Mammography Architectural Distortion
     """
 
-  //#apply Graph.LinkByName("focus", "^MGAbnormalityArchitecturalDistortion/$", "^MGAbnormalityArchitecturalDistortion/", "0")
 
 
   * code 1..1

@@ -5,7 +5,6 @@ Description: """
     MRI Finding
     """
 
-  //#apply Graph.LinkByName("focus", "^MRIFinding/$", "^MRIFinding/", "0")
 
  
   * code 1..1

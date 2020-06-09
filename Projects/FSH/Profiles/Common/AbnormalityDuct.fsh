@@ -5,7 +5,6 @@ Description: """
   Duct
   """
 
-  //#apply Graph.LinkByName("focus", "^AbnormalityDuct/$", "^AbnormalityDuct/", "0")
 
 
   * code 1..1

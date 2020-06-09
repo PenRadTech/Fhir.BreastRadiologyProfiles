@@ -7,7 +7,6 @@ Description: """
 
   #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
   #apply Graph.NodeProfile("Breast Density")
-  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

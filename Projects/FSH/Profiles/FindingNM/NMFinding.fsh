@@ -5,7 +5,6 @@ Description: """
     NM Finding
     """
 
-  //#apply Graph.LinkByName("focus", "^NMFinding/$", "^NMFinding/", "0")
 
 
   * code 1..1

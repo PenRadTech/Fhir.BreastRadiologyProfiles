@@ -8,7 +8,6 @@ Description: """
 
   #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityDuct", "")
   #apply Graph.NodeProfile("Duct Abnormality")
-  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
   #apply IntroDocGraph("""
   # <p>

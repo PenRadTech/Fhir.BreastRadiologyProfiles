@@ -5,7 +5,6 @@ Description: """
     Mammography Calcification
     """
 
-  //#apply Graph.LinkByName("focus", "^MGAbnormalityCalcification/$", "^MGAbnormalityCalcification/", "0")
 
 
   * code 1..1

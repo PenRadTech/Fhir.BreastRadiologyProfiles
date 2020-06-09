@@ -5,7 +5,6 @@ Description: """
   Cyst
   """
 
-  //#apply Graph.LinkByName("focus", "^AbnormalityCyst/$", "^AbnormalityCyst/", "0")
 
 
 

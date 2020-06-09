@@ -5,7 +5,6 @@ Description: """
     Associated Feature
     """
 
-  //#apply Graph.LinkByName("focus", "^AssociatedFeature/$", "^AssociatedFeature/", "0")
 
 
   * . ^definition = """

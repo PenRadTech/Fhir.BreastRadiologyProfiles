@@ -5,7 +5,6 @@ Description: """
   LymphNode Abnormality
   """
 
-  //#apply Graph.LinkByName("focus", "^AbnormalityLymphNode/$", "^AbnormalityLymphNode/", "0")
 
 
   * code 1..1

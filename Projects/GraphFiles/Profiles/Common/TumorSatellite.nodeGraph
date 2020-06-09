@@ -19,6 +19,6 @@
       "displayName" : "Derived From/Component",
       "cssClass" : "element",
       "lhsAnnotationText": "^TumorSatellite.derivedFrom:indexTumor",
-      "traceMsg" : "Include/ObservationMacros/Observation.DerivedFrom.Add.minc#7/nProfiles/Common/TumorSatellite.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.DerivedFrom.Add.minc#7/nProfiles/Common/TumorSatellite.mfsh#49/n"
     }
   },

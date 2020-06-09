@@ -5,7 +5,6 @@ Description: """
     Mammography Asymmetry
     """
 
-  //#apply Graph.LinkByName("focus", "^MGAbnormalityAsymmetry/$", "^MGAbnormalityAsymmetry/", "0")
 
 
   * code 1..1
