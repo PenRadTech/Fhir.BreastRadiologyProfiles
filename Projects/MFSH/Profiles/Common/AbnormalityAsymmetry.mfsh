@@ -1,0 +1,43 @@
+
+Profile: AbnormalityAsymmetry
+Parent: Observation
+Title: "Asymmetry"
+Description: """
+    Asymmetry
+    """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityAsymmetry", "")
+  #apply Graph.NodeProfile("Asymmetry Abnormality")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Asymmetry Abnormality Observation</b>
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityAsymmetryObservation
+
+  #apply Observation.Component.Add("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
+  #	 """
+  #  This slice contains the optional component that refine the asymmetry type.
+  #  The value of this component is a codeable concept chosen from the AbnormalityAsymmetryTypeVS valueset.
+  #  """,
+  #   "ObservationComponentSliceCodesCS#abnormalityAsymmetryType")
+  
+  #apply Observation.Component.SetConcept("asymmetryType", "1..1", "AbnormalityAsymmetryTypeVS")
+
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+  
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.ShapeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()

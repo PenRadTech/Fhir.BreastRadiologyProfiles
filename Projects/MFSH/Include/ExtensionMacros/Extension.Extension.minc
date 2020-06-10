@@ -1,6 +1,6 @@
 
 
-#macro Extension.Extension(SliceName, Cardinality, ExtensionName, Short, Definition)
+#macro Extension.ExtensionX(SliceName, Cardinality, ExtensionName, Short, Definition)
   #apply Extension.Configure()
   #apply Graph.LinkByReference("focus", "^%Id%/extension/$", "%ExtensionName$", "1")
   

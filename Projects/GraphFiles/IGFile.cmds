@@ -7,9 +7,23 @@
   },
   {
     "member" : {
-      "groupingId" : "ExtensionResources/BreastBodyLocation",
+      "groupingId" : "CommonResources/AbnormalityArchitecturalDistortion",
       "sort": "",
-      "reference" : "StructureDefinition/ExtensionResources/BreastBodyLocation"
+      "reference" : "StructureDefinition/CommonResources/AbnormalityArchitecturalDistortion"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources/AbnormalityAsymmetry",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityAsymmetry"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources/CalcificationAbnormality",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/CalcificationAbnormality"
     }
   },
   {
@@ -21,9 +35,23 @@
   },
   {
     "member" : {
+      "groupingId" : "CommonResources/AbnormalityDensity",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityDensity"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "AbnormalityResources/AbnormalityDuct",
       "sort": "",
       "reference" : "StructureDefinition/AbnormalityResources/AbnormalityDuct"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources/AbnormalityFatNecrosis",
+      "sort": "",
+      "reference" : "StructureDefinition/CommonResources/AbnormalityFatNecrosis"
     }
   },
   {
@@ -80,41 +108,6 @@
       "groupingId" : "CommonResources/TumorSatellite",
       "sort": "",
       "reference" : "StructureDefinition/CommonResources/TumorSatellite"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "MGResources/AbnormalityArchitecturalDistortion",
-      "sort": "",
-      "reference" : "StructureDefinition/MGResources/AbnormalityArchitecturalDistortion"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "MGResources/AbnormalityAsymmetry",
-      "sort": "",
-      "reference" : "StructureDefinition/MGResources/AbnormalityAsymmetry"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "MGResources/CalcificationAbnormality",
-      "sort": "",
-      "reference" : "StructureDefinition/MGResources/CalcificationAbnormality"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "MGResources/AbnormalityDensity",
-      "sort": "",
-      "reference" : "StructureDefinition/MGResources/AbnormalityDensity"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "MGResources/AbnormalityFatNecrosis",
-      "sort": "",
-      "reference" : "StructureDefinition/MGResources/AbnormalityFatNecrosis"
     }
   },
   {

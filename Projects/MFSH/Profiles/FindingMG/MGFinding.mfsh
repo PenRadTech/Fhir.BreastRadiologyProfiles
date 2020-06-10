@@ -73,7 +73,7 @@ Description: """
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityArchDist", "0..*", "Architectural Distortion", "MGAbnormalityArchitecturalDistortion", 
+  #apply Observation.HasMember.Add("abnormalityArchDist", "0..*", "Architectural Distortion", "AbnormalityArchitecturalDistortion", 
   #  "'Architectural Distortion' reference.",
   #  """
   #  This slice references the target 'Architectural Distortion'.

@@ -1,14 +1,14 @@
-Profile: AbnormalityFibroadenoma
+Profile: AbnormalityAsymmetry
 Parent: Observation
-Title: "Fibroadenoma"
+Title: "Asymmetry"
 Description: """
-  Fibroadenoma
-  """
+    Asymmetry
+    """
 
 
 
   * code 1..1
-  * code = ObservationCodesCS#abnormalityFibroadenomaObservation
+  * code = ObservationCodesCS#abnormalityAsymmetryObservation
 
 
 
@@ -17,26 +17,26 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-  * component contains fibroAdenomaType 0..1
-  * component[fibroAdenomaType] ^short = "Fibroadenoma Abnormality component."
-  * component[fibroAdenomaType] ^comment = """
+  * component contains asymmetryType 1..1
+  * component[asymmetryType] ^short = "Asymmetry Type component."
+  * component[asymmetryType] ^comment = """
     This is one component of a group of components that are part of the observation.
     """
-  * component[fibroAdenomaType] ^definition = """
-This resource and referenced child resources contain
-information about a Fibroadenoma abnormality observation
+  * component[asymmetryType] ^definition = """
+This slice contains the optional component that refine the asymmetry type.
+The value of this component is a codeable concept chosen from the AbnormalityAsymmetryTypeVS valueset.
     """
-  * component[fibroAdenomaType].code 1..1
-  * component[fibroAdenomaType].code ^short = "Fibroadenoma Abnormality component code."
-  * component[fibroAdenomaType].code ^definition = """
-    This code identifies the Fibroadenoma Abnormality component.
+  * component[asymmetryType].code 1..1
+  * component[asymmetryType].code ^short = "Asymmetry Type component code."
+  * component[asymmetryType].code ^definition = """
+    This code identifies the Asymmetry Type component.
 	"""
-  * component[fibroAdenomaType].code = ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType
+  * component[asymmetryType].code = ObservationComponentSliceCodesCS#abnormalityAsymmetryType
+  
 
-
-  * component[fibroAdenomaType].value[x] 1..1
-  * component[fibroAdenomaType].value[x] only CodeableConcept
-  * component[fibroAdenomaType].value[x] from AbnormalityFibroAdenomaTypeVS
+  * component[asymmetryType].value[x] 1..1
+  * component[asymmetryType].value[x] only CodeableConcept
+  * component[asymmetryType].value[x] from AbnormalityAsymmetryTypeVS
 
   * interpretation 0..0
   * referenceRange 0..0
@@ -55,6 +55,7 @@ information about a Fibroadenoma abnormality observation
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
+  
   // Define Observed Changes Slice
   
 
@@ -197,6 +198,28 @@ The value of this component is a codeable concept chosen from the MarginVS value
 
 
 
+  * component contains notPreviouslySeen 0..*
+  * component[notPreviouslySeen] ^short = "Not Previously Seen component."
+  * component[notPreviouslySeen] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[notPreviouslySeen] ^definition = """
+This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
+The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
+    """
+  * component[notPreviouslySeen].code 1..1
+  * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."
+  * component[notPreviouslySeen].code ^definition = """
+    This code identifies the Not Previously Seen component.
+	"""
+  * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
+
+
+  * component[notPreviouslySeen].value[x] 1..1
+  * component[notPreviouslySeen].value[x] only CodeableConcept
+  * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -224,101 +247,27 @@ The value of this component is a codeable concept chosen from the MarginVS value
 
 
 
-  // define calcification distribution slice
-
-  * component contains obsDistribution 0..*
-  * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
-  * component[obsDistribution] ^comment = """
+  * component contains correspondsWith 0..*
+  * component[correspondsWith] ^short = "Abnormality Corresponds With component."
+  * component[correspondsWith] ^comment = """
     This is one component of a group of components that are part of the observation.
     """
-  * component[obsDistribution] ^definition = """
-This slice contains the optional components that describe the distribution of
-a group of abnormalities.
-The value of this component is a codeable concept chosen from the 
-CalcificationDistributionVS valueset.
+  * component[correspondsWith] ^definition = """
+This slice contains the optional components that define what this observation corresponds with.
+The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
     """
-  * component[obsDistribution].code 1..1
-  * component[obsDistribution].code ^short = "Observed distribution of abnormalities component code."
-  * component[obsDistribution].code ^definition = """
-    This code identifies the Observed distribution of abnormalities component.
+  * component[correspondsWith].code 1..1
+  * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
+  * component[correspondsWith].code ^definition = """
+    This code identifies the Abnormality Corresponds With component.
 	"""
-  * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
+  * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
  
 
-  * component[obsDistribution].value[x] 1..1
-  * component[obsDistribution].value[x] only CodeableConcept
-  * component[obsDistribution].value[x] from CalcificationDistributionVS
+  * component[correspondsWith].value[x] 1..1
+  * component[correspondsWith].value[x] only CodeableConcept
+  * component[correspondsWith].value[x] from CorrespondsWithVS
  
-
-  // Define distribution region size.
-
-  * component contains obsDistRegionSize 0..1
-  * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
-  * component[obsDistRegionSize] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[obsDistRegionSize] ^definition = """
-This component slice contains the size of an region inside of which there 
-is a distribution of abnormalities.
-
-There may be one, two, or three values indicating a size of
-one dimension (length), two dimensions (area), or three dimensions (volume).
-
-Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
-
-If the lower bound of the range is set but not the upper bound, 
-then the size is {lower bound} or greater.
-
-If the upper bound of the range is set but not the lower bound, 
-
-then the size is {upper bound} or less.
-    """
-  * component[obsDistRegionSize].code 1..1
-  * component[obsDistRegionSize].code ^short = "Observed size of distribution region. component code."
-  * component[obsDistRegionSize].code ^definition = """
-    This code identifies the Observed size of distribution region. component.
-	"""
-  * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
-	
-  * component[obsDistRegionSize].value[x] 1..1
-  * component[obsDistRegionSize].value[x] only Quantity or Range
-  * component[obsDistRegionSize].valueQuantity units from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.low units from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.high units from UNITSOFLENGTH
-
-
-  // Define distribution region size.
-
-  * component contains obsSize 0..3
-  * component[obsSize] ^short = "Observed size. component."
-  * component[obsSize] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[obsSize] ^definition = """
-  This component slice contains the size of an item observed.
-  There may be one, two, or three values indicating a size of
-  one dimension (length), two dimensions (area), or three dimensions (volume).
-
-  Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
-
-  If the lower bound of the range is set but not the upper bound, 
-  then the size is {lower bound} or greater.
- 
-  If the upper bound of the range is set but not the lower bound,
-  then the size is {upper bound} or less.
-    """
-  * component[obsSize].code 1..1
-  * component[obsSize].code ^short = "Observed size. component code."
-  * component[obsSize].code ^definition = """
-    This code identifies the Observed size. component.
-	"""
-  * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
-	
-  * component[obsSize].value[x] 1..1
-  * component[obsSize].value[x] only Quantity or Range
-  * component[obsSize].valueQuantity units from UNITSOFLENGTH
-  * component[obsSize].valueRange.low units from UNITSOFLENGTH
-  * component[obsSize].valueRange.high units from UNITSOFLENGTH
 
 
   * component contains prevDemBy 0..*
@@ -354,3 +303,7 @@ PreviouslyDemonstratedByVS valueset.
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+  * hasMember contains consistentWith 0..*
+  * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
+  * hasMember[consistentWith] only Reference(ConsistentWith)

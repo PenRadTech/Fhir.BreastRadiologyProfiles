@@ -27,7 +27,7 @@ Description: """
   #  This resource and referenced child resources contain
   #  information about a Fibroadenoma abnormality observation
   #	 """,
-  #  "ObservationComponentSliceCodesCS#mgAbnormalityFibroAdenomaType")
+  #  "ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType")
 
   #apply Observation.Component.SetConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
 

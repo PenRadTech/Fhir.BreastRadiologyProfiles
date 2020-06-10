@@ -1,0 +1,32 @@
+Profile: AbnormalityArchitecturalDistortion
+Parent: Observation
+Title: "Mammography Architectural Distortion"
+Description: """
+    Mammography Architectural Distortion
+    """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityArchitecturalDistortion", "")
+  #apply Graph.NodeProfile("Architectural Distortion")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # Architectural Distortion Observation
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityArchitecturalDistortionObservation
+
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+  
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.ShapeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()

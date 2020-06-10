@@ -52,11 +52,15 @@ Description: """
   # """)
 
 
-  #apply Graph.LinkByReference("focus", "^%Id%/extension/$", "%BodyDistanceFromExtension$", "1")
-  
-  * extension contains BodyDistanceFromExtension named distanceFromLandmark 0..1
-  * extension[distanceFromLandmark] ^short = "distanceFromLandmark extension."
-  * extension[distanceFromLandmark] ^definition =
-    """
-    This extension slice contains the distanceFromLandmark extension.
-	"""
+  #apply Extension.CodeableConcept("landMark", "1..1", "BreastLocationQuadrantVS", "Body landmark. Origin of distance measurement.",
+  #  """
+  #  Body landmark which defines the origin of the measurement.
+  #
+  #  Currently the value set this is bound to does not contain the required breast 
+  #  landmarks like nipple.  
+  #  """)
+
+  #apply Extension.Quantity("distanceFromLandMark", "1..1", "UNITSOFLENGTH", "Distance from landmark", 
+  #  """
+  #	 Distance from body landmark to body location
+  #  """)

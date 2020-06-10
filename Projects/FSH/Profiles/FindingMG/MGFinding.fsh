@@ -78,7 +78,7 @@ Description: """
 
   * hasMember contains abnormalityArchDist 0..*
   * hasMember[abnormalityArchDist] ^short = "'Architectural Distortion' reference. hasMember."
-  * hasMember[abnormalityArchDist] only Reference(MGAbnormalityArchitecturalDistortion)
+  * hasMember[abnormalityArchDist] only Reference(AbnormalityArchitecturalDistortion)
 
 
 

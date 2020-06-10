@@ -89,8 +89,17 @@
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^BreastBodyLocationExtension/extension/$",
-      "item" : "%BodyDistanceFromExtension$",
+      "item" : "BreastBodyLocationExtension.extension:landMark",
       "depth": 1,
-      "traceMsg" : "Extensions/BreastBodyLocationExtension.mfsh#55/n"
+      "traceMsg" : "Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#55/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:distanceFromLandMark",
+      "depth": 1,
+      "traceMsg" : "Include/ExtensionMacros/Extension.Quantity.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#63/n"
     }
   },

@@ -1,0 +1,38 @@
+Profile: AbnormalityFatNecrosis
+Parent: Observation
+Title: "Mammography Fat Necrosis"
+Description: """
+    Mammography Fat Necrosis
+    """
+
+  #apply IGGroupMemberProfile("CommonResources/AbnormalityFatNecrosis", "")
+  #apply Graph.NodeProfile("Fat Necrosis")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Fat Necrosis Abnormality Observation</b>
+  # </p>
+  # <p>
+  # [PR]
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityFatNecrosisObservation
+
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.ShapeFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
+ 
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()

@@ -1,0 +1,43 @@
+Profile: AbnormalityCalcification
+Parent: Observation
+Title: "Mammography Calcification"
+Description: """
+    Mammography Calcification
+    """
+
+  #apply IGGroupMemberProfile("CommonResources/CalcificationAbnormality", "")
+  #apply Graph.NodeProfile("Calcification")
+
+  #apply IntroDocGraph("""
+  # <p>
+  # <b>Calcification Abnormality Observation</b>
+  # </p>
+  #""")
+
+  * code 1..1
+  * code = ObservationCodesCS#abnormalityCalcificationObservation
+  
+  #apply Observation.Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
+  #	 """
+  #  This slice contains the optional component that refines the calcification type.
+  #  The value of this component is a codeable concept chosen from the MammoCalcificationTypeVS valueset.
+  #  """,
+  #  "ObservationComponentSliceCodesCS#calcificationType")
+  
+  #apply Observation.Component.SetConcept("calcificationType", "1..1", "CalcificationTypeVS")
+
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+  
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()
