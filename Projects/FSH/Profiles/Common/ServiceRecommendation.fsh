@@ -19,4 +19,4 @@ Description: """
 	"""
 
   * code 1..1
-  * code from RecommendationsVS  (extensible)
+  * code from ServiceRecommendationsVS  (extensible)

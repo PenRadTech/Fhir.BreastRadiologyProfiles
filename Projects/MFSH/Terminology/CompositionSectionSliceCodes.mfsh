@@ -1,4 +1,4 @@
-CodeSystem: CompositionSectionSliceCodes
+CodeSystem: CompositionSectionSliceCodesCS
 Title: "Composition Section Slice Codes CodeSystem"
 Description: "Composition Section Slice Codes code system"
 //+ Codes
