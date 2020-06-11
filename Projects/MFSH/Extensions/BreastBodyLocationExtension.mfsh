@@ -52,7 +52,7 @@ Description: """
   # """)
 
 
-  #apply Extension.CodeableConcept("landMark", "1..1", "BreastLocationQuadrantVS", "Body landmark. Origin of distance measurement.",
+  #apply Extension.CodeableConcept("landMark", "1..1", "BreastLandmarkVS", "Body landmark. Origin of distance measurement.",
   #  """
   #  Body landmark which defines the origin of the measurement.
   #

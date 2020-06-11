@@ -1,13 +1,13 @@
-ValueSet:  ServiceRecommendationVS
-Title: "ServiceRecommendation ValueSet"
-Description:  "ServiceRecommendation Value Set"
+ValueSet:  ServiceRecommendationsVS
+Title: "ServiceRecommendations ValueSet"
+Description:  "ServiceRecommendations Value Set"
 //+ Codes
-  * codes from system ServiceRecommendationCS
+  * codes from system ServiceRecommendationsCS
 //- Codes
 
-CodeSystem:  ServiceRecommendationCS
-Title: "ServiceRecommendation CodeSystem"
-Description:  "ServiceRecommendation CodeSystem"
+CodeSystem:  ServiceRecommendationsCS
+Title: "ServiceRecommendations CodeSystem"
+Description:  "ServiceRecommendations CodeSystem"
 //+ Codes
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) +
   * #3DImaging "3D Imaging"

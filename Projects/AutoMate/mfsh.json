@@ -7,15 +7,15 @@
 	],
 	"cleanDirs": [
 		{
-			"path": "..\\build\\input\\pagecontent",
+			"path": "build\\input\\pagecontent",
 			"filter": "StructureDefinition-*-intro.xml"
 		},
 		{
-			"path": "fsh",
+			"path": "FSH",
 			"filter": "*.fsh"
 		},
 		{
-			"path": "..\\GraphFiles",
+			"path": "GraphFiles",
 			"filter": "*.nodeGraph"
 		}
 	],

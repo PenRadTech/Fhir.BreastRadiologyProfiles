@@ -11,7 +11,6 @@ Description: """
 
   * . ^short = "Breast Body Location extension"
 
-  //$#apply Graph.LinkByName("focus", "^BreastBodyLocationExtension/extension/$", "^BreastBodyLocationExtension/extension:", "0")
   
   * extension contains laterality 0..1
   * extension[laterality] ^short = "Body side"
@@ -80,7 +79,7 @@ Description: """
 	"""
   * extension[landMark].value[x] 1..1
   * extension[landMark].value[x] only CodeableConcept
-  * extension[landMark].value[x] from BreastLocationQuadrantVS
+  * extension[landMark].value[x] from BreastLandmarkVS
 
   
   * extension contains distanceFromLandMark 1..1
