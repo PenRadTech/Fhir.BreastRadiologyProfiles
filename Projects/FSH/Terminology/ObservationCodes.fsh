@@ -2,7 +2,7 @@ CodeSystem: ObservationCodesCS
 Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
 //+ Codes
-  * #mgFindingObservationObservation "MG Finding observation"
+  * #mgFindingObservation "MG Finding observation"
   * #abnormalityCyst "Abnormality Cyst observation"
   * #associatedFeaturesObservation "Associated Features observation"
   * #abnormalityArchitecturalDistortionObservation "Abnormality Architectural Distortion observation"

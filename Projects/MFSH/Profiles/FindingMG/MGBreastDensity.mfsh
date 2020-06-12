@@ -23,4 +23,4 @@ Description: """
 
   * value[x] only CodeableConcept
   * value[x] 1..1
-  * value[x] = ObservationCodesCS#MGBreastDensityVS
+  * value[x] = ObservationCodesCS#mgBreastDensityObservation

@@ -23,16 +23,16 @@
 				<a href="StructureDefinition-BreastRadiologyDocument.html"> Breast Radiology Document</a>
 			</li>
 			<li>
-				<a href="mgfinding.html">Mammography Finding</a>
+				<a href="StructureDefinition-MGFinding.html">Mammography Finding</a>
 			</li>
 			<li>
-				<a href="usfinding.html">Ultra-Sound Finding</a>
+				<a href="StructureDefinition-USFinding.html">Ultra-Sound Finding</a>
 			</li>
 			<li>
-				<a href="mrifinding.html">MRI Finding</a>
+				<a href="StructureDefinition-MRIFinding.html">MRI Finding</a>
 			</li>
 			<li>
-				<a href="nmfinding.html">Nuclear Medicine Finding</a>
+				<a href="StructureDefinition-NMFinding.html">Nuclear Medicine Finding</a>
 			</li>
 			<li>
 				<a href="fragments.html">Resource Fragments</a>

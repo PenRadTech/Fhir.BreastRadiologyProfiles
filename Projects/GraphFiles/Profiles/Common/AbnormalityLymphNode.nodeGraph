@@ -1,0 +1,405 @@
+{
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode"
+      },
+      "displayName" : "Cyst Abnormality",
+      "cssClass" : "profile",
+      "traceMsg" : "Profiles/Common/AbnormalityLymphNode.mfsh#10/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:lymphNodeType/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:lymphNodeType"
+      },
+      "displayName" : "Lymph Node Abnormality Type",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:lymphNodeType",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/$",
+      "target" : "^AbnormalityLymphNode/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component/$",
+      "target" : "^AbnormalityLymphNode/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:lymphNodeType/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AbnormalityLymphNode.mfsh#32/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#10/nProfiles/Common/AbnormalityLymphNode.mfsh#36/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#11/nProfiles/Common/AbnormalityLymphNode.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/$",
+      "target" : "^AbnormalityLymphNode/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/Common/AbnormalityLymphNode.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/bodySite/$",
+      "target" : "^AbnormalityLymphNode/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/Common/AbnormalityLymphNode.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/Common/AbnormalityLymphNode.mfsh#36/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:obsChanges/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:obsChanges"
+      },
+      "displayName" : "Observed Changes",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:obsChanges",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#37/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:obsChanges/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#16/nProfiles/Common/AbnormalityLymphNode.mfsh#37/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:biRadsAssessmentCategory/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:biRadsAssessmentCategory"
+      },
+      "displayName" : "BiRads",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:biRadsAssessmentCategory",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#39/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:biRadsAssessmentCategory/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#16/nProfiles/Common/AbnormalityLymphNode.mfsh#39/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:orientation/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:orientation"
+      },
+      "displayName" : "Orientation",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:orientation",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#14/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:orientation/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#21/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:shape/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:shape"
+      },
+      "displayName" : "Shape",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:shape",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#25/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:shape/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#32/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:margin/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:margin"
+      },
+      "displayName" : "Margin",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:margin",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#35/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:margin/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#42/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#45/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:mgBreastDensity/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#53/nProfiles/Common/AbnormalityLymphNode.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:observedCount/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:observedCount"
+      },
+      "displayName" : "Observed Count",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:observedCount",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#10/nProfiles/Common/AbnormalityLymphNode.mfsh#41/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:obsDistribution/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:obsDistribution"
+      },
+      "displayName" : "Observed Distribution",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:obsDistribution",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#12/nProfiles/Common/AbnormalityLymphNode.mfsh#42/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:obsDistribution/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#21/nProfiles/Common/AbnormalityLymphNode.mfsh#42/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:obsDistRegionSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:obsDistRegionSize"
+      },
+      "displayName" : "Observed Distribution Region Size",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:obsDistRegionSize",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#25/nProfiles/Common/AbnormalityLymphNode.mfsh#42/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:obsSize/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:obsSize"
+      },
+      "displayName" : "Observed Size",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:obsSize",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#13/nProfiles/Common/AbnormalityLymphNode.mfsh#43/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:notPreviouslySeen/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:notPreviouslySeen"
+      },
+      "displayName" : "Not Previously Seen",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:notPreviouslySeen",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#7/nProfiles/Common/AbnormalityLymphNode.mfsh#44/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:notPreviouslySeen/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#14/nProfiles/Common/AbnormalityLymphNode.mfsh#44/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:correspondsWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:correspondsWith"
+      },
+      "displayName" : "Corresponds With",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:correspondsWith",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#45/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:correspondsWith/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityLymphNode.mfsh#45/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/component:prevDemBy/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "component:prevDemBy"
+      },
+      "displayName" : "Previously/Demonstrated by Changes",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.component:prevDemBy",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#10/nProfiles/Common/AbnormalityLymphNode.mfsh#46/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/component:prevDemBy/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#19/nProfiles/Common/AbnormalityLymphNode.mfsh#46/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/hasMember/$",
+      "item" : "AbnormalityLymphNode.hasMember:associatedFeature",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityLymphNode.mfsh#48/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityLymphNode/hasMember/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
+        "item" : "hasMember"
+      },
+      "displayName" : "HasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityLymphNode.hasMember",
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityLymphNode.mfsh#48/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/$",
+      "target" : "^AbnormalityLymphNode/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#7/nProfiles/Common/AbnormalityLymphNode.mfsh#48/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityLymphNode/hasMember/$",
+      "item" : "AbnormalityLymphNode.hasMember:tumorSatellite",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#9/nProfiles/Common/AbnormalityLymphNode.mfsh#49/n"
+    }
+  },

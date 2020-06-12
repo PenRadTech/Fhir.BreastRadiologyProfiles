@@ -14,6 +14,7 @@ Description: """
   * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
   * ^publisher = "Hl7-Clinical Interoperability Council"
   * ^version = "0.0.2"
+  * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
 
@@ -41,7 +42,7 @@ Description: """
   """
   * section[report] 1..1
   * section[report] ^short = "Report Section."
-  * section[report].code = CompositionSectionSliceCodesCS#sectionReport
+  * section[report].code = CompositionSectionSliceCodesCS#report
   * section[report].title = "Breast Radiology Report"
 
   * section[report].entry 1..1
@@ -55,7 +56,7 @@ Description: """
     """
   * section[impressions] 0..1
   * section[impressions] ^short = "Clinical Impressions Section."
-  * section[impressions].code = CompositionSectionSliceCodesCS#sectionReport
+  * section[impressions].code = CompositionSectionSliceCodesCS#report
   * section[impressions].title = "Clinical Impressions"
 
 

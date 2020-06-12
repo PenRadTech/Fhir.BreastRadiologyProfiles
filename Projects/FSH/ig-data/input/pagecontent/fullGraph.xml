@@ -7,8 +7,8 @@
       Click on any of the elements of the graph to go to a section describing that element.
     </p>
   <p>
-    <object data="TotalProfile.svg" type="image/svg+xml">
-      <img src="TotalProfile.svg" alt="Profile Overview" />
+    <object data="TotalGraph.svg" type="image/svg+xml">
+      <img src="TotalGraph.svg" alt="Profile Overview" />
     </object>
   </p>
 </div>

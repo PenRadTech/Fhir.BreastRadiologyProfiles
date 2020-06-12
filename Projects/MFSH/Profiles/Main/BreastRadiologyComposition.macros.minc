@@ -22,7 +22,7 @@
   """
   * section[SliceName] 1..1
   * section[SliceName] ^short = "Report Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#sectionReport
+  * section[SliceName].code = CompositionSectionSliceCodesCS#report
   * section[SliceName].title = "Breast Radiology Report"
 
   * section[SliceName].entry 1..1
@@ -44,7 +44,7 @@
     """
   * section[SliceName] 0..1
   * section[SliceName] ^short = "Clinical Impressions Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#sectionReport
+  * section[SliceName].code = CompositionSectionSliceCodesCS#report
   * section[SliceName].title = "Clinical Impressions"
 
 

@@ -31,7 +31,7 @@ information about a duct abnormality observation
   * component[ductType].code ^definition = """
     This code identifies the Duct Abnormality component.
 	"""
-  * component[ductType].code = ObservationComponentSliceCodesCS#abnormalityDuctObservation
+  * component[ductType].code = ObservationComponentSliceCodesCS#abnormalityDuctType
 
 
   * component[ductType].value[x] 1..1

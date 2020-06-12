@@ -27,7 +27,7 @@ Description: """
   #  This resource and referenced child resources contain
   #  information about a duct abnormality observation
   #	 """,
-  #  "ObservationComponentSliceCodesCS#abnormalityDuctObservation")
+  #  "ObservationComponentSliceCodesCS#abnormalityDuctType")
 
   #apply Observation.Component.SetConcept("ductType", "1..1", "AbnormalityDuctTypeVS")
 

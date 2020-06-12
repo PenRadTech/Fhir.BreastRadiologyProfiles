@@ -13,6 +13,7 @@ Description: """
   * ^status = http://hl7.org/fhir/ValueSet/publication-status#draft
   * ^publisher = "Hl7-Clinical Interoperability Council"
   * ^version = "0.0.2"
+  * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
