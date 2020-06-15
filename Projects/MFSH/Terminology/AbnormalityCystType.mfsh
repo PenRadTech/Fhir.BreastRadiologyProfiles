@@ -5,7 +5,7 @@ Description: "Cyst abnormality type Value Set."
   
   
 CodeSystem: AbnormalityCystTypeCS
-Title: "Cyst Type CodeSystem"
+Title: "Cyst Abnormality Type CodeSystem"
 Description: "Cyst abnormality type CodeSystem."
 //+ Codes
   * #Cyst "Cyst"

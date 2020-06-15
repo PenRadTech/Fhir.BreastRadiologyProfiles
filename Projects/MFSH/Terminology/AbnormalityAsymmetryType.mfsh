@@ -1,10 +1,10 @@
 ValueSet:  AbnormalityAsymmetryTypeVS
-Title: "Abnormality Asymmetry Type ValueSet"
+Title: "Asymmetry Abnormality Type ValueSet"
 Description:  "Abnormality Asymmetry Type Value Set"
   * codes from system AbnormalityAsymmetryTypeCS
   
 CodeSystem: AbnormalityAsymmetryTypeCS
-Title: "Asymmetry Type CodeSystem"
+Title: "Asymmetry Abnormality Type CodeSystem"
 Description: "Asymmetry abnormality type code system."
 //+ Codes
   * #Asymmetry "Asymmetry"

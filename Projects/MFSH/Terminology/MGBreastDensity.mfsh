@@ -1,6 +1,6 @@
 ValueSet:  MGBreastDensityVS
-Title: "MGBreastDensity ValueSet"
-Description:  "MGBreastDensity Value Set"
+Title: "Mammography BreastDensity ValueSet"
+Description:  "Mammography BreastDensity Value Set"
 //+ Codes
   * codes from system MGBreastDensityCS
 //- Codes

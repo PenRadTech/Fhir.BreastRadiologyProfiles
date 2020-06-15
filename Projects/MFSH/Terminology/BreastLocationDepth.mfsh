@@ -1,6 +1,6 @@
 ValueSet: BreastLocationDepthVS
-Title: "BreastLocationDepth ValueSet"
-Description:  "BreastLocationDepth Value Set"
+Title: "Breast Location Depth ValueSet"
+Description:  "Breast body location depth Value Set"
   * codes from system BreastLocationDepthCS
 
 
