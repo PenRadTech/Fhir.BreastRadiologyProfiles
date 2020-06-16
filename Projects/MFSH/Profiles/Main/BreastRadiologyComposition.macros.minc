@@ -10,7 +10,7 @@
 
 
   /*
-   Compositon section for Breast Radiology Report.
+   Composition section for Breast Radiology Report.
    */
 #macro ReportSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Report Section")
@@ -35,7 +35,7 @@
 
 
   /*
-   Compositon section for Impressions.
+   Composition section for Impressions.
    */
 #macro ImpressionsSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Impressions Section")
@@ -62,7 +62,7 @@
 
 
   /*
-   Compositon section for Left Breast Findings.
+   Composition section for Left Breast Findings.
    */
 #macro FindingsLeftBreastSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Findings/Left Breast/Section")
@@ -89,7 +89,7 @@
 
 
   /*
-   Compositon section for Right Breast Findings.
+   Composition section for Right Breast Findings.
    */
 #macro FindingsRightBreastSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Findings/Right Breast/Section")
@@ -116,7 +116,7 @@
 
 
   /*
-   Compositon section for Related Resources.
+   Composition section for Related Resources.
    */
 #macro RelatedResourcesSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Related Resources/Section")
@@ -142,7 +142,7 @@
 
 
   /*
-   Compositon section for recommendations.
+   Composition section for recommendations.
    */
 #macro RecommendationsSection(SliceName) 
   #apply Graph.NodeElement("section:SliceName", "Recommendations/Section")
