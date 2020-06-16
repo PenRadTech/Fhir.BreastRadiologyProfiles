@@ -4,7 +4,7 @@
 ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BiRadsAssessmentCategoryCS
 
 

@@ -1,13 +1,13 @@
 ValueSet: AbnormalityCystTypeVS
-Title: "Cyst Abnormality Type Value Set"
-Description: "Cyst abnormality type Value Set."
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+Title: "Cyst Type Value Set"
+Description: "Cyst type Value Set."
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system AbnormalityCystTypeCS
   
   
 CodeSystem: AbnormalityCystTypeCS
-Title: "Cyst Abnormality Type CodeSystem"
-Description: "Cyst abnormality type CodeSystem."
+Title: "Cyst Type CodeSystem"
+Description: "Cyst type CodeSystem."
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Cyst "Cyst"
   * #CystComplex "Cyst complex"

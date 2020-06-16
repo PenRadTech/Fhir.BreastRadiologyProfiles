@@ -1,7 +1,7 @@
 ValueSet:  MarginVS
 Title: "Margin ValueSet"
 Description:  "Margin Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system MarginCS
 
 

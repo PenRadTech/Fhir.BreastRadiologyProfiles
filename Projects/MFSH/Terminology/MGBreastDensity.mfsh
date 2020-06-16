@@ -1,7 +1,7 @@
 ValueSet:  MGBreastDensityVS
 Title: "Mammography BreastDensity ValueSet"
 Description:  "Mammography BreastDensity Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system MGBreastDensityCS
 
 

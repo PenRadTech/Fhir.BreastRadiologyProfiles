@@ -1,12 +1,12 @@
 ValueSet:  AbnormalityDensityTypeVS
-Title: "Density Abnormality Type ValueSet"
-Description:  "Abnormality Density Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+Title: "Density Type ValueSet"
+Description:  "Density Type Value Set"
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system AbnormalityDensityTypeCS
 
 CodeSystem: AbnormalityDensityTypeCS
-Title: "Density Abnormality Type CodeSystem"
-Description: "Density abnormality refinement types code system."
+Title: "Density Type CodeSystem"
+Description: "Density refinement types code system."
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Density "Density"
   * #DensityFocalAsymmetry "Density focal asymmetry"

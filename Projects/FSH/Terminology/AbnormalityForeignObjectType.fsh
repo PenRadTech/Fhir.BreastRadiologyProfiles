@@ -1,11 +1,11 @@
 ValueSet:  AbnormalityForeignObjectTypeVS
-Title: "Abnormality Foreign Object Type ValueSet"
-Description:  "Abnormality Foreign Object Type Value Set"
+Title: "Foreign Object Type ValueSet"
+Description:  "Foreign Object Type Value Set"
   * codes from system AbnormalityForeignObjectTypeCS
 
 CodeSystem:  AbnormalityForeignObjectTypeCS
-Title: "Abnormality Foreign Object Type CodeSystem"
-Description:  "Abnormality Foreign Object Type CodeSystem"
+Title: "Foreign Object Type CodeSystem"
+Description:  "Foreign Object Type CodeSystem"
   // .SnomedDescription ClinicalFinding | 283574001 | Pellet wound of breast (Disorder) | [0/0] | S21.039?
   * #BBPellet "BB pellet"
 

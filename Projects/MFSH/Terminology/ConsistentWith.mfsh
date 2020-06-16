@@ -4,7 +4,7 @@
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system ConsistentWithCS
 
 

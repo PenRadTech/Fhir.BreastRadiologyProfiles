@@ -5,7 +5,7 @@ Description: """
     Consistent With
     """
 
-  #apply IGGroupMemberProfile("CommonResources/ConsistentWith", "%Title%")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("ConsistentWith")
 
   #apply IntroDocGraph("""

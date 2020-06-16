@@ -3,48 +3,54 @@
 #apply IGGroup("BaseResources", 
 # "Main Resources", 
 # """
-# This section contains the main top level resources that are used in a Breast Radiology Report.
+# This section contains the main top level resources that are defined in this Breast Radiology Implementation Guide.
 # """)
 
 #apply IGGroup("CommonResources", 
 # "Common Resources", 
 # """
-# This section contains resources that are commonly used throughout a Breast Radiology Report.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide.
 # """)
 
-#apply IGGroup("CommonCodesVS", 
-# "Common ValueSets", 
+#apply IGGroup("ExtensionResources", 
+# "Extension Resources", 
 # """
-# This section contains value sets that are commonly used throughout a Breast Radiology Report.
-# """)
-
-#apply IGGroup("CommonCodesCS", 
-# "Common CodeSystems", 
-# """
-# This section contains code systems that are commonly used throughout a Breast Radiology Report.
+# This section contains extension resources that are defined in this Breast Radiology Implementation Guide.
 # """)
 
 #apply IGGroup("MGResources", 
 # "Mammography Resources", 
 # """
-# This section contains resources used specifically in a Mammography exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Mammography exam.
 # """)
 
 
 #apply IGGroup("MRIResources", 
 # "MRI Resources", 
 # """
-# This section contains resources used specifically in a MRI exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an MRI exam.
 # """)
 
 #apply IGGroup("USResources", 
 # "Ultra-Sound Resources", 
 # """
-# This section contains resources used specifically in a Ultra-Sound exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Ultra-Sound exam.
 # """)
 
 #apply IGGroup("NMResources", 
 # "Nuclear Medicine Resources", 
 # """
-# This section contains resources used specifically in a Nuclear Medicine exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Nuclear Medicine exam.
+# """)
+
+#apply IGGroup("CommonCodesVS", 
+# "Common ValueSets", 
+# """
+# This section contains value sets that are defined in this Breast Radiology Implementation Guide.
+# """)
+
+#apply IGGroup("CommonCodesCS", 
+# "Common CodeSystems", 
+# """
+# This section contains code systems that are defined in this Breast Radiology Implementation Guide.
 # """)

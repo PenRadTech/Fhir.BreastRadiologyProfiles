@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
       },
-      "displayName" : "US Findings",
+      "displayName" : "Ultra-Sound Findings",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/FindingUS/USFinding.mfsh#9/n"
     }

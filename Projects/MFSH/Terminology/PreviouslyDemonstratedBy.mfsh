@@ -1,7 +1,7 @@
 ValueSet:  PreviouslyDemonstratedByVS
 Title: "PreviouslyDemonstratedBy ValueSet"
 Description:  "PreviouslyDemonstratedBy Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system PreviouslyDemonstratedByCS
 
 

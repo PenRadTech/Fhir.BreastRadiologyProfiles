@@ -91,7 +91,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonResources/ConsistentWith",
+      "groupingId" : "CommonResources",
       "sort": "Consistent With",
       "reference" : "StructureDefinition/ConsistentWith"
     }
@@ -106,7 +106,7 @@
   {
     "member" : {
       "groupingId" : "CommonResources",
-      "sort": "",
+      "sort": "Tumor Satellite",
       "reference" : "StructureDefinition/TumorSatellite"
     }
   },
@@ -134,13 +134,13 @@
   {
     "member" : {
       "groupingId" : "NMResources",
-      "sort": "",
+      "sort": "Nuclear Medicine Finding",
       "reference" : "StructureDefinition/NMFinding"
     }
   },
   {
     "member" : {
-      "groupingId" : "USFindings",
+      "groupingId" : "USResources",
       "sort": "Ultra-Sound Finding",
       "reference" : "StructureDefinition/USFinding"
     }
@@ -198,173 +198,180 @@
     "group" : {
       "id" : "BaseResources",
       "name" : "Main Resources",
-      "description" : "This section contains the main top level resources that are used in a Breast Radiology Report."
+      "description" : "This section contains the main top level resources that are defined in this Breast Radiology Implementation Guide."
     }
   },
   {
     "group" : {
       "id" : "CommonResources",
       "name" : "Common Resources",
-      "description" : "This section contains resources that are commonly used throughout a Breast Radiology Report."
+      "description" : "This section contains resources that are defined in this Breast Radiology Implementation Guide."
     }
   },
   {
     "group" : {
-      "id" : "CommonCodesVS",
-      "name" : "Common ValueSets",
-      "description" : "This section contains value sets that are commonly used throughout a Breast Radiology Report."
-    }
-  },
-  {
-    "group" : {
-      "id" : "CommonCodesCS",
-      "name" : "Common CodeSystems",
-      "description" : "This section contains code systems that are commonly used throughout a Breast Radiology Report."
+      "id" : "ExtensionResources",
+      "name" : "Extension Resources",
+      "description" : "This section contains extension resources that are defined in this Breast Radiology Implementation Guide."
     }
   },
   {
     "group" : {
       "id" : "MGResources",
       "name" : "Mammography Resources",
-      "description" : "This section contains resources used specifically in a Mammography exam."
+      "description" : "This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Mammography exam."
     }
   },
   {
     "group" : {
       "id" : "MRIResources",
       "name" : "MRI Resources",
-      "description" : "This section contains resources used specifically in a MRI exam."
+      "description" : "This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an MRI exam."
     }
   },
   {
     "group" : {
       "id" : "USResources",
       "name" : "Ultra-Sound Resources",
-      "description" : "This section contains resources used specifically in a Ultra-Sound exam."
+      "description" : "This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Ultra-Sound exam."
     }
   },
   {
     "group" : {
       "id" : "NMResources",
       "name" : "Nuclear Medicine Resources",
-      "description" : "This section contains resources used specifically in a Nuclear Medicine exam."
+      "description" : "This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Nuclear Medicine exam."
+    }
+  },
+  {
+    "group" : {
+      "id" : "CommonCodesVS",
+      "name" : "Common ValueSets",
+      "description" : "This section contains value sets that are defined in this Breast Radiology Implementation Guide."
+    }
+  },
+  {
+    "group" : {
+      "id" : "CommonCodesCS",
+      "name" : "Common CodeSystems",
+      "description" : "This section contains code systems that are defined in this Breast Radiology Implementation Guide."
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Asymmetry Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Asymmetry Type ValueSet",
       "reference" : "ValueSet/AbnormalityAsymmetryTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Asymmetry Abnormality Type CodeSystem",
+      "sort": "Asymmetry Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityAsymmetryTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Cyst Abnormality Type Value Set",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Cyst Type Value Set",
       "reference" : "ValueSet/AbnormalityCystTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Cyst Abnormality Type CodeSystem",
+      "sort": "Cyst Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityCystTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Density Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Density Type ValueSet",
       "reference" : "ValueSet/AbnormalityDensityTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Density Abnormality Type CodeSystem",
+      "sort": "Density Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityDensityTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Duct Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Duct Type ValueSet",
       "reference" : "ValueSet/AbnormalityDuctTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Duct Abnormality Type CodeSystem",
+      "sort": "Duct Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityDuctTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "FibroAdenoma Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "FibroAdenoma  Type ValueSet",
       "reference" : "ValueSet/AbnormalityFibroAdenomaTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Fibroadenoma Abnormality Type CodeSystem",
+      "sort": "Fibroadenoma Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityFibroadenomaTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Abnormality Foreign Object Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Foreign Object Type ValueSet",
       "reference" : "ValueSet/AbnormalityForeignObjectTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Abnormality Foreign Object Type CodeSystem",
+      "sort": "Foreign Object Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityForeignObjectTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Lymph Node Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Lymph Node Type ValueSet",
       "reference" : "ValueSet/AbnormalityLymphNodeTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Lymph Node Abnormality Type CodeSystem",
+      "sort": "Lymph Node Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityLymphNodeTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
-      "sort": "Mass Abnormality Type ValueSet",
+      "groupingId" : "CommonCodesVS",
+      "sort": "Mass Type ValueSet",
       "reference" : "ValueSet/AbnormalityMassTypeVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "Mass Abnormality Type CodeSystem",
+      "sort": "Mass Type CodeSystem",
       "reference" : "CodeSystem/AbnormalityMassTypeCS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Associated Feature ValueSet",
       "reference" : "ValueSet/AssociatedFeatureVS"
     }
@@ -378,7 +385,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BiRads Assessment Category ValueSet",
       "reference" : "ValueSet/BiRadsAssessmentCategoryVS"
     }
@@ -392,7 +399,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastBodyLocationClockPositions ValueSet",
       "reference" : "ValueSet/BreastBodyLocationClockPositionsVS"
     }
@@ -406,7 +413,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastBodyLocationDepth ValueSet",
       "reference" : "ValueSet/BreastBodyLocationDepthVS"
     }
@@ -420,7 +427,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastBodyLocationQuadrants ValueSet",
       "reference" : "ValueSet/BreastBodyLocationQuadrantsVS"
     }
@@ -434,7 +441,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastBodyLocationRegions ValueSet",
       "reference" : "ValueSet/BreastBodyLocationRegionsVS"
     }
@@ -448,7 +455,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastLandmark ValueSet",
       "reference" : "ValueSet/BreastLandmarkVS"
     }
@@ -462,7 +469,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "BreastLocationClock ValueSet",
       "reference" : "ValueSet/BreastLocationClockVS"
     }
@@ -476,7 +483,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Breast Location Depth ValueSet",
       "reference" : "ValueSet/BreastLocationDepthVS"
     }
@@ -490,7 +497,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Breast Location Quadrant ValueSet",
       "reference" : "ValueSet/BreastLocationQuadrantVS"
     }
@@ -504,7 +511,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Breast Location Region ValueSet",
       "reference" : "ValueSet/BreastLocationRegionVS"
     }
@@ -518,7 +525,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "CalcificationDistribution ValueSet",
       "reference" : "ValueSet/CalcificationDistributionVS"
     }
@@ -532,7 +539,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Calcification Type Value Set",
       "reference" : "ValueSet/CalcificationTypeVS"
     }
@@ -553,7 +560,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "ConsistentWith ValueSet",
       "reference" : "ValueSet/ConsistentWithVS"
     }
@@ -567,7 +574,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "ConsistentWith Qualifier ValueSet",
       "reference" : "ValueSet/ConsistentWithQualifierVS"
     }
@@ -581,7 +588,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "CorrespondsWith ValueSet",
       "reference" : "ValueSet/CorrespondsWithVS"
     }
@@ -602,14 +609,14 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Laterality ValueSet",
       "reference" : "ValueSet/LateralityVS"
     }
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Margin ValueSet",
       "reference" : "ValueSet/MarginVS"
     }
@@ -630,7 +637,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Mammography BreastDensity ValueSet",
       "reference" : "ValueSet/MGBreastDensityVS"
     }
@@ -644,7 +651,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "NotPreviouslySeen ValueSet",
       "reference" : "ValueSet/NotPreviouslySeenVS"
     }
@@ -672,7 +679,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "ObservedChanges ValueSet",
       "reference" : "ValueSet/ObservedChangesVS"
     }
@@ -686,7 +693,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Orientation ValueSet",
       "reference" : "ValueSet/OrientationVS"
     }
@@ -700,7 +707,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "PreviouslyDemonstratedBy ValueSet",
       "reference" : "ValueSet/PreviouslyDemonstratedByVS"
     }
@@ -714,7 +721,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "ServiceRecommendations ValueSet",
       "reference" : "ValueSet/ServiceRecommendationsVS"
     }
@@ -728,7 +735,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeValues",
+      "groupingId" : "CommonCodesVS",
       "sort": "Shape ValueSet",
       "reference" : "ValueSet/ShapeVS"
     }
@@ -742,7 +749,7 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonCodeVS",
+      "groupingId" : "CommonCodesVS",
       "sort": "Units of length value set",
       "reference" : "ValueSet/UnitsOfLengthVS"
     }

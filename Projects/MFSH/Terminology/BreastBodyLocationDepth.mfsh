@@ -1,7 +1,7 @@
 ValueSet:  BreastBodyLocationDepthVS
 Title: "BreastBodyLocationDepth ValueSet"
 Description:  "BreastBodyLocationDepth Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationDepthCS
 
 

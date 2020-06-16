@@ -1,7 +1,7 @@
 ValueSet:  BreastBodyLocationRegionsVS
 Title: "BreastBodyLocationRegions ValueSet"
 Description:  "BreastBodyLocationRegions Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationRegionsCS
 
 

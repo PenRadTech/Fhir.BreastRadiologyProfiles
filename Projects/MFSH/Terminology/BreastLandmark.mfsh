@@ -1,7 +1,7 @@
 ValueSet:  BreastLandmarkVS
 Title: "BreastLandmark ValueSet"
 Description:  "BreastLandmark Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastLandmarkCS
 
 CodeSystem:  BreastLandmarkCS

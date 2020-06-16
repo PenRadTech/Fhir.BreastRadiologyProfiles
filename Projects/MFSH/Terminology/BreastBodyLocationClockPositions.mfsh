@@ -1,7 +1,7 @@
 ValueSet:  BreastBodyLocationClockPositionsVS
 Title: "BreastBodyLocationClockPositions ValueSet"
 Description:  "BreastBodyLocationClockPositions Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationClockPositionsCS
 
 CodeSystem:  BreastBodyLocationClockPositionsCS

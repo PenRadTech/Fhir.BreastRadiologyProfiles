@@ -1,7 +1,7 @@
 ValueSet:  CalcificationDistributionVS
 Title: "CalcificationDistribution ValueSet"
 Description:  "CalcificationDistribution Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system CalcificationDistributionCS
 
 

@@ -1,7 +1,7 @@
 ValueSet: BreastLocationQuadrantVS
 Title: "Breast Location Quadrant ValueSet"
 Description:  "Breast Location Quadrant Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastLocationQuadrantCS
 
 

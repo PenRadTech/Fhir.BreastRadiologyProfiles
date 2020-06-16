@@ -1,12 +1,12 @@
 ValueSet:  AbnormalityLymphNodeTypeVS
-Title: "Lymph Node Abnormality Type ValueSet"
-Description:  "LymphNode Abnormality Type Value Set"
+Title: "Lymph Node Type ValueSet"
+Description:  "LymphNode Type Value Set"
   * codes from system AbnormalityLymphNodeTypeCS
 
 
 CodeSystem: AbnormalityLymphNodeTypeCS
-Title: "Lymph Node Abnormality Type CodeSystem"
-Description: "Lymph node abnormality types code system."
+Title: "Lymph Node Type CodeSystem"
+Description: "Lymph node types code system."
   * #NodeAxillary "Node axillary"
   * #NodeEnlarged "Node enlarged"
   * #NodeFocalCortex "Node focal cortex"

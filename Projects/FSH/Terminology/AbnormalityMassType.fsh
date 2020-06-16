@@ -1,12 +1,12 @@
 ValueSet:  AbnormalityMassTypeVS
-Title: "Mass Abnormality Type ValueSet"
-Description:  "Mass Abnormality Type Value Set"
+Title: "Mass Type ValueSet"
+Description:  "Mass Type Value Set"
   * codes from system AbnormalityMassTypeCS
 
 
 CodeSystem:  AbnormalityMassTypeCS
-Title: "Mass Abnormality Type CodeSystem"
-Description:  "Mass Abnormality Type CodeSystem"
+Title: "Mass Type CodeSystem"
+Description:  "Mass Type CodeSystem"
   * #Mass "Mass"
 
   // .SnomedDescription ClinicalFinding | 369753003 | Intraductal tumor configuration (Finding)

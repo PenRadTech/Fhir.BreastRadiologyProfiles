@@ -1,7 +1,7 @@
 ValueSet:  ServiceRecommendationsVS
 Title: "ServiceRecommendations ValueSet"
 Description:  "ServiceRecommendations Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system ServiceRecommendationsCS
 
 

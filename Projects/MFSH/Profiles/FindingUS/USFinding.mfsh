@@ -5,8 +5,8 @@ Description: """
     Ultra-Sound Finding
     """
 
-  #apply IGGroupMemberProfile("USFindings", "%Title%")
-  #apply Graph.NodeProfile("US Findings")
+  #apply IGGroupMemberProfile("USResources", "%Title%")
+  #apply Graph.NodeProfile("Ultra-Sound Findings")
 
   #apply IntroDocGraph("""
   # <p>
@@ -17,12 +17,12 @@ Description: """
   #  and exam information related to an Ultra Sound (US) exam.
   # </p>
   # <p>
-  # As of this ballot, the child observations of an US Exam have not
+  # As of this ballot, the child observations of a US Exam have not
   #  been defined. They will be defined in a later ballot.
   # </p>
   #""")
 
-  #apply Observation.SectionFragment()
-
   * code 1..1
   * code = ObservationCodesCS#usFindingObservation
+
+  #apply Observation.SectionFragment()

@@ -1,7 +1,7 @@
 ValueSet:  NotPreviouslySeenVS
 Title: "NotPreviouslySeen ValueSet"
 Description:  "NotPreviouslySeen Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system NotPreviouslySeenCS
 
 

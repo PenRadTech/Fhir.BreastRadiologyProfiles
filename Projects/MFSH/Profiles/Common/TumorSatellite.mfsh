@@ -9,7 +9,7 @@ Description: """
     Tumor Satellite
     """
 
-  #apply IGGroupMemberProfile("CommonResources", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("TumorSatellite")
 
   #apply IntroDocGraph("""

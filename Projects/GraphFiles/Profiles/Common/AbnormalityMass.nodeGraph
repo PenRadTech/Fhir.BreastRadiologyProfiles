@@ -142,10 +142,10 @@
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
         "item" : "component:biRadsAssessmentCategory"
       },
-      "displayName" : "BiRads",
+      "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#9/nProfiles/Common/AbnormalityMass.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#10/nProfiles/Common/AbnormalityMass.mfsh#38/n"
     }
   },
   {
@@ -153,7 +153,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#16/nProfiles/Common/AbnormalityMass.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#17/nProfiles/Common/AbnormalityMass.mfsh#38/n"
     }
   },
   {

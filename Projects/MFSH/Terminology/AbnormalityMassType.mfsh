@@ -1,13 +1,13 @@
 ValueSet:  AbnormalityMassTypeVS
-Title: "Mass Abnormality Type ValueSet"
-Description:  "Mass Abnormality Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+Title: "Mass Type ValueSet"
+Description:  "Mass Type Value Set"
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system AbnormalityMassTypeCS
 
 
 CodeSystem:  AbnormalityMassTypeCS
-Title: "Mass Abnormality Type CodeSystem"
-Description:  "Mass Abnormality Type CodeSystem"
+Title: "Mass Type CodeSystem"
+Description:  "Mass Type CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Mass "Mass"
 

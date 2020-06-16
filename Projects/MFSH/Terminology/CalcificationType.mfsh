@@ -1,7 +1,7 @@
 ValueSet:  CalcificationTypeVS
 Title: "Calcification Type Value Set"
 Description:  "Calcification Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system CalcificationTypeCS
 
 CodeSystem: CalcificationTypeCS

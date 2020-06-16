@@ -1,6 +1,6 @@
 Profile: NMFinding
 Parent: Observation
-Title: "NM Finding"
+Title: "Nuclear Medicine Finding"
 Description: """
     NM Finding
     """
