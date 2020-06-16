@@ -5,7 +5,7 @@ Description: """
   Cyst
   """
 
-  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityCyst", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Cyst Abnormality")
 
   #apply IntroDocGraph("""

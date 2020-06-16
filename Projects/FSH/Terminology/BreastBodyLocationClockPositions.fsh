@@ -1,14 +1,11 @@
 ValueSet:  BreastBodyLocationClockPositionsVS
 Title: "BreastBodyLocationClockPositions ValueSet"
 Description:  "BreastBodyLocationClockPositions Value Set"
-//+ Codes
   * codes from system BreastBodyLocationClockPositionsCS
-//- Codes
 
 CodeSystem:  BreastBodyLocationClockPositionsCS
 Title: "BreastBodyLocationClockPositions CodeSystem"
 Description:  "BreastBodyLocationClockPositions CodeSystem"
-//+ Codes
   // .SnomedDescription ClinicalFinding | 129772004 | 1 o'clock position on mammogram (Finding) | [0/0] |
   * #1O'clock "1 o'clock"
 
@@ -44,5 +41,3 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
 
   // .SnomedDescription ClinicalFinding | 129783008 | 12 o'clock position on mammogram (Finding) | [0/0] |
   * #12O'clock "12 o'clock"
-
-//- Codes

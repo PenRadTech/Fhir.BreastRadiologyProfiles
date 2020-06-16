@@ -5,7 +5,7 @@ Description: """
     Mammography Breast Density
     """
 
-  #apply IGGroupMemberProfile("MGResources/BreastDensity", "")
+  #apply IGGroupMemberProfile("MGResources", "%Title%")
   #apply Graph.NodeProfile("Breast Density")
 
   #apply IntroDocGraph("""

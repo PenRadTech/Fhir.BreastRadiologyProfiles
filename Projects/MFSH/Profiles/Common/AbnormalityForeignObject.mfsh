@@ -6,7 +6,7 @@ Description: """
   Foreign Object
   """
 
-  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityForeign", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Foreign Abnormality")
 
   #apply IntroDocGraph("""

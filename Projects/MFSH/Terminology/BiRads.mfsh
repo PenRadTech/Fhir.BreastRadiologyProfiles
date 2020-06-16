@@ -4,6 +4,7 @@
 ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system BiRadsAssessmentCategoryCS
 
 
@@ -13,6 +14,7 @@ Description:  "BiRads Assessment Category Value Set"
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRads Assessment Category CodeSystem"
 Description:  "BiRads Assessment Category CodeSystem"
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
   * #Category0 "Category 0 (Incomplete)"
 

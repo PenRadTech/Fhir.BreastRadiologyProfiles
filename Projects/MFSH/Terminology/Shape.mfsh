@@ -1,18 +1,16 @@
 ValueSet:  ShapeVS
 Title: "Shape ValueSet"
 Description:  "Shape Value Set"
-//+ Codes
+#apply IGGroupMemberValueSet("CommonCodeValues", "%Title%")
   * codes from system ShapeCS
-//- Codes
 
 
 CodeSystem: ShapeCS
 Title: "Shape CodeSystem"
 Description: "Shape values code system."
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #IrregularInShape "Irregular in shape"
   * #LobulatedInShape "Lobulated in shape"
   * #OvalInShape "Oval in shape"
   * #Reniform "Reniform"
   * #RoundInShape "Round in shape"
-//- Codes

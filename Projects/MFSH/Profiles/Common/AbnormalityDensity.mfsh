@@ -5,7 +5,7 @@ Description: """
     Mammography Density
     """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityDensity", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Density")
 
   #apply IntroDocGraph("""

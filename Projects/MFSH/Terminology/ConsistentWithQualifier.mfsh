@@ -4,6 +4,7 @@
 ValueSet:  ConsistentWithQualifierVS
 Title: "ConsistentWith Qualifier ValueSet"
 Description:  "ConsistentWith Qualifier Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system ConsistentWithQualifierCS
   
 /*
@@ -12,6 +13,7 @@ Description:  "ConsistentWith Qualifier Value Set"
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #DifferentialDiagnosis "Differential diagnosis"
   * #LikelyRepresents "Likely represents"
   * #MostLikely "Most likely"

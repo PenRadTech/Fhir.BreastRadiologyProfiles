@@ -4,6 +4,7 @@
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system ConsistentWithCS
 
 
@@ -13,6 +14,7 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Abscess "Abscess"
 
   // .Snomed 404057003

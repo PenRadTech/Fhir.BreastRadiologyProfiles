@@ -1,15 +1,12 @@
 ValueSet:  CorrespondsWithVS
 Title: "CorrespondsWith ValueSet"
 Description:  "CorrespondsWith Value Set"
-//+ Codes
   * codes from system CorrespondsWithCS
-//- Codes
 
 
 CodeSystem:  CorrespondsWithCS
 Title: "CorrespondsWith CodeSystem"
 Description:  "CorrespondsWith CodeSystem"
-//+ Codes
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
   * #Aspiration "Aspiration"
 
@@ -78,5 +75,3 @@ Description:  "CorrespondsWith CodeSystem"
   * #TriggerPoint "Trigger point"
 
   * #US "US"
-
-//- Codes

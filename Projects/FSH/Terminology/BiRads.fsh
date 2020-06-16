@@ -2,8 +2,8 @@
   Value set for ACR birads codes.
  */
 ValueSet:  BiRadsAssessmentCategoryVS
-Title: "BiRadsAssessmentCategory ValueSet"
-Description:  "BiRadsAssessmentCategory Value Set"
+Title: "BiRads Assessment Category ValueSet"
+Description:  "BiRads Assessment Category Value Set"
   * codes from system BiRadsAssessmentCategoryCS
 
 
@@ -11,8 +11,8 @@ Description:  "BiRadsAssessmentCategory Value Set"
   Code system for ACR birads codes.
  */
 CodeSystem:  BiRadsAssessmentCategoryCS
-Title: "BiRadsAssessmentCategory CodeSystem"
-Description:  "BiRadsAssessmentCategory CodeSystem"
+Title: "BiRads Assessment Category CodeSystem"
+Description:  "BiRads Assessment Category CodeSystem"
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
   * #Category0 "Category 0 (Incomplete)"
 

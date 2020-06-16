@@ -1,11 +1,13 @@
 ValueSet: BreastLocationRegionVS
 Title: "Breast Location Region ValueSet"
 Description:  "Breast Location Region Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system BreastLocationRegionCS
 
 CodeSystem: BreastLocationRegionCS
 Title: "Breast Location Region CodeSystem"
 Description: "Breast body location region code system."
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Axilla "Axilla"
   * #AxillaryTail "Axillary tail"
   * #AxillaI "Axilla I"

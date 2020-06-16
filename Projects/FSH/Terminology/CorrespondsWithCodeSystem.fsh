@@ -1,7 +1,6 @@
 CodeSystem: CorrespondsWithCodeSystemCS
 Title: "Corresponds With CodeSystem"
 Description: "CorrespondsWith code system"
-//+ Codes
   * #Aspiration "Aspiration"
   * #Biopsy "Biopsy"
   * #Concern "Concern"
@@ -31,4 +30,3 @@ Description: "CorrespondsWith code system"
   * #Tenderness "Tenderness"
   * #TriggerPoint "Trigger point"
   * #US "US"
-//- Codes

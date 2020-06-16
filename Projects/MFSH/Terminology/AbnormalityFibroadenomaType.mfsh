@@ -1,12 +1,12 @@
 ValueSet:  AbnormalityFibroAdenomaTypeVS
 Title: "FibroAdenoma Abnormality Type ValueSet"
 Description:  "FibroAdenoma Abnormality Type Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system AbnormalityFibroadenomaTypeCS
 
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Abnormality Type CodeSystem"
 Description: "Fibroadenoma Abnormality type code system."
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Fibroadenoma "Fibroadenoma"
   * #FibroadenomaDegeneration "Fibroadenoma degeneration"
-//- Codes

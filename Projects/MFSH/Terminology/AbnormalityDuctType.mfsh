@@ -1,13 +1,13 @@
 ValueSet:  AbnormalityDuctTypeVS
 Title: "Duct Abnormality Type ValueSet"
 Description: "AbnormalityDuctType Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system AbnormalityDuctTypeCS
 
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Abnormality Type CodeSystem"
 Description: "Duct abnormality types code system."
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #DuctNormal "Duct normal"
   * #SolitaryDilatedDuct "Solitary dilated duct"
   * #DuctEctasia "Duct ectasia"
-//- Codes

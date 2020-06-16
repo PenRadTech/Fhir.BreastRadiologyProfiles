@@ -1,14 +1,14 @@
 ValueSet:  ServiceRecommendationsVS
 Title: "ServiceRecommendations ValueSet"
 Description:  "ServiceRecommendations Value Set"
-//+ Codes
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system ServiceRecommendationsCS
-//- Codes
+
 
 CodeSystem:  ServiceRecommendationsCS
 Title: "ServiceRecommendations CodeSystem"
 Description:  "ServiceRecommendations CodeSystem"
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) +
   * #3DImaging "3D Imaging"
 
@@ -255,5 +255,3 @@ Description:  "ServiceRecommendations CodeSystem"
   * #Unspecified/Other "Unspecified / other"
 
   * #VacuumBx "Vacuum Bx"
-
-//- Codes

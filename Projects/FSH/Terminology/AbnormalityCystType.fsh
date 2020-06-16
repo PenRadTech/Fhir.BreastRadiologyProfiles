@@ -5,9 +5,8 @@ Description: "Cyst abnormality type Value Set."
   
   
 CodeSystem: AbnormalityCystTypeCS
-Title: "Cyst Type CodeSystem"
+Title: "Cyst Abnormality Type CodeSystem"
 Description: "Cyst abnormality type CodeSystem."
-//+ Codes
   * #Cyst "Cyst"
   * #CystComplex "Cyst complex"
   * #CystComplicated "Cyst complicated"
@@ -15,4 +14,3 @@ Description: "Cyst abnormality type CodeSystem."
   * #CystOil "Cyst oil"
   * #CystSimple "Cyst simple"
   * #CystWithDebris "Cyst with debris"
-//- Codes

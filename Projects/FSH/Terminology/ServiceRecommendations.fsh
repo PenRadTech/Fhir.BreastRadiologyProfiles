@@ -1,14 +1,12 @@
 ValueSet:  ServiceRecommendationsVS
 Title: "ServiceRecommendations ValueSet"
 Description:  "ServiceRecommendations Value Set"
-//+ Codes
   * codes from system ServiceRecommendationsCS
-//- Codes
+
 
 CodeSystem:  ServiceRecommendationsCS
 Title: "ServiceRecommendations CodeSystem"
 Description:  "ServiceRecommendations CodeSystem"
-//+ Codes
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) +
   * #3DImaging "3D Imaging"
 
@@ -255,5 +253,3 @@ Description:  "ServiceRecommendations CodeSystem"
   * #Unspecified/Other "Unspecified / other"
 
   * #VacuumBx "Vacuum Bx"
-
-//- Codes

@@ -1,15 +1,14 @@
 ValueSet:  NotPreviouslySeenVS
 Title: "NotPreviouslySeen ValueSet"
 Description:  "NotPreviouslySeen Value Set"
-//+ Codes
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system NotPreviouslySeenCS
-//- Codes
 
 
 CodeSystem:  NotPreviouslySeenCS
 Title: "NotPreviouslySeen CodeSystem"
 Description:  "NotPreviouslySeen CodeSystem"
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #ClinicalExam "Clinical exam"
 
   // .SnomedDescription Procedure | 420131003 | Fluoroscopic mammary ductography (Procedure)
@@ -26,5 +25,3 @@ Description:  "NotPreviouslySeen CodeSystem"
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
   * #Ultrasound "Ultrasound"
-
-//- Codes

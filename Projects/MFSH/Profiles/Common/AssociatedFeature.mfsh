@@ -5,7 +5,7 @@ Description: """
     Associated Feature
     """
 
-  #apply IGGroupMemberProfile("CommonResources/AssociatedFeature", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("AssociatedFeature")
 
   #apply IntroDocGraph("""

@@ -6,7 +6,7 @@ Description: """
     Asymmetry
     """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityAsymmetry", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Asymmetry Abnormality")
 
   #apply IntroDocGraph("""

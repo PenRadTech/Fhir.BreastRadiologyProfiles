@@ -1,5 +1,5 @@
 ValueSet:  AssociatedFeatureVS
-Title: "AssociatedFeature ValueSet"
+Title: "Associated Feature ValueSet"
 Description:  "AssociatedFeature Value Set"
   * codes from system AssociatedFeatureCS
 

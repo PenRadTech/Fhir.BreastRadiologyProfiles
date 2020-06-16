@@ -6,7 +6,6 @@ Description:  "BreastLocationClock Value Set"
 CodeSystem: BreastLocationClockCS
 Title: "Breast Location Clock CodeSystem"
 Description: "Breast body location angles (expressed in clock-face units) code system."
-//+ Codes
   * #1O'clock "1 o'clock"
   * #2O'clock "2 o'clock"
   * #3O'clock "3 o'clock"
@@ -19,4 +18,3 @@ Description: "Breast body location angles (expressed in clock-face units) code s
   * #10O'clock "10 o'clock"
   * #11O'clock "11 o'clock"
   * #12O'clock "12 o'clock"
-//- Codes

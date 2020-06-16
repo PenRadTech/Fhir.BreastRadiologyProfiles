@@ -1,11 +1,13 @@
 ValueSet:  AssociatedFeatureVS
 Title: "Associated Feature ValueSet"
 Description:  "AssociatedFeature Value Set"
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system AssociatedFeatureCS
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #ArchitecturalDistortion "Architectural distortion"
   * #AxillaryAdenopathy "Axillary adenopathy"
   * #BiopsyClip "Biopsy clip"

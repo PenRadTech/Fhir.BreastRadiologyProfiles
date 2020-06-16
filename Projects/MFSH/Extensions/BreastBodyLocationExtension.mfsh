@@ -8,7 +8,7 @@ Description: """
     Breast Body Location Extension
     """
 
-  #apply IGGroupMemberProfile("ExtensionResources/BreastBodyLocation", "")
+  #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
   #apply Graph.NodeExtension("BreastBodyLocation")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 

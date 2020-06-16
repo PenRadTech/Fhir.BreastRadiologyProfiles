@@ -1,7 +1,6 @@
 CodeSystem: ObservationComponentSliceCodesCS
 Title: "Component Slice Codes CodeSystem"
 Description: "Component Slice Codes code system"
-//+ Codes
   * #abnormalityCystType "Component code for 'Cyst Type' slice"
   * #abnormalityDuctType "Component code for 'Duct Type' slice"
   * #abnormalityFibroAdenomaType "Component code for 'FibroAdenoma Type' slice"
@@ -27,4 +26,3 @@ Description: "Component Slice Codes code system"
   * #orientation "Component code for 'Orientation' slice"
   * #shape "Component code for 'Shape' slice"
   * #calcificationType "Component code for 'Calcification Type' slice"
-//- Codes

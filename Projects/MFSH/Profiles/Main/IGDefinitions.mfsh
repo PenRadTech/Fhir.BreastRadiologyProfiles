@@ -30,34 +30,11 @@
 # This section contains resources used specifically in a Mammography exam.
 # """)
 
-#apply IGGroup("MGCodesVS", 
-# "Mammography CodeSystems", 
-# """
-# This section contains value sets used specifically in a Mammography exam.
-# """)
-
-#apply IGGroup("MGCodesCS", 
-# "Mammography CodeSystems", 
-# """
-# This section contains code systems used specifically in a Mammography exam.
-# """)
 
 #apply IGGroup("MRIResources", 
 # "MRI Resources", 
 # """
 # This section contains resources used specifically in a MRI exam.
-# """)
-
-#apply IGGroup("MRICodesVS", 
-# "MRI CodeSystems", 
-# """
-# This section contains value sets used specifically in a MRI exam.
-# """)
-
-#apply IGGroup("MRICodesCS", 
-# "MRI CodeSystems", 
-# """
-# This section contains code systems used specifically in a MRI exam.
 # """)
 
 #apply IGGroup("USResources", 
@@ -66,32 +43,8 @@
 # This section contains resources used specifically in a Ultra-Sound exam.
 # """)
 
-#apply IGGroup("USCodesVS", 
-# "Ultra-Sound CodeSystems", 
-# """
-# This section contains value sets used specifically in a Ultra-Sound exam.
-# """)
-
-#apply IGGroup("USCodesCS", 
-# "Ultra-Sound CodeSystems", 
-# """
-# This section contains code systems used specifically in a Ultra-Sound exam.
-# """)
-
 #apply IGGroup("NMResources", 
 # "Nuclear Medicine Resources", 
 # """
 # This section contains resources used specifically in a Nuclear Medicine exam.
-# """)
-
-#apply IGGroup("NMCodesVS", 
-# "Nuclear Medicine CodeSystems", 
-# """
-# This section contains value sets used specifically in a Nuclear Medicine exam.
-# """)
-
-#apply IGGroup("NMCodesCS", 
-# "Nuclear Medicine CodeSystems", 
-# """
-# This section contains code systems used specifically in a Nuclear Medicine exam.
 # """)

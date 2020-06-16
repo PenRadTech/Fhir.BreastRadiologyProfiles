@@ -1,15 +1,12 @@
 ValueSet:  MarginVS
 Title: "Margin ValueSet"
 Description:  "Margin Value Set"
-//+ Codes
   * codes from system MarginCS
-//- Codes
 
 
 CodeSystem: MarginCS
-Title: "MarginCodeSystem"
+Title: "Margin CodeSystem"
 Description: "Margin code system."
-//+ Codes
   * #AngularMargin "Angular margin"
   * #CircumscribedMargin "Circumscribed margin"
   * #IndistinctMargin "Indistinct margin"
@@ -22,4 +19,3 @@ Description: "Margin code system."
   * #ObscuredMagin "Obscured magin"
   * #SmoothMargin "Smooth margin"
   * #SpiculatedMargin "Spiculated margin"
-//- Codes

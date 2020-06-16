@@ -6,7 +6,7 @@ Description: """
   Duct
   """
 
-  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityDuct", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Duct Abnormality")
 
   #apply IntroDocGraph("""

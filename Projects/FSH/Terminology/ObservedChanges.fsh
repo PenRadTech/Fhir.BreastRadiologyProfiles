@@ -1,15 +1,12 @@
 ValueSet:  ObservedChangesVS
 Title: "ObservedChanges ValueSet"
 Description:  "ObservedChanges Value Set"
-//+ Codes
   * codes from system ObservedChangesCS
-//- Codes
 
 
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."
-//+ Codes
   * #DecreaseInCalcifications "Decrease in calcifications"
   * #DecreaseInNumber "Decrease in number"
   * #DecreaseInSize "Decrease in size"
@@ -24,4 +21,3 @@ Description: "Observed changes in an abnormality code system."
   * #PartiallyRemoved "Partially removed"
   * #RepresentsChange "Represents change"
   * #Stable "Stable"
-//- Codes

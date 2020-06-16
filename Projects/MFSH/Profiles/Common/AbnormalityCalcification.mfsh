@@ -5,7 +5,7 @@ Description: """
     Mammography Calcification
     """
 
-  #apply IGGroupMemberProfile("CommonResources/CalcificationAbnormality", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Calcification")
 
   #apply IntroDocGraph("""

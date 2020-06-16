@@ -5,7 +5,7 @@ Description: """
     Mammography Fat Necrosis
     """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityFatNecrosis", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Fat Necrosis")
 
   #apply IntroDocGraph("""

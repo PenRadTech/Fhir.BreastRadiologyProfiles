@@ -6,7 +6,7 @@ Description: """
   LymphNode Abnormality
   """
 
-  #apply IGGroupMemberProfile("AbnormalityResources/AbnormalityLymphNode", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Cyst Abnormality")
 
   #apply IntroDocGraph("""

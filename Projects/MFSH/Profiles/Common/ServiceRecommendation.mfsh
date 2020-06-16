@@ -5,7 +5,7 @@ Description: """
   Service Recommendation
   """
 
-  #apply IGGroupMemberProfile("BaseResources", "")
+  #apply IGGroupMemberProfile("BaseResources", "%Title%")
   #apply Graph.NodeProfile("ServiceRecommendation")
 
 

@@ -1,17 +1,15 @@
 ValueSet:  MGBreastDensityVS
 Title: "Mammography BreastDensity ValueSet"
 Description:  "Mammography BreastDensity Value Set"
-//+ Codes
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system MGBreastDensityCS
-//- Codes
 
 
 CodeSystem: MGBreastDensityCS
 Title: "Mammography Breast Density CodeSystem"
 Description: "Mammography breast density values code system."
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #AlmostEntirelyFat "Almost entirely fat"
   * #ScatteredAreasOfFibroglandularDensity "Scattered areas of fibroglandular density"
   * #HeterogeneouslyDense "Heterogeneously dense"
   * #ExtremelyDense "Extremely dense"
-//- Codes

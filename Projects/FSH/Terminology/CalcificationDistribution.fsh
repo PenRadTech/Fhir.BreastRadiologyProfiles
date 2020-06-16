@@ -1,15 +1,12 @@
 ValueSet:  CalcificationDistributionVS
 Title: "CalcificationDistribution ValueSet"
 Description:  "CalcificationDistribution Value Set"
-//+ Codes
   * codes from system CalcificationDistributionCS
-//- Codes
 
 
 CodeSystem: CalcificationDistributionCS
 Title: "Calcification Distribution CodeSystem"
 Description: "Calcification Distribution in an abnormality code system."
-//+ Codes
   * #ClusteredDistribution "Clustered distribution"
   * #DiffuseDistribution "Diffuse distribution"
   * #GroupedDistribution "Grouped distribution"
@@ -17,4 +14,3 @@ Description: "Calcification Distribution in an abnormality code system."
   * #RegionalDistribution "Regional distribution"
   * #ScatteredDistribution "Scattered distribution"
   * #SegmentalDistribution "Segmental distribution"
-//- Codes

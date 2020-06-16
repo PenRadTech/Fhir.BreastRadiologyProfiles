@@ -1,7 +1,6 @@
 CodeSystem: ObservationCodesCS
 Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
-//+ Codes
   * #mgFindingObservation "MG Finding observation"
   * #abnormalityCyst "Abnormality Cyst observation"
   * #associatedFeaturesObservation "Associated Features observation"
@@ -23,4 +22,3 @@ Description: "Observation Codes code system"
   * #usFindingObservation "US Finding observation"
   * #findingsLeftBreastObservation "Findings Left Breast observation"
   * #findingsRightBreastObservation "Findings Right Breast observation"
-//- Codes

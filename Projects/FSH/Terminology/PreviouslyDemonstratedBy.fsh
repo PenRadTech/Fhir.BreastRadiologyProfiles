@@ -1,15 +1,12 @@
 ValueSet:  PreviouslyDemonstratedByVS
 Title: "PreviouslyDemonstratedBy ValueSet"
 Description:  "PreviouslyDemonstratedBy Value Set"
-//+ Codes
   * codes from system PreviouslyDemonstratedByCS
-//- Codes
 
 
 CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
 Description:  "PreviouslyDemonstratedBy CodeSystem"
-//+ Codes
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure) | [0/0] |
   * #Aspiration "Aspiration"
 
@@ -20,5 +17,3 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
   * #MRI "MRI"
 
   * #US "US"
-
-//- Codes

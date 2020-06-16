@@ -5,7 +5,7 @@ Description: """
     Mammography Finding
     """
 
-  #apply IGGroupMemberProfile("MG Findings", "")
+  #apply IGGroupMemberProfile("MGResources", "%Title%")
   #apply Graph.NodeProfile("Mg Finding")
 
 

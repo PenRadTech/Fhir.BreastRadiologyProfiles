@@ -11,12 +11,32 @@
   `  },
 #end
 
-#macro IGGroupMemberProfile(%Id%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+#macro IGGroupMemberProfile(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
-  `      "groupingId" : "%Id%",
+  `      "groupingId" : "%GroupId%",
   `      "sort": "%Sort%",
   `      "reference" : "StructureDefinition/%Id%"
+  `    }
+  `  },
+#end
+
+#macro IGGroupMemberValueSet(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+  `  {
+  `    "member" : {
+  `      "groupingId" : "%GroupId%",
+  `      "sort": "%Sort%",
+  `      "reference" : "ValueSet/%Id%"
+  `    }
+  `  },
+#end
+
+#macro IGGroupMemberCodeSystem(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+  `  {
+  `    "member" : {
+  `      "groupingId" : "%GroupId%",
+  `      "sort": "%Sort%",
+  `      "reference" : "CodeSystem/%Id%"
   `    }
   `  },
 #end

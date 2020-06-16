@@ -6,7 +6,7 @@ Description: """
   Fibroadenoma
   """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityFibroadenoma", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Fibroadenoma Abnormality")
 
   #apply IntroDocGraph("""

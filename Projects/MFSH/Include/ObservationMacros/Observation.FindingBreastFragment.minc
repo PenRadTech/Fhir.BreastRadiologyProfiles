@@ -8,7 +8,7 @@ Description: """
 	Findings %Laterality% Breast profile.
 	"""  
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityDuct", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Findings/%Laterality% Breast")
   #apply Graph.NodeElement("bodySite", "Body Site")
   //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")

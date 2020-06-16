@@ -1,15 +1,14 @@
 ValueSet:  ObservedChangesVS
 Title: "ObservedChanges ValueSet"
 Description:  "ObservedChanges Value Set"
-//+ Codes
+#apply IGGroupMemberValueSet("CommonCodeVS", "%Title%")
   * codes from system ObservedChangesCS
-//- Codes
 
 
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."
-//+ Codes
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #DecreaseInCalcifications "Decrease in calcifications"
   * #DecreaseInNumber "Decrease in number"
   * #DecreaseInSize "Decrease in size"
@@ -24,4 +23,3 @@ Description: "Observed changes in an abnormality code system."
   * #PartiallyRemoved "Partially removed"
   * #RepresentsChange "Represents change"
   * #Stable "Stable"
-//- Codes

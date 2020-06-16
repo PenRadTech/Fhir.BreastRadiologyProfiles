@@ -5,7 +5,7 @@ Description: """
     Mammography Architectural Distortion
     """
 
-  #apply IGGroupMemberProfile("CommonResources/AbnormalityArchitecturalDistortion", "")
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Architectural Distortion")
 
   #apply IntroDocGraph("""

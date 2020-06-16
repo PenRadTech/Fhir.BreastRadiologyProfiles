@@ -5,7 +5,7 @@ Description: """
     Ultra-Sound Finding
     """
 
-  #apply IGGroupMemberProfile("USFindings", "")
+  #apply IGGroupMemberProfile("USFindings", "%Title%")
   #apply Graph.NodeProfile("US Findings")
 
   #apply IntroDocGraph("""

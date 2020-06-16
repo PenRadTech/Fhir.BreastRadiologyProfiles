@@ -2,8 +2,8 @@
    Value set that defines consistent with qualifier codes.
  */
 ValueSet:  ConsistentWithQualifierVS
-Title: "ConsistentWithQualifier ValueSet"
-Description:  "ConsistentWithQualifier Value Set"
+Title: "ConsistentWith Qualifier ValueSet"
+Description:  "ConsistentWith Qualifier Value Set"
   * codes from system ConsistentWithQualifierCS
   
 /*
