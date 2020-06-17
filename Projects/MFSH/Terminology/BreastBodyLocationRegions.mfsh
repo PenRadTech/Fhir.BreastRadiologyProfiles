@@ -1,14 +1,14 @@
 ValueSet:  BreastBodyLocationRegionsVS
-Title: "BreastBodyLocationRegions ValueSet"
-Description:  "BreastBodyLocationRegions Value Set"
+Title: "Breast Body Location Regions ValueSet"
+Description:  "Breast Body Location Regions Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationRegionsCS
 
 
 
 CodeSystem:  BreastBodyLocationRegionsCS
-Title: "BreastBodyLocationRegions CodeSystem"
-Description:  "BreastBodyLocationRegions CodeSystem"
+Title: "Breast Body Location Regions CodeSystem"
+Description:  "Breast Body Location Regions CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   // .SnomedDescription BodyStructure | 416710001 | Skin and subcutaneous tissue structure of axilla
   * #Axilla "Axilla"

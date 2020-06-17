@@ -9,7 +9,7 @@ Description: """
     Tumor Satellite
     """
 
-
+  
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -42,15 +42,16 @@ Description: """
   * valueRange.high units from UNITSOFLENGTH
 
 
+
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open
   * derivedFrom ^slicing.ordered = false
   * derivedFrom ^slicing.description = "derivedFrom slicing"
   * derivedFrom contains indexTumor 0..1
-  * derivedFrom[indexTumor] ^short = "Tumor Observation reference component."
+  * derivedFrom[indexTumor] ^short = "Index Tumor Observation reference component."
   * derivedFrom[indexTumor] ^comment = """
-    This observation is derived from a 'Tumor Observation reference' observation.
+    This observation is derived from a 'Index Tumor Observation reference' observation.
     """
   * derivedFrom[indexTumor] ^definition = """
 This derivedFrom slice references the index tumor.

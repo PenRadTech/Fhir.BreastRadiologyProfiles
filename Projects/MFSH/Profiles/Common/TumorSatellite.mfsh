@@ -11,7 +11,9 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("TumorSatellite")
-
+  #apply Graph.NodeElement("value[x]", "Value")
+  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/value\\\\[x\\\\]/$", "0")
+  
   #apply IntroDocGraph("""
   # <p>
   # <b>'Tumor Satellite' Observation</b>
@@ -46,7 +48,7 @@ Description: """
   * valueRange.low units from UNITSOFLENGTH
   * valueRange.high units from UNITSOFLENGTH
 
-  #apply Observation.DerivedFrom.Add("indexTumor", "0..1", "Derived From", "Tumor Observation reference",
+  #apply Observation.DerivedFrom.Add("indexTumor", "0..1", "Index Tumor", "Index Tumor Observation reference",
   #  """
   #  This derivedFrom slice references the index tumor.
   #  """,

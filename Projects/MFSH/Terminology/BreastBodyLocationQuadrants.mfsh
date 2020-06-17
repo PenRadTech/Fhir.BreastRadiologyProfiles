@@ -1,12 +1,12 @@
 ValueSet:  BreastBodyLocationQuadrantsVS
-Title: "BreastBodyLocationQuadrants ValueSet"
-Description:  "BreastBodyLocationQuadrants Value Set"
+Title: "Breast Body Location Quadrants ValueSet"
+Description:  "Breast Body Location Quadrants Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationQuadrantsCS
 
 
 CodeSystem:  BreastBodyLocationQuadrantsCS
-Title: "BreastBodyLocationQuadrants CodeSystem"
+Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   // .SnomedDescription BodyStructure | 19100000 | Structure of lower inner quadrant of breast (Bodypart)

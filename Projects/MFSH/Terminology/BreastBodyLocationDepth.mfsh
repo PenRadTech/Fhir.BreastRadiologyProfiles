@@ -1,13 +1,13 @@
 ValueSet:  BreastBodyLocationDepthVS
-Title: "BreastBodyLocationDepth ValueSet"
-Description:  "BreastBodyLocationDepth Value Set"
+Title: "Breast Body Location Depth ValueSet"
+Description:  "Breast Body Location Depth Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
   * codes from system BreastBodyLocationDepthCS
 
 
 CodeSystem:  BreastBodyLocationDepthCS
-Title: "BreastBodyLocationDepth CodeSystem"
-Description:  "BreastBodyLocationDepth CodeSystem"
+Title: "Breast Body Location Depth CodeSystem"
+Description:  "Breast Body Location Depth CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   // .SnomedDescription Not found
   * #AnteriorDepth "Anterior depth"

@@ -1,12 +1,12 @@
 ValueSet:  BreastBodyLocationDepthVS
-Title: "BreastBodyLocationDepth ValueSet"
-Description:  "BreastBodyLocationDepth Value Set"
+Title: "Breast Body Location Depth ValueSet"
+Description:  "Breast Body Location Depth Value Set"
   * codes from system BreastBodyLocationDepthCS
 
 
 CodeSystem:  BreastBodyLocationDepthCS
-Title: "BreastBodyLocationDepth CodeSystem"
-Description:  "BreastBodyLocationDepth CodeSystem"
+Title: "Breast Body Location Depth CodeSystem"
+Description:  "Breast Body Location Depth CodeSystem"
   // .SnomedDescription Not found
   * #AnteriorDepth "Anterior depth"
 

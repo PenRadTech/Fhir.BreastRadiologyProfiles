@@ -31,7 +31,7 @@ Description: """
 	"""
   * extension[quadrant].value[x] 1..1
   * extension[quadrant].value[x] only CodeableConcept
-  * extension[quadrant].value[x] from BreastLocationQuadrantVS
+  * extension[quadrant].value[x] from BreastBodyLocationQuadrantsVS
 
   
   * extension contains region 0..1
@@ -42,7 +42,7 @@ Description: """
 	"""
   * extension[region].value[x] 1..1
   * extension[region].value[x] only CodeableConcept
-  * extension[region].value[x] from BreastLocationRegionVS
+  * extension[region].value[x] from BreastBodyLocationRegionsVS
 
   
   * extension contains clockDirection 0..1
@@ -53,7 +53,7 @@ Description: """
 	"""
   * extension[clockDirection].value[x] 1..1
   * extension[clockDirection].value[x] only CodeableConcept
-  * extension[clockDirection].value[x] from BreastLocationClockVS
+  * extension[clockDirection].value[x] from BreastBodyLocationClockPositionsVS
 
   
   * extension contains depth 0..1
@@ -64,7 +64,7 @@ Description: """
 	"""
   * extension[depth].value[x] 1..1
   * extension[depth].value[x] only CodeableConcept
-  * extension[depth].value[x] from BreastLocationDepthVS
+  * extension[depth].value[x] from BreastBodyLocationDepthVS
 
 
   

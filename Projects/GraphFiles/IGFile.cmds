@@ -400,56 +400,56 @@
   {
     "member" : {
       "groupingId" : "CommonCodesVS",
-      "sort": "BreastBodyLocationClockPositions ValueSet",
+      "sort": "Breast Body Location Clock Positions ValueSet",
       "reference" : "ValueSet/BreastBodyLocationClockPositionsVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "BreastBodyLocationClockPositions CodeSystem",
+      "sort": "Breast Body Location Clock Positions CodeSystem",
       "reference" : "CodeSystem/BreastBodyLocationClockPositionsCS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesVS",
-      "sort": "BreastBodyLocationDepth ValueSet",
+      "sort": "Breast Body Location Depth ValueSet",
       "reference" : "ValueSet/BreastBodyLocationDepthVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "BreastBodyLocationDepth CodeSystem",
+      "sort": "Breast Body Location Depth CodeSystem",
       "reference" : "CodeSystem/BreastBodyLocationDepthCS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesVS",
-      "sort": "BreastBodyLocationQuadrants ValueSet",
+      "sort": "Breast Body Location Quadrants ValueSet",
       "reference" : "ValueSet/BreastBodyLocationQuadrantsVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "BreastBodyLocationQuadrants CodeSystem",
+      "sort": "BreastBody Location Quadrants CodeSystem",
       "reference" : "CodeSystem/BreastBodyLocationQuadrantsCS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesVS",
-      "sort": "BreastBodyLocationRegions ValueSet",
+      "sort": "Breast Body Location Regions ValueSet",
       "reference" : "ValueSet/BreastBodyLocationRegionsVS"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonCodesCS",
-      "sort": "BreastBodyLocationRegions CodeSystem",
+      "sort": "Breast Body Location Regions CodeSystem",
       "reference" : "CodeSystem/BreastBodyLocationRegionsCS"
     }
   },
@@ -465,62 +465,6 @@
       "groupingId" : "CommonCodesCS",
       "sort": "BreastLandmark CodeSystem",
       "reference" : "CodeSystem/BreastLandmarkCS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesVS",
-      "sort": "BreastLocationClock ValueSet",
-      "reference" : "ValueSet/BreastLocationClockVS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesCS",
-      "sort": "Breast Location Clock CodeSystem",
-      "reference" : "CodeSystem/BreastLocationClockCS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesVS",
-      "sort": "Breast Location Depth ValueSet",
-      "reference" : "ValueSet/BreastLocationDepthVS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesCS",
-      "sort": "Breast Location Depth CodeSystem",
-      "reference" : "CodeSystem/BreastLocationDepthCS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesVS",
-      "sort": "Breast Location Quadrant ValueSet",
-      "reference" : "ValueSet/BreastLocationQuadrantVS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesCS",
-      "sort": "Breast Location Quadrant CodeSystem",
-      "reference" : "CodeSystem/BreastLocationQuadrantCS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesVS",
-      "sort": "Breast Location Region ValueSet",
-      "reference" : "ValueSet/BreastLocationRegionVS"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "CommonCodesCS",
-      "sort": "Breast Location Region CodeSystem",
-      "reference" : "CodeSystem/BreastLocationRegionCS"
     }
   },
   {

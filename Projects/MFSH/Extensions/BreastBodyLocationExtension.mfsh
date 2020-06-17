@@ -31,22 +31,22 @@ Description: """
   #  The side of the body being examined.
   #  """)
 
-  #apply Extension.CodeableConcept("quadrant", "0..1", "BreastLocationQuadrantVS", "Quadrant of the body location",
+  #apply Extension.CodeableConcept("quadrant", "0..1", "BreastBodyLocationQuadrantsVS", "Quadrant of the body location",
   #  """
   #  The quadrant  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("region", "0..1", "BreastLocationRegionVS", "Region of the body location",
+  #apply Extension.CodeableConcept("region", "0..1", "BreastBodyLocationRegionsVS", "Region of the body location",
   #  """
   #  The region  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("clockDirection", "0..1", "BreastLocationClockVS", "Clock direction of the body location",
+  #apply Extension.CodeableConcept("clockDirection", "0..1", "BreastBodyLocationClockPositionsVS", "Clock direction of the body location",
   #  """
   #  The clock direction of the body location.
   # """)
 
-  #apply Extension.CodeableConcept("depth", "0..1", "BreastLocationDepthVS", "Depth of the body location",
+  #apply Extension.CodeableConcept("depth", "0..1", "BreastBodyLocationDepthVS", "Depth of the body location",
   #  """
   #  The depth of the body location.
   # """)
