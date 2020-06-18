@@ -5,6 +5,7 @@ Description: """
     MRI Finding
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("MRIResources", "%Title%")
   #apply Graph.NodeProfile("MRI Findings")
 

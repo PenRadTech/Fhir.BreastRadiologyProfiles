@@ -5,9 +5,10 @@ Description: """
   Service Recommendation
   """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("BaseResources", "%Title%")
   #apply Graph.NodeProfile("ServiceRecommendation")
-
+  #apply CSBuild.DefineClass()
 
   #apply IntroDocGraph("""
   # <p>

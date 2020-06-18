@@ -5,6 +5,7 @@ Description: """
     Mammography Architectural Distortion
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Architectural Distortion")
 

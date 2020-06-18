@@ -6,6 +6,7 @@ Description: """
     Asymmetry
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Asymmetry Abnormality")
 

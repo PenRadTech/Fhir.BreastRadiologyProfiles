@@ -25,6 +25,10 @@
 			"value": "..\\GraphFiles"
 		},
 		{
+			"name": "%CSBuildDir%",
+			"value": "..\\CSBuild"
+		},
+		{
 			"name": "%PageContent%",
 			"value": "..\\build\\input\\pagecontent"
 		}

@@ -5,6 +5,7 @@ Description: """
 	Breast Radiology Diagnostic Report.
 	"""
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("BaseResources", "C")
   #apply Graph.NodeProfile("Report")
   #apply Graph.NodeElement("code", "Code")

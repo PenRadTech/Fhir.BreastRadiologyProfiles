@@ -5,6 +5,7 @@ Description: """
     Ultra-Sound Finding
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("USResources", "%Title%")
   #apply Graph.NodeProfile("Ultra-Sound Findings")
 

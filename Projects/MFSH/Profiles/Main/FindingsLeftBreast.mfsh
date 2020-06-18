@@ -1,4 +1,5 @@
 Profile: FindingsLeftBreast
+  #apply CSBuild.DefineClass()
   #apply Observation.FindingBreastFragment("left")
   #apply IGGroupMemberProfile("BaseResources", "C")
 

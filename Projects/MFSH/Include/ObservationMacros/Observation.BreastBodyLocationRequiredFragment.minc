@@ -7,6 +7,8 @@
 //$ Incomplete
 
 #macro once Observation.BreastBodyLocationRequiredFragment()
+  #apply CSBuild.DefineInterface()
+
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/bodySite/$", "0")

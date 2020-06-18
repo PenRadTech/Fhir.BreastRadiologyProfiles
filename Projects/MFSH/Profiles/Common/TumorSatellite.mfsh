@@ -9,6 +9,7 @@ Description: """
     Tumor Satellite
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("TumorSatellite")
   #apply Graph.NodeElement("value[x]", "Value")

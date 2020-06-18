@@ -6,6 +6,7 @@ Description: """
   Duct
   """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Duct Abnormality")
 

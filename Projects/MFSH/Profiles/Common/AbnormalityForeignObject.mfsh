@@ -6,6 +6,7 @@ Description: """
   Foreign Object
   """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Foreign Abnormality")
 

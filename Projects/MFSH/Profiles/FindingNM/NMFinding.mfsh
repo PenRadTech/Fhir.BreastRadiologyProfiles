@@ -5,6 +5,7 @@ Description: """
     NM Finding
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("NMResources", "%Title%")
   #apply Graph.NodeProfile("Nuclear Medicine/Findings")
 

@@ -5,6 +5,7 @@ Description: """
     Composition instance for the Breast Radiology FHIR Document.
 """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("BaseResources", "B")
   #apply Graph.NodeProfile("Breast/Radiology/Composition")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")

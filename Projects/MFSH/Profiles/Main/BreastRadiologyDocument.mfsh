@@ -5,6 +5,7 @@ Description: """
 	Breast Radiology Document Bundle.
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("BaseResources", "A")
   #apply Graph.NodeProfile("Breast/Radiology/Document")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/entry:", "0")

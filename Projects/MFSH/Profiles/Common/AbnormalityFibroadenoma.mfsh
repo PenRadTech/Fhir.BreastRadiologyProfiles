@@ -6,6 +6,7 @@ Description: """
   Fibroadenoma
   """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Fibroadenoma Abnormality")
 

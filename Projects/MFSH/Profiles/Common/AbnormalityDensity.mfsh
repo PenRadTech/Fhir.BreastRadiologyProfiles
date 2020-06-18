@@ -5,6 +5,7 @@ Description: """
     Mammography Density
     """
 
+  #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Density")
 
