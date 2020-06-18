@@ -1,0 +1,10 @@
+"defineInterface" : {
+  "interfaceName" : "BreastBodyLocationRequired",
+  "implementationId" : "AbnormalityArchitecturalDistortion"
+},
+"addProperty" : {
+  "elementId" : "bodySite"
+},
+"addProperty" : {
+  "elementId" : "bodySite.extension:breastBodyLocation"
+},

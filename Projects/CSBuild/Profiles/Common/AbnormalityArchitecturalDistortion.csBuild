@@ -1,12 +1,6 @@
 "defineClass" : {
   "className" : "AbnormalityArchitecturalDistortion"
 },
-"defineInterface" : {
-  "interfaceName" : "AbnormalityArchitecturalDistortion"
-},
-"addProperty" : {
-  "elementId" : "bodySite"
-},
-"addProperty" : {
-  "elementId" : "bodySite.extension:breastBodyLocation"
+"implementInterface" : {
+  "interfaceName" : "BreastBodyLocationRequired"
 },

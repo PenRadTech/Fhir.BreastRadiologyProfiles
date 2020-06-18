@@ -1,3 +1,6 @@
 "defineClass" : {
   "className" : "AbnormalityCalcification"
 },
+"implementInterface" : {
+  "interfaceName" : "BreastBodyLocationRequired"
+},

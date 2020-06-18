@@ -19,7 +19,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#12/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -32,7 +32,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#13/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -41,7 +41,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -50,7 +50,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -59,7 +59,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {

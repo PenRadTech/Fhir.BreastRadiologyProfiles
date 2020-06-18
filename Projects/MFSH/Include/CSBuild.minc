@@ -8,18 +8,30 @@
 #end
 
 //
-// Define an CS Interface.
+// Attach an interface to class.
 //
-#macro CSBuild.DefineInterface() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.ImplementInterface(%IName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+  `"implementInterface" : {
+  `  "interfaceName" : "%IName%"
+  `},
+#end
+
+//
+// Define an CS Interface.
+// Name is name of interface.
+// Id is name of profile that implements interface (used to query element definitions)
+//
+#macro CSBuild.MacroDefineInterface(%Name%)
   `"defineInterface" : {
-  `  "interfaceName" : "%Id%"
+  `  "interfaceName" : "%Name%",
+  `  "implementationId" : "%Id%"
   `},
 #end
 
 //
 // Add a fhir property.
 //
-#macro CSBuild.AddProperty(%elementId%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.AddProperty(%elementId%)
   `"addProperty" : {
   `  "elementId" : "%elementId%"
   `},
