@@ -3,8 +3,8 @@
 //
 #macro CSBuild.DefineClass() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `"defineClass" : {
-  `    "className" : "%Id%"
-  `  },
+  `  "className" : "%Id%"
+  `},
 #end
 
 //
@@ -12,6 +12,15 @@
 //
 #macro CSBuild.DefineInterface() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `"defineInterface" : {
-  `    "interfaceName" : "%Id%"
-  `  },
+  `  "interfaceName" : "%Id%"
+  `},
+#end
+
+//
+// Add a fhir property.
+//
+#macro CSBuild.AddProperty(%elementId%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+  `"addProperty" : {
+  `  "elementId" : "%elementId%"
+  `},
 #end

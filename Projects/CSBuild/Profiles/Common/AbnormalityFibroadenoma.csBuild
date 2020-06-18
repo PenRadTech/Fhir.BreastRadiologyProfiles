@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityFibroadenoma"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityFibroadenoma"
-  },
+  "className" : "AbnormalityFibroadenoma"
+},

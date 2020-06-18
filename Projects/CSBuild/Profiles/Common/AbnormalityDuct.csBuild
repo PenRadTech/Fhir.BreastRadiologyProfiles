@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityDuct"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityDuct"
-  },
+  "className" : "AbnormalityDuct"
+},

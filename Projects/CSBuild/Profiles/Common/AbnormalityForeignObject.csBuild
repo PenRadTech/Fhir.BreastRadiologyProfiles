@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityForeignObject"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityForeignObject"
-  },
+  "className" : "AbnormalityForeignObject"
+},

@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityLymphNode"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityLymphNode"
-  },
+  "className" : "AbnormalityLymphNode"
+},

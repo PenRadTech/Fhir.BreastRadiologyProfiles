@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityAsymmetry"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityAsymmetry"
-  },
+  "className" : "AbnormalityAsymmetry"
+},

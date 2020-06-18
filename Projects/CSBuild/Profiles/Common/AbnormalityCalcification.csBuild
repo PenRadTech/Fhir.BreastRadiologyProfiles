@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityCalcification"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityCalcification"
-  },
+  "className" : "AbnormalityCalcification"
+},

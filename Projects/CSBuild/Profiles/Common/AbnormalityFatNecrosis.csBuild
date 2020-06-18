@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityFatNecrosis"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityFatNecrosis"
-  },
+  "className" : "AbnormalityFatNecrosis"
+},

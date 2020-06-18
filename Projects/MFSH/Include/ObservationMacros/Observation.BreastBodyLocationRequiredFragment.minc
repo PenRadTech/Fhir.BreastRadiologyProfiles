@@ -4,10 +4,14 @@
 // This fragment adds the references for the breast body location extension.
 // 
 // The references are required, meaning that the breast body location must exist.
-//$ Incomplete
+#macro single Observation.BreastBodyLocationRequiredFragment.DefineInterface()
+  #apply CSBuild.DefineInterface()
+  #apply CSBuild.AddProperty("bodySite")
+  #apply CSBuild.AddProperty("bodySite.extension:breastBodyLocation")
+#end
 
 #macro once Observation.BreastBodyLocationRequiredFragment()
-  #apply CSBuild.DefineInterface()
+  #apply Observation.BreastBodyLocationRequiredFragment.DefineInterface()
 
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")

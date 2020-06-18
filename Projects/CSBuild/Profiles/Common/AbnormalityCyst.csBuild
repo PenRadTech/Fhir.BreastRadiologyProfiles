@@ -1,6 +1,3 @@
 "defineClass" : {
-    "className" : "AbnormalityCyst"
-  },
-"defineInterface" : {
-    "interfaceName" : "AbnormalityCyst"
-  },
+  "className" : "AbnormalityCyst"
+},
