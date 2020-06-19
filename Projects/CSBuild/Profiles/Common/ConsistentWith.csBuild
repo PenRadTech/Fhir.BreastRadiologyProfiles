@@ -1,3 +1,5 @@
-"defineClass" : {
-  "className" : "ConsistentWith"
+{
+  "defineClass" : {
+    "className" : "ConsistentWith"
+  }
 },

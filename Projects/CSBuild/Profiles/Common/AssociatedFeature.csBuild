@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AssociatedFeature"
+{
+  "defineClass" : {
+    "className" : "AssociatedFeature"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityFibroadenoma"
+{
+  "defineClass" : {
+    "className" : "AbnormalityFibroadenoma"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

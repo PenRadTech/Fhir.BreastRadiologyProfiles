@@ -1,3 +1,5 @@
-"defineClass" : {
-  "className" : "MGBreastDensity"
+{
+  "defineClass" : {
+    "className" : "MGBreastDensity"
+  }
 },

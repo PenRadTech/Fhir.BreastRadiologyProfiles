@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityDuct"
+{
+  "defineClass" : {
+    "className" : "AbnormalityDuct"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityLymphNode"
+{
+  "defineClass" : {
+    "className" : "AbnormalityLymphNode"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

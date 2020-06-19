@@ -1,10 +1,16 @@
-"defineInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired",
-  "implementationId" : "AbnormalityArchitecturalDistortion"
+{
+  "defineInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired",
+    "implementationId" : "AbnormalityArchitecturalDistortion"
+  }
 },
-"addProperty" : {
-  "elementId" : "bodySite"
+{
+  "addProperty" : {
+    "elementId" : "bodySite"
+  }
 },
-"addProperty" : {
-  "elementId" : "bodySite.extension:breastBodyLocation"
+{
+  "addProperty" : {
+    "elementId" : "bodySite.extension:breastBodyLocation"
+  }
 },

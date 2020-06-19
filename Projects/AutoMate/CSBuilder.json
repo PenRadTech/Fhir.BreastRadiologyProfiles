@@ -1,0 +1,10 @@
+{
+	"inputPath": "CSBuild",
+	"outputDir": "BRadAPI",
+	"baseUrl": "http://hl7.org/fhir/us/breast-radiology/",
+	"resourcePaths": [
+		"build\\input\\profiles",
+		"build\\input\\extensions",
+		"build\\input\\vocabulary"
+	]
+}

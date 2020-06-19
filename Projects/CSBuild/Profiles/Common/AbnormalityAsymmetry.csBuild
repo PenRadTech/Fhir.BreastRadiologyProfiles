@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityAsymmetry"
+{
+  "defineClass" : {
+    "className" : "AbnormalityAsymmetry"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

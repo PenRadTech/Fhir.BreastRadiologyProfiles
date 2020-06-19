@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityFatNecrosis"
+{
+  "defineClass" : {
+    "className" : "AbnormalityFatNecrosis"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

@@ -1,3 +1,5 @@
-"defineClass" : {
-  "className" : "NMFinding"
+{
+  "defineClass" : {
+    "className" : "NMFinding"
+  }
 },

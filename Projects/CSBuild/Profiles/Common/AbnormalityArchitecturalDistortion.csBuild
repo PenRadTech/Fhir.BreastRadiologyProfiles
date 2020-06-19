@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityArchitecturalDistortion"
+{
+  "defineClass" : {
+    "className" : "AbnormalityArchitecturalDistortion"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },

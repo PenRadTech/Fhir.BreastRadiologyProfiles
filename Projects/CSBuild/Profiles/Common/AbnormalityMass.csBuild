@@ -1,6 +1,10 @@
-"defineClass" : {
-  "className" : "AbnormalityMass"
+{
+  "defineClass" : {
+    "className" : "AbnormalityMass"
+  }
 },
-"implementInterface" : {
-  "interfaceName" : "BreastBodyLocationRequired"
+{
+  "implementInterface" : {
+    "interfaceName" : "BreastBodyLocationRequired"
+  }
 },
