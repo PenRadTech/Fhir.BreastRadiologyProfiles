@@ -1,6 +1,6 @@
 {
 	"inputPath": "CSBuild",
-	"outputDir": "BRadAPI",
+	"csOutputDir": "BRadLibCS",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology/",
 	"resourcePaths": [
 		"build\\input\\profiles",
