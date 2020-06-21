@@ -6,20 +6,15 @@ using System.Text;
 
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
-using BreastRadLib.%ClassName%Local;
 
 namespace BreastRadLib
 {
 	/// <summary>
-	/// Interface %ClassName%.
+	/// Interface IBreastBodyLocationRequired.
 	/// This interface is automatically generated.
 	/// </summary>
-	public interface %InterfaceName% %Interfaces%
+	public interface IBreastBodyLocationRequired 
 	{
-		//+ Properties
-		//- Properties
 
-		//+ Methods
-		//- Methods
 	}
 }

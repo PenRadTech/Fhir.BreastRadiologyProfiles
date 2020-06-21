@@ -6,17 +6,15 @@ using System.Text;
 using System.Linq;
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
-using BreastRadLib.%ClassName%Local;
-//+Usings
-//-Usings
+
 
 namespace BreastRadLib
 {
 	/// <summary>
-	/// Class %ClassName%.
+	/// Class AbnormalityLymphNode.
 	/// This class is automatically generated.
 	/// </summary>
-	public class %ClassName% : %FhirBase%Base, I%ClassName%
+	public class AbnormalityLymphNode : %FhirBase%Base 
 	{
 		//+ Properties
 		//- Properties
@@ -25,7 +23,7 @@ namespace BreastRadLib
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public %ClassName%() : base()
+		public AbnormalityLymphNode() : base()
 		{
 		}
 
@@ -35,7 +33,7 @@ namespace BreastRadLib
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public %ClassName%(BreastRadiologyDocument doc, %FhirBase% resource)
+		public AbnormalityLymphNode(BreastRadiologyDocument doc, %FhirBase% resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -45,7 +43,7 @@ namespace BreastRadLib
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public %ClassName%(BreastRadiologyDocument doc)
+		public AbnormalityLymphNode(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new %FhirBase%());
 		}
