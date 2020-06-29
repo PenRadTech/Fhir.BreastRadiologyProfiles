@@ -3,8 +3,3 @@
     "className" : "AbnormalityAsymmetry"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

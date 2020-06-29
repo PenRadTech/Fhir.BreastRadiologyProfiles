@@ -3,8 +3,3 @@
     "className" : "AbnormalityFatNecrosis"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

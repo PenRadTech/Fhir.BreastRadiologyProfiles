@@ -3,8 +3,3 @@
     "className" : "AssociatedFeature"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

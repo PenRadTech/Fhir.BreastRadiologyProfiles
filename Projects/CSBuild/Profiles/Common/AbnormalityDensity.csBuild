@@ -3,8 +3,3 @@
     "className" : "AbnormalityDensity"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

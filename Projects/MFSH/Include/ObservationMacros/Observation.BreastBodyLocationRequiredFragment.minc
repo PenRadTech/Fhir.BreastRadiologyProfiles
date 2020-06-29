@@ -6,8 +6,7 @@
 // The references are required, meaning that the breast body location must exist.
 
 #macro once Observation.BreastBodyLocationRequiredFragment()
-  #apply CSBuild.BreastBodyLocationRequiredFragment.MacroDefineInterface()
-  #apply CSBuild.BreastBodyLocationRequiredFragment.ImplementInterface()
+  #apply CSBuild.BreastBodyLocationRequiredFragment.Define()
 
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")

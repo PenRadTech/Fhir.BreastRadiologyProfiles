@@ -3,8 +3,3 @@
     "className" : "AbnormalityCyst"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

@@ -12,10 +12,10 @@
 //
 // Attach an interface to class.
 //
-#macro CSBuild.ImplementInterface(%IName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.ImplementFragment(%IName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
-  `  "implementInterface" : {
-  `    "interfaceName" : "%IName%"
+  `  "implementFragment" : {
+  `    "fragmentName" : "%IName%"
   `  }
   `},
 
@@ -26,10 +26,10 @@
 // Name is name of interface.
 // Id is name of profile that implements interface (used to query element definitions)
 //
-#macro CSBuild.MacroDefineInterface(%Name%)
+#macro CSBuild.DefineFragment(%Name%)
   `{
-  `  "defineInterface" : {
-  `    "interfaceName" : "%Name%",
+  `  "defineFragment" : {
+  `    "fragmentName" : "%Name%",
   `    "implementationId" : "%Id%"
   `  }
   `},

@@ -3,8 +3,3 @@
     "className" : "AbnormalityFibroadenoma"
   }
 },
-{
-  "implementInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired"
-  }
-},

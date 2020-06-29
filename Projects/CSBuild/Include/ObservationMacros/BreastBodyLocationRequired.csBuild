@@ -1,6 +1,6 @@
 {
-  "defineInterface" : {
-    "interfaceName" : "BreastBodyLocationRequired",
+  "defineFragment" : {
+    "fragmentName" : "BreastBodyLocationRequired",
     "implementationId" : "AbnormalityArchitecturalDistortion"
   }
 },
