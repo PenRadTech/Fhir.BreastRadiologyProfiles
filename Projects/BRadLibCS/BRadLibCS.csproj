@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>7.1</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.4.9</Version>
+    <Authors>Kurt W. Allen</Authors>
+    <Company>Eir Solutions, LLC.</Company>
+    <PackageProjectUrl>https://github.com/Gjoll/Eir.FhirKhit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Gjoll/Eir.FhirKhit</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Description>FhirKhit tools for Fhir Release 4</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;FHIR_R4</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Various Fhir development tools, used internally at Eir Solutions.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>FHIR_R4</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hl7.Fhir.R4" Version="1.8.0" />
+    <PackageReference Include="Hl7.Fhir.Serialization" Version="1.8.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="FhirConstruct.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <Import Project="..\Eir.FhirKhit.Shar\Eir.FhirKhit.Shar.projitems" Label="PGShared" />
+
+  <Import Project="..\FhirKhit.GlobalSuppressions\FhirKhit.GlobalSuppressions.projitems" Label="PGShared" />
+
+  <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
+
+</Project>
