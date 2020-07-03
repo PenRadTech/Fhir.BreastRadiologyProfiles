@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "AbnormalityLymphNodeTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "AbnormalityLymphNodeTypeCS"
+  }
+},

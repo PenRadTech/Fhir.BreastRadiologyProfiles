@@ -2,6 +2,7 @@ ValueSet:  ShapeVS
 Title: "Shape ValueSet"
 Description:  "Shape Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system ShapeCS
 
 
@@ -9,6 +10,7 @@ CodeSystem: ShapeCS
 Title: "Shape CodeSystem"
 Description: "Shape values code system."
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #IrregularInShape "Irregular in shape"
   * #LobulatedInShape "Lobulated in shape"
   * #OvalInShape "Oval in shape"

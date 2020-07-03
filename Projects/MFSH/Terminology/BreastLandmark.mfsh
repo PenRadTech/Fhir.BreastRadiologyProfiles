@@ -2,6 +2,7 @@ ValueSet:  BreastLandmarkVS
 Title: "BreastLandmark ValueSet"
 Description:  "BreastLandmark Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system BreastLandmarkCS
 
 CodeSystem:  BreastLandmarkCS
@@ -12,6 +13,7 @@ Description:
   body locations that can be used as a land mark.
   """
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #Nipple "Nipple"
   * #ChestWall "Chest Wall"
   * #Skin "Skin"

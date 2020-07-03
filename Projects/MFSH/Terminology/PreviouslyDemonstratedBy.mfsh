@@ -2,6 +2,7 @@ ValueSet:  PreviouslyDemonstratedByVS
 Title: "PreviouslyDemonstratedBy ValueSet"
 Description:  "PreviouslyDemonstratedBy Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system PreviouslyDemonstratedByCS
 
 
@@ -9,6 +10,7 @@ CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
 Description:  "PreviouslyDemonstratedBy CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure) | [0/0] |
   * #Aspiration "Aspiration"
 

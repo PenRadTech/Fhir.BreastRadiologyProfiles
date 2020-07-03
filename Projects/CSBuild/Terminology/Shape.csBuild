@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "ShapeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "ShapeCS"
+  }
+},

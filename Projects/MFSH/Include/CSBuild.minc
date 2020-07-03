@@ -21,6 +21,30 @@
 
 #end
 
+
+//
+// Define a codesystem.
+//
+#macro CSBuild.DefineCodeSystem() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+  `{
+  `  "defineCodeSystem" : {
+  `    "name" : "%Id%"
+  `  }
+  `},
+#end
+
+//
+// Define a valueset.
+//
+#macro CSBuild.DefineValueSet() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+  `{
+  `  "defineValueSet" : {
+  `    "name" : "%Id%"
+  `  }
+  `},
+#end
+
+
 //
 // Define an CS Interface.
 // Name is name of interface.
@@ -46,3 +70,4 @@
   `  }
   `},
 #end
+

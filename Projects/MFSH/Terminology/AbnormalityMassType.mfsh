@@ -2,6 +2,7 @@ ValueSet:  AbnormalityMassTypeVS
 Title: "Mass Type ValueSet"
 Description:  "Mass Type Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityMassTypeCS
 
 
@@ -9,6 +10,7 @@ CodeSystem:  AbnormalityMassTypeCS
 Title: "Mass Type CodeSystem"
 Description:  "Mass Type CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #Mass "Mass"
 
   // .SnomedDescription ClinicalFinding | 369753003 | Intraductal tumor configuration (Finding)

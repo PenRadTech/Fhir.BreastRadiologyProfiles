@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "CalcificationTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "CalcificationTypeCS"
+  }
+},

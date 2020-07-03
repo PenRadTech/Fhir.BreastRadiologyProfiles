@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "AbnormalityDuctTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "AbnormalityDuctTypeCS"
+  }
+},

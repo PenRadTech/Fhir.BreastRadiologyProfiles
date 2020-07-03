@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "AbnormalityAsymmetryTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "AbnormalityAsymmetryTypeCS"
+  }
+},

@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "AbnormalityForeignObjectTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "AbnormalityForeignObjectTypeCS"
+  }
+},

@@ -2,6 +2,7 @@ ValueSet:  BreastBodyLocationRegionsVS
 Title: "Breast Body Location Regions ValueSet"
 Description:  "Breast Body Location Regions Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system BreastBodyLocationRegionsCS
 
 
@@ -10,6 +11,7 @@ CodeSystem:  BreastBodyLocationRegionsCS
 Title: "Breast Body Location Regions CodeSystem"
 Description:  "Breast Body Location Regions CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription BodyStructure | 416710001 | Skin and subcutaneous tissue structure of axilla
   * #Axilla "Axilla"
 

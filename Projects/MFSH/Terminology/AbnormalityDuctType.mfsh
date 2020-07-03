@@ -2,12 +2,14 @@ ValueSet:  AbnormalityDuctTypeVS
 Title: "Duct Type ValueSet"
 Description: "Duct Type Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityDuctTypeCS
 
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Type CodeSystem"
 Description: "Duct types code system."
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #DuctNormal "Duct normal"
   * #SolitaryDilatedDuct "Solitary dilated duct"
   * #DuctEctasia "Duct ectasia"

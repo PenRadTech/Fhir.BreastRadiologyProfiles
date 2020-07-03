@@ -2,12 +2,14 @@ ValueSet:  AssociatedFeatureVS
 Title: "Associated Feature ValueSet"
 Description:  "AssociatedFeature Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system AssociatedFeatureCS
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #ArchitecturalDistortion "Architectural distortion"
   * #AxillaryAdenopathy "Axillary adenopathy"
   * #BiopsyClip "Biopsy clip"

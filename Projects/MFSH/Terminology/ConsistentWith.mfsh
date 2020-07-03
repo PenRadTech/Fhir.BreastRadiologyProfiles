@@ -5,6 +5,7 @@ ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system ConsistentWithCS
 
 

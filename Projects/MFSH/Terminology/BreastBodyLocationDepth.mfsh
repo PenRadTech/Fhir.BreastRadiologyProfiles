@@ -2,6 +2,7 @@ ValueSet:  BreastBodyLocationDepthVS
 Title: "Breast Body Location Depth ValueSet"
 Description:  "Breast Body Location Depth Value Set"
 #apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+#apply CSBuild.DefineValueSet()
   * codes from system BreastBodyLocationDepthCS
 
 
@@ -9,6 +10,7 @@ CodeSystem:  BreastBodyLocationDepthCS
 Title: "Breast Body Location Depth CodeSystem"
 Description:  "Breast Body Location Depth CodeSystem"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription Not found
   * #AnteriorDepth "Anterior depth"
 

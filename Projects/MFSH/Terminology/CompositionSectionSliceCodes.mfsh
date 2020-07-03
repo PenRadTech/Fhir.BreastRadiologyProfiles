@@ -2,6 +2,7 @@ CodeSystem: CompositionSectionSliceCodesCS
 Title: "Composition Section Slice Codes CodeSystem"
 Description: "Composition Section Slice Codes code system"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #report "Code to identify the 'Report' section slice"
   * #impressions "Code to identify the 'Impressions' section slice"
   * #relatedResources "Code to identify the 'RelatedResources' section slice"

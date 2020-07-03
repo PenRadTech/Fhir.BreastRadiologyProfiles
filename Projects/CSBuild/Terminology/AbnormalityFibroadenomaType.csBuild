@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "AbnormalityFibroAdenomaTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "AbnormalityFibroadenomaTypeCS"
+  }
+},

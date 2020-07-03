@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+    "name" : "CalcificationDistributionVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+    "name" : "CalcificationDistributionCS"
+  }
+},

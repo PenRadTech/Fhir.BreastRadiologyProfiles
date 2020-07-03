@@ -2,6 +2,7 @@ CodeSystem: CorrespondsWithCodeSystemCS
 Title: "Corresponds With CodeSystem"
 Description: "CorrespondsWith code system"
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()
   * #Aspiration "Aspiration"
   * #Biopsy "Biopsy"
   * #Concern "Concern"
