@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Aspiration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Aspiration"));// CSItemValueSet.cs:66
-		public static TCoding Code_Biopsy = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Biopsy"));// CSItemValueSet.cs:66
-		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "MRI"));// CSItemValueSet.cs:66
-		public static TCoding Code_US = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "US"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/PreviouslyDemonstratedByVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:69
-		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Aspiration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Aspiration"));// CSItemValueSet.cs:67
+		public static TCoding Code_Biopsy = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Biopsy"));// CSItemValueSet.cs:67
+		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "MRI"));// CSItemValueSet.cs:67
+		public static TCoding Code_US = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "US"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:70
+		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

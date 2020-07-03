@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_51440002 = new TCoding(new Coding("http://snomed.info/sct", "51440002"));                                      // CSItemValueSet.cs:66
-		public static TCoding Code_399488007 = new TCoding(new Coding("http://snomed.info/sct", "399488007"));                                    // CSItemValueSet.cs:66
-		public static TCoding Code_85421007 = new TCoding(new Coding("http://snomed.info/sct", "85421007"));                                      // CSItemValueSet.cs:66
-		public static TCoding Code_31156008 = new TCoding(new Coding("http://snomed.info/sct", "31156008"));                                      // CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/LateralityVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_51440002;                                                                                                           // CSItemValueSet.cs:69
-		    yield return Code_399488007;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_85421007;                                                                                                           // CSItemValueSet.cs:69
-		    yield return Code_31156008;                                                                                                           // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_51440002 = new TCoding(new Coding("http://snomed.info/sct", "51440002"));                                      // CSItemValueSet.cs:67
+		public static TCoding Code_399488007 = new TCoding(new Coding("http://snomed.info/sct", "399488007"));                                    // CSItemValueSet.cs:67
+		public static TCoding Code_85421007 = new TCoding(new Coding("http://snomed.info/sct", "85421007"));                                      // CSItemValueSet.cs:67
+		public static TCoding Code_31156008 = new TCoding(new Coding("http://snomed.info/sct", "31156008"));                                      // CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_51440002;                                                                                                           // CSItemValueSet.cs:70
+		    yield return Code_399488007;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_85421007;                                                                                                           // CSItemValueSet.cs:70
+		    yield return Code_31156008;                                                                                                           // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

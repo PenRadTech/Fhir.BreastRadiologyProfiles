@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Density = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "Density"));// CSItemValueSet.cs:66
-		public static TCoding Code_DensityFocalAsymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityFocalAsymmetry"));// CSItemValueSet.cs:66
-		public static TCoding Code_DensityNodular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityNodular"));// CSItemValueSet.cs:66
-		public static TCoding Code_DensityTubular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityTubular"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityDensityTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Density;                                                                                                            // CSItemValueSet.cs:69
-		    yield return Code_DensityFocalAsymmetry;                                                                                              // CSItemValueSet.cs:69
-		    yield return Code_DensityNodular;                                                                                                     // CSItemValueSet.cs:69
-		    yield return Code_DensityTubular;                                                                                                     // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Density = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "Density"));// CSItemValueSet.cs:67
+		public static TCoding Code_DensityFocalAsymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityFocalAsymmetry"));// CSItemValueSet.cs:67
+		public static TCoding Code_DensityNodular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityNodular"));// CSItemValueSet.cs:67
+		public static TCoding Code_DensityTubular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDensityTypeCS", "DensityTubular"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Density;                                                                                                            // CSItemValueSet.cs:70
+		    yield return Code_DensityFocalAsymmetry;                                                                                              // CSItemValueSet.cs:70
+		    yield return Code_DensityNodular;                                                                                                     // CSItemValueSet.cs:70
+		    yield return Code_DensityTubular;                                                                                                     // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

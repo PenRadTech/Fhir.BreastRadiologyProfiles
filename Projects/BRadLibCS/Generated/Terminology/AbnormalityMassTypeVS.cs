@@ -27,19 +27,24 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Mass = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "Mass"));// CSItemValueSet.cs:66
-		public static TCoding Code_MassIntraductal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassIntraductal"));// CSItemValueSet.cs:66
-		public static TCoding Code_MassPartiallySolid = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassPartiallySolid"));// CSItemValueSet.cs:66
-		public static TCoding Code_MassSkinATLASIsSkinLesion = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassSkinATLASIsSkinLesion"));// CSItemValueSet.cs:66
-		public static TCoding Code_MassSolid = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassSolid"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityMassTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Mass;                                                                                                               // CSItemValueSet.cs:69
-		    yield return Code_MassIntraductal;                                                                                                    // CSItemValueSet.cs:69
-		    yield return Code_MassPartiallySolid;                                                                                                 // CSItemValueSet.cs:69
-		    yield return Code_MassSkinATLASIsSkinLesion;                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_MassSolid;                                                                                                          // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Mass = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "Mass"));// CSItemValueSet.cs:67
+		public static TCoding Code_MassIntraductal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassIntraductal"));// CSItemValueSet.cs:67
+		public static TCoding Code_MassPartiallySolid = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassPartiallySolid"));// CSItemValueSet.cs:67
+		public static TCoding Code_MassSkinATLASIsSkinLesion = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassSkinATLASIsSkinLesion"));// CSItemValueSet.cs:67
+		public static TCoding Code_MassSolid = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityMassTypeCS", "MassSolid"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Mass;                                                                                                               // CSItemValueSet.cs:70
+		    yield return Code_MassIntraductal;                                                                                                    // CSItemValueSet.cs:70
+		    yield return Code_MassPartiallySolid;                                                                                                 // CSItemValueSet.cs:70
+		    yield return Code_MassSkinATLASIsSkinLesion;                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_MassSolid;                                                                                                          // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

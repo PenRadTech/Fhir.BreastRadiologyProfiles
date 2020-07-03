@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_AlmostEntirelyFat = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "AlmostEntirelyFat"));// CSItemValueSet.cs:66
-		public static TCoding Code_ScatteredAreasOfFibroglandularDensity = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ScatteredAreasOfFibroglandularDensity"));// CSItemValueSet.cs:66
-		public static TCoding Code_HeterogeneouslyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "HeterogeneouslyDense"));// CSItemValueSet.cs:66
-		public static TCoding Code_ExtremelyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ExtremelyDense"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/MGBreastDensityVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_AlmostEntirelyFat;                                                                                                  // CSItemValueSet.cs:69
-		    yield return Code_ScatteredAreasOfFibroglandularDensity;                                                                              // CSItemValueSet.cs:69
-		    yield return Code_HeterogeneouslyDense;                                                                                               // CSItemValueSet.cs:69
-		    yield return Code_ExtremelyDense;                                                                                                     // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_AlmostEntirelyFat = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "AlmostEntirelyFat"));// CSItemValueSet.cs:67
+		public static TCoding Code_ScatteredAreasOfFibroglandularDensity = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ScatteredAreasOfFibroglandularDensity"));// CSItemValueSet.cs:67
+		public static TCoding Code_HeterogeneouslyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "HeterogeneouslyDense"));// CSItemValueSet.cs:67
+		public static TCoding Code_ExtremelyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ExtremelyDense"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_AlmostEntirelyFat;                                                                                                  // CSItemValueSet.cs:70
+		    yield return Code_ScatteredAreasOfFibroglandularDensity;                                                                              // CSItemValueSet.cs:70
+		    yield return Code_HeterogeneouslyDense;                                                                                               // CSItemValueSet.cs:70
+		    yield return Code_ExtremelyDense;                                                                                                     // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

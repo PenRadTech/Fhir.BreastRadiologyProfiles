@@ -27,23 +27,28 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Cyst = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "Cyst"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystComplex = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystComplex"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystComplicated = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystComplicated"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystMicro = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystMicro"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystOil = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystOil"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystSimple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystSimple"));// CSItemValueSet.cs:66
-		public static TCoding Code_CystWithDebris = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystWithDebris"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityCystTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Cyst;                                                                                                               // CSItemValueSet.cs:69
-		    yield return Code_CystComplex;                                                                                                        // CSItemValueSet.cs:69
-		    yield return Code_CystComplicated;                                                                                                    // CSItemValueSet.cs:69
-		    yield return Code_CystMicro;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_CystOil;                                                                                                            // CSItemValueSet.cs:69
-		    yield return Code_CystSimple;                                                                                                         // CSItemValueSet.cs:69
-		    yield return Code_CystWithDebris;                                                                                                     // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Cyst = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "Cyst"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystComplex = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystComplex"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystComplicated = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystComplicated"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystMicro = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystMicro"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystOil = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystOil"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystSimple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystSimple"));// CSItemValueSet.cs:67
+		public static TCoding Code_CystWithDebris = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityCystTypeCS", "CystWithDebris"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Cyst;                                                                                                               // CSItemValueSet.cs:70
+		    yield return Code_CystComplex;                                                                                                        // CSItemValueSet.cs:70
+		    yield return Code_CystComplicated;                                                                                                    // CSItemValueSet.cs:70
+		    yield return Code_CystMicro;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_CystOil;                                                                                                            // CSItemValueSet.cs:70
+		    yield return Code_CystSimple;                                                                                                         // CSItemValueSet.cs:70
+		    yield return Code_CystWithDebris;                                                                                                     // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

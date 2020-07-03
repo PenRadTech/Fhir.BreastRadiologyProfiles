@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_ParallelToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "ParallelToSkin"));// CSItemValueSet.cs:66
-		public static TCoding Code_PerpendicularToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "PerpendicularToSkin"));// CSItemValueSet.cs:66
-		public static TCoding Code_TallerThanWide = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "TallerThanWide"));// CSItemValueSet.cs:66
-		public static TCoding Code_WiderThanTall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "WiderThanTall"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/OrientationVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_ParallelToSkin;                                                                                                     // CSItemValueSet.cs:69
-		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_TallerThanWide;                                                                                                     // CSItemValueSet.cs:69
-		    yield return Code_WiderThanTall;                                                                                                      // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_ParallelToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "ParallelToSkin"));// CSItemValueSet.cs:67
+		public static TCoding Code_PerpendicularToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "PerpendicularToSkin"));// CSItemValueSet.cs:67
+		public static TCoding Code_TallerThanWide = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "TallerThanWide"));// CSItemValueSet.cs:67
+		public static TCoding Code_WiderThanTall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "WiderThanTall"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_ParallelToSkin;                                                                                                     // CSItemValueSet.cs:70
+		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_TallerThanWide;                                                                                                     // CSItemValueSet.cs:70
+		    yield return Code_WiderThanTall;                                                                                                      // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

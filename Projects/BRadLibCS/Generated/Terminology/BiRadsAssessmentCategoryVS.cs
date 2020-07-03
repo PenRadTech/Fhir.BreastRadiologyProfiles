@@ -27,27 +27,32 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Category0 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category0"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category2 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category2"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category3 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category3"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category4 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category4A = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4A"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category4B = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4B"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category4C = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4C"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category5 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category5"));// CSItemValueSet.cs:66
-		public static TCoding Code_Category6 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category6"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BiRadsAssessmentCategoryVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Category0;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Category2;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Category3;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Category4;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Category4A;                                                                                                         // CSItemValueSet.cs:69
-		    yield return Code_Category4B;                                                                                                         // CSItemValueSet.cs:69
-		    yield return Code_Category4C;                                                                                                         // CSItemValueSet.cs:69
-		    yield return Code_Category5;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Category6;                                                                                                          // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Category0 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category0"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category2 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category2"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category3 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category3"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category4 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category4A = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4A"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category4B = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4B"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category4C = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4C"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category5 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category5"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category6 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category6"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Category0;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Category2;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Category3;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Category4;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Category4A;                                                                                                         // CSItemValueSet.cs:70
+		    yield return Code_Category4B;                                                                                                         // CSItemValueSet.cs:70
+		    yield return Code_Category4C;                                                                                                         // CSItemValueSet.cs:70
+		    yield return Code_Category5;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Category6;                                                                                                          // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

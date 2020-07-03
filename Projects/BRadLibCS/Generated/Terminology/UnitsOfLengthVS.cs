@@ -27,15 +27,20 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_M = new TCoding(new Coding("http://unitsofmeasure.org", "m"));                                                 // CSItemValueSet.cs:66
-		public static TCoding Code_Cm = new TCoding(new Coding("http://unitsofmeasure.org", "cm"));                                               // CSItemValueSet.cs:66
-		public static TCoding Code_Mm = new TCoding(new Coding("http://unitsofmeasure.org", "mm"));                                               // CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_M;                                                                                                                  // CSItemValueSet.cs:69
-		    yield return Code_Cm;                                                                                                                 // CSItemValueSet.cs:69
-		    yield return Code_Mm;                                                                                                                 // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_M = new TCoding(new Coding("http://unitsofmeasure.org", "m"));                                                 // CSItemValueSet.cs:67
+		public static TCoding Code_Cm = new TCoding(new Coding("http://unitsofmeasure.org", "cm"));                                               // CSItemValueSet.cs:67
+		public static TCoding Code_Mm = new TCoding(new Coding("http://unitsofmeasure.org", "mm"));                                               // CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_M;                                                                                                                  // CSItemValueSet.cs:70
+		    yield return Code_Cm;                                                                                                                 // CSItemValueSet.cs:70
+		    yield return Code_Mm;                                                                                                                 // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

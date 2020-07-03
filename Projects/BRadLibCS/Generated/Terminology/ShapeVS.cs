@@ -27,19 +27,24 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_IrregularInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "IrregularInShape"));// CSItemValueSet.cs:66
-		public static TCoding Code_LobulatedInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "LobulatedInShape"));// CSItemValueSet.cs:66
-		public static TCoding Code_OvalInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "OvalInShape"));// CSItemValueSet.cs:66
-		public static TCoding Code_Reniform = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "Reniform"));  // CSItemValueSet.cs:66
-		public static TCoding Code_RoundInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "RoundInShape"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/ShapeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_IrregularInShape;                                                                                                   // CSItemValueSet.cs:69
-		    yield return Code_LobulatedInShape;                                                                                                   // CSItemValueSet.cs:69
-		    yield return Code_OvalInShape;                                                                                                        // CSItemValueSet.cs:69
-		    yield return Code_Reniform;                                                                                                           // CSItemValueSet.cs:69
-		    yield return Code_RoundInShape;                                                                                                       // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_IrregularInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "IrregularInShape"));// CSItemValueSet.cs:67
+		public static TCoding Code_LobulatedInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "LobulatedInShape"));// CSItemValueSet.cs:67
+		public static TCoding Code_OvalInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "OvalInShape"));// CSItemValueSet.cs:67
+		public static TCoding Code_Reniform = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "Reniform"));  // CSItemValueSet.cs:67
+		public static TCoding Code_RoundInShape = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ShapeCS", "RoundInShape"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_IrregularInShape;                                                                                                   // CSItemValueSet.cs:70
+		    yield return Code_LobulatedInShape;                                                                                                   // CSItemValueSet.cs:70
+		    yield return Code_OvalInShape;                                                                                                        // CSItemValueSet.cs:70
+		    yield return Code_Reniform;                                                                                                           // CSItemValueSet.cs:70
+		    yield return Code_RoundInShape;                                                                                                       // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

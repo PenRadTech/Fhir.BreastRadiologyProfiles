@@ -27,23 +27,28 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_ClinicalExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "ClinicalExam"));// CSItemValueSet.cs:66
-		public static TCoding Code_Ductogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ductogram"));// CSItemValueSet.cs:66
-		public static TCoding Code_Mammogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Mammogram"));// CSItemValueSet.cs:66
-		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "MRI"));// CSItemValueSet.cs:66
-		public static TCoding Code_OutsideExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "OutsideExam"));// CSItemValueSet.cs:66
-		public static TCoding Code_Scintimammography = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Scintimammography"));// CSItemValueSet.cs:66
-		public static TCoding Code_Ultrasound = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ultrasound"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/NotPreviouslySeenVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_ClinicalExam;                                                                                                       // CSItemValueSet.cs:69
-		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Mammogram;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:69
-		    yield return Code_Scintimammography;                                                                                                  // CSItemValueSet.cs:69
-		    yield return Code_Ultrasound;                                                                                                         // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_ClinicalExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "ClinicalExam"));// CSItemValueSet.cs:67
+		public static TCoding Code_Ductogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ductogram"));// CSItemValueSet.cs:67
+		public static TCoding Code_Mammogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Mammogram"));// CSItemValueSet.cs:67
+		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "MRI"));// CSItemValueSet.cs:67
+		public static TCoding Code_OutsideExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "OutsideExam"));// CSItemValueSet.cs:67
+		public static TCoding Code_Scintimammography = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Scintimammography"));// CSItemValueSet.cs:67
+		public static TCoding Code_Ultrasound = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ultrasound"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_ClinicalExam;                                                                                                       // CSItemValueSet.cs:70
+		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Mammogram;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:70
+		    yield return Code_Scintimammography;                                                                                                  // CSItemValueSet.cs:70
+		    yield return Code_Ultrasound;                                                                                                         // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

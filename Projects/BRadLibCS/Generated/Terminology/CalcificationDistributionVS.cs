@@ -27,23 +27,28 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_ClusteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ClusteredDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_DiffuseDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "DiffuseDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_GroupedDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "GroupedDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_LinearDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "LinearDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_RegionalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "RegionalDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_ScatteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ScatteredDistribution"));// CSItemValueSet.cs:66
-		public static TCoding Code_SegmentalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "SegmentalDistribution"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/CalcificationDistributionVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_ClusteredDistribution;                                                                                              // CSItemValueSet.cs:69
-		    yield return Code_DiffuseDistribution;                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_GroupedDistribution;                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_LinearDistribution;                                                                                                 // CSItemValueSet.cs:69
-		    yield return Code_RegionalDistribution;                                                                                               // CSItemValueSet.cs:69
-		    yield return Code_ScatteredDistribution;                                                                                              // CSItemValueSet.cs:69
-		    yield return Code_SegmentalDistribution;                                                                                              // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_ClusteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ClusteredDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_DiffuseDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "DiffuseDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_GroupedDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "GroupedDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_LinearDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "LinearDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_RegionalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "RegionalDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_ScatteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ScatteredDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_SegmentalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "SegmentalDistribution"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_ClusteredDistribution;                                                                                              // CSItemValueSet.cs:70
+		    yield return Code_DiffuseDistribution;                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_GroupedDistribution;                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_LinearDistribution;                                                                                                 // CSItemValueSet.cs:70
+		    yield return Code_RegionalDistribution;                                                                                               // CSItemValueSet.cs:70
+		    yield return Code_ScatteredDistribution;                                                                                              // CSItemValueSet.cs:70
+		    yield return Code_SegmentalDistribution;                                                                                              // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

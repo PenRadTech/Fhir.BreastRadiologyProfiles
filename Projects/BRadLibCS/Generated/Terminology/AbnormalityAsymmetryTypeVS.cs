@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Asymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "Asymmetry"));// CSItemValueSet.cs:66
-		public static TCoding Code_AsymmetryFocal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "AsymmetryFocal"));// CSItemValueSet.cs:66
-		public static TCoding Code_AsymmetryGlobal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "AsymmetryGlobal"));// CSItemValueSet.cs:66
-		public static TCoding Code_DevelopingAsymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "DevelopingAsymmetry"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityAsymmetryTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Asymmetry;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_AsymmetryFocal;                                                                                                     // CSItemValueSet.cs:69
-		    yield return Code_AsymmetryGlobal;                                                                                                    // CSItemValueSet.cs:69
-		    yield return Code_DevelopingAsymmetry;                                                                                                // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Asymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "Asymmetry"));// CSItemValueSet.cs:67
+		public static TCoding Code_AsymmetryFocal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "AsymmetryFocal"));// CSItemValueSet.cs:67
+		public static TCoding Code_AsymmetryGlobal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "AsymmetryGlobal"));// CSItemValueSet.cs:67
+		public static TCoding Code_DevelopingAsymmetry = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityAsymmetryTypeCS", "DevelopingAsymmetry"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Asymmetry;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_AsymmetryFocal;                                                                                                     // CSItemValueSet.cs:70
+		    yield return Code_AsymmetryGlobal;                                                                                                    // CSItemValueSet.cs:70
+		    yield return Code_DevelopingAsymmetry;                                                                                                // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

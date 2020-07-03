@@ -27,27 +27,32 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_NodeAxillary = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeAxillary"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeEnlarged = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeEnlarged"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeFocalCortex = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeFocalCortex"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeInfraclavicular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeInfraclavicular"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeIntramammary = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeIntramammary"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeLymph = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeLymph"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeLymphNormal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeLymphNormal"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeSupraclavicular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeSupraclavicular"));// CSItemValueSet.cs:66
-		public static TCoding Code_NodeUniformThickness = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeUniformThickness"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityLymphNodeTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_NodeAxillary;                                                                                                       // CSItemValueSet.cs:69
-		    yield return Code_NodeEnlarged;                                                                                                       // CSItemValueSet.cs:69
-		    yield return Code_NodeFocalCortex;                                                                                                    // CSItemValueSet.cs:69
-		    yield return Code_NodeInfraclavicular;                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_NodeIntramammary;                                                                                                   // CSItemValueSet.cs:69
-		    yield return Code_NodeLymph;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_NodeLymphNormal;                                                                                                    // CSItemValueSet.cs:69
-		    yield return Code_NodeSupraclavicular;                                                                                                // CSItemValueSet.cs:69
-		    yield return Code_NodeUniformThickness;                                                                                               // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_NodeAxillary = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeAxillary"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeEnlarged = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeEnlarged"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeFocalCortex = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeFocalCortex"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeInfraclavicular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeInfraclavicular"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeIntramammary = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeIntramammary"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeLymph = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeLymph"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeLymphNormal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeLymphNormal"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeSupraclavicular = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeSupraclavicular"));// CSItemValueSet.cs:67
+		public static TCoding Code_NodeUniformThickness = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityLymphNodeTypeCS", "NodeUniformThickness"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_NodeAxillary;                                                                                                       // CSItemValueSet.cs:70
+		    yield return Code_NodeEnlarged;                                                                                                       // CSItemValueSet.cs:70
+		    yield return Code_NodeFocalCortex;                                                                                                    // CSItemValueSet.cs:70
+		    yield return Code_NodeInfraclavicular;                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_NodeIntramammary;                                                                                                   // CSItemValueSet.cs:70
+		    yield return Code_NodeLymph;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_NodeLymphNormal;                                                                                                    // CSItemValueSet.cs:70
+		    yield return Code_NodeSupraclavicular;                                                                                                // CSItemValueSet.cs:70
+		    yield return Code_NodeUniformThickness;                                                                                               // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

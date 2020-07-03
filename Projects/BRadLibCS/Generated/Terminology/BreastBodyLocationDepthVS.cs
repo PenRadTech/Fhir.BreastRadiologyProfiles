@@ -27,15 +27,20 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_AnteriorDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "AnteriorDepth"));// CSItemValueSet.cs:66
-		public static TCoding Code_MiddleDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "MiddleDepth"));// CSItemValueSet.cs:66
-		public static TCoding Code_PosteriorDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "PosteriorDepth"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationDepthVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_AnteriorDepth;                                                                                                      // CSItemValueSet.cs:69
-		    yield return Code_MiddleDepth;                                                                                                        // CSItemValueSet.cs:69
-		    yield return Code_PosteriorDepth;                                                                                                     // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_AnteriorDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "AnteriorDepth"));// CSItemValueSet.cs:67
+		public static TCoding Code_MiddleDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "MiddleDepth"));// CSItemValueSet.cs:67
+		public static TCoding Code_PosteriorDepth = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationDepthCS", "PosteriorDepth"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_AnteriorDepth;                                                                                                      // CSItemValueSet.cs:70
+		    yield return Code_MiddleDepth;                                                                                                        // CSItemValueSet.cs:70
+		    yield return Code_PosteriorDepth;                                                                                                     // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

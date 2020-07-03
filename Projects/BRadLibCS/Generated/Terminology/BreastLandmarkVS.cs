@@ -27,15 +27,20 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Nipple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Nipple"));// CSItemValueSet.cs:66
-		public static TCoding Code_ChestWall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "ChestWall"));// CSItemValueSet.cs:66
-		public static TCoding Code_Skin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Skin")); // CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastLandmarkVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Nipple;                                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_ChestWall;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Nipple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Nipple"));// CSItemValueSet.cs:67
+		public static TCoding Code_ChestWall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "ChestWall"));// CSItemValueSet.cs:67
+		public static TCoding Code_Skin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Skin")); // CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Nipple;                                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_ChestWall;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

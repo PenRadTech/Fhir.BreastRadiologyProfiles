@@ -27,25 +27,30 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Axilla = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "Axilla"));// CSItemValueSet.cs:66
-		public static TCoding Code_AxillaryTail = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaryTail"));// CSItemValueSet.cs:66
-		public static TCoding Code_AxillaI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaI"));// CSItemValueSet.cs:66
-		public static TCoding Code_AxillaII = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaII"));// CSItemValueSet.cs:66
-		public static TCoding Code_AxillaIII = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaIII"));// CSItemValueSet.cs:66
-		public static TCoding Code_InframammaryFold = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "InframammaryFold"));// CSItemValueSet.cs:66
-		public static TCoding Code_InSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "InSkin"));// CSItemValueSet.cs:66
-		public static TCoding Code_CentralToNipple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "CentralToNipple"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationRegionsVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Axilla;                                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_AxillaryTail;                                                                                                       // CSItemValueSet.cs:69
-		    yield return Code_AxillaI;                                                                                                            // CSItemValueSet.cs:69
-		    yield return Code_AxillaII;                                                                                                           // CSItemValueSet.cs:69
-		    yield return Code_AxillaIII;                                                                                                          // CSItemValueSet.cs:69
-		    yield return Code_InframammaryFold;                                                                                                   // CSItemValueSet.cs:69
-		    yield return Code_InSkin;                                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_CentralToNipple;                                                                                                    // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Axilla = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "Axilla"));// CSItemValueSet.cs:67
+		public static TCoding Code_AxillaryTail = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaryTail"));// CSItemValueSet.cs:67
+		public static TCoding Code_AxillaI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaI"));// CSItemValueSet.cs:67
+		public static TCoding Code_AxillaII = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaII"));// CSItemValueSet.cs:67
+		public static TCoding Code_AxillaIII = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "AxillaIII"));// CSItemValueSet.cs:67
+		public static TCoding Code_InframammaryFold = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "InframammaryFold"));// CSItemValueSet.cs:67
+		public static TCoding Code_InSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "InSkin"));// CSItemValueSet.cs:67
+		public static TCoding Code_CentralToNipple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationRegionsCS", "CentralToNipple"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Axilla;                                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_AxillaryTail;                                                                                                       // CSItemValueSet.cs:70
+		    yield return Code_AxillaI;                                                                                                            // CSItemValueSet.cs:70
+		    yield return Code_AxillaII;                                                                                                           // CSItemValueSet.cs:70
+		    yield return Code_AxillaIII;                                                                                                          // CSItemValueSet.cs:70
+		    yield return Code_InframammaryFold;                                                                                                   // CSItemValueSet.cs:70
+		    yield return Code_InSkin;                                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_CentralToNipple;                                                                                                    // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

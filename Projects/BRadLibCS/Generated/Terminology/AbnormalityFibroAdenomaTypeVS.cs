@@ -27,13 +27,18 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_Fibroadenoma = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "Fibroadenoma"));// CSItemValueSet.cs:66
-		public static TCoding Code_FibroadenomaDegeneration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "FibroadenomaDegeneration"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityFibroAdenomaTypeVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_Fibroadenoma;                                                                                                       // CSItemValueSet.cs:69
-		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_Fibroadenoma = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "Fibroadenoma"));// CSItemValueSet.cs:67
+		public static TCoding Code_FibroadenomaDegeneration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "FibroadenomaDegeneration"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_Fibroadenoma;                                                                                                       // CSItemValueSet.cs:70
+		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }

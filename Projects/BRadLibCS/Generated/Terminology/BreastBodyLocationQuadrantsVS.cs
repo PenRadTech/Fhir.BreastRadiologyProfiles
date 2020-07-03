@@ -27,17 +27,22 @@ namespace BreastRadLib
 		    }
 		}
 
-		public static TCoding Code_InferiorMedialQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "InferiorMedialQuadrent"));// CSItemValueSet.cs:66
-		public static TCoding Code_InferiorLateralQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "InferiorLateralQuadrent"));// CSItemValueSet.cs:66
-		public static TCoding Code_SuperiorMedialQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "SuperiorMedialQuadrent"));// CSItemValueSet.cs:66
-		public static TCoding Code_SuperiorLateralQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "SuperiorLateralQuadrent"));// CSItemValueSet.cs:66
+		/// <summary>
+		/// Url of this value set.
+		/// </summary>
+		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationQuadrantsVS";
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
-		{                                                                                                                                         // CSItemValueSet.cs:58
-		    yield return Code_InferiorMedialQuadrent;                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_InferiorLateralQuadrent;                                                                                            // CSItemValueSet.cs:69
-		    yield return Code_SuperiorMedialQuadrent;                                                                                             // CSItemValueSet.cs:69
-		    yield return Code_SuperiorLateralQuadrent;                                                                                            // CSItemValueSet.cs:69
-		}                                                                                                                                         // CSItemValueSet.cs:92
+		public static TCoding Code_InferiorMedialQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "InferiorMedialQuadrent"));// CSItemValueSet.cs:67
+		public static TCoding Code_InferiorLateralQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "InferiorLateralQuadrent"));// CSItemValueSet.cs:67
+		public static TCoding Code_SuperiorMedialQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "SuperiorMedialQuadrent"));// CSItemValueSet.cs:67
+		public static TCoding Code_SuperiorLateralQuadrent = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastBodyLocationQuadrantsCS", "SuperiorLateralQuadrent"));// CSItemValueSet.cs:67
+
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
+		{                                                                                                                                         // CSItemValueSet.cs:59
+		    yield return Code_InferiorMedialQuadrent;                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_InferiorLateralQuadrent;                                                                                            // CSItemValueSet.cs:70
+		    yield return Code_SuperiorMedialQuadrent;                                                                                             // CSItemValueSet.cs:70
+		    yield return Code_SuperiorLateralQuadrent;                                                                                            // CSItemValueSet.cs:70
+		}                                                                                                                                         // CSItemValueSet.cs:93
 	}
 }
