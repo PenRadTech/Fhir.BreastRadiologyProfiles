@@ -32,17 +32,17 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/OrientationVS";
 
-		public static TCoding Code_ParallelToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "ParallelToSkin"));// CSItemValueSet.cs:67
-		public static TCoding Code_PerpendicularToSkin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "PerpendicularToSkin"));// CSItemValueSet.cs:67
-		public static TCoding Code_TallerThanWide = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "TallerThanWide"));// CSItemValueSet.cs:67
-		public static TCoding Code_WiderThanTall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS", "WiderThanTall"));// CSItemValueSet.cs:67
+		public static TCoding Code_ParallelToSkin = new TCoding(OrientationCS.Code_ParallelToSkin);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_PerpendicularToSkin = new TCoding(OrientationCS.Code_PerpendicularToSkin);                                     // CSItemValueSet.cs:73
+		public static TCoding Code_TallerThanWide = new TCoding(OrientationCS.Code_TallerThanWide);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_WiderThanTall = new TCoding(OrientationCS.Code_WiderThanTall);                                                 // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_ParallelToSkin;                                                                                                     // CSItemValueSet.cs:70
-		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_TallerThanWide;                                                                                                     // CSItemValueSet.cs:70
-		    yield return Code_WiderThanTall;                                                                                                      // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_ParallelToSkin;                                                                                                     // CSItemValueSet.cs:84
+		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_TallerThanWide;                                                                                                     // CSItemValueSet.cs:84
+		    yield return Code_WiderThanTall;                                                                                                      // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

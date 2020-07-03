@@ -32,13 +32,13 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityFibroAdenomaTypeVS";
 
-		public static TCoding Code_Fibroadenoma = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "Fibroadenoma"));// CSItemValueSet.cs:67
-		public static TCoding Code_FibroadenomaDegeneration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS", "FibroadenomaDegeneration"));// CSItemValueSet.cs:67
+		public static TCoding Code_Fibroadenoma = new TCoding(AbnormalityFibroadenomaTypeCS.Code_Fibroadenoma);                                   // CSItemValueSet.cs:73
+		public static TCoding Code_FibroadenomaDegeneration = new TCoding(AbnormalityFibroadenomaTypeCS.Code_FibroadenomaDegeneration);           // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Fibroadenoma;                                                                                                       // CSItemValueSet.cs:70
-		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_Fibroadenoma;                                                                                                       // CSItemValueSet.cs:84
+		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

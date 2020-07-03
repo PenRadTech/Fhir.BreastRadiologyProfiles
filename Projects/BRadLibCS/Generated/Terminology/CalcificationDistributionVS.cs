@@ -32,23 +32,23 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/CalcificationDistributionVS";
 
-		public static TCoding Code_ClusteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ClusteredDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_DiffuseDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "DiffuseDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_GroupedDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "GroupedDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_LinearDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "LinearDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_RegionalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "RegionalDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_ScatteredDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "ScatteredDistribution"));// CSItemValueSet.cs:67
-		public static TCoding Code_SegmentalDistribution = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CalcificationDistributionCS", "SegmentalDistribution"));// CSItemValueSet.cs:67
+		public static TCoding Code_ClusteredDistribution = new TCoding(CalcificationDistributionCS.Code_ClusteredDistribution);                   // CSItemValueSet.cs:73
+		public static TCoding Code_DiffuseDistribution = new TCoding(CalcificationDistributionCS.Code_DiffuseDistribution);                       // CSItemValueSet.cs:73
+		public static TCoding Code_GroupedDistribution = new TCoding(CalcificationDistributionCS.Code_GroupedDistribution);                       // CSItemValueSet.cs:73
+		public static TCoding Code_LinearDistribution = new TCoding(CalcificationDistributionCS.Code_LinearDistribution);                         // CSItemValueSet.cs:73
+		public static TCoding Code_RegionalDistribution = new TCoding(CalcificationDistributionCS.Code_RegionalDistribution);                     // CSItemValueSet.cs:73
+		public static TCoding Code_ScatteredDistribution = new TCoding(CalcificationDistributionCS.Code_ScatteredDistribution);                   // CSItemValueSet.cs:73
+		public static TCoding Code_SegmentalDistribution = new TCoding(CalcificationDistributionCS.Code_SegmentalDistribution);                   // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_ClusteredDistribution;                                                                                              // CSItemValueSet.cs:70
-		    yield return Code_DiffuseDistribution;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_GroupedDistribution;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_LinearDistribution;                                                                                                 // CSItemValueSet.cs:70
-		    yield return Code_RegionalDistribution;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_ScatteredDistribution;                                                                                              // CSItemValueSet.cs:70
-		    yield return Code_SegmentalDistribution;                                                                                              // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_ClusteredDistribution;                                                                                              // CSItemValueSet.cs:84
+		    yield return Code_DiffuseDistribution;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_GroupedDistribution;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_LinearDistribution;                                                                                                 // CSItemValueSet.cs:84
+		    yield return Code_RegionalDistribution;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_ScatteredDistribution;                                                                                              // CSItemValueSet.cs:84
+		    yield return Code_SegmentalDistribution;                                                                                              // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

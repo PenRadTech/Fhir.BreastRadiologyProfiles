@@ -32,15 +32,15 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityDuctTypeVS";
 
-		public static TCoding Code_DuctNormal = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDuctTypeCS", "DuctNormal"));// CSItemValueSet.cs:67
-		public static TCoding Code_SolitaryDilatedDuct = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDuctTypeCS", "SolitaryDilatedDuct"));// CSItemValueSet.cs:67
-		public static TCoding Code_DuctEctasia = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDuctTypeCS", "DuctEctasia"));// CSItemValueSet.cs:67
+		public static TCoding Code_DuctNormal = new TCoding(AbnormalityDuctTypeCS.Code_DuctNormal);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_SolitaryDilatedDuct = new TCoding(AbnormalityDuctTypeCS.Code_SolitaryDilatedDuct);                             // CSItemValueSet.cs:73
+		public static TCoding Code_DuctEctasia = new TCoding(AbnormalityDuctTypeCS.Code_DuctEctasia);                                             // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_DuctNormal;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_DuctEctasia;                                                                                                        // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_DuctNormal;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_DuctEctasia;                                                                                                        // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

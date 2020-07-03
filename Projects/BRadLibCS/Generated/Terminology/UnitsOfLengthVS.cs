@@ -32,15 +32,15 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfLengthVS";
 
-		public static TCoding Code_M = new TCoding(new Coding("http://unitsofmeasure.org", "m"));                                                 // CSItemValueSet.cs:67
-		public static TCoding Code_Cm = new TCoding(new Coding("http://unitsofmeasure.org", "cm"));                                               // CSItemValueSet.cs:67
-		public static TCoding Code_Mm = new TCoding(new Coding("http://unitsofmeasure.org", "mm"));                                               // CSItemValueSet.cs:67
+		public static TCoding Code_M = new TCoding(new Coding("http://unitsofmeasure.org", "m"));                                                 // CSItemValueSet.cs:79
+		public static TCoding Code_Cm = new TCoding(new Coding("http://unitsofmeasure.org", "cm"));                                               // CSItemValueSet.cs:79
+		public static TCoding Code_Mm = new TCoding(new Coding("http://unitsofmeasure.org", "mm"));                                               // CSItemValueSet.cs:79
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_M;                                                                                                                  // CSItemValueSet.cs:70
-		    yield return Code_Cm;                                                                                                                 // CSItemValueSet.cs:70
-		    yield return Code_Mm;                                                                                                                 // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_M;                                                                                                                  // CSItemValueSet.cs:84
+		    yield return Code_Cm;                                                                                                                 // CSItemValueSet.cs:84
+		    yield return Code_Mm;                                                                                                                 // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

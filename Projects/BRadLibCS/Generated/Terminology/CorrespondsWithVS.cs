@@ -32,67 +32,67 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/CorrespondsWithVS";
 
-		public static TCoding Code_Aspiration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Aspiration"));// CSItemValueSet.cs:67
-		public static TCoding Code_Biopsy = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Biopsy"));// CSItemValueSet.cs:67
-		public static TCoding Code_Concern = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Concern"));// CSItemValueSet.cs:67
-		public static TCoding Code_Ductogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Ductogram"));// CSItemValueSet.cs:67
-		public static TCoding Code_IncidentalFinding = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "IncidentalFinding"));// CSItemValueSet.cs:67
-		public static TCoding Code_Mammo = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Mammo"));// CSItemValueSet.cs:67
-		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "MRI"));  // CSItemValueSet.cs:67
-		public static TCoding Code_NippleDischarge = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "NippleDischarge"));// CSItemValueSet.cs:67
-		public static TCoding Code_OutsideExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "OutsideExam"));// CSItemValueSet.cs:67
-		public static TCoding Code_Pain = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Pain"));// CSItemValueSet.cs:67
-		public static TCoding Code_Palpated = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Palpated"));// CSItemValueSet.cs:67
-		public static TCoding Code_PostOperative = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "PostOperative"));// CSItemValueSet.cs:67
-		public static TCoding Code_PreviousBiopsy = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "PreviousBiopsy"));// CSItemValueSet.cs:67
-		public static TCoding Code_PriorExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "PriorExam"));// CSItemValueSet.cs:67
-		public static TCoding Code_Redness = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Redness"));// CSItemValueSet.cs:67
-		public static TCoding Code_Scinti = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Scinti"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeLessThanMammo = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size<Mammo"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeLessThanMRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size<MRI"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeLessThanPalp = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size<Palp"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeLessThanUS = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size<US"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeGreaterThanMammo = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size>Mammo"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeGreaterThanMRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size>MRI"));// CSItemValueSet.cs:67
-		public static TCoding Code_SizeGreaterThanPalp = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Size>Palp"));// CSItemValueSet.cs:67
-		public static TCoding Code_SkinMarker = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "SkinMarker"));// CSItemValueSet.cs:67
-		public static TCoding Code_Surgery = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Surgery"));// CSItemValueSet.cs:67
-		public static TCoding Code_SurgicalSite = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "SurgicalSite"));// CSItemValueSet.cs:67
-		public static TCoding Code_Tenderness = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "Tenderness"));// CSItemValueSet.cs:67
-		public static TCoding Code_TriggerPoint = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "TriggerPoint"));// CSItemValueSet.cs:67
-		public static TCoding Code_US = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/CorrespondsWithCS", "US"));    // CSItemValueSet.cs:67
+		public static TCoding Code_Aspiration = new TCoding(CorrespondsWithCS.Code_Aspiration);                                                   // CSItemValueSet.cs:73
+		public static TCoding Code_Biopsy = new TCoding(CorrespondsWithCS.Code_Biopsy);                                                           // CSItemValueSet.cs:73
+		public static TCoding Code_Concern = new TCoding(CorrespondsWithCS.Code_Concern);                                                         // CSItemValueSet.cs:73
+		public static TCoding Code_Ductogram = new TCoding(CorrespondsWithCS.Code_Ductogram);                                                     // CSItemValueSet.cs:73
+		public static TCoding Code_IncidentalFinding = new TCoding(CorrespondsWithCS.Code_IncidentalFinding);                                     // CSItemValueSet.cs:73
+		public static TCoding Code_Mammo = new TCoding(CorrespondsWithCS.Code_Mammo);                                                             // CSItemValueSet.cs:73
+		public static TCoding Code_MRI = new TCoding(CorrespondsWithCS.Code_MRI);                                                                 // CSItemValueSet.cs:73
+		public static TCoding Code_NippleDischarge = new TCoding(CorrespondsWithCS.Code_NippleDischarge);                                         // CSItemValueSet.cs:73
+		public static TCoding Code_OutsideExam = new TCoding(CorrespondsWithCS.Code_OutsideExam);                                                 // CSItemValueSet.cs:73
+		public static TCoding Code_Pain = new TCoding(CorrespondsWithCS.Code_Pain);                                                               // CSItemValueSet.cs:73
+		public static TCoding Code_Palpated = new TCoding(CorrespondsWithCS.Code_Palpated);                                                       // CSItemValueSet.cs:73
+		public static TCoding Code_PostOperative = new TCoding(CorrespondsWithCS.Code_PostOperative);                                             // CSItemValueSet.cs:73
+		public static TCoding Code_PreviousBiopsy = new TCoding(CorrespondsWithCS.Code_PreviousBiopsy);                                           // CSItemValueSet.cs:73
+		public static TCoding Code_PriorExam = new TCoding(CorrespondsWithCS.Code_PriorExam);                                                     // CSItemValueSet.cs:73
+		public static TCoding Code_Redness = new TCoding(CorrespondsWithCS.Code_Redness);                                                         // CSItemValueSet.cs:73
+		public static TCoding Code_Scinti = new TCoding(CorrespondsWithCS.Code_Scinti);                                                           // CSItemValueSet.cs:73
+		public static TCoding Code_SizeLessThanMammo = new TCoding(CorrespondsWithCS.Code_SizeLessThanMammo);                                     // CSItemValueSet.cs:73
+		public static TCoding Code_SizeLessThanMRI = new TCoding(CorrespondsWithCS.Code_SizeLessThanMRI);                                         // CSItemValueSet.cs:73
+		public static TCoding Code_SizeLessThanPalp = new TCoding(CorrespondsWithCS.Code_SizeLessThanPalp);                                       // CSItemValueSet.cs:73
+		public static TCoding Code_SizeLessThanUS = new TCoding(CorrespondsWithCS.Code_SizeLessThanUS);                                           // CSItemValueSet.cs:73
+		public static TCoding Code_SizeGreaterThanMammo = new TCoding(CorrespondsWithCS.Code_SizeGreaterThanMammo);                               // CSItemValueSet.cs:73
+		public static TCoding Code_SizeGreaterThanMRI = new TCoding(CorrespondsWithCS.Code_SizeGreaterThanMRI);                                   // CSItemValueSet.cs:73
+		public static TCoding Code_SizeGreaterThanPalp = new TCoding(CorrespondsWithCS.Code_SizeGreaterThanPalp);                                 // CSItemValueSet.cs:73
+		public static TCoding Code_SkinMarker = new TCoding(CorrespondsWithCS.Code_SkinMarker);                                                   // CSItemValueSet.cs:73
+		public static TCoding Code_Surgery = new TCoding(CorrespondsWithCS.Code_Surgery);                                                         // CSItemValueSet.cs:73
+		public static TCoding Code_SurgicalSite = new TCoding(CorrespondsWithCS.Code_SurgicalSite);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_Tenderness = new TCoding(CorrespondsWithCS.Code_Tenderness);                                                   // CSItemValueSet.cs:73
+		public static TCoding Code_TriggerPoint = new TCoding(CorrespondsWithCS.Code_TriggerPoint);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_US = new TCoding(CorrespondsWithCS.Code_US);                                                                   // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:70
-		    yield return Code_Concern;                                                                                                            // CSItemValueSet.cs:70
-		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_IncidentalFinding;                                                                                                  // CSItemValueSet.cs:70
-		    yield return Code_Mammo;                                                                                                              // CSItemValueSet.cs:70
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_NippleDischarge;                                                                                                    // CSItemValueSet.cs:70
-		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:70
-		    yield return Code_Pain;                                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_Palpated;                                                                                                           // CSItemValueSet.cs:70
-		    yield return Code_PostOperative;                                                                                                      // CSItemValueSet.cs:70
-		    yield return Code_PreviousBiopsy;                                                                                                     // CSItemValueSet.cs:70
-		    yield return Code_PriorExam;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Redness;                                                                                                            // CSItemValueSet.cs:70
-		    yield return Code_Scinti;                                                                                                             // CSItemValueSet.cs:70
-		    yield return Code_SizeLessThanMammo;                                                                                                  // CSItemValueSet.cs:70
-		    yield return Code_SizeLessThanMRI;                                                                                                    // CSItemValueSet.cs:70
-		    yield return Code_SizeLessThanPalp;                                                                                                   // CSItemValueSet.cs:70
-		    yield return Code_SizeLessThanUS;                                                                                                     // CSItemValueSet.cs:70
-		    yield return Code_SizeGreaterThanMammo;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_SizeGreaterThanMRI;                                                                                                 // CSItemValueSet.cs:70
-		    yield return Code_SizeGreaterThanPalp;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_SkinMarker;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Surgery;                                                                                                            // CSItemValueSet.cs:70
-		    yield return Code_SurgicalSite;                                                                                                       // CSItemValueSet.cs:70
-		    yield return Code_Tenderness;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_TriggerPoint;                                                                                                       // CSItemValueSet.cs:70
-		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:84
+		    yield return Code_Concern;                                                                                                            // CSItemValueSet.cs:84
+		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_IncidentalFinding;                                                                                                  // CSItemValueSet.cs:84
+		    yield return Code_Mammo;                                                                                                              // CSItemValueSet.cs:84
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_NippleDischarge;                                                                                                    // CSItemValueSet.cs:84
+		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:84
+		    yield return Code_Pain;                                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_Palpated;                                                                                                           // CSItemValueSet.cs:84
+		    yield return Code_PostOperative;                                                                                                      // CSItemValueSet.cs:84
+		    yield return Code_PreviousBiopsy;                                                                                                     // CSItemValueSet.cs:84
+		    yield return Code_PriorExam;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Redness;                                                                                                            // CSItemValueSet.cs:84
+		    yield return Code_Scinti;                                                                                                             // CSItemValueSet.cs:84
+		    yield return Code_SizeLessThanMammo;                                                                                                  // CSItemValueSet.cs:84
+		    yield return Code_SizeLessThanMRI;                                                                                                    // CSItemValueSet.cs:84
+		    yield return Code_SizeLessThanPalp;                                                                                                   // CSItemValueSet.cs:84
+		    yield return Code_SizeLessThanUS;                                                                                                     // CSItemValueSet.cs:84
+		    yield return Code_SizeGreaterThanMammo;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_SizeGreaterThanMRI;                                                                                                 // CSItemValueSet.cs:84
+		    yield return Code_SizeGreaterThanPalp;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_SkinMarker;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Surgery;                                                                                                            // CSItemValueSet.cs:84
+		    yield return Code_SurgicalSite;                                                                                                       // CSItemValueSet.cs:84
+		    yield return Code_Tenderness;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_TriggerPoint;                                                                                                       // CSItemValueSet.cs:84
+		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

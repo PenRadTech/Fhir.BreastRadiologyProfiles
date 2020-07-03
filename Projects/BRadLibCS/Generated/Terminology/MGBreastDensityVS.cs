@@ -32,17 +32,17 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/MGBreastDensityVS";
 
-		public static TCoding Code_AlmostEntirelyFat = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "AlmostEntirelyFat"));// CSItemValueSet.cs:67
-		public static TCoding Code_ScatteredAreasOfFibroglandularDensity = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ScatteredAreasOfFibroglandularDensity"));// CSItemValueSet.cs:67
-		public static TCoding Code_HeterogeneouslyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "HeterogeneouslyDense"));// CSItemValueSet.cs:67
-		public static TCoding Code_ExtremelyDense = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MGBreastDensityCS", "ExtremelyDense"));// CSItemValueSet.cs:67
+		public static TCoding Code_AlmostEntirelyFat = new TCoding(MGBreastDensityCS.Code_AlmostEntirelyFat);                                     // CSItemValueSet.cs:73
+		public static TCoding Code_ScatteredAreasOfFibroglandularDensity = new TCoding(MGBreastDensityCS.Code_ScatteredAreasOfFibroglandularDensity);// CSItemValueSet.cs:73
+		public static TCoding Code_HeterogeneouslyDense = new TCoding(MGBreastDensityCS.Code_HeterogeneouslyDense);                               // CSItemValueSet.cs:73
+		public static TCoding Code_ExtremelyDense = new TCoding(MGBreastDensityCS.Code_ExtremelyDense);                                           // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_AlmostEntirelyFat;                                                                                                  // CSItemValueSet.cs:70
-		    yield return Code_ScatteredAreasOfFibroglandularDensity;                                                                              // CSItemValueSet.cs:70
-		    yield return Code_HeterogeneouslyDense;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_ExtremelyDense;                                                                                                     // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_AlmostEntirelyFat;                                                                                                  // CSItemValueSet.cs:84
+		    yield return Code_ScatteredAreasOfFibroglandularDensity;                                                                              // CSItemValueSet.cs:84
+		    yield return Code_HeterogeneouslyDense;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_ExtremelyDense;                                                                                                     // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

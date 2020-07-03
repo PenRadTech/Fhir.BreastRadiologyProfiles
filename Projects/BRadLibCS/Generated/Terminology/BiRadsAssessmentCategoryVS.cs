@@ -32,27 +32,27 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BiRadsAssessmentCategoryVS";
 
-		public static TCoding Code_Category0 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category0"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category2 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category2"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category3 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category3"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category4 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category4A = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4A"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category4B = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4B"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category4C = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category4C"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category5 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category5"));// CSItemValueSet.cs:67
-		public static TCoding Code_Category6 = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BiRadsAssessmentCategoryCS", "Category6"));// CSItemValueSet.cs:67
+		public static TCoding Code_Category0 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category0);                                            // CSItemValueSet.cs:73
+		public static TCoding Code_Category2 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category2);                                            // CSItemValueSet.cs:73
+		public static TCoding Code_Category3 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category3);                                            // CSItemValueSet.cs:73
+		public static TCoding Code_Category4 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category4);                                            // CSItemValueSet.cs:73
+		public static TCoding Code_Category4A = new TCoding(BiRadsAssessmentCategoryCS.Code_Category4A);                                          // CSItemValueSet.cs:73
+		public static TCoding Code_Category4B = new TCoding(BiRadsAssessmentCategoryCS.Code_Category4B);                                          // CSItemValueSet.cs:73
+		public static TCoding Code_Category4C = new TCoding(BiRadsAssessmentCategoryCS.Code_Category4C);                                          // CSItemValueSet.cs:73
+		public static TCoding Code_Category5 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category5);                                            // CSItemValueSet.cs:73
+		public static TCoding Code_Category6 = new TCoding(BiRadsAssessmentCategoryCS.Code_Category6);                                            // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Category0;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Category2;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Category3;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Category4;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Category4A;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Category4B;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Category4C;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Category5;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Category6;                                                                                                          // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_Category0;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Category2;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Category3;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Category4;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Category4A;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Category4B;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Category4C;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Category5;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Category6;                                                                                                          // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

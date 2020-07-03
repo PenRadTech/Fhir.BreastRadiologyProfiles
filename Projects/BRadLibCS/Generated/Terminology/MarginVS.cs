@@ -32,33 +32,33 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/MarginVS";
 
-		public static TCoding Code_AngularMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "AngularMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_CircumscribedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "CircumscribedMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_IndistinctMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "IndistinctMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_IntraductalExtension = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "IntraductalExtension"));// CSItemValueSet.cs:67
-		public static TCoding Code_IrregularMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "IrregularMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_LobulatedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "LobulatedMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_MacrolobulatedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "MacrolobulatedMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_MicrolobulatedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "MicrolobulatedMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_NonCircumscribedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "NonCircumscribedMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_ObscuredMagin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "ObscuredMagin"));// CSItemValueSet.cs:67
-		public static TCoding Code_SmoothMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "SmoothMargin"));// CSItemValueSet.cs:67
-		public static TCoding Code_SpiculatedMargin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/MarginCS", "SpiculatedMargin"));// CSItemValueSet.cs:67
+		public static TCoding Code_AngularMargin = new TCoding(MarginCS.Code_AngularMargin);                                                      // CSItemValueSet.cs:73
+		public static TCoding Code_CircumscribedMargin = new TCoding(MarginCS.Code_CircumscribedMargin);                                          // CSItemValueSet.cs:73
+		public static TCoding Code_IndistinctMargin = new TCoding(MarginCS.Code_IndistinctMargin);                                                // CSItemValueSet.cs:73
+		public static TCoding Code_IntraductalExtension = new TCoding(MarginCS.Code_IntraductalExtension);                                        // CSItemValueSet.cs:73
+		public static TCoding Code_IrregularMargin = new TCoding(MarginCS.Code_IrregularMargin);                                                  // CSItemValueSet.cs:73
+		public static TCoding Code_LobulatedMargin = new TCoding(MarginCS.Code_LobulatedMargin);                                                  // CSItemValueSet.cs:73
+		public static TCoding Code_MacrolobulatedMargin = new TCoding(MarginCS.Code_MacrolobulatedMargin);                                        // CSItemValueSet.cs:73
+		public static TCoding Code_MicrolobulatedMargin = new TCoding(MarginCS.Code_MicrolobulatedMargin);                                        // CSItemValueSet.cs:73
+		public static TCoding Code_NonCircumscribedMargin = new TCoding(MarginCS.Code_NonCircumscribedMargin);                                    // CSItemValueSet.cs:73
+		public static TCoding Code_ObscuredMagin = new TCoding(MarginCS.Code_ObscuredMagin);                                                      // CSItemValueSet.cs:73
+		public static TCoding Code_SmoothMargin = new TCoding(MarginCS.Code_SmoothMargin);                                                        // CSItemValueSet.cs:73
+		public static TCoding Code_SpiculatedMargin = new TCoding(MarginCS.Code_SpiculatedMargin);                                                // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_AngularMargin;                                                                                                      // CSItemValueSet.cs:70
-		    yield return Code_CircumscribedMargin;                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_IndistinctMargin;                                                                                                   // CSItemValueSet.cs:70
-		    yield return Code_IntraductalExtension;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_IrregularMargin;                                                                                                    // CSItemValueSet.cs:70
-		    yield return Code_LobulatedMargin;                                                                                                    // CSItemValueSet.cs:70
-		    yield return Code_MacrolobulatedMargin;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_MicrolobulatedMargin;                                                                                               // CSItemValueSet.cs:70
-		    yield return Code_NonCircumscribedMargin;                                                                                             // CSItemValueSet.cs:70
-		    yield return Code_ObscuredMagin;                                                                                                      // CSItemValueSet.cs:70
-		    yield return Code_SmoothMargin;                                                                                                       // CSItemValueSet.cs:70
-		    yield return Code_SpiculatedMargin;                                                                                                   // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_AngularMargin;                                                                                                      // CSItemValueSet.cs:84
+		    yield return Code_CircumscribedMargin;                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_IndistinctMargin;                                                                                                   // CSItemValueSet.cs:84
+		    yield return Code_IntraductalExtension;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_IrregularMargin;                                                                                                    // CSItemValueSet.cs:84
+		    yield return Code_LobulatedMargin;                                                                                                    // CSItemValueSet.cs:84
+		    yield return Code_MacrolobulatedMargin;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_MicrolobulatedMargin;                                                                                               // CSItemValueSet.cs:84
+		    yield return Code_NonCircumscribedMargin;                                                                                             // CSItemValueSet.cs:84
+		    yield return Code_ObscuredMagin;                                                                                                      // CSItemValueSet.cs:84
+		    yield return Code_SmoothMargin;                                                                                                       // CSItemValueSet.cs:84
+		    yield return Code_SpiculatedMargin;                                                                                                   // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

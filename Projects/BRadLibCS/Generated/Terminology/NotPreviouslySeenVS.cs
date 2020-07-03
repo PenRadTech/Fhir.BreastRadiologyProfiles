@@ -32,23 +32,23 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/NotPreviouslySeenVS";
 
-		public static TCoding Code_ClinicalExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "ClinicalExam"));// CSItemValueSet.cs:67
-		public static TCoding Code_Ductogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ductogram"));// CSItemValueSet.cs:67
-		public static TCoding Code_Mammogram = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Mammogram"));// CSItemValueSet.cs:67
-		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "MRI"));// CSItemValueSet.cs:67
-		public static TCoding Code_OutsideExam = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "OutsideExam"));// CSItemValueSet.cs:67
-		public static TCoding Code_Scintimammography = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Scintimammography"));// CSItemValueSet.cs:67
-		public static TCoding Code_Ultrasound = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/NotPreviouslySeenCS", "Ultrasound"));// CSItemValueSet.cs:67
+		public static TCoding Code_ClinicalExam = new TCoding(NotPreviouslySeenCS.Code_ClinicalExam);                                             // CSItemValueSet.cs:73
+		public static TCoding Code_Ductogram = new TCoding(NotPreviouslySeenCS.Code_Ductogram);                                                   // CSItemValueSet.cs:73
+		public static TCoding Code_Mammogram = new TCoding(NotPreviouslySeenCS.Code_Mammogram);                                                   // CSItemValueSet.cs:73
+		public static TCoding Code_MRI = new TCoding(NotPreviouslySeenCS.Code_MRI);                                                               // CSItemValueSet.cs:73
+		public static TCoding Code_OutsideExam = new TCoding(NotPreviouslySeenCS.Code_OutsideExam);                                               // CSItemValueSet.cs:73
+		public static TCoding Code_Scintimammography = new TCoding(NotPreviouslySeenCS.Code_Scintimammography);                                   // CSItemValueSet.cs:73
+		public static TCoding Code_Ultrasound = new TCoding(NotPreviouslySeenCS.Code_Ultrasound);                                                 // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_ClinicalExam;                                                                                                       // CSItemValueSet.cs:70
-		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Mammogram;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:70
-		    yield return Code_Scintimammography;                                                                                                  // CSItemValueSet.cs:70
-		    yield return Code_Ultrasound;                                                                                                         // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_ClinicalExam;                                                                                                       // CSItemValueSet.cs:84
+		    yield return Code_Ductogram;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Mammogram;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_OutsideExam;                                                                                                        // CSItemValueSet.cs:84
+		    yield return Code_Scintimammography;                                                                                                  // CSItemValueSet.cs:84
+		    yield return Code_Ultrasound;                                                                                                         // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

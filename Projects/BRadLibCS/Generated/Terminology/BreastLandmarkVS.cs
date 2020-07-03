@@ -32,15 +32,15 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastLandmarkVS";
 
-		public static TCoding Code_Nipple = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Nipple"));// CSItemValueSet.cs:67
-		public static TCoding Code_ChestWall = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "ChestWall"));// CSItemValueSet.cs:67
-		public static TCoding Code_Skin = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/BreastLandmarkCS", "Skin")); // CSItemValueSet.cs:67
+		public static TCoding Code_Nipple = new TCoding(BreastLandmarkCS.Code_Nipple);                                                            // CSItemValueSet.cs:73
+		public static TCoding Code_ChestWall = new TCoding(BreastLandmarkCS.Code_ChestWall);                                                      // CSItemValueSet.cs:73
+		public static TCoding Code_Skin = new TCoding(BreastLandmarkCS.Code_Skin);                                                                // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Nipple;                                                                                                             // CSItemValueSet.cs:70
-		    yield return Code_ChestWall;                                                                                                          // CSItemValueSet.cs:70
-		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_Nipple;                                                                                                             // CSItemValueSet.cs:84
+		    yield return Code_ChestWall;                                                                                                          // CSItemValueSet.cs:84
+		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }

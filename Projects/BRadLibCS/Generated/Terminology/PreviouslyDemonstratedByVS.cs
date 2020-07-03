@@ -32,17 +32,17 @@ namespace BreastRadLib
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/PreviouslyDemonstratedByVS";
 
-		public static TCoding Code_Aspiration = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Aspiration"));// CSItemValueSet.cs:67
-		public static TCoding Code_Biopsy = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "Biopsy"));// CSItemValueSet.cs:67
-		public static TCoding Code_MRI = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "MRI"));// CSItemValueSet.cs:67
-		public static TCoding Code_US = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS", "US"));// CSItemValueSet.cs:67
+		public static TCoding Code_Aspiration = new TCoding(PreviouslyDemonstratedByCS.Code_Aspiration);                                          // CSItemValueSet.cs:73
+		public static TCoding Code_Biopsy = new TCoding(PreviouslyDemonstratedByCS.Code_Biopsy);                                                  // CSItemValueSet.cs:73
+		public static TCoding Code_MRI = new TCoding(PreviouslyDemonstratedByCS.Code_MRI);                                                        // CSItemValueSet.cs:73
+		public static TCoding Code_US = new TCoding(PreviouslyDemonstratedByCS.Code_US);                                                          // CSItemValueSet.cs:73
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
 		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:70
-		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:70
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:70
-		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:70
-		}                                                                                                                                         // CSItemValueSet.cs:93
+		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:84
+		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:84
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:84
+		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:84
+		}                                                                                                                                         // CSItemValueSet.cs:105
 	}
 }
