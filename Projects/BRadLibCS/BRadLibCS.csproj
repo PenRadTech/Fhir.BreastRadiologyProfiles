@@ -39,10 +39,6 @@
     </Compile>
   </ItemGroup>
 
-  <Import Project="..\Eir.FhirKhit.Shar\Eir.FhirKhit.Shar.projitems" Label="PGShared" />
-
-  <Import Project="..\FhirKhit.GlobalSuppressions\FhirKhit.GlobalSuppressions.projitems" Label="PGShared" />
-
   <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
     <ItemGroup>
       <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />

@@ -18,8 +18,9 @@ namespace BreastRadLib
 	/// </summary>
 	public interface IBreastBodyLocationRequired 
 	{
-		public void GetbodySite(out CodeableConcept value);                                                                                       // CSItemFragment.cs:89
-		public void SetbodySite(CodeableConcept value);                                                                                           // CSItemFragment.cs:90
+		void GetBodySite(out CodeableConcept value);                                                                                              // CSItemFragment.cs:89
+		void SetBodySite(CodeableConcept value);                                                                                                  // CSItemFragment.cs:90
+
 	}
 
 

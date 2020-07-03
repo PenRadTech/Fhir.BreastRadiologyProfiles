@@ -38,9 +38,10 @@
 //
 // Add a fhir property.
 //
-#macro CSBuild.AddProperty(%elementId%)
+#macro CSBuild.AddProperty(%propertyName%, %elementId%)
   `{
   `  "addProperty" : {
+  `    "propertyName" : "%propertyName%",
   `    "elementId" : "%elementId%"
   `  }
   `},

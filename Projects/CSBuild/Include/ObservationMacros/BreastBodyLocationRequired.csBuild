@@ -6,11 +6,7 @@
 },
 {
   "addProperty" : {
+    "propertyName" : "BodySite",
     "elementId" : "bodySite"
-  }
-},
-{
-  "addProperty" : {
-    "elementId" : "bodySite.extension:breastBodyLocation"
   }
 },
