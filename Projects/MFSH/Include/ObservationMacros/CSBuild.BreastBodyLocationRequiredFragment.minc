@@ -3,7 +3,8 @@
  */
 #macro single CSBuild.BreastBodyLocationRequiredFragment.Define() > "%CSBuildDir%\\%MacroDir%\\BreastBodyLocationRequired.csBuild"
   #apply CSBuild.DefineFragment("BreastBodyLocationRequired")
-  #apply CSBuild.AddProperty("BodySite", "bodySite")
+  #apply CSBuild.AddProperty("bodySite", "")
+  #apply CSBuild.AddProperty("bodySite.extension:breastBodyLocation", "")
 #end
 
 #macro once CSBuild.BreastBodyLocationRequiredFragment.Implement()
