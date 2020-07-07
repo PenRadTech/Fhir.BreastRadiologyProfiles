@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFibroadenoma"
       },
-      "displayName" : "Fibroadenoma Abnormality",
+      "displayName" : "Fibroadenoma",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#11/n"
     }

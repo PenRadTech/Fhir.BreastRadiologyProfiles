@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry"
       },
-      "displayName" : "Asymmetry Abnormality",
+      "displayName" : "Asymmetry",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#11/n"
     }

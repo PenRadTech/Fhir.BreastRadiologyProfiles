@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
       },
-      "displayName" : "AssociatedFeature",
+      "displayName" : "Associated Feature",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#10/n"
     }

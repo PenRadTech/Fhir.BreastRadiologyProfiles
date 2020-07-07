@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast"
       },
-      "displayName" : "Findings/left Breast",
+      "displayName" : "Findings/Left Breast",
       "cssClass" : "profile",
       "traceMsg" : "Include/ObservationMacros/Observation.FindingBreastFragment.minc#12/nProfiles/Main/FindingsLeftBreast.mfsh#3/n"
     }

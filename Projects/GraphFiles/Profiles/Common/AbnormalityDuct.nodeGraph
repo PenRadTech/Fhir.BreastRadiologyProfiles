@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityDuct"
       },
-      "displayName" : "Duct Abnormality",
+      "displayName" : "Duct",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#11/n"
     }

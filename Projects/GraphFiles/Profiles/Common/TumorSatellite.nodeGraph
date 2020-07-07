@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite"
       },
-      "displayName" : "TumorSatellite",
+      "displayName" : "Tumor Satellite",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/TumorSatellite.mfsh#14/n"
     }

@@ -4,7 +4,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject"
       },
-      "displayName" : "Foreign Abnormality",
+      "displayName" : "Foreign Object",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/AbnormalityForeignObject.mfsh#11/n"
     }

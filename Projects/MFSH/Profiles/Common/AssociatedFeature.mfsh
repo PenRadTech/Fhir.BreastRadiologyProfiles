@@ -7,7 +7,7 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("AssociatedFeature")
+  #apply Graph.NodeProfile("Associated Feature")
 
   #apply IntroDocGraph("""
   # <p>

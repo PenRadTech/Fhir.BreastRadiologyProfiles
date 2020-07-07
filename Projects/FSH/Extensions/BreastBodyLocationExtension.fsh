@@ -68,26 +68,29 @@ Description: """
 
 
   
-  * extension contains landMark 1..1
-  * extension[landMark] ^short = "Body landmark. Origin of distance measurement."
-  * extension[landMark] ^definition =
+  * extension contains landmark 0..*
+  * extension[landmark] ^short = "Body landmark. Origin of distance measurement."
+  * extension[landmark] ^definition =
     """
 	  Body landmark which defines the origin of the measurement.
 
   Currently the value set this is bound to does not contain the required breast 
   landmarks like nipple.  
 	"""
-  * extension[landMark].value[x] 1..1
-  * extension[landMark].value[x] only CodeableConcept
-  * extension[landMark].value[x] from BreastLandmarkVS
+  * extension[landmark].value[x] 1..1
+  * extension[landmark].value[x] only CodeableConcept
+  * extension[landmark].value[x] from BreastLandmarkVS
 
   
-  * extension contains distanceFromLandMark 1..1
-  * extension[distanceFromLandMark] ^short = "Distance from landmark"
-  * extension[distanceFromLandMark] ^definition =
+  * extension contains distanceFromLandmark 0..*
+  * extension[distanceFromLandmark] ^short = "Distance from landmark"
+  * extension[distanceFromLandmark] ^definition =
     """
 		 Distance from body landmark to body location
+
+  The cardinality of distanceFromLandmark must match that of landmark, and each item in distanceFromLandmark will
+  relate to its corresponding element in landmark.
 	"""
-  * extension[distanceFromLandMark].value[x] 1..1
-  * extension[distanceFromLandMark].value[x] only Quantity
-  * extension[distanceFromLandMark].valueQuantity from UNITSOFLENGTH
+  * extension[distanceFromLandmark].value[x] 1..1
+  * extension[distanceFromLandmark].value[x] only Quantity
+  * extension[distanceFromLandmark].valueQuantity from UNITSOFLENGTH

@@ -1,8 +1,8 @@
 Profile: FindingsLeftBreast
 Parent: Observation
-Title: "Findings left Breast"
+Title: "Findings Left Breast"
 Description: """
-	Findings left Breast profile.
+	Findings Left Breast profile.
 	"""  
 
   //#apply Graph.LinkByName("focus", "^FindingsLeftBreast/$", "^FindingsLeftBreast/", "0")
@@ -27,10 +27,10 @@ Description: """
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
   * value[x] ^definition = """
-	Composite BiRad value for left Breast.
+	Composite BiRad value for Left Breast.
 	
 	Typically this is the most severe of all the BiRad 
-	codes set in any of the child observations of the left Breast.
+	codes set in any of the child observations of the Left Breast.
     """
 	
 

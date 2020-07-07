@@ -11,7 +11,7 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("TumorSatellite")
+  #apply Graph.NodeProfile("Tumor Satellite")
   #apply Graph.NodeElement("value[x]", "Value")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/value\\\\[x\\\\]/$", "0")
   

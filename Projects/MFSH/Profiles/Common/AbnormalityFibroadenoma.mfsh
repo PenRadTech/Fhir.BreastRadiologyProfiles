@@ -8,7 +8,7 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Fibroadenoma Abnormality")
+  #apply Graph.NodeProfile("Fibroadenoma")
 
   #apply IntroDocGraph("""
   # <p>

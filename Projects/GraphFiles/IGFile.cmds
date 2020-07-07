@@ -169,7 +169,7 @@
   {
     "member" : {
       "groupingId" : "CommonResources",
-      "sort": "Findings left Breast",
+      "sort": "Findings Left Breast",
       "reference" : "StructureDefinition/FindingsLeftBreast"
     }
   },

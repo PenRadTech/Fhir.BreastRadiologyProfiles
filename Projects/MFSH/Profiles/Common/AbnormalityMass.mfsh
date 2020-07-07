@@ -7,7 +7,7 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Mass Abnormality")
+  #apply Graph.NodeProfile("Mass")
 
   #apply IntroDocGraph("""
   # <p>
