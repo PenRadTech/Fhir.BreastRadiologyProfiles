@@ -5,12 +5,12 @@
   }
 },
 {
-  "addProperty" : {
+  "defineElementProperty" : {
     "elementId" : "bodySite"
   }
 },
 {
-  "addProperty" : {
+  "defineExtensionProperty" : {
     "elementId" : "bodySite.extension:breastBodyLocation"
   }
 },
