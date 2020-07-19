@@ -3,7 +3,12 @@
  Fragment that adds 'Observed Count' element to profile.
  */
 
-#macro once Observation.Component.ObservedCountFragment()
+#Fragment: once Observation.Component.ObservedCountFragment
+#Parent: Observation
+#Title: "ObservedCount Fragment"
+#Description: """
+#  Fragment that adds 'Observed Count' element to profile.
+#  """
 
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Slice()

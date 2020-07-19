@@ -1,12 +1,16 @@
 /*
   Shape Components Fragment
-  Shape component slice fragment
   Adds Orientation, Shape, Margin, and Density Components
   */
   
 #use Observation
 
-#macro Observation.Component.ShapeFragment()
+#Fragment: Observation.Component.ShapeFragment
+#Parent: Observation
+#Title: "Shape Components Fragment"
+#Description: """
+#  Adds Orientation, Shape, Margin, and Density Components
+# """
 
   #apply Observation.BreastBodyLocationRequiredFragment()
 

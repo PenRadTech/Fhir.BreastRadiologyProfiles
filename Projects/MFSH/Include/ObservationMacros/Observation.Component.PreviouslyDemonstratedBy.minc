@@ -5,7 +5,12 @@
 
 #use Observation
 
-#macro Observation.Component.PreviouslyDemonstratedByFragment()
+#Fragment: Observation.Component.PreviouslyDemonstratedByFragment
+#Parent: Observation
+#Title: "PreviouslyDemonstratedBy Fragment"
+#Description: """
+# Observation 'Demonstrated By' Component Fragment
+# """
 
   #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """

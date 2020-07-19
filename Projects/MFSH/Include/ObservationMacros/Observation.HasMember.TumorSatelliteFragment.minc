@@ -1,11 +1,15 @@
 /*
  Tumor Satellite Fragment
- Tumor Satellite fragment
- 
  This fragment adds the references for the Tumor Satellite extension.
 */
 
-#macro Observation.HasMember.TumorSatelliteFragment()
+#Fragment: Observation.HasMember.TumorSatelliteFragment
+#Parent: Observation
+#Title: "Tumor Satellite Fragment"
+#Description: """
+# This fragment adds the references for the Tumor Satellite extension.
+# """
+
   #apply Observation.HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """

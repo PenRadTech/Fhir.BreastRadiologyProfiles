@@ -24,12 +24,12 @@ Description: """
   * referenceRange 0..0
 
 
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
-  // Define Observed Changes Slice
   
 
 
@@ -58,6 +58,7 @@ The value of this component is a codeable concept chosen from the ObservedChange
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
 
 
   * component contains biRadsAssessmentCategory 0..1
@@ -260,7 +261,6 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
 
-
   // define calcification distribution slice
 
   * component contains obsDistribution 0..*
@@ -372,6 +372,7 @@ PreviouslyDemonstratedByVS valueset.
  
 
 
+
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
@@ -380,6 +381,7 @@ PreviouslyDemonstratedByVS valueset.
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
 
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."

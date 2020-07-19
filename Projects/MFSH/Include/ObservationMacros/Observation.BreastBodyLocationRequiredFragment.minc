@@ -2,10 +2,16 @@
 // <b>Required Breast Body Location fragment</b>
 // 
 // This fragment adds the references for the breast body location extension.
-// 
 // The references are required, meaning that the breast body location must exist.
 
-#macro once Observation.BreastBodyLocationRequiredFragment()
+#Fragment: once Observation.BreastBodyLocationRequiredFragment
+#Parent: Observation
+#Title: "Breast Body Location (Required) Fragment"
+#Description: """
+#  This fragment adds the references for the breast body location extension.
+#  The references are required, meaning that the breast body location must exist.
+#  """
+
   #apply CSBuild.BreastBodyLocationRequiredFragment.Define()
 
   #apply Graph.NodeElement("bodySite", "BodySite")

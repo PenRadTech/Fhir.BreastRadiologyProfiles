@@ -4,8 +4,12 @@
   */
 
 
-#macro Observation.Component.ObservedDistributionFragment()
-
+#Fragment: once Observation.Component.ObservedDistributionFragment
+#Parent: Observation
+#Title: "Observed Distribution Fragment"
+#Description: """
+#  Fragment that adds 'Observed Distribution' components to Observation.
+#  """
   #incompatible Observation.Component.Zero
 
   // define calcification distribution slice

@@ -2,7 +2,12 @@
  Adds NotPreviously Seen Component slice.
  */
  
-#macro Observation.Component.NotPreviouslySeenFragment()
+#Fragment: once Observation.Component.NotPreviouslySeenFragment
+#Parent: Observation
+#Title: "NotPreviously Seen Component Fragment"
+#Description: """
+#  Adds NotPreviously Seen Component slice.
+#  """
 
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""

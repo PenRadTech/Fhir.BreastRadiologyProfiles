@@ -4,7 +4,13 @@
  */
  
 
-#macro Observation.Component.CorrespondsWithFragment()
+#Fragment: Observation.Component.CorrespondsWithFragment
+#Parent: Observation
+#Title: "'Corresponds With' Component Fragment"
+#Description: """
+# Observation 'Corresponds With' Component Fragment
+# Adds CorrespondsWith component
+# """
 
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """

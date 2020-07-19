@@ -5,7 +5,12 @@
  
 #use Observation
 
-#macro Observation.Component.ObservedSizeFragment()
+#Fragment: once Observation.Component.ObservedSizeFragment
+#Parent: Observation
+#Title: "ObservedSize Fragment"
+#Description: """
+# Fragment that adds 'Observed Size' components to Observation.
+# """
 
   #incompatible Observation.Component.Zero
 

@@ -1,0 +1,413 @@
+{
+    "graphNode" : {
+      "nodeName" : "%Id%/bodySite/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/bodySite.extension/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/$",
+      "target" : "^%Id%/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/bodySite/$",
+      "target" : "^%Id%/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/$",
+      "target" : "^%Id%/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component/$",
+      "target" : "^%Id%/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:biRadsAssessmentCategory/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:biRadsAssessmentCategory"
+      },
+      "displayName" : "BiRads Code",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:biRadsAssessmentCategory",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#16/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:biRadsAssessmentCategory/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#23/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:correspondsWith/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:correspondsWith"
+      },
+      "displayName" : "Corresponds With",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:correspondsWith",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:correspondsWith/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#22/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:notPreviouslySeen/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:notPreviouslySeen"
+      },
+      "displayName" : "Not Previously Seen",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:notPreviouslySeen",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#12/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:notPreviouslySeen/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#19/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:obsChanges/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:obsChanges"
+      },
+      "displayName" : "Observed Changes",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:obsChanges",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:obsChanges/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#18/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:observedCount/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:observedCount"
+      },
+      "displayName" : "Observed Count",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:observedCount",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:obsDistribution/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:obsDistribution"
+      },
+      "displayName" : "Observed Distribution",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:obsDistribution",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#16/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:obsDistribution/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#25/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:obsDistRegionSize/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:obsDistRegionSize"
+      },
+      "displayName" : "Observed Distribution Region Size",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:obsDistRegionSize",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#29/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:obsSize/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:obsSize"
+      },
+      "displayName" : "Observed Size",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:obsSize",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#18/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:prevDemBy/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:prevDemBy"
+      },
+      "displayName" : "Previously/Demonstrated by Changes",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:prevDemBy",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:prevDemBy/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#24/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/bodySite/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#15/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/bodySite.extension/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/$",
+      "target" : "^%Id%/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/bodySite/$",
+      "target" : "^%Id%/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#15/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:orientation/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:orientation"
+      },
+      "displayName" : "Orientation",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:orientation",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#18/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:orientation/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#25/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:shape/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:shape"
+      },
+      "displayName" : "Shape",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:shape",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#29/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:shape/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#36/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:margin/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:margin"
+      },
+      "displayName" : "Margin",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:margin",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#39/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:margin/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#46/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "%Id%/component:mgBreastDensity/",
+      "anchor" : {
+        "url" : "%Url%",
+        "item" : "component:mgBreastDensity"
+      },
+      "displayName" : "Density",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^%Id%.component:mgBreastDensity",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#49/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/component:mgBreastDensity/$",
+      "item" : ".value[x]",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#57/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/hasMember/$",
+      "item" : "%Id%.hasMember:associatedFeature",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#13/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/hasMember/$",
+      "item" : "%Id%.hasMember:consistentWith",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#13/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "^%Id%/hasMember/$",
+      "item" : "%Id%.hasMember:tumorSatellite",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#13/n"
+    }
+  },

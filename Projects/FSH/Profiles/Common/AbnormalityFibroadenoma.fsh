@@ -52,11 +52,11 @@ information about a Fibroadenoma abnormality observation
   * referenceRange 0..0
 
 
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-  // Define Observed Changes Slice
   
 
   * component contains obsChanges 0..*
@@ -79,6 +79,7 @@ The value of this component is a codeable concept chosen from the ObservedChange
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
 
 
   * component contains biRadsAssessmentCategory 0..1
@@ -225,7 +226,6 @@ The value of this component is a codeable concept chosen from the MarginVS value
   * component[observedCount].value[x] only Quantity or Range
 
 
-
   // define calcification distribution slice
 
   * component contains obsDistribution 0..*
@@ -345,6 +345,7 @@ PreviouslyDemonstratedByVS valueset.
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
 
 
 
