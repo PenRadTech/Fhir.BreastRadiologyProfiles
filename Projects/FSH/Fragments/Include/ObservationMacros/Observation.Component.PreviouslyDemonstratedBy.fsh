@@ -1,8 +1,12 @@
 Profile: PreviouslyDemonstratedByFragment
 Parent: Observation
-Title: "PreviouslyDemonstratedBy Fragment"
-Description: "Observation 'Demonstrated By' Component Fragment"
-
+Title: """
+  PreviouslyDemonstratedBy Fragment
+  """
+Description: """
+  Observation 'Demonstrated By' Component Fragment
+  """
+  
 
 
   * component ^slicing.discriminator.type = #pattern

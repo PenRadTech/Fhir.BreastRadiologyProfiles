@@ -1,8 +1,12 @@
 Profile: AssociatedFeatureFragment
 Parent: Observation
-Title: "Associated Feature Fragment"
-Description: "This fragment adds the references for the Associated Feature hasMember slice."
-
+Title: """
+  Associated Feature Fragment
+  """
+Description: """
+  This fragment adds the references for the Associated Feature hasMember slice.
+  """
+  
 
 
   * hasMember ^slicing.discriminator.type = #value

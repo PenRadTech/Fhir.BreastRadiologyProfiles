@@ -1,8 +1,12 @@
 Profile: ObservedSizeFragment
 Parent: Observation
-Title: "ObservedSize Fragment"
-Description: "Fragment that adds 'Observed Size' components to Observation."
-
+Title: """
+  ObservedSize Fragment
+  """
+Description: """
+  Fragment that adds 'Observed Size' components to Observation.
+  """
+  
 
   // Define distribution region size.
 

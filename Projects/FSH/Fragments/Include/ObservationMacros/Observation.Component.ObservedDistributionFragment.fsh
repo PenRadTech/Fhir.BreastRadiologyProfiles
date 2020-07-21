@@ -1,8 +1,12 @@
 Profile: ObservedDistributionFragment
 Parent: Observation
-Title: "Observed Distribution Fragment"
-Description: "Fragment that adds 'Observed Distribution' components to Observation."
-
+Title: """
+  Observed Distribution Fragment
+  """
+Description: """
+  Fragment that adds 'Observed Distribution' components to Observation.
+  """
+  
   // define calcification distribution slice
 
 

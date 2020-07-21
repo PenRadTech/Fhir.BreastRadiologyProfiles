@@ -1,11 +1,13 @@
 Profile: CorrespondsWithFragment
 Parent: Observation
-Title: "'Corresponds With' Component Fragment"
+Title: """
+  'Corresponds With' Component Fragment
+  """
 Description: """
   Observation 'Corresponds With' Component Fragment
-  Adds CorrespondsWith component
+Adds CorrespondsWith component
   """
-
+  
 
 
   * component ^slicing.discriminator.type = #pattern

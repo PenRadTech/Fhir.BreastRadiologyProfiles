@@ -1,8 +1,12 @@
 Profile: ObservedCountFragment
 Parent: Observation
-Title: "ObservedCount Fragment"
-Description: "Fragment that adds 'Observed Count' element to profile."
-
+Title: """
+  ObservedCount Fragment
+  """
+Description: """
+  Fragment that adds 'Observed Count' element to profile.
+  """
+  
 
 
   * component ^slicing.discriminator.type = #pattern

@@ -2,6 +2,7 @@
 	"baseInputDir": "MFSH",
 	"baseOutputDir": "FSH",
 	"fragDir": "FSH//Fragments",
+	"fragTemplatePath": "MFSH//FragmentTemplate.txt",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology",
 	"mfshPaths": [
 		"MFSH"
