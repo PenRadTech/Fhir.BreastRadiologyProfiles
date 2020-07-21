@@ -19,7 +19,7 @@
 				{
   			        "workingDir": "..",
 					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
-					"cmdArgs": "FSH"
+					"cmdArgs": "FSH --version"
 				},
 				{
   			        "workingDir": "..",
@@ -30,6 +30,17 @@
   			        "workingDir": "..",
 					"cmdPath": "IGBuilder",
 					"cmdArgs": "AutoMate\\igbuilder.json"
+				}
+			]
+		},
+		{
+			"name": "Fragment",
+			"watchPaths": ["..\\Fragments\\FSH"],
+			"commands": [
+				{
+  			        "workingDir": "..",
+					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
+					"cmdArgs": "FSH --version --out ..\\FragmentS\\build"
 				}
 			]
 		}
