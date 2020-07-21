@@ -30,7 +30,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[featureType] ^definition = """
-This slice contains the required component that 
+    This slice contains the required component that 
 defines the observed feature. The value of this 
 component is a codeable concept chosen from the 
 AssociatedFeatureVS valueset.",
@@ -77,7 +77,7 @@ AssociatedFeatureVS valueset.",
     This is one component of a group of components that are part of the observation.
     """
   * component[observedCount] ^definition = """
-  This component slice contains the number of items observed.
+      This component slice contains the number of items observed.
   This can be a quantity (i.e. 5), or a range (1 to 5).
 
   If the lower bound of the range is set but not the upper bound,

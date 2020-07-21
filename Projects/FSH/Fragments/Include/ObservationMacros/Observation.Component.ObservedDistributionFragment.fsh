@@ -11,7 +11,7 @@ Description: "Fragment that adds 'Observed Distribution' components to Observati
     This is one component of a group of components that are part of the observation.
     """
   * component[obsDistribution] ^definition = """
-This slice contains the optional components that describe the distribution of
+    This slice contains the optional components that describe the distribution of
 a group of abnormalities.
 The value of this component is a codeable concept chosen from the 
 CalcificationDistributionVS valueset.
@@ -37,7 +37,7 @@ CalcificationDistributionVS valueset.
     This is one component of a group of components that are part of the observation.
     """
   * component[obsDistRegionSize] ^definition = """
-This component slice contains the size of an region inside of which there 
+    This component slice contains the size of an region inside of which there 
 is a distribution of abnormalities.
 
 There may be one, two, or three values indicating a size of

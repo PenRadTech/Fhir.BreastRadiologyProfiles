@@ -1,6 +1,6 @@
 /*
  Add a component slice to an observation.
- This addes the component slicing discriminator.
+ This adds the component slicing discriminator.
  It does not constrain the component value.
  */
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
@@ -13,7 +13,7 @@
     This is one component of a group of components that are part of the observation.
     """
   * component[SliceName] ^definition = """
-Definition
+    Definition
     """
   * component[SliceName].code 1..1
   * component[SliceName].code ^short = "ShortDesc component code."

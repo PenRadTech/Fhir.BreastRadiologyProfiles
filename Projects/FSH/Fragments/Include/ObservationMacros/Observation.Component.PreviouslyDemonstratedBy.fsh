@@ -10,7 +10,7 @@ Description: "Observation 'Demonstrated By' Component Fragment"
     This is one component of a group of components that are part of the observation.
     """
   * component[prevDemBy] ^definition = """
-This slice contains the optional components that specifies what this observation 
+    This slice contains the optional components that specifies what this observation 
 has been previously demonstrated by.
 The value of this component is a codeable concept chosen from the 
 PreviouslyDemonstratedByVS valueset.  

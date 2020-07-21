@@ -145,7 +145,7 @@
       "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#14/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
     }
   },
   {
@@ -153,7 +153,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#23/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
     }
   },
   {

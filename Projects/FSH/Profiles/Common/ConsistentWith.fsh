@@ -43,7 +43,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[consistentWith] ^definition = """
-   This slice contains the required component that defines what this 
+       This slice contains the required component that defines what this 
    observation is consistent with.
 
    The value of this component is a codeable concept chosen from the 
@@ -70,7 +70,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[qualifier] ^definition = """
-This slice contains the optional components that qualify the 'consistentWith' slice component value.
+    This slice contains the optional components that qualify the 'consistentWith' slice component value.
 The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
     """
   * component[qualifier].code 1..1

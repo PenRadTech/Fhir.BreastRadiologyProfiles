@@ -124,7 +124,7 @@
       "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
     }
   },
   {
@@ -132,7 +132,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
     }
   },
   {

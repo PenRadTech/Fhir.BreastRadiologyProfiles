@@ -19,7 +19,7 @@ Description: "Adds Orientation, Shape, Margin, and Density Components"
     This is one component of a group of components that are part of the observation.
     """
   * component[orientation] ^definition = """
-This slice contains the optional component that define the orientation of the abnormality.
+    This slice contains the optional component that define the orientation of the abnormality.
 The value of this component is a codeable concept chosen from the OrientationVS valueset.
     """
   * component[orientation].code 1..1
@@ -43,7 +43,7 @@ The value of this component is a codeable concept chosen from the OrientationVS 
     This is one component of a group of components that are part of the observation.
     """
   * component[shape] ^definition = """
-This slice contains the optional component that define the shape of the abnormality.
+    This slice contains the optional component that define the shape of the abnormality.
 The value of this component is a codeable concept chosen from the ShapeVS valueset.
     """
   * component[shape].code 1..1
@@ -66,7 +66,7 @@ The value of this component is a codeable concept chosen from the ShapeVS values
     This is one component of a group of components that are part of the observation.
     """
   * component[margin] ^definition = """
-This slice contains the optional component that define the margin of the abnormality.
+    This slice contains the optional component that define the margin of the abnormality.
 The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[margin].code 1..1
@@ -89,7 +89,7 @@ The value of this component is a codeable concept chosen from the MarginVS value
     This is one component of a group of components that are part of the observation.
     """
   * component[mgBreastDensity] ^definition = """
-This slice contains the optional component that define the 
+    This slice contains the optional component that define the 
 observed density of the breast tissue.
 The value of this component is a codeable concept chosen from the MarginVS valueset.
     """

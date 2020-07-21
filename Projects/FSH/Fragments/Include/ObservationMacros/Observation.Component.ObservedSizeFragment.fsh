@@ -12,7 +12,7 @@ Description: "Fragment that adds 'Observed Size' components to Observation."
     This is one component of a group of components that are part of the observation.
     """
   * component[obsSize] ^definition = """
-  This component slice contains the size of an item observed.
+      This component slice contains the size of an item observed.
   There may be one, two, or three values indicating a size of
   one dimension (length), two dimensions (area), or three dimensions (volume).
 

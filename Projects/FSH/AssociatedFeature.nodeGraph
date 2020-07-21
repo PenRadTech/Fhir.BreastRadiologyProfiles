@@ -1,0 +1,129 @@
+{
+    "graphNode" : {
+AssociatedFeature/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
+      },
+      "displayName" : "Associated Feature",
+      "cssClass" : "profile",
+Profiles/Common/AssociatedFeature.mfsh#10/n"
+    }
+  },
+  {
+    "graphNode" : {
+component:featureType/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+component:featureType"
+      },
+      "displayName" : "Feature Type",
+      "cssClass" : "element",
+component:featureType",
+Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+    }
+  },
+  {
+    "graphNode" : {
+component/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+component",
+Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/$",
+      "target" : "AssociatedFeature/component/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/component/$",
+      "target" : "AssociatedFeature/component:",
+      "depth": 0,
+Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/component:featureType/$",
+      "item" : ".value[x]",
+Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AssociatedFeature.mfsh#44/n"
+    }
+  },
+  {
+    "graphNode" : {
+bodySite/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+bodySite",
+Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphNode" : {
+bodySite.extension/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+bodySite.extension",
+Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/$",
+      "target" : "AssociatedFeature/bodySite/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/bodySite/$",
+      "target" : "AssociatedFeature/bodySite.extension/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "AssociatedFeature/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphNode" : {
+component:observedCount/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+component:observedCount"
+      },
+      "displayName" : "Observed Count",
+      "cssClass" : "element",
+component:observedCount",
+Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+    }
+  },

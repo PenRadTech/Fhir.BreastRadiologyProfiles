@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+AbnormalityDuctTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+AbnormalityDuctTypeCS"
+  }
+},

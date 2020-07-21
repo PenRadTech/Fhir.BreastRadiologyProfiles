@@ -1,0 +1,16 @@
+{
+  "defineFragment" : {
+BreastBodyLocationRequired",
+AbnormalityArchitecturalDistortion"
+  }
+},
+{
+  "defineElementProperty" : {
+bodySite"
+  }
+},
+{
+  "defineExtensionProperty" : {
+bodySite.extension:breastBodyLocation"
+  }
+},

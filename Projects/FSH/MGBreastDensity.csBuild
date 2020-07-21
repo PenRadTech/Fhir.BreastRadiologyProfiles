@@ -1,0 +1,15 @@
+{
+  "defineClass" : {
+MGBreastDensity"
+  }
+},
+{
+  "defineValueSet" : {
+MGBreastDensityVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+MGBreastDensityCS"
+  }
+},

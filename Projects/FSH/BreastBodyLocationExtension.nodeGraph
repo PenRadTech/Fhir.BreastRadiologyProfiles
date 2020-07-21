@@ -1,0 +1,105 @@
+{
+    "graphNode" : {
+BreastBodyLocationExtension/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension"
+      },
+      "displayName" : "BreastBodyLocation",
+      "cssClass" : "extension",
+Extensions/BreastBodyLocationExtension.mfsh#12/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/$",
+      "target" : "BreastBodyLocationExtension/",
+      "depth": 0,
+Extensions/BreastBodyLocationExtension.mfsh#13/n"
+    }
+  },
+  {
+    "graphNode" : {
+extension/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationExtension",
+extension"
+      },
+      "displayName" : "Extensions",
+      "cssClass" : "element",
+extension",
+Include/ExtensionMacros/Extension.Configure.minc#2/nInclude/ExtensionMacros/Extension.CodeableConcept.minc#2/nExtensions/BreastBodyLocationExtension.mfsh#29/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/$",
+      "target" : "BreastBodyLocationExtension/extension/$",
+      "depth": 0,
+Include/ExtensionMacros/Extension.Configure.minc#3/nInclude/ExtensionMacros/Extension.CodeableConcept.minc#2/nExtensions/BreastBodyLocationExtension.mfsh#29/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:laterality",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#29/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:quadrant",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#34/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:region",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#39/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:clockDirection",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#44/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:depth",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#49/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:landmark",
+      "depth": 1,
+Include/ExtensionMacros/Extension.CodeableConcept.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#55/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "BreastBodyLocationExtension/extension/$",
+      "item" : "BreastBodyLocationExtension.extension:distanceFromLandmark",
+      "depth": 1,
+Include/ExtensionMacros/Extension.Quantity.minc#3/nExtensions/BreastBodyLocationExtension.mfsh#63/n"
+    }
+  },

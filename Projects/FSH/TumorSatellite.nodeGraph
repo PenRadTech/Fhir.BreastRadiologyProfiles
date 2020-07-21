@@ -1,0 +1,86 @@
+{
+    "graphNode" : {
+TumorSatellite/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite"
+      },
+      "displayName" : "Tumor Satellite",
+      "cssClass" : "profile",
+Profiles/Common/TumorSatellite.mfsh#14/n"
+    }
+  },
+  {
+    "graphNode" : {
+value[x]/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
+value[x]"
+      },
+      "displayName" : "Value",
+      "cssClass" : "element",
+value[x]",
+Profiles/Common/TumorSatellite.mfsh#15/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "TumorSatellite/$",
+      "target" : "TumorSatellite/value\\[x\\]/$",
+      "depth": 0,
+Profiles/Common/TumorSatellite.mfsh#16/n"
+    }
+  },
+  {
+    "graphNode" : {
+derivedFrom:indexTumor/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
+derivedFrom:indexTumor"
+      },
+      "displayName" : "Index Tumor",
+      "cssClass" : "element",
+derivedFrom:indexTumor",
+Include/ObservationMacros/Observation.DerivedFrom.Add.minc#7/nProfiles/Common/TumorSatellite.mfsh#52/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "TumorSatellite/derivedFrom/$",
+      "item" : "TumorSatellite.derivedFrom:indexTumor",
+      "depth": 1,
+Include/ObservationMacros/Observation.DerivedFrom.Add.minc#8/nProfiles/Common/TumorSatellite.mfsh#52/n"
+    }
+  },
+  {
+    "graphNode" : {
+derivedFrom/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
+derivedFrom"
+      },
+      "displayName" : "DerivedFrom",
+      "cssClass" : "element",
+derivedFrom",
+Include/ObservationMacros/Observation.DerivedFrom.Slice.minc#5/nInclude/ObservationMacros/Observation.DerivedFrom.Add.minc#10/nProfiles/Common/TumorSatellite.mfsh#52/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "TumorSatellite/$",
+      "target" : "TumorSatellite/derivedFrom/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.DerivedFrom.Slice.minc#6/nInclude/ObservationMacros/Observation.DerivedFrom.Add.minc#10/nProfiles/Common/TumorSatellite.mfsh#52/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "TumorSatellite/derivedFrom/$",
+      "item" : "TumorSatellite/derivedFrom:",
+      "depth": 1,
+Include/ObservationMacros/Observation.DerivedFrom.Slice.minc#7/nInclude/ObservationMacros/Observation.DerivedFrom.Add.minc#10/nProfiles/Common/TumorSatellite.mfsh#52/n"
+    }
+  },

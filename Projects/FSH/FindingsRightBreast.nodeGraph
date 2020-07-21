@@ -1,0 +1,82 @@
+{
+    "graphNode" : {
+FindingsRightBreast/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast"
+      },
+Right Breast",
+      "cssClass" : "profile",
+Include/ObservationMacros/Observation.FindingBreastFragment.minc#12/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphNode" : {
+bodySite/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
+bodySite"
+      },
+      "displayName" : "Body Site",
+      "cssClass" : "element",
+bodySite",
+Include/ObservationMacros/Observation.FindingBreastFragment.minc#13/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "FindingsRightBreast/hasMember/$",
+      "item" : "FindingsRightBreast.hasMember:mgFinding",
+      "depth": 1,
+Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#38/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphNode" : {
+hasMember/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsRightBreast",
+hasMember"
+      },
+      "displayName" : "HasMember",
+      "cssClass" : "element",
+hasMember",
+Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#38/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "FindingsRightBreast/$",
+      "target" : "FindingsRightBreast/hasMember/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#38/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "FindingsRightBreast/hasMember/$",
+      "item" : "FindingsRightBreast.hasMember:mriFinding",
+      "depth": 1,
+Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#45/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "FindingsRightBreast/hasMember/$",
+      "item" : "FindingsRightBreast.hasMember:nmFinding",
+      "depth": 1,
+Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#52/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },
+  {
+    "graphLinkByReference" : {
+      "traversalName" : "focus",
+      "source" : "FindingsRightBreast/hasMember/$",
+      "item" : "FindingsRightBreast.hasMember:usFinding",
+      "depth": 1,
+Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#59/nProfiles/Main/FindingsRightBreast.mfsh#3/n"
+    }
+  },

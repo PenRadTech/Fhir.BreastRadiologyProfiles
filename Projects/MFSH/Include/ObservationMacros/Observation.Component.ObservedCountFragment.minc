@@ -11,7 +11,6 @@
 #  """
 
   #incompatible Observation.Component.Zero
-  #apply Observation.Component.Slice()
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
   #   This component slice contains the number of items observed.

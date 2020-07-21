@@ -11,4 +11,4 @@ Description: """
   * category ^slicing.ordered = false
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
-  * entry[categoryImaging] = "http://terminology.hl7.org/CodeSystem/observation-category#imaging"
+  * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging

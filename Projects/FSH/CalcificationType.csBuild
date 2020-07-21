@@ -1,0 +1,10 @@
+{
+  "defineValueSet" : {
+CalcificationTypeVS"
+  }
+},
+{
+  "defineCodeSystem" : {
+CalcificationTypeCS"
+  }
+},

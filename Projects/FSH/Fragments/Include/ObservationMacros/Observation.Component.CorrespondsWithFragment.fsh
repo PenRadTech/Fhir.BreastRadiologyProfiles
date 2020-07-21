@@ -13,7 +13,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[correspondsWith] ^definition = """
-This slice contains the optional components that define what this observation corresponds with.
+    This slice contains the optional components that define what this observation corresponds with.
 The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
     """
   * component[correspondsWith].code 1..1

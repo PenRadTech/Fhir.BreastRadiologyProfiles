@@ -1,0 +1,84 @@
+{
+    "graphNode" : {
+ConsistentWith/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith"
+      },
+      "displayName" : "Consistent With",
+      "cssClass" : "profile",
+Profiles/Common/ConsistentWith.mfsh#10/n"
+    }
+  },
+  {
+    "graphNode" : {
+component:consistentWith/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
+component:consistentWith"
+      },
+      "displayName" : "Consistent With",
+      "cssClass" : "element",
+component:consistentWith",
+Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#36/n"
+    }
+  },
+  {
+    "graphNode" : {
+component/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
+component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+component",
+Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "ConsistentWith/$",
+      "target" : "ConsistentWith/component/$",
+      "depth": 0,
+Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "ConsistentWith/component/$",
+      "target" : "ConsistentWith/component:",
+      "depth": 0,
+Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "ConsistentWith/component:consistentWith/$",
+      "item" : ".value[x]",
+Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#46/n"
+    }
+  },
+  {
+    "graphNode" : {
+component:qualifier/",
+      "anchor" : {
+http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
+component:qualifier"
+      },
+      "displayName" : "Qualifier",
+      "cssClass" : "element",
+component:qualifier",
+Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByBinding" : {
+      "traversalName" : "focus",
+      "source" : "ConsistentWith/component:qualifier/$",
+      "item" : ".value[x]",
+Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#57/n"
+    }
+  },
