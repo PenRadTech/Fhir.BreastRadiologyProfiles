@@ -2,196 +2,196 @@
     "member" : {
       "groupingId" : "ExtensionResources",
       "sort": "Breast Body Location Extension",
-      "reference" : "StructureDefinition/BreastBodyLocationExtension"
+      "reference" : "^StructureDefinition/BreastBodyLocationExtension$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Mammography Architectural Distortion",
-      "reference" : "StructureDefinition/AbnormalityArchitecturalDistortion"
+      "reference" : "^StructureDefinition/AbnormalityArchitecturalDistortion$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Asymmetry",
-      "reference" : "StructureDefinition/AbnormalityAsymmetry"
+      "reference" : "^StructureDefinition/AbnormalityAsymmetry$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Mammography Calcification",
-      "reference" : "StructureDefinition/AbnormalityCalcification"
+      "reference" : "^StructureDefinition/AbnormalityCalcification$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Cyst",
-      "reference" : "StructureDefinition/AbnormalityCyst"
+      "reference" : "^StructureDefinition/AbnormalityCyst$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Mammography Density",
-      "reference" : "StructureDefinition/AbnormalityDensity"
+      "reference" : "^StructureDefinition/AbnormalityDensity$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Duct",
-      "reference" : "StructureDefinition/AbnormalityDuct"
+      "reference" : "^StructureDefinition/AbnormalityDuct$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Mammography Fat Necrosis",
-      "reference" : "StructureDefinition/AbnormalityFatNecrosis"
+      "reference" : "^StructureDefinition/AbnormalityFatNecrosis$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Fibroadenoma",
-      "reference" : "StructureDefinition/AbnormalityFibroadenoma"
+      "reference" : "^StructureDefinition/AbnormalityFibroadenoma$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Foreign Object",
-      "reference" : "StructureDefinition/AbnormalityForeignObject"
+      "reference" : "^StructureDefinition/AbnormalityForeignObject$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "LymphNode Abnormality",
-      "reference" : "StructureDefinition/AbnormalityLymphNode"
+      "reference" : "^StructureDefinition/AbnormalityLymphNode$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Mass Abnormality",
-      "reference" : "StructureDefinition/AbnormalityMass"
+      "reference" : "^StructureDefinition/AbnormalityMass$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Associated Feature",
-      "reference" : "StructureDefinition/AssociatedFeature"
+      "reference" : "^StructureDefinition/AssociatedFeature$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Consistent With",
-      "reference" : "StructureDefinition/ConsistentWith"
+      "reference" : "^StructureDefinition/ConsistentWith$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "Service Recommendation",
-      "reference" : "StructureDefinition/ServiceRecommendation"
+      "reference" : "^StructureDefinition/ServiceRecommendation$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Tumor Satellite",
-      "reference" : "StructureDefinition/TumorSatellite"
+      "reference" : "^StructureDefinition/TumorSatellite$"
     }
   },
   {
     "member" : {
       "groupingId" : "MGResources",
       "sort": "Mammography Breast Density",
-      "reference" : "StructureDefinition/MGBreastDensity"
+      "reference" : "^StructureDefinition/MGBreastDensity$"
     }
   },
   {
     "member" : {
       "groupingId" : "MGResources",
       "sort": "Mammography Finding",
-      "reference" : "StructureDefinition/MGFinding"
+      "reference" : "^StructureDefinition/MGFinding$"
     }
   },
   {
     "member" : {
       "groupingId" : "MRIResources",
       "sort": "MRI Finding",
-      "reference" : "StructureDefinition/MRIFinding"
+      "reference" : "^StructureDefinition/MRIFinding$"
     }
   },
   {
     "member" : {
       "groupingId" : "NMResources",
       "sort": "Nuclear Medicine Finding",
-      "reference" : "StructureDefinition/NMFinding"
+      "reference" : "^StructureDefinition/NMFinding$"
     }
   },
   {
     "member" : {
       "groupingId" : "USResources",
       "sort": "Ultra-Sound Finding",
-      "reference" : "StructureDefinition/USFinding"
+      "reference" : "^StructureDefinition/USFinding$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "B",
-      "reference" : "StructureDefinition/BreastRadiologyComposition"
+      "reference" : "^StructureDefinition/BreastRadiologyComposition$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "A",
-      "reference" : "StructureDefinition/BreastRadiologyDocument"
+      "reference" : "^StructureDefinition/BreastRadiologyDocument$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/BreastRadiologyReport"
+      "reference" : "^StructureDefinition/BreastRadiologyReport$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Findings Left Breast",
-      "reference" : "StructureDefinition/FindingsLeftBreast"
+      "reference" : "^StructureDefinition/FindingsLeftBreast$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/FindingsLeftBreast"
+      "reference" : "^StructureDefinition/FindingsLeftBreast$"
     }
   },
   {
     "member" : {
       "groupingId" : "CommonResources",
       "sort": "Findings Right Breast",
-      "reference" : "StructureDefinition/FindingsRightBreast"
+      "reference" : "^StructureDefinition/FindingsRightBreast$"
     }
   },
   {
     "member" : {
       "groupingId" : "BaseResources",
       "sort": "C",
-      "reference" : "StructureDefinition/FindingsRightBreast"
+      "reference" : "^StructureDefinition/FindingsRightBreast$"
     }
   },
   {
@@ -711,97 +711,97 @@
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Breast Body Location (Required) Fragment",
-      "reference" : "StructureDefinition/BreastBodyLocationRequiredFragment"
+      "reference" : "^StructureDefinition/BreastBodyLocationRequiredFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Category Fragment",
-      "reference" : "StructureDefinition/CategoryFragment"
+      "reference" : "^StructureDefinition/CategoryFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "BiRad Fragment",
-      "reference" : "StructureDefinition/BiRadFragment"
+      "reference" : "^StructureDefinition/BiRadFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "'Corresponds With' Component Fragment",
-      "reference" : "StructureDefinition/CorrespondsWithFragment"
+      "reference" : "^StructureDefinition/CorrespondsWithFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "NotPreviously Seen Component Fragment",
-      "reference" : "StructureDefinition/NotPreviouslySeenFragment"
+      "reference" : "^StructureDefinition/NotPreviouslySeenFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Changes Component Fragment",
-      "reference" : "StructureDefinition/ObservedChangesFragment"
+      "reference" : "^StructureDefinition/ObservedChangesFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "ObservedCount Fragment",
-      "reference" : "StructureDefinition/ObservedCountFragment"
+      "reference" : "^StructureDefinition/ObservedCountFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Distribution Fragment",
-      "reference" : "StructureDefinition/ObservedDistributionFragment"
+      "reference" : "^StructureDefinition/ObservedDistributionFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "ObservedSize Fragment",
-      "reference" : "StructureDefinition/ObservedSizeFragment"
+      "reference" : "^StructureDefinition/ObservedSizeFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "PreviouslyDemonstratedBy Fragment",
-      "reference" : "StructureDefinition/PreviouslyDemonstratedByFragment"
+      "reference" : "^StructureDefinition/PreviouslyDemonstratedByFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Shape Components Fragment",
-      "reference" : "StructureDefinition/ShapeFragment"
+      "reference" : "^StructureDefinition/ShapeFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Associated Feature Fragment",
-      "reference" : "StructureDefinition/AssociatedFeatureFragment"
+      "reference" : "^StructureDefinition/AssociatedFeatureFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "ConsistentWith HasMember Fragment",
-      "reference" : "StructureDefinition/ConsistentWithFragment"
+      "reference" : "^StructureDefinition/ConsistentWithFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Tumor Satellite Fragment",
-      "reference" : "StructureDefinition/TumorSatelliteFragment"
+      "reference" : "^StructureDefinition/TumorSatelliteFragment$"
     }
   },

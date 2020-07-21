@@ -16,7 +16,7 @@
   `    "member" : {
   `      "groupingId" : "%GroupId%",
   `      "sort": "%Sort%",
-  `      "reference" : "StructureDefinition/%Id%"
+  `      "reference" : "^StructureDefinition/%Id%$"
   `    }
   `  },
 #end
