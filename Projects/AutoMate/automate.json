@@ -14,13 +14,19 @@
 		},
 		{
 			"name": "FSH",
-			"watchPaths": ["..\\FSH", "..\\GraphFiles"],
+			"watchPaths": ["..\\FSH"],
 			"commands": [
 				{
   			        "workingDir": "..",
 					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
-					"cmdArgs": "FSH --version"
-				},
+					"cmdArgs": "FSH --out Build"
+				}
+			]
+		},
+		{
+			"name": "FGraph",
+			"watchPaths": ["..\\FSH", "..\\GraphFiles"],
+			"commands": [
 				{
   			        "workingDir": "..",
 					"cmdPath": "FGraph",
@@ -38,9 +44,9 @@
 			"watchPaths": ["..\\Fragments\\FSH"],
 			"commands": [
 				{
-  			        "workingDir": "..",
+  			        "workingDir": "..\\Fragments",
 					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
-					"cmdArgs": "FSH --version --out ..\\FragmentS\\build"
+					"cmdArgs": "FSH --out build"
 				}
 			]
 		}
