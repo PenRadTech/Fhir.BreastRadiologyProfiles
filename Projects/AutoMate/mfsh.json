@@ -1,7 +1,7 @@
 {
 	"baseInputDir": "MFSH",
 	"baseOutputDir": "FSH",
-	"fragDir": "FSH-Fragments",
+	"fragDir": "Fragments//FSH",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology",
 	"mfshPaths": [
 		"MFSH"
@@ -20,7 +20,7 @@
 			"filter": "*.nodeGraph"
 		},
 		{
-			"path": "FSH-Fragments",
+			"path": "Fragments\\FSH",
 			"filter": "*.fsh"
 		}
 	],
