@@ -1,4 +1,4 @@
-Profile: Observation.Component.CorrespondsWithFragment
+Profile: CorrespondsWithFragment
 Parent: Observation
 Title: "'Corresponds With' Component Fragment"
 Description: """

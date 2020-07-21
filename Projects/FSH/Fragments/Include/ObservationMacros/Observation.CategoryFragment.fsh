@@ -1,4 +1,4 @@
-Profile: Observation.CategoryFragment
+Profile: CategoryFragment
 Parent: Observation
 Title: "Category Fragment"
 Description: """

@@ -1,4 +1,4 @@
-Profile: Observation.Component.PreviouslyDemonstratedByFragment
+Profile: PreviouslyDemonstratedByFragment
 Parent: Observation
 Title: "PreviouslyDemonstratedBy Fragment"
 Description: "Observation 'Demonstrated By' Component Fragment"

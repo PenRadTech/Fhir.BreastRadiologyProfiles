@@ -1,4 +1,4 @@
-Profile: Observation.Component.NotPreviouslySeenFragment
+Profile: NotPreviouslySeenFragment
 Parent: Observation
 Title: "NotPreviously Seen Component Fragment"
 Description: "Adds NotPreviously Seen Component slice."

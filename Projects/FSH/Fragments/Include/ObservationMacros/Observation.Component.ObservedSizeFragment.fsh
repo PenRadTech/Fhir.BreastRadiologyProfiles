@@ -1,4 +1,4 @@
-Profile: Observation.Component.ObservedSizeFragment
+Profile: ObservedSizeFragment
 Parent: Observation
 Title: "ObservedSize Fragment"
 Description: "Fragment that adds 'Observed Size' components to Observation."

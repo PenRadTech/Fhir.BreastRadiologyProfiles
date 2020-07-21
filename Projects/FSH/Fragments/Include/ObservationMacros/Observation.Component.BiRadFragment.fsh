@@ -1,4 +1,4 @@
-Profile: Observation.Component.BiRadFragment
+Profile: BiRadFragment
 Parent: Observation
 Title: "BiRad Fragment"
 Description: "Fragment that adds 'BiRad code' element to profile"

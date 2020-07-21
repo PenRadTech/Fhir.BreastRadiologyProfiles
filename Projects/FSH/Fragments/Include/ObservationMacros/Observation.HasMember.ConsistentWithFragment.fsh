@@ -1,4 +1,4 @@
-Profile: Observation.HasMember.ConsistentWithFragment
+Profile: ConsistentWithFragment
 Parent: Observation
 Title: "ConsistentWith HasMember Fragment"
 Description: "This fragment adds the references for the ConsistentWith HasMember."

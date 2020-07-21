@@ -1,4 +1,4 @@
-Profile: Observation.Component.ObservedCountFragment
+Profile: ObservedCountFragment
 Parent: Observation
 Title: "ObservedCount Fragment"
 Description: "Fragment that adds 'Observed Count' element to profile."

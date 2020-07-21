@@ -1,4 +1,4 @@
-Profile: Observation.BreastBodyLocationRequiredFragment
+Profile: BreastBodyLocationRequiredFragment
 Parent: Observation
 Title: "Breast Body Location (Required) Fragment"
 Description: """

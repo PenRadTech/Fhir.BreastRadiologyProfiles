@@ -38,17 +38,6 @@
 					"cmdArgs": "AutoMate\\igbuilder.json"
 				}
 			]
-		},
-		{
-			"name": "Fragment",
-			"watchPaths": ["..\\Fragments\\FSH"],
-			"commands": [
-				{
-  			        "workingDir": "..\\Fragments",
-					"cmdPath": "%ApplicationData%\\npm\\sushi.cmd",
-					"cmdArgs": "FSH --out build"
-				}
-			]
 		}
 	]
 }

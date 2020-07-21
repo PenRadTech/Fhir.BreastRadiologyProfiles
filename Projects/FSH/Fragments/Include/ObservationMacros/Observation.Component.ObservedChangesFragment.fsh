@@ -1,4 +1,4 @@
-Profile: Observation.Component.ObservedChangesFragment
+Profile: ObservedChangesFragment
 Parent: Observation
 Title: "Observed Changes Component Fragment"
 Description: "Add Observed Changes Component Slice"

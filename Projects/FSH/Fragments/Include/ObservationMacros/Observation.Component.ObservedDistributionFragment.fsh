@@ -1,4 +1,4 @@
-Profile: Observation.Component.ObservedDistributionFragment
+Profile: ObservedDistributionFragment
 Parent: Observation
 Title: "Observed Distribution Fragment"
 Description: "Fragment that adds 'Observed Distribution' components to Observation."
