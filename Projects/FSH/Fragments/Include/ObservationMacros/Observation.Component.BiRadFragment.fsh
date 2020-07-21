@@ -1,12 +1,11 @@
 Profile: BiRadFragment
 Parent: Observation
-Title: """
-  BiRad Fragment
-  """
+Title: "BiRad Fragment"
 Description: """
   Fragment that adds 'BiRad code' element to profile
   """
-  
+
+   
 
 
   * component ^slicing.discriminator.type = #pattern

@@ -1,12 +1,11 @@
 Profile: TumorSatelliteFragment
 Parent: Observation
-Title: """
-  Tumor Satellite Fragment
-  """
+Title: "Tumor Satellite Fragment"
 Description: """
   This fragment adds the references for the Tumor Satellite extension.
   """
-  
+
+   
 
 
   * hasMember ^slicing.discriminator.type = #value

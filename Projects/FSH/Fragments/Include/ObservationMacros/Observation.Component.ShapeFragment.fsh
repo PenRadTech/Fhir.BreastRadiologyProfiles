@@ -1,12 +1,11 @@
 Profile: ShapeFragment
 Parent: Observation
-Title: """
-  Shape Components Fragment
-  """
+Title: "Shape Components Fragment"
 Description: """
   Adds Orientation, Shape, Margin, and Density Components
   """
-  
+
+   
 
 
 

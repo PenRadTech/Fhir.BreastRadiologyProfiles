@@ -1,13 +1,12 @@
 Profile: CategoryFragment
 Parent: Observation
-Title: """
-  Category Fragment
-  """
+Title: "Category Fragment"
 Description: """
   This fragment slices Observation.category and 
-fixes the observation.code value to 'imaging'.
+  fixes the observation.code value to 'imaging'.
   """
-    * category ^slicing.discriminator.type = #pattern
+
+     * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
   * category ^slicing.ordered = false

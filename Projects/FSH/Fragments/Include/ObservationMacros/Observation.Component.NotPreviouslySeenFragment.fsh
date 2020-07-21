@@ -1,12 +1,11 @@
 Profile: NotPreviouslySeenFragment
 Parent: Observation
-Title: """
-  NotPreviously Seen Component Fragment
-  """
+Title: "NotPreviously Seen Component Fragment"
 Description: """
   Adds NotPreviously Seen Component slice.
   """
-  
+
+   
 
 
   * component ^slicing.discriminator.type = #pattern

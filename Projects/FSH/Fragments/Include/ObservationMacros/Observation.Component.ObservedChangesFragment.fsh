@@ -1,12 +1,11 @@
 Profile: ObservedChangesFragment
 Parent: Observation
-Title: """
-  Observed Changes Component Fragment
-  """
+Title: "Observed Changes Component Fragment"
 Description: """
   Add Observed Changes Component Slice
   """
-    
+
+     
 
 
   * component ^slicing.discriminator.type = #pattern

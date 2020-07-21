@@ -258,6 +258,15 @@
     }
   },
   {
+    "group" : {
+      "id" : "Fragments",
+      "name" : "Mammography Resources",
+      "description" : "This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
+      They are included here to better convey the structure and composition of the components that are used to create the
+      Breast Radiology Resources."
+    }
+  },
+  {
     "member" : {
       "groupingId" : "CommonCodesVS",
       "sort": "Asymmetry Type ValueSet",
@@ -696,5 +705,103 @@
       "groupingId" : "CommonCodesVS",
       "sort": "Units of length value set",
       "reference" : "ValueSet/UnitsOfLengthVS"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Breast Body Location (Required) Fragment",
+      "reference" : "StructureDefinition/BreastBodyLocationRequiredFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Category Fragment",
+      "reference" : "StructureDefinition/CategoryFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "BiRad Fragment",
+      "reference" : "StructureDefinition/BiRadFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "'Corresponds With' Component Fragment",
+      "reference" : "StructureDefinition/CorrespondsWithFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "NotPreviously Seen Component Fragment",
+      "reference" : "StructureDefinition/NotPreviouslySeenFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Changes Component Fragment",
+      "reference" : "StructureDefinition/ObservedChangesFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "ObservedCount Fragment",
+      "reference" : "StructureDefinition/ObservedCountFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Distribution Fragment",
+      "reference" : "StructureDefinition/ObservedDistributionFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "ObservedSize Fragment",
+      "reference" : "StructureDefinition/ObservedSizeFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "PreviouslyDemonstratedBy Fragment",
+      "reference" : "StructureDefinition/PreviouslyDemonstratedByFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Shape Components Fragment",
+      "reference" : "StructureDefinition/ShapeFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Associated Feature Fragment",
+      "reference" : "StructureDefinition/AssociatedFeatureFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "ConsistentWith HasMember Fragment",
+      "reference" : "StructureDefinition/ConsistentWithFragment"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Tumor Satellite Fragment",
+      "reference" : "StructureDefinition/TumorSatelliteFragment"
     }
   },

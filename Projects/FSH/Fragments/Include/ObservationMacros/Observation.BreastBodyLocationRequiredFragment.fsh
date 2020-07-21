@@ -1,13 +1,12 @@
 Profile: BreastBodyLocationRequiredFragment
 Parent: Observation
-Title: """
-  Breast Body Location (Required) Fragment
-  """
+Title: "Breast Body Location (Required) Fragment"
 Description: """
   This fragment adds the references for the breast body location extension.
-The references are required, meaning that the breast body location must exist.
+  The references are required, meaning that the breast body location must exist.
   """
-  
+
+   
 
 
   * bodySite 1..1

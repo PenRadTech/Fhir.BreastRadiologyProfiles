@@ -54,3 +54,11 @@
 # """
 # This section contains code systems that are defined in this Breast Radiology Implementation Guide.
 # """)
+
+#apply IGGroup("Fragments", 
+# "Mammography Resources", 
+# """
+# This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
+# They are included here to better convey the structure and composition of the components that are used to create the
+# Breast Radiology Resources.
+# """)

@@ -1,12 +1,11 @@
 Profile: ConsistentWithFragment
 Parent: Observation
-Title: """
-  ConsistentWith HasMember Fragment
-  """
+Title: "ConsistentWith HasMember Fragment"
 Description: """
   This fragment adds the references for the ConsistentWith HasMember.
   """
-  
+
+   
 
 
   * hasMember ^slicing.discriminator.type = #value

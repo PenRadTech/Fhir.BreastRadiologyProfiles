@@ -1,9 +1,9 @@
 Profile: %Name%
 Parent: %Parent%
-Title: """
-  %Title%
-  """
+Title: "%Title%"
 Description: """
   %Description%
   """
-  
+   #apply IGGroupMemberProfile("Fragments", "%Title%")
+
+   
