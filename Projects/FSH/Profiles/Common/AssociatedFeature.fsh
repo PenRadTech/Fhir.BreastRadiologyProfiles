@@ -31,9 +31,9 @@ Description: """
     """
   * component[featureType] ^definition = """
     This slice contains the required component that 
-defines the observed feature. The value of this 
-component is a codeable concept chosen from the 
-AssociatedFeatureVS valueset.",
+    defines the observed feature. The value of this 
+    component is a codeable concept chosen from the 
+    AssociatedFeatureVS valueset.",
     """
   * component[featureType].code 1..1
   * component[featureType].code ^short = "Associated Feature Type component code."
@@ -78,13 +78,13 @@ AssociatedFeatureVS valueset.",
     """
   * component[observedCount] ^definition = """
       This component slice contains the number of items observed.
-  This can be a quantity (i.e. 5), or a range (1 to 5).
-
-  If the lower bound of the range is set but not the upper bound,
-  then it means {lower bound} or more.
-
-  If the lower bound of the range is not set but the upper bound is,
-  then it means {upper bound} or less.
+    This can be a quantity (i.e. 5), or a range (1 to 5).
+    
+    If the lower bound of the range is set but not the upper bound,
+    then it means {lower bound} or more.
+    
+    If the lower bound of the range is not set but the upper bound is,
+    then it means {upper bound} or less.
     """
   * component[observedCount].code 1..1
   * component[observedCount].code ^short = "Observed Count component. component code."

@@ -45,7 +45,7 @@ Description: """
     """
   * component[obsChanges] ^definition = """
     This slice contains the optional components that define observed changes in this abnormality.
-The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
+    The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
     """
   * component[obsChanges].code 1..1
   * component[obsChanges].code ^short = "Observed Change In Abnormality component code."
@@ -67,7 +67,7 @@ The value of this component is a codeable concept chosen from the ObservedChange
     """
   * component[biRadsAssessmentCategory] ^definition = """
     This slice contains the optional component that define the BiRAD risk code.
-The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
+    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
     """
   * component[biRadsAssessmentCategory].code 1..1
   * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
@@ -91,7 +91,7 @@ The value of this component is a codeable concept chosen from the BiRadsAssessme
     """
   * component[orientation] ^definition = """
     This slice contains the optional component that define the orientation of the abnormality.
-The value of this component is a codeable concept chosen from the OrientationVS valueset.
+    The value of this component is a codeable concept chosen from the OrientationVS valueset.
     """
   * component[orientation].code 1..1
   * component[orientation].code ^short = "Orientation component code."
@@ -115,7 +115,7 @@ The value of this component is a codeable concept chosen from the OrientationVS 
     """
   * component[shape] ^definition = """
     This slice contains the optional component that define the shape of the abnormality.
-The value of this component is a codeable concept chosen from the ShapeVS valueset.
+    The value of this component is a codeable concept chosen from the ShapeVS valueset.
     """
   * component[shape].code 1..1
   * component[shape].code ^short = "Shape component code."
@@ -138,7 +138,7 @@ The value of this component is a codeable concept chosen from the ShapeVS values
     """
   * component[margin] ^definition = """
     This slice contains the optional component that define the margin of the abnormality.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[margin].code 1..1
   * component[margin].code ^short = "Margin component code."
@@ -161,8 +161,8 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[mgBreastDensity] ^definition = """
     This slice contains the optional component that define the 
-observed density of the breast tissue.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    observed density of the breast tissue.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[mgBreastDensity].code 1..1
   * component[mgBreastDensity].code ^short = "Density component code."
@@ -185,7 +185,7 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[notPreviouslySeen] ^definition = """
     This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
-The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
+    The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
     """
   * component[notPreviouslySeen].code 1..1
   * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."
@@ -207,7 +207,7 @@ The value of this component is a codeable concept chosen from the NotPreviouslyS
     """
   * component[correspondsWith] ^definition = """
     This slice contains the optional components that define what this observation corresponds with.
-The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
+    The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
     """
   * component[correspondsWith].code 1..1
   * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
@@ -230,9 +230,9 @@ The value of this component is a codeable concept chosen from the CorrespondsWit
     """
   * component[prevDemBy] ^definition = """
     This slice contains the optional components that specifies what this observation 
-has been previously demonstrated by.
-The value of this component is a codeable concept chosen from the 
-PreviouslyDemonstratedByVS valueset.  
+    has been previously demonstrated by.
+    The value of this component is a codeable concept chosen from the 
+    PreviouslyDemonstratedByVS valueset.  
     """
   * component[prevDemBy].code 1..1
   * component[prevDemBy].code ^short = "Previously Demonstrated by component code."

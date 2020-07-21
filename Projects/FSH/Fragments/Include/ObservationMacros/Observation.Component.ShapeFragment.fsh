@@ -13,6 +13,12 @@ Description: "Adds Orientation, Shape, Margin, and Density Components"
 
   // Define Orientation Slice
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
   * component[orientation] ^comment = """
@@ -20,7 +26,7 @@ Description: "Adds Orientation, Shape, Margin, and Density Components"
     """
   * component[orientation] ^definition = """
     This slice contains the optional component that define the orientation of the abnormality.
-The value of this component is a codeable concept chosen from the OrientationVS valueset.
+    The value of this component is a codeable concept chosen from the OrientationVS valueset.
     """
   * component[orientation].code 1..1
   * component[orientation].code ^short = "Orientation component code."
@@ -44,7 +50,7 @@ The value of this component is a codeable concept chosen from the OrientationVS 
     """
   * component[shape] ^definition = """
     This slice contains the optional component that define the shape of the abnormality.
-The value of this component is a codeable concept chosen from the ShapeVS valueset.
+    The value of this component is a codeable concept chosen from the ShapeVS valueset.
     """
   * component[shape].code 1..1
   * component[shape].code ^short = "Shape component code."
@@ -67,7 +73,7 @@ The value of this component is a codeable concept chosen from the ShapeVS values
     """
   * component[margin] ^definition = """
     This slice contains the optional component that define the margin of the abnormality.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[margin].code 1..1
   * component[margin].code ^short = "Margin component code."
@@ -90,8 +96,8 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[mgBreastDensity] ^definition = """
     This slice contains the optional component that define the 
-observed density of the breast tissue.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    observed density of the breast tissue.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[mgBreastDensity].code 1..1
   * component[mgBreastDensity].code ^short = "Density component code."

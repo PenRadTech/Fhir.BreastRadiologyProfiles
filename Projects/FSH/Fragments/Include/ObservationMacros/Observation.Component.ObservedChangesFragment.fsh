@@ -4,6 +4,12 @@ Title: "Observed Changes Component Fragment"
 Description: "Add Observed Changes Component Slice"
   
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -11,7 +17,7 @@ Description: "Add Observed Changes Component Slice"
     """
   * component[obsChanges] ^definition = """
     This slice contains the optional components that define observed changes in this abnormality.
-The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
+    The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
     """
   * component[obsChanges].code 1..1
   * component[obsChanges].code ^short = "Observed Change In Abnormality component code."

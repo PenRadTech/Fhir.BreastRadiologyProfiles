@@ -73,9 +73,9 @@ Description: """
   * extension[landmark] ^definition =
     """
 	  Body landmark which defines the origin of the measurement.
-
-  Currently the value set this is bound to does not contain the required breast 
-  landmarks like nipple.  
+	
+	Currently the value set this is bound to does not contain the required breast 
+	landmarks like nipple.  
 	"""
   * extension[landmark].value[x] 1..1
   * extension[landmark].value[x] only CodeableConcept
@@ -87,9 +87,9 @@ Description: """
   * extension[distanceFromLandmark] ^definition =
     """
 		 Distance from body landmark to body location
-
-  The cardinality of distanceFromLandmark must match that of landmark, and each item in distanceFromLandmark will
-  relate to its corresponding element in landmark.
+	
+	The cardinality of distanceFromLandmark must match that of landmark, and each item in distanceFromLandmark will
+	relate to its corresponding element in landmark.
 	"""
   * extension[distanceFromLandmark].value[x] 1..1
   * extension[distanceFromLandmark].value[x] only Quantity

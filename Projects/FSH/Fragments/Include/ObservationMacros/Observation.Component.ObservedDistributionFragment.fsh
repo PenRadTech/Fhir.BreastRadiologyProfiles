@@ -5,6 +5,12 @@ Description: "Fragment that adds 'Observed Distribution' components to Observati
 
   // define calcification distribution slice
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
   * component[obsDistribution] ^comment = """
@@ -12,9 +18,9 @@ Description: "Fragment that adds 'Observed Distribution' components to Observati
     """
   * component[obsDistribution] ^definition = """
     This slice contains the optional components that describe the distribution of
-a group of abnormalities.
-The value of this component is a codeable concept chosen from the 
-CalcificationDistributionVS valueset.
+    a group of abnormalities.
+    The value of this component is a codeable concept chosen from the 
+    CalcificationDistributionVS valueset.
     """
   * component[obsDistribution].code 1..1
   * component[obsDistribution].code ^short = "Observed distribution of abnormalities component code."
@@ -38,19 +44,19 @@ CalcificationDistributionVS valueset.
     """
   * component[obsDistRegionSize] ^definition = """
     This component slice contains the size of an region inside of which there 
-is a distribution of abnormalities.
-
-There may be one, two, or three values indicating a size of
-one dimension (length), two dimensions (area), or three dimensions (volume).
-
-Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
-
-If the lower bound of the range is set but not the upper bound, 
-then the size is {lower bound} or greater.
-
-If the upper bound of the range is set but not the lower bound, 
-
-then the size is {upper bound} or less.
+    is a distribution of abnormalities.
+    
+    There may be one, two, or three values indicating a size of
+    one dimension (length), two dimensions (area), or three dimensions (volume).
+    
+    Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
+    
+    If the lower bound of the range is set but not the upper bound, 
+    then the size is {lower bound} or greater.
+    
+    If the upper bound of the range is set but not the lower bound, 
+    
+    then the size is {upper bound} or less.
     """
   * component[obsDistRegionSize].code 1..1
   * component[obsDistRegionSize].code ^short = "Observed size of distribution region. component code."

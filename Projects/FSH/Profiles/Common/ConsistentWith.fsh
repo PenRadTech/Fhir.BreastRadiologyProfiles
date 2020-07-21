@@ -44,10 +44,10 @@ Description: """
     """
   * component[consistentWith] ^definition = """
        This slice contains the required component that defines what this 
-   observation is consistent with.
-
-   The value of this component is a codeable concept chosen from the 
-   ConsistentWithVS valueset.
+    observation is consistent with.
+    
+    The value of this component is a codeable concept chosen from the 
+    ConsistentWithVS valueset.
     """
   * component[consistentWith].code 1..1
   * component[consistentWith].code ^short = "Consistent With component code."
@@ -71,7 +71,7 @@ Description: """
     """
   * component[qualifier] ^definition = """
     This slice contains the optional components that qualify the 'consistentWith' slice component value.
-The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
+    The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
     """
   * component[qualifier].code 1..1
   * component[qualifier].code ^short = "Consistent With Qualifier component code."

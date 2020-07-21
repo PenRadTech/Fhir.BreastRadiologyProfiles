@@ -24,7 +24,7 @@ Description: """
     """
   * component[fibroAdenomaType] ^definition = """
     This resource and referenced child resources contain
-information about a Fibroadenoma abnormality observation
+    information about a Fibroadenoma abnormality observation
     """
   * component[fibroAdenomaType].code 1..1
   * component[fibroAdenomaType].code ^short = "Fibroadenoma Abnormality component code."
@@ -66,7 +66,7 @@ information about a Fibroadenoma abnormality observation
     """
   * component[obsChanges] ^definition = """
     This slice contains the optional components that define observed changes in this abnormality.
-The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
+    The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
     """
   * component[obsChanges].code 1..1
   * component[obsChanges].code ^short = "Observed Change In Abnormality component code."
@@ -88,7 +88,7 @@ The value of this component is a codeable concept chosen from the ObservedChange
     """
   * component[biRadsAssessmentCategory] ^definition = """
     This slice contains the optional component that define the BiRAD risk code.
-The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
+    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
     """
   * component[biRadsAssessmentCategory].code 1..1
   * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
@@ -112,7 +112,7 @@ The value of this component is a codeable concept chosen from the BiRadsAssessme
     """
   * component[orientation] ^definition = """
     This slice contains the optional component that define the orientation of the abnormality.
-The value of this component is a codeable concept chosen from the OrientationVS valueset.
+    The value of this component is a codeable concept chosen from the OrientationVS valueset.
     """
   * component[orientation].code 1..1
   * component[orientation].code ^short = "Orientation component code."
@@ -136,7 +136,7 @@ The value of this component is a codeable concept chosen from the OrientationVS 
     """
   * component[shape] ^definition = """
     This slice contains the optional component that define the shape of the abnormality.
-The value of this component is a codeable concept chosen from the ShapeVS valueset.
+    The value of this component is a codeable concept chosen from the ShapeVS valueset.
     """
   * component[shape].code 1..1
   * component[shape].code ^short = "Shape component code."
@@ -159,7 +159,7 @@ The value of this component is a codeable concept chosen from the ShapeVS values
     """
   * component[margin] ^definition = """
     This slice contains the optional component that define the margin of the abnormality.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[margin].code 1..1
   * component[margin].code ^short = "Margin component code."
@@ -182,8 +182,8 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[mgBreastDensity] ^definition = """
     This slice contains the optional component that define the 
-observed density of the breast tissue.
-The value of this component is a codeable concept chosen from the MarginVS valueset.
+    observed density of the breast tissue.
+    The value of this component is a codeable concept chosen from the MarginVS valueset.
     """
   * component[mgBreastDensity].code 1..1
   * component[mgBreastDensity].code ^short = "Density component code."
@@ -206,13 +206,13 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[observedCount] ^definition = """
       This component slice contains the number of items observed.
-  This can be a quantity (i.e. 5), or a range (1 to 5).
-
-  If the lower bound of the range is set but not the upper bound,
-  then it means {lower bound} or more.
-
-  If the lower bound of the range is not set but the upper bound is,
-  then it means {upper bound} or less.
+    This can be a quantity (i.e. 5), or a range (1 to 5).
+    
+    If the lower bound of the range is set but not the upper bound,
+    then it means {lower bound} or more.
+    
+    If the lower bound of the range is not set but the upper bound is,
+    then it means {upper bound} or less.
     """
   * component[observedCount].code 1..1
   * component[observedCount].code ^short = "Observed Count component. component code."
@@ -234,9 +234,9 @@ The value of this component is a codeable concept chosen from the MarginVS value
     """
   * component[obsDistribution] ^definition = """
     This slice contains the optional components that describe the distribution of
-a group of abnormalities.
-The value of this component is a codeable concept chosen from the 
-CalcificationDistributionVS valueset.
+    a group of abnormalities.
+    The value of this component is a codeable concept chosen from the 
+    CalcificationDistributionVS valueset.
     """
   * component[obsDistribution].code 1..1
   * component[obsDistribution].code ^short = "Observed distribution of abnormalities component code."
@@ -260,19 +260,19 @@ CalcificationDistributionVS valueset.
     """
   * component[obsDistRegionSize] ^definition = """
     This component slice contains the size of an region inside of which there 
-is a distribution of abnormalities.
-
-There may be one, two, or three values indicating a size of
-one dimension (length), two dimensions (area), or three dimensions (volume).
-
-Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
-
-If the lower bound of the range is set but not the upper bound, 
-then the size is {lower bound} or greater.
-
-If the upper bound of the range is set but not the lower bound, 
-
-then the size is {upper bound} or less.
+    is a distribution of abnormalities.
+    
+    There may be one, two, or three values indicating a size of
+    one dimension (length), two dimensions (area), or three dimensions (volume).
+    
+    Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
+    
+    If the lower bound of the range is set but not the upper bound, 
+    then the size is {lower bound} or greater.
+    
+    If the upper bound of the range is set but not the lower bound, 
+    
+    then the size is {upper bound} or less.
     """
   * component[obsDistRegionSize].code 1..1
   * component[obsDistRegionSize].code ^short = "Observed size of distribution region. component code."
@@ -297,16 +297,16 @@ then the size is {upper bound} or less.
     """
   * component[obsSize] ^definition = """
       This component slice contains the size of an item observed.
-  There may be one, two, or three values indicating a size of
-  one dimension (length), two dimensions (area), or three dimensions (volume).
-
-  Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
-
-  If the lower bound of the range is set but not the upper bound, 
-  then the size is {lower bound} or greater.
- 
-  If the upper bound of the range is set but not the lower bound,
-  then the size is {upper bound} or less.
+    There may be one, two, or three values indicating a size of
+    one dimension (length), two dimensions (area), or three dimensions (volume).
+    
+    Each dimension can be a quantity (i.e. 5), or a range (1 to 5).
+    
+    If the lower bound of the range is set but not the upper bound, 
+    then the size is {lower bound} or greater.
+    
+    If the upper bound of the range is set but not the lower bound,
+    then the size is {upper bound} or less.
     """
   * component[obsSize].code 1..1
   * component[obsSize].code ^short = "Observed size. component code."
@@ -329,9 +329,9 @@ then the size is {upper bound} or less.
     """
   * component[prevDemBy] ^definition = """
     This slice contains the optional components that specifies what this observation 
-has been previously demonstrated by.
-The value of this component is a codeable concept chosen from the 
-PreviouslyDemonstratedByVS valueset.  
+    has been previously demonstrated by.
+    The value of this component is a codeable concept chosen from the 
+    PreviouslyDemonstratedByVS valueset.  
     """
   * component[prevDemBy].code 1..1
   * component[prevDemBy].code ^short = "Previously Demonstrated by component code."

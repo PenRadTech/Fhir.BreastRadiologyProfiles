@@ -4,6 +4,12 @@ Title: "NotPreviously Seen Component Fragment"
 Description: "Adds NotPreviously Seen Component slice."
 
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -11,7 +17,7 @@ Description: "Adds NotPreviously Seen Component slice."
     """
   * component[notPreviouslySeen] ^definition = """
     This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
-The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
+    The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
     """
   * component[notPreviouslySeen].code 1..1
   * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."

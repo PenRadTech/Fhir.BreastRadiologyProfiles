@@ -7,6 +7,12 @@ Description: """
   """
 
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -14,7 +20,7 @@ Description: """
     """
   * component[correspondsWith] ^definition = """
     This slice contains the optional components that define what this observation corresponds with.
-The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
+    The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
     """
   * component[correspondsWith].code 1..1
   * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
