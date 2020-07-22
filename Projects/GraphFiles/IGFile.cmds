@@ -260,9 +260,10 @@
   {
     "group" : {
       "id" : "Fragments",
-      "name" : "Mammography Resources",
-      "description" : "This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
-      They are included here to better convey the structure and composition of the components that are used to create the
+      "name" : "Resource Fragments",
+      "description" : " This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
+      
+      They are included here only to better convey the structure and composition of the components that are used to create the
       Breast Radiology Resources."
     }
   },

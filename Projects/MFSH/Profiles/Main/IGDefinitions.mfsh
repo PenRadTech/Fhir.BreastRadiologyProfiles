@@ -56,9 +56,10 @@
 # """)
 
 #apply IGGroup("Fragments", 
-# "Mammography Resources", 
+# "Resource Fragments", 
 # """
 # This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
-# They are included here to better convey the structure and composition of the components that are used to create the
+#
+# They are included here only to better convey the structure and composition of the components that are used to create the
 # Breast Radiology Resources.
 # """)
