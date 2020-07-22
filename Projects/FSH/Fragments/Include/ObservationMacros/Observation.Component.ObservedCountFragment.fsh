@@ -1,6 +1,6 @@
 Profile: ObservedCountFragment
 Parent: Observation
-Title: "ObservedCount Fragment"
+Title: "Observed Count Fragment"
 Description: """
   Fragment that adds 'Observed Count' element to profile.
   """

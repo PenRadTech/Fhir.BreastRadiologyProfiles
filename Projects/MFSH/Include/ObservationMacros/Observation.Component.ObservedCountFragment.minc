@@ -5,11 +5,12 @@
 
 #Fragment: once Observation.Component.ObservedCountFragment
 #Parent: Observation
-#Title: "ObservedCount Fragment"
+#Title: "Observed Count Fragment"
 #Description: """
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
 
+  #apply Graph.NodeFragment("Observed Count Fragment")
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """

@@ -7,11 +7,12 @@
 
 #Fragment: Observation.Component.PreviouslyDemonstratedByFragment
 #Parent: Observation
-#Title: "PreviouslyDemonstratedBy Fragment"
+#Title: "Previously Demonstrated By Fragment"
 #Description: """
-# Observation 'Demonstrated By' Component Fragment
+# 'Demonstrated By' Component Fragment
 # """
 
+  #apply Graph.NodeFragment("Previously Demonstrated By Fragment")
   #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 

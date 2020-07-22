@@ -1,6 +1,6 @@
 Profile: ObservedSizeFragment
 Parent: Observation
-Title: "ObservedSize Fragment"
+Title: "Observed Size Fragment"
 Description: """
   Fragment that adds 'Observed Size' components to Observation.
   """

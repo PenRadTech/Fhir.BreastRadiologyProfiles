@@ -21,9 +21,9 @@
 #macro Graph.NodeFragment(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
   `    "graphNode" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%FId%/",
   `      "anchor" : {
-  `        "url" : "%Url%"
+  `        "url" : "%FUrl%"
   `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "fragment",

@@ -1,6 +1,6 @@
 Profile: ObservedChangesFragment
 Parent: Observation
-Title: "Observed Changes Component Fragment"
+Title: "Observed Changes Fragment"
 Description: """
   Add Observed Changes Component Slice
   """

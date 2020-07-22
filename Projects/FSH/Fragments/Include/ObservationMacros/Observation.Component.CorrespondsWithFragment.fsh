@@ -1,8 +1,8 @@
 Profile: CorrespondsWithFragment
 Parent: Observation
-Title: "'Corresponds With' Component Fragment"
+Title: "Corresponds With Fragment"
 Description: """
-  Observation 'Corresponds With' Component Fragment
+  'Corresponds With' Component Fragment
   Adds CorrespondsWith component
   """
 

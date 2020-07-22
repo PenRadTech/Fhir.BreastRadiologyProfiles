@@ -732,28 +732,28 @@
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "'Corresponds With' Component Fragment",
+      "sort": "Corresponds With Fragment",
       "reference" : "^StructureDefinition/CorrespondsWithFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "NotPreviously Seen Component Fragment",
+      "sort": "NotPreviously Seen Fragment",
       "reference" : "^StructureDefinition/NotPreviouslySeenFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "Observed Changes Component Fragment",
+      "sort": "Observed Changes Fragment",
       "reference" : "^StructureDefinition/ObservedChangesFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "ObservedCount Fragment",
+      "sort": "Observed Count Fragment",
       "reference" : "^StructureDefinition/ObservedCountFragment$"
     }
   },
@@ -767,14 +767,14 @@
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "ObservedSize Fragment",
+      "sort": "Observed Size Fragment",
       "reference" : "^StructureDefinition/ObservedSizeFragment$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "PreviouslyDemonstratedBy Fragment",
+      "sort": "Previously Demonstrated By Fragment",
       "reference" : "^StructureDefinition/PreviouslyDemonstratedByFragment$"
     }
   },
@@ -795,7 +795,7 @@
   {
     "member" : {
       "groupingId" : "Fragments",
-      "sort": "ConsistentWith HasMember Fragment",
+      "sort": "Consistent With Fragment",
       "reference" : "^StructureDefinition/ConsistentWithFragment$"
     }
   },

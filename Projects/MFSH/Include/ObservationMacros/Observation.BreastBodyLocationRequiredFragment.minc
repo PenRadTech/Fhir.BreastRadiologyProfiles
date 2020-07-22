@@ -12,6 +12,7 @@
 #  The references are required, meaning that the breast body location must exist.
 #  """
 
+  #apply Graph.NodeFragment("Breast Body Location Fragment")
   #apply CSBuild.BreastBodyLocationRequiredFragment.Define()
 
   #apply Graph.NodeElement("bodySite", "BodySite")

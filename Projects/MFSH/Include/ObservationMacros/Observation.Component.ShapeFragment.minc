@@ -12,6 +12,7 @@
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
 
+  #apply Graph.NodeFragment("Shape Components Fragment")
   #apply Observation.BreastBodyLocationRequiredFragment()
 
   // Define Orientation Slice

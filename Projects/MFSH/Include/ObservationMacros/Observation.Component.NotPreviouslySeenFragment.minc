@@ -4,11 +4,12 @@
  
 #Fragment: once Observation.Component.NotPreviouslySeenFragment
 #Parent: Observation
-#Title: "NotPreviously Seen Component Fragment"
+#Title: "NotPreviously Seen Fragment"
 #Description: """
 #  Adds NotPreviously Seen Component slice.
 #  """
 
+  #apply Graph.NodeFragment("NotPreviously Seen Fragment")
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
   # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.

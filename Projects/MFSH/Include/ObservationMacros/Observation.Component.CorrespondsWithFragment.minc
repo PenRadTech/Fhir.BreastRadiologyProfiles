@@ -6,12 +6,13 @@
 
 #Fragment: Observation.Component.CorrespondsWithFragment
 #Parent: Observation
-#Title: "'Corresponds With' Component Fragment"
+#Title: "Corresponds With Fragment"
 #Description: """
-# Observation 'Corresponds With' Component Fragment
+# 'Corresponds With' Component Fragment
 # Adds CorrespondsWith component
 # """
 
+  #apply Graph.NodeFragment("Corresponds With Fragment")
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """
   #  This slice contains the optional components that define what this observation corresponds with.

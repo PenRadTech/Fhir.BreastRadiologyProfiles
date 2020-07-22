@@ -1,9 +1,9 @@
-Profile: %Name%
-Parent: %Parent%
-Title: "%Title%"
+Profile: %FId%
+Parent: %FParent%
+Title: "%FTitle%"
 Description: """
-  %Description%
+  %FDescription%
   """
-   #apply IGGroupMemberProfile("Fragments", "%Title%")
+   #apply IGGroupMemberProfile("Fragments", "%FTitle%")
 
    

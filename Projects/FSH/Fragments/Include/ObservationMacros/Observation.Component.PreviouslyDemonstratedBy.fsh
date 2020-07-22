@@ -1,8 +1,8 @@
 Profile: PreviouslyDemonstratedByFragment
 Parent: Observation
-Title: "PreviouslyDemonstratedBy Fragment"
+Title: "Previously Demonstrated By Fragment"
 Description: """
-  Observation 'Demonstrated By' Component Fragment
+  'Demonstrated By' Component Fragment
   """
 
    

@@ -1,6 +1,6 @@
 Profile: NotPreviouslySeenFragment
 Parent: Observation
-Title: "NotPreviously Seen Component Fragment"
+Title: "NotPreviously Seen Fragment"
 Description: """
   Adds NotPreviously Seen Component slice.
   """

@@ -5,11 +5,12 @@
  
 #Fragment: once Observation.HasMember.ConsistentWithFragment
 #Parent: Observation
-#Title: "ConsistentWith HasMember Fragment"
+#Title: "Consistent With Fragment"
 #Description: """
 # This fragment adds the references for the ConsistentWith HasMember.
 # """
 
+  #apply Graph.NodeFragment("ConsistentWith HasMember Fragment")
   #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """
