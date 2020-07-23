@@ -25,7 +25,7 @@ Description: """
   #  """,
   #  "ObservationComponentSliceCodesCS#abnormalityDensityType")
   
-  #apply Observation.Component.SetConcept("densityType", "1..1", "AbnormalityDensityTypeVS")
+  #apply Observation.Component.SetCprofilept("densityType", "1..1", "AbnormalityDensityTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

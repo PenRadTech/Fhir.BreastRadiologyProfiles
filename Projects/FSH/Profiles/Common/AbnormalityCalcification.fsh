@@ -60,12 +60,6 @@ Description: """
   
   
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -88,12 +82,6 @@ Description: """
   * component[obsChanges].value[x] from ObservedChangesVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -116,12 +104,6 @@ Description: """
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -144,12 +126,6 @@ Description: """
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -179,12 +155,6 @@ Description: """
 
   // Define distribution region size.
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
@@ -218,12 +188,6 @@ Description: """
 
   // define calcification distribution slice
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
   * component[obsDistribution] ^comment = """
@@ -285,12 +249,6 @@ Description: """
   * component[obsDistRegionSize].valueRange.high units from UNITSOFLENGTH
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -314,12 +272,6 @@ Description: """
  
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -356,12 +308,6 @@ Description: """
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
 
 
-
-  * hasMember ^slicing.discriminator.type = #value
-  * hasMember ^slicing.discriminator.path = "url"
-  * hasMember ^slicing.rules = #open
-  * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)

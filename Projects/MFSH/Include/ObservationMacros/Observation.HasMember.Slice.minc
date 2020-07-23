@@ -1,7 +1,7 @@
 /*
  Slice Observation.hasMember.
  */
-#macro once Observation.HasMember.Slice()
+#macro profile Observation.HasMember.Slice()
   #apply Graph.NodeElement("hasMember", "HasMember")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/hasMember/$", "0")
 

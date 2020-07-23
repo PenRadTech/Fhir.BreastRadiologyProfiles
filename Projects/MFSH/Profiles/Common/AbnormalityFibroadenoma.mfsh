@@ -30,7 +30,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType")
 
-  #apply Observation.Component.SetConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
+  #apply Observation.Component.SetCprofilept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

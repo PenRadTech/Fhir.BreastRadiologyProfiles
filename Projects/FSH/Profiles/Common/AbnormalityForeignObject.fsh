@@ -59,12 +59,6 @@ Description: """
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -87,12 +81,6 @@ Description: """
   * component[obsChanges].value[x] from ObservedChangesVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -115,12 +103,6 @@ Description: """
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -143,12 +125,6 @@ Description: """
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -172,40 +148,6 @@ Description: """
  
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
-  * component contains biRadsAssessmentCategory 0..1
-  * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
-  * component[biRadsAssessmentCategory] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[biRadsAssessmentCategory] ^definition = """
-    This slice contains the optional component that define the BiRAD risk code.
-    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
-    """
-  * component[biRadsAssessmentCategory].code 1..1
-  * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
-  * component[biRadsAssessmentCategory].code ^definition = """
-    This code identifies the BiRads Assessment Category component. component.
-	"""
-  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
-	
-
-  * component[biRadsAssessmentCategory].value[x] 1..1
-  * component[biRadsAssessmentCategory].value[x] only CodeableConcept
-  * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
-
-
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -242,12 +184,6 @@ Description: """
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
 
 
-
-  * hasMember ^slicing.discriminator.type = #value
-  * hasMember ^slicing.discriminator.path = "url"
-  * hasMember ^slicing.rules = #open
-  * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)

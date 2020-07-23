@@ -3,7 +3,7 @@
  Observations that have no explicit value.
  */
  
-#macro once Observation.Value.Zero()
+#macro profile Observation.Value.Zero()
   #apply Observation.Fragment()
   * dataAbsentReason 0..0
   * value[x] 0..0

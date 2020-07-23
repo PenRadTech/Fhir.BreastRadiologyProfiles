@@ -1,6 +1,6 @@
 // Observation.NoComponent.Fragment
 // Used by all BreastRad observations that do not have components.
-#macro once Observation.Component.Zero()
+#macro profile Observation.Component.Zero()
   #apply Observation.Fragment()
   * component 0..0
 #end

@@ -20,6 +20,6 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#correspondsWith")
  
-  #apply Observation.Component.SetConcept("correspondsWith", "1..1", "CorrespondsWithVS")
+  #apply Observation.Component.SetCprofilept("correspondsWith", "1..1", "CorrespondsWithVS")
  
 #end

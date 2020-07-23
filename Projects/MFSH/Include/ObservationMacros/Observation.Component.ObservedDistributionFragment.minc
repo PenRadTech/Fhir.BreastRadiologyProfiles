@@ -4,7 +4,7 @@
   */
 
 
-#Fragment: once Observation.Component.ObservedDistributionFragment
+#Fragment: profile Observation.Component.ObservedDistributionFragment
 #Parent: Observation
 #Title: "Observed Distribution Fragment"
 #Description: """
@@ -23,7 +23,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsDistribution")
  
-  #apply Observation.Component.SetConcept("obsDistribution", "1..1", "CalcificationDistributionVS")
+  #apply Observation.Component.SetCprofilept("obsDistribution", "1..1", "CalcificationDistributionVS")
  
 
   // Define distribution region size.

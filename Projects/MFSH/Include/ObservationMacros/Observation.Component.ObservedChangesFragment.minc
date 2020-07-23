@@ -3,7 +3,7 @@
  Fragment that adds 'Observed Changes' element to profile.
  */
 
-#Fragment: once Observation.Component.ObservedChangesFragment
+#Fragment: profile Observation.Component.ObservedChangesFragment
 #Parent: Observation
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
@@ -16,5 +16,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsChanges")
 
-  #apply Observation.Component.SetConcept("obsChanges", "1..1", "ObservedChangesVS")
+  #apply Observation.Component.SetCprofilept("obsChanges", "1..1", "ObservedChangesVS")
 #end

@@ -41,7 +41,7 @@ Description: """
   #  """,
   #   "ObservationComponentSliceCodesCS#featureType")
   
-  #apply Observation.Component.SetConcept("featureType", "1..1", "AssociatedFeatureVS")
+  #apply Observation.Component.SetCprofilept("featureType", "1..1", "AssociatedFeatureVS")
 
 
   #apply Observation.LeafFragment()

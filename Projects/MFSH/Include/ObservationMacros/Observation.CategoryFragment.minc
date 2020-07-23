@@ -2,7 +2,7 @@
 // This fragment slices Observation.category and 
 // fixes the observation.code value to 'imaging'.
 
-#Fragment: once Observation.CategoryFragment
+#Fragment: profile Observation.CategoryFragment
 #Parent: Observation
 #Title: "Category Fragment"
 #Description:

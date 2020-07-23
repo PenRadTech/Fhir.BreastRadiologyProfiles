@@ -2,7 +2,7 @@
  Adds NotPreviously Seen Component slice.
  */
  
-#Fragment: once Observation.Component.NotPreviouslySeenFragment
+#Fragment: profile Observation.Component.NotPreviouslySeenFragment
 #Parent: Observation
 #Title: "NotPreviously Seen Fragment"
 #Description: """
@@ -17,5 +17,5 @@
   #	""",
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
 
-  #apply Observation.Component.SetConcept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
+  #apply Observation.Component.SetCprofilept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
 #end

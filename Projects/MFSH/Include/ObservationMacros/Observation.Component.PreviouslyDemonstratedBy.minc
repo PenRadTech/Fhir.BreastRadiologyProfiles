@@ -22,5 +22,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#prevDemBy")
 
-  #apply Observation.Component.SetConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
+  #apply Observation.Component.SetCprofilept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
 #end

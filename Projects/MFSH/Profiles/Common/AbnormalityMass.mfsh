@@ -29,7 +29,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityMassType")
 
-  #apply Observation.Component.SetConcept("massType", "1..1", "AbnormalityMassTypeVS")
+  #apply Observation.Component.SetCprofilept("massType", "1..1", "AbnormalityMassTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

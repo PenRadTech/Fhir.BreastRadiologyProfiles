@@ -26,7 +26,7 @@ Description: """
   #  """,
   #   "ObservationComponentSliceCodesCS#abnormalityAsymmetryType")
   
-  #apply Observation.Component.SetConcept("asymmetryType", "1..1", "AbnormalityAsymmetryTypeVS")
+  #apply Observation.Component.SetCprofilept("asymmetryType", "1..1", "AbnormalityAsymmetryTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

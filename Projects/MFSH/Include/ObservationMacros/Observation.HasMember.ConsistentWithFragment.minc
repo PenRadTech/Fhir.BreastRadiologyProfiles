@@ -3,7 +3,7 @@
  This fragment adds the references for the ConsistentWith HasMember.
  */
  
-#Fragment: once Observation.HasMember.ConsistentWithFragment
+#Fragment: profile Observation.HasMember.ConsistentWithFragment
 #Parent: Observation
 #Title: "Consistent With Fragment"
 #Description: """

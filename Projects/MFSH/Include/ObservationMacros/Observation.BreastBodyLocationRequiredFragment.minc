@@ -4,7 +4,7 @@
 // This fragment adds the references for the breast body location extension.
 // The references are required, meaning that the breast body location must exist.
 
-#Fragment: once Observation.BreastBodyLocationRequiredFragment
+#Fragment: profile Observation.BreastBodyLocationRequiredFragment
 #Parent: Observation
 #Title: "Breast Body Location (Required) Fragment"
 #Description: """
@@ -12,7 +12,6 @@
 #  The references are required, meaning that the breast body location must exist.
 #  """
 
-  #apply Graph.NodeFragment("Breast Body Location Fragment")
   #apply CSBuild.BreastBodyLocationRequiredFragment.Define()
 
   #apply Graph.NodeElement("bodySite", "BodySite")

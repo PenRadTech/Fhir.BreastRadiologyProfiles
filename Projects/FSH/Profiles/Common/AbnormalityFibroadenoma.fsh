@@ -59,12 +59,6 @@ Description: """
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -87,12 +81,6 @@ Description: """
   * component[obsChanges].value[x] from ObservedChangesVS
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -115,21 +103,8 @@ Description: """
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
 
 
-
-
-  * bodySite 1..1
-  * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
-  * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
-  * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-
   // Define Orientation Slice
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
   * component[orientation] ^comment = """
@@ -224,12 +199,6 @@ Description: """
 
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -258,12 +227,6 @@ Description: """
 
   // define calcification distribution slice
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
   * component[obsDistribution] ^comment = """
@@ -327,12 +290,6 @@ Description: """
 
   // Define distribution region size.
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
@@ -365,12 +322,6 @@ Description: """
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
 
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """

@@ -3,6 +3,6 @@
  constrains observations leaf nodes (no hasMembers references).
  */
  
-#macro once Observation.LeafFragment()
+#macro profile Observation.LeafFragment()
   * hasMember 0..0
 #end

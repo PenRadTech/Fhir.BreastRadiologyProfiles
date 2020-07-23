@@ -1,7 +1,7 @@
 /*
  Slice Observation.derivedFrom.
  */
-#macro once Observation.DerivedFrom.Slice()
+#macro profile Observation.DerivedFrom.Slice()
   #apply Graph.NodeElement("derivedFrom", "DerivedFrom")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/derivedFrom/$", "0")
   #apply Graph.LinkByReference("focus", "^%Id%/derivedFrom/$", "%Id%/derivedFrom:", "1")

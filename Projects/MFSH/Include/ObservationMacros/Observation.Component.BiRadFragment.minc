@@ -4,7 +4,7 @@
  */
 
  
-#Fragment: once Observation.Component.BiRadFragment
+#Fragment: profile Observation.Component.BiRadFragment
 #Parent: Observation
 #Title: "BiRad Fragment"
 #Description: """
@@ -19,5 +19,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#targetBiRads")
 	
-  #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
+  #apply Observation.Component.SetCprofilept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 #end

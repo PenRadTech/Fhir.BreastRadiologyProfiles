@@ -43,7 +43,7 @@ Description: """
   #	""",
   #   "ObservationComponentSliceCodesCS#consistentWithValue")
 
-  #apply Observation.Component.SetConcept("consistentWith", "1..1", "ConsistentWithVS")
+  #apply Observation.Component.SetCprofilept("consistentWith", "1..1", "ConsistentWithVS")
 
 
   // Define Consistent With Qualifier Slice
@@ -54,4 +54,4 @@ Description: """
   #	""",
   #   "ObservationComponentSliceCodesCS#consistentWithQualifier")
 
-  #apply Observation.Component.SetConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
+  #apply Observation.Component.SetCprofilept("qualifier", "0..1", "ConsistentWithQualifierVS")
