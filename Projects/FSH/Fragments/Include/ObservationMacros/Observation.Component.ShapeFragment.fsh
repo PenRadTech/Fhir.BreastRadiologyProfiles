@@ -16,12 +16,6 @@ Description: """
 
   // Define Orientation Slice
 
-
-  * component ^slicing.discriminator.type = #pattern
-  * component ^slicing.discriminator.path = "code"
-  * component ^slicing.rules = #open
-  * component ^slicing.ordered = false
-  * component ^slicing.description = "Component slicing"
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
   * component[orientation] ^comment = """

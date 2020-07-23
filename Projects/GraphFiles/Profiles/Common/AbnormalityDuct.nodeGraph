@@ -63,9 +63,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "BreastBodyLocationRequiredFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationRequiredFragment"
       },
       "displayName" : "Breast Body Location Fragment",
       "cssClass" : "fragment",
@@ -127,9 +127,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ObservedChangesFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedChangesFragment"
       },
       "displayName" : "Observed Changes Fragment",
       "cssClass" : "fragment",
@@ -159,9 +159,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "BiRadFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BiRadFragment"
       },
       "displayName" : "BiRad Fragment",
       "cssClass" : "fragment",
@@ -191,9 +191,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ShapeFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ShapeFragment"
       },
       "displayName" : "Shape Components Fragment",
       "cssClass" : "fragment",
@@ -286,9 +286,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ObservedCountFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
       },
       "displayName" : "Observed Count Fragment",
       "cssClass" : "fragment",
@@ -310,9 +310,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ObservedDistributionFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedDistributionFragment"
       },
       "displayName" : "Observed Distribution Fragment",
       "cssClass" : "fragment",
@@ -355,9 +355,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ObservedSizeFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedSizeFragment"
       },
       "displayName" : "Observed Size Fragment",
       "cssClass" : "fragment",
@@ -379,9 +379,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "NotPreviouslySeenFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
       },
       "displayName" : "NotPreviously Seen Fragment",
       "cssClass" : "fragment",
@@ -411,9 +411,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "CorrespondsWithFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/CorrespondsWithFragment"
       },
       "displayName" : "Corresponds With Fragment",
       "cssClass" : "fragment",
@@ -443,9 +443,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "PreviouslyDemonstratedByFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/PreviouslyDemonstratedByFragment"
       },
       "displayName" : "Previously Demonstrated By Fragment",
       "cssClass" : "fragment",
@@ -475,9 +475,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ConsistentWithFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWithFragment"
       },
       "displayName" : "ConsistentWith HasMember Fragment",
       "cssClass" : "fragment",

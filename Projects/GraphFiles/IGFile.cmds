@@ -712,97 +712,97 @@
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Breast Body Location (Required) Fragment",
-      "reference" : "^StructureDefinition/BreastBodyLocationRequiredFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Category Fragment",
-      "reference" : "^StructureDefinition/CategoryFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "BiRad Fragment",
-      "reference" : "^StructureDefinition/BiRadFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Corresponds With Fragment",
-      "reference" : "^StructureDefinition/CorrespondsWithFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "NotPreviously Seen Fragment",
-      "reference" : "^StructureDefinition/NotPreviouslySeenFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Changes Fragment",
-      "reference" : "^StructureDefinition/ObservedChangesFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Count Fragment",
-      "reference" : "^StructureDefinition/ObservedCountFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Distribution Fragment",
-      "reference" : "^StructureDefinition/ObservedDistributionFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Observed Size Fragment",
-      "reference" : "^StructureDefinition/ObservedSizeFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Previously Demonstrated By Fragment",
-      "reference" : "^StructureDefinition/PreviouslyDemonstratedByFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Shape Components Fragment",
-      "reference" : "^StructureDefinition/ShapeFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Associated Feature Fragment",
-      "reference" : "^StructureDefinition/AssociatedFeatureFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Consistent With Fragment",
-      "reference" : "^StructureDefinition/ConsistentWithFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },
   {
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Tumor Satellite Fragment",
-      "reference" : "^StructureDefinition/TumorSatelliteFragment$"
+      "reference" : "^StructureDefinition/%Id%$"
     }
   },

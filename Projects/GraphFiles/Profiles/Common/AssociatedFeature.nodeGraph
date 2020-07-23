@@ -63,9 +63,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "BreastBodyLocationRequiredFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationRequiredFragment"
       },
       "displayName" : "Breast Body Location Fragment",
       "cssClass" : "fragment",
@@ -127,9 +127,9 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "%FId%/",
+      "nodeName" : "ObservedCountFragment/",
       "anchor" : {
-        "url" : "%FUrl%"
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
       },
       "displayName" : "Observed Count Fragment",
       "cssClass" : "fragment",
