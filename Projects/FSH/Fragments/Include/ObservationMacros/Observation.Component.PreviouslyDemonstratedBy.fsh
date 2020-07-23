@@ -7,6 +7,12 @@ Description: """
 
    
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """

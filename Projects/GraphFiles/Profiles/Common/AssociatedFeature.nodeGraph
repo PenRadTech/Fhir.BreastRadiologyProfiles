@@ -149,3 +149,34 @@
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AssociatedFeature.mfsh#52/n"
     }
   },
+  {
+    "graphNode" : {
+      "nodeName" : "AssociatedFeature/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AssociatedFeature.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/$",
+      "target" : "^AssociatedFeature/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AssociatedFeature/component/$",
+      "target" : "^AssociatedFeature/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+    }
+  },

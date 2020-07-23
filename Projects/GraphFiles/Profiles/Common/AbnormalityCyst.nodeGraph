@@ -150,6 +150,37 @@
     }
   },
   {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
+    }
+  },
+  {
     "graphLinkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityCyst/component:obsChanges/$",
@@ -182,6 +213,37 @@
     }
   },
   {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#39/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#39/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#39/n"
+    }
+  },
+  {
     "graphLinkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityCyst/component:biRadsAssessmentCategory/$",
@@ -202,6 +264,70 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "BreastBodyLocationRequiredFragment/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationRequiredFragment"
+      },
+      "displayName" : "Breast Body Location Fragment",
+      "cssClass" : "fragment",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#15/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/bodySite/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "bodySite"
+      },
+      "displayName" : "BodySite",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.bodySite",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/bodySite.extension/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "bodySite.extension"
+      },
+      "displayName" : "extension",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.bodySite.extension",
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/bodySite/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/bodySite/$",
+      "target" : "^AbnormalityCyst/bodySite.extension/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/bodySite.extension/$",
+      "target" : "^BreastBodyLocationExtension/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "AbnormalityCyst/component:orientation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
@@ -211,6 +337,37 @@
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.component:orientation",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
     }
   },
   {
@@ -310,6 +467,37 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#41/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#41/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#41/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "ObservedDistributionFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedDistributionFragment"
@@ -330,6 +518,37 @@
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.component:obsDistribution",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#17/nProfiles/Common/AbnormalityCyst.mfsh#42/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#17/nProfiles/Common/AbnormalityCyst.mfsh#42/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#17/nProfiles/Common/AbnormalityCyst.mfsh#42/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#17/nProfiles/Common/AbnormalityCyst.mfsh#42/n"
     }
   },
   {
@@ -379,6 +598,37 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#43/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#43/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#43/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "NotPreviouslySeenFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
@@ -399,6 +649,37 @@
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.component:notPreviouslySeen",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#44/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#44/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#44/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#44/n"
     }
   },
   {
@@ -434,6 +715,37 @@
     }
   },
   {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#45/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#45/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#45/n"
+    }
+  },
+  {
     "graphLinkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityCyst/component:correspondsWith/$",
@@ -463,6 +775,37 @@
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.component:prevDemBy",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#46/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/component/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "component"
+      },
+      "displayName" : "Components",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.component",
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#46/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/component/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#46/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/component/$",
+      "target" : "^AbnormalityCyst/component:",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#46/n"
     }
   },
   {
@@ -537,6 +880,28 @@
   },
   {
     "graphNode" : {
+      "nodeName" : "AbnormalityCyst/hasMember/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "hasMember"
+      },
+      "displayName" : "HasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.hasMember",
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+    }
+  },
+  {
+    "graphNode" : {
       "nodeName" : "TumorSatelliteFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatelliteFragment"
@@ -553,5 +918,27 @@
       "item" : "AbnormalityCyst.hasMember:tumorSatellite",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#50/n"
+    }
+  },
+  {
+    "graphNode" : {
+      "nodeName" : "AbnormalityCyst/hasMember/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityCyst",
+        "item" : "hasMember"
+      },
+      "displayName" : "HasMember",
+      "cssClass" : "element",
+      "lhsAnnotationText": "^AbnormalityCyst.hasMember",
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "focus",
+      "source" : "^AbnormalityCyst/$",
+      "target" : "^AbnormalityCyst/hasMember/$",
+      "depth": 0,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#50/n"
     }
   },

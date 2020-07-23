@@ -9,6 +9,12 @@ Description: """
 
   // Define distribution region size.
 
+
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
