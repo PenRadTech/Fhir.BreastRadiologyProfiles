@@ -12,8 +12,8 @@
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
 
-  #apply once Graph.NodeFragment("%Title%")
-  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

@@ -8,8 +8,8 @@
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
   
-  #apply once Graph.NodeFragment("%Title%")
-   #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
  #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """

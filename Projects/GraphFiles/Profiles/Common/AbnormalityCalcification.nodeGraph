@@ -247,7 +247,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedSizeFragment"
       },
-      "displayName" : "Mammography Calcification",
+      "displayName" : "Observed Size Fragment",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#17/nProfiles/Common/AbnormalityCalcification.mfsh#38/n"
     }
@@ -286,7 +286,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedDistributionFragment"
       },
-      "displayName" : "Mammography Calcification",
+      "displayName" : "Observed Distribution Fragment",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#15/nProfiles/Common/AbnormalityCalcification.mfsh#39/n"
     }

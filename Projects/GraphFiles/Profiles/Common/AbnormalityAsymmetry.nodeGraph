@@ -318,7 +318,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
       },
-      "displayName" : "Asymmetry",
+      "displayName" : "Observed Count Fragment",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#13/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
     }

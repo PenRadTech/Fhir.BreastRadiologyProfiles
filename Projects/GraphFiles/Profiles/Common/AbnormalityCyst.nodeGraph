@@ -514,7 +514,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatelliteFragment"
       },
-      "displayName" : "Cyst",
+      "displayName" : "Tumor Satellite Fragment",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#51/n"
     }

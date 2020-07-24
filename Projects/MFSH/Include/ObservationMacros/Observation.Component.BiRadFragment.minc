@@ -11,8 +11,8 @@
 # Fragment that adds 'BiRad code' element to profile
 # """
 
-  #apply once Graph.NodeFragment("%Title%")
-  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
   #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
   #	 """

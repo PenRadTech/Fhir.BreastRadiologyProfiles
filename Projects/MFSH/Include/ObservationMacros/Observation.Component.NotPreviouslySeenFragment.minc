@@ -9,8 +9,8 @@
 #  Adds NotPreviously Seen Component slice.
 #  """
 
-  #apply once Graph.NodeFragment("%Title%")
-  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""

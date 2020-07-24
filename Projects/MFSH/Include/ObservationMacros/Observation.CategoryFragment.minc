@@ -11,8 +11,8 @@
 # fixes the observation.code value to 'imaging'.
 # """
 
-  #apply once Graph.NodeFragment("%Title%")
-  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"

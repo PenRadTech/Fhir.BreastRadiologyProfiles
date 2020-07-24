@@ -10,7 +10,7 @@
 # This fragment adds the references for the Associated Feature hasMember slice.
 # """
 
-  #apply once Graph.NodeFragment("%Title%")
+  #apply once Graph.NodeFragment("%FTitle%")
   #apply Observation.HasMember.Add("associatedFeature", "0..*", "Associated Feature", "AssociatedFeature",
   #  "'Associated Feature' reference.",
   #  """
