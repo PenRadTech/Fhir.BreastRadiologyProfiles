@@ -13,6 +13,11 @@
 	],
 	"traversals": [
 		{
+			"name": "frag",
+			"cssFile": "FragGraph.css",
+			"depth": 1
+		},
+		{
 			"name": "single",
 			"cssFile": "FocusGraph.css",
 			"param1": "BreastRadiologyComposition/",

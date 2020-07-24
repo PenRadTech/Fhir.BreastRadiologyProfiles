@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "AbnormalityLymphNode/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:lymphNodeType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -36,7 +42,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^AbnormalityLymphNode/component/$",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component/$",
       "target" : "^AbnormalityLymphNode/component:",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:lymphNodeType/$",
       "item" : ".value[x]",
@@ -62,7 +68,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^BreastBodyLocationRequiredFragment/$",
@@ -71,7 +77,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -84,7 +90,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/bodySite.extension/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -97,7 +103,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^AbnormalityLymphNode/bodySite/$",
@@ -106,7 +112,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/bodySite/$",
       "target" : "^AbnormalityLymphNode/bodySite.extension/$",
@@ -115,7 +121,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
@@ -124,7 +130,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^ObservedChangesFragment/$",
@@ -133,7 +139,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -146,7 +152,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:obsChanges/$",
       "item" : ".value[x]",
@@ -154,7 +160,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^BiRadFragment/$",
@@ -163,7 +169,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -176,7 +182,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
@@ -184,7 +190,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^ShapeFragment/$",
@@ -193,7 +199,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:orientation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -206,7 +212,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:orientation/$",
       "item" : ".value[x]",
@@ -214,7 +220,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:shape/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -227,7 +233,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:shape/$",
       "item" : ".value[x]",
@@ -235,7 +241,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:margin/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -248,7 +254,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:margin/$",
       "item" : ".value[x]",
@@ -256,7 +262,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:mgBreastDensity/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -269,7 +275,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:mgBreastDensity/$",
       "item" : ".value[x]",
@@ -277,7 +283,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^ObservedCountFragment/$",
@@ -286,7 +292,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -299,7 +305,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^ObservedDistributionFragment/$",
@@ -308,7 +314,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:obsDistribution/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -321,7 +327,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:obsDistribution/$",
       "item" : ".value[x]",
@@ -329,7 +335,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:obsDistRegionSize/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -342,7 +348,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^ObservedSizeFragment/$",
@@ -351,7 +357,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:obsSize/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -364,7 +370,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^NotPreviouslySeenFragment/$",
@@ -373,7 +379,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -386,7 +392,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:notPreviouslySeen/$",
       "item" : ".value[x]",
@@ -394,7 +400,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^CorrespondsWithFragment/$",
@@ -403,7 +409,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -416,7 +422,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:correspondsWith/$",
       "item" : ".value[x]",
@@ -424,7 +430,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^PreviouslyDemonstratedByFragment/$",
@@ -433,7 +439,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -446,7 +452,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/component:prevDemBy/$",
       "item" : ".value[x]",
@@ -454,7 +460,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/hasMember/$",
       "item" : "AbnormalityLymphNode.hasMember:associatedFeature",
@@ -463,7 +469,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityLymphNode/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityLymphNode",
@@ -476,7 +482,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^AbnormalityLymphNode/hasMember/$",
@@ -485,7 +491,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityLymphNode/$",
       "target" : "^TumorSatelliteFragment/$",
@@ -494,7 +500,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityLymphNode/hasMember/$",
       "item" : "AbnormalityLymphNode.hasMember:tumorSatellite",

@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "TumorSatellite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "TumorSatellite/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "TumorSatellite/value[x]/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^TumorSatellite/$",
       "target" : "^TumorSatellite/value\\[x\\]/$",
@@ -32,7 +38,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "TumorSatellite/derivedFrom:indexTumor/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^TumorSatellite/derivedFrom/$",
       "item" : "TumorSatellite.derivedFrom:indexTumor",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "TumorSatellite/derivedFrom/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatellite",
@@ -67,7 +73,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^TumorSatellite/$",
       "target" : "^TumorSatellite/derivedFrom/$",
@@ -76,7 +82,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^TumorSatellite/derivedFrom/$",
       "item" : "TumorSatellite/derivedFrom:",

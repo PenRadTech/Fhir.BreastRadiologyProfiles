@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ServiceRecommendation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ServiceRecommendation"
@@ -7,5 +7,11 @@
       "displayName" : "Service Recommendation",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#10/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "ServiceRecommendation/",
+      "traversalName" : "focus",
     }
   },

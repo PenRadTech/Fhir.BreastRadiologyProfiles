@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "AbnormalityMass/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:massType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -36,7 +42,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/$",
       "target" : "^AbnormalityMass/component/$",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component/$",
       "target" : "^AbnormalityMass/component:",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:massType/$",
       "item" : ".value[x]",
@@ -62,7 +68,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^BreastBodyLocationRequiredFragment/$",
@@ -71,7 +77,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -84,7 +90,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/bodySite.extension/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -97,7 +103,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/$",
       "target" : "^AbnormalityMass/bodySite/$",
@@ -106,7 +112,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/bodySite/$",
       "target" : "^AbnormalityMass/bodySite.extension/$",
@@ -115,7 +121,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
@@ -124,7 +130,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ObservedChangesFragment/$",
@@ -133,7 +139,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -146,7 +152,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:obsChanges/$",
       "item" : ".value[x]",
@@ -154,7 +160,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^BiRadFragment/$",
@@ -163,7 +169,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -176,7 +182,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
@@ -184,7 +190,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ShapeFragment/$",
@@ -193,7 +199,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:orientation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -206,7 +212,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:orientation/$",
       "item" : ".value[x]",
@@ -214,7 +220,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:shape/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -227,7 +233,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:shape/$",
       "item" : ".value[x]",
@@ -235,7 +241,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:margin/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -248,7 +254,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:margin/$",
       "item" : ".value[x]",
@@ -256,7 +262,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:mgBreastDensity/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -269,7 +275,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:mgBreastDensity/$",
       "item" : ".value[x]",
@@ -277,7 +283,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ObservedCountFragment/$",
@@ -286,7 +292,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -299,7 +305,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ObservedSizeFragment/$",
@@ -308,7 +314,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:obsSize/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -321,7 +327,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ObservedDistributionFragment/$",
@@ -330,7 +336,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:obsDistribution/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -343,7 +349,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:obsDistribution/$",
       "item" : ".value[x]",
@@ -351,7 +357,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:obsDistRegionSize/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -364,7 +370,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^NotPreviouslySeenFragment/$",
@@ -373,7 +379,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -386,7 +392,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:notPreviouslySeen/$",
       "item" : ".value[x]",
@@ -394,7 +400,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^CorrespondsWithFragment/$",
@@ -403,7 +409,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -416,7 +422,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:correspondsWith/$",
       "item" : ".value[x]",
@@ -424,7 +430,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^PreviouslyDemonstratedByFragment/$",
@@ -433,7 +439,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -446,7 +452,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:prevDemBy/$",
       "item" : ".value[x]",
@@ -454,7 +460,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:associatedFeature",
@@ -463,7 +469,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityMass/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityMass",
@@ -476,7 +482,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/$",
       "target" : "^AbnormalityMass/hasMember/$",
@@ -485,7 +491,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^ConsistentWithFragment/$",
@@ -494,7 +500,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:consistentWith",
@@ -503,7 +509,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityMass/$",
       "target" : "^TumorSatelliteFragment/$",
@@ -512,7 +518,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/hasMember/$",
       "item" : "AbnormalityMass.hasMember:tumorSatellite",

@@ -3,7 +3,7 @@
 //
 #macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphNode" : {
+  `    "node" : {
   `      "nodeName" : "%Id%/",
   `      "anchor" : {
   `        "url" : "%Url%"
@@ -13,6 +13,12 @@
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
+  `  {
+  `    "graph" : {
+  `      "nodeName" : "%Id%/",
+  `      "traversalName" : "focus",
+  `    }
+  `  },
 #end
 
 //
@@ -20,7 +26,7 @@
 //
 #macro Graph.NodeFragment(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphNode" : {
+  `    "node" : {
   `      "nodeName" : "%FId%/",
   `      "anchor" : {
   `        "url" : "%FUrl%"
@@ -30,6 +36,12 @@
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
+  `  {
+  `    "graph" : {
+  `      "nodeName" : "%Id%/",
+  `      "traversalName" : "frag",
+  `    }
+  `  },
 #end
 
 //
@@ -37,7 +49,7 @@
 //
 #macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphNode" : {
+  `    "node" : {
   `      "nodeName" : "%Id%/",
   `      "anchor" : {
   `        "url" : "%Url%"
@@ -47,6 +59,12 @@
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
+  `  {
+  `    "graph" : {
+  `      "nodeName" : "%Id%/",
+  `      "traversalName" : "focus",
+  `    }
+  `  },
 #end
 
 //
@@ -54,7 +72,7 @@
 //
 #macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphNode" : {
+  `    "node" : {
   `      "nodeName" : "%Id%/%Path%/",
   `      "anchor" : {
   `        "url" : "%Url%",
@@ -70,7 +88,7 @@
 
 #macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphLinkByName" : {
+  `    "linkByName" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "target" : "TargetName",
@@ -82,7 +100,7 @@
 
 #macro Graph.LinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphLinkByBinding" : {
+  `    "linkByBinding" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
@@ -93,7 +111,7 @@
 
 #macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
-  `    "graphLinkByReference" : {
+  `    "linkByReference" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",

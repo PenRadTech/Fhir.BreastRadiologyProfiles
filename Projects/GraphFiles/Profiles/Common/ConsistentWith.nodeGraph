@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ConsistentWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "ConsistentWith/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "ConsistentWith/component:consistentWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ConsistentWith/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
@@ -36,7 +42,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^ConsistentWith/$",
       "target" : "^ConsistentWith/component/$",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component/$",
       "target" : "^ConsistentWith/component:",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:consistentWith/$",
       "item" : ".value[x]",
@@ -62,7 +68,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ConsistentWith/component:qualifier/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
@@ -75,7 +81,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:qualifier/$",
       "item" : ".value[x]",

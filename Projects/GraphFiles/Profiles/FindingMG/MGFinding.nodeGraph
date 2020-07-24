@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "MGFinding/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGFinding"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "graph" : {
+      "nodeName" : "MGFinding/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityCyst",
@@ -19,7 +25,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "MGFinding/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGFinding",
@@ -32,7 +38,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/$",
       "target" : "^MGFinding/hasMember/$",
@@ -41,7 +47,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityDuct",
@@ -50,7 +56,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityForeignObject",
@@ -59,7 +65,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityLymphNode",
@@ -68,7 +74,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityMass",
@@ -77,7 +83,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:associatedFeature",
@@ -86,7 +92,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityFibroadenoma",
@@ -95,7 +101,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityArchDist",
@@ -104,7 +110,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityAsymmetry",
@@ -113,7 +119,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityCalcification",
@@ -122,7 +128,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityDensity",
@@ -131,7 +137,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityFatNecrosis",
@@ -140,7 +146,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:mgBreastDensity",

@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "USFinding/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/USFinding"
@@ -7,5 +7,11 @@
       "displayName" : "Ultra-Sound Findings",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/FindingUS/USFinding.mfsh#10/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "USFinding/",
+      "traversalName" : "focus",
     }
   },

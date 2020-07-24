@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "AbnormalityForeignObject/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:abnormalityForeignObjectType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -36,7 +42,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^AbnormalityForeignObject/component/$",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component/$",
       "target" : "^AbnormalityForeignObject/component:",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:abnormalityForeignObjectType/$",
       "item" : ".value[x]",
@@ -62,7 +68,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^BreastBodyLocationRequiredFragment/$",
@@ -71,7 +77,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -84,7 +90,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/bodySite.extension/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -97,7 +103,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^AbnormalityForeignObject/bodySite/$",
@@ -106,7 +112,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/bodySite/$",
       "target" : "^AbnormalityForeignObject/bodySite.extension/$",
@@ -115,7 +121,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
@@ -124,7 +130,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^ObservedChangesFragment/$",
@@ -133,7 +139,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -146,7 +152,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:obsChanges/$",
       "item" : ".value[x]",
@@ -154,7 +160,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^BiRadFragment/$",
@@ -163,7 +169,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -176,7 +182,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
@@ -184,7 +190,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^NotPreviouslySeenFragment/$",
@@ -193,7 +199,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -206,7 +212,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:notPreviouslySeen/$",
       "item" : ".value[x]",
@@ -214,7 +220,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^CorrespondsWithFragment/$",
@@ -223,7 +229,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -236,7 +242,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:correspondsWith/$",
       "item" : ".value[x]",
@@ -244,7 +250,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^PreviouslyDemonstratedByFragment/$",
@@ -253,7 +259,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -266,7 +272,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:prevDemBy/$",
       "item" : ".value[x]",
@@ -274,7 +280,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/hasMember/$",
       "item" : "AbnormalityForeignObject.hasMember:associatedFeature",
@@ -283,7 +289,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityForeignObject/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityForeignObject",
@@ -296,7 +302,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^AbnormalityForeignObject/hasMember/$",
@@ -305,7 +311,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^ConsistentWithFragment/$",
@@ -314,7 +320,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/hasMember/$",
       "item" : "AbnormalityForeignObject.hasMember:consistentWith",

@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "AbnormalityAsymmetry/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:asymmetryType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -36,7 +42,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/component/$",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component/$",
       "target" : "^AbnormalityAsymmetry/component:",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:asymmetryType/$",
       "item" : ".value[x]",
@@ -62,7 +68,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^BreastBodyLocationRequiredFragment/$",
@@ -71,7 +77,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -84,7 +90,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/bodySite.extension/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -97,7 +103,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/bodySite/$",
@@ -106,7 +112,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/bodySite/$",
       "target" : "^AbnormalityAsymmetry/bodySite.extension/$",
@@ -115,7 +121,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
@@ -124,7 +130,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^ObservedChangesFragment/$",
@@ -133,7 +139,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -146,7 +152,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:obsChanges/$",
       "item" : ".value[x]",
@@ -154,7 +160,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^BiRadFragment/$",
@@ -163,7 +169,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -176,7 +182,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
@@ -184,7 +190,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^ShapeFragment/$",
@@ -193,7 +199,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:orientation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -206,7 +212,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:orientation/$",
       "item" : ".value[x]",
@@ -214,7 +220,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:shape/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -227,7 +233,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:shape/$",
       "item" : ".value[x]",
@@ -235,7 +241,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:margin/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -248,7 +254,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:margin/$",
       "item" : ".value[x]",
@@ -256,7 +262,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:mgBreastDensity/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -269,7 +275,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:mgBreastDensity/$",
       "item" : ".value[x]",
@@ -277,7 +283,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^NotPreviouslySeenFragment/$",
@@ -286,7 +292,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -299,7 +305,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:notPreviouslySeen/$",
       "item" : ".value[x]",
@@ -307,7 +313,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ObservedCountFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
@@ -318,7 +324,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityAsymmetry/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^ObservedCountFragment/$",
@@ -327,7 +339,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -340,7 +352,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^CorrespondsWithFragment/$",
@@ -349,7 +361,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -362,7 +374,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:correspondsWith/$",
       "item" : ".value[x]",
@@ -370,7 +382,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^PreviouslyDemonstratedByFragment/$",
@@ -379,7 +391,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -392,7 +404,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:prevDemBy/$",
       "item" : ".value[x]",
@@ -400,7 +412,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/hasMember/$",
       "item" : "AbnormalityAsymmetry.hasMember:associatedFeature",
@@ -409,7 +421,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityAsymmetry/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -422,7 +434,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/hasMember/$",
@@ -431,7 +443,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^ConsistentWithFragment/$",
@@ -440,7 +452,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/hasMember/$",
       "item" : "AbnormalityAsymmetry.hasMember:consistentWith",

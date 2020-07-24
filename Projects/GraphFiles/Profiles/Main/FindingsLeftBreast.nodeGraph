@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "FindingsLeftBreast/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "FindingsLeftBreast/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "FindingsLeftBreast/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
@@ -23,7 +29,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/hasMember/$",
       "item" : "FindingsLeftBreast.hasMember:mgFinding",
@@ -32,7 +38,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "FindingsLeftBreast/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/FindingsLeftBreast",
@@ -45,7 +51,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/$",
       "target" : "^FindingsLeftBreast/hasMember/$",
@@ -54,7 +60,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/hasMember/$",
       "item" : "FindingsLeftBreast.hasMember:mriFinding",
@@ -63,7 +69,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/hasMember/$",
       "item" : "FindingsLeftBreast.hasMember:nmFinding",
@@ -72,7 +78,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^FindingsLeftBreast/hasMember/$",
       "item" : "FindingsLeftBreast.hasMember:usFinding",

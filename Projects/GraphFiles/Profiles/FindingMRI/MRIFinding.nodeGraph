@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "MRIFinding/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MRIFinding"
@@ -7,5 +7,11 @@
       "displayName" : "MRI Findings",
       "cssClass" : "profile",
       "traceMsg" : "Profiles/FindingMRI/MRIFinding.mfsh#10/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "MRIFinding/",
+      "traversalName" : "focus",
     }
   },

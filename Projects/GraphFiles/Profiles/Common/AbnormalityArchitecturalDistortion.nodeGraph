@@ -1,5 +1,5 @@
 {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion"
@@ -10,7 +10,13 @@
     }
   },
   {
-    "graphNode" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "focus",
+    }
+  },
+  {
+    "node" : {
       "nodeName" : "BreastBodyLocationRequiredFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationRequiredFragment"
@@ -21,7 +27,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^BreastBodyLocationRequiredFragment/$",
@@ -30,7 +42,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/bodySite/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -43,7 +55,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/bodySite.extension/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -56,7 +68,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite/$",
@@ -65,7 +77,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
@@ -74,7 +86,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
@@ -83,7 +95,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ObservedChangesFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedChangesFragment"
@@ -94,7 +106,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^ObservedChangesFragment/$",
@@ -103,7 +121,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -116,7 +134,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -129,7 +147,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/component/$",
@@ -138,7 +156,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component/$",
       "target" : "^AbnormalityArchitecturalDistortion/component:",
@@ -147,7 +165,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:obsChanges/$",
       "item" : ".value[x]",
@@ -155,7 +173,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "BiRadFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BiRadFragment"
@@ -166,7 +184,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^BiRadFragment/$",
@@ -175,7 +199,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -188,7 +212,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
@@ -196,7 +220,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ShapeFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ShapeFragment"
@@ -207,7 +231,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^ShapeFragment/$",
@@ -216,7 +246,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:orientation/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -229,7 +259,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:orientation/$",
       "item" : ".value[x]",
@@ -237,7 +267,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:shape/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -250,7 +280,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:shape/$",
       "item" : ".value[x]",
@@ -258,7 +288,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:margin/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -271,7 +301,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:margin/$",
       "item" : ".value[x]",
@@ -279,7 +309,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:mgBreastDensity/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -292,7 +322,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:mgBreastDensity/$",
       "item" : ".value[x]",
@@ -300,7 +330,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "NotPreviouslySeenFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
@@ -311,7 +341,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^NotPreviouslySeenFragment/$",
@@ -320,7 +356,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -333,7 +369,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:notPreviouslySeen/$",
       "item" : ".value[x]",
@@ -341,7 +377,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "CorrespondsWithFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/CorrespondsWithFragment"
@@ -352,7 +388,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^CorrespondsWithFragment/$",
@@ -361,7 +403,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -374,7 +416,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:correspondsWith/$",
       "item" : ".value[x]",
@@ -382,7 +424,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "PreviouslyDemonstratedByFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/PreviouslyDemonstratedByFragment"
@@ -393,7 +435,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^PreviouslyDemonstratedByFragment/$",
@@ -402,7 +450,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -415,7 +463,7 @@
     }
   },
   {
-    "graphLinkByBinding" : {
+    "linkByBinding" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/component:prevDemBy/$",
       "item" : ".value[x]",
@@ -423,7 +471,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AssociatedFeatureFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeatureFragment"
@@ -434,7 +482,13 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/hasMember/$",
       "item" : "AbnormalityArchitecturalDistortion.hasMember:associatedFeature",
@@ -443,7 +497,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "AbnormalityArchitecturalDistortion/hasMember/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityArchitecturalDistortion",
@@ -456,7 +510,7 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "linkByName" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/hasMember/$",
@@ -465,7 +519,7 @@
     }
   },
   {
-    "graphNode" : {
+    "node" : {
       "nodeName" : "ConsistentWithFragment/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWithFragment"
@@ -476,7 +530,13 @@
     }
   },
   {
-    "graphLinkByName" : {
+    "graph" : {
+      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
       "traversalName" : "frag",
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^ConsistentWithFragment/$",
@@ -485,7 +545,7 @@
     }
   },
   {
-    "graphLinkByReference" : {
+    "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityArchitecturalDistortion/hasMember/$",
       "item" : "AbnormalityArchitecturalDistortion.hasMember:consistentWith",
