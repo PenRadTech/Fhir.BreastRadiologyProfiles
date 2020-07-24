@@ -2,7 +2,7 @@
  Adds NotPreviously Seen Component slice.
  */
  
-#Fragment: profile Observation.Component.NotPreviouslySeenFragment
+#Fragment: Observation.Component.NotPreviouslySeenFragment
 #Parent: Observation
 #Title: "NotPreviously Seen Fragment"
 #Description: """

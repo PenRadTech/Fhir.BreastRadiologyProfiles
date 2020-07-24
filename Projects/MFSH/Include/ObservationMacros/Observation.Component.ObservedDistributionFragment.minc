@@ -4,7 +4,7 @@
   */
 
 
-#Fragment: profile Observation.Component.ObservedDistributionFragment
+#Fragment: Observation.Component.ObservedDistributionFragment
 #Parent: Observation
 #Title: "Observed Distribution Fragment"
 #Description: """

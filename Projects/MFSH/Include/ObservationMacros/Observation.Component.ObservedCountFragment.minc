@@ -3,7 +3,7 @@
  Fragment that adds 'Observed Count' element to profile.
  */
 
-#Fragment: profile Observation.Component.ObservedCountFragment
+#Fragment: Observation.Component.ObservedCountFragment
 #Parent: Observation
 #Title: "Observed Count Fragment"
 #Description: """

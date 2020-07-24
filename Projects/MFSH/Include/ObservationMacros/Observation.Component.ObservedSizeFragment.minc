@@ -5,7 +5,7 @@
  
 #use Observation
 
-#Fragment: profile Observation.Component.ObservedSizeFragment
+#Fragment: Observation.Component.ObservedSizeFragment
 #Parent: Observation
 #Title: "Observed Size Fragment"
 #Description: """
