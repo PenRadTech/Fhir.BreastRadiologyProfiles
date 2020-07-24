@@ -4,7 +4,7 @@
  */
 
  
-#Fragment: profile Observation.Component.BiRadFragment
+#Fragment: Observation.Component.BiRadFragment
 #Parent: Observation
 #Title: "BiRad Fragment"
 #Description: """
