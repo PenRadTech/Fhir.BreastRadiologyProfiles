@@ -9,7 +9,7 @@
 #  Adds NotPreviously Seen Component slice.
 #  """
 
-  #apply once Graph.NodeFragment("NotPreviously Seen Fragment")
+  #apply once Graph.NodeFragment("%Title%")
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
   # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.

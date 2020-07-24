@@ -10,7 +10,7 @@
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
 
-  #apply once Graph.NodeFragment("Observed Count Fragment")
+  #apply once Graph.NodeFragment("%Title%")
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """

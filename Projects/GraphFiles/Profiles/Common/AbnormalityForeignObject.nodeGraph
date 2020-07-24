@@ -71,7 +71,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -84,7 +84,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -93,7 +93,7 @@
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^AbnormalityForeignObject/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -102,7 +102,7 @@
       "source" : "^AbnormalityForeignObject/bodySite/$",
       "target" : "^AbnormalityForeignObject/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -111,7 +111,7 @@
       "source" : "^AbnormalityForeignObject/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {

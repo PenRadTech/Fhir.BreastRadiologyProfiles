@@ -15,9 +15,9 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BreastBodyLocationRequiredFragment"
       },
-      "displayName" : "Breast Body Location Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/CSBuild.BreastBodyLocationRequiredFragment.minc#5/nInclude/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -30,7 +30,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -43,7 +43,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -52,7 +52,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -61,7 +61,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -70,7 +70,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
   },
   {
@@ -79,7 +79,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedChangesFragment"
       },
-      "displayName" : "Observed Changes Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#25/n"
     }
@@ -142,7 +142,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BiRadFragment"
       },
-      "displayName" : "BiRad Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
     }
@@ -174,7 +174,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ShapeFragment"
       },
-      "displayName" : "Shape Components Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
     }
@@ -269,7 +269,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
       },
-      "displayName" : "NotPreviously Seen Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#12/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#28/n"
     }
@@ -301,7 +301,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/CorrespondsWithFragment"
       },
-      "displayName" : "Corresponds With Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#29/n"
     }
@@ -333,7 +333,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/PreviouslyDemonstratedByFragment"
       },
-      "displayName" : "Previously Demonstrated By Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#30/n"
     }
@@ -365,7 +365,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeatureFragment"
       },
-      "displayName" : "Associated Feature Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#13/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
     }
@@ -407,7 +407,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWithFragment"
       },
-      "displayName" : "ConsistentWith HasMember Fragment",
+      "displayName" : "Mammography Architectural Distortion",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#13/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#33/n"
     }

@@ -71,7 +71,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -84,7 +84,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -93,7 +93,7 @@
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -102,7 +102,7 @@
       "source" : "^AbnormalityAsymmetry/bodySite/$",
       "target" : "^AbnormalityAsymmetry/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -111,7 +111,7 @@
       "source" : "^AbnormalityAsymmetry/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -267,7 +267,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
       },
-      "displayName" : "Observed Count Fragment",
+      "displayName" : "Asymmetry",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#13/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
     }

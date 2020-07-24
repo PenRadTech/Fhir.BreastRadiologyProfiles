@@ -12,7 +12,7 @@
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
 
-  #apply once Graph.NodeFragment("Shape Components Fragment")
+  #apply once Graph.NodeFragment("%Title%")
 
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

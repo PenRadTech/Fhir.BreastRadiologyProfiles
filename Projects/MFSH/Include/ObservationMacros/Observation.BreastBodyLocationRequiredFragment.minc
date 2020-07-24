@@ -14,6 +14,7 @@
 
   #apply once CSBuild.BreastBodyLocationRequiredFragment.Define()
 
+  #apply once Graph.NodeFragment("%Title%")
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/bodySite/$", "0")

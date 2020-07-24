@@ -8,7 +8,7 @@
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
   
-  #apply once Graph.NodeFragment("Observed Changes Fragment")
+  #apply once Graph.NodeFragment("%Title%")
   #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.

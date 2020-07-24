@@ -71,7 +71,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#17/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
   },
   {
@@ -84,7 +84,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
   },
   {
@@ -93,7 +93,7 @@
       "source" : "^AbnormalityCyst/$",
       "target" : "^AbnormalityCyst/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
   },
   {
@@ -102,7 +102,7 @@
       "source" : "^AbnormalityCyst/bodySite/$",
       "target" : "^AbnormalityCyst/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
   },
   {
@@ -111,7 +111,7 @@
       "source" : "^AbnormalityCyst/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
   },
   {
@@ -409,7 +409,7 @@
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/TumorSatelliteFragment"
       },
-      "displayName" : "Tumor Satellite Fragment",
+      "displayName" : "Cyst",
       "cssClass" : "fragment",
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#51/n"
     }
