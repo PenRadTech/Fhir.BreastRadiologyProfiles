@@ -11,6 +11,8 @@
 # """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """

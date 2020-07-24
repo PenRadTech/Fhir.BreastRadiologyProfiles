@@ -13,7 +13,9 @@
 # """
 
   #incompatible Observation.Component.Zero
+
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
 
   // Define distribution region size.
   #apply Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",

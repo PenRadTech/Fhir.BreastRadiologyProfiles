@@ -13,6 +13,7 @@
 # """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
 
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

@@ -11,6 +11,8 @@
 #  """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """

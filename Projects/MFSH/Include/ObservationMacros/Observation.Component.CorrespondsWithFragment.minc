@@ -13,6 +13,8 @@
 # """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """
   #  This slice contains the optional components that define what this observation corresponds with.

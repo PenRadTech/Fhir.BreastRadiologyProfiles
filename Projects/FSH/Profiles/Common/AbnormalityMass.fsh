@@ -53,12 +53,15 @@ Description: """
 
 
 
+
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
   
+
 
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
@@ -80,6 +83,7 @@ Description: """
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
 
 
   * component contains biRadsAssessmentCategory 0..1
@@ -200,6 +204,7 @@ Description: """
 
 
 
+
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -224,6 +229,7 @@ Description: """
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
 
 
 
@@ -259,6 +265,7 @@ Description: """
   * component[obsSize].valueQuantity units from UNITSOFLENGTH
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
+
 
   // define calcification distribution slice
 
@@ -323,6 +330,7 @@ Description: """
   * component[obsDistRegionSize].valueRange.high units from UNITSOFLENGTH
 
 
+
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -343,6 +351,7 @@ Description: """
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
 
 
   * component contains correspondsWith 0..*
@@ -366,6 +375,7 @@ Description: """
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
  
+
 
 
   * component contains prevDemBy 0..*
@@ -404,9 +414,11 @@ Description: """
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
 
 
+
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)
+
 
 
   * hasMember contains tumorSatellite 0..*

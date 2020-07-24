@@ -62,6 +62,15 @@
     }
   },
   {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeature/$",
+      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
     "graphNode" : {
       "nodeName" : "AssociatedFeature/bodySite/",
       "anchor" : {
@@ -71,7 +80,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AssociatedFeature.mfsh#50/n"
     }
   },
   {
@@ -84,7 +93,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AssociatedFeature.mfsh#50/n"
     }
   },
   {
@@ -93,7 +102,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AssociatedFeature.mfsh#50/n"
     }
   },
   {
@@ -102,7 +111,7 @@
       "source" : "^AssociatedFeature/bodySite/$",
       "target" : "^AssociatedFeature/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#24/nProfiles/Common/AssociatedFeature.mfsh#50/n"
     }
   },
   {
@@ -111,7 +120,16 @@
       "source" : "^AssociatedFeature/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#25/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeature/$",
+      "target" : "^ObservedCountFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AssociatedFeature.mfsh#52/n"
     }
   },
   {
@@ -124,6 +142,6 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#15/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#17/nProfiles/Common/AssociatedFeature.mfsh#52/n"
     }
   },

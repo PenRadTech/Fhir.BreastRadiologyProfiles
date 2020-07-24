@@ -10,6 +10,8 @@
 #  """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
   # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.

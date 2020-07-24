@@ -11,6 +11,8 @@
 # """
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   #apply Observation.HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """

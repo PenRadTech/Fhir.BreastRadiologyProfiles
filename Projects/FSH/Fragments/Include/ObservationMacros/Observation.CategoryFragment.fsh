@@ -7,6 +7,7 @@ Description: """
   """
 
    
+
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

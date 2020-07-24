@@ -62,6 +62,15 @@
     }
   },
   {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+    }
+  },
+  {
     "graphNode" : {
       "nodeName" : "AbnormalityForeignObject/bodySite/",
       "anchor" : {
@@ -71,7 +80,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -84,7 +93,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#19/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -93,7 +102,7 @@
       "source" : "^AbnormalityForeignObject/$",
       "target" : "^AbnormalityForeignObject/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#20/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -102,7 +111,7 @@
       "source" : "^AbnormalityForeignObject/bodySite/$",
       "target" : "^AbnormalityForeignObject/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#24/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
     }
   },
   {
@@ -111,7 +120,16 @@
       "source" : "^AbnormalityForeignObject/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#25/nProfiles/Common/AbnormalityForeignObject.mfsh#42/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^ObservedChangesFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityForeignObject.mfsh#43/n"
     }
   },
   {
@@ -124,7 +142,7 @@
       "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityForeignObject.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#14/nProfiles/Common/AbnormalityForeignObject.mfsh#43/n"
     }
   },
   {
@@ -132,7 +150,16 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#19/nProfiles/Common/AbnormalityForeignObject.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#21/nProfiles/Common/AbnormalityForeignObject.mfsh#43/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^BiRadFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
     }
   },
   {
@@ -145,7 +172,7 @@
       "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#17/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
     }
   },
   {
@@ -153,7 +180,16 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#24/nProfiles/Common/AbnormalityForeignObject.mfsh#44/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^NotPreviouslySeenFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityForeignObject.mfsh#45/n"
     }
   },
   {
@@ -166,7 +202,7 @@
       "displayName" : "Not Previously Seen",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityForeignObject.mfsh#45/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#15/nProfiles/Common/AbnormalityForeignObject.mfsh#45/n"
     }
   },
   {
@@ -174,7 +210,16 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#20/nProfiles/Common/AbnormalityForeignObject.mfsh#45/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#22/nProfiles/Common/AbnormalityForeignObject.mfsh#45/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^CorrespondsWithFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#46/n"
     }
   },
   {
@@ -187,7 +232,7 @@
       "displayName" : "Corresponds With",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#46/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#46/n"
     }
   },
   {
@@ -195,7 +240,16 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#23/nProfiles/Common/AbnormalityForeignObject.mfsh#46/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#25/nProfiles/Common/AbnormalityForeignObject.mfsh#46/n"
+    }
+  },
+  {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#47/n"
     }
   },
   {
@@ -208,7 +262,7 @@
       "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityForeignObject.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#47/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#18/nProfiles/Common/AbnormalityForeignObject.mfsh#47/n"
     }
   },
   {
@@ -216,7 +270,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#25/nProfiles/Common/AbnormalityForeignObject.mfsh#47/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#27/nProfiles/Common/AbnormalityForeignObject.mfsh#47/n"
     }
   },
   {
@@ -251,11 +305,20 @@
     }
   },
   {
+    "graphLinkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AbnormalityForeignObject/$",
+      "target" : "^ConsistentWithFragment/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityForeignObject.mfsh#50/n"
+    }
+  },
+  {
     "graphLinkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityForeignObject/hasMember/$",
       "item" : "AbnormalityForeignObject.hasMember:consistentWith",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityForeignObject.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#16/nProfiles/Common/AbnormalityForeignObject.mfsh#50/n"
     }
   },

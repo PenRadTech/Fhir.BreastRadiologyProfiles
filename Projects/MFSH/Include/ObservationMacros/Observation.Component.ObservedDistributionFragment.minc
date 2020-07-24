@@ -13,6 +13,8 @@
   #incompatible Observation.Component.Zero
 
   #apply once Graph.NodeFragment("%Title%")
+  #apply Graph.LinkByName("frag", "^%Id%/$", "^%FId%/$", "1")
+
   // define calcification distribution slice
   #apply Observation.Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
   #	 """

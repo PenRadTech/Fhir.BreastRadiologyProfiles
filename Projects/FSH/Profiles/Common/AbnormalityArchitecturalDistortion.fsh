@@ -25,12 +25,15 @@ Description: """
 
 
 
+
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
   
+
 
 
   * component ^slicing.discriminator.type = #pattern
@@ -58,6 +61,7 @@ Description: """
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
 
 
   * component contains biRadsAssessmentCategory 0..1
@@ -178,6 +182,7 @@ Description: """
 
 
 
+
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -198,6 +203,7 @@ Description: """
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
 
 
   * component contains correspondsWith 0..*
@@ -221,6 +227,7 @@ Description: """
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
  
+
 
 
   * component contains prevDemBy 0..*
@@ -257,6 +264,7 @@ Description: """
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
 
 
   * hasMember contains consistentWith 0..*
