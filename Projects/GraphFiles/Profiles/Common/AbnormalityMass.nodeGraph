@@ -166,7 +166,7 @@
       "displayName" : "Orientation",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#19/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#18/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -174,7 +174,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#26/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#25/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -187,7 +187,7 @@
       "displayName" : "Shape",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:shape",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#30/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#29/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -195,7 +195,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#37/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#36/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -208,7 +208,7 @@
       "displayName" : "Margin",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:margin",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#40/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#39/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -216,7 +216,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#47/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#46/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -229,7 +229,7 @@
       "displayName" : "Density",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityMass.component:mgBreastDensity",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#49/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {
@@ -237,7 +237,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityMass/component:mgBreastDensity/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#58/nProfiles/Common/AbnormalityMass.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#57/nProfiles/Common/AbnormalityMass.mfsh#40/n"
     }
   },
   {

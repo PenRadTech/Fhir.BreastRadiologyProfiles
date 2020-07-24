@@ -13,7 +13,6 @@
 # """
 
   #apply once Graph.NodeFragment("Shape Components Fragment")
-  #apply Observation.BreastBodyLocationRequiredFragment()
 
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

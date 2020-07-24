@@ -58,6 +58,7 @@ Description: """
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
+  
 
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
@@ -79,7 +80,6 @@ Description: """
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
-
 
 
   * component contains biRadsAssessmentCategory 0..1

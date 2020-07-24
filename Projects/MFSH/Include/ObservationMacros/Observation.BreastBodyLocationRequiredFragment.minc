@@ -4,7 +4,7 @@
 // This fragment adds the references for the breast body location extension.
 // The references are required, meaning that the breast body location must exist.
 
-#Fragment: profile Observation.BreastBodyLocationRequiredFragment
+#Fragment: Observation.BreastBodyLocationRequiredFragment
 #Parent: Observation
 #Title: "Breast Body Location (Required) Fragment"
 #Description: """

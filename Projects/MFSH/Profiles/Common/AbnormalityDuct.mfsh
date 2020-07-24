@@ -36,6 +36,7 @@ Description: """
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
   #apply Observation.BreastBodyLocationRequiredFragment()
+  
   #apply Observation.Component.ObservedChangesFragment()
   #apply Observation.Component.BiRadFragment()
   #apply Observation.Component.ShapeFragment()
