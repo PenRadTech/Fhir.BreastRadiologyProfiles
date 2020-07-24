@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("MRIResources", "%Title%")
   #apply Graph.NodeProfile("MRI Findings")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>MRI Finding</b>
   # </p>

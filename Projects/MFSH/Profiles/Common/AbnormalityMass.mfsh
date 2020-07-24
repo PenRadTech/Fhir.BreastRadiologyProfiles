@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Mass")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Mass Abnormality Observation</b>
   # </p>

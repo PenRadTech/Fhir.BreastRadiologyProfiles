@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Architectural Distortion")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # Architectural Distortion Observation
   # </p>

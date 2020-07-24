@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Fat Necrosis")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Fat Necrosis Abnormality Observation</b>
   # </p>

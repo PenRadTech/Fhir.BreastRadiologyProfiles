@@ -10,7 +10,7 @@ Description: """
   #apply Graph.NodeProfile("Mg Finding")
 
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Mammography Finding</b>
   # </p>

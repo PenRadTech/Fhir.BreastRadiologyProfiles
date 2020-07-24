@@ -13,7 +13,7 @@ Description: """
   #apply Graph.NodeElement("bodySite", "Body Site")
   //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
- #apply IntroDocGraph("""
+ #apply IntroDocProfile("""
   #<p>
   # The Findings %Laterality% Breast profile contains references to all the observations
   # and exam information related to the Right breast.

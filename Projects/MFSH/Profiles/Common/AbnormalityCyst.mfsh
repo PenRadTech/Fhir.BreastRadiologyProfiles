@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Cyst")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Cyst Abnormality Observation</b>
   # </p>

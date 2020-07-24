@@ -11,6 +11,12 @@
 # fixes the observation.code value to 'imaging'.
 # """
 
+  #apply IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 

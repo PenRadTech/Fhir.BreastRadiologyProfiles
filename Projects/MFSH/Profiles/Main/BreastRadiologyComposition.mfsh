@@ -12,7 +12,7 @@ Description: """
   #apply Graph.LinkByReference("focus", "^%Id%/section:", ".entry", "1")
 
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <P>
   # This profile defines the composition instance for the Breast Radiology FHIR Document.
   # </P>

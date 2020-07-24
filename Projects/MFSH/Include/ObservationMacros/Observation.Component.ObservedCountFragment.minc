@@ -10,6 +10,13 @@
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
 
+  #apply IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
+
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 

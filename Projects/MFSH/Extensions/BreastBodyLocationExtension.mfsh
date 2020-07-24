@@ -12,7 +12,7 @@ Description: """
   #apply Graph.NodeExtension("BreastBodyLocation")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Breast Body Location extension</b>
   # </p>

@@ -1,9 +1,9 @@
 //
-// Write out an intro doc.
+// Write out an intro doc for a profile.
 // The output of this gets automatically put at the start of the profile
 // web page.
 //
-#macro IntroDocGraph(%Description%) > "%PageContent%\\StructureDefinition-%Id%-intro.xml"
+#macro IntroDocProfile(%Description%) > "%PageContent%\\StructureDefinition-%Id%-intro.xml"
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
@@ -22,6 +22,34 @@
   `   </p>
   `   <object data="FocusGraph-%Id%.svg" type="image/svg+xml">
   `     <img src="FocusGraph-%Id%.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
+#end
+
+//
+// Write out an intro doc for a fragment.
+// The output of this gets automatically put at the start of the profile
+// web page.
+//
+#macro IntroDocFragment(%Description%) > "%PageContent%\\StructureDefinition-%Id%-intro.xml"
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   %Description%
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profiel fragment.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FragGraph-%Id%.svg" type="image/svg+xml">
+  `     <img src="FragGraph-%Id%.svg" alt="image/svg+xml" />
   `   </object>
   ` </div>
 #end

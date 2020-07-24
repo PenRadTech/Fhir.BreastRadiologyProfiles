@@ -9,6 +9,13 @@
 #  Adds NotPreviously Seen Component slice.
 #  """
 
+
+  #apply IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 

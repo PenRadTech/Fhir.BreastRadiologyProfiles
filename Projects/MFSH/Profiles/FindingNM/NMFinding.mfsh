@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("NMResources", "%Title%")
   #apply Graph.NodeProfile("Nuclear Medicine/Findings")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Nuclear Medicine Finding</b>
   # </p>

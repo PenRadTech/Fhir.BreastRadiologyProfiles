@@ -10,7 +10,7 @@ Description: """
   #apply Graph.NodeProfile("Report")
   #apply Graph.NodeElement("code", "Code")
 
-  #apply IntroDocGraph( """
+  #apply IntroDocProfile( """
   # <p>
   # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
   # </p>

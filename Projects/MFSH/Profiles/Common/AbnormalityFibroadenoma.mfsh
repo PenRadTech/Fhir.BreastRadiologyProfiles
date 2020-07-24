@@ -10,7 +10,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Fibroadenoma")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Fibroadenoma Abnormality Observation</b>
   # </p>

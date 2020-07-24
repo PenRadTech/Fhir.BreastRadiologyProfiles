@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("USResources", "%Title%")
   #apply Graph.NodeProfile("Ultra-Sound Findings")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Ultra Sound Finding</b>
   # </p>

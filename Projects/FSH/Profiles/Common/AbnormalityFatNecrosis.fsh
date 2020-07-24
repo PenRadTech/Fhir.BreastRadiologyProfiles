@@ -27,12 +27,15 @@ Description: """
 
 
 
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
   
+
+
 
 
 
@@ -64,6 +67,7 @@ Description: """
 
 
 
+
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -84,6 +88,8 @@ Description: """
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
+
 
 
   // Define Orientation Slice
@@ -183,6 +189,8 @@ Description: """
 
 
 
+
+
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -203,6 +211,8 @@ Description: """
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+
 
 
 
@@ -230,6 +240,8 @@ Description: """
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+
 
 
 
@@ -266,6 +278,8 @@ Description: """
   * component[obsSize].valueQuantity units from UNITSOFLENGTH
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
+
+
 
 
   // define calcification distribution slice
@@ -332,6 +346,8 @@ Description: """
 
 
 
+
+
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -383,6 +399,8 @@ Description: """
 
 
 
+
+
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
@@ -391,6 +409,8 @@ Description: """
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+
 
 
 

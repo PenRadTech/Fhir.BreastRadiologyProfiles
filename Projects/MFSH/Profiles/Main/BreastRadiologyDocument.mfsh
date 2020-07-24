@@ -12,7 +12,7 @@ Description: """
   #apply Graph.LinkByReference("focus", "^%Id%/entry:", ".resource", "1")
   #apply Graph.NodeElement("entry:index", "Composition index")
 
-  #apply IntroDocGraph( """
+  #apply IntroDocProfile( """
   # <P>
   # A Breast Radiology Document is an implementation of a Fhir Document. 
   # </P>

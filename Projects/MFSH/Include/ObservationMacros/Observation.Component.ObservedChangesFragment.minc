@@ -11,6 +11,13 @@
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
+
+  #apply IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
  #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.

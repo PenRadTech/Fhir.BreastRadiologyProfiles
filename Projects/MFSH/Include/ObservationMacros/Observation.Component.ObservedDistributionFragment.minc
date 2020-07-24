@@ -10,6 +10,13 @@
 #Description: """
 #  Fragment that adds 'Observed Distribution' components to Observation.
 #  """
+
+  #apply IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
   #incompatible Observation.Component.Zero
 
   #apply once Graph.NodeFragment("%FTitle%")

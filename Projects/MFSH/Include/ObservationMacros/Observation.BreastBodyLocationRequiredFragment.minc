@@ -12,6 +12,12 @@
 #  The references are required, meaning that the breast body location must exist.
 #  """
 
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
   #apply once CSBuild.BreastBodyLocationRequiredFragment.Define()
 
   #apply once Graph.NodeFragment("%FTitle%")

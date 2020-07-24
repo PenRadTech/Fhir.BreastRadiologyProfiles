@@ -10,7 +10,7 @@ Description: """
   #apply Graph.NodeProfile("Service Recommendation")
   #apply CSBuild.DefineClass()
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # Recommended follow-up action to be taken in response to the 
   # findings of this exam.

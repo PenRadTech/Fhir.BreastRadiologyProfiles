@@ -9,7 +9,7 @@ Description: """
   #apply IGGroupMemberProfile("MGResources", "%Title%")
   #apply Graph.NodeProfile("Breast Density")
 
-  #apply IntroDocGraph("""
+  #apply IntroDocProfile("""
   # <p>
   # <b>Breast Density Observation</b>
   # </p>

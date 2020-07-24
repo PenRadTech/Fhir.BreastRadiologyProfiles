@@ -56,12 +56,15 @@ Description: """
 
 
 
+
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
   
+
+
 
 
   * component contains obsChanges 0..*
@@ -87,6 +90,7 @@ Description: """
 
 
 
+
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -107,6 +111,8 @@ Description: """
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
+
 
 
   // Define Orientation Slice
@@ -206,6 +212,8 @@ Description: """
 
 
 
+
+
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -230,6 +238,8 @@ Description: """
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+
 
 
 
@@ -297,6 +307,8 @@ Description: """
 
 
 
+
+
   // Define distribution region size.
 
   * component contains obsSize 0..3
@@ -332,6 +344,8 @@ Description: """
 
 
 
+
+
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -352,6 +366,8 @@ Description: """
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+
 
 
 
@@ -402,6 +418,8 @@ Description: """
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
   
+
+
 
 
 
