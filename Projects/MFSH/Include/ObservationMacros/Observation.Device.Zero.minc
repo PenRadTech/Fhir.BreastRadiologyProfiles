@@ -3,7 +3,7 @@
  for all observations that have no device.
  */
  
-#macro profile Observation.Device.Zero()
+#macro once Observation.Device.Zero()
   #apply Observation.Fragment()
   * device 0..0
 #end

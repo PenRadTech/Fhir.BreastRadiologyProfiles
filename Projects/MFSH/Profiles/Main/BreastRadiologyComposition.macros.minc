@@ -1,4 +1,4 @@
-#macro profile StartSectionSlicing()
+#macro once StartSectionSlicing()
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open

@@ -3,7 +3,7 @@
  constraints used in all breast radiology observations.
  */
  
-#macro profile Observation.Fragment()
+#macro once Observation.Fragment()
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0

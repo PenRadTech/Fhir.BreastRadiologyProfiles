@@ -1,4 +1,4 @@
-#macro profile Extension.Configure()
+#macro once Extension.Configure()
   #apply Graph.NodeElement("extension", "Extensions")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/extension/$", "0")
 #end

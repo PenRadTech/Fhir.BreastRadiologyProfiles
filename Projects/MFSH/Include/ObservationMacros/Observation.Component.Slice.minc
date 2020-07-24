@@ -1,7 +1,7 @@
 /*
  Slice Observation.component.
  */
-#macro profile Observation.Component.Slice()
+#macro once Observation.Component.Slice()
   #apply Graph.NodeElement("component", "Components")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/component/$", "0")
   #apply Graph.LinkByName("focus", "^%Id%/component/$", "^%Id%/component:", "0")

@@ -3,7 +3,7 @@
  This fragment adds the references for the Associated Feature hasMember slice.
 */
 
-#Fragment: profile Observation.HasMember.AssociatedFeatureFragment
+#Fragment: once Observation.HasMember.AssociatedFeatureFragment
 #Parent: Observation
 #Title: "Associated Feature Fragment"
 #Description: """
