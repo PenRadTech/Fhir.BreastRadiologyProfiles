@@ -11,7 +11,7 @@
 # fixes the observation.code value to 'imaging'.
 # """
 
-  #apply Graph.NodeFragment("Category Fragment")
+  #apply once Graph.NodeFragment("Category Fragment")
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

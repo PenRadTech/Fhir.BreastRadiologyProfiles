@@ -12,7 +12,7 @@
 # Adds CorrespondsWith component
 # """
 
-  #apply Graph.NodeFragment("Corresponds With Fragment")
+  #apply once Graph.NodeFragment("Corresponds With Fragment")
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """
   #  This slice contains the optional components that define what this observation corresponds with.

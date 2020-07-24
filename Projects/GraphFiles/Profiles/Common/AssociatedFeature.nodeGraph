@@ -116,17 +116,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "ObservedCountFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
-      },
-      "displayName" : "Observed Count Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#13/nProfiles/Common/AssociatedFeature.mfsh#52/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AssociatedFeature/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",

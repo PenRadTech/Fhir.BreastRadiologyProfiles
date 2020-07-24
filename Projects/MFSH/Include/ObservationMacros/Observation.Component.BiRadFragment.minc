@@ -11,7 +11,7 @@
 # Fragment that adds 'BiRad code' element to profile
 # """
 
-  #apply Graph.NodeFragment("BiRad Fragment")
+  #apply once Graph.NodeFragment("BiRad Fragment")
   #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that define the BiRAD risk code.

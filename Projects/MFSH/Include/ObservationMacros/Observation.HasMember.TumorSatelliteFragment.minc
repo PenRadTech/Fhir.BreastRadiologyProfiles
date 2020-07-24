@@ -10,7 +10,7 @@
 # This fragment adds the references for the Tumor Satellite extension.
 # """
 
-  #apply Graph.NodeFragment("Tumor Satellite Fragment")
+  #apply once Graph.NodeFragment("Tumor Satellite Fragment")
   #apply Observation.HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """

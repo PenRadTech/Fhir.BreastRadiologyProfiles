@@ -116,17 +116,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "ObservedChangesFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedChangesFragment"
-      },
-      "displayName" : "Observed Changes Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11/nProfiles/Common/AbnormalityAsymmetry.mfsh#35/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityAsymmetry/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -148,17 +137,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BiRadFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BiRadFragment"
-      },
-      "displayName" : "BiRad Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#14/nProfiles/Common/AbnormalityAsymmetry.mfsh#36/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityAsymmetry/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -176,17 +154,6 @@
       "source" : "^AbnormalityAsymmetry/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#36/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ShapeFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ShapeFragment"
-      },
-      "displayName" : "Shape Components Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#15/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
     }
   },
   {
@@ -275,17 +242,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "NotPreviouslySeenFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
-      },
-      "displayName" : "NotPreviously Seen Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#12/nProfiles/Common/AbnormalityAsymmetry.mfsh#38/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityAsymmetry/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -331,17 +287,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "CorrespondsWithFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/CorrespondsWithFragment"
-      },
-      "displayName" : "Corresponds With Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#15/nProfiles/Common/AbnormalityAsymmetry.mfsh#40/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityAsymmetry/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -363,17 +308,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "PreviouslyDemonstratedByFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/PreviouslyDemonstratedByFragment"
-      },
-      "displayName" : "Previously Demonstrated By Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#15/nProfiles/Common/AbnormalityAsymmetry.mfsh#41/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityAsymmetry/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -391,17 +325,6 @@
       "source" : "^AbnormalityAsymmetry/component:prevDemBy/$",
       "item" : ".value[x]",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#41/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "AssociatedFeatureFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeatureFragment"
-      },
-      "displayName" : "Associated Feature Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#13/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
     }
   },
   {
@@ -433,17 +356,6 @@
       "target" : "^AbnormalityAsymmetry/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ConsistentWithFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWithFragment"
-      },
-      "displayName" : "ConsistentWith HasMember Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#13/nProfiles/Common/AbnormalityAsymmetry.mfsh#44/n"
     }
   },
   {

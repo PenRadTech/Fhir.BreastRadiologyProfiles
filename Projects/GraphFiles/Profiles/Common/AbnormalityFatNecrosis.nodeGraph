@@ -64,17 +64,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "ObservedChangesFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedChangesFragment"
-      },
-      "displayName" : "Observed Changes Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#11/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:obsChanges/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -127,17 +116,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "BiRadFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/BiRadFragment"
-      },
-      "displayName" : "BiRad Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:biRadsAssessmentCategory/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -155,17 +133,6 @@
       "source" : "^AbnormalityFatNecrosis/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ShapeFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ShapeFragment"
-      },
-      "displayName" : "Shape Components Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#15/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -254,17 +221,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "NotPreviouslySeenFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/NotPreviouslySeenFragment"
-      },
-      "displayName" : "NotPreviously Seen Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#12/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:notPreviouslySeen/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -286,17 +242,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "ObservedCountFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedCountFragment"
-      },
-      "displayName" : "Observed Count Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#13/nProfiles/Common/AbnormalityFatNecrosis.mfsh#32/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:observedCount/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -310,17 +255,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "ObservedSizeFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedSizeFragment"
-      },
-      "displayName" : "Observed Size Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#33/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:obsSize/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -330,17 +264,6 @@
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:obsSize",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#19/nProfiles/Common/AbnormalityFatNecrosis.mfsh#33/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ObservedDistributionFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ObservedDistributionFragment"
-      },
-      "displayName" : "Observed Distribution Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#15/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
   },
   {
@@ -379,17 +302,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "CorrespondsWithFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/CorrespondsWithFragment"
-      },
-      "displayName" : "Corresponds With Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#15/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:correspondsWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -411,17 +323,6 @@
   },
   {
     "graphNode" : {
-      "nodeName" : "PreviouslyDemonstratedByFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/PreviouslyDemonstratedByFragment"
-      },
-      "displayName" : "Previously Demonstrated By Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#15/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
-    }
-  },
-  {
-    "graphNode" : {
       "nodeName" : "AbnormalityFatNecrosis/component:prevDemBy/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityFatNecrosis",
@@ -439,17 +340,6 @@
       "source" : "^AbnormalityFatNecrosis/component:prevDemBy/$",
       "item" : ".value[x]",
       "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#25/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "AssociatedFeatureFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeatureFragment"
-      },
-      "displayName" : "Associated Feature Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#13/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
     }
   },
   {
@@ -481,17 +371,6 @@
       "target" : "^AbnormalityFatNecrosis/hasMember/$",
       "depth": 0,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
-    }
-  },
-  {
-    "graphNode" : {
-      "nodeName" : "ConsistentWithFragment/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWithFragment"
-      },
-      "displayName" : "ConsistentWith HasMember Fragment",
-      "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#13/nProfiles/Common/AbnormalityFatNecrosis.mfsh#39/n"
     }
   },
   {

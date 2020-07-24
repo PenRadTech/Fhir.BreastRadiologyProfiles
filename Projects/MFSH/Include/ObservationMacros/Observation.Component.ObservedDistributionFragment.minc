@@ -12,7 +12,7 @@
 #  """
   #incompatible Observation.Component.Zero
 
-  #apply Graph.NodeFragment("Observed Distribution Fragment")
+  #apply once Graph.NodeFragment("Observed Distribution Fragment")
   // define calcification distribution slice
   #apply Observation.Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
   #	 """

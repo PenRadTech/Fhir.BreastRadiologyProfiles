@@ -10,7 +10,7 @@
 # This fragment adds the references for the ConsistentWith HasMember.
 # """
 
-  #apply Graph.NodeFragment("ConsistentWith HasMember Fragment")
+  #apply once Graph.NodeFragment("ConsistentWith HasMember Fragment")
   #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """
