@@ -18,8 +18,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "source" : "^BreastBodyLocationRequiredFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityFatNecrosis.mfsh#26/n"
     }
@@ -80,8 +80,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ObservedChangesFragment/$",
+      "source" : "^ObservedChangesFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
@@ -141,8 +141,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^BiRadFragment/$",
+      "source" : "^BiRadFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
     }
@@ -171,8 +171,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ShapeFragment/$",
+      "source" : "^ShapeFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
@@ -264,8 +264,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^NotPreviouslySeenFragment/$",
+      "source" : "^NotPreviouslySeenFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
     }
@@ -294,8 +294,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ObservedCountFragment/$",
+      "source" : "^ObservedCountFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#32/n"
     }
@@ -316,8 +316,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ObservedSizeFragment/$",
+      "source" : "^ObservedSizeFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#18/nProfiles/Common/AbnormalityFatNecrosis.mfsh#33/n"
     }
@@ -338,8 +338,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ObservedDistributionFragment/$",
+      "source" : "^ObservedDistributionFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
@@ -381,8 +381,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^CorrespondsWithFragment/$",
+      "source" : "^CorrespondsWithFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
     }
@@ -411,8 +411,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "source" : "^PreviouslyDemonstratedByFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
     }
@@ -439,12 +439,21 @@
     }
   },
   {
+    "linkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeatureFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
+    }
+  },
+  {
     "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/hasMember/$",
       "item" : "AbnormalityFatNecrosis.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
     }
   },
   {
@@ -457,7 +466,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
     }
   },
   {
@@ -466,14 +475,14 @@
       "source" : "^AbnormalityFatNecrosis/$",
       "target" : "^AbnormalityFatNecrosis/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFatNecrosis.mfsh#38/n"
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFatNecrosis/$",
-      "target" : "^ConsistentWithFragment/$",
+      "source" : "^ConsistentWithFragment/$",
+      "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityFatNecrosis.mfsh#39/n"
     }

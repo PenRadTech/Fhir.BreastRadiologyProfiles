@@ -70,8 +70,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "source" : "^BreastBodyLocationRequiredFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityCyst.mfsh#37/n"
     }
@@ -132,8 +132,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ObservedChangesFragment/$",
+      "source" : "^ObservedChangesFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityCyst.mfsh#39/n"
     }
@@ -162,8 +162,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^BiRadFragment/$",
+      "source" : "^BiRadFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityCyst.mfsh#40/n"
     }
@@ -192,8 +192,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ShapeFragment/$",
+      "source" : "^ShapeFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#41/n"
     }
@@ -285,8 +285,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ObservedCountFragment/$",
+      "source" : "^ObservedCountFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#42/n"
     }
@@ -307,8 +307,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ObservedDistributionFragment/$",
+      "source" : "^ObservedDistributionFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#43/n"
     }
@@ -350,8 +350,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ObservedSizeFragment/$",
+      "source" : "^ObservedSizeFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#18/nProfiles/Common/AbnormalityCyst.mfsh#44/n"
     }
@@ -372,8 +372,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^NotPreviouslySeenFragment/$",
+      "source" : "^NotPreviouslySeenFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityCyst.mfsh#45/n"
     }
@@ -402,8 +402,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^CorrespondsWithFragment/$",
+      "source" : "^CorrespondsWithFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#46/n"
     }
@@ -432,8 +432,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "source" : "^PreviouslyDemonstratedByFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#47/n"
     }
@@ -460,12 +460,21 @@
     }
   },
   {
+    "linkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeatureFragment/$",
+      "target" : "^AbnormalityCyst/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+    }
+  },
+  {
     "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityCyst/hasMember/$",
       "item" : "AbnormalityCyst.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
     }
   },
   {
@@ -478,7 +487,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
     }
   },
   {
@@ -487,14 +496,14 @@
       "source" : "^AbnormalityCyst/$",
       "target" : "^AbnormalityCyst/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityCyst.mfsh#49/n"
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^ConsistentWithFragment/$",
+      "source" : "^ConsistentWithFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#50/n"
     }
@@ -521,15 +530,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityCyst/",
+      "nodeName" : "TumorSatelliteFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityCyst/$",
-      "target" : "^TumorSatelliteFragment/$",
+      "source" : "^TumorSatelliteFragment/$",
+      "target" : "^AbnormalityCyst/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#14/nProfiles/Common/AbnormalityCyst.mfsh#51/n"
     }

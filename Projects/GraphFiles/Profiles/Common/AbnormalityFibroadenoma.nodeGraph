@@ -70,8 +70,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "source" : "^BreastBodyLocationRequiredFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityFibroadenoma.mfsh#37/n"
     }
@@ -132,8 +132,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^ObservedChangesFragment/$",
+      "source" : "^ObservedChangesFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityFibroadenoma.mfsh#39/n"
     }
@@ -162,8 +162,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^BiRadFragment/$",
+      "source" : "^BiRadFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityFibroadenoma.mfsh#40/n"
     }
@@ -192,8 +192,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^ShapeFragment/$",
+      "source" : "^ShapeFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
     }
@@ -285,8 +285,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^ObservedCountFragment/$",
+      "source" : "^ObservedCountFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AbnormalityFibroadenoma.mfsh#42/n"
     }
@@ -307,8 +307,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^ObservedDistributionFragment/$",
+      "source" : "^ObservedDistributionFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#43/n"
     }
@@ -350,8 +350,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^ObservedSizeFragment/$",
+      "source" : "^ObservedSizeFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#18/nProfiles/Common/AbnormalityFibroadenoma.mfsh#44/n"
     }
@@ -372,8 +372,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityFibroadenoma/$",
-      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "source" : "^PreviouslyDemonstratedByFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#45/n"
     }
@@ -400,12 +400,21 @@
     }
   },
   {
+    "linkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeatureFragment/$",
+      "target" : "^AbnormalityFibroadenoma/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
+    }
+  },
+  {
     "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^AbnormalityFibroadenoma/hasMember/$",
       "item" : "AbnormalityFibroadenoma.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
     }
   },
   {
@@ -418,7 +427,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFibroadenoma.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
     }
   },
   {
@@ -427,6 +436,6 @@
       "source" : "^AbnormalityFibroadenoma/$",
       "target" : "^AbnormalityFibroadenoma/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
     }
   },

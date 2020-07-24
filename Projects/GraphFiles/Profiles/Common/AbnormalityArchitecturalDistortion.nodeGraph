@@ -28,15 +28,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "BreastBodyLocationRequiredFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "source" : "^BreastBodyLocationRequiredFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#23/n"
     }
@@ -107,15 +107,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "ObservedChangesFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^ObservedChangesFragment/$",
+      "source" : "^ObservedChangesFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#25/n"
     }
@@ -185,15 +185,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "BiRadFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^BiRadFragment/$",
+      "source" : "^BiRadFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
     }
@@ -232,15 +232,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "ShapeFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^ShapeFragment/$",
+      "source" : "^ShapeFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
     }
@@ -342,15 +342,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "NotPreviouslySeenFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^NotPreviouslySeenFragment/$",
+      "source" : "^NotPreviouslySeenFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#28/n"
     }
@@ -389,15 +389,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "CorrespondsWithFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^CorrespondsWithFragment/$",
+      "source" : "^CorrespondsWithFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#29/n"
     }
@@ -436,15 +436,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "PreviouslyDemonstratedByFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "source" : "^PreviouslyDemonstratedByFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#30/n"
     }
@@ -483,8 +483,17 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "AssociatedFeatureFragment/",
       "traversalName" : "frag",
+    }
+  },
+  {
+    "linkByName" : {
+      "traversalName" : "frag",
+      "source" : "^AssociatedFeatureFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
+      "depth": 1,
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
     }
   },
   {
@@ -493,7 +502,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/hasMember/$",
       "item" : "AbnormalityArchitecturalDistortion.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
     }
   },
   {
@@ -506,7 +515,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
     }
   },
   {
@@ -515,7 +524,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#16/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#32/n"
     }
   },
   {
@@ -531,15 +540,15 @@
   },
   {
     "graph" : {
-      "nodeName" : "AbnormalityArchitecturalDistortion/",
+      "nodeName" : "ConsistentWithFragment/",
       "traversalName" : "frag",
     }
   },
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityArchitecturalDistortion/$",
-      "target" : "^ConsistentWithFragment/$",
+      "source" : "^ConsistentWithFragment/$",
+      "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#33/n"
     }

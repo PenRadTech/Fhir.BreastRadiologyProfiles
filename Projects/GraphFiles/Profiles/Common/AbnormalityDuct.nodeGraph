@@ -70,8 +70,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^BreastBodyLocationRequiredFragment/$",
+      "source" : "^BreastBodyLocationRequiredFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#18/nProfiles/Common/AbnormalityDuct.mfsh#38/n"
     }
@@ -132,8 +132,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ObservedChangesFragment/$",
+      "source" : "^ObservedChangesFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#12/nProfiles/Common/AbnormalityDuct.mfsh#40/n"
     }
@@ -162,8 +162,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^BiRadFragment/$",
+      "source" : "^BiRadFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#15/nProfiles/Common/AbnormalityDuct.mfsh#41/n"
     }
@@ -192,8 +192,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ShapeFragment/$",
+      "source" : "^ShapeFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#16/nProfiles/Common/AbnormalityDuct.mfsh#42/n"
     }
@@ -285,8 +285,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ObservedCountFragment/$",
+      "source" : "^ObservedCountFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#14/nProfiles/Common/AbnormalityDuct.mfsh#43/n"
     }
@@ -307,8 +307,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ObservedDistributionFragment/$",
+      "source" : "^ObservedDistributionFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#16/nProfiles/Common/AbnormalityDuct.mfsh#44/n"
     }
@@ -350,8 +350,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ObservedSizeFragment/$",
+      "source" : "^ObservedSizeFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#18/nProfiles/Common/AbnormalityDuct.mfsh#45/n"
     }
@@ -372,8 +372,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^NotPreviouslySeenFragment/$",
+      "source" : "^NotPreviouslySeenFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#13/nProfiles/Common/AbnormalityDuct.mfsh#46/n"
     }
@@ -402,8 +402,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^CorrespondsWithFragment/$",
+      "source" : "^CorrespondsWithFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#16/nProfiles/Common/AbnormalityDuct.mfsh#47/n"
     }
@@ -432,8 +432,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^PreviouslyDemonstratedByFragment/$",
+      "source" : "^PreviouslyDemonstratedByFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#16/nProfiles/Common/AbnormalityDuct.mfsh#48/n"
     }
@@ -462,8 +462,8 @@
   {
     "linkByName" : {
       "traversalName" : "frag",
-      "source" : "^AbnormalityDuct/$",
-      "target" : "^ConsistentWithFragment/$",
+      "source" : "^ConsistentWithFragment/$",
+      "target" : "^AbnormalityDuct/$",
       "depth": 1,
       "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#14/nProfiles/Common/AbnormalityDuct.mfsh#50/n"
     }

@@ -38,7 +38,7 @@
   `  },
   `  {
   `    "graph" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%FId%/",
   `      "traversalName" : "frag",
   `    }
   `  },

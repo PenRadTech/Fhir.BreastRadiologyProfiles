@@ -11,6 +11,8 @@
 # """
 
   #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+
   #apply Observation.HasMember.Add("associatedFeature", "0..*", "Associated Feature", "AssociatedFeature",
   #  "'Associated Feature' reference.",
   #  """
