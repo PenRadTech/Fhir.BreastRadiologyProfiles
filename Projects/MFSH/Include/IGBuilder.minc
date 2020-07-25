@@ -21,6 +21,16 @@
   `  },
 #end
 
+#macro IGGroupMemberFragment(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+  `  {
+  `    "member" : {
+  `      "groupingId" : "%GroupId%",
+  `      "sort": "%Sort%",
+  `      "reference" : "^StructureDefinition/%FId%$"
+  `    }
+  `  },
+#end
+
 #macro IGGroupMemberValueSet(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {

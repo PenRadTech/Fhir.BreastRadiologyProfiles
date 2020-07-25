@@ -1,4 +1,4 @@
-#apply IGGroupMemberProfile("Fragments", "%FTitle%")
+#apply once IGGroupMemberFragment("Fragments", "%FTitle%")
 
 Profile: %FId%
 Parent: %FParent%

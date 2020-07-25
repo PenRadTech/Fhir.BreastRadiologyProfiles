@@ -12,6 +12,13 @@
 # 'Demonstrated By' Component Fragment
 # """
 
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
+  # <p>
+  # <b>%FTitle%</b>
+  # </p>
+  #""")
+
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 

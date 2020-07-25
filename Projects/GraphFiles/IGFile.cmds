@@ -14,9 +14,79 @@
   },
   {
     "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Breast Body Location (Required) Fragment",
+      "reference" : "^StructureDefinition/BreastBodyLocationRequiredFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Changes Fragment",
+      "reference" : "^StructureDefinition/ObservedChangesFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "BiRad Fragment",
+      "reference" : "^StructureDefinition/BiRadFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Shape Components Fragment",
+      "reference" : "^StructureDefinition/ShapeFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "NotPreviously Seen Fragment",
+      "reference" : "^StructureDefinition/NotPreviouslySeenFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Corresponds With Fragment",
+      "reference" : "^StructureDefinition/CorrespondsWithFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Previously Demonstrated By Fragment",
+      "reference" : "^StructureDefinition/PreviouslyDemonstratedByFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Associated Feature Fragment",
+      "reference" : "^StructureDefinition/AssociatedFeatureFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Consistent With Fragment",
+      "reference" : "^StructureDefinition/ConsistentWithFragment$"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources",
       "sort": "Asymmetry",
       "reference" : "^StructureDefinition/AbnormalityAsymmetry$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Count Fragment",
+      "reference" : "^StructureDefinition/ObservedCountFragment$"
     }
   },
   {
@@ -28,9 +98,30 @@
   },
   {
     "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Size Fragment",
+      "reference" : "^StructureDefinition/ObservedSizeFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Observed Distribution Fragment",
+      "reference" : "^StructureDefinition/ObservedDistributionFragment$"
+    }
+  },
+  {
+    "member" : {
       "groupingId" : "CommonResources",
       "sort": "Cyst",
       "reference" : "^StructureDefinition/AbnormalityCyst$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "Fragments",
+      "sort": "Tumor Satellite Fragment",
+      "reference" : "^StructureDefinition/TumorSatelliteFragment$"
     }
   },
   {
@@ -712,97 +803,6 @@
     "member" : {
       "groupingId" : "Fragments",
       "sort": "Breast Body Location (Required) Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Category Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "BiRad Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Corresponds With Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "NotPreviously Seen Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Observed Changes Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Observed Count Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Observed Distribution Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Observed Size Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Previously Demonstrated By Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Shape Components Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Associated Feature Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Consistent With Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
-    }
-  },
-  {
-    "member" : {
-      "groupingId" : "Fragments",
-      "sort": "Tumor Satellite Fragment",
-      "reference" : "^StructureDefinition/%Id%$"
+      "reference" : "^StructureDefinition/BreastBodyLocationRequiredFragment$"
     }
   },

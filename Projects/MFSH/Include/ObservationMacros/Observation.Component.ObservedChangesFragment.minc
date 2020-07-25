@@ -12,7 +12,8 @@
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

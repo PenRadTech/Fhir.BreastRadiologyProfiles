@@ -13,7 +13,8 @@
 # """
 
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

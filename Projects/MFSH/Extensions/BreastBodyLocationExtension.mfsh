@@ -24,6 +24,7 @@ Description: """
   # Breast radiology exams have specific ways of defining a location that are unique to this field.
   # </p>
   #""")
+
   * . ^short = "Breast Body Location extension"
 
   #apply Extension.CodeableConcept("laterality", "0..1", "LateralityVS", "Body side",

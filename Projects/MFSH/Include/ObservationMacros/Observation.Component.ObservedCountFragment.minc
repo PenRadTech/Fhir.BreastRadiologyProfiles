@@ -10,7 +10,8 @@
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

@@ -11,7 +11,8 @@
 # fixes the observation.code value to 'imaging'.
 # """
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

@@ -12,7 +12,8 @@
 #  The references are required, meaning that the breast body location must exist.
 #  """
 
-  #apply IntroDocProfile("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

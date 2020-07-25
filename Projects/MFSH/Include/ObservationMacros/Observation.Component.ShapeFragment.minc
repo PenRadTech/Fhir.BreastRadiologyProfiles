@@ -12,7 +12,8 @@
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>

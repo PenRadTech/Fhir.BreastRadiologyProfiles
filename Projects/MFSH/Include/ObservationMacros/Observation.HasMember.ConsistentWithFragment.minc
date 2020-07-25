@@ -10,7 +10,8 @@
 # This fragment adds the references for the ConsistentWith HasMember.
 # """
 
-  #apply IntroDocFragment("""
+  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
+  #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
