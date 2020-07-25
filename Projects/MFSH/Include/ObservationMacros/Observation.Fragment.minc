@@ -4,7 +4,7 @@
  */
  
 #macro once Observation.Fragment()
-  #apply Category.Fragment()
+  #apply Observation.CategoryFragment()
   
   * interpretation 0..0
   * referenceRange 0..0

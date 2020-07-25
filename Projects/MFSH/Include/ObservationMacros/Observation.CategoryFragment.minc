@@ -2,25 +2,7 @@
 // This fragment slices Observation.category and 
 // fixes the observation.code value to 'imaging'.
 
-#Fragment: Observation.CategoryFragment
-#Parent: Observation
-#Title: "Category Fragment"
-#Description:
-#"""
-# This fragment slices Observation.category and 
-# fixes the observation.code value to 'imaging'.
-# """
-
-  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
-  #apply once IntroDocFragment("""
-  # <p>
-  # <b>%FTitle%</b>
-  # </p>
-  #""")
-
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+#macro Observation.CategoryFragment()
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

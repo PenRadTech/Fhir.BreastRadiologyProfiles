@@ -38,6 +38,14 @@ Description: """
   * component[fibroAdenomaType].value[x] only CodeableConcept
   * component[fibroAdenomaType].value[x] from AbnormalityFibroAdenomaTypeVS
 
+  * category ^slicing.discriminator.type = #pattern
+  * category ^slicing.discriminator.path = "$this"
+  * category ^slicing.rules = #open
+  * category ^slicing.ordered = false
+  * category ^slicing.description = "Observation Category = imaging"
+  * category contains categoryImaging 1..1
+  * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
+  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0

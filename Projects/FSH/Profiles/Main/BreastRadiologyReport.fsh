@@ -5,6 +5,13 @@ Description: """
 	Breast Radiology Diagnostic Report.
 	"""
 
+  * category ^slicing.discriminator.type = #pattern
+  * category ^slicing.discriminator.path = "$this"
+  * category ^slicing.rules = #open
+  * category ^slicing.ordered = false
+  * category ^slicing.description = "Observation Category = imaging"
+  * category contains categoryImaging 1..1
+  * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
 
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
