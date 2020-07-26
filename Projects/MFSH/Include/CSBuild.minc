@@ -10,12 +10,13 @@
 #end
 
 //
-// Attach an interface to class.
+// Attach an fragment to class.
 //
-#macro CSBuild.ImplementFragment(%IName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "implementFragment" : {
-  `    "fragmentName" : "%IName%"
+  `    "className" : "%Id%"
+  `    "fragmentName" : "%FId%"
   `  }
   `},
 
@@ -55,25 +56,6 @@
   `  "defineFragment" : {
   `    "fragmentName" : "%Name%",
   `    "implementationId" : "%Id%"
-  `  }
-  `},
-#end
-
-//
-// Add a fhir property.
-//
-#macro CSBuild.DefineElementProperty(%elementId%)
-  `{
-  `  "defineElementProperty" : {
-  `    "elementId" : "%elementId%"
-  `  }
-  `},
-#end
-
-#macro CSBuild.DefineExtensionProperty(%elementId%)
-  `{
-  `  "defineExtensionProperty" : {
-  `    "elementId" : "%elementId%"
   `  }
   `},
 #end

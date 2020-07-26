@@ -3,3 +3,86 @@
     "className" : "AbnormalityFatNecrosis"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "BiRadFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ShapeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "NotPreviouslySeenFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "CorrespondsWithFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "AssociatedFeatureFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ConsistentWithFragment"
+  }
+},

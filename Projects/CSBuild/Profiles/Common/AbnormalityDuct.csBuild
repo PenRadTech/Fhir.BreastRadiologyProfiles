@@ -3,3 +3,79 @@
     "className" : "AbnormalityDuct"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "BiRadFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ShapeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "NotPreviouslySeenFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "CorrespondsWithFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
+    "fragmentName" : "ConsistentWithFragment"
+  }
+},

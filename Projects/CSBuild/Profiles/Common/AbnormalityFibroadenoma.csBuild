@@ -3,3 +3,65 @@
     "className" : "AbnormalityFibroadenoma"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "BiRadFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ShapeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "AssociatedFeatureFragment"
+  }
+},

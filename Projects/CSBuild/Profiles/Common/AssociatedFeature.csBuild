@@ -3,3 +3,16 @@
     "className" : "AssociatedFeature"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AssociatedFeature"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AssociatedFeature"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},

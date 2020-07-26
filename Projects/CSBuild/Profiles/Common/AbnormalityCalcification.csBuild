@@ -3,3 +3,79 @@
     "className" : "AbnormalityCalcification"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "BiRadFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "NotPreviouslySeenFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "CorrespondsWithFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "AssociatedFeatureFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
+    "fragmentName" : "ConsistentWithFragment"
+  }
+},

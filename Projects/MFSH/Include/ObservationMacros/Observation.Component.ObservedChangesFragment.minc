@@ -8,6 +8,7 @@
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
   
+  #apply CSBuild.ImplementFragment()
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 

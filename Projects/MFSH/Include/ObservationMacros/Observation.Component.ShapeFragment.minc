@@ -12,6 +12,7 @@
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

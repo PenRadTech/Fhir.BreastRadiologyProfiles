@@ -10,6 +10,7 @@
 # This fragment adds the references for the Associated Feature hasMember slice.
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

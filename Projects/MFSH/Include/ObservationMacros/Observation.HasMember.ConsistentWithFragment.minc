@@ -10,6 +10,7 @@
 # This fragment adds the references for the ConsistentWith HasMember.
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

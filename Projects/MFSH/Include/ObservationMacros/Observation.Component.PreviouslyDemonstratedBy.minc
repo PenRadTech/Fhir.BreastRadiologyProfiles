@@ -12,6 +12,7 @@
 # 'Demonstrated By' Component Fragment
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

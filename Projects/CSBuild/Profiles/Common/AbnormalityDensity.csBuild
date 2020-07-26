@@ -3,3 +3,86 @@
     "className" : "AbnormalityDensity"
   }
 },
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "BiRadFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ShapeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "NotPreviouslySeenFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "CorrespondsWithFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "AssociatedFeatureFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDensity"
+    "fragmentName" : "ConsistentWithFragment"
+  }
+},

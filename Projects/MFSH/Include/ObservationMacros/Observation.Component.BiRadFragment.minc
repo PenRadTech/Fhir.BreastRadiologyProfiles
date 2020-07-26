@@ -11,6 +11,7 @@
 # Fragment that adds 'BiRad code' element to profile
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

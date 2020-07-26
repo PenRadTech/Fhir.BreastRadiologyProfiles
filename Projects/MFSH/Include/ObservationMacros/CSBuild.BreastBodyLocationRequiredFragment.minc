@@ -1,8 +1,0 @@
-/*
- CS Build commands for BreastBodyLocationRequiredFragment
- */
-#macro CSBuild.BreastBodyLocationRequiredFragment.Define() > "%CSBuildDir%\\%MacroDir%\\BreastBodyLocationRequired.csBuild"
-  #apply CSBuild.DefineFragment("BreastBodyLocationRequired")
-  #apply CSBuild.DefineElementProperty("bodySite")
-  #apply CSBuild.DefineExtensionProperty("bodySite.extension:breastBodyLocation")
-#end

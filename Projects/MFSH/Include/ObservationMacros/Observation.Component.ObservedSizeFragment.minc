@@ -12,6 +12,7 @@
 # Fragment that adds 'Observed Size' components to Observation.
 # """
 
+  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
