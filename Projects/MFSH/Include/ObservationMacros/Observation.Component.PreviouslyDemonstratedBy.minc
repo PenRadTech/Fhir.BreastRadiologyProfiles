@@ -11,20 +11,20 @@
 #Description: """
 # 'Demonstrated By' Component Fragment
 # """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
@@ -33,6 +33,6 @@
   #  PreviouslyDemonstratedByVS valueset.  
   #	 """,
   #  "ObservationComponentSliceCodesCS#prevDemBy")
-
+  #
   #apply Observation.Component.SetCprofilept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
 #end

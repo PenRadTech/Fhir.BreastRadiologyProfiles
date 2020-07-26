@@ -5,7 +5,7 @@
   #apply Graph.NodeElement("derivedFrom", "DerivedFrom")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/derivedFrom/$", "0")
   #apply Graph.LinkByReference("focus", "^%Id%/derivedFrom/$", "%Id%/derivedFrom:", "1")
-
+  #
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open

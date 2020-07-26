@@ -23,7 +23,6 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
@@ -38,8 +37,6 @@ Description: """
   * referenceRange 0..0
 
   // Define Consistent With Slice
-
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -64,14 +61,12 @@ Description: """
 	"""
   * component[consistentWith].code = ObservationComponentSliceCodesCS#consistentWithValue
 
-
   * component[consistentWith].value[x] 1..1
   * component[consistentWith].value[x] only CodeableConcept
   * component[consistentWith].value[x] from ConsistentWithVS
 
 
   // Define Consistent With Qualifier Slice
-
   * component contains qualifier 0..*
   * component[qualifier] ^short = "Consistent With Qualifier component."
   * component[qualifier] ^comment = """
@@ -87,7 +82,6 @@ Description: """
     This code identifies the Consistent With Qualifier component.
 	"""
   * component[qualifier].code = ObservationComponentSliceCodesCS#consistentWithQualifier
-
 
   * component[qualifier].value[x] 0..1
   * component[qualifier].value[x] only CodeableConcept

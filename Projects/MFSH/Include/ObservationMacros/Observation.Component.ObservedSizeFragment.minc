@@ -11,22 +11,21 @@
 #Description: """
 # Fragment that adds 'Observed Size' components to Observation.
 # """
-
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #incompatible Observation.Component.Zero
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   // Define distribution region size.
   #apply Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",
   #	 """
@@ -43,7 +42,7 @@
   #  then the size is {upper bound} or less.
   #	 """,
   # "ObservationComponentSliceCodesCS#obsSize")
-	
+  #
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity units from UNITSOFLENGTH

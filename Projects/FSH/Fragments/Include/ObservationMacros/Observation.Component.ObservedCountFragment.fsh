@@ -5,13 +5,7 @@ Description: """
   Fragment that adds 'Observed Count' element to profile.
   """
 
-   
-
-
-
-
-
-  * component ^slicing.discriminator.type = #pattern
+     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -37,6 +31,5 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
-	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range

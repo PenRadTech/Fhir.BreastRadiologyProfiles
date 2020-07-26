@@ -2,7 +2,6 @@
  BiRad Fragment
  Fragment that adds 'BiRad code' element to profile
  */
-
  
 #Fragment: Observation.Component.BiRadFragment
 #Parent: Observation
@@ -10,26 +9,26 @@
 #Description: """
 # Fragment that adds 'BiRad code' element to profile
 # """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that define the BiRAD risk code.
   #  The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#targetBiRads")
-	
+  #
   #apply Observation.Component.SetCprofilept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 #end

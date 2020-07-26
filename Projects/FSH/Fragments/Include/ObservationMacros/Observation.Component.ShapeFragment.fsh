@@ -5,13 +5,7 @@ Description: """
   Adds Orientation, Shape, Margin, and Density Components
   """
 
-   
-
-
-
-  // Define Orientation Slice
-
-
+     // Define Orientation Slice
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -32,15 +26,10 @@ Description: """
     This code identifies the Orientation component.
 	"""
   * component[orientation].code = ObservationComponentSliceCodesCS#orientation
-
-
   * component[orientation].value[x] 1..1
   * component[orientation].value[x] only CodeableConcept
   * component[orientation].value[x] from OrientationVS
-
-
   // Define Shape Slice
-
   * component contains shape 0..1
   * component[shape] ^short = "Shape component."
   * component[shape] ^comment = """
@@ -56,14 +45,10 @@ Description: """
     This code identifies the Shape component.
 	"""
   * component[shape].code = ObservationComponentSliceCodesCS#shape
-
-
   * component[shape].value[x] 1..1
   * component[shape].value[x] only CodeableConcept
   * component[shape].value[x] from ShapeVS
-
   // Define Margin Slice
-
   * component contains margin 0..1
   * component[margin] ^short = "Margin component."
   * component[margin] ^comment = """
@@ -79,14 +64,10 @@ Description: """
     This code identifies the Margin component.
 	"""
   * component[margin].code = ObservationComponentSliceCodesCS#margin
-
-
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from ShapeVS
-
   // Define Breast Density
-
   * component contains mgBreastDensity 0..1
   * component[mgBreastDensity] ^short = "Density component."
   * component[mgBreastDensity] ^comment = """
@@ -103,8 +84,6 @@ Description: """
     This code identifies the Density component.
 	"""
   * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
-
-
   * component[mgBreastDensity].value[x] 1..1
   * component[mgBreastDensity].value[x] only CodeableConcept
   * component[mgBreastDensity].value[x] from MGBreastDensityVS

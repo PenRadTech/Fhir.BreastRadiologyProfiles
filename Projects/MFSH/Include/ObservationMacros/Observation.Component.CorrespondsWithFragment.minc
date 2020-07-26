@@ -11,27 +11,26 @@
 # 'Corresponds With' Component Fragment
 # Adds CorrespondsWith component
 # """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """
   #  This slice contains the optional components that define what this observation corresponds with.
   #  The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#correspondsWith")
- 
+  #
   #apply Observation.Component.SetCprofilept("correspondsWith", "1..1", "CorrespondsWithVS")
- 
 #end

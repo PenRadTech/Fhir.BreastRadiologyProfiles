@@ -17,8 +17,6 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
 
-
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -42,7 +40,6 @@ Description: """
 	"""
   * component[featureType].code = ObservationComponentSliceCodesCS#featureType
   
-
   * component[featureType].value[x] 1..1
   * component[featureType].value[x] only CodeableConcept
   * component[featureType].value[x] from AssociatedFeatureVS
@@ -56,7 +53,6 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
@@ -69,21 +65,10 @@ Description: """
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
-
-
-
-
-
-
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-
-
-
-
-
 
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
@@ -106,6 +91,5 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
-	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range

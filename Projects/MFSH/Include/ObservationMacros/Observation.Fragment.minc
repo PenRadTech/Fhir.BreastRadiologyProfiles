@@ -5,7 +5,7 @@
  
 #macro once Observation.Fragment()
   #apply Observation.CategoryFragment()
-  
+  #
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0

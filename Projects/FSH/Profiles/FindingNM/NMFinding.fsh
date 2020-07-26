@@ -17,7 +17,6 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
@@ -30,6 +29,5 @@ Description: """
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
-
   * interpretation 0..0
   * method 0..0

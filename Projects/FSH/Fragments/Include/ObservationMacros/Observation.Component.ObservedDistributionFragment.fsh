@@ -5,14 +5,7 @@ Description: """
   Fragment that adds 'Observed Distribution' components to Observation.
   """
 
-   
-
-
-
-
-  // define calcification distribution slice
-
-
+     // define calcification distribution slice
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -35,15 +28,10 @@ Description: """
     This code identifies the Observed distribution of abnormalities component.
 	"""
   * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
- 
-
   * component[obsDistribution].value[x] 1..1
   * component[obsDistribution].value[x] only CodeableConcept
   * component[obsDistribution].value[x] from CalcificationDistributionVS
- 
-
   // Define distribution region size.
-
   * component contains obsDistRegionSize 0..1
   * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
   * component[obsDistRegionSize] ^comment = """
@@ -71,7 +59,7 @@ Description: """
     This code identifies the Observed size of distribution region. component.
 	"""
   * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
-	
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity units from UNITSOFLENGTH

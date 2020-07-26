@@ -6,13 +6,7 @@ Description: """
   Adds CorrespondsWith component
   """
 
-   
-
-
-
-
-
-  * component ^slicing.discriminator.type = #pattern
+     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -32,8 +26,6 @@ Description: """
     This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
- 
-
   * component[correspondsWith].value[x] 1..1
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS

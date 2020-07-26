@@ -11,20 +11,20 @@
 #Description: """
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
@@ -32,10 +32,9 @@
   #  The value of this component is a codeable concept chosen from the OrientationVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#orientation")
-
+  #
   #apply Observation.Component.SetCprofilept("orientation", "1..1", "OrientationVS")
-
-
+  #
   // Define Shape Slice
   #apply Component.Add("shape", "0..1", "Shape", "Shape",
   #	 """
@@ -43,9 +42,9 @@
   #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#shape")
-
+  #
   #apply Observation.Component.SetCprofilept("shape", "1..1", "ShapeVS")
-
+  #
   // Define Margin Slice
   #apply Component.Add("margin", "0..1", "Margin", "Margin",
   #	 """
@@ -53,9 +52,9 @@
   #  The value of this component is a codeable concept chosen from the MarginVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#margin")
-
+  #
   #apply Observation.Component.SetCprofilept("margin", "1..1", "ShapeVS")
-
+  #
   // Define Breast Density
   #apply Component.Add("mgBreastDensity", "0..1", "Density", "Density",
   #	 """
@@ -64,7 +63,6 @@
   #  The value of this component is a codeable concept chosen from the MarginVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#mgBreastDensity")
-
+  #
   #apply Observation.Component.SetCprofilept("mgBreastDensity", "1..1", "MGBreastDensityVS")
-
 #end

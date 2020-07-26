@@ -5,7 +5,7 @@
   #apply Graph.NodeElement("component", "Components")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/component/$", "0")
   #apply Graph.LinkByName("focus", "^%Id%/component/$", "^%Id%/component:", "0")
-
+  #
   #incompatible Observation.Component.Zero
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"

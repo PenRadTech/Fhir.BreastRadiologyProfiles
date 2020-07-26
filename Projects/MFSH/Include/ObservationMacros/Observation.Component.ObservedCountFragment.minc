@@ -9,7 +9,6 @@
 #Description: """
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
-
   #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
@@ -17,13 +16,12 @@
   # <b>%FTitle%</b>
   # </p>
   #""")
-
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
@@ -37,8 +35,7 @@
   #   then it means {upper bound} or less.
   #	  """,
   #   "ObservationComponentSliceCodesCS#obsCount")
-	
+  #
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
-
 #end

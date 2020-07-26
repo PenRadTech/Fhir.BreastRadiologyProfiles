@@ -10,22 +10,21 @@
 #Description: """
 #  Fragment that adds 'Observed Distribution' components to Observation.
 #  """
-
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #incompatible Observation.Component.Zero
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   // define calcification distribution slice
   #apply Observation.Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",
   #	 """
@@ -35,10 +34,9 @@
   #  CalcificationDistributionVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsDistribution")
- 
+  #
   #apply Observation.Component.SetCprofilept("obsDistribution", "1..1", "CalcificationDistributionVS")
- 
-
+  #
   // Define distribution region size.
   #apply Observation.Component.Add("obsDistRegionSize", "0..1", "Observed Distribution Region Size", "Observed size of distribution region.",
   #	 """
@@ -58,7 +56,8 @@
   #  then the size is {upper bound} or less.
   #	  """,
   #  "ObservationComponentSliceCodesCS#obsDistRegionSize")
-	
+  #
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity units from UNITSOFLENGTH

@@ -3,7 +3,7 @@
  */
 #macro Observation.Component.SetCprofilept(SliceName, Cardinality, ValueSet)
   #apply Graph.LinkByBinding("focus", "^%Id%/component:SliceName/$", ".value[x]")
-
+  #
   * component[SliceName].value[x] Cardinality
   * component[SliceName].value[x] only CodeableConcept
   * component[SliceName].value[x] from ValueSet

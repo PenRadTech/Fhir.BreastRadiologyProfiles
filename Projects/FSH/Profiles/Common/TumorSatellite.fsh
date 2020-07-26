@@ -25,7 +25,6 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
@@ -49,8 +48,6 @@ Description: """
   * valueRange.low units from UNITSOFLENGTH
   * valueRange.high units from UNITSOFLENGTH
 
-
-
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open
@@ -62,6 +59,6 @@ Description: """
     This observation is derived from a 'Index Tumor Observation reference' observation.
     """
   * derivedFrom[indexTumor] ^definition = """
-This derivedFrom slice references the index tumor.
+    This derivedFrom slice references the index tumor.
     """
   * derivedFrom[indexTumor] only Reference(OBSERVATIONURL)

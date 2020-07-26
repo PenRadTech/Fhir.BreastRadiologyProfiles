@@ -11,27 +11,26 @@
 #  This fragment adds the references for the breast body location extension.
 #  The references are required, meaning that the breast body location must exist.
 #  """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
-
+  #
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/bodySite/$", "0")
   #apply Graph.LinkByName("focus", "^%Id%/bodySite/$", "^%Id%/bodySite.extension/$", "0")
   #apply Graph.LinkByName("focus", "^%Id%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1")
-
+  #
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."

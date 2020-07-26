@@ -5,13 +5,7 @@ Description: """
   Add Observed Changes Component Slice
   """
 
-     
-
-
-
-
-
-  * component ^slicing.discriminator.type = #pattern
+     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -31,8 +25,6 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
-
-
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS

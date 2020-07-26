@@ -5,13 +5,7 @@ Description: """
   'Demonstrated By' Component Fragment
   """
 
-   
-
-
-
-
-
-  * component ^slicing.discriminator.type = #pattern
+     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -33,8 +27,6 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
-
-
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS

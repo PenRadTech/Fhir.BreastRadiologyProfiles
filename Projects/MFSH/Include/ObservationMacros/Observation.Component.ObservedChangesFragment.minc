@@ -7,26 +7,25 @@
 #Parent: Observation
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
-  
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
- #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
+  #
+  #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.
   #  The value of this component is a codeable concept chosen from the ObservedChangesVS valueset.
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsChanges")
-
+  #
   #apply Observation.Component.SetCprofilept("obsChanges", "1..1", "ObservedChangesVS")
 #end

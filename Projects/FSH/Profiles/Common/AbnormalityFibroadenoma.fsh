@@ -10,8 +10,6 @@ Description: """
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
 
-
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -33,7 +31,6 @@ Description: """
 	"""
   * component[fibroAdenomaType].code = ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType
 
-
   * component[fibroAdenomaType].value[x] 1..1
   * component[fibroAdenomaType].value[x] only CodeableConcept
   * component[fibroAdenomaType].value[x] from AbnormalityFibroAdenomaTypeVS
@@ -45,7 +42,6 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-  
   * interpretation 0..0
   * referenceRange 0..0
   * basedOn 0..0
@@ -58,22 +54,11 @@ Description: """
   * value[x] 0..0
   * interpretation 0..0
   * referenceRange 0..0
-
-
-
-
-
-
   * bodySite 1..1
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
   
-  
-
-
-
-
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -89,16 +74,9 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
-
-
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
-
-
-
-
-
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -114,17 +92,10 @@ Description: """
     This code identifies the BiRads Assessment Category component. component.
 	"""
   * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
-	
-
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
-
-
-
-
   // Define Orientation Slice
-
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
   * component[orientation] ^comment = """
@@ -140,15 +111,10 @@ Description: """
     This code identifies the Orientation component.
 	"""
   * component[orientation].code = ObservationComponentSliceCodesCS#orientation
-
-
   * component[orientation].value[x] 1..1
   * component[orientation].value[x] only CodeableConcept
   * component[orientation].value[x] from OrientationVS
-
-
   // Define Shape Slice
-
   * component contains shape 0..1
   * component[shape] ^short = "Shape component."
   * component[shape] ^comment = """
@@ -164,14 +130,10 @@ Description: """
     This code identifies the Shape component.
 	"""
   * component[shape].code = ObservationComponentSliceCodesCS#shape
-
-
   * component[shape].value[x] 1..1
   * component[shape].value[x] only CodeableConcept
   * component[shape].value[x] from ShapeVS
-
   // Define Margin Slice
-
   * component contains margin 0..1
   * component[margin] ^short = "Margin component."
   * component[margin] ^comment = """
@@ -187,14 +149,10 @@ Description: """
     This code identifies the Margin component.
 	"""
   * component[margin].code = ObservationComponentSliceCodesCS#margin
-
-
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from ShapeVS
-
   // Define Breast Density
-
   * component contains mgBreastDensity 0..1
   * component[mgBreastDensity] ^short = "Density component."
   * component[mgBreastDensity] ^comment = """
@@ -211,17 +169,9 @@ Description: """
     This code identifies the Density component.
 	"""
   * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
-
-
   * component[mgBreastDensity].value[x] 1..1
   * component[mgBreastDensity].value[x] only CodeableConcept
   * component[mgBreastDensity].value[x] from MGBreastDensityVS
-
-
-
-
-
-
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -243,17 +193,9 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
-	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
-
-
-
-
-
-
   // define calcification distribution slice
-
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
   * component[obsDistribution] ^comment = """
@@ -271,15 +213,10 @@ Description: """
     This code identifies the Observed distribution of abnormalities component.
 	"""
   * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
- 
-
   * component[obsDistribution].value[x] 1..1
   * component[obsDistribution].value[x] only CodeableConcept
   * component[obsDistribution].value[x] from CalcificationDistributionVS
- 
-
   // Define distribution region size.
-
   * component contains obsDistRegionSize 0..1
   * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
   * component[obsDistRegionSize] ^comment = """
@@ -307,19 +244,13 @@ Description: """
     This code identifies the Observed size of distribution region. component.
 	"""
   * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
-	
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity units from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.low units from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.high units from UNITSOFLENGTH
-
-
-
-
-
   // Define distribution region size.
-
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
@@ -344,17 +275,11 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
-	
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity units from UNITSOFLENGTH
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
-
-
-
-
-
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -372,17 +297,9 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
-
-
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
-
-
-
-
-
-
 
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

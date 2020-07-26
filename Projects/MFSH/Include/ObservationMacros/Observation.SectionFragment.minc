@@ -5,7 +5,7 @@
   #apply Observation.Fragment()
   #apply Observation.Component.Zero()
   #apply Observation.Value.Zero()
-
+  #
   * interpretation 0..0
   * method 0..0  
 #end

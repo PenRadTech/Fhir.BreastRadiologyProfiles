@@ -4,7 +4,7 @@
 #macro once Observation.HasMember.Slice()
   #apply Graph.NodeElement("hasMember", "HasMember")
   #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/hasMember/$", "0")
-
+  #
   #incompatible Observation.LeafFragment
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"

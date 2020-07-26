@@ -5,14 +5,7 @@ Description: """
   Fragment that adds 'Observed Size' components to Observation.
   """
 
-   
-
-
-
-
-  // Define distribution region size.
-
-
+     // Define distribution region size.
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -42,7 +35,6 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
-	
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity units from UNITSOFLENGTH

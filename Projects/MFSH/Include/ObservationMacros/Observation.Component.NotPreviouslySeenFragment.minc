@@ -8,26 +8,26 @@
 #Description: """
 #  Adds NotPreviously Seen Component slice.
 #  """
-
+  #
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>
   # <b>%FTitle%</b>
   # </p>
   #""")
-
+  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-
+  #
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
+  #
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
   # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
   # The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
   #	""",
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
-
+  #
   #apply Observation.Component.SetCprofilept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
 #end

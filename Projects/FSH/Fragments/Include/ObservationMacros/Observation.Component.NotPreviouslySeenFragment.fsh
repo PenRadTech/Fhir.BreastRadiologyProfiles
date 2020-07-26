@@ -5,13 +5,7 @@ Description: """
   Adds NotPreviously Seen Component slice.
   """
 
-   
-
-
-
-
-
-  * component ^slicing.discriminator.type = #pattern
+     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -31,8 +25,6 @@ Description: """
     This code identifies the Not Previously Seen component.
 	"""
   * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
-
-
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
