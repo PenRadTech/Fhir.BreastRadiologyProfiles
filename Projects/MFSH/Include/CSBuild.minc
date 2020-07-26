@@ -51,11 +51,10 @@
 // Name is name of interface.
 // Id is name of profile that implements interface (used to query element definitions)
 //
-#macro CSBuild.DefineFragment(%Name%)
+#macro CSBuild.DefineFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineFragment" : {
-  `    "fragmentName" : "%Name%",
-  `    "implementationId" : "%Id%"
+  `    "fragmentName" : "%FId%"
   `  }
   `},
 #end

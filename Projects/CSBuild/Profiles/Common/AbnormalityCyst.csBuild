@@ -41,6 +41,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityCyst"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCyst"
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
@@ -87,6 +94,11 @@
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "TumorSatelliteFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityCyst"

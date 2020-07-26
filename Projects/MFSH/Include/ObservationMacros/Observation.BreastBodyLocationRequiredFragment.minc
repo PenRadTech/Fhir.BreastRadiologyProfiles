@@ -19,6 +19,7 @@
   # </p>
   #""")
 
+  #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
 
   #apply once Graph.NodeFragment("%FTitle%")

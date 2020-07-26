@@ -8,10 +8,6 @@
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
   
-  #apply CSBuild.ImplementFragment()
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
-
 
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
@@ -19,6 +15,11 @@
   # <b>%FTitle%</b>
   # </p>
   #""")
+
+  #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ImplementFragment()
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
  #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """

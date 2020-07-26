@@ -41,6 +41,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityMass"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityMass"
     "fragmentName" : "ObservedSizeFragment"
   }
 },

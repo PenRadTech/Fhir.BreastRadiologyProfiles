@@ -46,6 +46,18 @@
 },
 
 {
+  "defineFragment" : {
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityAsymmetry"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry"
     "fragmentName" : "CorrespondsWithFragment"

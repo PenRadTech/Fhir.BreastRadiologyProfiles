@@ -4,12 +4,22 @@
   }
 },
 {
+  "defineFragment" : {
+    "fragmentName" : "BreastBodyLocationRequiredFragment"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "ObservedChangesFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
@@ -18,12 +28,22 @@
 },
 
 {
+  "defineFragment" : {
+    "fragmentName" : "BiRadFragment"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
     "fragmentName" : "BiRadFragment"
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "ShapeFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
@@ -32,12 +52,22 @@
 },
 
 {
+  "defineFragment" : {
+    "fragmentName" : "NotPreviouslySeenFragment"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "CorrespondsWithFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
@@ -46,6 +76,11 @@
 },
 
 {
+  "defineFragment" : {
+    "fragmentName" : "PreviouslyDemonstratedByFragment"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
     "fragmentName" : "PreviouslyDemonstratedByFragment"
@@ -53,12 +88,22 @@
 },
 
 {
+  "defineFragment" : {
+    "fragmentName" : "AssociatedFeatureFragment"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "ConsistentWithFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion"

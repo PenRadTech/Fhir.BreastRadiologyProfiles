@@ -41,10 +41,27 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "defineFragment" : {
+    "fragmentName" : "ObservedSizeFragment"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification"
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
+{
+  "defineFragment" : {
+    "fragmentName" : "ObservedDistributionFragment"
+  }
+},
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification"

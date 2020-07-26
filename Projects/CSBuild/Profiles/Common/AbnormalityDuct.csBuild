@@ -41,6 +41,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct"
     "fragmentName" : "ObservedDistributionFragment"
   }
 },

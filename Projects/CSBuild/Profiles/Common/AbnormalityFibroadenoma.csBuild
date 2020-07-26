@@ -41,6 +41,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFibroadenoma"
     "fragmentName" : "ObservedDistributionFragment"
   }
 },

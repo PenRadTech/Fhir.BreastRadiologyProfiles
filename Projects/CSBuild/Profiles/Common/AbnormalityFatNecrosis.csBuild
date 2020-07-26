@@ -48,6 +48,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityFatNecrosis"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis"
     "fragmentName" : "ObservedSizeFragment"
   }
 },

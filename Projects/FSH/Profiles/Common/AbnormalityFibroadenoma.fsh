@@ -98,6 +98,7 @@ Description: """
 
 
 
+
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -250,6 +251,7 @@ Description: """
 
 
 
+
   // define calcification distribution slice
 
   * component contains obsDistribution 0..*
@@ -348,6 +350,7 @@ Description: """
   * component[obsSize].valueQuantity units from UNITSOFLENGTH
   * component[obsSize].valueRange.low units from UNITSOFLENGTH
   * component[obsSize].valueRange.high units from UNITSOFLENGTH
+
 
 
 

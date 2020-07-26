@@ -41,6 +41,13 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},
+
+{
+  "implementFragment" : {
+    "className" : "AbnormalityLymphNode"
     "fragmentName" : "ObservedDistributionFragment"
   }
 },

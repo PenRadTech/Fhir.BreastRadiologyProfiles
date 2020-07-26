@@ -98,6 +98,7 @@ Description: """
 
 
 
+
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -245,6 +246,7 @@ Description: """
 	
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
 
 
 
@@ -399,6 +401,7 @@ Description: """
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
  
+
 
 
 

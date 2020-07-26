@@ -16,3 +16,10 @@
     "fragmentName" : "ObservedCountFragment"
   }
 },
+
+{
+  "implementFragment" : {
+    "className" : "AssociatedFeature"
+    "fragmentName" : "ObservedCountFragment"
+  }
+},

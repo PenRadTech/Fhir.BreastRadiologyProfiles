@@ -19,6 +19,8 @@
   #""")
 
 
+  #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ImplementFragment()
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
 
