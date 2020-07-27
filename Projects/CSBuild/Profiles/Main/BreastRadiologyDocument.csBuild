@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "BreastRadiologyDocument"
+    "className" : "BreastRadiologyDocument",
+    "traceMsg" : "Profiles/Main/BreastRadiologyDocument.mfsh#8/n"
   }
 },

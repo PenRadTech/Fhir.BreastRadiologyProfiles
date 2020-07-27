@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "BreastBodyLocationDepthVS"
+    "name" : "BreastBodyLocationDepthVS",
+    "traceMsg" : "Terminology/BreastBodyLocationDepth.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "BreastBodyLocationDepthCS"
+    "name" : "BreastBodyLocationDepthCS",
+    "traceMsg" : "Terminology/BreastBodyLocationDepth.mfsh#13/n"
   }
 },

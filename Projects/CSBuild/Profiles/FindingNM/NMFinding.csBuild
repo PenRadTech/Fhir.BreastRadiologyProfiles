@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "NMFinding"
+    "className" : "NMFinding",
+    "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#8/n"
   }
 },

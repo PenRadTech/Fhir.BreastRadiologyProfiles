@@ -1,25 +1,21 @@
 {
   "defineClass" : {
-    "className" : "AssociatedFeature"
+    "className" : "AssociatedFeature",
+    "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#8/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AssociatedFeature",
-    "fragmentName" : "BreastBodyLocationRequiredFragment"
-  }
-},
-
-{
-  "implementFragment" : {
-    "className" : "AssociatedFeature",
-    "fragmentName" : "ObservedCountFragment"
+    "fragmentName" : "BreastBodyLocationRequiredFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AssociatedFeature.mfsh#50/n"
   }
 },
 
 {
   "implementFragment" : {
     "className" : "AssociatedFeature",
-    "fragmentName" : "ObservedCountFragment"
+    "fragmentName" : "ObservedCountFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#20/nProfiles/Common/AssociatedFeature.mfsh#52/n"
   }
 },

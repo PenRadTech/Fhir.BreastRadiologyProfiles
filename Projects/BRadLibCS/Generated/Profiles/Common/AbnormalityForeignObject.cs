@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityForeignObject.
 	/// </summary>
-	public interface IAbnormalityForeignObject 
+	public interface IAbnormalityForeignObject  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, INotPreviouslySeenFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, IConsistentWithFragment
 	{
 
 	}

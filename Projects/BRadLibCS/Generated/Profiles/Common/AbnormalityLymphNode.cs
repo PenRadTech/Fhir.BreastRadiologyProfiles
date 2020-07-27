@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityLymphNode.
 	/// </summary>
-	public interface IAbnormalityLymphNode 
+	public interface IAbnormalityLymphNode  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, IObservedCountFragment, IObservedDistributionFragment, IObservedSizeFragment, INotPreviouslySeenFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, ITumorSatelliteFragment
 	{
 
 	}

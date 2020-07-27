@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityDuct.
 	/// </summary>
-	public interface IAbnormalityDuct 
+	public interface IAbnormalityDuct  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, IObservedCountFragment, IObservedDistributionFragment, IObservedSizeFragment, INotPreviouslySeenFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IConsistentWithFragment
 	{
 
 	}

@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "ServiceRecommendation"
+    "className" : "ServiceRecommendation",
+    "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#8/n"
   }
 },

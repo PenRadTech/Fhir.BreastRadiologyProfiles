@@ -9,7 +9,6 @@
 #Description: """
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
-  #apply CSBuild.ImplementFragment()
   #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
   #apply once IntroDocFragment("""
   # <p>

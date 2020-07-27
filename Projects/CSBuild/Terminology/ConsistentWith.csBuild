@@ -1,5 +1,6 @@
 {
   "defineValueSet" : {
-    "name" : "ConsistentWithVS"
+    "name" : "ConsistentWithVS",
+    "traceMsg" : "Terminology/ConsistentWith.mfsh#8/n"
   }
 },

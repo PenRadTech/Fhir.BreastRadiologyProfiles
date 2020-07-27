@@ -1,5 +1,6 @@
 {
   "defineCodeSystem" : {
-    "name" : "ObservationComponentSliceCodesCS"
+    "name" : "ObservationComponentSliceCodesCS",
+    "traceMsg" : "Terminology/ObservationComponentSliceCodes.mfsh#5/n"
   }
 },

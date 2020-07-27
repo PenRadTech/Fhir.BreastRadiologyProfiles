@@ -4,7 +4,8 @@
 #macro CSBuild.DefineClass() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineClass" : {
-  `    "className" : "%Id%"
+  `    "className" : "%Id%",
+  `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
 #end
@@ -16,7 +17,8 @@
   `{
   `  "implementFragment" : {
   `    "className" : "%Id%",
-  `    "fragmentName" : "%FId%"
+  `    "fragmentName" : "%FId%",
+  `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
 
@@ -29,7 +31,8 @@
 #macro CSBuild.DefineCodeSystem() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineCodeSystem" : {
-  `    "name" : "%Id%"
+  `    "name" : "%Id%",
+  `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
 #end
@@ -40,7 +43,8 @@
 #macro CSBuild.DefineValueSet() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineValueSet" : {
-  `    "name" : "%Id%"
+  `    "name" : "%Id%",
+  `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
 #end
@@ -54,7 +58,8 @@
 #macro CSBuild.DefineFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineFragment" : {
-  `    "fragmentName" : "%FId%"
+  `    "fragmentName" : "%FId%",
+  `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
 #end

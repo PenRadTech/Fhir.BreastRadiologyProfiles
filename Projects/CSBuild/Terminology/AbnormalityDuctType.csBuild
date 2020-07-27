@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "AbnormalityDuctTypeVS"
+    "name" : "AbnormalityDuctTypeVS",
+    "traceMsg" : "Terminology/AbnormalityDuctType.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "AbnormalityDuctTypeCS"
+    "name" : "AbnormalityDuctTypeCS",
+    "traceMsg" : "Terminology/AbnormalityDuctType.mfsh#12/n"
   }
 },

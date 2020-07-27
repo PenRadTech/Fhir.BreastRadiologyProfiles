@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityCalcification.
 	/// </summary>
-	public interface IAbnormalityCalcification 
+	public interface IAbnormalityCalcification  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, INotPreviouslySeenFragment, IObservedCountFragment, IObservedSizeFragment, IObservedDistributionFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, IConsistentWithFragment
 	{
 
 	}

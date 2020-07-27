@@ -135,7 +135,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AssociatedFeature/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#23/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AssociatedFeature.mfsh#52/n"
     }
   },
   {
@@ -148,6 +148,6 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#26/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AssociatedFeature.mfsh#52/n"
     }
   },

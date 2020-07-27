@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityMass.
 	/// </summary>
-	public interface IAbnormalityMass 
+	public interface IAbnormalityMass  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, IObservedCountFragment, IObservedSizeFragment, IObservedDistributionFragment, INotPreviouslySeenFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, IConsistentWithFragment, ITumorSatelliteFragment
 	{
 
 	}

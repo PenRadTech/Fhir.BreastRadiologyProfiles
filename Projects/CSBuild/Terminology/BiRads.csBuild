@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "BiRadsAssessmentCategoryVS"
+    "name" : "BiRadsAssessmentCategoryVS",
+    "traceMsg" : "Terminology/BiRads.mfsh#8/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "BiRadsAssessmentCategoryCS"
+    "name" : "BiRadsAssessmentCategoryCS",
+    "traceMsg" : "Terminology/BiRads.mfsh#19/n"
   }
 },

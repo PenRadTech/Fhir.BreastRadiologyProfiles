@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "FindingsLeftBreast"
+    "className" : "FindingsLeftBreast",
+    "traceMsg" : "Profiles/Main/FindingsLeftBreast.mfsh#2/n"
   }
 },

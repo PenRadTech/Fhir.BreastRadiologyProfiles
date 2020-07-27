@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityArchitecturalDistortion.
 	/// </summary>
-	public interface IAbnormalityArchitecturalDistortion 
+	public interface IAbnormalityArchitecturalDistortion  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, INotPreviouslySeenFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, IConsistentWithFragment
 	{
 
 	}

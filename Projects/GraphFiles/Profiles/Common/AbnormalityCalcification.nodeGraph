@@ -225,7 +225,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AbnormalityCalcification/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#23/nProfiles/Common/AbnormalityCalcification.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityCalcification.mfsh#37/n"
     }
   },
   {
@@ -238,7 +238,7 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCalcification.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#26/nProfiles/Common/AbnormalityCalcification.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AbnormalityCalcification.mfsh#37/n"
     }
   },
   {

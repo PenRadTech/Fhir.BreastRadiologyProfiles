@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "AbnormalityAsymmetryTypeVS"
+    "name" : "AbnormalityAsymmetryTypeVS",
+    "traceMsg" : "Terminology/AbnormalityAsymmetryType.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "AbnormalityAsymmetryTypeCS"
+    "name" : "AbnormalityAsymmetryTypeCS",
+    "traceMsg" : "Terminology/AbnormalityAsymmetryType.mfsh#12/n"
   }
 },

@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAssociatedFeature.
 	/// </summary>
-	public interface IAssociatedFeature 
+	public interface IAssociatedFeature  : IBreastBodyLocationRequiredFragment, IObservedCountFragment
 	{
 
 	}

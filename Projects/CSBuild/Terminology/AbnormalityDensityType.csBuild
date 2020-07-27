@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "AbnormalityDensityTypeVS"
+    "name" : "AbnormalityDensityTypeVS",
+    "traceMsg" : "Terminology/AbnormalityDensityType.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "AbnormalityDensityTypeCS"
+    "name" : "AbnormalityDensityTypeCS",
+    "traceMsg" : "Terminology/AbnormalityDensityType.mfsh#12/n"
   }
 },

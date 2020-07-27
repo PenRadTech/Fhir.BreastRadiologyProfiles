@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "MGBreastDensityVS"
+    "name" : "MGBreastDensityVS",
+    "traceMsg" : "Terminology/MGBreastDensity.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "MGBreastDensityCS"
+    "name" : "MGBreastDensityCS",
+    "traceMsg" : "Terminology/MGBreastDensity.mfsh#13/n"
   }
 },

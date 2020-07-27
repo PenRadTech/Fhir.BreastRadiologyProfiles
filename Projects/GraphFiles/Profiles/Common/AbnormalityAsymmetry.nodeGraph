@@ -320,7 +320,7 @@
       },
       "displayName" : "Observed Count Fragment",
       "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#21/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
     }
   },
   {
@@ -335,7 +335,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#23/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
     }
   },
   {
@@ -348,7 +348,7 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
     }
   },
   {

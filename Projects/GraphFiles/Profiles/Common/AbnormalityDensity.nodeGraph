@@ -318,7 +318,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AbnormalityDensity/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#23/nProfiles/Common/AbnormalityDensity.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityDensity.mfsh#38/n"
     }
   },
   {
@@ -331,7 +331,7 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityDensity.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#26/nProfiles/Common/AbnormalityDensity.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AbnormalityDensity.mfsh#38/n"
     }
   },
   {

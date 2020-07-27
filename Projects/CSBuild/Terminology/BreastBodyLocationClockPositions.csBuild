@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "BreastBodyLocationClockPositionsVS"
+    "name" : "BreastBodyLocationClockPositionsVS",
+    "traceMsg" : "Terminology/BreastBodyLocationClockPositions.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "BreastBodyLocationClockPositionsCS"
+    "name" : "BreastBodyLocationClockPositionsCS",
+    "traceMsg" : "Terminology/BreastBodyLocationClockPositions.mfsh#12/n"
   }
 },

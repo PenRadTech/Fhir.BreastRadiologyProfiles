@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityAsymmetry.
 	/// </summary>
-	public interface IAbnormalityAsymmetry 
+	public interface IAbnormalityAsymmetry  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, INotPreviouslySeenFragment, IObservedCountFragment, ICorrespondsWithFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment, IConsistentWithFragment
 	{
 
 	}

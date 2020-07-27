@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "MRIFinding"
+    "className" : "MRIFinding",
+    "traceMsg" : "Profiles/FindingMRI/MRIFinding.mfsh#8/n"
   }
 },

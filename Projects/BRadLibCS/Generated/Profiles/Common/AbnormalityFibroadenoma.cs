@@ -17,7 +17,7 @@ namespace BreastRadLib
 	/// <summary>
 	/// Interface IAbnormalityFibroadenoma.
 	/// </summary>
-	public interface IAbnormalityFibroadenoma 
+	public interface IAbnormalityFibroadenoma  : IBreastBodyLocationRequiredFragment, IObservedChangesFragment, IBiRadFragment, IShapeFragment, IObservedCountFragment, IObservedDistributionFragment, IObservedSizeFragment, IPreviouslyDemonstratedByFragment, IAssociatedFeatureFragment
 	{
 
 	}

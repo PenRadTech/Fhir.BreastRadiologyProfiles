@@ -1,5 +1,6 @@
 {
   "defineCodeSystem" : {
-    "name" : "MassTypeCS"
+    "name" : "MassTypeCS",
+    "traceMsg" : "Terminology/MassType.mfsh#5/n"
   }
 },

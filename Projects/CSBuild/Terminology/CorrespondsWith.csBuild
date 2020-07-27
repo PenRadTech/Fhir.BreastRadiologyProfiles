@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "CorrespondsWithVS"
+    "name" : "CorrespondsWithVS",
+    "traceMsg" : "Terminology/CorrespondsWith.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "CorrespondsWithCS"
+    "name" : "CorrespondsWithCS",
+    "traceMsg" : "Terminology/CorrespondsWith.mfsh#13/n"
   }
 },

@@ -1,10 +1,12 @@
 {
   "defineValueSet" : {
-    "name" : "AbnormalityMassTypeVS"
+    "name" : "AbnormalityMassTypeVS",
+    "traceMsg" : "Terminology/AbnormalityMassType.mfsh#5/n"
   }
 },
 {
   "defineCodeSystem" : {
-    "name" : "AbnormalityMassTypeCS"
+    "name" : "AbnormalityMassTypeCS",
+    "traceMsg" : "Terminology/AbnormalityMassType.mfsh#13/n"
   }
 },

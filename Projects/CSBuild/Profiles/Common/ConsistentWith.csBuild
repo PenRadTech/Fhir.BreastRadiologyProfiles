@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "ConsistentWith"
+    "className" : "ConsistentWith",
+    "traceMsg" : "Profiles/Common/ConsistentWith.mfsh#8/n"
   }
 },

@@ -1,5 +1,6 @@
 {
   "defineClass" : {
-    "className" : "MGBreastDensity"
+    "className" : "MGBreastDensity",
+    "traceMsg" : "Profiles/FindingMG/MGBreastDensity.mfsh#8/n"
   }
 },
