@@ -5,56 +5,56 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityForeignObject"
+    "className" : "AbnormalityForeignObject",
     "fragmentName" : "ConsistentWithFragment"
   }
 },

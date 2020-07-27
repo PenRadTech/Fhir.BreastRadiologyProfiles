@@ -5,91 +5,91 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityLymphNode"
+    "className" : "AbnormalityLymphNode",
     "fragmentName" : "TumorSatelliteFragment"
   }
 },

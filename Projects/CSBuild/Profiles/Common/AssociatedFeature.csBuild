@@ -5,21 +5,21 @@
 },
 {
   "implementFragment" : {
-    "className" : "AssociatedFeature"
+    "className" : "AssociatedFeature",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AssociatedFeature"
+    "className" : "AssociatedFeature",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AssociatedFeature"
+    "className" : "AssociatedFeature",
     "fragmentName" : "ObservedCountFragment"
   }
 },

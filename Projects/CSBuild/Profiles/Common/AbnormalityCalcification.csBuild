@@ -5,42 +5,42 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ObservedCountFragment"
   }
 },
@@ -52,7 +52,7 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
@@ -64,35 +64,35 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCalcification"
+    "className" : "AbnormalityCalcification",
     "fragmentName" : "ConsistentWithFragment"
   }
 },

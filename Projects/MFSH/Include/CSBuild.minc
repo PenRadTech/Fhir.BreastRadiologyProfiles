@@ -15,7 +15,7 @@
 #macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "implementFragment" : {
-  `    "className" : "%Id%"
+  `    "className" : "%Id%",
   `    "fragmentName" : "%FId%"
   `  }
   `},

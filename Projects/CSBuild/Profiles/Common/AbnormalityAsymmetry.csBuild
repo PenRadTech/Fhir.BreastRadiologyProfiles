@@ -5,42 +5,42 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ObservedCountFragment"
   }
 },
@@ -52,35 +52,35 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityAsymmetry"
+    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ConsistentWithFragment"
   }
 },

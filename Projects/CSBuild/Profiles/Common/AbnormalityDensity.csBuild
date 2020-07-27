@@ -5,91 +5,91 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityDensity"
+    "className" : "AbnormalityDensity",
     "fragmentName" : "ConsistentWithFragment"
   }
 },

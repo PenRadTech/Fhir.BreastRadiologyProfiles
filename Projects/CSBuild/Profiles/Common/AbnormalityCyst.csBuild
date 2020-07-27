@@ -5,91 +5,91 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "ConsistentWithFragment"
   }
 },
@@ -101,7 +101,7 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityCyst"
+    "className" : "AbnormalityCyst",
     "fragmentName" : "TumorSatelliteFragment"
   }
 },

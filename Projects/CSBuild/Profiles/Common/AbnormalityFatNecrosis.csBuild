@@ -5,91 +5,91 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFatNecrosis"
+    "className" : "AbnormalityFatNecrosis",
     "fragmentName" : "ConsistentWithFragment"
   }
 },

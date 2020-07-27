@@ -5,70 +5,70 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityFibroadenoma"
+    "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },

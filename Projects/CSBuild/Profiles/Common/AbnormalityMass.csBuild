@@ -5,98 +5,98 @@
 },
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "BreastBodyLocationRequiredFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ObservedChangesFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "BiRadFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ShapeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ObservedCountFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ObservedSizeFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ObservedDistributionFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "NotPreviouslySeenFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "CorrespondsWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "PreviouslyDemonstratedByFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "AssociatedFeatureFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "ConsistentWithFragment"
   }
 },
 
 {
   "implementFragment" : {
-    "className" : "AbnormalityMass"
+    "className" : "AbnormalityMass",
     "fragmentName" : "TumorSatelliteFragment"
   }
 },
