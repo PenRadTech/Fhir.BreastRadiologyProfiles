@@ -19,7 +19,12 @@
 		{
 			"path": "GraphFiles",
 			"filter": "*.nodeGraph"
+		},
+		{
+			"path": "CSBuilder",
+			"filter": "*.*"
 		}
+
 	],
 	"defines": [
 		{
