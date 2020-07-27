@@ -12,7 +12,7 @@ namespace BreastRadLib
     /// and provides access to the index of that document, which is the
     /// Composition instance.
     /// </summary>
-    public class BreastRadiologyDocument
+    public partial class BreastRadiologyDocument
     {
         /// <summary>
         /// Reference to Subject of document. This is propogated to all observations in this document that reference
@@ -38,18 +38,18 @@ namespace BreastRadLib
         /// </summary>
         public ResourceBag ResourceBag { get; private set; }
 
-        /// <summary>
-        /// Fhir documents main composition item. This is the 'index' of the
-        /// fhir document, and must be the first item in the bundle.
-        /// </summary>
-        public CBreastRadiologyComposition Index;
+        //    /// <summary>
+        //    /// Fhir documents main composition item. This is the 'index' of the
+        //    /// fhir document, and must be the first item in the bundle.
+        //    /// </summary>
+        //    public CBreastRadiologyComposition Index;
 
-        /// <summary>
-        /// Private constructor. Use the static helper methods.
-        /// </summary>
-        private BreastRadiologyDocument()
-        {
-        }
+        //    /// <summary>
+        //    /// Private constructor. Use the static helper methods.
+        //    /// </summary>
+        //    private BreastRadiologyDocument()
+        //    {
+        //    }
 
         public void Register(BaseBase baseItem)
         {
@@ -83,114 +83,114 @@ namespace BreastRadLib
             //return retVal;
         }
 
-        /// <summary>
-        /// Create a new BreastRadiologyDocument and load it with the passed fhir document.
-        /// </summary>
-        /// <returns></returns>
-        public static BreastRadiologyDocument Read(Bundle bundle)
-        {
-            throw new NotImplementedException();
-            //$BreastRadiologyDocument retVal = new BreastRadiologyDocument();
-            //retVal.LoadBundle(bundle);
+        //    /// <summary>
+        //    /// Create a new BreastRadiologyDocument and load it with the passed fhir document.
+        //    /// </summary>
+        //    /// <returns></returns>
+        //    public static BreastRadiologyDocument Read(Bundle bundle)
+        //    {
+        //        throw new NotImplementedException();
+        //        //$BreastRadiologyDocument retVal = new BreastRadiologyDocument();
+        //        //retVal.LoadBundle(bundle);
 
-            //// now write all the others.
-            //foreach (BaseBase baseItem in retVal.items.Values.ToArray())
-            //{
-            //    baseItem.Read(); ;
-            //}
+        //        //// now write all the others.
+        //        //foreach (BaseBase baseItem in retVal.items.Values.ToArray())
+        //        //{
+        //        //    baseItem.Read(); ;
+        //        //}
 
-            //retVal.Subject = retVal.Index.Resource.Subject;
-            //retVal.Encounter = retVal.Index.Resource.Encounter;
-            //return retVal;
-        }
+        //        //retVal.Subject = retVal.Index.Resource.Subject;
+        //        //retVal.Encounter = retVal.Index.Resource.Encounter;
+        //        //return retVal;
+        //    }
 
-        /// <summary>
-        /// Read FhirDocument from a bundle.
-        /// </summary>
-        /// <returns></returns>
-        void LoadBundle(Bundle bundle)
-        {
-            throw new NotImplementedException();
-            //$this.ResourceBag = new ResourceBag(bundle);
+        //    /// <summary>
+        //    /// Read FhirDocument from a bundle.
+        //    /// </summary>
+        //    /// <returns></returns>
+        //    void LoadBundle(Bundle bundle)
+        //    {
+        //        throw new NotImplementedException();
+        //        //$this.ResourceBag = new ResourceBag(bundle);
 
-            //// First entry is always composition item.
-            //{
-            //    Composition index = bundle.Entry?.First().Resource as Composition;
-            //    if (index == null)
-            //        throw new Exception($"Invalid bundle. First item is not a Composition");
-            //    this.Index = new BreastRadComposition(this, index);
-            //}
-            //foreach (Bundle.EntryComponent entry in bundle.Entry.Skip(1))
-            //{
-            //    String profile = entry.Resource?.Meta?.Profile?.First();
-            //    if (profile == null)
-            //        throw new Exception("Resource in bundle lacks Meta.Profile element to identify the profile.");
-            //    var item = ResourceFactory.CreateBreastRadProfileResource(this,
-            //        profile,
-            //        entry.Resource);
-            //    if (item == null)
-            //        item = new ResourceBase(this, (DomainResource)entry.Resource);
-            //}
-        }
+        //        //// First entry is always composition item.
+        //        //{
+        //        //    Composition index = bundle.Entry?.First().Resource as Composition;
+        //        //    if (index == null)
+        //        //        throw new Exception($"Invalid bundle. First item is not a Composition");
+        //        //    this.Index = new BreastRadComposition(this, index);
+        //        //}
+        //        //foreach (Bundle.EntryComponent entry in bundle.Entry.Skip(1))
+        //        //{
+        //        //    String profile = entry.Resource?.Meta?.Profile?.First();
+        //        //    if (profile == null)
+        //        //        throw new Exception("Resource in bundle lacks Meta.Profile element to identify the profile.");
+        //        //    var item = ResourceFactory.CreateBreastRadProfileResource(this,
+        //        //        profile,
+        //        //        entry.Resource);
+        //        //    if (item == null)
+        //        //        item = new ResourceBase(this, (DomainResource)entry.Resource);
+        //        //}
+        //    }
 
-        /// <summary>
-        /// Validate resource.
-        /// Throw exception if obvious error.
-        /// </summary>
-        public bool Validate(StringBuilder sb)
-        {
-            bool retVal = true;
-            if (this.Subject == null)
-            {
-                sb.Append($"BreastRadiologyDocument.Subject not set");
-                retVal = false;
-            }
+        //    /// <summary>
+        //    /// Validate resource.
+        //    /// Throw exception if obvious error.
+        //    /// </summary>
+        //    public bool Validate(StringBuilder sb)
+        //    {
+        //        bool retVal = true;
+        //        if (this.Subject == null)
+        //        {
+        //            sb.Append($"BreastRadiologyDocument.Subject not set");
+        //            retVal = false;
+        //        }
 
-            if (this.Encounter == null)
-            {
-                sb.Append($"BreastRadiologyDocument.Encounter not set");
-                retVal = false;
-            }
+        //        if (this.Encounter == null)
+        //        {
+        //            sb.Append($"BreastRadiologyDocument.Encounter not set");
+        //            retVal = false;
+        //        }
 
-            foreach (BaseBase baseItem in this.items.Values)
-            {
-                if (baseItem.Validate(sb) == false)
-                    retVal = false;
-            }
+        //        foreach (BaseBase baseItem in this.items.Values)
+        //        {
+        //            if (baseItem.Validate(sb) == false)
+        //                retVal = false;
+        //        }
 
-            return retVal;
-        }
+        //        return retVal;
+        //    }
 
-        /// <summary>
-        /// Write FhirDocument to a bundle and return it.
-        /// </summary>
-        /// <returns></returns>
-        public Bundle Write()
-        {
-            throw new NotImplementedException();
-            //$Bundle retVal = new Bundle();
-            //retVal.Type = Bundle.BundleType.Document;
+        //    /// <summary>
+        //    /// Write FhirDocument to a bundle and return it.
+        //    /// </summary>
+        //    /// <returns></returns>
+        //    public Bundle Write()
+        //    {
+        //        throw new NotImplementedException();
+        //        //$Bundle retVal = new Bundle();
+        //        //retVal.Type = Bundle.BundleType.Document;
 
-            //void WriteItem(BaseBase baseItem)
-            //{
-            //    baseItem.Write();
-            //    if (String.IsNullOrEmpty(baseItem.Id) == true)
-            //        throw new Exception($"Error saving resource. Resource has no id!");
-            //    retVal.AddResourceEntry((Resource)baseItem.BaseResource, baseItem.Id);
-            //}
+        //        //void WriteItem(BaseBase baseItem)
+        //        //{
+        //        //    baseItem.Write();
+        //        //    if (String.IsNullOrEmpty(baseItem.Id) == true)
+        //        //        throw new Exception($"Error saving resource. Resource has no id!");
+        //        //    retVal.AddResourceEntry((Resource)baseItem.BaseResource, baseItem.Id);
+        //        //}
 
-            //// Composition must be written first....
-            //WriteItem(this.Index);
+        //        //// Composition must be written first....
+        //        //WriteItem(this.Index);
 
-            //// now write all the others.
-            //foreach (BaseBase baseItem in this.items.Values)
-            //{
-            //    if (baseItem != this.Index)
-            //        WriteItem(baseItem);
-            //}
+        //        //// now write all the others.
+        //        //foreach (BaseBase baseItem in this.items.Values)
+        //        //{
+        //        //    if (baseItem != this.Index)
+        //        //        WriteItem(baseItem);
+        //        //}
 
-            //return this.ResourceBag.Bundle;
-        }
+        //        //return this.ResourceBag.Bundle;
+        //    }
 
         public T ReferencedResource<T>(ResourceReference resRef)
             where T : Base
