@@ -28,6 +28,20 @@ namespace BreastRadLib
 	/// </summary>
 	public partial class AssociatedFeature :  ObservationBase, IAssociatedFeature
 	{
+		// Properties from fragment BreastBodyLocationRequiredFragment
+		// CSItemFragment.cs:135
+		/// <summary>
+		/// Property for fragment BreastBodyLocationRequiredFragment element Observation.bodySite
+		/// </summary>
+		public NBreastBodyLocationRequiredFragment.BodySite bodySite { get; set; }
+		                                                                                                                                            // CSItemFragment.cs:139
+		// Properties from fragment ObservedCountFragment
+		// CSItemFragment.cs:135
+		/// <summary>
+		/// Property for fragment ObservedCountFragment element Observation.component
+		/// </summary>
+		public NObservedCountFragment.ObservedCount.Component ObservedCount { get; set; }
+		                                                                                                                                            // CSItemFragment.cs:139
 
 		/// <summary>
 		/// Constructor.
