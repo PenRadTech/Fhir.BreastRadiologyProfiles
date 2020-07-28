@@ -19,40 +19,41 @@ namespace BreastRadLib
 	/// </summary>
 	public interface IConsistentWithFragment 
 	{
-		// CSItemFragment.cs:127
+		// CSItemFragment.cs:142
 		/// <summary>
 		/// Property for element Observation.hasMember
 		/// </summary>
 		NConsistentWithFragment.ConsistentWith.HasMember ConsistentWith { get; set; }
-		                                                                                                                                          // CSItemFragment.cs:131
+		                                                                                                                                          // CSItemFragment.cs:146
 
+		void AppendHasMember(ResourceReference value);                                                                                            // CSItemFragment.cs:451
 	}
 
 
 	namespace NConsistentWithFragment
 	{
 		namespace ConsistentWith
-		{                                                                                                                                         // LocalClassHelper.cs:83
+		{                                                                                                                                         // CSItemFragment.cs:550
 		    /*
 		    Id: Observation.hasMember
 		    Cardinality 0 ... *
 		    */
-		    // LocalClassHelper.cs:99
+		    // CSItemFragment.cs:570
 		    /// <summary>
 		    /// This class defines the methods an properties for element Observation.hasMember
 		    /// </summary>
 		    public class HasMember
-		    {                                                                                                                                     // LocalClassHelper.cs:103
-		    }                                                                                                                                     // LocalClassHelper.cs:105
-		                                                                                                                                          // LocalClassHelper.cs:106
-		    // LocalClassHelper.cs:107
+		    {                                                                                                                                     // CSItemFragment.cs:574
+		    }                                                                                                                                     // CSItemFragment.cs:576
+		                                                                                                                                          // CSItemFragment.cs:577
+		    // CSItemFragment.cs:578
 		    /// <summary>
 		    /// This class contains the extension methods for HasMember
 		    /// </summary>
 		    public static class HasMemberExtensions
-		    {                                                                                                                                     // LocalClassHelper.cs:111
-		    }                                                                                                                                     // LocalClassHelper.cs:113
-		}                                                                                                                                         // LocalClassHelper.cs:58
+		    {                                                                                                                                     // CSItemFragment.cs:582
+		    }                                                                                                                                     // CSItemFragment.cs:584
+		}                                                                                                                                         // CSItemFragment.cs:525
 
 	}
 }

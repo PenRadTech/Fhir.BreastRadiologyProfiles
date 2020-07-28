@@ -36,86 +36,86 @@ namespace BreastRadLib
 	public partial class AbnormalityArchitecturalDistortion :  ObservationBase, IAbnormalityArchitecturalDistortion
 	{
 		// Properties from fragment BreastBodyLocationRequiredFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment BreastBodyLocationRequiredFragment element Observation.bodySite
 		/// </summary>
 		public NBreastBodyLocationRequiredFragment.BodySite bodySite { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment ObservedChangesFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ObservedChangesFragment element Observation.component
 		/// </summary>
 		public NObservedChangesFragment.ObsChanges.Component ObsChanges { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment BiRadFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment BiRadFragment element Observation.component
 		/// </summary>
 		public NBiRadFragment.BiRadsAssessmentCategory.Component BiRadsAssessmentCategory { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment ShapeFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ShapeFragment element Observation.component
 		/// </summary>
 		public NShapeFragment.Orientation.Component Orientation { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
-		// CSItemFragment.cs:135
+		                                                                                                                                            // CSItemFragment.cs:154
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ShapeFragment element Observation.component
 		/// </summary>
 		public NShapeFragment.Shape.Component Shape { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
-		// CSItemFragment.cs:135
+		                                                                                                                                            // CSItemFragment.cs:154
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ShapeFragment element Observation.component
 		/// </summary>
 		public NShapeFragment.Margin.Component Margin { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
-		// CSItemFragment.cs:135
+		                                                                                                                                            // CSItemFragment.cs:154
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ShapeFragment element Observation.component
 		/// </summary>
 		public NShapeFragment.MgBreastDensity.Component MgBreastDensity { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment NotPreviouslySeenFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment NotPreviouslySeenFragment element Observation.component
 		/// </summary>
 		public NNotPreviouslySeenFragment.NotPreviouslySeen.Component NotPreviouslySeen { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment CorrespondsWithFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment CorrespondsWithFragment element Observation.component
 		/// </summary>
 		public NCorrespondsWithFragment.CorrespondsWith.Component CorrespondsWith { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment PreviouslyDemonstratedByFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment PreviouslyDemonstratedByFragment element Observation.component
 		/// </summary>
 		public NPreviouslyDemonstratedByFragment.PrevDemBy.Component PrevDemBy { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment AssociatedFeatureFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment AssociatedFeatureFragment element Observation.hasMember
 		/// </summary>
 		public NAssociatedFeatureFragment.AssociatedFeature.HasMember AssociatedFeature { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 		// Properties from fragment ConsistentWithFragment
-		// CSItemFragment.cs:135
+		// CSItemFragment.cs:150
 		/// <summary>
 		/// Property for fragment ConsistentWithFragment element Observation.hasMember
 		/// </summary>
 		public NConsistentWithFragment.ConsistentWith.HasMember ConsistentWith { get; set; }
-		                                                                                                                                            // CSItemFragment.cs:139
+		                                                                                                                                            // CSItemFragment.cs:154
 
 		/// <summary>
 		/// Constructor.
