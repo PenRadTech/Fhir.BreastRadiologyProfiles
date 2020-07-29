@@ -31,7 +31,7 @@
 #macro CSBuild.DefineCodeSystem() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineCodeSystem" : {
-  `    "name" : "%ProfileId%",
+  `    "name" : "%CodeSystemId%",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
@@ -43,7 +43,7 @@
 #macro CSBuild.DefineValueSet() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "defineValueSet" : {
-  `    "name" : "%ProfileId%",
+  `    "name" : "%ValueSetId%",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
@@ -65,7 +65,6 @@
 #end
 
 //
-// Define a CS Class.
 //
 #macro CSBuild.ComponentConceptTemplate(%PropertyName%, %VSName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{

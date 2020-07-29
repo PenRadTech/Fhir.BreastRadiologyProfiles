@@ -36,7 +36,7 @@
   `    "member" : {
   `      "groupingId" : "%GroupId%",
   `      "sort": "%Sort%",
-  `      "reference" : "ValueSet/%ProfileId%"
+  `      "reference" : "ValueSet/%ValueSetId%"
   `    }
   `  },
 #end
@@ -46,7 +46,7 @@
   `    "member" : {
   `      "groupingId" : "%GroupId%",
   `      "sort": "%Sort%",
-  `      "reference" : "CodeSystem/%ProfileId%"
+  `      "reference" : "CodeSystem/%CodeSystemId%"
   `    }
   `  },
 #end
