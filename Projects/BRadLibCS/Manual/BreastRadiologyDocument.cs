@@ -4,7 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BreastRadLib
+namespace BRadLibCS
 {
     /// <summary>
     /// This is the base of the Breast Radiology Report

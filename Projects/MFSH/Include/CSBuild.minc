@@ -68,9 +68,12 @@
 //
 #macro CSBuild.Property.ComponentConcept(%PropertyName%, %VSName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
-  `  "propertyTemplate" : {
+  `  "defineProperty" : {
   `    "parentName" : "%Id%",
   `    "propertyName" : "%PropertyName%",
+  `    "definitionCode" : [
+  `      "public ComponentConcept %PropertyName% { get; }",
+  `    ],
   `    "constructionCode" : [
   `      "this.%PropertyName% = new ComponentConcept()",
   `    ],

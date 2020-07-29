@@ -1,11 +1,10 @@
-﻿using BreastRadLib.CompositionLocal;
-using Hl7.Fhir.Model;
+﻿using Hl7.Fhir.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BreastRadLib
+namespace BRadLibCS
 {
     public interface ICompositionBase : IResourceBase
     {

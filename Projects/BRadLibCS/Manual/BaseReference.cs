@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace BreastRadLib
+namespace BRadLibCS
 {
     public class BaseReference<T>
         where T : BaseBase, new()

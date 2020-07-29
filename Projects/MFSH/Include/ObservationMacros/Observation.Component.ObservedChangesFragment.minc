@@ -17,7 +17,7 @@
   #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
-  #apply CSBuild.Property.ComponentConcept("%FragmentId%", "ObservedChangesVS")
+  #apply once CSBuild.Property.ComponentConcept("%FragmentId%", "ObservedChangesVS")
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #

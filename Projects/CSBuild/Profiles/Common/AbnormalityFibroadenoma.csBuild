@@ -21,26 +21,6 @@
 },
 
 {
-  "propertyTemplate" : {
-    "parentName" : "ObservedChangesFragment",
-    "propertyName" : "ObservedChangesFragment",
-    "constructionCode" : [
-      "this.ObservedChangesFragment = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#20/nProfiles/Common/AbnormalityFibroadenoma.mfsh#39/n"
-  }
-},
-{
-  "propertyTemplate" : {
-    "parentName" : "BiRadFragment",
-    "propertyName" : "BiRadFragment",
-    "constructionCode" : [
-      "this.BiRadFragment = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityFibroadenoma.mfsh#40/n"
-  }
-},
-{
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "BiRadFragment",
@@ -48,46 +28,6 @@
   }
 },
 
-{
-  "propertyTemplate" : {
-    "parentName" : "ShapeFragment",
-    "propertyName" : "Orientation",
-    "constructionCode" : [
-      "this.Orientation = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#23/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
-  }
-},
-{
-  "propertyTemplate" : {
-    "parentName" : "ShapeFragment",
-    "propertyName" : "Shape",
-    "constructionCode" : [
-      "this.Shape = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#24/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
-  }
-},
-{
-  "propertyTemplate" : {
-    "parentName" : "ShapeFragment",
-    "propertyName" : "Margin",
-    "constructionCode" : [
-      "this.Margin = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#25/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
-  }
-},
-{
-  "propertyTemplate" : {
-    "parentName" : "ShapeFragment",
-    "propertyName" : "MGBreastDensity",
-    "constructionCode" : [
-      "this.MGBreastDensity = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#26/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
-  }
-},
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
@@ -105,16 +45,6 @@
 },
 
 {
-  "propertyTemplate" : {
-    "parentName" : "ObservedDistributionFragment",
-    "propertyName" : "ObservedDistributionFragment",
-    "constructionCode" : [
-      "this.ObservedDistributionFragment = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#21/nProfiles/Common/AbnormalityFibroadenoma.mfsh#43/n"
-  }
-},
-{
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedDistributionFragment",
@@ -130,16 +60,6 @@
   }
 },
 
-{
-  "propertyTemplate" : {
-    "parentName" : "PreviouslyDemonstratedByFragment",
-    "propertyName" : "PreviouslyDemonstratedByFragment",
-    "constructionCode" : [
-      "this.PreviouslyDemonstratedByFragment = new ComponentConcept()",
-    ],
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#23/nProfiles/Common/AbnormalityFibroadenoma.mfsh#45/n"
-  }
-},
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",

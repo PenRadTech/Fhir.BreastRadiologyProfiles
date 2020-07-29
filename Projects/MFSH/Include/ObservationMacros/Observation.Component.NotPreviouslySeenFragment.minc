@@ -17,7 +17,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.Property.ComponentConcept("%FragmentId%", "NotPreviouslySeenVS")
+  #apply once CSBuild.Property.ComponentConcept("%FragmentId%", "NotPreviouslySeenVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")

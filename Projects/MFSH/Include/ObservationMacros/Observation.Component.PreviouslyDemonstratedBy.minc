@@ -20,7 +20,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.Property.ComponentConcept("%FragmentId%", "XXYYZ")
+  #apply once CSBuild.Property.ComponentConcept("%FragmentId%", "XXYYZ")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")

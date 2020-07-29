@@ -33,9 +33,12 @@
 },
 
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "ObservedChangesFragment",
     "propertyName" : "ObservedChangesFragment",
+    "definitionCode" : [
+      "public ComponentConcept ObservedChangesFragment { get; }",
+    ],
     "constructionCode" : [
       "this.ObservedChangesFragment = new ComponentConcept()",
     ],
@@ -49,9 +52,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "BiRadFragment",
     "propertyName" : "BiRadFragment",
+    "definitionCode" : [
+      "public ComponentConcept BiRadFragment { get; }",
+    ],
     "constructionCode" : [
       "this.BiRadFragment = new ComponentConcept()",
     ],
@@ -73,9 +79,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "ShapeFragment",
     "propertyName" : "Orientation",
+    "definitionCode" : [
+      "public ComponentConcept Orientation { get; }",
+    ],
     "constructionCode" : [
       "this.Orientation = new ComponentConcept()",
     ],
@@ -83,9 +92,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "ShapeFragment",
     "propertyName" : "Shape",
+    "definitionCode" : [
+      "public ComponentConcept Shape { get; }",
+    ],
     "constructionCode" : [
       "this.Shape = new ComponentConcept()",
     ],
@@ -93,9 +105,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "ShapeFragment",
     "propertyName" : "Margin",
+    "definitionCode" : [
+      "public ComponentConcept Margin { get; }",
+    ],
     "constructionCode" : [
       "this.Margin = new ComponentConcept()",
     ],
@@ -103,9 +118,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "ShapeFragment",
     "propertyName" : "MGBreastDensity",
+    "definitionCode" : [
+      "public ComponentConcept MGBreastDensity { get; }",
+    ],
     "constructionCode" : [
       "this.MGBreastDensity = new ComponentConcept()",
     ],
@@ -127,9 +145,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "NotPreviouslySeenFragment",
     "propertyName" : "NotPreviouslySeenFragment",
+    "definitionCode" : [
+      "public ComponentConcept NotPreviouslySeenFragment { get; }",
+    ],
     "constructionCode" : [
       "this.NotPreviouslySeenFragment = new ComponentConcept()",
     ],
@@ -151,9 +172,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "CorrespondsWithFragment",
     "propertyName" : "CorrespondsWithFragment",
+    "definitionCode" : [
+      "public ComponentConcept CorrespondsWithFragment { get; }",
+    ],
     "constructionCode" : [
       "this.CorrespondsWithFragment = new ComponentConcept()",
     ],
@@ -175,9 +199,12 @@
   }
 },
 {
-  "propertyTemplate" : {
+  "defineProperty" : {
     "parentName" : "PreviouslyDemonstratedByFragment",
     "propertyName" : "PreviouslyDemonstratedByFragment",
+    "definitionCode" : [
+      "public ComponentConcept PreviouslyDemonstratedByFragment { get; }",
+    ],
     "constructionCode" : [
       "this.PreviouslyDemonstratedByFragment = new ComponentConcept()",
     ],

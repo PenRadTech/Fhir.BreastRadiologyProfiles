@@ -20,10 +20,10 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.Property.ComponentConcept("Orientation", "OrientationVS")
-  #apply CSBuild.Property.ComponentConcept("Shape", "ShapeVS")
-  #apply CSBuild.Property.ComponentConcept("Margin", "MarginVS")
-  #apply CSBuild.Property.ComponentConcept("MGBreastDensity", "MGBreastDensityVS")
+  #apply once CSBuild.Property.ComponentConcept("Orientation", "OrientationVS")
+  #apply once CSBuild.Property.ComponentConcept("Shape", "ShapeVS")
+  #apply once CSBuild.Property.ComponentConcept("Margin", "MarginVS")
+  #apply once CSBuild.Property.ComponentConcept("MGBreastDensity", "MGBreastDensityVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")

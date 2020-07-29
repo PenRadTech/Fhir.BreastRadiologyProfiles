@@ -7,6 +7,6 @@ using System.Linq;
 using Hl7.Fhir.Model;
 using Hl7.Fhir.Serialization;
 
-namespace BreastRadLib.MedicationRequestLocal
+namespace BRadLibCS.MedicationRequestLocal
 {
 }
