@@ -30,7 +30,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityLymphNodeType")
 
-  #apply Observation.Component.SetCprofilept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
+  #apply Observation.Component.SetConcept("lymphNodeType", "1..1", "AbnormalityLymphNodeTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

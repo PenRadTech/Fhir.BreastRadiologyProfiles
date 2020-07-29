@@ -33,16 +33,36 @@
 },
 
 {
+  "propertyTemplate" : {
+    "fragmentName" : "ObservedChangesFragment",
+    "propertyName" : "ObservedChangesFragment",
+    "constructionCode" : [
+      "this.ObservedChangesFragment = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#25/n"
+  }
+},
+{
   "defineFragment" : {
     "fragmentName" : "BiRadFragment",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
   }
 },
 {
+  "propertyTemplate" : {
+    "fragmentName" : "BiRadFragment",
+    "propertyName" : "BiRadFragment",
+    "constructionCode" : [
+      "this.BiRadFragment = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#26/n"
   }
 },
 
@@ -53,10 +73,50 @@
   }
 },
 {
+  "propertyTemplate" : {
+    "fragmentName" : "ShapeFragment",
+    "propertyName" : "Orientation",
+    "constructionCode" : [
+      "this.Orientation = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
+  }
+},
+{
+  "propertyTemplate" : {
+    "fragmentName" : "ShapeFragment",
+    "propertyName" : "Shape",
+    "constructionCode" : [
+      "this.Shape = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#24/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
+  }
+},
+{
+  "propertyTemplate" : {
+    "fragmentName" : "ShapeFragment",
+    "propertyName" : "Margin",
+    "constructionCode" : [
+      "this.Margin = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#25/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
+  }
+},
+{
+  "propertyTemplate" : {
+    "fragmentName" : "ShapeFragment",
+    "propertyName" : "MGBreastDensity",
+    "constructionCode" : [
+      "this.MGBreastDensity = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#26/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#27/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#27/n"
   }
 },
 
@@ -67,10 +127,20 @@
   }
 },
 {
+  "propertyTemplate" : {
+    "fragmentName" : "NotPreviouslySeenFragment",
+    "propertyName" : "NotPreviouslySeenFragment",
+    "constructionCode" : [
+      "this.NotPreviouslySeenFragment = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#28/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#20/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#21/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#28/n"
   }
 },
 
@@ -81,10 +151,20 @@
   }
 },
 {
+  "propertyTemplate" : {
+    "fragmentName" : "CorrespondsWithFragment",
+    "propertyName" : "CorrespondsWithFragment",
+    "constructionCode" : [
+      "this.CorrespondsWithFragment = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#29/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#29/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#24/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#29/n"
   }
 },
 
@@ -95,10 +175,20 @@
   }
 },
 {
+  "propertyTemplate" : {
+    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "propertyName" : "PreviouslyDemonstratedByFragment",
+    "constructionCode" : [
+      "this.PreviouslyDemonstratedByFragment = new ComponentConcept()",
+    ],
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#30/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#24/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#30/n"
   }
 },
 

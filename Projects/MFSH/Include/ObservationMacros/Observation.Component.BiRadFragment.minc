@@ -18,6 +18,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "BiRadsAssessmentCategoryVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
@@ -30,5 +31,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#targetBiRads")
   #
-  #apply Observation.Component.SetCprofilept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
+  #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 #end

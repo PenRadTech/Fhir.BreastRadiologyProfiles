@@ -83,7 +83,7 @@
       "source" : "^ObservedChangesFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#21/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#22/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -96,7 +96,7 @@
       "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#23/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -109,7 +109,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#23/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -118,7 +118,7 @@
       "source" : "^AbnormalityFatNecrosis/$",
       "target" : "^AbnormalityFatNecrosis/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#23/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -127,7 +127,7 @@
       "source" : "^AbnormalityFatNecrosis/component/$",
       "target" : "^AbnormalityFatNecrosis/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#23/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -135,7 +135,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#30/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#31/nProfiles/Common/AbnormalityFatNecrosis.mfsh#28/n"
     }
   },
   {
@@ -144,7 +144,7 @@
       "source" : "^BiRadFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#25/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
     }
   },
   {
@@ -157,7 +157,7 @@
       "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#27/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
     }
   },
   {
@@ -165,7 +165,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#33/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#34/nProfiles/Common/AbnormalityFatNecrosis.mfsh#29/n"
     }
   },
   {
@@ -174,7 +174,7 @@
       "source" : "^ShapeFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#30/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -187,7 +187,7 @@
       "displayName" : "Orientation",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#29/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#33/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -195,7 +195,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#36/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#40/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -208,7 +208,7 @@
       "displayName" : "Shape",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:shape",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#39/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#43/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -216,7 +216,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#46/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -229,7 +229,7 @@
       "displayName" : "Margin",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:margin",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#49/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#53/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -237,7 +237,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#56/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#60/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -250,7 +250,7 @@
       "displayName" : "Density",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:mgBreastDensity",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#59/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#63/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -258,7 +258,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:mgBreastDensity/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#67/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#71/nProfiles/Common/AbnormalityFatNecrosis.mfsh#30/n"
     }
   },
   {
@@ -267,7 +267,7 @@
       "source" : "^NotPreviouslySeenFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#23/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#24/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
     }
   },
   {
@@ -280,7 +280,7 @@
       "displayName" : "Not Previously Seen",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#25/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
     }
   },
   {
@@ -288,7 +288,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#32/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#33/nProfiles/Common/AbnormalityFatNecrosis.mfsh#31/n"
     }
   },
   {
@@ -341,7 +341,7 @@
       "source" : "^ObservedDistributionFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#27/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
   },
   {
@@ -354,7 +354,7 @@
       "displayName" : "Observed Distribution",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:obsDistribution",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#29/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#30/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
   },
   {
@@ -362,7 +362,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:obsDistribution/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#38/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#39/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
   },
   {
@@ -375,7 +375,7 @@
       "displayName" : "Observed Distribution Region Size",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:obsDistRegionSize",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#41/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#42/nProfiles/Common/AbnormalityFatNecrosis.mfsh#34/n"
     }
   },
   {
@@ -384,7 +384,7 @@
       "source" : "^CorrespondsWithFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#27/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
     }
   },
   {
@@ -397,7 +397,7 @@
       "displayName" : "Corresponds With",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#28/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#29/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
     }
   },
   {
@@ -405,7 +405,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#35/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#36/nProfiles/Common/AbnormalityFatNecrosis.mfsh#35/n"
     }
   },
   {
@@ -414,7 +414,7 @@
       "source" : "^PreviouslyDemonstratedByFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#27/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
     }
   },
   {
@@ -427,7 +427,7 @@
       "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#28/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#29/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
     }
   },
   {
@@ -435,7 +435,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityFatNecrosis/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#37/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#38/nProfiles/Common/AbnormalityFatNecrosis.mfsh#36/n"
     }
   },
   {

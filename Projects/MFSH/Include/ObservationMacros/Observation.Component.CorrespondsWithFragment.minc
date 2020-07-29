@@ -20,6 +20,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "CorrespondsWithVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
@@ -32,5 +33,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#correspondsWith")
   #
-  #apply Observation.Component.SetCprofilept("correspondsWith", "1..1", "CorrespondsWithVS")
+  #apply Observation.Component.SetConcept("correspondsWith", "1..1", "CorrespondsWithVS")
 #end

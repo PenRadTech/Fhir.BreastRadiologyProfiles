@@ -66,7 +66,7 @@ Description: """
   * component[margin].code = ObservationComponentSliceCodesCS#margin
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
-  * component[margin].value[x] from ShapeVS
+  * component[margin].value[x] from MarginVS
   // Define Breast Density
   * component contains mgBreastDensity 0..1
   * component[mgBreastDensity] ^short = "Density component."

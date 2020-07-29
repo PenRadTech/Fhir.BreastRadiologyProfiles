@@ -30,7 +30,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityDuctType")
 
-  #apply Observation.Component.SetCprofilept("ductType", "1..1", "AbnormalityDuctTypeVS")
+  #apply Observation.Component.SetConcept("ductType", "1..1", "AbnormalityDuctTypeVS")
 
 
   #apply Observation.Device.Zero()

@@ -17,6 +17,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "NotPreviouslySeenVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
@@ -29,5 +30,5 @@
   #	""",
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
   #
-  #apply Observation.Component.SetCprofilept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
+  #apply Observation.Component.SetConcept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
 #end

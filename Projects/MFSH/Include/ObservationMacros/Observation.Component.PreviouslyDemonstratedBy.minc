@@ -20,6 +20,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "XXYYZ")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
@@ -34,5 +35,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#prevDemBy")
   #
-  #apply Observation.Component.SetCprofilept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
+  #apply Observation.Component.SetConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
 #end

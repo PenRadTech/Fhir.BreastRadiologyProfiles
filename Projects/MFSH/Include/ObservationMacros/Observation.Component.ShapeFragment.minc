@@ -20,6 +20,10 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("Orientation", "OrientationVS")
+  #apply CSBuild.ComponentConceptTemplate("Shape", "ShapeVS")
+  #apply CSBuild.ComponentConceptTemplate("Margin", "MarginVS")
+  #apply CSBuild.ComponentConceptTemplate("MGBreastDensity", "MGBreastDensityVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
@@ -33,7 +37,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#orientation")
   #
-  #apply Observation.Component.SetCprofilept("orientation", "1..1", "OrientationVS")
+  #apply Observation.Component.SetConcept("orientation", "1..1", "OrientationVS")
   #
   // Define Shape Slice
   #apply Component.Add("shape", "0..1", "Shape", "Shape",
@@ -43,7 +47,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#shape")
   #
-  #apply Observation.Component.SetCprofilept("shape", "1..1", "ShapeVS")
+  #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
   #
   // Define Margin Slice
   #apply Component.Add("margin", "0..1", "Margin", "Margin",
@@ -53,7 +57,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#margin")
   #
-  #apply Observation.Component.SetCprofilept("margin", "1..1", "ShapeVS")
+  #apply Observation.Component.SetConcept("margin", "1..1", "MarginVS")
   #
   // Define Breast Density
   #apply Component.Add("mgBreastDensity", "0..1", "Density", "Density",
@@ -64,5 +68,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#mgBreastDensity")
   #
-  #apply Observation.Component.SetCprofilept("mgBreastDensity", "1..1", "MGBreastDensityVS")
+  #apply Observation.Component.SetConcept("mgBreastDensity", "1..1", "MGBreastDensityVS")
 #end

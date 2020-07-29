@@ -35,7 +35,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityForeignObjectType")
 
-  #apply Observation.Component.SetCprofilept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
+  #apply Observation.Component.SetConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

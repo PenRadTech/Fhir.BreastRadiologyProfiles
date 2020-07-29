@@ -30,7 +30,7 @@ Description: """
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityCystType")
 
-  #apply Observation.Component.SetCprofilept("cystType", "1..1", "AbnormalityCystTypeVS")
+  #apply Observation.Component.SetConcept("cystType", "1..1", "AbnormalityCystTypeVS")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

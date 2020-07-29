@@ -18,6 +18,7 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "XXYYZ")
   #apply CSBuild.ImplementFragment()
   #
   #incompatible Observation.Component.Zero
@@ -35,7 +36,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsDistribution")
   #
-  #apply Observation.Component.SetCprofilept("obsDistribution", "1..1", "CalcificationDistributionVS")
+  #apply Observation.Component.SetConcept("obsDistribution", "1..1", "CalcificationDistributionVS")
   #
   // Define distribution region size.
   #apply Observation.Component.Add("obsDistRegionSize", "0..1", "Observed Distribution Region Size", "Observed size of distribution region.",

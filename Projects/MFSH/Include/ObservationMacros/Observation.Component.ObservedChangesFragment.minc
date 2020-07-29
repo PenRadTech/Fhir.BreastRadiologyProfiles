@@ -17,6 +17,7 @@
   #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
+  #apply CSBuild.ComponentConceptTemplate("%FId%", "ObservedChangesVS")
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
   #
@@ -27,5 +28,5 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#obsChanges")
   #
-  #apply Observation.Component.SetCprofilept("obsChanges", "1..1", "ObservedChangesVS")
+  #apply Observation.Component.SetConcept("obsChanges", "1..1", "ObservedChangesVS")
 #end
