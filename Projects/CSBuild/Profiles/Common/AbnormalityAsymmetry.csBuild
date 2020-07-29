@@ -22,7 +22,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "ObservedChangesFragment",
+    "parentName" : "ObservedChangesFragment",
     "propertyName" : "ObservedChangesFragment",
     "constructionCode" : [
       "this.ObservedChangesFragment = new ComponentConcept()",
@@ -32,7 +32,7 @@
 },
 {
   "propertyTemplate" : {
-    "fragmentName" : "BiRadFragment",
+    "parentName" : "BiRadFragment",
     "propertyName" : "BiRadFragment",
     "constructionCode" : [
       "this.BiRadFragment = new ComponentConcept()",
@@ -50,7 +50,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "ShapeFragment",
+    "parentName" : "ShapeFragment",
     "propertyName" : "Orientation",
     "constructionCode" : [
       "this.Orientation = new ComponentConcept()",
@@ -60,7 +60,7 @@
 },
 {
   "propertyTemplate" : {
-    "fragmentName" : "ShapeFragment",
+    "parentName" : "ShapeFragment",
     "propertyName" : "Shape",
     "constructionCode" : [
       "this.Shape = new ComponentConcept()",
@@ -70,7 +70,7 @@
 },
 {
   "propertyTemplate" : {
-    "fragmentName" : "ShapeFragment",
+    "parentName" : "ShapeFragment",
     "propertyName" : "Margin",
     "constructionCode" : [
       "this.Margin = new ComponentConcept()",
@@ -80,7 +80,7 @@
 },
 {
   "propertyTemplate" : {
-    "fragmentName" : "ShapeFragment",
+    "parentName" : "ShapeFragment",
     "propertyName" : "MGBreastDensity",
     "constructionCode" : [
       "this.MGBreastDensity = new ComponentConcept()",
@@ -98,7 +98,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "NotPreviouslySeenFragment",
+    "parentName" : "NotPreviouslySeenFragment",
     "propertyName" : "NotPreviouslySeenFragment",
     "constructionCode" : [
       "this.NotPreviouslySeenFragment = new ComponentConcept()",
@@ -130,7 +130,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "CorrespondsWithFragment",
+    "parentName" : "CorrespondsWithFragment",
     "propertyName" : "CorrespondsWithFragment",
     "constructionCode" : [
       "this.CorrespondsWithFragment = new ComponentConcept()",
@@ -148,7 +148,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "parentName" : "PreviouslyDemonstratedByFragment",
     "propertyName" : "PreviouslyDemonstratedByFragment",
     "constructionCode" : [
       "this.PreviouslyDemonstratedByFragment = new ComponentConcept()",

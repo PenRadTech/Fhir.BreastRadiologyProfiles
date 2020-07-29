@@ -22,7 +22,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "ObservedChangesFragment",
+    "parentName" : "ObservedChangesFragment",
     "propertyName" : "ObservedChangesFragment",
     "constructionCode" : [
       "this.ObservedChangesFragment = new ComponentConcept()",
@@ -32,7 +32,7 @@
 },
 {
   "propertyTemplate" : {
-    "fragmentName" : "BiRadFragment",
+    "parentName" : "BiRadFragment",
     "propertyName" : "BiRadFragment",
     "constructionCode" : [
       "this.BiRadFragment = new ComponentConcept()",
@@ -50,7 +50,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "NotPreviouslySeenFragment",
+    "parentName" : "NotPreviouslySeenFragment",
     "propertyName" : "NotPreviouslySeenFragment",
     "constructionCode" : [
       "this.NotPreviouslySeenFragment = new ComponentConcept()",
@@ -68,7 +68,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "CorrespondsWithFragment",
+    "parentName" : "CorrespondsWithFragment",
     "propertyName" : "CorrespondsWithFragment",
     "constructionCode" : [
       "this.CorrespondsWithFragment = new ComponentConcept()",
@@ -86,7 +86,7 @@
 
 {
   "propertyTemplate" : {
-    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "parentName" : "PreviouslyDemonstratedByFragment",
     "propertyName" : "PreviouslyDemonstratedByFragment",
     "constructionCode" : [
       "this.PreviouslyDemonstratedByFragment = new ComponentConcept()",

@@ -66,10 +66,10 @@
 
 //
 //
-#macro CSBuild.ComponentConceptTemplate(%PropertyName%, %VSName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.Property.ComponentConcept(%PropertyName%, %VSName%) > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{
   `  "propertyTemplate" : {
-  `    "fragmentName" : "%FragmentId%",
+  `    "parentName" : "%Id%",
   `    "propertyName" : "%PropertyName%",
   `    "constructionCode" : [
   `      "this.%PropertyName% = new ComponentConcept()",
