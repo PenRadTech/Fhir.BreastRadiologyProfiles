@@ -17,11 +17,11 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ComponentConceptTemplate("%FId%", "NotPreviouslySeenVS")
+  #apply CSBuild.ComponentConceptTemplate("%FragmentId%", "NotPreviouslySeenVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""

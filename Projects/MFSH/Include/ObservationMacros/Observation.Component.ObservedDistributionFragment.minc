@@ -18,13 +18,13 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ComponentConceptTemplate("%FId%", "XXYYZ")
+  #apply CSBuild.ComponentConceptTemplate("%FragmentId%", "XXYYZ")
   #apply CSBuild.ImplementFragment()
   #
   #incompatible Observation.Component.Zero
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   // define calcification distribution slice
   #apply Observation.Component.Add("obsDistribution", "0..*", "Observed Distribution", "Observed distribution of abnormalities",

@@ -3,7 +3,7 @@
 // The output of this gets automatically put at the start of the profile
 // web page.
 //
-#macro IntroDocProfile(%Description%) > "%PageContent%\\StructureDefinition-%Id%-intro.xml"
+#macro IntroDocProfile(%Description%) > "%PageContent%\\StructureDefinition-%ProfileId%-intro.xml"
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
@@ -20,8 +20,8 @@
   `   <p>
   `     Click on any of the elements of the graph to go to a section describing that element.
   `   </p>
-  `   <object data="FocusGraph-%Id%.svg" type="image/svg+xml">
-  `     <img src="FocusGraph-%Id%.svg" alt="image/svg+xml" />
+  `   <object data="FocusGraph-%ProfileId%.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-%ProfileId%.svg" alt="image/svg+xml" />
   `   </object>
   ` </div>
 #end
@@ -31,7 +31,7 @@
 // The output of this gets automatically put at the start of the profile
 // web page.
 //
-#macro IntroDocFragment(%Description%) > "%PageContent%\\StructureDefinition-%FId%-intro.xml"
+#macro IntroDocFragment(%Description%) > "%PageContent%\\StructureDefinition-%FragmentId%-intro.xml"
   ` <div xmlns="http://www.w3.org/1999/xhtml"
   `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
@@ -48,8 +48,8 @@
   `   <p>
   `     Click on any of the elements of the graph to go to a section describing that element.
   `   </p>
-  `   <object data="FragGraph-%FId%.svg" type="image/svg+xml">
-  `     <img src="FragGraph-%FId%.svg" alt="image/svg+xml" />
+  `   <object data="FragGraph-%FragmentId%.svg" type="image/svg+xml">
+  `     <img src="FragGraph-%FragmentId%.svg" alt="image/svg+xml" />
   `   </object>
   ` </div>
 #end

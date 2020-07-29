@@ -27,7 +27,7 @@
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",

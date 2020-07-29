@@ -20,11 +20,11 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ComponentConceptTemplate("%FId%", "CorrespondsWithVS")
+  #apply CSBuild.ComponentConceptTemplate("%FragmentId%", "CorrespondsWithVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """

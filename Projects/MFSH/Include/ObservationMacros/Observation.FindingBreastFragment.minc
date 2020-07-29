@@ -11,7 +11,7 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
   #apply Graph.NodeProfile("Findings/%Laterality% Breast")
   #apply Graph.NodeElement("bodySite", "Body Site")
-  //#apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/", "0")
+  //#apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/", "0")
   #
   #apply IntroDocProfile("""
   #<p>

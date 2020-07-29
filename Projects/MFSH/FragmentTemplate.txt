@@ -1,6 +1,6 @@
 #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
 
-Profile: %FId%
+Profile: %FragmentId%
 Parent: %FParent%
 Title: "%FTitle%"
 Description: """

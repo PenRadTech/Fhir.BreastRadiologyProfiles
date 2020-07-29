@@ -21,7 +21,7 @@
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   #apply Observation.HasMember.Add("tumorSatellite", "0..*", "Tumor Satellite", "TumorSatellite",
   #  "'Tumor Satellite' reference.",

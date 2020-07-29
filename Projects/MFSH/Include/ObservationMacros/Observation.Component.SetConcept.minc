@@ -2,7 +2,7 @@
   Constrain a  component slice value.
  */
 #macro Observation.Component.SetConcept(SliceName, Cardinality, ValueSet)
-  #apply Graph.LinkByBinding("focus", "^%Id%/component:SliceName/$", ".value[x]")
+  #apply Graph.LinkByBinding("focus", "^%ProfileId%/component:SliceName/$", ".value[x]")
   #
   * component[SliceName].value[x] Cardinality
   * component[SliceName].value[x] only CodeableConcept

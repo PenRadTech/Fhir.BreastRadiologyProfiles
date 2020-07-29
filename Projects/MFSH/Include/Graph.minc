@@ -4,7 +4,7 @@
 #macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
   `    "node" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%ProfileId%/",
   `      "anchor" : {
   `        "url" : "%Url%"
   `      },
@@ -15,7 +15,7 @@
   `  },
   `  {
   `    "graph" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%ProfileId%/",
   `      "traversalName" : "focus",
   `    }
   `  },
@@ -27,7 +27,7 @@
 #macro Graph.NodeFragment(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
   `    "node" : {
-  `      "nodeName" : "%FId%/",
+  `      "nodeName" : "%FragmentId%/",
   `      "anchor" : {
   `        "url" : "%FUrl%"
   `      },
@@ -38,7 +38,7 @@
   `  },
   `  {
   `    "graph" : {
-  `      "nodeName" : "%FId%/",
+  `      "nodeName" : "%FragmentId%/",
   `      "traversalName" : "frag",
   `    }
   `  },
@@ -50,7 +50,7 @@
 #macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
   `    "node" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%ProfileId%/",
   `      "anchor" : {
   `        "url" : "%Url%"
   `      },
@@ -61,7 +61,7 @@
   `  },
   `  {
   `    "graph" : {
-  `      "nodeName" : "%Id%/",
+  `      "nodeName" : "%ProfileId%/",
   `      "traversalName" : "focus",
   `    }
   `  },
@@ -73,14 +73,14 @@
 #macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
   `  {
   `    "node" : {
-  `      "nodeName" : "%Id%/%Path%/",
+  `      "nodeName" : "%ProfileId%/%Path%/",
   `      "anchor" : {
   `        "url" : "%Url%",
   `        "item" : "%Path%"
   `      },
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
-  `      "lhsAnnotationText": "^%Id%.%Path%",
+  `      "lhsAnnotationText": "^%ProfileId%.%Path%",
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },

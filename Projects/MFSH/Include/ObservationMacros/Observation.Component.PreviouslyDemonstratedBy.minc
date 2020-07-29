@@ -20,11 +20,11 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ComponentConceptTemplate("%FId%", "XXYYZ")
+  #apply CSBuild.ComponentConceptTemplate("%FragmentId%", "XXYYZ")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FId%/$", "^%Id%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
   #
   #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """

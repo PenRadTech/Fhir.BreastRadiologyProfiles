@@ -8,8 +8,8 @@ Description: """
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("BaseResources", "B")
   #apply Graph.NodeProfile("Breast/Radiology/Composition")
-  #apply Graph.LinkByName("focus", "^%Id%/$", "^%Id%/section:", "0")
-  #apply Graph.LinkByReference("focus", "^%Id%/section:", ".entry", "1")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1")
 
 
   #apply IntroDocProfile("""
