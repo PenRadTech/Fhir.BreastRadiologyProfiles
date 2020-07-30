@@ -6,20 +6,6 @@ Description: """
   Duct
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Duct")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Duct Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about a duct abnormality observation 
-  # </p>
-  # """)
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
@@ -48,3 +34,24 @@ Description: """
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
   
   #apply Observation.HasMember.ConsistentWithFragment()
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Duct Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a duct abnormality observation 
+  # </p>
+  # """)
+
+
+  #apply CSBuild.DefineClass()
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+  #apply Graph.NodeProfile("Duct")
+

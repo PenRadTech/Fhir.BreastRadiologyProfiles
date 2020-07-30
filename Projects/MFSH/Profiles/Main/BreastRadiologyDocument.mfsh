@@ -5,12 +5,20 @@ Description: """
 	Breast Radiology Document Bundle.
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("BaseResources", "A")
-  #apply Graph.NodeProfile("Breast/Radiology/Document")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/entry:", "0")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/entry:", ".resource", "1")
-  #apply Graph.NodeElement("entry:index", "Composition index")
+  #apply HeaderFragment()
+
+  * entry ^slicing.discriminator.type = #value
+  * entry ^slicing.discriminator.path = "fullUrl"
+  * entry ^slicing.rules = #open
+  * entry ^slicing.ordered = false
+  * entry ^slicing.description = "Index composition slice"
+  * entry contains index 1..1
+  * entry[index].fullUrl = "index"
+  * entry[index].resource only BreastRadiologyComposition
+
+
+
+
 
   #apply IntroDocProfile( """
   # <P>
@@ -32,13 +40,12 @@ Description: """
   # </P>
   # """)
 
-  #apply HeaderFragment()
+  #apply IGGroupMemberProfile("BaseResources", "A")
 
-  * entry ^slicing.discriminator.type = #value
-  * entry ^slicing.discriminator.path = "fullUrl"
-  * entry ^slicing.rules = #open
-  * entry ^slicing.ordered = false
-  * entry ^slicing.description = "Index composition slice"
-  * entry contains index 1..1
-  * entry[index].fullUrl = "index"
-  * entry[index].resource only BreastRadiologyComposition
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Breast/Radiology/Document")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/entry:", "0")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/entry:", ".resource", "1")
+  #apply Graph.NodeElement("entry:index", "Composition index")

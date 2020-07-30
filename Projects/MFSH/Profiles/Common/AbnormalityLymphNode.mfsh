@@ -6,20 +6,6 @@ Description: """
   LymphNode Abnormality
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Cyst")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>LymphNode Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about a lymph node abnormality observation 
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityLymphNodeObservation
 
@@ -48,3 +34,25 @@ Description: """
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.TumorSatelliteFragment()
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>LymphNode Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a lymph node abnormality observation 
+  # </p>
+  #""")
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Cyst")

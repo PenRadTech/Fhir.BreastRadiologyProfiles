@@ -7,24 +7,9 @@ Title: "Findings %Laterality% Breast"
 Description: """
 	Findings %Laterality% Breast profile.
 	"""  
-  #
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Findings/%Laterality% Breast")
-  #apply Graph.NodeElement("bodySite", "Body Site")
-  //#apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/", "0")
-  #
-  #apply IntroDocProfile("""
-  #<p>
-  # The Findings %Laterality% Breast profile contains references to all the observations
-  # and exam information related to the Right breast.
-  #</p>
-  #<p>
-  # There are only 0 or 1 of these items in any Breast Radiology Document.
-  #</p>
-  # """)
   #apply HeaderFragment()
   #apply Observation.Device.Zero()
-  #
+
   * value[x] only CodeableConcept
   * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
@@ -34,32 +19,52 @@ Description: """
 	Typically this is the most severe of all the BiRad 
 	codes set in any of the child observations of the %Laterality% Breast.
     """
-  #
+
   #apply Observation.HasMember.Add("mgFinding", "0..1", "MG Finding", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """
   #  This slice references the Mammography findings section.
   #  """)
   * hasMember[mgFinding] MS
-  #
+
   #apply Observation.HasMember.Add("mriFinding", "0..1", "MRI Finding", "MRIFinding",
   #  "'Magnetic Resonance Imaging Finding' reference.",
   #  """
   #  This slice references the MRI findings section.
   #  """)
   * hasMember[mriFinding] MS
-  #
+
   #apply Observation.HasMember.Add("nmFinding", "0..1", "NM Finding", "NMFinding", 
   #  "'Nuclear Medicine Finding' reference.",
   #  """
   #  This slice references the NM findings section.
   #  """)
   * hasMember[nmFinding] MS
-  #
+
   #apply Observation.HasMember.Add("usFinding", "0..1", "US Finding", "USFinding",
   #  "'Ultra Sound Finding' reference.",
   #  """
   #  This slice references the Ultra Sound findings section.
   #  """)
   * hasMember[usFinding] MS
+
+
+
+
+
+  #apply IntroDocProfile("""
+  #<p>
+  # The Findings %Laterality% Breast profile contains references to all the observations
+  # and exam information related to the Right breast.
+  #</p>
+  #<p>
+  # There are only 0 or 1 of these items in any Breast Radiology Document.
+  #</p>
+  # """)
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+  #apply Graph.NodeProfile("Findings/%Laterality% Breast")
+  #apply Graph.NodeElement("bodySite", "Body Site")
+
 #end

@@ -5,11 +5,8 @@ Description: """
   Fibroadenoma
   """
 
-
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -30,11 +27,9 @@ Description: """
     This code identifies the Fibroadenoma Abnormality component.
 	"""
   * component[fibroAdenomaType].code = ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType
-
   * component[fibroAdenomaType].value[x] 1..1
   * component[fibroAdenomaType].value[x] only CodeableConcept
   * component[fibroAdenomaType].value[x] from AbnormalityFibroAdenomaTypeVS
-
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -58,7 +53,6 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-  
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -300,7 +294,6 @@ Description: """
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
-
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open

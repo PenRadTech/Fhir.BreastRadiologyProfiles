@@ -5,9 +5,14 @@ Description: """
     Ultra-Sound Finding
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("USResources", "%Title%")
-  #apply Graph.NodeProfile("Ultra-Sound Findings")
+  * code 1..1
+  * code = ObservationCodesCS#usFindingObservation
+
+  #apply Observation.SectionFragment()
+
+
+
+
 
   #apply IntroDocProfile("""
   # <p>
@@ -23,7 +28,10 @@ Description: """
   # </p>
   #""")
 
-  * code 1..1
-  * code = ObservationCodesCS#usFindingObservation
 
-  #apply Observation.SectionFragment()
+  #apply IGGroupMemberProfile("USResources", "%Title%")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Ultra-Sound Findings")
+

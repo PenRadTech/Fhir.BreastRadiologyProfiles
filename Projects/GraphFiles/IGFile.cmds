@@ -7,13 +7,6 @@
   },
   {
     "member" : {
-      "groupingId" : "CommonResources",
-      "sort": "Mammography Architectural Distortion",
-      "reference" : "^StructureDefinition/AbnormalityArchitecturalDistortion$"
-    }
-  },
-  {
-    "member" : {
       "groupingId" : "Fragments",
       "sort": "Breast Body Location (Required) Fragment",
       "reference" : "^StructureDefinition/BreastBodyLocationRequiredFragment$"
@@ -78,8 +71,8 @@
   {
     "member" : {
       "groupingId" : "CommonResources",
-      "sort": "Asymmetry",
-      "reference" : "^StructureDefinition/AbnormalityAsymmetry$"
+      "sort": "Mammography Architectural Distortion",
+      "reference" : "^StructureDefinition/AbnormalityArchitecturalDistortion$"
     }
   },
   {
@@ -92,8 +85,8 @@
   {
     "member" : {
       "groupingId" : "CommonResources",
-      "sort": "Mammography Calcification",
-      "reference" : "^StructureDefinition/AbnormalityCalcification$"
+      "sort": "Asymmetry",
+      "reference" : "^StructureDefinition/AbnormalityAsymmetry$"
     }
   },
   {
@@ -113,8 +106,8 @@
   {
     "member" : {
       "groupingId" : "CommonResources",
-      "sort": "Cyst",
-      "reference" : "^StructureDefinition/AbnormalityCyst$"
+      "sort": "Mammography Calcification",
+      "reference" : "^StructureDefinition/AbnormalityCalcification$"
     }
   },
   {
@@ -122,6 +115,13 @@
       "groupingId" : "Fragments",
       "sort": "Tumor Satellite Fragment",
       "reference" : "^StructureDefinition/TumorSatelliteFragment$"
+    }
+  },
+  {
+    "member" : {
+      "groupingId" : "CommonResources",
+      "sort": "Cyst",
+      "reference" : "^StructureDefinition/AbnormalityCyst$"
     }
   },
   {

@@ -5,8 +5,6 @@ Description: """
     Associated Feature
     """
 
-
-
   * . ^definition = """
     This resource and referenced child resources contain 
     information about associated feature observations
@@ -16,7 +14,6 @@ Description: """
 
   * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -39,12 +36,9 @@ Description: """
     This code identifies the Associated Feature Type component.
 	"""
   * component[featureType].code = ObservationComponentSliceCodesCS#featureType
-  
   * component[featureType].value[x] 1..1
   * component[featureType].value[x] only CodeableConcept
   * component[featureType].value[x] from AssociatedFeatureVS
-
-
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
@@ -69,7 +63,6 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """

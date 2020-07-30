@@ -5,16 +5,6 @@ Description: """
     Mammography Breast Density
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("MGResources", "%Title%")
-  #apply Graph.NodeProfile("Breast Density")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Breast Density Observation</b>
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#mgBreastDensityObservation
 
@@ -25,3 +15,19 @@ Description: """
   * value[x] only CodeableConcept
   * value[x] 1..1
   * value[x] = ObservationCodesCS#mgBreastDensityObservation
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Breast Density Observation</b>
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("MGResources", "%Title%")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Breast Density")
+

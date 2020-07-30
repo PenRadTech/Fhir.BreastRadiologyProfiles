@@ -1,77 +1,69 @@
 {
-  "defineClass" : {
-    "className" : "AbnormalityFibroadenoma",
-    "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#9/n"
-  }
-},
-{
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "BreastBodyLocationRequiredFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AbnormalityFibroadenoma.mfsh#37/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AbnormalityFibroadenoma.mfsh#23/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedChangesFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#19/nProfiles/Common/AbnormalityFibroadenoma.mfsh#39/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#19/nProfiles/Common/AbnormalityFibroadenoma.mfsh#25/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#40/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#26/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#27/nProfiles/Common/AbnormalityFibroadenoma.mfsh#41/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#27/nProfiles/Common/AbnormalityFibroadenoma.mfsh#27/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#20/nProfiles/Common/AbnormalityFibroadenoma.mfsh#42/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#20/nProfiles/Common/AbnormalityFibroadenoma.mfsh#28/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#43/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#29/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "ObservedSizeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#44/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#22/nProfiles/Common/AbnormalityFibroadenoma.mfsh#30/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#24/nProfiles/Common/AbnormalityFibroadenoma.mfsh#45/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#24/nProfiles/Common/AbnormalityFibroadenoma.mfsh#31/n"
   }
 },
-
 {
   "implementFragment" : {
     "className" : "AbnormalityFibroadenoma",
     "fragmentName" : "AssociatedFeatureFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#20/nProfiles/Common/AbnormalityFibroadenoma.mfsh#47/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#20/nProfiles/Common/AbnormalityFibroadenoma.mfsh#33/n"
+  }
+},
+{
+  "defineClass" : {
+    "className" : "AbnormalityFibroadenoma",
+    "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#49/n"
   }
 },

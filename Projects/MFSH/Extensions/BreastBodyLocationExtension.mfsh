@@ -8,23 +8,6 @@ Description: """
     Breast Body Location Extension
     """
 
-  #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
-  #apply Graph.NodeExtension("BreastBodyLocation")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/", "0")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Breast Body Location extension</b>
-  # </p>
-  # <p>
-  # this extension defines the fields that are used to describe the
-  #  location of an observed item in a breast radiology report.
-  # </p>
-  # <p>
-  # Breast radiology exams have specific ways of defining a location that are unique to this field.
-  # </p>
-  #""")
-
   * . ^short = "Breast Body Location extension"
 
   #apply Extension.CodeableConcept("laterality", "0..1", "LateralityVS", "Body side",
@@ -68,3 +51,27 @@ Description: """
   #  The cardinality of distanceFromLandmark must match that of landmark, and each item in distanceFromLandmark will
   #  relate to its corresponding element in landmark.
   #  """)
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Breast Body Location extension</b>
+  # </p>
+  # <p>
+  # this extension defines the fields that are used to describe the
+  #  location of an observed item in a breast radiology report.
+  # </p>
+  # <p>
+  # Breast radiology exams have specific ways of defining a location that are unique to this field.
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
+
+  #apply Graph.NodeExtension("BreastBodyLocation")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/", "0")
+

@@ -5,16 +5,6 @@ Description: """
     Mammography Architectural Distortion
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Architectural Distortion")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # Architectural Distortion Observation
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityArchitecturalDistortionObservation
 
@@ -31,3 +21,23 @@ Description: """
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
+
+
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # Architectural Distortion Observation
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Architectural Distortion")

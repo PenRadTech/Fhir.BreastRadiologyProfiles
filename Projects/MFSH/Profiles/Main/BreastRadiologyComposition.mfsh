@@ -5,11 +5,30 @@ Description: """
     Composition instance for the Breast Radiology FHIR Document.
 """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("BaseResources", "B")
-  #apply Graph.NodeProfile("Breast/Radiology/Composition")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1")
+  #apply HeaderFragment()
+  * . ^short = "US Core Race Extension"
+  * type = LOINC#42132-1 "US Breast screening"
+
+  #apply StartSectionSlicing()
+
+  * section contains report 1..1 MS
+  * section contains impressions 0..1 MS
+  * section contains findingsRightBreast 0..1 MS
+  * section contains findingsLeftBreast 0..1 MS
+  * section contains relatedResources 0..1 MS
+  * section contains recommendations 0..1 MS
+  * section contains admin 0..1 MS
+
+  #apply ReportSection("report") 
+  #apply ImpressionsSection("impressions")
+  #apply FindingsRightBreastSection("findingsRightBreast")
+  #apply FindingsLeftBreastSection("findingsLeftBreast")
+  #apply RelatedResourcesSection("relatedResources")
+  #apply RecommendationsSection("recommendations")
+  #apply AdminSection("admin")
+
+
+
 
 
   #apply IntroDocProfile("""
@@ -44,24 +63,12 @@ Description: """
   # </P>
   # """)
 
-  #apply HeaderFragment()
-  * . ^short = "US Core Race Extension"
-  * type = LOINC#42132-1 "US Breast screening"
 
-  #apply StartSectionSlicing()
+  #apply IGGroupMemberProfile("BaseResources", "B")
 
-  * section contains report 1..1 MS
-  * section contains impressions 0..1 MS
-  * section contains findingsRightBreast 0..1 MS
-  * section contains findingsLeftBreast 0..1 MS
-  * section contains relatedResources 0..1 MS
-  * section contains recommendations 0..1 MS
-  * section contains admin 0..1 MS
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Breast/Radiology/Composition")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1")
 
-  #apply ReportSection("report") 
-  #apply ImpressionsSection("impressions")
-  #apply FindingsRightBreastSection("findingsRightBreast")
-  #apply FindingsLeftBreastSection("findingsLeftBreast")
-  #apply RelatedResourcesSection("relatedResources")
-  #apply RecommendationsSection("recommendations")
-  #apply AdminSection("admin")
+

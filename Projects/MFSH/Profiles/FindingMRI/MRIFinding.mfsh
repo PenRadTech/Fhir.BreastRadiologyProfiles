@@ -5,9 +5,14 @@ Description: """
     MRI Finding
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("MRIResources", "%Title%")
-  #apply Graph.NodeProfile("MRI Findings")
+  * code 1..1
+  * code = ObservationCodesCS#mriFindingObservation
+
+  #apply Observation.SectionFragment()
+
+
+
+
 
   #apply IntroDocProfile("""
   # <p>
@@ -23,7 +28,9 @@ Description: """
   # </p>
   #""")
  
-  * code 1..1
-  * code = ObservationCodesCS#mriFindingObservation
+  #apply IGGroupMemberProfile("MRIResources", "%Title%")
 
-  #apply Observation.SectionFragment()
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("MRI Findings")
+

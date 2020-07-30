@@ -1,27 +1,10 @@
 {
-    "node" : {
-      "nodeName" : "MGFinding/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGFinding"
-      },
-      "displayName" : "Mg Finding",
-      "cssClass" : "profile",
-      "traceMsg" : "Profiles/FindingMG/MGFinding.mfsh#10/n"
-    }
-  },
-  {
-    "graph" : {
-      "nodeName" : "MGFinding/",
-      "traversalName" : "focus",
-    }
-  },
-  {
     "linkByReference" : {
       "traversalName" : "focus",
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityCyst",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#13/n"
     }
   },
   {
@@ -34,7 +17,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^MGFinding.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nProfiles/FindingMG/MGFinding.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nProfiles/FindingMG/MGFinding.mfsh#13/n"
     }
   },
   {
@@ -43,7 +26,7 @@
       "source" : "^MGFinding/$",
       "target" : "^MGFinding/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nProfiles/FindingMG/MGFinding.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nProfiles/FindingMG/MGFinding.mfsh#13/n"
     }
   },
   {
@@ -52,7 +35,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityDuct",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#19/n"
     }
   },
   {
@@ -61,7 +44,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityForeignObject",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#42/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#26/n"
     }
   },
   {
@@ -70,7 +53,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityLymphNode",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#49/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#33/n"
     }
   },
   {
@@ -79,7 +62,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityMass",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#56/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#40/n"
     }
   },
   {
@@ -88,7 +71,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#63/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#47/n"
     }
   },
   {
@@ -97,7 +80,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityFibroadenoma",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#70/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#54/n"
     }
   },
   {
@@ -106,7 +89,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityArchDist",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#77/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#61/n"
     }
   },
   {
@@ -115,7 +98,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityAsymmetry",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#84/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#68/n"
     }
   },
   {
@@ -124,7 +107,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityCalcification",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#91/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#75/n"
     }
   },
   {
@@ -133,7 +116,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityDensity",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#97/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#81/n"
     }
   },
   {
@@ -142,7 +125,7 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:abnormalityFatNecrosis",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#103/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#87/n"
     }
   },
   {
@@ -151,6 +134,23 @@
       "source" : "^MGFinding/hasMember/$",
       "item" : "MGFinding.hasMember:mgBreastDensity",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#109/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nProfiles/FindingMG/MGFinding.mfsh#93/n"
+    }
+  },
+  {
+    "node" : {
+      "nodeName" : "MGFinding/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/MGFinding"
+      },
+      "displayName" : "Mg Finding",
+      "cssClass" : "profile",
+      "traceMsg" : "Profiles/FindingMG/MGFinding.mfsh#120/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "MGFinding/",
+      "traversalName" : "focus",
     }
   },

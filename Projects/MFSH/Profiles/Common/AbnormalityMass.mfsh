@@ -5,20 +5,6 @@ Description: """
   Mass Abnormality
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Mass")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Mass Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about a mass abnormality observation 
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityMassObservation
 
@@ -48,3 +34,26 @@ Description: """
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
   #apply Observation.HasMember.TumorSatelliteFragment()
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Mass Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a mass abnormality observation 
+  # </p>
+  #""")
+
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Mass")
+

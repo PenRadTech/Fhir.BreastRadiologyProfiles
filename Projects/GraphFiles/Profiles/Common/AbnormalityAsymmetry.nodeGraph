@@ -1,22 +1,5 @@
 {
     "node" : {
-      "nodeName" : "AbnormalityAsymmetry/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry"
-      },
-      "displayName" : "Asymmetry",
-      "cssClass" : "profile",
-      "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#11/n"
-    }
-  },
-  {
-    "graph" : {
-      "nodeName" : "AbnormalityAsymmetry/",
-      "traversalName" : "focus",
-    }
-  },
-  {
-    "node" : {
       "nodeName" : "AbnormalityAsymmetry/component:asymmetryType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry",
@@ -25,7 +8,7 @@
       "displayName" : "Asymmetry Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:asymmetryType",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AbnormalityAsymmetry.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AbnormalityAsymmetry.mfsh#12/n"
     }
   },
   {
@@ -38,7 +21,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#12/n"
     }
   },
   {
@@ -47,7 +30,7 @@
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#12/n"
     }
   },
   {
@@ -56,7 +39,7 @@
       "source" : "^AbnormalityAsymmetry/component/$",
       "target" : "^AbnormalityAsymmetry/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AbnormalityAsymmetry.mfsh#12/n"
     }
   },
   {
@@ -64,7 +47,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:asymmetryType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AbnormalityAsymmetry.mfsh#19/n"
     }
   },
   {
@@ -73,7 +56,7 @@
       "source" : "^BreastBodyLocationRequiredFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -86,7 +69,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -99,7 +82,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -108,7 +91,7 @@
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -117,7 +100,7 @@
       "source" : "^AbnormalityAsymmetry/bodySite/$",
       "target" : "^AbnormalityAsymmetry/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -126,7 +109,7 @@
       "source" : "^AbnormalityAsymmetry/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityAsymmetry.mfsh#23/n"
     }
   },
   {
@@ -135,7 +118,7 @@
       "source" : "^ObservedChangesFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#25/n"
     }
   },
   {
@@ -148,7 +131,7 @@
       "displayName" : "Observed Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:obsChanges",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#25/n"
     }
   },
   {
@@ -156,7 +139,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:obsChanges/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#31/nProfiles/Common/AbnormalityAsymmetry.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#31/nProfiles/Common/AbnormalityAsymmetry.mfsh#25/n"
     }
   },
   {
@@ -165,7 +148,7 @@
       "source" : "^BiRadFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#26/n"
     }
   },
   {
@@ -178,7 +161,7 @@
       "displayName" : "BiRads Code",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:biRadsAssessmentCategory",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#26/n"
     }
   },
   {
@@ -186,7 +169,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:biRadsAssessmentCategory/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#34/nProfiles/Common/AbnormalityAsymmetry.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.BiRadFragment.minc#34/nProfiles/Common/AbnormalityAsymmetry.mfsh#26/n"
     }
   },
   {
@@ -195,7 +178,7 @@
       "source" : "^ShapeFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#30/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#30/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -208,7 +191,7 @@
       "displayName" : "Orientation",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:orientation",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#33/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#33/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -216,7 +199,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:orientation/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#40/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#40/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -229,7 +212,7 @@
       "displayName" : "Shape",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:shape",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#43/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#43/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -237,7 +220,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:shape/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -250,7 +233,7 @@
       "displayName" : "Margin",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:margin",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#53/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#53/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -258,7 +241,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:margin/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#60/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#60/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -271,7 +254,7 @@
       "displayName" : "Density",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:mgBreastDensity",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#63/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#63/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -279,7 +262,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:mgBreastDensity/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#71/nProfiles/Common/AbnormalityAsymmetry.mfsh#37/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.ShapeFragment.minc#71/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
     }
   },
   {
@@ -288,7 +271,7 @@
       "source" : "^NotPreviouslySeenFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
     }
   },
   {
@@ -301,7 +284,7 @@
       "displayName" : "Not Previously Seen",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:notPreviouslySeen",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
     }
   },
   {
@@ -309,7 +292,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:notPreviouslySeen/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#33/nProfiles/Common/AbnormalityAsymmetry.mfsh#38/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#33/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
     }
   },
   {
@@ -320,7 +303,7 @@
       },
       "displayName" : "Observed Count Fragment",
       "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#21/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#21/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
     }
   },
   {
@@ -335,7 +318,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
     }
   },
   {
@@ -348,7 +331,7 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#39/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
     }
   },
   {
@@ -357,7 +340,7 @@
       "source" : "^CorrespondsWithFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#30/n"
     }
   },
   {
@@ -370,7 +353,7 @@
       "displayName" : "Corresponds With",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:correspondsWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#30/n"
     }
   },
   {
@@ -378,7 +361,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:correspondsWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#36/nProfiles/Common/AbnormalityAsymmetry.mfsh#40/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#36/nProfiles/Common/AbnormalityAsymmetry.mfsh#30/n"
     }
   },
   {
@@ -387,7 +370,7 @@
       "source" : "^PreviouslyDemonstratedByFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#41/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#27/nProfiles/Common/AbnormalityAsymmetry.mfsh#31/n"
     }
   },
   {
@@ -400,7 +383,7 @@
       "displayName" : "Previously/Demonstrated by Changes",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.component:prevDemBy",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#41/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#29/nProfiles/Common/AbnormalityAsymmetry.mfsh#31/n"
     }
   },
   {
@@ -408,7 +391,7 @@
       "traversalName" : "focus",
       "source" : "^AbnormalityAsymmetry/component:prevDemBy/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#38/nProfiles/Common/AbnormalityAsymmetry.mfsh#41/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nInclude/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#38/nProfiles/Common/AbnormalityAsymmetry.mfsh#31/n"
     }
   },
   {
@@ -417,7 +400,7 @@
       "source" : "^AssociatedFeatureFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#23/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#23/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -426,7 +409,7 @@
       "source" : "^AbnormalityAsymmetry/hasMember/$",
       "item" : "AbnormalityAsymmetry.hasMember:associatedFeature",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -439,7 +422,7 @@
       "displayName" : "HasMember",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityAsymmetry.hasMember",
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#5/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -448,7 +431,7 @@
       "source" : "^AbnormalityAsymmetry/$",
       "target" : "^AbnormalityAsymmetry/hasMember/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#43/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Slice.minc#6/nInclude/ObservationMacros/Observation.HasMember.Add.minc#17/nInclude/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#25/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
     }
   },
   {
@@ -457,7 +440,7 @@
       "source" : "^ConsistentWithFragment/$",
       "target" : "^AbnormalityAsymmetry/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#24/nProfiles/Common/AbnormalityAsymmetry.mfsh#34/n"
     }
   },
   {
@@ -466,6 +449,23 @@
       "source" : "^AbnormalityAsymmetry/hasMember/$",
       "item" : "AbnormalityAsymmetry.hasMember:consistentWith",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.HasMember.Add.minc#15/nInclude/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#26/nProfiles/Common/AbnormalityAsymmetry.mfsh#34/n"
+    }
+  },
+  {
+    "node" : {
+      "nodeName" : "AbnormalityAsymmetry/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AbnormalityAsymmetry"
+      },
+      "displayName" : "Asymmetry",
+      "cssClass" : "profile",
+      "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#52/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "AbnormalityAsymmetry/",
+      "traversalName" : "focus",
     }
   },

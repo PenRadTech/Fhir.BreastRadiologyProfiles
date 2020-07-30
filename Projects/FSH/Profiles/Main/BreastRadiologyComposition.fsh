@@ -4,10 +4,6 @@ Title: "Breast Radiology Composition"
 Description: """
     Composition instance for the Breast Radiology FHIR Document.
 """
-
-
-
-
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -17,7 +13,6 @@ Description: """
   * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
   * . ^short = "US Core Race Extension"
   * type = LOINC#42132-1 "US Breast screening"
-
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
@@ -33,7 +28,6 @@ Description: """
   * section contains relatedResources 0..1 MS
   * section contains recommendations 0..1 MS
   * section contains admin 0..1 MS
-
   
   * section[report] ^definition = """
     This section references the Breast Radiology Report.

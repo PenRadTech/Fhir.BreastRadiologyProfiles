@@ -5,16 +5,6 @@ Description: """
     Mammography Density
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Density")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Mammography Density Abnormality Observation</b>
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityDensityObservation
 
@@ -43,3 +33,20 @@ Description: """
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Mammography Density Abnormality Observation</b>
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Density")
+

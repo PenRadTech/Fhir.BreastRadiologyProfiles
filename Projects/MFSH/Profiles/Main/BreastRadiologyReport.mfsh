@@ -5,12 +5,18 @@ Description: """
 	Breast Radiology Diagnostic Report.
 	"""
 
-  #apply Observation.CategoryFragment()
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("BaseResources", "C")
-  #apply Graph.NodeProfile("Report")
-  #apply Graph.NodeElement("code", "Code")
+  #apply HeaderFragment()
 
+  #apply Observation.CategoryFragment()
+
+  * conclusionCode from BiRadsAssessmentCategoryVS (required)
+  * code = LOINC#10193-1
+  * specimen 0..0
+  * result 0..0
+  
+  
+  
+  
   #apply IntroDocProfile( """
   # <p>
   # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
@@ -25,10 +31,10 @@ Description: """
   # including the narrative result.
   # </p>
   # """)
-  #apply HeaderFragment()
   
-  * conclusionCode from BiRadsAssessmentCategoryVS (required)
-  * code = LOINC#10193-1
-  * specimen 0..0
-  * result 0..0
-  
+  #apply IGGroupMemberProfile("BaseResources", "C")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Report")
+  #apply Graph.NodeElement("code", "Code")

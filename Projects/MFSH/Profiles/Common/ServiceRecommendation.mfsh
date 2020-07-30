@@ -5,10 +5,18 @@ Description: """
   Service Recommendation
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("BaseResources", "%Title%")
-  #apply Graph.NodeProfile("Service Recommendation")
+  #apply HeaderFragment()
 
+  * . ^definition = """
+    Followup Service Recommendation.
+	"""
+
+  * code 1..1
+  * code from ServiceRecommendationsVS  (extensible)
+  
+  
+  
+  
   #apply IntroDocProfile("""
   # <p>
   # Recommended follow-up action to be taken in response to the 
@@ -24,12 +32,11 @@ Description: """
   #  but is not limited to only ServiceRecommendation instances.
   # </p>
   #""")
-  #apply HeaderFragment()
-
-  * . ^definition = """
-    Followup Service Recommendation.
-	"""
-
-  * code 1..1
-  * code from ServiceRecommendationsVS  (extensible)
   
+  
+  #apply IGGroupMemberProfile("BaseResources", "%Title%")
+
+  
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Service Recommendation")
+

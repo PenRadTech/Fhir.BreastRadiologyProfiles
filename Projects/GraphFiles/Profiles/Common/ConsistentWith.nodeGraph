@@ -1,22 +1,5 @@
 {
     "node" : {
-      "nodeName" : "ConsistentWith/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith"
-      },
-      "displayName" : "Consistent With",
-      "cssClass" : "profile",
-      "traceMsg" : "Profiles/Common/ConsistentWith.mfsh#10/n"
-    }
-  },
-  {
-    "graph" : {
-      "nodeName" : "ConsistentWith/",
-      "traversalName" : "focus",
-    }
-  },
-  {
-    "node" : {
       "nodeName" : "ConsistentWith/component:consistentWith/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith",
@@ -25,7 +8,7 @@
       "displayName" : "Consistent With",
       "cssClass" : "element",
       "lhsAnnotationText": "^ConsistentWith.component:consistentWith",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#21/n"
     }
   },
   {
@@ -38,7 +21,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^ConsistentWith.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#21/n"
     }
   },
   {
@@ -47,7 +30,7 @@
       "source" : "^ConsistentWith/$",
       "target" : "^ConsistentWith/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#21/n"
     }
   },
   {
@@ -56,7 +39,7 @@
       "source" : "^ConsistentWith/component/$",
       "target" : "^ConsistentWith/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#36/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/ConsistentWith.mfsh#21/n"
     }
   },
   {
@@ -64,7 +47,7 @@
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:consistentWith/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#46/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#31/n"
     }
   },
   {
@@ -77,7 +60,7 @@
       "displayName" : "Qualifier",
       "cssClass" : "element",
       "lhsAnnotationText": "^ConsistentWith.component:qualifier",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/ConsistentWith.mfsh#35/n"
     }
   },
   {
@@ -85,6 +68,23 @@
       "traversalName" : "focus",
       "source" : "^ConsistentWith/component:qualifier/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#57/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/ConsistentWith.mfsh#42/n"
+    }
+  },
+  {
+    "node" : {
+      "nodeName" : "ConsistentWith/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ConsistentWith"
+      },
+      "displayName" : "Consistent With",
+      "cssClass" : "profile",
+      "traceMsg" : "Profiles/Common/ConsistentWith.mfsh#66/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "ConsistentWith/",
+      "traversalName" : "focus",
     }
   },

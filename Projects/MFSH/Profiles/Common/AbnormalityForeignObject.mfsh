@@ -6,25 +6,6 @@ Description: """
   Foreign Object
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Foreign Object")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Foreign Object Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about foreign objects observed
-  # </p>
-  # <p>
-  # A foreign object is some non-biological item observed in the patient.
-  #  These can include misplaced surgical items, trauma related items (bullet fragments), or 
-  # jewelery.
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityForeignObjectObservation
 
@@ -48,3 +29,28 @@ Description: """
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Foreign Object Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about foreign objects observed
+  # </p>
+  # <p>
+  # A foreign object is some non-biological item observed in the patient.
+  #  These can include misplaced surgical items, trauma related items (bullet fragments), or 
+  # jewelery.
+  # </p>
+  #""")
+
+
+
+  #apply CSBuild.DefineClass()
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+  #apply Graph.NodeProfile("Foreign Object")

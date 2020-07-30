@@ -5,22 +5,6 @@ Description: """
     Mammography Finding
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("MGResources", "%Title%")
-  #apply Graph.NodeProfile("Mg Finding")
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Mammography Finding</b>
-  # </p>
-  # <p>
-  # This Observation contains all references to all the observations
-  #  and exam information related to a Mammography (MG) exam.
-  # </p>
-  #""")
-
- 
   * code 1..1
   * code = ObservationCodesCS#mgFindingObservation
 
@@ -111,3 +95,27 @@ Description: """
   #  """
   #  This slice references the target 'Mammography Breast Density'.
   #  """)
+
+
+
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Mammography Finding</b>
+  # </p>
+  # <p>
+  # This Observation contains all references to all the observations
+  #  and exam information related to a Mammography (MG) exam.
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("MGResources", "%Title%")
+ 
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Mg Finding")
+

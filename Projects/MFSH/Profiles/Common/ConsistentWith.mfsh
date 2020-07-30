@@ -5,21 +5,6 @@ Description: """
     Consistent With
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Consistent With")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>'Consistent With' Observation</b>
-  # </p>
-  # <p>
-  # This resource contains information about a determination 
-  # that the parent abnormality is consistent with 
-  # the finding described in this resource.
-  # </p>
-  #""")
-
   * . ^definition = """
     Consistent With Observation.
 	"""
@@ -55,3 +40,28 @@ Description: """
   #   "ObservationComponentSliceCodesCS#consistentWithQualifier")
 
   #apply Observation.Component.SetConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
+
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>'Consistent With' Observation</b>
+  # </p>
+  # <p>
+  # This resource contains information about a determination 
+  # that the parent abnormality is consistent with 
+  # the finding described in this resource.
+  # </p>
+  #""")
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Consistent With")
+

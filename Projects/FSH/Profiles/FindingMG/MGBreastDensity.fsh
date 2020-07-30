@@ -5,11 +5,8 @@ Description: """
     Mammography Breast Density
     """
 
-
-
   * code 1..1
   * code = ObservationCodesCS#mgBreastDensityObservation
-
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"

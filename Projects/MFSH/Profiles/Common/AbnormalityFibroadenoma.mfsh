@@ -6,20 +6,6 @@ Description: """
   Fibroadenoma
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Fibroadenoma")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Fibroadenoma Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about a fibroadenoma abnormality observation 
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
 
@@ -45,3 +31,22 @@ Description: """
   #apply Observation.Component.PreviouslyDemonstratedByFragment()
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Fibroadenoma Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a fibroadenoma abnormality observation 
+  # </p>
+  #""")
+
+  #apply CSBuild.DefineClass()
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+  #apply Graph.NodeProfile("Fibroadenoma")
+

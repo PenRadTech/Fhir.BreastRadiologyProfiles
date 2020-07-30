@@ -5,9 +5,16 @@ Description: """
     NM Finding
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("NMResources", "%Title%")
-  #apply Graph.NodeProfile("Nuclear Medicine/Findings")
+  * code 1..1
+  * code = ObservationCodesCS#nmFindingObservation
+
+  #apply Observation.SectionFragment()
+
+
+
+
+
+
 
   #apply IntroDocProfile("""
   # <p>
@@ -23,7 +30,9 @@ Description: """
   # </p>
   #""")
 
-  * code 1..1
-  * code = ObservationCodesCS#nmFindingObservation
+  #apply IGGroupMemberProfile("NMResources", "%Title%")
 
-  #apply Observation.SectionFragment()
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Nuclear Medicine/Findings")

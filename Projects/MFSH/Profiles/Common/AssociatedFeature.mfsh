@@ -5,23 +5,6 @@ Description: """
     Associated Feature
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Associated Feature")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Associated Feature Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about associated feature observations
-  # </p>
-  # <p>
-  # The feature observed is defined by the codeable concept in the value[x] field.
-  # </p>
-  # """)
-
   * . ^definition = """
     This resource and referenced child resources contain 
     information about associated feature observations
@@ -50,3 +33,27 @@ Description: """
   #apply Observation.BreastBodyLocationRequiredFragment()
 
   #apply Observation.Component.ObservedCountFragment()
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Associated Feature Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about associated feature observations
+  # </p>
+  # <p>
+  # The feature observed is defined by the codeable concept in the value[x] field.
+  # </p>
+  # """)
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Associated Feature")
+

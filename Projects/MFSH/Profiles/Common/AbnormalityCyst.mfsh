@@ -5,21 +5,6 @@ Description: """
   Cyst
   """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Cyst")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Cyst Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource and referenced child resources contain 
-  # information about a cyst abnormality observation 
-  # </p>
-  #""")
-
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityCyst
 
@@ -49,3 +34,25 @@ Description: """
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
   #apply Observation.HasMember.TumorSatelliteFragment()
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Cyst Abnormality Observation</b>
+  # </p>
+  # <p>
+  # This resource and referenced child resources contain 
+  # information about a cyst abnormality observation 
+  # </p>
+  #""")
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Cyst")
+

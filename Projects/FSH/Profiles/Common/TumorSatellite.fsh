@@ -8,8 +8,6 @@ Title: "Tumor Satellite"
 Description: """
     Tumor Satellite
     """
-
-  
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://www.hl7.org/Special/committees/cic"
   * ^date = "2019-11-01"
@@ -47,7 +45,6 @@ Description: """
   * valueQuantity units from UNITSOFLENGTH
   * valueRange.low units from UNITSOFLENGTH
   * valueRange.high units from UNITSOFLENGTH
-
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open

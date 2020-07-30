@@ -1,22 +1,5 @@
 {
     "node" : {
-      "nodeName" : "AssociatedFeature/",
-      "anchor" : {
-        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
-      },
-      "displayName" : "Associated Feature",
-      "cssClass" : "profile",
-      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#10/n"
-    }
-  },
-  {
-    "graph" : {
-      "nodeName" : "AssociatedFeature/",
-      "traversalName" : "focus",
-    }
-  },
-  {
-    "node" : {
       "nodeName" : "AssociatedFeature/component:featureType/",
       "anchor" : {
         "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature",
@@ -25,7 +8,7 @@
       "displayName" : "Feature Type",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:featureType",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nProfiles/Common/AssociatedFeature.mfsh#18/n"
     }
   },
   {
@@ -38,7 +21,7 @@
       "displayName" : "Components",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#5/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#18/n"
     }
   },
   {
@@ -47,7 +30,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/component/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#6/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#18/n"
     }
   },
   {
@@ -56,7 +39,7 @@
       "source" : "^AssociatedFeature/component/$",
       "target" : "^AssociatedFeature/component:",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Slice.minc#7/nInclude/ObservationMacros/Observation.Component.Add.minc#9/nProfiles/Common/AssociatedFeature.mfsh#18/n"
     }
   },
   {
@@ -64,7 +47,7 @@
       "traversalName" : "focus",
       "source" : "^AssociatedFeature/component:featureType/$",
       "item" : ".value[x]",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AssociatedFeature.mfsh#44/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.SetConcept.minc#5/nProfiles/Common/AssociatedFeature.mfsh#27/n"
     }
   },
   {
@@ -73,7 +56,7 @@
       "source" : "^BreastBodyLocationRequiredFragment/$",
       "target" : "^AssociatedFeature/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -86,7 +69,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -99,7 +82,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -108,7 +91,7 @@
       "source" : "^AssociatedFeature/$",
       "target" : "^AssociatedFeature/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -117,7 +100,7 @@
       "source" : "^AssociatedFeature/bodySite/$",
       "target" : "^AssociatedFeature/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -126,7 +109,7 @@
       "source" : "^AssociatedFeature/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AssociatedFeature.mfsh#50/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AssociatedFeature.mfsh#33/n"
     }
   },
   {
@@ -135,7 +118,7 @@
       "source" : "^ObservedCountFragment/$",
       "target" : "^AssociatedFeature/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#22/nProfiles/Common/AssociatedFeature.mfsh#35/n"
     }
   },
   {
@@ -148,6 +131,23 @@
       "displayName" : "Observed Count",
       "cssClass" : "element",
       "lhsAnnotationText": "^AssociatedFeature.component:observedCount",
-      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AssociatedFeature.mfsh#52/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.Component.Add.minc#7/nInclude/ObservationMacros/Observation.Component.ObservedCountFragment.minc#25/nProfiles/Common/AssociatedFeature.mfsh#35/n"
+    }
+  },
+  {
+    "node" : {
+      "nodeName" : "AssociatedFeature/",
+      "anchor" : {
+        "url" : "http://hl7.org/fhir/us/breast-radiology/StructureDefinition/AssociatedFeature"
+      },
+      "displayName" : "Associated Feature",
+      "cssClass" : "profile",
+      "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#58/n"
+    }
+  },
+  {
+    "graph" : {
+      "nodeName" : "AssociatedFeature/",
+      "traversalName" : "focus",
     }
   },

@@ -5,11 +5,8 @@ Description: """
   Foreign Object
   """
 
-
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityForeignObjectObservation
-
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -30,11 +27,9 @@ Description: """
     This code identifies the Foreign Object Type component.
 	"""
   * component[abnormalityForeignObjectType].code = ObservationComponentSliceCodesCS#abnormalityForeignObjectType
-
   * component[abnormalityForeignObjectType].value[x] 1..1
   * component[abnormalityForeignObjectType].value[x] only CodeableConcept
   * component[abnormalityForeignObjectType].value[x] from AbnormalityForeignObjectTypeVS
-
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -150,7 +145,6 @@ Description: """
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
-
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open

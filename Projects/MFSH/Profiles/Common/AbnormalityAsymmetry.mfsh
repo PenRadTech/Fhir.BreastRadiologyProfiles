@@ -6,16 +6,6 @@ Description: """
     Asymmetry
     """
 
-  #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Asymmetry")
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Asymmetry Abnormality Observation</b>
-  # </p>
-  #""")
-
   * code 1..1
   * code = ObservationCodesCS#abnormalityAsymmetryObservation
 
@@ -42,3 +32,22 @@ Description: """
 
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
+
+
+
+
+
+
+  #apply IntroDocProfile("""
+  # <p>
+  # <b>Asymmetry Abnormality Observation</b>
+  # </p>
+  #""")
+
+
+  #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+
+  #apply CSBuild.DefineClass()
+  #apply Graph.NodeProfile("Asymmetry")
+
