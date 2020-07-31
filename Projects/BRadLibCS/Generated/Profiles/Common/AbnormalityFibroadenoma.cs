@@ -34,6 +34,7 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityFibroadenoma :  ObservationBase, IAbnormalityFibroadenoma
 	{
+		public ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                              // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.

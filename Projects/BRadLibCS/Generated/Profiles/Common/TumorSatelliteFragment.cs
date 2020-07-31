@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ITumorSatelliteFragment 
 	{
+		ComponentHasMember<TumorSatellite> TumorSatellite { get; set; }                                                                           // CSPropMatchHasMemberSlice.cs:43
 
 	}
 }

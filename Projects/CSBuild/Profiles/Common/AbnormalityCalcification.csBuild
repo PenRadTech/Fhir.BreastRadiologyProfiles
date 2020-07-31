@@ -16,14 +16,14 @@
   "implementFragment" : {
     "className" : "AbnormalityCalcification",
     "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#22/nProfiles/Common/AbnormalityCalcification.mfsh#25/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#21/nProfiles/Common/AbnormalityCalcification.mfsh#25/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#21/nProfiles/Common/AbnormalityCalcification.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#20/nProfiles/Common/AbnormalityCalcification.mfsh#26/n"
   }
 },
 {
@@ -53,37 +53,24 @@
   }
 },
 {
-  "defineProperty" : {
-    "parentName" : "ObservedDistributionFragment",
-    "propertyName" : "ObservedDistributionFragment",
-    "definitionCode" : [
-      "public ComponentConcept ObservedDistributionFragment { get; }",
-    ],
-    "constructionCode" : [
-      "this.ObservedDistributionFragment = new ComponentConcept()",
-    ],
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ObservedDistributionFragment",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#21/nProfiles/Common/AbnormalityCalcification.mfsh#29/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification",
-    "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#22/nProfiles/Common/AbnormalityCalcification.mfsh#29/n"
-  }
-},
-{
-  "implementFragment" : {
-    "className" : "AbnormalityCalcification",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#24/nProfiles/Common/AbnormalityCalcification.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#23/nProfiles/Common/AbnormalityCalcification.mfsh#30/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#24/nProfiles/Common/AbnormalityCalcification.mfsh#31/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#23/nProfiles/Common/AbnormalityCalcification.mfsh#31/n"
   }
 },
 {

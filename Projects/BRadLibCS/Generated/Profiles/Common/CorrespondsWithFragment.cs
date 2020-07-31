@@ -18,7 +18,6 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ICorrespondsWithFragment 
 	{
-		public ComponentConcept CorrespondsWithFragment { get; }                                                                                  // CSItemFragment.cs:83
 
 	}
 }

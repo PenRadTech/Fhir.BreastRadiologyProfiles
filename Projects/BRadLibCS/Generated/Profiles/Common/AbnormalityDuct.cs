@@ -36,6 +36,7 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityDuct :  ObservationBase, IAbnormalityDuct
 	{
+		public ComponentHasMember<ConsistentWith> ConsistentWith { get; set; }                                                                    // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.

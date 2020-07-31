@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IAssociatedFeatureFragment 
 	{
+		ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                                     // CSPropMatchHasMemberSlice.cs:43
 
 	}
 }

@@ -37,6 +37,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityLymphNode :  ObservationBase, IAbnormalityLymphNode
 	{
+		public ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                              // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<TumorSatellite> TumorSatellite { get; set; }                                                                    // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.

@@ -18,6 +18,19 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IMGFinding 
 	{
+		ComponentHasMember<AbnormalityCyst> AbnormalityCyst { get; set; }                                                                         // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityDuct> AbnormalityDuct { get; set; }                                                                         // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityForeignObject> AbnormalityForeignObject { get; set; }                                                       // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityLymphNode> AbnormalityLymphNode { get; set; }                                                               // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityMass> AbnormalityMass { get; set; }                                                                         // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                                     // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityFibroadenoma> AbnormalityFibroadenoma { get; set; }                                                         // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityArchitecturalDistortion> AbnormalityArchDist { get; set; }                                                  // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityAsymmetry> AbnormalityAsymmetry { get; set; }                                                               // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityCalcification> AbnormalityCalcification { get; set; }                                                       // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityDensity> AbnormalityDensity { get; set; }                                                                   // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<AbnormalityFatNecrosis> AbnormalityFatNecrosis { get; set; }                                                           // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<MGBreastDensity> MgBreastDensity { get; set; }                                                                         // CSPropMatchHasMemberSlice.cs:43
 
 	}
 
@@ -26,6 +39,19 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class MGFinding :  ObservationBase, IMGFinding
 	{
+		public ComponentHasMember<AbnormalityCyst> AbnormalityCyst { get; set; }                                                                  // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityDuct> AbnormalityDuct { get; set; }                                                                  // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityForeignObject> AbnormalityForeignObject { get; set; }                                                // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityLymphNode> AbnormalityLymphNode { get; set; }                                                        // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityMass> AbnormalityMass { get; set; }                                                                  // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                              // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityFibroadenoma> AbnormalityFibroadenoma { get; set; }                                                  // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityArchitecturalDistortion> AbnormalityArchDist { get; set; }                                           // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityAsymmetry> AbnormalityAsymmetry { get; set; }                                                        // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityCalcification> AbnormalityCalcification { get; set; }                                                // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityDensity> AbnormalityDensity { get; set; }                                                            // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<AbnormalityFatNecrosis> AbnormalityFatNecrosis { get; set; }                                                    // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<MGBreastDensity> MgBreastDensity { get; set; }                                                                  // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.

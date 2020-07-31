@@ -18,10 +18,6 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IShapeFragment 
 	{
-		public ComponentConcept Orientation { get; }                                                                                              // CSItemFragment.cs:83
-		public ComponentConcept Shape { get; }                                                                                                    // CSItemFragment.cs:83
-		public ComponentConcept Margin { get; }                                                                                                   // CSItemFragment.cs:83
-		public ComponentConcept MGBreastDensity { get; }                                                                                          // CSItemFragment.cs:83
 
 	}
 }

@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWithFragment 
 	{
+		ComponentHasMember<ConsistentWith> ConsistentWith { get; set; }                                                                           // CSPropMatchHasMemberSlice.cs:43
 
 	}
 }

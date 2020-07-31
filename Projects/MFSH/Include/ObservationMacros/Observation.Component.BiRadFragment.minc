@@ -18,7 +18,6 @@
   #""")
   #
   #apply once CSBuild.DefineFragment()
-  #apply once CSBuild.Property.ComponentConcept("%FragmentId%", "BiRadsAssessmentCategoryVS")
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")

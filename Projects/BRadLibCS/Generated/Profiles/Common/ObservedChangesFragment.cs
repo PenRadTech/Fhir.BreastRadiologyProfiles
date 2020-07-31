@@ -18,7 +18,6 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedChangesFragment 
 	{
-		public ComponentConcept ObservedChangesFragment { get; }                                                                                  // CSItemFragment.cs:83
 
 	}
 }

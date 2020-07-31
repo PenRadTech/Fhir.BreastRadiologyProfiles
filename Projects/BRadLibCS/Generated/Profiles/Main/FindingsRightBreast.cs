@@ -18,6 +18,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IFindingsRightBreast 
 	{
+		ComponentHasMember<MGFinding> MgFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<MRIFinding> MriFinding { get; set; }                                                                                   // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<NMFinding> NmFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
+		ComponentHasMember<USFinding> UsFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
 
 	}
 
@@ -26,6 +30,10 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class FindingsRightBreast :  ObservationBase, IFindingsRightBreast
 	{
+		public ComponentHasMember<MGFinding> MgFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<MRIFinding> MriFinding { get; set; }                                                                            // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<NMFinding> NmFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<USFinding> UsFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.

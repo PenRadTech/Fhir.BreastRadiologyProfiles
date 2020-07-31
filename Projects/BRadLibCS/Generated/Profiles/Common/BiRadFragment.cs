@@ -18,7 +18,6 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IBiRadFragment 
 	{
-		public ComponentConcept BiRadFragment { get; }                                                                                            // CSItemFragment.cs:83
 
 	}
 }

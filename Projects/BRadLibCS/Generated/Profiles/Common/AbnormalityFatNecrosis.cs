@@ -37,6 +37,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityFatNecrosis :  ObservationBase, IAbnormalityFatNecrosis
 	{
+		public ComponentHasMember<AssociatedFeature> AssociatedFeature { get; set; }                                                              // CSPropMatchHasMemberSlice.cs:53
+		public ComponentHasMember<ConsistentWith> ConsistentWith { get; set; }                                                                    // CSPropMatchHasMemberSlice.cs:53
 
 		/// <summary>
 		/// Constructor.
