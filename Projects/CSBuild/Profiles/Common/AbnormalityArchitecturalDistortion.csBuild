@@ -1,14 +1,14 @@
 {
   "defineFragment" : {
     "fragmentName" : "BreastBodyLocationRequiredFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#22/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "BreastBodyLocationRequiredFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
   }
 },
 {

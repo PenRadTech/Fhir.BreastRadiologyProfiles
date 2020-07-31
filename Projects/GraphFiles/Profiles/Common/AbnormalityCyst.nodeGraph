@@ -56,7 +56,7 @@
       "source" : "^BreastBodyLocationRequiredFragment/$",
       "target" : "^AbnormalityCyst/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#33/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {
@@ -69,7 +69,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#35/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {
@@ -82,7 +82,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityCyst.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#36/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {
@@ -91,7 +91,7 @@
       "source" : "^AbnormalityCyst/$",
       "target" : "^AbnormalityCyst/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#37/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {
@@ -100,7 +100,7 @@
       "source" : "^AbnormalityCyst/bodySite/$",
       "target" : "^AbnormalityCyst/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#38/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {
@@ -109,7 +109,7 @@
       "source" : "^AbnormalityCyst/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#39/nProfiles/Common/AbnormalityCyst.mfsh#22/n"
     }
   },
   {

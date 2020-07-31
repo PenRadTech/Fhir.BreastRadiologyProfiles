@@ -6,7 +6,7 @@
       },
       "displayName" : "Breast Body Location (Required) Fragment",
       "cssClass" : "fragment",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#25/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -21,7 +21,7 @@
       "source" : "^BreastBodyLocationRequiredFragment/$",
       "target" : "^AbnormalityArchitecturalDistortion/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#33/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -34,7 +34,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#35/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -47,7 +47,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityArchitecturalDistortion.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#36/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -56,7 +56,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#37/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -65,7 +65,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite/$",
       "target" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#38/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {
@@ -74,7 +74,7 @@
       "source" : "^AbnormalityArchitecturalDistortion/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#39/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#13/n"
     }
   },
   {

@@ -216,9 +216,9 @@ Description: """
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
-  * component[obsSize].valueQuantity units from UNITSOFLENGTH
-  * component[obsSize].valueRange.low units from UNITSOFLENGTH
-  * component[obsSize].valueRange.high units from UNITSOFLENGTH
+  * component[obsSize].valueQuantity from UNITSOFLENGTH
+  * component[obsSize].valueRange.low from UNITSOFLENGTH
+  * component[obsSize].valueRange.high from UNITSOFLENGTH
   // define calcification distribution slice
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
@@ -271,9 +271,9 @@ Description: """
 
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
-  * component[obsDistRegionSize].valueQuantity units from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.low units from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.high units from UNITSOFLENGTH
+  * component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
+  * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
+  * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """

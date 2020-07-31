@@ -42,9 +42,9 @@ Description: """
 
   * value[x] 0..1
   * value[x] only Quantity or Range
-  * valueQuantity units from UNITSOFLENGTH
-  * valueRange.low units from UNITSOFLENGTH
-  * valueRange.high units from UNITSOFLENGTH
+  * valueQuantity from UNITSOFLENGTH
+  * valueRange.low from UNITSOFLENGTH
+  * valueRange.high from UNITSOFLENGTH
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open

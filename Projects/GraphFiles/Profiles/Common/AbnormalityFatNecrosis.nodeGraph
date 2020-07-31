@@ -4,7 +4,7 @@
       "source" : "^BreastBodyLocationRequiredFragment/$",
       "target" : "^AbnormalityFatNecrosis/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#26/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#33/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {
@@ -17,7 +17,7 @@
       "displayName" : "BodySite",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.bodySite",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#28/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#35/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {
@@ -30,7 +30,7 @@
       "displayName" : "extension",
       "cssClass" : "element",
       "lhsAnnotationText": "^AbnormalityFatNecrosis.bodySite.extension",
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#29/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#36/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {
@@ -39,7 +39,7 @@
       "source" : "^AbnormalityFatNecrosis/$",
       "target" : "^AbnormalityFatNecrosis/bodySite/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#37/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {
@@ -48,7 +48,7 @@
       "source" : "^AbnormalityFatNecrosis/bodySite/$",
       "target" : "^AbnormalityFatNecrosis/bodySite.extension/$",
       "depth": 0,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#31/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#38/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {
@@ -57,7 +57,7 @@
       "source" : "^AbnormalityFatNecrosis/bodySite.extension/$",
       "target" : "^BreastBodyLocationExtension/$",
       "depth": 1,
-      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#32/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
+      "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#39/nProfiles/Common/AbnormalityFatNecrosis.mfsh#13/n"
     }
   },
   {

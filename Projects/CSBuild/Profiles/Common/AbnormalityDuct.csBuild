@@ -2,7 +2,7 @@
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "BreastBodyLocationRequiredFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#23/nProfiles/Common/AbnormalityDuct.mfsh#24/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#30/nProfiles/Common/AbnormalityDuct.mfsh#24/n"
   }
 },
 {
