@@ -12,6 +12,8 @@
 
 //
 // Attach an fragment to class.
+//	* ^extension[0].url = $IMPFRAG
+//	* ^extension[0].valueString = "XXYYZ"
 //
 #macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
   `{

@@ -17,3 +17,7 @@ Alias: UNITSOFLENGTH = http://hl7.org/fhir/us/breast-radiology/ValueSet/UnitsOfL
 Alias: UCUM = http://unitsofmeasure.org
 
 Alias: CONTACTURL = http://hl7.org/Special/committees/cic
+
+
+Alias: $IMPFRAG = http://hl7.org/fhir/us/breast-radiology/StructureDefinition/ImplementsFragmentExtension
+
