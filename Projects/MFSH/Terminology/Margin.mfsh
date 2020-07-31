@@ -28,4 +28,3 @@ Description: "Margin code system."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

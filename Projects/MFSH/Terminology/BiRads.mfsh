@@ -47,4 +47,3 @@ Description:  "BiRads Assessment Category CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

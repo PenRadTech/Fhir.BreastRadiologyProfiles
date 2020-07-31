@@ -27,4 +27,3 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

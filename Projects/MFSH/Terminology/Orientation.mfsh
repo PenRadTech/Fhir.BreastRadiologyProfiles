@@ -20,4 +20,3 @@ Description: "Orientation CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

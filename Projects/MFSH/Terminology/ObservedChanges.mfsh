@@ -30,4 +30,3 @@ Description: "Observed changes in an abnormality code system."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

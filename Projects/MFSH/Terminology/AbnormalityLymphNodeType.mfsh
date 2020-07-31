@@ -24,4 +24,3 @@ Description: "Lymph node types code system."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

@@ -264,5 +264,4 @@ Description:  "ServiceRecommendations CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
 

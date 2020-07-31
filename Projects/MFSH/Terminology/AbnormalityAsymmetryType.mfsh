@@ -18,4 +18,3 @@ Description: "Asymmetry type code system."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

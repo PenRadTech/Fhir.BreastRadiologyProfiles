@@ -46,4 +46,3 @@ Description: "Associated Feature seen during a breast examination."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

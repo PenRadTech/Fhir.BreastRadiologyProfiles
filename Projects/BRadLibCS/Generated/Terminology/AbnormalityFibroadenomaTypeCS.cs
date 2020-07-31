@@ -16,13 +16,13 @@ namespace BRadLibCS
 		/// </summary>
 		public const String System = "http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityFibroadenomaTypeCS";
 
-		public static Coding Code_Fibroadenoma = new Coding(System, "Fibroadenoma", "Fibroadenoma");                                              // CSItemCodeSystem.cs:62
-		public static Coding Code_FibroadenomaDegeneration = new Coding(System, "FibroadenomaDegeneration", "Fibroadenoma degeneration");         // CSItemCodeSystem.cs:62
+		public static Coding Code_Fibroadenoma = new Coding(System, "Fibroadenoma", "Fibroadenoma");                                              // CSItemCodeSystem.cs:55
+		public static Coding Code_FibroadenomaDegeneration = new Coding(System, "FibroadenomaDegeneration", "Fibroadenoma degeneration");         // CSItemCodeSystem.cs:55
 
-		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:54
-		{                                                                                                                                         // CSItemCodeSystem.cs:55
-		    yield return Code_Fibroadenoma;                                                                                                       // CSItemCodeSystem.cs:65
-		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemCodeSystem.cs:65
-		}                                                                                                                                         // CSItemCodeSystem.cs:70
+		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:47
+		{                                                                                                                                         // CSItemCodeSystem.cs:48
+		    yield return Code_Fibroadenoma;                                                                                                       // CSItemCodeSystem.cs:58
+		    yield return Code_FibroadenomaDegeneration;                                                                                           // CSItemCodeSystem.cs:58
+		}                                                                                                                                         // CSItemCodeSystem.cs:63
 	}
 }

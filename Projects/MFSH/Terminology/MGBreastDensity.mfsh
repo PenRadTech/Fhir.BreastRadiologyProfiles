@@ -21,4 +21,3 @@ Description: "Mammography breast density values code system."
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

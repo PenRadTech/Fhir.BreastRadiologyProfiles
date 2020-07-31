@@ -36,4 +36,3 @@ Description:  "Breast Body Location Regions CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

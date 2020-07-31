@@ -16,17 +16,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String System = "http://hl7.org/fhir/us/breast-radiology/CodeSystem/PreviouslyDemonstratedByCS";
 
-		public static Coding Code_Aspiration = new Coding(System, "Aspiration", "Aspiration");                                                    // CSItemCodeSystem.cs:62
-		public static Coding Code_Biopsy = new Coding(System, "Biopsy", "Biopsy");                                                                // CSItemCodeSystem.cs:62
-		public static Coding Code_MRI = new Coding(System, "MRI", "MRI");                                                                         // CSItemCodeSystem.cs:62
-		public static Coding Code_US = new Coding(System, "US", "US");                                                                            // CSItemCodeSystem.cs:62
+		public static Coding Code_Aspiration = new Coding(System, "Aspiration", "Aspiration");                                                    // CSItemCodeSystem.cs:55
+		public static Coding Code_Biopsy = new Coding(System, "Biopsy", "Biopsy");                                                                // CSItemCodeSystem.cs:55
+		public static Coding Code_MRI = new Coding(System, "MRI", "MRI");                                                                         // CSItemCodeSystem.cs:55
+		public static Coding Code_US = new Coding(System, "US", "US");                                                                            // CSItemCodeSystem.cs:55
 
-		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:54
-		{                                                                                                                                         // CSItemCodeSystem.cs:55
-		    yield return Code_Aspiration;                                                                                                         // CSItemCodeSystem.cs:65
-		    yield return Code_Biopsy;                                                                                                             // CSItemCodeSystem.cs:65
-		    yield return Code_MRI;                                                                                                                // CSItemCodeSystem.cs:65
-		    yield return Code_US;                                                                                                                 // CSItemCodeSystem.cs:65
-		}                                                                                                                                         // CSItemCodeSystem.cs:70
+		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:47
+		{                                                                                                                                         // CSItemCodeSystem.cs:48
+		    yield return Code_Aspiration;                                                                                                         // CSItemCodeSystem.cs:58
+		    yield return Code_Biopsy;                                                                                                             // CSItemCodeSystem.cs:58
+		    yield return Code_MRI;                                                                                                                // CSItemCodeSystem.cs:58
+		    yield return Code_US;                                                                                                                 // CSItemCodeSystem.cs:58
+		}                                                                                                                                         // CSItemCodeSystem.cs:63
 	}
 }

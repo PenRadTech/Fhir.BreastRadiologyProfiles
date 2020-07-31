@@ -106,4 +106,3 @@ Description:  "Foreign Object Type CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

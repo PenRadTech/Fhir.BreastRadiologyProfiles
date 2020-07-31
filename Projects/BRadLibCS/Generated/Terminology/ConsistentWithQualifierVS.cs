@@ -32,10 +32,10 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/ConsistentWithQualifierVS";
 
-		public static TCoding Code_DifferentialDiagnosis = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "DifferentialDiagnosis"));// CSItemValueSet.cs:78
-		public static TCoding Code_LikelyRepresents = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "LikelyRepresents"));// CSItemValueSet.cs:78
-		public static TCoding Code_MostLikely = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "MostLikely"));// CSItemValueSet.cs:78
-		public static TCoding Code_Resembles = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "Resembles"));// CSItemValueSet.cs:78
+		public static TCoding Code_DifferentialDiagnosis = new TCoding(ConsistentWithQualifierCS.Code_DifferentialDiagnosis);                     // CSItemValueSet.cs:72
+		public static TCoding Code_LikelyRepresents = new TCoding(ConsistentWithQualifierCS.Code_LikelyRepresents);                               // CSItemValueSet.cs:72
+		public static TCoding Code_MostLikely = new TCoding(ConsistentWithQualifierCS.Code_MostLikely);                                           // CSItemValueSet.cs:72
+		public static TCoding Code_Resembles = new TCoding(ConsistentWithQualifierCS.Code_Resembles);                                             // CSItemValueSet.cs:72
 
 		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
 		{                                                                                                                                         // CSItemValueSet.cs:58

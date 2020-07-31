@@ -16,17 +16,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String System = "http://hl7.org/fhir/us/breast-radiology/CodeSystem/OrientationCS";
 
-		public static Coding Code_ParallelToSkin = new Coding(System, "ParallelToSkin", "Parallel to skin");                                      // CSItemCodeSystem.cs:62
-		public static Coding Code_PerpendicularToSkin = new Coding(System, "PerpendicularToSkin", "Perpendicular to skin (not parallel)");        // CSItemCodeSystem.cs:62
-		public static Coding Code_TallerThanWide = new Coding(System, "TallerThanWide", "Taller than wide");                                      // CSItemCodeSystem.cs:62
-		public static Coding Code_WiderThanTall = new Coding(System, "WiderThanTall", "Wider than tall");                                         // CSItemCodeSystem.cs:62
+		public static Coding Code_ParallelToSkin = new Coding(System, "ParallelToSkin", "Parallel to skin");                                      // CSItemCodeSystem.cs:55
+		public static Coding Code_PerpendicularToSkin = new Coding(System, "PerpendicularToSkin", "Perpendicular to skin (not parallel)");        // CSItemCodeSystem.cs:55
+		public static Coding Code_TallerThanWide = new Coding(System, "TallerThanWide", "Taller than wide");                                      // CSItemCodeSystem.cs:55
+		public static Coding Code_WiderThanTall = new Coding(System, "WiderThanTall", "Wider than tall");                                         // CSItemCodeSystem.cs:55
 
-		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:54
-		{                                                                                                                                         // CSItemCodeSystem.cs:55
-		    yield return Code_ParallelToSkin;                                                                                                     // CSItemCodeSystem.cs:65
-		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemCodeSystem.cs:65
-		    yield return Code_TallerThanWide;                                                                                                     // CSItemCodeSystem.cs:65
-		    yield return Code_WiderThanTall;                                                                                                      // CSItemCodeSystem.cs:65
-		}                                                                                                                                         // CSItemCodeSystem.cs:70
+		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:47
+		{                                                                                                                                         // CSItemCodeSystem.cs:48
+		    yield return Code_ParallelToSkin;                                                                                                     // CSItemCodeSystem.cs:58
+		    yield return Code_PerpendicularToSkin;                                                                                                // CSItemCodeSystem.cs:58
+		    yield return Code_TallerThanWide;                                                                                                     // CSItemCodeSystem.cs:58
+		    yield return Code_WiderThanTall;                                                                                                      // CSItemCodeSystem.cs:58
+		}                                                                                                                                         // CSItemCodeSystem.cs:63
 	}
 }

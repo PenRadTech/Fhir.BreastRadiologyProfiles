@@ -1,6 +1,0 @@
-{
-  "defineCodeSystem" : {
-    "name" : "ObservedChangesCS",
-    "traceMsg" : "Terminology/ObservedChanges.mfsh#33/n"
-  }
-},

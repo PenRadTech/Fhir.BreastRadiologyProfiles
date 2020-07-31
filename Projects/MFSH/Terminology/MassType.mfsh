@@ -1,10 +1,13 @@
 CodeSystem: MassTypeCS
 Title: "Mass Type CodeSystem"
 Description: "Codes defining mass refinements."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Mass "Mass"
   * #MassIntraductal "Mass intraductal"
   * #MassPartiallySolid "Mass partially solid"
   * #MassSkinATLASIsSkinLesion "Mass skin ATLAS is skin lesion"
   * #MassSolid "Mass solid"
+
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

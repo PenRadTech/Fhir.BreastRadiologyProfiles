@@ -1,8 +1,6 @@
 CodeSystem: CorrespondsWithCodeSystemCS
 Title: "Corresponds With CodeSystem"
 Description: "CorrespondsWith code system"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Aspiration "Aspiration"
   * #Biopsy "Biopsy"
   * #Cprofilern "Cprofilern"
@@ -32,3 +30,7 @@ Description: "CorrespondsWith code system"
   * #Tenderness "Tenderness"
   * #TriggerPoint "Trigger point"
   * #US "US"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

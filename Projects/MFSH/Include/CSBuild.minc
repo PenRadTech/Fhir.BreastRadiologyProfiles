@@ -26,19 +26,6 @@
 
 
 //
-// Define a codesystem.
-//
-#macro CSBuild.DefineCodeSystem() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
-  `{
-  `  "defineCodeSystem" : {
-  `    "name" : "%CodeSystemId%",
-  `    "traceMsg" : "%ApplyStackFrame%"
-  `  }
-  `},
-#end
-
-
-//
 // Define an CS Interface.
 // Name is name of interface.
 // Id is name of profile that implements interface (used to query element definitions)

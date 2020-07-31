@@ -33,4 +33,3 @@ Description:  "NotPreviouslySeen CodeSystem"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()

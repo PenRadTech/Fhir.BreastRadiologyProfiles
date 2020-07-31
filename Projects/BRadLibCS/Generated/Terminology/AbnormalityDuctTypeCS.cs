@@ -16,15 +16,15 @@ namespace BRadLibCS
 		/// </summary>
 		public const String System = "http://hl7.org/fhir/us/breast-radiology/CodeSystem/AbnormalityDuctTypeCS";
 
-		public static Coding Code_DuctNormal = new Coding(System, "DuctNormal", "Duct normal");                                                   // CSItemCodeSystem.cs:62
-		public static Coding Code_SolitaryDilatedDuct = new Coding(System, "SolitaryDilatedDuct", "Solitary dilated duct");                       // CSItemCodeSystem.cs:62
-		public static Coding Code_DuctEctasia = new Coding(System, "DuctEctasia", "Duct ectasia");                                                // CSItemCodeSystem.cs:62
+		public static Coding Code_DuctNormal = new Coding(System, "DuctNormal", "Duct normal");                                                   // CSItemCodeSystem.cs:55
+		public static Coding Code_SolitaryDilatedDuct = new Coding(System, "SolitaryDilatedDuct", "Solitary dilated duct");                       // CSItemCodeSystem.cs:55
+		public static Coding Code_DuctEctasia = new Coding(System, "DuctEctasia", "Duct ectasia");                                                // CSItemCodeSystem.cs:55
 
-		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:54
-		{                                                                                                                                         // CSItemCodeSystem.cs:55
-		    yield return Code_DuctNormal;                                                                                                         // CSItemCodeSystem.cs:65
-		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemCodeSystem.cs:65
-		    yield return Code_DuctEctasia;                                                                                                        // CSItemCodeSystem.cs:65
-		}                                                                                                                                         // CSItemCodeSystem.cs:70
+		public static IEnumerable<Coding> Codes()                                                                                                 // CSItemCodeSystem.cs:47
+		{                                                                                                                                         // CSItemCodeSystem.cs:48
+		    yield return Code_DuctNormal;                                                                                                         // CSItemCodeSystem.cs:58
+		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemCodeSystem.cs:58
+		    yield return Code_DuctEctasia;                                                                                                        // CSItemCodeSystem.cs:58
+		}                                                                                                                                         // CSItemCodeSystem.cs:63
 	}
 }
