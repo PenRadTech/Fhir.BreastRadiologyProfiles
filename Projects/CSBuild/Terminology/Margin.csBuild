@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "MarginVS",
-    "traceMsg" : "Terminology/Margin.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "MarginCS",
-    "traceMsg" : "Terminology/Margin.mfsh#13/n"
+    "traceMsg" : "Terminology/Margin.mfsh#31/n"
   }
 },

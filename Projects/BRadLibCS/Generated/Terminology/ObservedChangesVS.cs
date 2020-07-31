@@ -32,37 +32,37 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/ObservedChangesVS";
 
-		public static TCoding Code_DecreaseInCalcifications = new TCoding(ObservedChangesCS.Code_DecreaseInCalcifications);                       // CSItemValueSet.cs:73
-		public static TCoding Code_DecreaseInNumber = new TCoding(ObservedChangesCS.Code_DecreaseInNumber);                                       // CSItemValueSet.cs:73
-		public static TCoding Code_DecreaseInSize = new TCoding(ObservedChangesCS.Code_DecreaseInSize);                                           // CSItemValueSet.cs:73
-		public static TCoding Code_IncreaseInCalcifications = new TCoding(ObservedChangesCS.Code_IncreaseInCalcifications);                       // CSItemValueSet.cs:73
-		public static TCoding Code_IncreaseInNumber = new TCoding(ObservedChangesCS.Code_IncreaseInNumber);                                       // CSItemValueSet.cs:73
-		public static TCoding Code_IncreaseInSize = new TCoding(ObservedChangesCS.Code_IncreaseInSize);                                           // CSItemValueSet.cs:73
-		public static TCoding Code_LessProminent = new TCoding(ObservedChangesCS.Code_LessProminent);                                             // CSItemValueSet.cs:73
-		public static TCoding Code_MoreProminent = new TCoding(ObservedChangesCS.Code_MoreProminent);                                             // CSItemValueSet.cs:73
-		public static TCoding Code_New = new TCoding(ObservedChangesCS.Code_New);                                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_NoLongerSeen = new TCoding(ObservedChangesCS.Code_NoLongerSeen);                                               // CSItemValueSet.cs:73
-		public static TCoding Code_NotSignificantChanged = new TCoding(ObservedChangesCS.Code_NotSignificantChanged);                             // CSItemValueSet.cs:73
-		public static TCoding Code_PartiallyRemoved = new TCoding(ObservedChangesCS.Code_PartiallyRemoved);                                       // CSItemValueSet.cs:73
-		public static TCoding Code_RepresentsChange = new TCoding(ObservedChangesCS.Code_RepresentsChange);                                       // CSItemValueSet.cs:73
-		public static TCoding Code_Stable = new TCoding(ObservedChangesCS.Code_Stable);                                                           // CSItemValueSet.cs:73
+		public static TCoding Code_DecreaseInCalcifications = new TCoding(ObservedChangesCS.Code_DecreaseInCalcifications);                       // CSItemValueSet.cs:72
+		public static TCoding Code_DecreaseInNumber = new TCoding(ObservedChangesCS.Code_DecreaseInNumber);                                       // CSItemValueSet.cs:72
+		public static TCoding Code_DecreaseInSize = new TCoding(ObservedChangesCS.Code_DecreaseInSize);                                           // CSItemValueSet.cs:72
+		public static TCoding Code_IncreaseInCalcifications = new TCoding(ObservedChangesCS.Code_IncreaseInCalcifications);                       // CSItemValueSet.cs:72
+		public static TCoding Code_IncreaseInNumber = new TCoding(ObservedChangesCS.Code_IncreaseInNumber);                                       // CSItemValueSet.cs:72
+		public static TCoding Code_IncreaseInSize = new TCoding(ObservedChangesCS.Code_IncreaseInSize);                                           // CSItemValueSet.cs:72
+		public static TCoding Code_LessProminent = new TCoding(ObservedChangesCS.Code_LessProminent);                                             // CSItemValueSet.cs:72
+		public static TCoding Code_MoreProminent = new TCoding(ObservedChangesCS.Code_MoreProminent);                                             // CSItemValueSet.cs:72
+		public static TCoding Code_New = new TCoding(ObservedChangesCS.Code_New);                                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_NoLongerSeen = new TCoding(ObservedChangesCS.Code_NoLongerSeen);                                               // CSItemValueSet.cs:72
+		public static TCoding Code_NotSignificantChanged = new TCoding(ObservedChangesCS.Code_NotSignificantChanged);                             // CSItemValueSet.cs:72
+		public static TCoding Code_PartiallyRemoved = new TCoding(ObservedChangesCS.Code_PartiallyRemoved);                                       // CSItemValueSet.cs:72
+		public static TCoding Code_RepresentsChange = new TCoding(ObservedChangesCS.Code_RepresentsChange);                                       // CSItemValueSet.cs:72
+		public static TCoding Code_Stable = new TCoding(ObservedChangesCS.Code_Stable);                                                           // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_DecreaseInCalcifications;                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_DecreaseInNumber;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_DecreaseInSize;                                                                                                     // CSItemValueSet.cs:84
-		    yield return Code_IncreaseInCalcifications;                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_IncreaseInNumber;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_IncreaseInSize;                                                                                                     // CSItemValueSet.cs:84
-		    yield return Code_LessProminent;                                                                                                      // CSItemValueSet.cs:84
-		    yield return Code_MoreProminent;                                                                                                      // CSItemValueSet.cs:84
-		    yield return Code_New;                                                                                                                // CSItemValueSet.cs:84
-		    yield return Code_NoLongerSeen;                                                                                                       // CSItemValueSet.cs:84
-		    yield return Code_NotSignificantChanged;                                                                                              // CSItemValueSet.cs:84
-		    yield return Code_PartiallyRemoved;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_RepresentsChange;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_Stable;                                                                                                             // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_DecreaseInCalcifications;                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_DecreaseInNumber;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_DecreaseInSize;                                                                                                     // CSItemValueSet.cs:83
+		    yield return Code_IncreaseInCalcifications;                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_IncreaseInNumber;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_IncreaseInSize;                                                                                                     // CSItemValueSet.cs:83
+		    yield return Code_LessProminent;                                                                                                      // CSItemValueSet.cs:83
+		    yield return Code_MoreProminent;                                                                                                      // CSItemValueSet.cs:83
+		    yield return Code_New;                                                                                                                // CSItemValueSet.cs:83
+		    yield return Code_NoLongerSeen;                                                                                                       // CSItemValueSet.cs:83
+		    yield return Code_NotSignificantChanged;                                                                                              // CSItemValueSet.cs:83
+		    yield return Code_PartiallyRemoved;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_RepresentsChange;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_Stable;                                                                                                             // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

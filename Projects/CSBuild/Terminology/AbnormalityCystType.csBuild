@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "AbnormalityCystTypeVS",
-    "traceMsg" : "Terminology/AbnormalityCystType.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "AbnormalityCystTypeCS",
-    "traceMsg" : "Terminology/AbnormalityCystType.mfsh#13/n"
+    "traceMsg" : "Terminology/AbnormalityCystType.mfsh#26/n"
   }
 },

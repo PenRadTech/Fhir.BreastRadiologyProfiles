@@ -32,17 +32,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityAsymmetryTypeVS";
 
-		public static TCoding Code_Asymmetry = new TCoding(AbnormalityAsymmetryTypeCS.Code_Asymmetry);                                            // CSItemValueSet.cs:73
-		public static TCoding Code_AsymmetryFocal = new TCoding(AbnormalityAsymmetryTypeCS.Code_AsymmetryFocal);                                  // CSItemValueSet.cs:73
-		public static TCoding Code_AsymmetryGlobal = new TCoding(AbnormalityAsymmetryTypeCS.Code_AsymmetryGlobal);                                // CSItemValueSet.cs:73
-		public static TCoding Code_DevelopingAsymmetry = new TCoding(AbnormalityAsymmetryTypeCS.Code_DevelopingAsymmetry);                        // CSItemValueSet.cs:73
+		public static TCoding Code_Asymmetry = new TCoding(AbnormalityAsymmetryTypeCS.Code_Asymmetry);                                            // CSItemValueSet.cs:72
+		public static TCoding Code_AsymmetryFocal = new TCoding(AbnormalityAsymmetryTypeCS.Code_AsymmetryFocal);                                  // CSItemValueSet.cs:72
+		public static TCoding Code_AsymmetryGlobal = new TCoding(AbnormalityAsymmetryTypeCS.Code_AsymmetryGlobal);                                // CSItemValueSet.cs:72
+		public static TCoding Code_DevelopingAsymmetry = new TCoding(AbnormalityAsymmetryTypeCS.Code_DevelopingAsymmetry);                        // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Asymmetry;                                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_AsymmetryFocal;                                                                                                     // CSItemValueSet.cs:84
-		    yield return Code_AsymmetryGlobal;                                                                                                    // CSItemValueSet.cs:84
-		    yield return Code_DevelopingAsymmetry;                                                                                                // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Asymmetry;                                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_AsymmetryFocal;                                                                                                     // CSItemValueSet.cs:83
+		    yield return Code_AsymmetryGlobal;                                                                                                    // CSItemValueSet.cs:83
+		    yield return Code_DevelopingAsymmetry;                                                                                                // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

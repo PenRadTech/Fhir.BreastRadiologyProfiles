@@ -1,15 +1,16 @@
 ValueSet:  AbnormalityForeignObjectTypeVS
 Title: "Foreign Object Type ValueSet"
 Description:  "Foreign Object Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityForeignObjectTypeCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 CodeSystem:  AbnormalityForeignObjectTypeCS
 Title: "Foreign Object Type CodeSystem"
 Description:  "Foreign Object Type CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription ClinicalFinding | 283574001 | Pellet wound of breast (Disorder) | [0/0] | S21.039?
   * #BBPellet "BB pellet"
 
@@ -101,3 +102,8 @@ Description:  "Foreign Object Type CodeSystem"
   * #Wire "Wire"
 
   * #WireFragment "Wire fragment"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

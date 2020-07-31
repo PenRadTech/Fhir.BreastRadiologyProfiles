@@ -4,9 +4,14 @@
 ValueSet:  ConsistentWithQualifierVS
 Title: "ConsistentWith Qualifier ValueSet"
 Description:  "ConsistentWith Qualifier Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system ConsistentWithQualifierCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
   
 /*
    Code system that defines consistent with qualifier codes.
@@ -14,8 +19,10 @@ Description:  "ConsistentWith Qualifier Value Set"
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #DifferentialDiagnosis "Differential diagnosis"
   * #LikelyRepresents "Likely represents"
   * #MostLikely "Most likely"
   * #Resembles "Resembles"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

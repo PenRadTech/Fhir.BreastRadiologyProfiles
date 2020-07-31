@@ -32,23 +32,23 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityCystTypeVS";
 
-		public static TCoding Code_Cyst = new TCoding(AbnormalityCystTypeCS.Code_Cyst);                                                           // CSItemValueSet.cs:73
-		public static TCoding Code_CystComplex = new TCoding(AbnormalityCystTypeCS.Code_CystComplex);                                             // CSItemValueSet.cs:73
-		public static TCoding Code_CystComplicated = new TCoding(AbnormalityCystTypeCS.Code_CystComplicated);                                     // CSItemValueSet.cs:73
-		public static TCoding Code_CystMicro = new TCoding(AbnormalityCystTypeCS.Code_CystMicro);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_CystOil = new TCoding(AbnormalityCystTypeCS.Code_CystOil);                                                     // CSItemValueSet.cs:73
-		public static TCoding Code_CystSimple = new TCoding(AbnormalityCystTypeCS.Code_CystSimple);                                               // CSItemValueSet.cs:73
-		public static TCoding Code_CystWithDebris = new TCoding(AbnormalityCystTypeCS.Code_CystWithDebris);                                       // CSItemValueSet.cs:73
+		public static TCoding Code_Cyst = new TCoding(AbnormalityCystTypeCS.Code_Cyst);                                                           // CSItemValueSet.cs:72
+		public static TCoding Code_CystComplex = new TCoding(AbnormalityCystTypeCS.Code_CystComplex);                                             // CSItemValueSet.cs:72
+		public static TCoding Code_CystComplicated = new TCoding(AbnormalityCystTypeCS.Code_CystComplicated);                                     // CSItemValueSet.cs:72
+		public static TCoding Code_CystMicro = new TCoding(AbnormalityCystTypeCS.Code_CystMicro);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_CystOil = new TCoding(AbnormalityCystTypeCS.Code_CystOil);                                                     // CSItemValueSet.cs:72
+		public static TCoding Code_CystSimple = new TCoding(AbnormalityCystTypeCS.Code_CystSimple);                                               // CSItemValueSet.cs:72
+		public static TCoding Code_CystWithDebris = new TCoding(AbnormalityCystTypeCS.Code_CystWithDebris);                                       // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Cyst;                                                                                                               // CSItemValueSet.cs:84
-		    yield return Code_CystComplex;                                                                                                        // CSItemValueSet.cs:84
-		    yield return Code_CystComplicated;                                                                                                    // CSItemValueSet.cs:84
-		    yield return Code_CystMicro;                                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_CystOil;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_CystSimple;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_CystWithDebris;                                                                                                     // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Cyst;                                                                                                               // CSItemValueSet.cs:83
+		    yield return Code_CystComplex;                                                                                                        // CSItemValueSet.cs:83
+		    yield return Code_CystComplicated;                                                                                                    // CSItemValueSet.cs:83
+		    yield return Code_CystMicro;                                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_CystOil;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_CystSimple;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_CystWithDebris;                                                                                                     // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

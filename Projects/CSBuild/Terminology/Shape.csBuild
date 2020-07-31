@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "ShapeVS",
-    "traceMsg" : "Terminology/Shape.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "ShapeCS",
-    "traceMsg" : "Terminology/Shape.mfsh#13/n"
+    "traceMsg" : "Terminology/Shape.mfsh#26/n"
   }
 },

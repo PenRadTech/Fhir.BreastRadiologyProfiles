@@ -32,19 +32,19 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/ShapeVS";
 
-		public static TCoding Code_IrregularInShape = new TCoding(ShapeCS.Code_IrregularInShape);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_LobulatedInShape = new TCoding(ShapeCS.Code_LobulatedInShape);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_OvalInShape = new TCoding(ShapeCS.Code_OvalInShape);                                                           // CSItemValueSet.cs:73
-		public static TCoding Code_Reniform = new TCoding(ShapeCS.Code_Reniform);                                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_RoundInShape = new TCoding(ShapeCS.Code_RoundInShape);                                                         // CSItemValueSet.cs:73
+		public static TCoding Code_IrregularInShape = new TCoding(ShapeCS.Code_IrregularInShape);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_LobulatedInShape = new TCoding(ShapeCS.Code_LobulatedInShape);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_OvalInShape = new TCoding(ShapeCS.Code_OvalInShape);                                                           // CSItemValueSet.cs:72
+		public static TCoding Code_Reniform = new TCoding(ShapeCS.Code_Reniform);                                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_RoundInShape = new TCoding(ShapeCS.Code_RoundInShape);                                                         // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_IrregularInShape;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_LobulatedInShape;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_OvalInShape;                                                                                                        // CSItemValueSet.cs:84
-		    yield return Code_Reniform;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_RoundInShape;                                                                                                       // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_IrregularInShape;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_LobulatedInShape;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_OvalInShape;                                                                                                        // CSItemValueSet.cs:83
+		    yield return Code_Reniform;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_RoundInShape;                                                                                                       // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

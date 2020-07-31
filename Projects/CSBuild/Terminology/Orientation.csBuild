@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "OrientationVS",
-    "traceMsg" : "Terminology/Orientation.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "OrientationCS",
-    "traceMsg" : "Terminology/Orientation.mfsh#13/n"
+    "traceMsg" : "Terminology/Orientation.mfsh#23/n"
   }
 },

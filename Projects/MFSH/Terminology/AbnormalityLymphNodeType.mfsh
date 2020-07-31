@@ -1,16 +1,17 @@
 ValueSet:  AbnormalityLymphNodeTypeVS
 Title: "Lymph Node Type ValueSet"
 Description:  "LymphNode Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityLymphNodeTypeCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 
 CodeSystem: AbnormalityLymphNodeTypeCS
 Title: "Lymph Node Type CodeSystem"
 Description: "Lymph node types code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #NodeAxillary "Node axillary"
   * #NodeEnlarged "Node enlarged"
   * #NodeFocalCortex "Node focal cortex"
@@ -20,3 +21,7 @@ Description: "Lymph node types code system."
   * #NodeLymphNormal "Node lymph normal"
   * #NodeSupraclavicular "Node supraclavicular"
   * #NodeUniformThickness "Node uniform thickness"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

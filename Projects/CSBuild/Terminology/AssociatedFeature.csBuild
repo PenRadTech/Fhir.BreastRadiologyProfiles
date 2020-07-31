@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "AssociatedFeatureVS",
-    "traceMsg" : "Terminology/AssociatedFeature.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "AssociatedFeatureCS",
-    "traceMsg" : "Terminology/AssociatedFeature.mfsh#12/n"
+    "traceMsg" : "Terminology/AssociatedFeature.mfsh#49/n"
   }
 },

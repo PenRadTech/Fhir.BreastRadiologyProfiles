@@ -1,17 +1,19 @@
 ValueSet:  BreastBodyLocationRegionsVS
 Title: "Breast Body Location Regions ValueSet"
 Description:  "Breast Body Location Regions Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system BreastBodyLocationRegionsCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 
 
 CodeSystem:  BreastBodyLocationRegionsCS
 Title: "Breast Body Location Regions CodeSystem"
 Description:  "Breast Body Location Regions CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription BodyStructure | 416710001 | Skin and subcutaneous tissue structure of axilla
   * #Axilla "Axilla"
 
@@ -30,3 +32,8 @@ Description:  "Breast Body Location Regions CodeSystem"
 
   // .SnomedDescription BodyStructure | 49058007 | Structure of central portion of breast (Bodypart)
   * #CentralToNipple "Central to nipple"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

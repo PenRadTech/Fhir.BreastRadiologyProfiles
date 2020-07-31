@@ -1,16 +1,21 @@
 ValueSet:  AbnormalityAsymmetryTypeVS
 Title: "Asymmetry Type ValueSet"
 Description:  "Asymmetry Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityAsymmetryTypeCS
   
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
+
 CodeSystem: AbnormalityAsymmetryTypeCS
 Title: "Asymmetry Type CodeSystem"
 Description: "Asymmetry type code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Asymmetry "Asymmetry"
   * #AsymmetryFocal "Asymmetry focal"
   * #AsymmetryGlobal "Asymmetry global"
   * #DevelopingAsymmetry "Developing Asymmetry"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

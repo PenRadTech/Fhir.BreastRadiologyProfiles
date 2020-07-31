@@ -32,33 +32,33 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationClockPositionsVS";
 
-		public static TCoding Code_1OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_1OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_2OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_2OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_3OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_3OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_4OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_4OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_5OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_5OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_6OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_6OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_7OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_7OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_8OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_8OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_9OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_9OClock);                                        // CSItemValueSet.cs:73
-		public static TCoding Code_10OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_10OClock);                                      // CSItemValueSet.cs:73
-		public static TCoding Code_11OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_11OClock);                                      // CSItemValueSet.cs:73
-		public static TCoding Code_12OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_12OClock);                                      // CSItemValueSet.cs:73
+		public static TCoding Code_1OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_1OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_2OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_2OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_3OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_3OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_4OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_4OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_5OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_5OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_6OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_6OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_7OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_7OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_8OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_8OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_9OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_9OClock);                                        // CSItemValueSet.cs:72
+		public static TCoding Code_10OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_10OClock);                                      // CSItemValueSet.cs:72
+		public static TCoding Code_11OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_11OClock);                                      // CSItemValueSet.cs:72
+		public static TCoding Code_12OClock = new TCoding(BreastBodyLocationClockPositionsCS.Code_12OClock);                                      // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_1OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_2OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_3OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_4OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_5OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_6OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_7OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_8OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_9OClock;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_10OClock;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_11OClock;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_12OClock;                                                                                                           // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_1OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_2OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_3OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_4OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_5OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_6OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_7OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_8OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_9OClock;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_10OClock;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_11OClock;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_12OClock;                                                                                                           // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

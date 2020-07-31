@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "ObservedChangesVS",
-    "traceMsg" : "Terminology/ObservedChanges.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "ObservedChangesCS",
-    "traceMsg" : "Terminology/ObservedChanges.mfsh#13/n"
+    "traceMsg" : "Terminology/ObservedChanges.mfsh#33/n"
   }
 },

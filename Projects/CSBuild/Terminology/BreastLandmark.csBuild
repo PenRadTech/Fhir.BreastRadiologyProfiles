@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "BreastLandmarkVS",
-    "traceMsg" : "Terminology/BreastLandmark.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "BreastLandmarkCS",
-    "traceMsg" : "Terminology/BreastLandmark.mfsh#16/n"
+    "traceMsg" : "Terminology/BreastLandmark.mfsh#25/n"
   }
 },

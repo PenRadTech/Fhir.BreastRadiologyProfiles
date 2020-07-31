@@ -1,16 +1,17 @@
 ValueSet:  CorrespondsWithVS
 Title: "CorrespondsWith ValueSet"
 Description:  "CorrespondsWith Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system CorrespondsWithCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
 
 
 CodeSystem:  CorrespondsWithCS
 Title: "CorrespondsWith CodeSystem"
 Description:  "CorrespondsWith CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
   * #Aspiration "Aspiration"
 
@@ -79,3 +80,7 @@ Description:  "CorrespondsWith CodeSystem"
   * #TriggerPoint "Trigger point"
 
   * #US "US"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

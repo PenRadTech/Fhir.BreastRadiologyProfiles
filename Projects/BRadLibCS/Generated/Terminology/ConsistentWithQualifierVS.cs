@@ -32,17 +32,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/ConsistentWithQualifierVS";
 
-		public static TCoding Code_DifferentialDiagnosis = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "DifferentialDiagnosis"));// CSItemValueSet.cs:79
-		public static TCoding Code_LikelyRepresents = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "LikelyRepresents"));// CSItemValueSet.cs:79
-		public static TCoding Code_MostLikely = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "MostLikely"));// CSItemValueSet.cs:79
-		public static TCoding Code_Resembles = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "Resembles"));// CSItemValueSet.cs:79
+		public static TCoding Code_DifferentialDiagnosis = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "DifferentialDiagnosis"));// CSItemValueSet.cs:78
+		public static TCoding Code_LikelyRepresents = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "LikelyRepresents"));// CSItemValueSet.cs:78
+		public static TCoding Code_MostLikely = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "MostLikely"));// CSItemValueSet.cs:78
+		public static TCoding Code_Resembles = new TCoding(new Coding("http://hl7.org/fhir/us/breast-radiology/CodeSystem/ConsistentWithQualifierCS", "Resembles"));// CSItemValueSet.cs:78
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_DifferentialDiagnosis;                                                                                              // CSItemValueSet.cs:84
-		    yield return Code_LikelyRepresents;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_MostLikely;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_Resembles;                                                                                                          // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_DifferentialDiagnosis;                                                                                              // CSItemValueSet.cs:83
+		    yield return Code_LikelyRepresents;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_MostLikely;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_Resembles;                                                                                                          // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

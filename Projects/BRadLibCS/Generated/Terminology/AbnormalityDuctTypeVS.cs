@@ -32,15 +32,15 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityDuctTypeVS";
 
-		public static TCoding Code_DuctNormal = new TCoding(AbnormalityDuctTypeCS.Code_DuctNormal);                                               // CSItemValueSet.cs:73
-		public static TCoding Code_SolitaryDilatedDuct = new TCoding(AbnormalityDuctTypeCS.Code_SolitaryDilatedDuct);                             // CSItemValueSet.cs:73
-		public static TCoding Code_DuctEctasia = new TCoding(AbnormalityDuctTypeCS.Code_DuctEctasia);                                             // CSItemValueSet.cs:73
+		public static TCoding Code_DuctNormal = new TCoding(AbnormalityDuctTypeCS.Code_DuctNormal);                                               // CSItemValueSet.cs:72
+		public static TCoding Code_SolitaryDilatedDuct = new TCoding(AbnormalityDuctTypeCS.Code_SolitaryDilatedDuct);                             // CSItemValueSet.cs:72
+		public static TCoding Code_DuctEctasia = new TCoding(AbnormalityDuctTypeCS.Code_DuctEctasia);                                             // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_DuctNormal;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemValueSet.cs:84
-		    yield return Code_DuctEctasia;                                                                                                        // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_DuctNormal;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_SolitaryDilatedDuct;                                                                                                // CSItemValueSet.cs:83
+		    yield return Code_DuctEctasia;                                                                                                        // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

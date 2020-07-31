@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "CalcificationDistributionVS",
-    "traceMsg" : "Terminology/CalcificationDistribution.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "CalcificationDistributionCS",
-    "traceMsg" : "Terminology/CalcificationDistribution.mfsh#13/n"
+    "traceMsg" : "Terminology/CalcificationDistribution.mfsh#27/n"
   }
 },

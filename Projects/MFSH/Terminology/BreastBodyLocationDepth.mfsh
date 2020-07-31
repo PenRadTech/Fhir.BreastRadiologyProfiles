@@ -1,16 +1,18 @@
 ValueSet:  BreastBodyLocationDepthVS
 Title: "Breast Body Location Depth ValueSet"
 Description:  "Breast Body Location Depth Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system BreastBodyLocationDepthCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 
 CodeSystem:  BreastBodyLocationDepthCS
 Title: "Breast Body Location Depth CodeSystem"
 Description:  "Breast Body Location Depth CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription Not found
   * #AnteriorDepth "Anterior depth"
 
@@ -19,3 +21,7 @@ Description:  "Breast Body Location Depth CodeSystem"
 
   // .SnomedDescription QualifierValue | 255551008 | Posterior (Qualifier) + depth
   * #PosteriorDepth "Posterior depth"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

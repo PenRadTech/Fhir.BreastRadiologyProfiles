@@ -1,16 +1,19 @@
 ValueSet:  BreastBodyLocationQuadrantsVS
 Title: "Breast Body Location Quadrants ValueSet"
 Description:  "Breast Body Location Quadrants Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system BreastBodyLocationQuadrantsCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
+
 
 
 CodeSystem:  BreastBodyLocationQuadrantsCS
 Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription BodyStructure | 19100000 | Structure of lower inner quadrant of breast (Bodypart)
   * #InferiorMedialQuadrent "Inferior medial quadrent (lower inner)"
 
@@ -22,3 +25,7 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
 
   // .SnomedDescription BodyStructure | 76365002 | Structure of upper outer quadrant of breast (Bodypart)
   * #SuperiorLateralQuadrent "Superior lateral quadrent (upper outer)"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "NotPreviouslySeenVS",
-    "traceMsg" : "Terminology/NotPreviouslySeenCS.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "NotPreviouslySeenCS",
-    "traceMsg" : "Terminology/NotPreviouslySeenCS.mfsh#13/n"
+    "traceMsg" : "Terminology/NotPreviouslySeenCS.mfsh#36/n"
   }
 },

@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "ServiceRecommendationsVS",
-    "traceMsg" : "Terminology/ServiceRecommendations.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "ServiceRecommendationsCS",
-    "traceMsg" : "Terminology/ServiceRecommendations.mfsh#13/n"
+    "traceMsg" : "Terminology/ServiceRecommendations.mfsh#267/n"
   }
 },

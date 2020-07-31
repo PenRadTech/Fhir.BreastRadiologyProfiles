@@ -32,17 +32,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityDensityTypeVS";
 
-		public static TCoding Code_Density = new TCoding(AbnormalityDensityTypeCS.Code_Density);                                                  // CSItemValueSet.cs:73
-		public static TCoding Code_DensityFocalAsymmetry = new TCoding(AbnormalityDensityTypeCS.Code_DensityFocalAsymmetry);                      // CSItemValueSet.cs:73
-		public static TCoding Code_DensityNodular = new TCoding(AbnormalityDensityTypeCS.Code_DensityNodular);                                    // CSItemValueSet.cs:73
-		public static TCoding Code_DensityTubular = new TCoding(AbnormalityDensityTypeCS.Code_DensityTubular);                                    // CSItemValueSet.cs:73
+		public static TCoding Code_Density = new TCoding(AbnormalityDensityTypeCS.Code_Density);                                                  // CSItemValueSet.cs:72
+		public static TCoding Code_DensityFocalAsymmetry = new TCoding(AbnormalityDensityTypeCS.Code_DensityFocalAsymmetry);                      // CSItemValueSet.cs:72
+		public static TCoding Code_DensityNodular = new TCoding(AbnormalityDensityTypeCS.Code_DensityNodular);                                    // CSItemValueSet.cs:72
+		public static TCoding Code_DensityTubular = new TCoding(AbnormalityDensityTypeCS.Code_DensityTubular);                                    // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Density;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_DensityFocalAsymmetry;                                                                                              // CSItemValueSet.cs:84
-		    yield return Code_DensityNodular;                                                                                                     // CSItemValueSet.cs:84
-		    yield return Code_DensityTubular;                                                                                                     // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Density;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_DensityFocalAsymmetry;                                                                                              // CSItemValueSet.cs:83
+		    yield return Code_DensityNodular;                                                                                                     // CSItemValueSet.cs:83
+		    yield return Code_DensityTubular;                                                                                                     // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

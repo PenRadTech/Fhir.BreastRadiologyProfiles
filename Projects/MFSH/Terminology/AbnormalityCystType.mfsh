@@ -1,16 +1,18 @@
 ValueSet: AbnormalityCystTypeVS
 Title: "Cyst Type Value Set"
 Description: "Cyst type Value Set."
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityCystTypeCS
   
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
   
 CodeSystem: AbnormalityCystTypeCS
 Title: "Cyst Type CodeSystem"
 Description: "Cyst type CodeSystem."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Cyst "Cyst"
   * #CystComplex "Cyst complex"
   * #CystComplicated "Cyst complicated"
@@ -18,3 +20,7 @@ Description: "Cyst type CodeSystem."
   * #CystOil "Cyst oil"
   * #CystSimple "Cyst simple"
   * #CystWithDebris "Cyst with debris"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

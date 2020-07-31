@@ -37,18 +37,6 @@
   `},
 #end
 
-//
-// Define a valueset.
-//
-#macro CSBuild.DefineValueSet() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
-  `{
-  `  "defineValueSet" : {
-  `    "name" : "%ValueSetId%",
-  `    "traceMsg" : "%ApplyStackFrame%"
-  `  }
-  `},
-#end
-
 
 //
 // Define an CS Interface.

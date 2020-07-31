@@ -32,15 +32,15 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationDepthVS";
 
-		public static TCoding Code_AnteriorDepth = new TCoding(BreastBodyLocationDepthCS.Code_AnteriorDepth);                                     // CSItemValueSet.cs:73
-		public static TCoding Code_MiddleDepth = new TCoding(BreastBodyLocationDepthCS.Code_MiddleDepth);                                         // CSItemValueSet.cs:73
-		public static TCoding Code_PosteriorDepth = new TCoding(BreastBodyLocationDepthCS.Code_PosteriorDepth);                                   // CSItemValueSet.cs:73
+		public static TCoding Code_AnteriorDepth = new TCoding(BreastBodyLocationDepthCS.Code_AnteriorDepth);                                     // CSItemValueSet.cs:72
+		public static TCoding Code_MiddleDepth = new TCoding(BreastBodyLocationDepthCS.Code_MiddleDepth);                                         // CSItemValueSet.cs:72
+		public static TCoding Code_PosteriorDepth = new TCoding(BreastBodyLocationDepthCS.Code_PosteriorDepth);                                   // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_AnteriorDepth;                                                                                                      // CSItemValueSet.cs:84
-		    yield return Code_MiddleDepth;                                                                                                        // CSItemValueSet.cs:84
-		    yield return Code_PosteriorDepth;                                                                                                     // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_AnteriorDepth;                                                                                                      // CSItemValueSet.cs:83
+		    yield return Code_MiddleDepth;                                                                                                        // CSItemValueSet.cs:83
+		    yield return Code_PosteriorDepth;                                                                                                     // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

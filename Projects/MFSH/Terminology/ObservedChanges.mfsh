@@ -1,16 +1,18 @@
 ValueSet:  ObservedChangesVS
 Title: "ObservedChanges ValueSet"
 Description:  "ObservedChanges Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system ObservedChangesCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
 
 
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #DecreaseInCalcifications "Decrease in calcifications"
   * #DecreaseInNumber "Decrease in number"
   * #DecreaseInSize "Decrease in size"
@@ -25,3 +27,7 @@ Description: "Observed changes in an abnormality code system."
   * #PartiallyRemoved "Partially removed"
   * #RepresentsChange "Represents change"
   * #Stable "Stable"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

@@ -1,16 +1,22 @@
 ValueSet:  AbnormalityDensityTypeVS
 Title: "Density Type ValueSet"
 Description:  "Density Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AbnormalityDensityTypeCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 CodeSystem: AbnormalityDensityTypeCS
 Title: "Density Type CodeSystem"
 Description: "Density refinement types code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Density "Density"
   * #DensityFocalAsymmetry "Density focal asymmetry"
   * #DensityNodular "Density nodular"
   * #DensityTubular "Density tubular"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

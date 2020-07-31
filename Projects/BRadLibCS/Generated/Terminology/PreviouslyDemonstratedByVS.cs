@@ -32,17 +32,17 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/PreviouslyDemonstratedByVS";
 
-		public static TCoding Code_Aspiration = new TCoding(PreviouslyDemonstratedByCS.Code_Aspiration);                                          // CSItemValueSet.cs:73
-		public static TCoding Code_Biopsy = new TCoding(PreviouslyDemonstratedByCS.Code_Biopsy);                                                  // CSItemValueSet.cs:73
-		public static TCoding Code_MRI = new TCoding(PreviouslyDemonstratedByCS.Code_MRI);                                                        // CSItemValueSet.cs:73
-		public static TCoding Code_US = new TCoding(PreviouslyDemonstratedByCS.Code_US);                                                          // CSItemValueSet.cs:73
+		public static TCoding Code_Aspiration = new TCoding(PreviouslyDemonstratedByCS.Code_Aspiration);                                          // CSItemValueSet.cs:72
+		public static TCoding Code_Biopsy = new TCoding(PreviouslyDemonstratedByCS.Code_Biopsy);                                                  // CSItemValueSet.cs:72
+		public static TCoding Code_MRI = new TCoding(PreviouslyDemonstratedByCS.Code_MRI);                                                        // CSItemValueSet.cs:72
+		public static TCoding Code_US = new TCoding(PreviouslyDemonstratedByCS.Code_US);                                                          // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:84
-		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:84
-		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Aspiration;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_Biopsy;                                                                                                             // CSItemValueSet.cs:83
+		    yield return Code_MRI;                                                                                                                // CSItemValueSet.cs:83
+		    yield return Code_US;                                                                                                                 // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

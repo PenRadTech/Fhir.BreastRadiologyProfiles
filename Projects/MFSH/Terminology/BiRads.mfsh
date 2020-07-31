@@ -4,9 +4,12 @@
 ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system BiRadsAssessmentCategoryCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 
 /*
@@ -15,8 +18,6 @@ Description:  "BiRads Assessment Category Value Set"
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRads Assessment Category CodeSystem"
 Description:  "BiRads Assessment Category CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
   * #Category0 "Category 0 (Incomplete)"
 
@@ -42,3 +43,8 @@ Description:  "BiRads Assessment Category CodeSystem"
   * #Category5 "Category 5 (Highly Suggestive of Malignancy)"
 
   * #Category6 "Category 6 (Known Biopsy-Proven Malignancy)"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

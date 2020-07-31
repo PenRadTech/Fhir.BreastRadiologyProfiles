@@ -1,15 +1,19 @@
 ValueSet:  CalcificationTypeVS
 Title: "Calcification Type Value Set"
 Description:  "Calcification Type Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system CalcificationTypeCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
+
 
 CodeSystem: CalcificationTypeCS
 Title: "Calcification Type CodeSystem"
 Description: "Mammography calcification type code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #Amorphous "Amorphous"
   * #Coarse "Coarse"
   * #Dystrophic "Dystrophic"
@@ -31,3 +35,8 @@ Description: "Mammography calcification type code system."
   * #Spherical "Spherical"
   * #Suture "Suture"
   * #Vascular "Vascular"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

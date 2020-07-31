@@ -1,15 +1,16 @@
 ValueSet:  AssociatedFeatureVS
 Title: "Associated Feature ValueSet"
 Description:  "AssociatedFeature Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system AssociatedFeatureCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #ArchitecturalDistortion "Architectural distortion"
   * #AxillaryAdenopathy "Axillary adenopathy"
   * #BiopsyClip "Biopsy clip"
@@ -41,3 +42,8 @@ Description: "Associated Feature seen during a breast examination."
   * #MicroCalcifications "Micro calcifications"
   * #MilkOfCalcium "Milk of calcium"
   * #RimCalcifications "Rim calcifications"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

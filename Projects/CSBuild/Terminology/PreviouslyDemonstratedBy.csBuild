@@ -1,12 +1,6 @@
 {
-  "defineValueSet" : {
-    "name" : "PreviouslyDemonstratedByVS",
-    "traceMsg" : "Terminology/PreviouslyDemonstratedBy.mfsh#5/n"
-  }
-},
-{
   "defineCodeSystem" : {
     "name" : "PreviouslyDemonstratedByCS",
-    "traceMsg" : "Terminology/PreviouslyDemonstratedBy.mfsh#13/n"
+    "traceMsg" : "Terminology/PreviouslyDemonstratedBy.mfsh#30/n"
   }
 },

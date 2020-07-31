@@ -32,19 +32,19 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/AbnormalityMassTypeVS";
 
-		public static TCoding Code_Mass = new TCoding(AbnormalityMassTypeCS.Code_Mass);                                                           // CSItemValueSet.cs:73
-		public static TCoding Code_MassIntraductal = new TCoding(AbnormalityMassTypeCS.Code_MassIntraductal);                                     // CSItemValueSet.cs:73
-		public static TCoding Code_MassPartiallySolid = new TCoding(AbnormalityMassTypeCS.Code_MassPartiallySolid);                               // CSItemValueSet.cs:73
-		public static TCoding Code_MassSkinATLASIsSkinLesion = new TCoding(AbnormalityMassTypeCS.Code_MassSkinATLASIsSkinLesion);                 // CSItemValueSet.cs:73
-		public static TCoding Code_MassSolid = new TCoding(AbnormalityMassTypeCS.Code_MassSolid);                                                 // CSItemValueSet.cs:73
+		public static TCoding Code_Mass = new TCoding(AbnormalityMassTypeCS.Code_Mass);                                                           // CSItemValueSet.cs:72
+		public static TCoding Code_MassIntraductal = new TCoding(AbnormalityMassTypeCS.Code_MassIntraductal);                                     // CSItemValueSet.cs:72
+		public static TCoding Code_MassPartiallySolid = new TCoding(AbnormalityMassTypeCS.Code_MassPartiallySolid);                               // CSItemValueSet.cs:72
+		public static TCoding Code_MassSkinATLASIsSkinLesion = new TCoding(AbnormalityMassTypeCS.Code_MassSkinATLASIsSkinLesion);                 // CSItemValueSet.cs:72
+		public static TCoding Code_MassSolid = new TCoding(AbnormalityMassTypeCS.Code_MassSolid);                                                 // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Mass;                                                                                                               // CSItemValueSet.cs:84
-		    yield return Code_MassIntraductal;                                                                                                    // CSItemValueSet.cs:84
-		    yield return Code_MassPartiallySolid;                                                                                                 // CSItemValueSet.cs:84
-		    yield return Code_MassSkinATLASIsSkinLesion;                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_MassSolid;                                                                                                          // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Mass;                                                                                                               // CSItemValueSet.cs:83
+		    yield return Code_MassIntraductal;                                                                                                    // CSItemValueSet.cs:83
+		    yield return Code_MassPartiallySolid;                                                                                                 // CSItemValueSet.cs:83
+		    yield return Code_MassSkinATLASIsSkinLesion;                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_MassSolid;                                                                                                          // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

@@ -1,16 +1,18 @@
 ValueSet:  CalcificationDistributionVS
 Title: "CalcificationDistribution ValueSet"
 Description:  "CalcificationDistribution Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system CalcificationDistributionCS
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
 
 
 CodeSystem: CalcificationDistributionCS
 Title: "Calcification Distribution CodeSystem"
 Description: "Calcification Distribution in an abnormality code system."
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #ClusteredDistribution "Clustered distribution"
   * #DiffuseDistribution "Diffuse distribution"
   * #GroupedDistribution "Grouped distribution"
@@ -18,3 +20,8 @@ Description: "Calcification Distribution in an abnormality code system."
   * #RegionalDistribution "Regional distribution"
   * #ScatteredDistribution "Scattered distribution"
   * #SegmentalDistribution "Segmental distribution"
+
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

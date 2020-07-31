@@ -1,17 +1,23 @@
 ValueSet:  OrientationVS
 Title: "Orientation ValueSet"
 Description:  "Orientation Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system OrientationCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
 
 
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
-#apply CSBuild.DefineCodeSystem()
   * #ParallelToSkin "Parallel to skin"
   * #PerpendicularToSkin "Perpendicular to skin (not parallel)"
   * #TallerThanWide "Taller than wide"
   * #WiderThanTall "Wider than tall"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+#apply CSBuild.DefineCodeSystem()

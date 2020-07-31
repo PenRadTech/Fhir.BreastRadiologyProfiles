@@ -4,9 +4,14 @@
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
-#apply CSBuild.DefineValueSet()
   * codes from system ConsistentWithCS
+
+
+
+#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+
+
+
 
 
 /*
@@ -15,7 +20,6 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
   * #Abscess "Abscess"
 
   // .Snomed 404057003
@@ -230,3 +234,8 @@ Description:  "ConsistentWith CodeSystem"
 
   // .SnomedDescription ClinicalFinding | 71897006 | Venous stasis (Finding) | [0/0] | I87.8
   * #VenousStasis "Venous stasis"
+
+
+#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+
+

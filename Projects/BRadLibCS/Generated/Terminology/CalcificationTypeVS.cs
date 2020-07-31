@@ -32,51 +32,51 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/CalcificationTypeVS";
 
-		public static TCoding Code_Amorphous = new TCoding(CalcificationTypeCS.Code_Amorphous);                                                   // CSItemValueSet.cs:73
-		public static TCoding Code_Coarse = new TCoding(CalcificationTypeCS.Code_Coarse);                                                         // CSItemValueSet.cs:73
-		public static TCoding Code_Dystrophic = new TCoding(CalcificationTypeCS.Code_Dystrophic);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_Eggshell = new TCoding(CalcificationTypeCS.Code_Eggshell);                                                     // CSItemValueSet.cs:73
-		public static TCoding Code_Fine = new TCoding(CalcificationTypeCS.Code_Fine);                                                             // CSItemValueSet.cs:73
-		public static TCoding Code_Generic = new TCoding(CalcificationTypeCS.Code_Generic);                                                       // CSItemValueSet.cs:73
-		public static TCoding Code_CoarseHeterogeneous = new TCoding(CalcificationTypeCS.Code_CoarseHeterogeneous);                               // CSItemValueSet.cs:73
-		public static TCoding Code_Indistinct = new TCoding(CalcificationTypeCS.Code_Indistinct);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_LargeRodlike = new TCoding(CalcificationTypeCS.Code_LargeRodlike);                                             // CSItemValueSet.cs:73
-		public static TCoding Code_Layering = new TCoding(CalcificationTypeCS.Code_Layering);                                                     // CSItemValueSet.cs:73
-		public static TCoding Code_FineLinear = new TCoding(CalcificationTypeCS.Code_FineLinear);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_LucentCentered = new TCoding(CalcificationTypeCS.Code_LucentCentered);                                         // CSItemValueSet.cs:73
-		public static TCoding Code_MilkOfCalcium = new TCoding(CalcificationTypeCS.Code_MilkOfCalcium);                                           // CSItemValueSet.cs:73
-		public static TCoding Code_FinePleomorphic = new TCoding(CalcificationTypeCS.Code_FinePleomorphic);                                       // CSItemValueSet.cs:73
-		public static TCoding Code_Punctate = new TCoding(CalcificationTypeCS.Code_Punctate);                                                     // CSItemValueSet.cs:73
-		public static TCoding Code_Rim = new TCoding(CalcificationTypeCS.Code_Rim);                                                               // CSItemValueSet.cs:73
-		public static TCoding Code_Round = new TCoding(CalcificationTypeCS.Code_Round);                                                           // CSItemValueSet.cs:73
-		public static TCoding Code_Skin = new TCoding(CalcificationTypeCS.Code_Skin);                                                             // CSItemValueSet.cs:73
-		public static TCoding Code_Spherical = new TCoding(CalcificationTypeCS.Code_Spherical);                                                   // CSItemValueSet.cs:73
-		public static TCoding Code_Suture = new TCoding(CalcificationTypeCS.Code_Suture);                                                         // CSItemValueSet.cs:73
-		public static TCoding Code_Vascular = new TCoding(CalcificationTypeCS.Code_Vascular);                                                     // CSItemValueSet.cs:73
+		public static TCoding Code_Amorphous = new TCoding(CalcificationTypeCS.Code_Amorphous);                                                   // CSItemValueSet.cs:72
+		public static TCoding Code_Coarse = new TCoding(CalcificationTypeCS.Code_Coarse);                                                         // CSItemValueSet.cs:72
+		public static TCoding Code_Dystrophic = new TCoding(CalcificationTypeCS.Code_Dystrophic);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_Eggshell = new TCoding(CalcificationTypeCS.Code_Eggshell);                                                     // CSItemValueSet.cs:72
+		public static TCoding Code_Fine = new TCoding(CalcificationTypeCS.Code_Fine);                                                             // CSItemValueSet.cs:72
+		public static TCoding Code_Generic = new TCoding(CalcificationTypeCS.Code_Generic);                                                       // CSItemValueSet.cs:72
+		public static TCoding Code_CoarseHeterogeneous = new TCoding(CalcificationTypeCS.Code_CoarseHeterogeneous);                               // CSItemValueSet.cs:72
+		public static TCoding Code_Indistinct = new TCoding(CalcificationTypeCS.Code_Indistinct);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_LargeRodlike = new TCoding(CalcificationTypeCS.Code_LargeRodlike);                                             // CSItemValueSet.cs:72
+		public static TCoding Code_Layering = new TCoding(CalcificationTypeCS.Code_Layering);                                                     // CSItemValueSet.cs:72
+		public static TCoding Code_FineLinear = new TCoding(CalcificationTypeCS.Code_FineLinear);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_LucentCentered = new TCoding(CalcificationTypeCS.Code_LucentCentered);                                         // CSItemValueSet.cs:72
+		public static TCoding Code_MilkOfCalcium = new TCoding(CalcificationTypeCS.Code_MilkOfCalcium);                                           // CSItemValueSet.cs:72
+		public static TCoding Code_FinePleomorphic = new TCoding(CalcificationTypeCS.Code_FinePleomorphic);                                       // CSItemValueSet.cs:72
+		public static TCoding Code_Punctate = new TCoding(CalcificationTypeCS.Code_Punctate);                                                     // CSItemValueSet.cs:72
+		public static TCoding Code_Rim = new TCoding(CalcificationTypeCS.Code_Rim);                                                               // CSItemValueSet.cs:72
+		public static TCoding Code_Round = new TCoding(CalcificationTypeCS.Code_Round);                                                           // CSItemValueSet.cs:72
+		public static TCoding Code_Skin = new TCoding(CalcificationTypeCS.Code_Skin);                                                             // CSItemValueSet.cs:72
+		public static TCoding Code_Spherical = new TCoding(CalcificationTypeCS.Code_Spherical);                                                   // CSItemValueSet.cs:72
+		public static TCoding Code_Suture = new TCoding(CalcificationTypeCS.Code_Suture);                                                         // CSItemValueSet.cs:72
+		public static TCoding Code_Vascular = new TCoding(CalcificationTypeCS.Code_Vascular);                                                     // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Amorphous;                                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_Coarse;                                                                                                             // CSItemValueSet.cs:84
-		    yield return Code_Dystrophic;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_Eggshell;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_Fine;                                                                                                               // CSItemValueSet.cs:84
-		    yield return Code_Generic;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_CoarseHeterogeneous;                                                                                                // CSItemValueSet.cs:84
-		    yield return Code_Indistinct;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_LargeRodlike;                                                                                                       // CSItemValueSet.cs:84
-		    yield return Code_Layering;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_FineLinear;                                                                                                         // CSItemValueSet.cs:84
-		    yield return Code_LucentCentered;                                                                                                     // CSItemValueSet.cs:84
-		    yield return Code_MilkOfCalcium;                                                                                                      // CSItemValueSet.cs:84
-		    yield return Code_FinePleomorphic;                                                                                                    // CSItemValueSet.cs:84
-		    yield return Code_Punctate;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_Rim;                                                                                                                // CSItemValueSet.cs:84
-		    yield return Code_Round;                                                                                                              // CSItemValueSet.cs:84
-		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:84
-		    yield return Code_Spherical;                                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_Suture;                                                                                                             // CSItemValueSet.cs:84
-		    yield return Code_Vascular;                                                                                                           // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Amorphous;                                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_Coarse;                                                                                                             // CSItemValueSet.cs:83
+		    yield return Code_Dystrophic;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_Eggshell;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_Fine;                                                                                                               // CSItemValueSet.cs:83
+		    yield return Code_Generic;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_CoarseHeterogeneous;                                                                                                // CSItemValueSet.cs:83
+		    yield return Code_Indistinct;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_LargeRodlike;                                                                                                       // CSItemValueSet.cs:83
+		    yield return Code_Layering;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_FineLinear;                                                                                                         // CSItemValueSet.cs:83
+		    yield return Code_LucentCentered;                                                                                                     // CSItemValueSet.cs:83
+		    yield return Code_MilkOfCalcium;                                                                                                      // CSItemValueSet.cs:83
+		    yield return Code_FinePleomorphic;                                                                                                    // CSItemValueSet.cs:83
+		    yield return Code_Punctate;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_Rim;                                                                                                                // CSItemValueSet.cs:83
+		    yield return Code_Round;                                                                                                              // CSItemValueSet.cs:83
+		    yield return Code_Skin;                                                                                                               // CSItemValueSet.cs:83
+		    yield return Code_Spherical;                                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_Suture;                                                                                                             // CSItemValueSet.cs:83
+		    yield return Code_Vascular;                                                                                                           // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }

@@ -32,25 +32,25 @@ namespace BRadLibCS
 		/// </summary>
 		public const String Url = "http://hl7.org/fhir/us/breast-radiology/ValueSet/BreastBodyLocationRegionsVS";
 
-		public static TCoding Code_Axilla = new TCoding(BreastBodyLocationRegionsCS.Code_Axilla);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_AxillaryTail = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaryTail);                                     // CSItemValueSet.cs:73
-		public static TCoding Code_AxillaI = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaI);                                               // CSItemValueSet.cs:73
-		public static TCoding Code_AxillaII = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaII);                                             // CSItemValueSet.cs:73
-		public static TCoding Code_AxillaIII = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaIII);                                           // CSItemValueSet.cs:73
-		public static TCoding Code_InframammaryFold = new TCoding(BreastBodyLocationRegionsCS.Code_InframammaryFold);                             // CSItemValueSet.cs:73
-		public static TCoding Code_InSkin = new TCoding(BreastBodyLocationRegionsCS.Code_InSkin);                                                 // CSItemValueSet.cs:73
-		public static TCoding Code_CentralToNipple = new TCoding(BreastBodyLocationRegionsCS.Code_CentralToNipple);                               // CSItemValueSet.cs:73
+		public static TCoding Code_Axilla = new TCoding(BreastBodyLocationRegionsCS.Code_Axilla);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_AxillaryTail = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaryTail);                                     // CSItemValueSet.cs:72
+		public static TCoding Code_AxillaI = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaI);                                               // CSItemValueSet.cs:72
+		public static TCoding Code_AxillaII = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaII);                                             // CSItemValueSet.cs:72
+		public static TCoding Code_AxillaIII = new TCoding(BreastBodyLocationRegionsCS.Code_AxillaIII);                                           // CSItemValueSet.cs:72
+		public static TCoding Code_InframammaryFold = new TCoding(BreastBodyLocationRegionsCS.Code_InframammaryFold);                             // CSItemValueSet.cs:72
+		public static TCoding Code_InSkin = new TCoding(BreastBodyLocationRegionsCS.Code_InSkin);                                                 // CSItemValueSet.cs:72
+		public static TCoding Code_CentralToNipple = new TCoding(BreastBodyLocationRegionsCS.Code_CentralToNipple);                               // CSItemValueSet.cs:72
 
-		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:58
-		{                                                                                                                                         // CSItemValueSet.cs:59
-		    yield return Code_Axilla;                                                                                                             // CSItemValueSet.cs:84
-		    yield return Code_AxillaryTail;                                                                                                       // CSItemValueSet.cs:84
-		    yield return Code_AxillaI;                                                                                                            // CSItemValueSet.cs:84
-		    yield return Code_AxillaII;                                                                                                           // CSItemValueSet.cs:84
-		    yield return Code_AxillaIII;                                                                                                          // CSItemValueSet.cs:84
-		    yield return Code_InframammaryFold;                                                                                                   // CSItemValueSet.cs:84
-		    yield return Code_InSkin;                                                                                                             // CSItemValueSet.cs:84
-		    yield return Code_CentralToNipple;                                                                                                    // CSItemValueSet.cs:84
-		}                                                                                                                                         // CSItemValueSet.cs:105
+		public static IEnumerable<TCoding> Codes()                                                                                                // CSItemValueSet.cs:57
+		{                                                                                                                                         // CSItemValueSet.cs:58
+		    yield return Code_Axilla;                                                                                                             // CSItemValueSet.cs:83
+		    yield return Code_AxillaryTail;                                                                                                       // CSItemValueSet.cs:83
+		    yield return Code_AxillaI;                                                                                                            // CSItemValueSet.cs:83
+		    yield return Code_AxillaII;                                                                                                           // CSItemValueSet.cs:83
+		    yield return Code_AxillaIII;                                                                                                          // CSItemValueSet.cs:83
+		    yield return Code_InframammaryFold;                                                                                                   // CSItemValueSet.cs:83
+		    yield return Code_InSkin;                                                                                                             // CSItemValueSet.cs:83
+		    yield return Code_CentralToNipple;                                                                                                    // CSItemValueSet.cs:83
+		}                                                                                                                                         // CSItemValueSet.cs:104
 	}
 }
