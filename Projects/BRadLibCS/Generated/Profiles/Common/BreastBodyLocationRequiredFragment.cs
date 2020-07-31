@@ -18,7 +18,29 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IBreastBodyLocationRequiredFragment 
 	{
+	}
 
+
+	/// <summary>
+	/// Interface IBreastBodyLocationRequiredFragment.
+	/// </summary>
+	public static class BreastBodyLocationRequiredFragmentExtensions
+	{
+		public static void Init(this IBreastBodyLocationRequiredFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		}
+
+		public static void Read(this IBreastBodyLocationRequiredFragment fragment)
+		{
+		}
+
+		public static void Write(this IBreastBodyLocationRequiredFragment fragment)
+		{
+		}
+
+		public static void Validate(this IBreastBodyLocationRequiredFragment fragment)
+		{
+		}
 	}
 }
 

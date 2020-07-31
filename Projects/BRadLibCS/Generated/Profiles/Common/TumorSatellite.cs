@@ -65,8 +65,6 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
-			//+ Constructor
-			//- Constructor
 		}
 
 		/// <summary>
@@ -78,10 +76,6 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			//+ ValidateCodeStart
-			//- ValidateCodeStart
-			//+ ValidateCode
-			//- ValidateCode
 			return retVal;
 		}
 
@@ -91,10 +85,6 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			//+ WriteCodeStart
-			//- WriteCodeStart
-			//+ WriteCode
-			//- WriteCode
 		}
 
 		/// <summary>
@@ -103,10 +93,6 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			//+ ReadCodeStart
-			//- ReadCodeStart
-			//+ ReadCode
-			//- ReadCode
 		}
 
 	}

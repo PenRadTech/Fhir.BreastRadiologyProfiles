@@ -66,8 +66,8 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
-			//+ Constructor
-			//- Constructor
+			((IBreastBodyLocationRequiredFragment)this).Init(doc, baseResource);                                                                     // CSItemClass.cs:73
+			((IObservedCountFragment)this).Init(doc, baseResource);                                                                                  // CSItemClass.cs:73
 		}
 
 		/// <summary>
@@ -79,10 +79,8 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			//+ ValidateCodeStart
-			//- ValidateCodeStart
-			//+ ValidateCode
-			//- ValidateCode
+			((IBreastBodyLocationRequiredFragment)this).Validate();                                                                                  // CSItemClass.cs:82
+			((IObservedCountFragment)this).Validate();                                                                                               // CSItemClass.cs:82
 			return retVal;
 		}
 
@@ -92,10 +90,8 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			//+ WriteCodeStart
-			//- WriteCodeStart
-			//+ WriteCode
-			//- WriteCode
+			((IBreastBodyLocationRequiredFragment)this).Write();                                                                                     // CSItemClass.cs:79
+			((IObservedCountFragment)this).Write();                                                                                                  // CSItemClass.cs:79
 		}
 
 		/// <summary>
@@ -104,10 +100,8 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			//+ ReadCodeStart
-			//- ReadCodeStart
-			//+ ReadCode
-			//- ReadCode
+			((IBreastBodyLocationRequiredFragment)this).Read();                                                                                      // CSItemClass.cs:76
+			((IObservedCountFragment)this).Read();                                                                                                   // CSItemClass.cs:76
 		}
 
 	}

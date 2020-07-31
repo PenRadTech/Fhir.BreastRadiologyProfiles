@@ -18,10 +18,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IFindingsRightBreast 
 	{
-		ComponentHasMember<MGFinding> MgFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
-		ComponentHasMember<MRIFinding> MriFinding { get; set; }                                                                                   // CSPropMatchHasMemberSlice.cs:43
-		ComponentHasMember<NMFinding> NmFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
-		ComponentHasMember<USFinding> UsFinding { get; set; }                                                                                     // CSPropMatchHasMemberSlice.cs:43
+		HasMemberCollection<MGFinding> MgFinding { get; set; }                                                                                    // CSPropMatchHasMemberSlice.cs:63
+		HasMemberCollection<MRIFinding> MriFinding { get; set; }                                                                                  // CSPropMatchHasMemberSlice.cs:63
+		HasMemberCollection<NMFinding> NmFinding { get; set; }                                                                                    // CSPropMatchHasMemberSlice.cs:63
+		HasMemberCollection<USFinding> UsFinding { get; set; }                                                                                    // CSPropMatchHasMemberSlice.cs:63
 
 	}
 
@@ -30,10 +30,10 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class FindingsRightBreast :  ObservationBase, IFindingsRightBreast
 	{
-		public ComponentHasMember<MGFinding> MgFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
-		public ComponentHasMember<MRIFinding> MriFinding { get; set; }                                                                            // CSPropMatchHasMemberSlice.cs:53
-		public ComponentHasMember<NMFinding> NmFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
-		public ComponentHasMember<USFinding> UsFinding { get; set; }                                                                              // CSPropMatchHasMemberSlice.cs:53
+		public HasMemberCollection<MGFinding> MgFinding { get; set; }                                                                             // CSPropMatchHasMemberSlice.cs:120
+		public HasMemberCollection<MRIFinding> MriFinding { get; set; }                                                                           // CSPropMatchHasMemberSlice.cs:120
+		public HasMemberCollection<NMFinding> NmFinding { get; set; }                                                                             // CSPropMatchHasMemberSlice.cs:120
+		public HasMemberCollection<USFinding> UsFinding { get; set; }                                                                             // CSPropMatchHasMemberSlice.cs:120
 
 		/// <summary>
 		/// Constructor.
@@ -73,8 +73,6 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
-			//+ Constructor
-			//- Constructor
 		}
 
 		/// <summary>
@@ -86,10 +84,6 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			//+ ValidateCodeStart
-			//- ValidateCodeStart
-			//+ ValidateCode
-			//- ValidateCode
 			return retVal;
 		}
 
@@ -99,10 +93,6 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			//+ WriteCodeStart
-			//- WriteCodeStart
-			//+ WriteCode
-			//- WriteCode
 		}
 
 		/// <summary>
@@ -111,10 +101,6 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			//+ ReadCodeStart
-			//- ReadCodeStart
-			//+ ReadCode
-			//- ReadCode
 		}
 
 	}

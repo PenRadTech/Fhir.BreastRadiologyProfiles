@@ -18,8 +18,31 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ITumorSatelliteFragment 
 	{
-		ComponentHasMember<TumorSatellite> TumorSatellite { get; set; }                                                                           // CSPropMatchHasMemberSlice.cs:43
+		HasMemberCollection<TumorSatellite> TumorSatellite { get; set; }                                                                          // CSPropMatchHasMemberSlice.cs:69
+	}
 
+
+	/// <summary>
+	/// Interface ITumorSatelliteFragment.
+	/// </summary>
+	public static class TumorSatelliteFragmentExtensions
+	{
+		public static void Init(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		fragment.TumorSatellite = new HasMemberCollection<TumorSatellite>();                                                                      // CSPropMatchHasMemberSlice.cs:98
+		}
+
+		public static void Read(this ITumorSatelliteFragment fragment)
+		{
+		}
+
+		public static void Write(this ITumorSatelliteFragment fragment)
+		{
+		}
+
+		public static void Validate(this ITumorSatelliteFragment fragment)
+		{
+		}
 	}
 }
 

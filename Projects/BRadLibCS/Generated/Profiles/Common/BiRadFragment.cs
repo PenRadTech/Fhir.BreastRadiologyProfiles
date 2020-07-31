@@ -18,7 +18,29 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IBiRadFragment 
 	{
+	}
 
+
+	/// <summary>
+	/// Interface IBiRadFragment.
+	/// </summary>
+	public static class BiRadFragmentExtensions
+	{
+		public static void Init(this IBiRadFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		}
+
+		public static void Read(this IBiRadFragment fragment)
+		{
+		}
+
+		public static void Write(this IBiRadFragment fragment)
+		{
+		}
+
+		public static void Validate(this IBiRadFragment fragment)
+		{
+		}
 	}
 }
 

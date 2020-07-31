@@ -18,7 +18,29 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IShapeFragment 
 	{
+	}
 
+
+	/// <summary>
+	/// Interface IShapeFragment.
+	/// </summary>
+	public static class ShapeFragmentExtensions
+	{
+		public static void Init(this IShapeFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		}
+
+		public static void Read(this IShapeFragment fragment)
+		{
+		}
+
+		public static void Write(this IShapeFragment fragment)
+		{
+		}
+
+		public static void Validate(this IShapeFragment fragment)
+		{
+		}
 	}
 }
 

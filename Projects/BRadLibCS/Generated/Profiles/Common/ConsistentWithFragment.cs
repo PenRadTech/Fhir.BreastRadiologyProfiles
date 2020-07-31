@@ -18,8 +18,31 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWithFragment 
 	{
-		ComponentHasMember<ConsistentWith> ConsistentWith { get; set; }                                                                           // CSPropMatchHasMemberSlice.cs:43
+		HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                          // CSPropMatchHasMemberSlice.cs:69
+	}
 
+
+	/// <summary>
+	/// Interface IConsistentWithFragment.
+	/// </summary>
+	public static class ConsistentWithFragmentExtensions
+	{
+		public static void Init(this IConsistentWithFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		fragment.ConsistentWith = new HasMemberCollection<ConsistentWith>();                                                                      // CSPropMatchHasMemberSlice.cs:98
+		}
+
+		public static void Read(this IConsistentWithFragment fragment)
+		{
+		}
+
+		public static void Write(this IConsistentWithFragment fragment)
+		{
+		}
+
+		public static void Validate(this IConsistentWithFragment fragment)
+		{
+		}
 	}
 }
 

@@ -18,7 +18,29 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ICorrespondsWithFragment 
 	{
+	}
 
+
+	/// <summary>
+	/// Interface ICorrespondsWithFragment.
+	/// </summary>
+	public static class CorrespondsWithFragmentExtensions
+	{
+		public static void Init(this ICorrespondsWithFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		}
+
+		public static void Read(this ICorrespondsWithFragment fragment)
+		{
+		}
+
+		public static void Write(this ICorrespondsWithFragment fragment)
+		{
+		}
+
+		public static void Validate(this ICorrespondsWithFragment fragment)
+		{
+		}
 	}
 }
 

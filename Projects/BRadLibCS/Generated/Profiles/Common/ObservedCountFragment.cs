@@ -18,7 +18,29 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedCountFragment 
 	{
+	}
 
+
+	/// <summary>
+	/// Interface IObservedCountFragment.
+	/// </summary>
+	public static class ObservedCountFragmentExtensions
+	{
+		public static void Init(this IObservedCountFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		{
+		}
+
+		public static void Read(this IObservedCountFragment fragment)
+		{
+		}
+
+		public static void Write(this IObservedCountFragment fragment)
+		{
+		}
+
+		public static void Validate(this IObservedCountFragment fragment)
+		{
+		}
 	}
 }
 
