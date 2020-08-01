@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -18,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ITumorSatelliteFragment 
 	{
-		HasMemberCollection<TumorSatellite> TumorSatellite { get; set; }                                                                          // CSHasMemberSlice.cs:77
+		HasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                                   // CSHasMemberSlice.cs:77
 	}
 
 
@@ -29,7 +30,7 @@ namespace BRadLibCS
 	{
 		public static void Init(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.TumorSatellite = new HasMemberCollection<TumorSatellite>();                                                                      // CSHasMemberSlice.cs:106
+		fragment.TumorSatellite = new HasMemberCollection<TumorSatelliteProfile>();                                                               // CSHasMemberSlice.cs:106
 		}
 
 		public static void Read(this ITumorSatelliteFragment fragment)

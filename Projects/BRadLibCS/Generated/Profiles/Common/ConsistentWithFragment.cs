@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -18,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWithFragment 
 	{
-		HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                          // CSHasMemberSlice.cs:77
+		HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:77
 	}
 
 
@@ -29,7 +30,7 @@ namespace BRadLibCS
 	{
 		public static void Init(this IConsistentWithFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.ConsistentWith = new HasMemberCollection<ConsistentWith>();                                                                      // CSHasMemberSlice.cs:106
+		fragment.ConsistentWith = new HasMemberCollection<ConsistentWithProfile>();                                                               // CSHasMemberSlice.cs:106
 		}
 
 		public static void Read(this IConsistentWithFragment fragment)

@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -31,11 +32,11 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AbnormalityFibroadenoma.
+	/// class CAbnormalityFibroadenomaProfile.
 	/// </summary>
-	public partial class AbnormalityFibroadenoma :  ObservationBase, IAbnormalityFibroadenoma
+	public partial class AbnormalityFibroadenomaProfile :  ObservationBase, IAbnormalityFibroadenoma
 	{
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
 		public Component<CodeableConcept> FibroAdenomaType { get; set; }                                                                          // CSComponentSlice.cs:103
 		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
 		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
@@ -53,7 +54,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AbnormalityFibroadenoma() : base()
+		public AbnormalityFibroadenomaProfile() : base()
 		{
 		}
 
@@ -63,7 +64,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AbnormalityFibroadenoma(BreastRadiologyDocument doc, Observation resource)
+		public AbnormalityFibroadenomaProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -73,7 +74,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AbnormalityFibroadenoma(BreastRadiologyDocument doc)
+		public AbnormalityFibroadenomaProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

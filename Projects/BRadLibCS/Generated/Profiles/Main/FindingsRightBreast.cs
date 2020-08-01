@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -18,28 +19,28 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IFindingsRightBreast 
 	{
-		HasMemberCollection<MGFinding> MgFinding { get; set; }                                                                                    // CSHasMemberSlice.cs:71
-		HasMemberCollection<MRIFinding> MriFinding { get; set; }                                                                                  // CSHasMemberSlice.cs:71
-		HasMemberCollection<NMFinding> NmFinding { get; set; }                                                                                    // CSHasMemberSlice.cs:71
-		HasMemberCollection<USFinding> UsFinding { get; set; }                                                                                    // CSHasMemberSlice.cs:71
+		HasMemberCollection<MGFindingProfile> MgFinding { get; set; }                                                                             // CSHasMemberSlice.cs:71
+		HasMemberCollection<MRIFindingProfile> MriFinding { get; set; }                                                                           // CSHasMemberSlice.cs:71
+		HasMemberCollection<NMFindingProfile> NmFinding { get; set; }                                                                             // CSHasMemberSlice.cs:71
+		HasMemberCollection<USFindingProfile> UsFinding { get; set; }                                                                             // CSHasMemberSlice.cs:71
 
 	}
 
 	/// <summary>
-	/// class FindingsRightBreast.
+	/// class CFindingsRightBreastProfile.
 	/// </summary>
-	public partial class FindingsRightBreast :  ObservationBase, IFindingsRightBreast
+	public partial class FindingsRightBreastProfile :  ObservationBase, IFindingsRightBreast
 	{
-		public HasMemberCollection<MGFinding> MgFinding { get; set; }                                                                             // CSHasMemberSlice.cs:128
-		public HasMemberCollection<MRIFinding> MriFinding { get; set; }                                                                           // CSHasMemberSlice.cs:128
-		public HasMemberCollection<NMFinding> NmFinding { get; set; }                                                                             // CSHasMemberSlice.cs:128
-		public HasMemberCollection<USFinding> UsFinding { get; set; }                                                                             // CSHasMemberSlice.cs:128
+		public HasMemberCollection<MGFindingProfile> MgFinding { get; set; }                                                                      // CSHasMemberSlice.cs:128
+		public HasMemberCollection<MRIFindingProfile> MriFinding { get; set; }                                                                    // CSHasMemberSlice.cs:128
+		public HasMemberCollection<NMFindingProfile> NmFinding { get; set; }                                                                      // CSHasMemberSlice.cs:128
+		public HasMemberCollection<USFindingProfile> UsFinding { get; set; }                                                                      // CSHasMemberSlice.cs:128
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public FindingsRightBreast() : base()
+		public FindingsRightBreastProfile() : base()
 		{
 		}
 
@@ -49,7 +50,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public FindingsRightBreast(BreastRadiologyDocument doc, Observation resource)
+		public FindingsRightBreastProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -59,7 +60,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public FindingsRightBreast(BreastRadiologyDocument doc)
+		public FindingsRightBreastProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

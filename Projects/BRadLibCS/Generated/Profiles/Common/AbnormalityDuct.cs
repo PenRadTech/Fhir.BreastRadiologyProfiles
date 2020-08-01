@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -33,11 +34,11 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AbnormalityDuct.
+	/// class CAbnormalityDuctProfile.
 	/// </summary>
-	public partial class AbnormalityDuct :  ObservationBase, IAbnormalityDuct
+	public partial class AbnormalityDuctProfile :  ObservationBase, IAbnormalityDuct
 	{
-		public HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:134
+		public HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                            // CSHasMemberSlice.cs:134
 		public Component<CodeableConcept> DuctType { get; set; }                                                                                  // CSComponentSlice.cs:103
 		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
 		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
@@ -57,7 +58,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AbnormalityDuct() : base()
+		public AbnormalityDuctProfile() : base()
 		{
 		}
 
@@ -67,7 +68,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AbnormalityDuct(BreastRadiologyDocument doc, Observation resource)
+		public AbnormalityDuctProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -77,7 +78,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AbnormalityDuct(BreastRadiologyDocument doc)
+		public AbnormalityDuctProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

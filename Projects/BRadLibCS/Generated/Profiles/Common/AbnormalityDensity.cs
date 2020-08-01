@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -34,12 +35,12 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AbnormalityDensity.
+	/// class CAbnormalityDensityProfile.
 	/// </summary>
-	public partial class AbnormalityDensity :  ObservationBase, IAbnormalityDensity
+	public partial class AbnormalityDensityProfile :  ObservationBase, IAbnormalityDensity
 	{
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
-		public HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
+		public HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                            // CSHasMemberSlice.cs:134
 		public Component<CodeableConcept> DensityType { get; set; }                                                                               // CSComponentSlice.cs:103
 		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
 		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
@@ -59,7 +60,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AbnormalityDensity() : base()
+		public AbnormalityDensityProfile() : base()
 		{
 		}
 
@@ -69,7 +70,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AbnormalityDensity(BreastRadiologyDocument doc, Observation resource)
+		public AbnormalityDensityProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -79,7 +80,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AbnormalityDensity(BreastRadiologyDocument doc)
+		public AbnormalityDensityProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

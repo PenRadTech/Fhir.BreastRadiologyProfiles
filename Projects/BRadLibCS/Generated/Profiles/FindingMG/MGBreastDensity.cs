@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -22,16 +23,16 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class MGBreastDensity.
+	/// class CMGBreastDensityProfile.
 	/// </summary>
-	public partial class MGBreastDensity :  ObservationBase, IMGBreastDensity
+	public partial class MGBreastDensityProfile :  ObservationBase, IMGBreastDensity
 	{
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public MGBreastDensity() : base()
+		public MGBreastDensityProfile() : base()
 		{
 		}
 
@@ -41,7 +42,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public MGBreastDensity(BreastRadiologyDocument doc, Observation resource)
+		public MGBreastDensityProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -51,7 +52,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public MGBreastDensity(BreastRadiologyDocument doc)
+		public MGBreastDensityProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

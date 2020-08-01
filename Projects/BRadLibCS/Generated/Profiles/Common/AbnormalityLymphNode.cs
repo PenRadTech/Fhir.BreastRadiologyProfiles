@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -34,12 +35,12 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AbnormalityLymphNode.
+	/// class CAbnormalityLymphNodeProfile.
 	/// </summary>
-	public partial class AbnormalityLymphNode :  ObservationBase, IAbnormalityLymphNode
+	public partial class AbnormalityLymphNodeProfile :  ObservationBase, IAbnormalityLymphNode
 	{
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
-		public HasMemberCollection<TumorSatellite> TumorSatellite { get; set; }                                                                   // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
+		public HasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                            // CSHasMemberSlice.cs:134
 		public Component<CodeableConcept> LymphNodeType { get; set; }                                                                             // CSComponentSlice.cs:103
 		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
 		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
@@ -59,7 +60,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AbnormalityLymphNode() : base()
+		public AbnormalityLymphNodeProfile() : base()
 		{
 		}
 
@@ -69,7 +70,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AbnormalityLymphNode(BreastRadiologyDocument doc, Observation resource)
+		public AbnormalityLymphNodeProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -79,7 +80,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AbnormalityLymphNode(BreastRadiologyDocument doc)
+		public AbnormalityLymphNodeProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

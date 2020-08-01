@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -24,9 +25,9 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class ConsistentWith.
+	/// class CConsistentWithProfile.
 	/// </summary>
-	public partial class ConsistentWith :  ObservationBase, IConsistentWith
+	public partial class ConsistentWithProfile :  ObservationBase, IConsistentWith
 	{
 		public Component<CodeableConcept> ConsistentWith { get; set; }                                                                            // CSComponentSlice.cs:103
 		public Component<CodeableConcept> Qualifier { get; set; }                                                                                 // CSComponentSlice.cs:103
@@ -35,7 +36,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public ConsistentWith() : base()
+		public ConsistentWithProfile() : base()
 		{
 		}
 
@@ -45,7 +46,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public ConsistentWith(BreastRadiologyDocument doc, Observation resource)
+		public ConsistentWithProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -55,7 +56,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public ConsistentWith(BreastRadiologyDocument doc)
+		public ConsistentWithProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -22,16 +23,16 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class USFinding.
+	/// class CUSFindingProfile.
 	/// </summary>
-	public partial class USFinding :  ObservationBase, IUSFinding
+	public partial class USFindingProfile :  ObservationBase, IUSFinding
 	{
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public USFinding() : base()
+		public USFindingProfile() : base()
 		{
 		}
 
@@ -41,7 +42,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public USFinding(BreastRadiologyDocument doc, Observation resource)
+		public USFindingProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -51,7 +52,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public USFinding(BreastRadiologyDocument doc)
+		public USFindingProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

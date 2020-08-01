@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -18,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IAssociatedFeatureFragment 
 	{
-		HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                                    // CSHasMemberSlice.cs:77
+		HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:77
 	}
 
 
@@ -29,7 +30,7 @@ namespace BRadLibCS
 	{
 		public static void Init(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.AssociatedFeature = new HasMemberCollection<AssociatedFeature>();                                                                // CSHasMemberSlice.cs:106
+		fragment.AssociatedFeature = new HasMemberCollection<AssociatedFeatureProfile>();                                                         // CSHasMemberSlice.cs:106
 		}
 
 		public static void Read(this IAssociatedFeatureFragment fragment)

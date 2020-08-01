@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -22,16 +23,16 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class TumorSatellite.
+	/// class CTumorSatelliteProfile.
 	/// </summary>
-	public partial class TumorSatellite :  ObservationBase, ITumorSatellite
+	public partial class TumorSatelliteProfile :  ObservationBase, ITumorSatellite
 	{
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public TumorSatellite() : base()
+		public TumorSatelliteProfile() : base()
 		{
 		}
 
@@ -41,7 +42,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public TumorSatellite(BreastRadiologyDocument doc, Observation resource)
+		public TumorSatelliteProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -51,7 +52,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public TumorSatellite(BreastRadiologyDocument doc)
+		public TumorSatelliteProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

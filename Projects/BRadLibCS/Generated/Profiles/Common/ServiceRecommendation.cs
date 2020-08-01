@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -22,16 +23,16 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class ServiceRecommendation.
+	/// class CServiceRecommendationProfile.
 	/// </summary>
-	public partial class ServiceRecommendation :  ServiceRequestBase, IServiceRecommendation
+	public partial class ServiceRecommendationProfile :  ServiceRequestBase, IServiceRecommendation
 	{
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public ServiceRecommendation() : base()
+		public ServiceRecommendationProfile() : base()
 		{
 		}
 
@@ -41,7 +42,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public ServiceRecommendation(BreastRadiologyDocument doc, ServiceRequest resource)
+		public ServiceRecommendationProfile(BreastRadiologyDocument doc, ServiceRequest resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -51,7 +52,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public ServiceRecommendation(BreastRadiologyDocument doc)
+		public ServiceRecommendationProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new ServiceRequest());
 		}

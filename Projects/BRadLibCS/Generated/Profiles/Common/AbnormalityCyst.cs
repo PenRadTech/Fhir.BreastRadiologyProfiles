@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -35,13 +36,13 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AbnormalityCyst.
+	/// class CAbnormalityCystProfile.
 	/// </summary>
-	public partial class AbnormalityCyst :  ObservationBase, IAbnormalityCyst
+	public partial class AbnormalityCystProfile :  ObservationBase, IAbnormalityCyst
 	{
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
-		public HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:134
-		public HasMemberCollection<TumorSatellite> TumorSatellite { get; set; }                                                                   // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
+		public HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                            // CSHasMemberSlice.cs:134
+		public HasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                            // CSHasMemberSlice.cs:134
 		public Component<CodeableConcept> CystType { get; set; }                                                                                  // CSComponentSlice.cs:103
 		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
 		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
@@ -61,7 +62,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AbnormalityCyst() : base()
+		public AbnormalityCystProfile() : base()
 		{
 		}
 
@@ -71,7 +72,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AbnormalityCyst(BreastRadiologyDocument doc, Observation resource)
+		public AbnormalityCystProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -81,7 +82,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AbnormalityCyst(BreastRadiologyDocument doc)
+		public AbnormalityCystProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

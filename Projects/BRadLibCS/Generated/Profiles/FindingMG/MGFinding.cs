@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -18,46 +19,46 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IMGFinding 
 	{
-		HasMemberCollection<AbnormalityCyst> AbnormalityCyst { get; set; }                                                                        // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityDuct> AbnormalityDuct { get; set; }                                                                        // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityForeignObject> AbnormalityForeignObject { get; set; }                                                      // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityLymphNode> AbnormalityLymphNode { get; set; }                                                              // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityMass> AbnormalityMass { get; set; }                                                                        // CSHasMemberSlice.cs:77
-		HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                                    // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityFibroadenoma> AbnormalityFibroadenoma { get; set; }                                                        // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityArchitecturalDistortion> AbnormalityArchDist { get; set; }                                                 // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityAsymmetry> AbnormalityAsymmetry { get; set; }                                                              // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityCalcification> AbnormalityCalcification { get; set; }                                                      // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityDensity> AbnormalityDensity { get; set; }                                                                  // CSHasMemberSlice.cs:77
-		HasMemberCollection<AbnormalityFatNecrosis> AbnormalityFatNecrosis { get; set; }                                                          // CSHasMemberSlice.cs:77
-		HasMemberCollection<MGBreastDensity> MgBreastDensity { get; set; }                                                                        // CSHasMemberSlice.cs:71
+		HasMemberCollection<AbnormalityCystProfile> AbnormalityCyst { get; set; }                                                                 // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityDuctProfile> AbnormalityDuct { get; set; }                                                                 // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityForeignObjectProfile> AbnormalityForeignObject { get; set; }                                               // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityLymphNodeProfile> AbnormalityLymphNode { get; set; }                                                       // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityMassProfile> AbnormalityMass { get; set; }                                                                 // CSHasMemberSlice.cs:77
+		HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityFibroadenomaProfile> AbnormalityFibroadenoma { get; set; }                                                 // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityArchitecturalDistortionProfile> AbnormalityArchDist { get; set; }                                          // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityAsymmetryProfile> AbnormalityAsymmetry { get; set; }                                                       // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityCalcificationProfile> AbnormalityCalcification { get; set; }                                               // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityDensityProfile> AbnormalityDensity { get; set; }                                                           // CSHasMemberSlice.cs:77
+		HasMemberCollection<AbnormalityFatNecrosisProfile> AbnormalityFatNecrosis { get; set; }                                                   // CSHasMemberSlice.cs:77
+		HasMemberCollection<MGBreastDensityProfile> MgBreastDensity { get; set; }                                                                 // CSHasMemberSlice.cs:71
 
 	}
 
 	/// <summary>
-	/// class MGFinding.
+	/// class CMGFindingProfile.
 	/// </summary>
-	public partial class MGFinding :  ObservationBase, IMGFinding
+	public partial class MGFindingProfile :  ObservationBase, IMGFinding
 	{
-		public HasMemberCollection<AbnormalityCyst> AbnormalityCyst { get; set; }                                                                 // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityDuct> AbnormalityDuct { get; set; }                                                                 // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityForeignObject> AbnormalityForeignObject { get; set; }                                               // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityLymphNode> AbnormalityLymphNode { get; set; }                                                       // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityMass> AbnormalityMass { get; set; }                                                                 // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityFibroadenoma> AbnormalityFibroadenoma { get; set; }                                                 // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityArchitecturalDistortion> AbnormalityArchDist { get; set; }                                          // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityAsymmetry> AbnormalityAsymmetry { get; set; }                                                       // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityCalcification> AbnormalityCalcification { get; set; }                                               // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityDensity> AbnormalityDensity { get; set; }                                                           // CSHasMemberSlice.cs:134
-		public HasMemberCollection<AbnormalityFatNecrosis> AbnormalityFatNecrosis { get; set; }                                                   // CSHasMemberSlice.cs:134
-		public HasMemberCollection<MGBreastDensity> MgBreastDensity { get; set; }                                                                 // CSHasMemberSlice.cs:128
+		public HasMemberCollection<AbnormalityCystProfile> AbnormalityCyst { get; set; }                                                          // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityDuctProfile> AbnormalityDuct { get; set; }                                                          // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityForeignObjectProfile> AbnormalityForeignObject { get; set; }                                        // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityLymphNodeProfile> AbnormalityLymphNode { get; set; }                                                // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityMassProfile> AbnormalityMass { get; set; }                                                          // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityFibroadenomaProfile> AbnormalityFibroadenoma { get; set; }                                          // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityArchitecturalDistortionProfile> AbnormalityArchDist { get; set; }                                   // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityAsymmetryProfile> AbnormalityAsymmetry { get; set; }                                                // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityCalcificationProfile> AbnormalityCalcification { get; set; }                                        // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityDensityProfile> AbnormalityDensity { get; set; }                                                    // CSHasMemberSlice.cs:134
+		public HasMemberCollection<AbnormalityFatNecrosisProfile> AbnormalityFatNecrosis { get; set; }                                            // CSHasMemberSlice.cs:134
+		public HasMemberCollection<MGBreastDensityProfile> MgBreastDensity { get; set; }                                                          // CSHasMemberSlice.cs:128
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public MGFinding() : base()
+		public MGFindingProfile() : base()
 		{
 		}
 
@@ -67,7 +68,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public MGFinding(BreastRadiologyDocument doc, Observation resource)
+		public MGFindingProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -77,7 +78,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public MGFinding(BreastRadiologyDocument doc)
+		public MGFindingProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

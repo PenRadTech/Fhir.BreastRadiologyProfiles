@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -24,9 +25,9 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class AssociatedFeature.
+	/// class CAssociatedFeatureProfile.
 	/// </summary>
-	public partial class AssociatedFeature :  ObservationBase, IAssociatedFeature
+	public partial class AssociatedFeatureProfile :  ObservationBase, IAssociatedFeature
 	{
 		public Component<CodeableConcept> FeatureType { get; set; }                                                                               // CSComponentSlice.cs:103
 		public Component<Quantity,Range> ObservedCount { get; set; }                                                                              // CSComponentSlice.cs:103
@@ -35,7 +36,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AssociatedFeature() : base()
+		public AssociatedFeatureProfile() : base()
 		{
 		}
 
@@ -45,7 +46,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public AssociatedFeature(BreastRadiologyDocument doc, Observation resource)
+		public AssociatedFeatureProfile(BreastRadiologyDocument doc, Observation resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -55,7 +56,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public AssociatedFeature(BreastRadiologyDocument doc)
+		public AssociatedFeatureProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new Observation());
 		}

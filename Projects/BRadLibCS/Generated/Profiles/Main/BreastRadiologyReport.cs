@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 
 using Hl7.Fhir.Model;
+using Range = Hl7.Fhir.Model.Range;
 using Hl7.Fhir.Serialization;
 
 namespace BRadLibCS
@@ -22,16 +23,16 @@ namespace BRadLibCS
 	}
 
 	/// <summary>
-	/// class BreastRadiologyReport.
+	/// class CBreastRadiologyReportProfile.
 	/// </summary>
-	public partial class BreastRadiologyReport :  DiagnosticReportBase, IBreastRadiologyReport
+	public partial class BreastRadiologyReportProfile :  DiagnosticReportBase, IBreastRadiologyReport
 	{
 
 		/// <summary>
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public BreastRadiologyReport() : base()
+		public BreastRadiologyReportProfile() : base()
 		{
 		}
 
@@ -41,7 +42,7 @@ namespace BRadLibCS
 		/// </summary>
 		/// <param name="doc">base document</param>
 		/// <param name="resource">Fhir observation resource</param>
-		public BreastRadiologyReport(BreastRadiologyDocument doc, DiagnosticReport resource)
+		public BreastRadiologyReportProfile(BreastRadiologyDocument doc, DiagnosticReport resource)
 		{
 			this.Init(doc, resource);
 		}
@@ -51,7 +52,7 @@ namespace BRadLibCS
 		/// User must not call Init().
 		/// </summary>
 		/// <param name="doc">base document</param>
-		public BreastRadiologyReport(BreastRadiologyDocument doc)
+		public BreastRadiologyReportProfile(BreastRadiologyDocument doc)
 		{
 			this.Init(doc, new DiagnosticReport());
 		}
