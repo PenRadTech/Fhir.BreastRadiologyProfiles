@@ -25,6 +25,7 @@ namespace BRadLibCS
         IAssociatedFeatureFragment,
         IConsistentWithFragment
 	{
+		Component<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                                                     // CSComponentSlice.cs:103
 
 	}
 
@@ -33,8 +34,14 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityForeignObject :  ObservationBase, IAbnormalityForeignObject
 	{
-		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSPropMatchHasMemberSlice.cs:126
-		public HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                   // CSPropMatchHasMemberSlice.cs:126
+		public HasMemberCollection<AssociatedFeature> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:134
+		public HasMemberCollection<ConsistentWith> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:134
+		public Component<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                                              // CSComponentSlice.cs:103
+		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
+		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
+		public Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                         // CSComponentSlice.cs:103
+		public Component<CodeableConcept> CorrespondsWith { get; set; }                                                                           // CSComponentSlice.cs:103
+		public Component<CodeableConcept> PrevDemBy { get; set; }                                                                                 // CSComponentSlice.cs:103
 
 		/// <summary>
 		/// Constructor.
@@ -74,14 +81,14 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
-			((IBreastBodyLocationRequiredFragment)this).Init(doc, baseResource);                                                                     // CSItemClass.cs:73
-			((IObservedChangesFragment)this).Init(doc, baseResource);                                                                                // CSItemClass.cs:73
-			((IBiRadFragment)this).Init(doc, baseResource);                                                                                          // CSItemClass.cs:73
-			((INotPreviouslySeenFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:73
-			((ICorrespondsWithFragment)this).Init(doc, baseResource);                                                                                // CSItemClass.cs:73
-			((IPreviouslyDemonstratedByFragment)this).Init(doc, baseResource);                                                                       // CSItemClass.cs:73
-			((IAssociatedFeatureFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:73
-			((IConsistentWithFragment)this).Init(doc, baseResource);                                                                                 // CSItemClass.cs:73
+			((IBreastBodyLocationRequiredFragment)this).Init(doc, baseResource);                                                                     // CSItemClass.cs:74
+			((IObservedChangesFragment)this).Init(doc, baseResource);                                                                                // CSItemClass.cs:74
+			((IBiRadFragment)this).Init(doc, baseResource);                                                                                          // CSItemClass.cs:74
+			((INotPreviouslySeenFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:74
+			((ICorrespondsWithFragment)this).Init(doc, baseResource);                                                                                // CSItemClass.cs:74
+			((IPreviouslyDemonstratedByFragment)this).Init(doc, baseResource);                                                                       // CSItemClass.cs:74
+			((IAssociatedFeatureFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:74
+			((IConsistentWithFragment)this).Init(doc, baseResource);                                                                                 // CSItemClass.cs:74
 		}
 
 		/// <summary>
@@ -93,14 +100,14 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			((IBreastBodyLocationRequiredFragment)this).Validate();                                                                                  // CSItemClass.cs:82
-			((IObservedChangesFragment)this).Validate();                                                                                             // CSItemClass.cs:82
-			((IBiRadFragment)this).Validate();                                                                                                       // CSItemClass.cs:82
-			((INotPreviouslySeenFragment)this).Validate();                                                                                           // CSItemClass.cs:82
-			((ICorrespondsWithFragment)this).Validate();                                                                                             // CSItemClass.cs:82
-			((IPreviouslyDemonstratedByFragment)this).Validate();                                                                                    // CSItemClass.cs:82
-			((IAssociatedFeatureFragment)this).Validate();                                                                                           // CSItemClass.cs:82
-			((IConsistentWithFragment)this).Validate();                                                                                              // CSItemClass.cs:82
+			((IBreastBodyLocationRequiredFragment)this).Validate();                                                                                  // CSItemClass.cs:83
+			((IObservedChangesFragment)this).Validate();                                                                                             // CSItemClass.cs:83
+			((IBiRadFragment)this).Validate();                                                                                                       // CSItemClass.cs:83
+			((INotPreviouslySeenFragment)this).Validate();                                                                                           // CSItemClass.cs:83
+			((ICorrespondsWithFragment)this).Validate();                                                                                             // CSItemClass.cs:83
+			((IPreviouslyDemonstratedByFragment)this).Validate();                                                                                    // CSItemClass.cs:83
+			((IAssociatedFeatureFragment)this).Validate();                                                                                           // CSItemClass.cs:83
+			((IConsistentWithFragment)this).Validate();                                                                                              // CSItemClass.cs:83
 			return retVal;
 		}
 
@@ -110,14 +117,14 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			((IBreastBodyLocationRequiredFragment)this).Write();                                                                                     // CSItemClass.cs:79
-			((IObservedChangesFragment)this).Write();                                                                                                // CSItemClass.cs:79
-			((IBiRadFragment)this).Write();                                                                                                          // CSItemClass.cs:79
-			((INotPreviouslySeenFragment)this).Write();                                                                                              // CSItemClass.cs:79
-			((ICorrespondsWithFragment)this).Write();                                                                                                // CSItemClass.cs:79
-			((IPreviouslyDemonstratedByFragment)this).Write();                                                                                       // CSItemClass.cs:79
-			((IAssociatedFeatureFragment)this).Write();                                                                                              // CSItemClass.cs:79
-			((IConsistentWithFragment)this).Write();                                                                                                 // CSItemClass.cs:79
+			((IBreastBodyLocationRequiredFragment)this).Write();                                                                                     // CSItemClass.cs:80
+			((IObservedChangesFragment)this).Write();                                                                                                // CSItemClass.cs:80
+			((IBiRadFragment)this).Write();                                                                                                          // CSItemClass.cs:80
+			((INotPreviouslySeenFragment)this).Write();                                                                                              // CSItemClass.cs:80
+			((ICorrespondsWithFragment)this).Write();                                                                                                // CSItemClass.cs:80
+			((IPreviouslyDemonstratedByFragment)this).Write();                                                                                       // CSItemClass.cs:80
+			((IAssociatedFeatureFragment)this).Write();                                                                                              // CSItemClass.cs:80
+			((IConsistentWithFragment)this).Write();                                                                                                 // CSItemClass.cs:80
 		}
 
 		/// <summary>
@@ -126,14 +133,14 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			((IBreastBodyLocationRequiredFragment)this).Read();                                                                                      // CSItemClass.cs:76
-			((IObservedChangesFragment)this).Read();                                                                                                 // CSItemClass.cs:76
-			((IBiRadFragment)this).Read();                                                                                                           // CSItemClass.cs:76
-			((INotPreviouslySeenFragment)this).Read();                                                                                               // CSItemClass.cs:76
-			((ICorrespondsWithFragment)this).Read();                                                                                                 // CSItemClass.cs:76
-			((IPreviouslyDemonstratedByFragment)this).Read();                                                                                        // CSItemClass.cs:76
-			((IAssociatedFeatureFragment)this).Read();                                                                                               // CSItemClass.cs:76
-			((IConsistentWithFragment)this).Read();                                                                                                  // CSItemClass.cs:76
+			((IBreastBodyLocationRequiredFragment)this).Read();                                                                                      // CSItemClass.cs:77
+			((IObservedChangesFragment)this).Read();                                                                                                 // CSItemClass.cs:77
+			((IBiRadFragment)this).Read();                                                                                                           // CSItemClass.cs:77
+			((INotPreviouslySeenFragment)this).Read();                                                                                               // CSItemClass.cs:77
+			((ICorrespondsWithFragment)this).Read();                                                                                                 // CSItemClass.cs:77
+			((IPreviouslyDemonstratedByFragment)this).Read();                                                                                        // CSItemClass.cs:77
+			((IAssociatedFeatureFragment)this).Read();                                                                                               // CSItemClass.cs:77
+			((IConsistentWithFragment)this).Read();                                                                                                  // CSItemClass.cs:77
 		}
 
 	}

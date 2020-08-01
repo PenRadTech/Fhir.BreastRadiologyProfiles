@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface INotPreviouslySeenFragment 
 	{
+		Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                                // CSComponentSlice.cs:103
 	}
 
 

@@ -18,6 +18,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IShapeFragment 
 	{
+		Component<CodeableConcept> Orientation { get; set; }                                                                                      // CSComponentSlice.cs:103
+		Component<CodeableConcept> Shape { get; set; }                                                                                            // CSComponentSlice.cs:103
+		Component<CodeableConcept> Margin { get; set; }                                                                                           // CSComponentSlice.cs:103
+		Component<CodeableConcept> MgBreastDensity { get; set; }                                                                                  // CSComponentSlice.cs:103
 	}
 
 

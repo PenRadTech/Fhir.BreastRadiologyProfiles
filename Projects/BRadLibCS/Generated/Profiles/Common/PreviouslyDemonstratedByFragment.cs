@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IPreviouslyDemonstratedByFragment 
 	{
+		Component<CodeableConcept> PrevDemBy { get; set; }                                                                                        // CSComponentSlice.cs:103
 	}
 
 

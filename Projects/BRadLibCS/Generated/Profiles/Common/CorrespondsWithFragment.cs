@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ICorrespondsWithFragment 
 	{
+		Component<CodeableConcept> CorrespondsWith { get; set; }                                                                                  // CSComponentSlice.cs:103
 	}
 
 

@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedCountFragment 
 	{
+		Component<Quantity,Range> ObservedCount { get; set; }                                                                                     // CSComponentSlice.cs:103
 	}
 
 

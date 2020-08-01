@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IBiRadFragment 
 	{
+		Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                         // CSComponentSlice.cs:103
 	}
 
 

@@ -19,6 +19,7 @@ namespace BRadLibCS
 	public interface IAssociatedFeature  : IBreastBodyLocationRequiredFragment,
         IObservedCountFragment
 	{
+		Component<CodeableConcept> FeatureType { get; set; }                                                                                      // CSComponentSlice.cs:103
 
 	}
 
@@ -27,6 +28,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AssociatedFeature :  ObservationBase, IAssociatedFeature
 	{
+		public Component<CodeableConcept> FeatureType { get; set; }                                                                               // CSComponentSlice.cs:103
+		public Component<Quantity,Range> ObservedCount { get; set; }                                                                              // CSComponentSlice.cs:103
 
 		/// <summary>
 		/// Constructor.
@@ -66,8 +69,8 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
-			((IBreastBodyLocationRequiredFragment)this).Init(doc, baseResource);                                                                     // CSItemClass.cs:73
-			((IObservedCountFragment)this).Init(doc, baseResource);                                                                                  // CSItemClass.cs:73
+			((IBreastBodyLocationRequiredFragment)this).Init(doc, baseResource);                                                                     // CSItemClass.cs:74
+			((IObservedCountFragment)this).Init(doc, baseResource);                                                                                  // CSItemClass.cs:74
 		}
 
 		/// <summary>
@@ -79,8 +82,8 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			((IBreastBodyLocationRequiredFragment)this).Validate();                                                                                  // CSItemClass.cs:82
-			((IObservedCountFragment)this).Validate();                                                                                               // CSItemClass.cs:82
+			((IBreastBodyLocationRequiredFragment)this).Validate();                                                                                  // CSItemClass.cs:83
+			((IObservedCountFragment)this).Validate();                                                                                               // CSItemClass.cs:83
 			return retVal;
 		}
 
@@ -90,8 +93,8 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			((IBreastBodyLocationRequiredFragment)this).Write();                                                                                     // CSItemClass.cs:79
-			((IObservedCountFragment)this).Write();                                                                                                  // CSItemClass.cs:79
+			((IBreastBodyLocationRequiredFragment)this).Write();                                                                                     // CSItemClass.cs:80
+			((IObservedCountFragment)this).Write();                                                                                                  // CSItemClass.cs:80
 		}
 
 		/// <summary>
@@ -100,8 +103,8 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			((IBreastBodyLocationRequiredFragment)this).Read();                                                                                      // CSItemClass.cs:76
-			((IObservedCountFragment)this).Read();                                                                                                   // CSItemClass.cs:76
+			((IBreastBodyLocationRequiredFragment)this).Read();                                                                                      // CSItemClass.cs:77
+			((IObservedCountFragment)this).Read();                                                                                                   // CSItemClass.cs:77
 		}
 
 	}

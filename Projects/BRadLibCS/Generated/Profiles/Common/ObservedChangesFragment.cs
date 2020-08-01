@@ -18,6 +18,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedChangesFragment 
 	{
+		Component<CodeableConcept> ObsChanges { get; set; }                                                                                       // CSComponentSlice.cs:103
 	}
 
 

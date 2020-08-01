@@ -18,6 +18,8 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedDistributionFragment 
 	{
+		Component<CodeableConcept> ObsDistribution { get; set; }                                                                                  // CSComponentSlice.cs:103
+		Component<Quantity,Range> ObsDistRegionSize { get; set; }                                                                                 // CSComponentSlice.cs:103
 	}
 
 
