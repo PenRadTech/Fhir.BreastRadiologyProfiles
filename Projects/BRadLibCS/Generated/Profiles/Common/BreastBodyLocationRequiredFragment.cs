@@ -27,6 +27,7 @@ namespace BRadLibCS
 	/// </summary>
 	public static class BreastBodyLocationRequiredFragmentExtensions
 	{
+
 		public static void Init(this IBreastBodyLocationRequiredFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
 		}

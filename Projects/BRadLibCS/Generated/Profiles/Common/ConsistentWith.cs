@@ -19,8 +19,8 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWith 
 	{
-		Component<CodeableConcept> ConsistentWith { get; set; }                                                                                   // CSComponentSlice.cs:103
-		Component<CodeableConcept> Qualifier { get; set; }                                                                                        // CSComponentSlice.cs:103
+		Component<CodeableConcept> ConsistentWith { get; set; }                                                                                   // CSComponentSlice.cs:100
+		Component<CodeableConcept> Qualifier { get; set; }                                                                                        // CSComponentSlice.cs:100
 
 	}
 
@@ -29,8 +29,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class ConsistentWithProfile :  ObservationBase, IConsistentWith
 	{
-		public Component<CodeableConcept> ConsistentWith { get; set; }                                                                            // CSComponentSlice.cs:103
-		public Component<CodeableConcept> Qualifier { get; set; }                                                                                 // CSComponentSlice.cs:103
+		public Component<CodeableConcept> ConsistentWith { get; set; }                                                                            // CSComponentSlice.cs:100
+		public Component<CodeableConcept> Qualifier { get; set; }                                                                                 // CSComponentSlice.cs:100
 
 		/// <summary>
 		/// Constructor.

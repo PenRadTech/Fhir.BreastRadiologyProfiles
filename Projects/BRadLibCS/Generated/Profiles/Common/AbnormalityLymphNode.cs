@@ -30,7 +30,7 @@ namespace BRadLibCS
         IAssociatedFeatureFragment,
         ITumorSatelliteFragment
 	{
-		Component<CodeableConcept> LymphNodeType { get; set; }                                                                                    // CSComponentSlice.cs:103
+		Component<CodeableConcept> LymphNodeType { get; set; }                                                                                    // CSComponentSlice.cs:100
 
 	}
 
@@ -39,22 +39,22 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityLymphNodeProfile :  ObservationBase, IAbnormalityLymphNode
 	{
-		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:134
-		public HasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                            // CSHasMemberSlice.cs:134
-		public Component<CodeableConcept> LymphNodeType { get; set; }                                                                             // CSComponentSlice.cs:103
-		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:103
-		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:103
-		public Component<CodeableConcept> Orientation { get; set; }                                                                               // CSComponentSlice.cs:103
-		public Component<CodeableConcept> Shape { get; set; }                                                                                     // CSComponentSlice.cs:103
-		public Component<CodeableConcept> Margin { get; set; }                                                                                    // CSComponentSlice.cs:103
-		public Component<CodeableConcept> MgBreastDensity { get; set; }                                                                           // CSComponentSlice.cs:103
-		public Component<Quantity,Range> ObservedCount { get; set; }                                                                              // CSComponentSlice.cs:103
-		public Component<CodeableConcept> ObsDistribution { get; set; }                                                                           // CSComponentSlice.cs:103
-		public Component<Quantity,Range> ObsDistRegionSize { get; set; }                                                                          // CSComponentSlice.cs:103
-		public Component<Quantity,Range> ObsSize { get; set; }                                                                                    // CSComponentSlice.cs:103
-		public Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                         // CSComponentSlice.cs:103
-		public Component<CodeableConcept> CorrespondsWith { get; set; }                                                                           // CSComponentSlice.cs:103
-		public Component<CodeableConcept> PrevDemBy { get; set; }                                                                                 // CSComponentSlice.cs:103
+		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:138
+		public HasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                            // CSHasMemberSlice.cs:138
+		public Component<CodeableConcept> LymphNodeType { get; set; }                                                                             // CSComponentSlice.cs:100
+		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:100
+		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:100
+		public Component<CodeableConcept> Orientation { get; set; }                                                                               // CSComponentSlice.cs:100
+		public Component<CodeableConcept> Shape { get; set; }                                                                                     // CSComponentSlice.cs:100
+		public Component<CodeableConcept> Margin { get; set; }                                                                                    // CSComponentSlice.cs:100
+		public Component<CodeableConcept> MgBreastDensity { get; set; }                                                                           // CSComponentSlice.cs:100
+		public Component<Quantity,Range> ObservedCount { get; set; }                                                                              // CSComponentSlice.cs:100
+		public Component<CodeableConcept> ObsDistribution { get; set; }                                                                           // CSComponentSlice.cs:100
+		public Component<Quantity,Range> ObsDistRegionSize { get; set; }                                                                          // CSComponentSlice.cs:100
+		public Component<Quantity,Range> ObsSize { get; set; }                                                                                    // CSComponentSlice.cs:100
+		public Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                         // CSComponentSlice.cs:100
+		public Component<CodeableConcept> CorrespondsWith { get; set; }                                                                           // CSComponentSlice.cs:100
+		public Component<CodeableConcept> PrevDemBy { get; set; }                                                                                 // CSComponentSlice.cs:100
 
 		/// <summary>
 		/// Constructor.
