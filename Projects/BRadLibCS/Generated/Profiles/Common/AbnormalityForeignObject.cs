@@ -26,7 +26,7 @@ namespace BRadLibCS
         IAssociatedFeatureFragment,
         IConsistentWithFragment
 	{
-		ObservationComponentItem<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                                      // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                                      // CSComponentSlice.cs:96
 
 	}
 
@@ -37,12 +37,12 @@ namespace BRadLibCS
 	{
 		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:90
 		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:90
-		public ObservationComponentItem<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                               // CSComponentSlice.cs:100
-		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:100
-		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:100
-		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:100
-		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:100
-		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> AbnormalityForeignObjectType { get; set; }                                               // CSComponentSlice.cs:96
+		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:96
+		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:96
+		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:96
+		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:96
+		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:96
 
 		/// <summary>
 		/// Constructor.

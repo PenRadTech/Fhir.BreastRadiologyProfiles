@@ -20,7 +20,7 @@ namespace BRadLibCS
 	public interface IAssociatedFeature  : IBreastBodyLocationRequiredFragment,
         IObservedCountFragment
 	{
-		ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                       // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                       // CSComponentSlice.cs:96
 
 	}
 
@@ -29,8 +29,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AssociatedFeatureProfile :  ObservationBase, IAssociatedFeature
 	{
-		public ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                // CSComponentSlice.cs:100
-		public ObservationComponentItem<Quantity,Range> ObservedCount { get; set; }                                                               // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                // CSComponentSlice.cs:96
+		public ObservationComponentItem<Quantity,Range> ObservedCount { get; set; }                                                               // CSComponentSlice.cs:96
 
 		/// <summary>
 		/// Constructor.
