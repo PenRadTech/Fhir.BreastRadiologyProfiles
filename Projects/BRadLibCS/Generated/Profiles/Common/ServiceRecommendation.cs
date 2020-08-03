@@ -34,13 +34,15 @@ namespace BRadLibCS
 		/// </summary>
 		public ServiceRecommendationProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 		}
 
 		/// <summary>

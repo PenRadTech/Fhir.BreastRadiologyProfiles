@@ -38,13 +38,15 @@ namespace BRadLibCS
 		/// </summary>
 		public ConsistentWithProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 			{                                                                                                                                        // CSComponentSlice.cs:136
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761

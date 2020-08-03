@@ -38,13 +38,15 @@ namespace BRadLibCS
 		/// </summary>
 		public AssociatedFeatureProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 			((IBreastBodyLocationRequiredFragment)this).Init();                                                                                      // CSItemClass.cs:75
 			((IObservedCountFragment)this).Init();                                                                                                   // CSItemClass.cs:75
 			{                                                                                                                                        // CSComponentSlice.cs:136

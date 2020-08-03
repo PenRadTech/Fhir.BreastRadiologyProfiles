@@ -42,13 +42,15 @@ namespace BRadLibCS
 		/// </summary>
 		public FindingsRightBreastProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
 			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:122
 			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:122

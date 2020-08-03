@@ -60,13 +60,15 @@ namespace BRadLibCS
 		/// </summary>
 		public MGFindingProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 			this.AbnormalityCyst = new ObservationHasMemberCollection<AbnormalityCystProfile>();                                                     // CSHasMemberSlice.cs:128
 			this.AbnormalityDuct = new ObservationHasMemberCollection<AbnormalityDuctProfile>();                                                     // CSHasMemberSlice.cs:128
 			this.AbnormalityForeignObject = new ObservationHasMemberCollection<AbnormalityForeignObjectProfile>();                                   // CSHasMemberSlice.cs:128

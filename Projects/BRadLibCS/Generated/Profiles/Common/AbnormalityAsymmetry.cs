@@ -57,13 +57,15 @@ namespace BRadLibCS
 		/// </summary>
 		public AbnormalityAsymmetryProfile() : base()
 		{
+		    this.Init();
 		}
 
 		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init()
+		protected override void Init()
 		{
+		    base.Init();
 			((IBreastBodyLocationRequiredFragment)this).Init();                                                                                      // CSItemClass.cs:75
 			((IObservedChangesFragment)this).Init();                                                                                                 // CSItemClass.cs:75
 			((IBiRadFragment)this).Init();                                                                                                           // CSItemClass.cs:75

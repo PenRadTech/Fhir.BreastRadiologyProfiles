@@ -25,7 +25,7 @@ namespace BRadLibCS
         {
         }
 
-        public virtual void Init()
+        protected virtual void Init()
         {
         }
 
