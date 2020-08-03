@@ -106,6 +106,8 @@ namespace BRadLibCS
 			((IPreviouslyDemonstratedByFragment)this).Init(doc, baseResource);                                                                       // CSItemClass.cs:74
 			((IAssociatedFeatureFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:74
 			((ITumorSatelliteFragment)this).Init(doc, baseResource);                                                                                 // CSItemClass.cs:74
+			this.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                                 // CSHasMemberSlice.cs:128
+			this.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                       // CSHasMemberSlice.cs:128
 		}
 
 		/// <summary>

@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                              // CSHasMemberSlice.cs:119
+		fragment.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                              // CSHasMemberSlice.cs:128
 		}
 
 		public static void Read(this IAssociatedFeatureFragment fragment)

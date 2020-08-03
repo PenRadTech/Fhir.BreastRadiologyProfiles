@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:119
+		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:128
 		}
 
 		public static void Read(this ITumorSatelliteFragment fragment)

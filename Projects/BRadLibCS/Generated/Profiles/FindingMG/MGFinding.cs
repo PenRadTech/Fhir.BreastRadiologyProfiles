@@ -92,6 +92,19 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
+			this.AbnormalityCyst = new ObservationHasMemberCollection<AbnormalityCystProfile>();                                                     // CSHasMemberSlice.cs:128
+			this.AbnormalityDuct = new ObservationHasMemberCollection<AbnormalityDuctProfile>();                                                     // CSHasMemberSlice.cs:128
+			this.AbnormalityForeignObject = new ObservationHasMemberCollection<AbnormalityForeignObjectProfile>();                                   // CSHasMemberSlice.cs:128
+			this.AbnormalityLymphNode = new ObservationHasMemberCollection<AbnormalityLymphNodeProfile>();                                           // CSHasMemberSlice.cs:128
+			this.AbnormalityMass = new ObservationHasMemberCollection<AbnormalityMassProfile>();                                                     // CSHasMemberSlice.cs:128
+			this.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                                 // CSHasMemberSlice.cs:128
+			this.AbnormalityFibroadenoma = new ObservationHasMemberCollection<AbnormalityFibroadenomaProfile>();                                     // CSHasMemberSlice.cs:128
+			this.AbnormalityArchDist = new ObservationHasMemberCollection<AbnormalityArchitecturalDistortionProfile>();                              // CSHasMemberSlice.cs:128
+			this.AbnormalityAsymmetry = new ObservationHasMemberCollection<AbnormalityAsymmetryProfile>();                                           // CSHasMemberSlice.cs:128
+			this.AbnormalityCalcification = new ObservationHasMemberCollection<AbnormalityCalcificationProfile>();                                   // CSHasMemberSlice.cs:128
+			this.AbnormalityDensity = new ObservationHasMemberCollection<AbnormalityDensityProfile>();                                               // CSHasMemberSlice.cs:128
+			this.AbnormalityFatNecrosis = new ObservationHasMemberCollection<AbnormalityFatNecrosisProfile>();                                       // CSHasMemberSlice.cs:128
+			this.MgBreastDensity = new ObservationHasMemberItem<MGBreastDensityProfile>();                                                           // CSHasMemberSlice.cs:122
 		}
 
 		/// <summary>

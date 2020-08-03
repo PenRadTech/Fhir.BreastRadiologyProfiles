@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IBiRadFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		{                                                                                                                                         // CSComponentSlice.cs:119
+		{                                                                                                                                         // CSComponentSlice.cs:127
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -46,8 +46,8 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.BiRadsAssessmentCategory = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                 // CSComponentSlice.cs:128
-		}                                                                                                                                         // CSComponentSlice.cs:136
+		    fragment.BiRadsAssessmentCategory = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                 // CSComponentSlice.cs:136
+		}                                                                                                                                         // CSComponentSlice.cs:144
 		}
 
 		public static void Read(this IBiRadFragment fragment)

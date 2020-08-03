@@ -74,6 +74,10 @@ namespace BRadLibCS
 			if (resource == null)
 				resource = new Observation();
 			base.Init(doc, resource);
+			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
+			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:122
+			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
+			this.UsFinding = new ObservationHasMemberItem<USFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
 		}
 
 		/// <summary>

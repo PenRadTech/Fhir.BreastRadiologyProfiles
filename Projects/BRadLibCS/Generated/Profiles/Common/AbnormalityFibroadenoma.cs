@@ -97,6 +97,7 @@ namespace BRadLibCS
 			((IObservedSizeFragment)this).Init(doc, baseResource);                                                                                   // CSItemClass.cs:74
 			((IPreviouslyDemonstratedByFragment)this).Init(doc, baseResource);                                                                       // CSItemClass.cs:74
 			((IAssociatedFeatureFragment)this).Init(doc, baseResource);                                                                              // CSItemClass.cs:74
+			this.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                                 // CSHasMemberSlice.cs:128
 		}
 
 		/// <summary>

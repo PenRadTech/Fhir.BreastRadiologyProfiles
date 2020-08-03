@@ -103,6 +103,7 @@ namespace BRadLibCS
 			((ICorrespondsWithFragment)this).Init(doc, baseResource);                                                                                // CSItemClass.cs:74
 			((IPreviouslyDemonstratedByFragment)this).Init(doc, baseResource);                                                                       // CSItemClass.cs:74
 			((IConsistentWithFragment)this).Init(doc, baseResource);                                                                                 // CSItemClass.cs:74
+			this.ConsistentWith = new ObservationHasMemberCollection<ConsistentWithProfile>();                                                       // CSHasMemberSlice.cs:128
 		}
 
 		/// <summary>
