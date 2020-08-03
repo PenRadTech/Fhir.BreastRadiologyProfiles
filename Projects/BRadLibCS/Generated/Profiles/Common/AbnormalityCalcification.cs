@@ -29,7 +29,7 @@ namespace BRadLibCS
         IAssociatedFeatureFragment,
         IConsistentWithFragment
 	{
-		Component<CodeableConcept> CalcificationType { get; set; }                                                                                // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> CalcificationType { get; set; }                                                                 // CSComponentSlice.cs:100
 
 	}
 
@@ -38,18 +38,18 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityCalcificationProfile :  ObservationBase, IAbnormalityCalcification
 	{
-		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:138
-		public HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                            // CSHasMemberSlice.cs:138
-		public Component<CodeableConcept> CalcificationType { get; set; }                                                                         // CSComponentSlice.cs:100
-		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:100
-		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:100
-		public Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                         // CSComponentSlice.cs:100
-		public Component<Quantity,Range> ObservedCount { get; set; }                                                                              // CSComponentSlice.cs:100
-		public Component<Quantity,Range> ObsSize { get; set; }                                                                                    // CSComponentSlice.cs:100
-		public Component<CodeableConcept> ObsDistribution { get; set; }                                                                           // CSComponentSlice.cs:100
-		public Component<Quantity,Range> ObsDistRegionSize { get; set; }                                                                          // CSComponentSlice.cs:100
-		public Component<CodeableConcept> CorrespondsWith { get; set; }                                                                           // CSComponentSlice.cs:100
-		public Component<CodeableConcept> PrevDemBy { get; set; }                                                                                 // CSComponentSlice.cs:100
+		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:138
+		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:138
+		public ObservationComponentItem<CodeableConcept> CalcificationType { get; set; }                                                          // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:100
+		public ObservationComponentItem<Quantity,Range> ObservedCount { get; set; }                                                               // CSComponentSlice.cs:100
+		public ObservationComponentItem<Quantity,Range> ObsSize { get; set; }                                                                     // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:100
+		public ObservationComponentItem<Quantity,Range> ObsDistRegionSize { get; set; }                                                           // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:100
 
 		/// <summary>
 		/// Constructor.

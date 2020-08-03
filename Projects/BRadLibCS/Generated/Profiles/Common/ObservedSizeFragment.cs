@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedSizeFragment 
 	{
-		Component<Quantity,Range> ObsSize { get; set; }                                                                                           // CSComponentSlice.cs:100
+		ObservationComponentItem<Quantity,Range> ObsSize { get; set; }                                                                            // CSComponentSlice.cs:100
 	}
 
 
@@ -46,7 +46,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.ObsSize = new Component<Quantity,Range>(ObservationCode());                                                                  // CSComponentSlice.cs:131
+		    fragment.ObsSize = new ObservationComponentItem<Quantity,Range>(ObservationCode());                                                   // CSComponentSlice.cs:131
 		}                                                                                                                                         // CSComponentSlice.cs:139
 		}
 

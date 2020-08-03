@@ -19,10 +19,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IFindingsRightBreast 
 	{
-		HasMemberCollection<MGFindingProfile> MgFinding { get; set; }                                                                             // CSHasMemberSlice.cs:75
-		HasMemberCollection<MRIFindingProfile> MriFinding { get; set; }                                                                           // CSHasMemberSlice.cs:75
-		HasMemberCollection<NMFindingProfile> NmFinding { get; set; }                                                                             // CSHasMemberSlice.cs:75
-		HasMemberCollection<USFindingProfile> UsFinding { get; set; }                                                                             // CSHasMemberSlice.cs:75
+		ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                        // CSHasMemberSlice.cs:75
+		ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                                      // CSHasMemberSlice.cs:75
+		ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                        // CSHasMemberSlice.cs:75
+		ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                        // CSHasMemberSlice.cs:75
 
 	}
 
@@ -31,10 +31,10 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class FindingsRightBreastProfile :  ObservationBase, IFindingsRightBreast
 	{
-		public HasMemberCollection<MGFindingProfile> MgFinding { get; set; }                                                                      // CSHasMemberSlice.cs:132
-		public HasMemberCollection<MRIFindingProfile> MriFinding { get; set; }                                                                    // CSHasMemberSlice.cs:132
-		public HasMemberCollection<NMFindingProfile> NmFinding { get; set; }                                                                      // CSHasMemberSlice.cs:132
-		public HasMemberCollection<USFindingProfile> UsFinding { get; set; }                                                                      // CSHasMemberSlice.cs:132
+		public ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                 // CSHasMemberSlice.cs:132
+		public ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                               // CSHasMemberSlice.cs:132
+		public ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                 // CSHasMemberSlice.cs:132
+		public ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                 // CSHasMemberSlice.cs:132
 
 		/// <summary>
 		/// Constructor.

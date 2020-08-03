@@ -5,12 +5,12 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public class HasMember<T>
+    public class ObservationHasMemberItem<T>
         where T : class
     {
     }
 
-    public class HasMemberCollection<T>
+    public class ObservationHasMemberCollection<T>
         where T : class
     {
     }

@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWithFragment 
 	{
-		HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                                   // CSHasMemberSlice.cs:81
+		ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                        // CSHasMemberSlice.cs:81
 	}
 
 
@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IConsistentWithFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.ConsistentWith = new HasMemberCollection<ConsistentWithProfile>();                                                               // CSHasMemberSlice.cs:110
+		fragment.ConsistentWith = new ObservationHasMemberCollection<ConsistentWithProfile>();                                                    // CSHasMemberSlice.cs:110
 		}
 
 		public static void Read(this IConsistentWithFragment fragment)

@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IAssociatedFeatureFragment 
 	{
-		HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                             // CSHasMemberSlice.cs:81
+		ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                  // CSHasMemberSlice.cs:81
 	}
 
 
@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.AssociatedFeature = new HasMemberCollection<AssociatedFeatureProfile>();                                                         // CSHasMemberSlice.cs:110
+		fragment.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                              // CSHasMemberSlice.cs:110
 		}
 
 		public static void Read(this IAssociatedFeatureFragment fragment)

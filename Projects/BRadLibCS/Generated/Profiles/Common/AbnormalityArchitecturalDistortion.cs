@@ -35,17 +35,17 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityArchitecturalDistortionProfile :  ObservationBase, IAbnormalityArchitecturalDistortion
 	{
-		public HasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                                      // CSHasMemberSlice.cs:138
-		public HasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                            // CSHasMemberSlice.cs:138
-		public Component<CodeableConcept> ObsChanges { get; set; }                                                                                // CSComponentSlice.cs:100
-		public Component<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                                  // CSComponentSlice.cs:100
-		public Component<CodeableConcept> Orientation { get; set; }                                                                               // CSComponentSlice.cs:100
-		public Component<CodeableConcept> Shape { get; set; }                                                                                     // CSComponentSlice.cs:100
-		public Component<CodeableConcept> Margin { get; set; }                                                                                    // CSComponentSlice.cs:100
-		public Component<CodeableConcept> MgBreastDensity { get; set; }                                                                           // CSComponentSlice.cs:100
-		public Component<CodeableConcept> NotPreviouslySeen { get; set; }                                                                         // CSComponentSlice.cs:100
-		public Component<CodeableConcept> CorrespondsWith { get; set; }                                                                           // CSComponentSlice.cs:100
-		public Component<CodeableConcept> PrevDemBy { get; set; }                                                                                 // CSComponentSlice.cs:100
+		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:138
+		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:138
+		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:100
+		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:100
 
 		/// <summary>
 		/// Constructor.

@@ -19,10 +19,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IShapeFragment 
 	{
-		Component<CodeableConcept> Orientation { get; set; }                                                                                      // CSComponentSlice.cs:100
-		Component<CodeableConcept> Shape { get; set; }                                                                                            // CSComponentSlice.cs:100
-		Component<CodeableConcept> Margin { get; set; }                                                                                           // CSComponentSlice.cs:100
-		Component<CodeableConcept> MgBreastDensity { get; set; }                                                                                  // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                       // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                             // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                            // CSComponentSlice.cs:100
+		ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                                   // CSComponentSlice.cs:100
 	}
 
 
@@ -49,7 +49,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Orientation = new Component<CodeableConcept>(ObservationCode());                                                             // CSComponentSlice.cs:131
+		    fragment.Orientation = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                              // CSComponentSlice.cs:131
 		}                                                                                                                                         // CSComponentSlice.cs:139
 		{                                                                                                                                         // CSComponentSlice.cs:123
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -66,7 +66,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Shape = new Component<CodeableConcept>(ObservationCode());                                                                   // CSComponentSlice.cs:131
+		    fragment.Shape = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                    // CSComponentSlice.cs:131
 		}                                                                                                                                         // CSComponentSlice.cs:139
 		{                                                                                                                                         // CSComponentSlice.cs:123
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -83,7 +83,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Margin = new Component<CodeableConcept>(ObservationCode());                                                                  // CSComponentSlice.cs:131
+		    fragment.Margin = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                   // CSComponentSlice.cs:131
 		}                                                                                                                                         // CSComponentSlice.cs:139
 		{                                                                                                                                         // CSComponentSlice.cs:123
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -100,7 +100,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.MgBreastDensity = new Component<CodeableConcept>(ObservationCode());                                                         // CSComponentSlice.cs:131
+		    fragment.MgBreastDensity = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                          // CSComponentSlice.cs:131
 		}                                                                                                                                         // CSComponentSlice.cs:139
 		}
 

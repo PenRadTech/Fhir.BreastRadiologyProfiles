@@ -5,17 +5,17 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public class ComponentBase
+    public class ObservationComponentBase
     {
         public CodeableConcept ConceptCode { get; }
 
-        public ComponentBase(CodeableConcept conceptCode)
+        public ObservationComponentBase(CodeableConcept conceptCode)
         {
             this.ConceptCode = conceptCode;
         }
     }
 
-    public class Component<T> : ComponentBase
+    public class ObservationComponentItem<T> : ObservationComponentBase
         where T : Base
     {
         T value;
@@ -23,12 +23,12 @@ namespace BRadLibCS
         public void Set(T value) => this.value = value;
 
 
-        public Component(CodeableConcept conceptCode) : base(conceptCode)
+        public ObservationComponentItem(CodeableConcept conceptCode) : base(conceptCode)
         {
         }
     }
 
-    public class Component<T, U> : ComponentBase
+    public class ObservationComponentItem<T, U> : ObservationComponentBase
         where T : Base
         where U : Base
     {
@@ -37,7 +37,7 @@ namespace BRadLibCS
         public void Set(T value) => this.value = value;
         public void Set(U value) => this.value = value;
 
-        public Component(CodeableConcept conceptCode) : base(conceptCode)
+        public ObservationComponentItem(CodeableConcept conceptCode) : base(conceptCode)
         {
         }
     }
