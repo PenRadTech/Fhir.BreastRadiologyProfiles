@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedChangesFragment 
 	{
-		ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                        // CSComponentSlice.cs:96
+		ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                        // CSComponentSlice.cs:105
 	}
 
 
@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IObservedChangesFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		{                                                                                                                                         // CSComponentSlice.cs:127
+		{                                                                                                                                         // CSComponentSlice.cs:136
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -46,8 +46,8 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.ObsChanges = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                               // CSComponentSlice.cs:136
-		}                                                                                                                                         // CSComponentSlice.cs:144
+		    fragment.ObsChanges = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                               // CSComponentSlice.cs:145
+		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 
 		public static void Read(this IObservedChangesFragment fragment)
