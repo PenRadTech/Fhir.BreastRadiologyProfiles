@@ -11,7 +11,7 @@ namespace BRadLibCS
     }
 
 
-    public class ClinicalImpressionBase : ResourceBase, IClinicalImpression
+    public class ClinicalImpressionBase : ResourceBase<ClinicalImpression>, IClinicalImpression
     {
         public ClinicalImpression Resource => (ClinicalImpression)this.resource;
 
@@ -19,20 +19,11 @@ namespace BRadLibCS
         {
         }
 
-        public ClinicalImpressionBase(BreastRadiologyDocument doc, ClinicalImpression resource) : base()
+        public override void Write(BreastRadiologyDocument doc)
         {
-            this.Init(doc, resource);
-        }
-
-        public ClinicalImpressionBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new ClinicalImpression());
-        }
-        public override void Write()
-        {
-            base.Write();
-            this.Resource.Encounter = this.Doc.Encounter;
-            this.Resource.Subject = this.Doc.Subject;
+            base.Write(doc);
+            this.Resource.Encounter = doc.Encounter;
+            this.Resource.Subject = doc.Subject;
         }
     }
 }

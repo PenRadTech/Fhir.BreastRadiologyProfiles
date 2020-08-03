@@ -11,7 +11,7 @@ namespace BRadLibCS
     }
 
 
-    public class BundleBase : ResourceBase, IBundle
+    public class BundleBase : ResourceBase<Bundle>, IBundle
     {
         public Bundle Resource => (Bundle)this.resource;
 
@@ -19,18 +19,9 @@ namespace BRadLibCS
         {
         }
 
-        public BundleBase(BreastRadiologyDocument doc, Bundle resource) : base()
+        public override void Write(BreastRadiologyDocument doc)
         {
-            this.Init(doc, resource);
-        }
-
-        public BundleBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new Bundle());
-        }
-        public override void Write()
-        {
-            base.Write();
+            base.Write(doc);
         }
     }
 }
