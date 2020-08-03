@@ -24,16 +24,6 @@ namespace BRadLibCS
         {
         }
 
-        public ExtensionBase(BreastRadiologyDocument doc, Extension resource) : base()
-        {
-            this.Init(doc, resource);
-        }
-
-        public ExtensionBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new Extension());
-        }
-
         protected void SetProfileUrl(String profileUrl)
         {
             this.profileUrl = profileUrl;

@@ -29,20 +29,25 @@ namespace BRadLibCS
 	public static class TumorSatelliteFragmentExtensions
 	{
 
-		public static void Init(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this ITumorSatelliteFragment fragment)
 		{
 		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:128
 		}
 
-		public static void Read(this ITumorSatelliteFragment fragment)
+		public static void Read<T>(this ITumorSatelliteFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this ITumorSatelliteFragment fragment)
+		public static void Write(this ITumorSatelliteFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this ITumorSatelliteFragment fragment)
+		public static void Validate(this ITumorSatelliteFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

@@ -20,16 +20,6 @@ namespace BRadLibCS
         {
         }
 
-        public ObservationBase(BreastRadiologyDocument doc, Observation resource) : base()
-        {
-            this.Init(doc, resource);
-        }
-
-        public ObservationBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new Observation());
-        }
-
         protected void ClearHasMember()
         {
             this.Resource.HasMember.Clear();
@@ -40,11 +30,11 @@ namespace BRadLibCS
             this.Resource.Component.Clear();
         }
 
-        public override void Write()
+        public override void Write(BreastRadiologyDocument doc)
         {
-            base.Write();
-            this.Resource.Encounter = this.Doc.Encounter;
-            this.Resource.Subject = this.Doc.Subject;
+            base.Write(doc);
+            this.Resource.Encounter = doc.Encounter;
+            this.Resource.Subject = doc.Subject;
         }
     }
 }

@@ -29,7 +29,7 @@ namespace BRadLibCS
 	public static class ObservedCountFragmentExtensions
 	{
 
-		public static void Init(this IObservedCountFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this IObservedCountFragment fragment)
 		{
 		{                                                                                                                                         // CSComponentSlice.cs:136
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -50,15 +50,20 @@ namespace BRadLibCS
 		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 
-		public static void Read(this IObservedCountFragment fragment)
+		public static void Read<T>(this IObservedCountFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this IObservedCountFragment fragment)
+		public static void Write(this IObservedCountFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this IObservedCountFragment fragment)
+		public static void Validate(this IObservedCountFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

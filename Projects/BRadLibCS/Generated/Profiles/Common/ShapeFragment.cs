@@ -32,7 +32,7 @@ namespace BRadLibCS
 	public static class ShapeFragmentExtensions
 	{
 
-		public static void Init(this IShapeFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this IShapeFragment fragment)
 		{
 		{                                                                                                                                         // CSComponentSlice.cs:136
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -104,15 +104,20 @@ namespace BRadLibCS
 		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 
-		public static void Read(this IShapeFragment fragment)
+		public static void Read<T>(this IShapeFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this IShapeFragment fragment)
+		public static void Write(this IShapeFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this IShapeFragment fragment)
+		public static void Validate(this IShapeFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

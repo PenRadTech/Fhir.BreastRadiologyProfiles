@@ -29,20 +29,25 @@ namespace BRadLibCS
 	public static class AssociatedFeatureFragmentExtensions
 	{
 
-		public static void Init(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this IAssociatedFeatureFragment fragment)
 		{
 		fragment.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                              // CSHasMemberSlice.cs:128
 		}
 
-		public static void Read(this IAssociatedFeatureFragment fragment)
+		public static void Read<T>(this IAssociatedFeatureFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this IAssociatedFeatureFragment fragment)
+		public static void Write(this IAssociatedFeatureFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this IAssociatedFeatureFragment fragment)
+		public static void Validate(this IAssociatedFeatureFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

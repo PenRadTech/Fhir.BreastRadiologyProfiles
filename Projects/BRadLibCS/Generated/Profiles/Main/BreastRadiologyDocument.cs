@@ -37,35 +37,10 @@ namespace BRadLibCS
 		}
 
 		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		/// <param name="resource">Fhir observation resource</param>
-		public BreastRadiologyDocumentProfile(BreastRadiologyDocument doc, Bundle resource)
-		{
-			this.Init(doc, resource);
-		}
-
-		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		public BreastRadiologyDocumentProfile(BreastRadiologyDocument doc)
-		{
-			this.Init(doc, new Bundle());
-		}
-
-		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init(BreastRadiologyDocument doc, Base baseResource = null)
+		public override void Init()
 		{
-			Bundle resource = (Bundle) baseResource;
-			if (resource == null)
-				resource = new Bundle();
-			base.Init(doc, resource);
 		}
 
 		/// <summary>
@@ -83,17 +58,18 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write()
+		public override void Write(BreastRadiologyDocument doc)
 		{
-			base.Write();
+			base.Write(doc);
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read()
+		public override void Read<Bundle>(BreastRadiologyDocument doc,
+							      Bundle resource)
 		{
-			base.Read();
+			base.Read(doc, resource);
 		}
 
 	}

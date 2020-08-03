@@ -15,7 +15,7 @@ namespace BRadLibCS
         public T Create()
         {
             T value = new T();
-            value.Init(this.doc);
+            value.Init();
             return this.Create(value);
         }
 

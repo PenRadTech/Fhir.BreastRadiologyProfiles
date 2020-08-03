@@ -29,7 +29,7 @@ namespace BRadLibCS
 	public static class PreviouslyDemonstratedByFragmentExtensions
 	{
 
-		public static void Init(this IPreviouslyDemonstratedByFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this IPreviouslyDemonstratedByFragment fragment)
 		{
 		{                                                                                                                                         // CSComponentSlice.cs:136
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
@@ -50,15 +50,20 @@ namespace BRadLibCS
 		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 
-		public static void Read(this IPreviouslyDemonstratedByFragment fragment)
+		public static void Read<T>(this IPreviouslyDemonstratedByFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this IPreviouslyDemonstratedByFragment fragment)
+		public static void Write(this IPreviouslyDemonstratedByFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this IPreviouslyDemonstratedByFragment fragment)
+		public static void Validate(this IPreviouslyDemonstratedByFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

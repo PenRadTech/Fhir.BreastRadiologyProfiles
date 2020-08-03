@@ -45,35 +45,10 @@ namespace BRadLibCS
 		}
 
 		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		/// <param name="resource">Fhir observation resource</param>
-		public FindingsLeftBreastProfile(BreastRadiologyDocument doc, Observation resource)
-		{
-			this.Init(doc, resource);
-		}
-
-		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		public FindingsLeftBreastProfile(BreastRadiologyDocument doc)
-		{
-			this.Init(doc, new Observation());
-		}
-
-		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init(BreastRadiologyDocument doc, Base baseResource = null)
+		public override void Init()
 		{
-			Observation resource = (Observation) baseResource;
-			if (resource == null)
-				resource = new Observation();
-			base.Init(doc, resource);
 			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
 			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:122
 			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
@@ -95,17 +70,18 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write()
+		public override void Write(BreastRadiologyDocument doc)
 		{
-			base.Write();
+			base.Write(doc);
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read()
+		public override void Read<Observation>(BreastRadiologyDocument doc,
+							      Observation resource)
 		{
-			base.Read();
+			base.Read(doc, resource);
 		}
 
 	}

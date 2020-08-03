@@ -29,20 +29,25 @@ namespace BRadLibCS
 	public static class ConsistentWithFragmentExtensions
 	{
 
-		public static void Init(this IConsistentWithFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
+		public static void Init(this IConsistentWithFragment fragment)
 		{
 		fragment.ConsistentWith = new ObservationHasMemberCollection<ConsistentWithProfile>();                                                    // CSHasMemberSlice.cs:128
 		}
 
-		public static void Read(this IConsistentWithFragment fragment)
+		public static void Read<T>(this IConsistentWithFragment fragment,
+								BreastRadiologyDocument doc,
+								T resource)
+		    where T : DomainResource
 		{
 		}
 
-		public static void Write(this IConsistentWithFragment fragment)
+		public static void Write(this IConsistentWithFragment fragment,
+								BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Validate(this IConsistentWithFragment fragment)
+		public static void Validate(this IConsistentWithFragment fragment,
+								StringBuilder sb)
 		{
 		}
 	}

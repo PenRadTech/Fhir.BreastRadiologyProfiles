@@ -17,21 +17,11 @@ namespace BRadLibCS
         {
         }
 
-        public ServiceRequestBase(BreastRadiologyDocument doc, ServiceRequest resource) : base()
+        public override void Write(BreastRadiologyDocument doc)
         {
-            this.Init(doc, resource);
-        }
-
-        public ServiceRequestBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new ServiceRequest());
-        }
-
-        public override void Write()
-        {
-            base.Write();
-            this.Resource.Encounter = this.Doc.Encounter;
-            this.Resource.Subject = this.Doc.Subject;
+            base.Write(doc);
+            this.Resource.Encounter = doc.Encounter;
+            this.Resource.Subject = doc.Subject;
         }
     }
 }

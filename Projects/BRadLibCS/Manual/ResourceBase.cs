@@ -26,11 +26,6 @@ namespace BRadLibCS
             set => this.domainResource.Id = value;
         }
 
-        public ResourceBase(BreastRadiologyDocument doc, DomainResource resource) : base()
-        {
-            this.Init(doc, resource);
-        }
-
         public ResourceBase() : base()
         {
         }

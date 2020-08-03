@@ -38,7 +38,8 @@ namespace BRadLibCS
         {
         }
 
-        public virtual void Read(BreastRadiologyDocument doc)
+        public virtual void Read<T>(BreastRadiologyDocument doc, T Resource)
+            where T : DomainResource
         {
         }
     }

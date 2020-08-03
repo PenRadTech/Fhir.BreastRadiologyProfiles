@@ -11,7 +11,7 @@ namespace BRadLibCS
     }
 
 
-    public class ClinicalImpressionBase : ResourceBase<ClinicalImpression>, IClinicalImpression
+    public class ClinicalImpressionBase : ResourceBase, IClinicalImpression
     {
         public ClinicalImpression Resource => (ClinicalImpression)this.resource;
 

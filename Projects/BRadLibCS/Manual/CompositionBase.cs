@@ -19,21 +19,16 @@ namespace BRadLibCS
         {
         }
 
-        public CompositionBase(BreastRadiologyDocument doc) : base()
-        {
-            this.Init(doc, new Composition());
-        }
-
         protected void ClearSection()
         {
             this.Resource.Section.Clear();
         }
 
-        public override void Write()
+        public override void Write(BreastRadiologyDocument doc)
         {
-            base.Write();
-            this.Resource.Encounter = this.Doc.Encounter;
-            this.Resource.Subject = this.Doc.Subject;
+            base.Write(doc);
+            this.Resource.Encounter = doc.Encounter;
+            this.Resource.Subject = doc.Subject;
         }
 
     }

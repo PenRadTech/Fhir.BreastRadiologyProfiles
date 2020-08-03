@@ -11,7 +11,7 @@ namespace BRadLibCS
     }
 
 
-    public class BundleBase : ResourceBase<Bundle>, IBundle
+    public class BundleBase : ResourceBase, IBundle
     {
         public Bundle Resource => (Bundle)this.resource;
 

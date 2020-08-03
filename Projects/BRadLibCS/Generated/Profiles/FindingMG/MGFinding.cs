@@ -63,35 +63,10 @@ namespace BRadLibCS
 		}
 
 		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		/// <param name="resource">Fhir observation resource</param>
-		public MGFindingProfile(BreastRadiologyDocument doc, Observation resource)
-		{
-			this.Init(doc, resource);
-		}
-
-		/// <summary>
-		/// Constructor.
-		/// User must not call Init().
-		/// </summary>
-		/// <param name="doc">base document</param>
-		public MGFindingProfile(BreastRadiologyDocument doc)
-		{
-			this.Init(doc, new Observation());
-		}
-
-		/// <summary>
 		/// Init object.
 		/// </summary>
-		public override void Init(BreastRadiologyDocument doc, Base baseResource = null)
+		public override void Init()
 		{
-			Observation resource = (Observation) baseResource;
-			if (resource == null)
-				resource = new Observation();
-			base.Init(doc, resource);
 			this.AbnormalityCyst = new ObservationHasMemberCollection<AbnormalityCystProfile>();                                                     // CSHasMemberSlice.cs:128
 			this.AbnormalityDuct = new ObservationHasMemberCollection<AbnormalityDuctProfile>();                                                     // CSHasMemberSlice.cs:128
 			this.AbnormalityForeignObject = new ObservationHasMemberCollection<AbnormalityForeignObjectProfile>();                                   // CSHasMemberSlice.cs:128
@@ -122,17 +97,18 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write()
+		public override void Write(BreastRadiologyDocument doc)
 		{
-			base.Write();
+			base.Write(doc);
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read()
+		public override void Read<Observation>(BreastRadiologyDocument doc,
+							      Observation resource)
 		{
-			base.Read();
+			base.Read(doc, resource);
 		}
 
 	}
