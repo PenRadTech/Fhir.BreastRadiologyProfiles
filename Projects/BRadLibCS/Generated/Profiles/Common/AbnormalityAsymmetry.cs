@@ -37,8 +37,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityAsymmetryProfile :  ObservationBase, IAbnormalityAsymmetry
 	{
-		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:138
-		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:138
+		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:90
+		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:90
 		public ObservationComponentItem<CodeableConcept> AsymmetryType { get; set; }                                                              // CSComponentSlice.cs:100
 		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:100
 		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:100

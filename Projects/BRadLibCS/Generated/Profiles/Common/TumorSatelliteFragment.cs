@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface ITumorSatelliteFragment 
 	{
-		ObservationHasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                        // CSHasMemberSlice.cs:81
+		ObservationHasMemberCollection<TumorSatelliteProfile> TumorSatellite { get; set; }                                                        // CSHasMemberSlice.cs:90
 	}
 
 
@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc, Base baseResource = null)
 		{
-		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:110
+		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:119
 		}
 
 		public static void Read(this ITumorSatelliteFragment fragment)
