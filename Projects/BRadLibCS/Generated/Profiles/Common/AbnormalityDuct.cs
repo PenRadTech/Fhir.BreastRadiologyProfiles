@@ -38,7 +38,7 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AbnormalityDuctProfile :  ObservationBase, IAbnormalityDuct
 	{
-		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:90
+		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:91
 		public ObservationComponentItem<CodeableConcept> DuctType { get; set; }                                                                   // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:105
@@ -46,10 +46,10 @@ namespace BRadLibCS
 		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Quantity,Range> ObservedCount { get; set; }                                                               // CSComponentSlice.cs:105
+		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Quantity,Range> ObsDistRegionSize { get; set; }                                                           // CSComponentSlice.cs:105
-		public ObservationComponentItem<Quantity,Range> ObsSize { get; set; }                                                                     // CSComponentSlice.cs:105
+		public ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                     // CSComponentSlice.cs:105
+		public ObservationComponentItem<Base, Quantity,Range> ObsSize { get; set; }                                                               // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:105
 		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:105

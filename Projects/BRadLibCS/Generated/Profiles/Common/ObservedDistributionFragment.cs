@@ -20,7 +20,7 @@ namespace BRadLibCS
 	public interface IObservedDistributionFragment 
 	{
 		ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                                   // CSComponentSlice.cs:105
-		ObservationComponentItem<Quantity,Range> ObsDistRegionSize { get; set; }                                                                  // CSComponentSlice.cs:105
+		ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                            // CSComponentSlice.cs:105
 	}
 
 
@@ -64,7 +64,7 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.ObsDistRegionSize = new ObservationComponentItem<Quantity,Range>(ObservationCode());                                         // CSComponentSlice.cs:145
+		    fragment.ObsDistRegionSize = new ObservationComponentItem<Base, Quantity,Range>(ObservationCode());                                   // CSComponentSlice.cs:145
 		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 

@@ -19,10 +19,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IFindingsRightBreast 
 	{
-		ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                        // CSHasMemberSlice.cs:84
-		ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                                      // CSHasMemberSlice.cs:84
-		ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                        // CSHasMemberSlice.cs:84
-		ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                        // CSHasMemberSlice.cs:84
+		ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                        // CSHasMemberSlice.cs:85
+		ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                                      // CSHasMemberSlice.cs:85
+		ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                        // CSHasMemberSlice.cs:85
+		ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                        // CSHasMemberSlice.cs:85
 
 	}
 
@@ -31,10 +31,10 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class FindingsRightBreastProfile :  ObservationBase, IFindingsRightBreast
 	{
-		public ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                 // CSHasMemberSlice.cs:84
-		public ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                               // CSHasMemberSlice.cs:84
-		public ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                 // CSHasMemberSlice.cs:84
-		public ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                 // CSHasMemberSlice.cs:84
+		public ObservationHasMemberItem<MGFindingProfile> MgFinding { get; set; }                                                                 // CSHasMemberSlice.cs:85
+		public ObservationHasMemberItem<MRIFindingProfile> MriFinding { get; set; }                                                               // CSHasMemberSlice.cs:85
+		public ObservationHasMemberItem<NMFindingProfile> NmFinding { get; set; }                                                                 // CSHasMemberSlice.cs:85
+		public ObservationHasMemberItem<USFindingProfile> UsFinding { get; set; }                                                                 // CSHasMemberSlice.cs:85
 
 		/// <summary>
 		/// Constructor.
@@ -51,10 +51,10 @@ namespace BRadLibCS
 		protected override void Init()
 		{
 		    base.Init();
-			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
-			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:122
-			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
-			this.UsFinding = new ObservationHasMemberItem<USFindingProfile>();                                                                       // CSHasMemberSlice.cs:122
+			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
+			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:148
+			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
+			this.UsFinding = new ObservationHasMemberItem<USFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
 		}
 
 		/// <summary>
@@ -66,6 +66,10 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
+			this.MgFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
+			this.MriFinding.Validate(sb);                                                                                                            // CSHasMemberSlice.cs:129
+			this.NmFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
+			this.UsFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
 			return retVal;
 		}
 
@@ -75,6 +79,10 @@ namespace BRadLibCS
 		public override void Write(BreastRadiologyDocument doc)
 		{
 			base.Write(doc);
+			this.MgFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
+			this.MriFinding.Write(doc);                                                                                                              // CSHasMemberSlice.cs:123
+			this.NmFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
+			this.UsFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
 		}
 
 		/// <summary>
@@ -84,6 +92,10 @@ namespace BRadLibCS
 							      Observation resource)
 		{
 			base.Read(doc, resource);
+			this.MgFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
+			this.MriFinding.Read(doc, resource);                                                                                                     // CSHasMemberSlice.cs:117
+			this.NmFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
+			this.UsFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
 		}
 
 	}

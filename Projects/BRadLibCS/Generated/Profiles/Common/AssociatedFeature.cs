@@ -30,7 +30,7 @@ namespace BRadLibCS
 	public partial class AssociatedFeatureProfile :  ObservationBase, IAssociatedFeature
 	{
 		public ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                // CSComponentSlice.cs:105
-		public ObservationComponentItem<Quantity,Range> ObservedCount { get; set; }                                                               // CSComponentSlice.cs:105
+		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:105
 
 		/// <summary>
 		/// Constructor.

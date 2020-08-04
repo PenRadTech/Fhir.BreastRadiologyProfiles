@@ -6,7 +6,7 @@ using System.Text;
 namespace BRadLibCS
 {
     public class ObservationComponentItem<T> : ComponentSimpleItem<T>
-        where T : Base
+        where T : class
     {
         CodeableConcept conceptCode;
 
@@ -14,30 +14,42 @@ namespace BRadLibCS
         {
             this.conceptCode = conceptCode;
         }
+
+        public override void Read<F>(BreastRadiologyDocument doc, F resource)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
-    public class ObservationComponentItem<T, U> : IComponentItem<T, U>
-        where T : Base
-        where U : Base
+    public class ObservationComponentItem<S, T, U> : ComponentSimpleItem<S, T, U>
+        where S : class
+        where T : class, S
+        where U : class, S
     {
         CodeableConcept conceptCode;
-        Base value;
-        public Base Get() => this.value;
-        public void Set(T value) => this.value = value;
-        public void Set(U value) => this.value = value;
 
         public ObservationComponentItem(CodeableConcept conceptCode)
         {
             this.conceptCode = conceptCode;
         }
+
+        public override void Read<F>(BreastRadiologyDocument doc, F resource)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
 
-    public class ObservationComponentCollection<T> : IComponentCollection<T>
-        where T : Base
+    public class ObservationComponentCollection<T> : ComponentSimpleCollection<T>
+        where T : class
     {
         CodeableConcept conceptCode;
-        List<T> items = new List<T>();
 
         public ObservationComponentCollection(CodeableConcept conceptCode)
         {
@@ -45,9 +57,9 @@ namespace BRadLibCS
             throw new NotImplementedException();
         }
 
-        public void Append(T item) => items.Add(item);
-        public void Clear() => items.Clear();
-        public Int32 Count() => items.Count;
-        public IEnumerable<T> Items() => items;
+        public override void Read<F>(BreastRadiologyDocument doc, F resource) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Validate(StringBuilder sb) => throw new NotImplementedException();
+
     }
 }
