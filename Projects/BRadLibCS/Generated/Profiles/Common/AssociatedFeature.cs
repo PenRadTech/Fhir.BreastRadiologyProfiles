@@ -20,7 +20,7 @@ namespace BRadLibCS
 	public interface IAssociatedFeature  : IBreastBodyLocationRequiredFragment,
         IObservedCountFragment
 	{
-		ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                       // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                       // CSComponentSlice.cs:106
 
 	}
 
@@ -29,8 +29,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class AssociatedFeatureProfile :  ObservationBase, IAssociatedFeature
 	{
-		public ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:105
+		public ObservationComponentItem<CodeableConcept> FeatureType { get; set; }                                                                // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:106
 
 		/// <summary>
 		/// Constructor.
@@ -49,7 +49,7 @@ namespace BRadLibCS
 		    base.Init();
 			((IBreastBodyLocationRequiredFragment)this).Init();                                                                                      // CSItemClass.cs:75
 			((IObservedCountFragment)this).Init();                                                                                                   // CSItemClass.cs:75
-			{                                                                                                                                        // CSComponentSlice.cs:136
+			{                                                                                                                                        // CSComponentSlice.cs:137
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761
 			        CodeableConcept retVal = new CodeableConcept();                                                                                  // FhirConstruct.cs:762
@@ -64,8 +64,8 @@ namespace BRadLibCS
 			        }                                                                                                                                // FhirConstruct.cs:821
 			        return retVal;                                                                                                                   // FhirConstruct.cs:836
 			    }                                                                                                                                    // FhirConstruct.cs:837
-			    this.FeatureType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                 // CSComponentSlice.cs:145
-			}                                                                                                                                        // CSComponentSlice.cs:153
+			    this.FeatureType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                 // CSComponentSlice.cs:146
+			}                                                                                                                                        // CSComponentSlice.cs:154
 		}
 
 		/// <summary>
@@ -79,6 +79,7 @@ namespace BRadLibCS
 				retVal = false;
 			((IBreastBodyLocationRequiredFragment)this).Validate(sb);                                                                                // CSItemClass.cs:84
 			((IObservedCountFragment)this).Validate(sb);                                                                                             // CSItemClass.cs:84
+			this.FeatureType.Validate(sb);                                                                                                           // CSPropertyBase.cs:45
 			return retVal;
 		}
 
@@ -90,6 +91,7 @@ namespace BRadLibCS
 			base.Write();
 			((IBreastBodyLocationRequiredFragment)this).Write(this.Doc);                                                                             // CSItemClass.cs:81
 			((IObservedCountFragment)this).Write(this.Doc);                                                                                          // CSItemClass.cs:81
+			this.FeatureType.Write(this.Doc, this.Resource);                                                                                         // CSPropertyBase.cs:39
 		}
 
 		/// <summary>
@@ -100,6 +102,7 @@ namespace BRadLibCS
 			base.Read();
 			((IBreastBodyLocationRequiredFragment)this).Read(this.Doc);                                                                              // CSItemClass.cs:78
 			((IObservedCountFragment)this).Read(this.Doc);                                                                                           // CSItemClass.cs:78
+			this.FeatureType.Read(this.Doc, this.Resource);                                                                                          // CSPropertyBase.cs:33
 		}
 
 	}

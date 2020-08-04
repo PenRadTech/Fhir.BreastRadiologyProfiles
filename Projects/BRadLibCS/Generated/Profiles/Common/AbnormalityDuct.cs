@@ -29,7 +29,7 @@ namespace BRadLibCS
         IPreviouslyDemonstratedByFragment,
         IConsistentWithFragment
 	{
-		ObservationComponentItem<CodeableConcept> DuctType { get; set; }                                                                          // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> DuctType { get; set; }                                                                          // CSComponentSlice.cs:106
 
 	}
 
@@ -39,20 +39,20 @@ namespace BRadLibCS
 	public partial class AbnormalityDuctProfile :  ObservationBase, IAbnormalityDuct
 	{
 		public ObservationHasMemberCollection<ConsistentWithProfile> ConsistentWith { get; set; }                                                 // CSHasMemberSlice.cs:91
-		public ObservationComponentItem<CodeableConcept> DuctType { get; set; }                                                                   // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                     // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObsSize { get; set; }                                                               // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:105
+		public ObservationComponentItem<CodeableConcept> DuctType { get; set; }                                                                   // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                     // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObsSize { get; set; }                                                               // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> NotPreviouslySeen { get; set; }                                                          // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> CorrespondsWith { get; set; }                                                            // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:106
 
 		/// <summary>
 		/// Constructor.
@@ -80,7 +80,7 @@ namespace BRadLibCS
 			((ICorrespondsWithFragment)this).Init();                                                                                                 // CSItemClass.cs:75
 			((IPreviouslyDemonstratedByFragment)this).Init();                                                                                        // CSItemClass.cs:75
 			((IConsistentWithFragment)this).Init();                                                                                                  // CSItemClass.cs:75
-			{                                                                                                                                        // CSComponentSlice.cs:136
+			{                                                                                                                                        // CSComponentSlice.cs:137
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761
 			        CodeableConcept retVal = new CodeableConcept();                                                                                  // FhirConstruct.cs:762
@@ -95,8 +95,8 @@ namespace BRadLibCS
 			        }                                                                                                                                // FhirConstruct.cs:821
 			        return retVal;                                                                                                                   // FhirConstruct.cs:836
 			    }                                                                                                                                    // FhirConstruct.cs:837
-			    this.DuctType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                    // CSComponentSlice.cs:145
-			}                                                                                                                                        // CSComponentSlice.cs:153
+			    this.DuctType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                    // CSComponentSlice.cs:146
+			}                                                                                                                                        // CSComponentSlice.cs:154
 		}
 
 		/// <summary>
@@ -119,6 +119,7 @@ namespace BRadLibCS
 			((ICorrespondsWithFragment)this).Validate(sb);                                                                                           // CSItemClass.cs:84
 			((IPreviouslyDemonstratedByFragment)this).Validate(sb);                                                                                  // CSItemClass.cs:84
 			((IConsistentWithFragment)this).Validate(sb);                                                                                            // CSItemClass.cs:84
+			this.DuctType.Validate(sb);                                                                                                              // CSPropertyBase.cs:45
 			return retVal;
 		}
 
@@ -139,6 +140,7 @@ namespace BRadLibCS
 			((ICorrespondsWithFragment)this).Write(this.Doc);                                                                                        // CSItemClass.cs:81
 			((IPreviouslyDemonstratedByFragment)this).Write(this.Doc);                                                                               // CSItemClass.cs:81
 			((IConsistentWithFragment)this).Write(this.Doc);                                                                                         // CSItemClass.cs:81
+			this.DuctType.Write(this.Doc, this.Resource);                                                                                            // CSPropertyBase.cs:39
 		}
 
 		/// <summary>
@@ -158,6 +160,7 @@ namespace BRadLibCS
 			((ICorrespondsWithFragment)this).Read(this.Doc);                                                                                         // CSItemClass.cs:78
 			((IPreviouslyDemonstratedByFragment)this).Read(this.Doc);                                                                                // CSItemClass.cs:78
 			((IConsistentWithFragment)this).Read(this.Doc);                                                                                          // CSItemClass.cs:78
+			this.DuctType.Read(this.Doc, this.Resource);                                                                                             // CSPropertyBase.cs:33
 		}
 
 	}

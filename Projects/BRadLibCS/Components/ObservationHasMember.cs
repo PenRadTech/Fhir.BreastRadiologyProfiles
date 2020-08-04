@@ -5,19 +5,26 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public class ObservationHasMemberItem<T> : ComponentSimpleItem<Observation, T>
+    public class ObservationHasMemberItem<T> : ComponentSimpleItem<T>
         where T : class
     {
-        public override void Read() => throw new NotImplementedException();
-        public override void Write() => throw new NotImplementedException();
+        public ObservationHasMemberItem()
+        {
+        }
+
+        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
-    public class ObservationHasMemberCollection<T> : ComponentSimpleCollection<Observation, T>
+    public class ObservationHasMemberCollection<T> : ComponentSimpleCollection<T>
         where T : class
     {
-        public override void Read() => throw new NotImplementedException();
-        public override void Write() => throw new NotImplementedException();
+        public ObservationHasMemberCollection()
+        {
+        }
+        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 }

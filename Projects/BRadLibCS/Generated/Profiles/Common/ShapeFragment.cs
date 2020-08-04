@@ -19,10 +19,10 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IShapeFragment 
 	{
-		ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                       // CSComponentSlice.cs:105
-		ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                             // CSComponentSlice.cs:105
-		ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                            // CSComponentSlice.cs:105
-		ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                                   // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                       // CSComponentSlice.cs:106
+		ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                             // CSComponentSlice.cs:106
+		ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                            // CSComponentSlice.cs:106
+		ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                                   // CSComponentSlice.cs:106
 	}
 
 
@@ -34,7 +34,7 @@ namespace BRadLibCS
 
 		public static void Init(this IShapeFragment fragment)
 		{
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -49,9 +49,9 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Orientation = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                              // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		    fragment.Orientation = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                              // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -66,9 +66,9 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Shape = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                    // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		    fragment.Shape = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                    // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -83,9 +83,9 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.Margin = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                   // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		    fragment.Margin = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                   // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -100,8 +100,8 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.MgBreastDensity = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                          // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
+		    fragment.MgBreastDensity = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                          // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
 		}
 
 		public static void Read(this IShapeFragment fragment, BreastRadiologyDocument doc)

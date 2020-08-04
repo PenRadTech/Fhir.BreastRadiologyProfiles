@@ -19,7 +19,7 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IBiRadFragment 
 	{
-		ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                          // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                          // CSComponentSlice.cs:106
 	}
 
 
@@ -31,7 +31,7 @@ namespace BRadLibCS
 
 		public static void Init(this IBiRadFragment fragment)
 		{
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -46,8 +46,8 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.BiRadsAssessmentCategory = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                 // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
+		    fragment.BiRadsAssessmentCategory = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                 // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
 		}
 
 		public static void Read(this IBiRadFragment fragment, BreastRadiologyDocument doc)

@@ -51,10 +51,10 @@ namespace BRadLibCS
 		protected override void Init()
 		{
 		    base.Init();
-			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
-			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:148
-			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
-			this.UsFinding = new ObservationHasMemberItem<USFindingProfile>();                                                                       // CSHasMemberSlice.cs:148
+			this.MgFinding = new ObservationHasMemberItem<MGFindingProfile>();                                                                       // CSHasMemberSlice.cs:123
+			this.MriFinding = new ObservationHasMemberItem<MRIFindingProfile>();                                                                     // CSHasMemberSlice.cs:123
+			this.NmFinding = new ObservationHasMemberItem<NMFindingProfile>();                                                                       // CSHasMemberSlice.cs:123
+			this.UsFinding = new ObservationHasMemberItem<USFindingProfile>();                                                                       // CSHasMemberSlice.cs:123
 		}
 
 		/// <summary>
@@ -66,10 +66,10 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
-			this.MgFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
-			this.MriFinding.Validate(sb);                                                                                                            // CSHasMemberSlice.cs:129
-			this.NmFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
-			this.UsFinding.Validate(sb);                                                                                                             // CSHasMemberSlice.cs:129
+			this.MgFinding.Validate(sb);                                                                                                             // CSPropertyBase.cs:45
+			this.MriFinding.Validate(sb);                                                                                                            // CSPropertyBase.cs:45
+			this.NmFinding.Validate(sb);                                                                                                             // CSPropertyBase.cs:45
+			this.UsFinding.Validate(sb);                                                                                                             // CSPropertyBase.cs:45
 			return retVal;
 		}
 
@@ -79,10 +79,10 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
-			this.MgFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
-			this.MriFinding.Write();                                                                                                                 // CSHasMemberSlice.cs:123
-			this.NmFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
-			this.UsFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
+			this.MgFinding.Write(this.Doc, this.Resource);                                                                                           // CSPropertyBase.cs:39
+			this.MriFinding.Write(this.Doc, this.Resource);                                                                                          // CSPropertyBase.cs:39
+			this.NmFinding.Write(this.Doc, this.Resource);                                                                                           // CSPropertyBase.cs:39
+			this.UsFinding.Write(this.Doc, this.Resource);                                                                                           // CSPropertyBase.cs:39
 		}
 
 		/// <summary>
@@ -91,10 +91,10 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
-			this.MgFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
-			this.MriFinding.Read();                                                                                                                  // CSHasMemberSlice.cs:117
-			this.NmFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
-			this.UsFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
+			this.MgFinding.Read(this.Doc, this.Resource);                                                                                            // CSPropertyBase.cs:33
+			this.MriFinding.Read(this.Doc, this.Resource);                                                                                           // CSPropertyBase.cs:33
+			this.NmFinding.Read(this.Doc, this.Resource);                                                                                            // CSPropertyBase.cs:33
+			this.UsFinding.Read(this.Doc, this.Resource);                                                                                            // CSPropertyBase.cs:33
 		}
 
 	}

@@ -19,8 +19,8 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IConsistentWith 
 	{
-		ObservationComponentItem<CodeableConcept> ConsistentWith { get; set; }                                                                    // CSComponentSlice.cs:105
-		ObservationComponentItem<CodeableConcept> Qualifier { get; set; }                                                                         // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> ConsistentWith { get; set; }                                                                    // CSComponentSlice.cs:106
+		ObservationComponentItem<CodeableConcept> Qualifier { get; set; }                                                                         // CSComponentSlice.cs:106
 
 	}
 
@@ -29,8 +29,8 @@ namespace BRadLibCS
 	/// </summary>
 	public partial class ConsistentWithProfile :  ObservationBase, IConsistentWith
 	{
-		public ObservationComponentItem<CodeableConcept> ConsistentWith { get; set; }                                                             // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Qualifier { get; set; }                                                                  // CSComponentSlice.cs:105
+		public ObservationComponentItem<CodeableConcept> ConsistentWith { get; set; }                                                             // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Qualifier { get; set; }                                                                  // CSComponentSlice.cs:106
 
 		/// <summary>
 		/// Constructor.
@@ -47,7 +47,7 @@ namespace BRadLibCS
 		protected override void Init()
 		{
 		    base.Init();
-			{                                                                                                                                        // CSComponentSlice.cs:136
+			{                                                                                                                                        // CSComponentSlice.cs:137
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761
 			        CodeableConcept retVal = new CodeableConcept();                                                                                  // FhirConstruct.cs:762
@@ -62,9 +62,9 @@ namespace BRadLibCS
 			        }                                                                                                                                // FhirConstruct.cs:821
 			        return retVal;                                                                                                                   // FhirConstruct.cs:836
 			    }                                                                                                                                    // FhirConstruct.cs:837
-			    this.ConsistentWith = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                              // CSComponentSlice.cs:145
-			}                                                                                                                                        // CSComponentSlice.cs:153
-			{                                                                                                                                        // CSComponentSlice.cs:136
+			    this.ConsistentWith = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                              // CSComponentSlice.cs:146
+			}                                                                                                                                        // CSComponentSlice.cs:154
+			{                                                                                                                                        // CSComponentSlice.cs:137
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761
 			        CodeableConcept retVal = new CodeableConcept();                                                                                  // FhirConstruct.cs:762
@@ -79,8 +79,8 @@ namespace BRadLibCS
 			        }                                                                                                                                // FhirConstruct.cs:821
 			        return retVal;                                                                                                                   // FhirConstruct.cs:836
 			    }                                                                                                                                    // FhirConstruct.cs:837
-			    this.Qualifier = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                   // CSComponentSlice.cs:145
-			}                                                                                                                                        // CSComponentSlice.cs:153
+			    this.Qualifier = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                                   // CSComponentSlice.cs:146
+			}                                                                                                                                        // CSComponentSlice.cs:154
 		}
 
 		/// <summary>
@@ -92,6 +92,8 @@ namespace BRadLibCS
 			bool retVal = true;
 			if (base.Validate(sb) == false)
 				retVal = false;
+			this.ConsistentWith.Validate(sb);                                                                                                        // CSPropertyBase.cs:45
+			this.Qualifier.Validate(sb);                                                                                                             // CSPropertyBase.cs:45
 			return retVal;
 		}
 
@@ -101,6 +103,8 @@ namespace BRadLibCS
 		public override void Write()
 		{
 			base.Write();
+			this.ConsistentWith.Write(this.Doc, this.Resource);                                                                                      // CSPropertyBase.cs:39
+			this.Qualifier.Write(this.Doc, this.Resource);                                                                                           // CSPropertyBase.cs:39
 		}
 
 		/// <summary>
@@ -109,6 +113,8 @@ namespace BRadLibCS
 		public override void Read()
 		{
 			base.Read();
+			this.ConsistentWith.Read(this.Doc, this.Resource);                                                                                       // CSPropertyBase.cs:33
+			this.Qualifier.Read(this.Doc, this.Resource);                                                                                            // CSPropertyBase.cs:33
 		}
 
 	}

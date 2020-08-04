@@ -27,7 +27,7 @@ namespace BRadLibCS
         IPreviouslyDemonstratedByFragment,
         IAssociatedFeatureFragment
 	{
-		ObservationComponentItem<CodeableConcept> FibroAdenomaType { get; set; }                                                                  // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> FibroAdenomaType { get; set; }                                                                  // CSComponentSlice.cs:106
 
 	}
 
@@ -37,18 +37,18 @@ namespace BRadLibCS
 	public partial class AbnormalityFibroadenomaProfile :  ObservationBase, IAbnormalityFibroadenoma
 	{
 		public ObservationHasMemberCollection<AssociatedFeatureProfile> AssociatedFeature { get; set; }                                           // CSHasMemberSlice.cs:91
-		public ObservationComponentItem<CodeableConcept> FibroAdenomaType { get; set; }                                                           // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                     // CSComponentSlice.cs:105
-		public ObservationComponentItem<Base, Quantity,Range> ObsSize { get; set; }                                                               // CSComponentSlice.cs:105
-		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:105
+		public ObservationComponentItem<CodeableConcept> FibroAdenomaType { get; set; }                                                           // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> ObsChanges { get; set; }                                                                 // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> BiRadsAssessmentCategory { get; set; }                                                   // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Orientation { get; set; }                                                                // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Shape { get; set; }                                                                      // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> Margin { get; set; }                                                                     // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> MgBreastDensity { get; set; }                                                            // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObservedCount { get; set; }                                                         // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                            // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                     // CSComponentSlice.cs:106
+		public ObservationComponentItem<Base, Quantity,Range> ObsSize { get; set; }                                                               // CSComponentSlice.cs:106
+		public ObservationComponentItem<CodeableConcept> PrevDemBy { get; set; }                                                                  // CSComponentSlice.cs:106
 
 		/// <summary>
 		/// Constructor.
@@ -74,7 +74,7 @@ namespace BRadLibCS
 			((IObservedSizeFragment)this).Init();                                                                                                    // CSItemClass.cs:75
 			((IPreviouslyDemonstratedByFragment)this).Init();                                                                                        // CSItemClass.cs:75
 			((IAssociatedFeatureFragment)this).Init();                                                                                               // CSItemClass.cs:75
-			{                                                                                                                                        // CSComponentSlice.cs:136
+			{                                                                                                                                        // CSComponentSlice.cs:137
 			     CodeableConcept ObservationCode()                                                                                                   // FhirConstruct.cs:760
 			    {                                                                                                                                    // FhirConstruct.cs:761
 			        CodeableConcept retVal = new CodeableConcept();                                                                                  // FhirConstruct.cs:762
@@ -89,8 +89,8 @@ namespace BRadLibCS
 			        }                                                                                                                                // FhirConstruct.cs:821
 			        return retVal;                                                                                                                   // FhirConstruct.cs:836
 			    }                                                                                                                                    // FhirConstruct.cs:837
-			    this.FibroAdenomaType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                            // CSComponentSlice.cs:145
-			}                                                                                                                                        // CSComponentSlice.cs:153
+			    this.FibroAdenomaType = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                            // CSComponentSlice.cs:146
+			}                                                                                                                                        // CSComponentSlice.cs:154
 		}
 
 		/// <summary>
@@ -111,6 +111,7 @@ namespace BRadLibCS
 			((IObservedSizeFragment)this).Validate(sb);                                                                                              // CSItemClass.cs:84
 			((IPreviouslyDemonstratedByFragment)this).Validate(sb);                                                                                  // CSItemClass.cs:84
 			((IAssociatedFeatureFragment)this).Validate(sb);                                                                                         // CSItemClass.cs:84
+			this.FibroAdenomaType.Validate(sb);                                                                                                      // CSPropertyBase.cs:45
 			return retVal;
 		}
 
@@ -129,6 +130,7 @@ namespace BRadLibCS
 			((IObservedSizeFragment)this).Write(this.Doc);                                                                                           // CSItemClass.cs:81
 			((IPreviouslyDemonstratedByFragment)this).Write(this.Doc);                                                                               // CSItemClass.cs:81
 			((IAssociatedFeatureFragment)this).Write(this.Doc);                                                                                      // CSItemClass.cs:81
+			this.FibroAdenomaType.Write(this.Doc, this.Resource);                                                                                    // CSPropertyBase.cs:39
 		}
 
 		/// <summary>
@@ -146,6 +148,7 @@ namespace BRadLibCS
 			((IObservedSizeFragment)this).Read(this.Doc);                                                                                            // CSItemClass.cs:78
 			((IPreviouslyDemonstratedByFragment)this).Read(this.Doc);                                                                                // CSItemClass.cs:78
 			((IAssociatedFeatureFragment)this).Read(this.Doc);                                                                                       // CSItemClass.cs:78
+			this.FibroAdenomaType.Read(this.Doc, this.Resource);                                                                                     // CSPropertyBase.cs:33
 		}
 
 	}

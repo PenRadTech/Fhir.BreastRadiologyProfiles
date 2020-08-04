@@ -19,8 +19,8 @@ namespace BRadLibCS
 	/// </summary>
 	public interface IObservedDistributionFragment 
 	{
-		ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                                   // CSComponentSlice.cs:105
-		ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                            // CSComponentSlice.cs:105
+		ObservationComponentItem<CodeableConcept> ObsDistribution { get; set; }                                                                   // CSComponentSlice.cs:106
+		ObservationComponentItem<Base, Quantity,Range> ObsDistRegionSize { get; set; }                                                            // CSComponentSlice.cs:106
 	}
 
 
@@ -32,7 +32,7 @@ namespace BRadLibCS
 
 		public static void Init(this IObservedDistributionFragment fragment)
 		{
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -47,9 +47,9 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.ObsDistribution = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                          // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
-		{                                                                                                                                         // CSComponentSlice.cs:136
+		    fragment.ObsDistribution = new ObservationComponentItem<CodeableConcept>(ObservationCode());                                          // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
+		{                                                                                                                                         // CSComponentSlice.cs:137
 		     CodeableConcept ObservationCode()                                                                                                    // FhirConstruct.cs:760
 		    {                                                                                                                                     // FhirConstruct.cs:761
 		        CodeableConcept retVal = new CodeableConcept();                                                                                   // FhirConstruct.cs:762
@@ -64,8 +64,8 @@ namespace BRadLibCS
 		        }                                                                                                                                 // FhirConstruct.cs:821
 		        return retVal;                                                                                                                    // FhirConstruct.cs:836
 		    }                                                                                                                                     // FhirConstruct.cs:837
-		    fragment.ObsDistRegionSize = new ObservationComponentItem<Base, Quantity,Range>(ObservationCode());                                   // CSComponentSlice.cs:145
-		}                                                                                                                                         // CSComponentSlice.cs:153
+		    fragment.ObsDistRegionSize = new ObservationComponentItem<Base, Quantity,Range>(ObservationCode());                                   // CSComponentSlice.cs:146
+		}                                                                                                                                         // CSComponentSlice.cs:154
 		}
 
 		public static void Read(this IObservedDistributionFragment fragment, BreastRadiologyDocument doc)
