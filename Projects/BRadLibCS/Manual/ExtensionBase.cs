@@ -20,7 +20,7 @@ namespace BRadLibCS
             set => this.Resource.ElementId = value;
         }
 
-        public ExtensionBase() : base()
+        public ExtensionBase(BreastRadiologyDocument doc) : base(doc)
         {
         }
 

@@ -34,15 +34,11 @@ namespace BRadLibCS
 		fragment.AssociatedFeature = new ObservationHasMemberCollection<AssociatedFeatureProfile>();                                              // CSHasMemberSlice.cs:154
 		}
 
-		public static void Read<T>(this IAssociatedFeatureFragment fragment,
-								BreastRadiologyDocument doc,
-								T resource)
-		    where T : DomainResource
+		public static void Read(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Write(this IAssociatedFeatureFragment fragment,
-								BreastRadiologyDocument doc)
+		public static void Write(this IAssociatedFeatureFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 

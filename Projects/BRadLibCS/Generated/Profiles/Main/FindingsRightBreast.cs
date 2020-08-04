@@ -40,7 +40,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public FindingsRightBreastProfile() : base()
+		public FindingsRightBreastProfile(BreastRadiologyDocument doc) : base(doc)
 		{
 		    this.Init();
 		}
@@ -76,26 +76,25 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write(BreastRadiologyDocument doc)
+		public override void Write()
 		{
-			base.Write(doc);
-			this.MgFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
-			this.MriFinding.Write(doc);                                                                                                              // CSHasMemberSlice.cs:123
-			this.NmFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
-			this.UsFinding.Write(doc);                                                                                                               // CSHasMemberSlice.cs:123
+			base.Write();
+			this.MgFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
+			this.MriFinding.Write();                                                                                                                 // CSHasMemberSlice.cs:123
+			this.NmFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
+			this.UsFinding.Write();                                                                                                                  // CSHasMemberSlice.cs:123
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read<Observation>(BreastRadiologyDocument doc,
-							      Observation resource)
+		public override void Read()
 		{
-			base.Read(doc, resource);
-			this.MgFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
-			this.MriFinding.Read(doc, resource);                                                                                                     // CSHasMemberSlice.cs:117
-			this.NmFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
-			this.UsFinding.Read(doc, resource);                                                                                                      // CSHasMemberSlice.cs:117
+			base.Read();
+			this.MgFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
+			this.MriFinding.Read();                                                                                                                  // CSHasMemberSlice.cs:117
+			this.NmFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
+			this.UsFinding.Read();                                                                                                                   // CSHasMemberSlice.cs:117
 		}
 
 	}

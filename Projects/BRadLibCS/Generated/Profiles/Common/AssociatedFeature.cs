@@ -36,7 +36,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public AssociatedFeatureProfile() : base()
+		public AssociatedFeatureProfile(BreastRadiologyDocument doc) : base(doc)
 		{
 		    this.Init();
 		}
@@ -85,22 +85,21 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write(BreastRadiologyDocument doc)
+		public override void Write()
 		{
-			base.Write(doc);
-			((IBreastBodyLocationRequiredFragment)this).Write(doc);                                                                                  // CSItemClass.cs:81
-			((IObservedCountFragment)this).Write(doc);                                                                                               // CSItemClass.cs:81
+			base.Write();
+			((IBreastBodyLocationRequiredFragment)this).Write(this.Doc);                                                                             // CSItemClass.cs:81
+			((IObservedCountFragment)this).Write(this.Doc);                                                                                          // CSItemClass.cs:81
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read<Observation>(BreastRadiologyDocument doc,
-							      Observation resource)
+		public override void Read()
 		{
-			base.Read(doc, resource);
-			((IBreastBodyLocationRequiredFragment)this).Read(doc, resource);                                                                         // CSItemClass.cs:78
-			((IObservedCountFragment)this).Read(doc, resource);                                                                                      // CSItemClass.cs:78
+			base.Read();
+			((IBreastBodyLocationRequiredFragment)this).Read(this.Doc);                                                                              // CSItemClass.cs:78
+			((IObservedCountFragment)this).Read(this.Doc);                                                                                           // CSItemClass.cs:78
 		}
 
 	}

@@ -15,7 +15,7 @@ namespace BRadLibCS
     {
         public Composition Resource => (Composition)this.resource;
 
-        public CompositionBase() : base()
+        public CompositionBase(BreastRadiologyDocument doc) : base(doc)
         {
         }
 
@@ -24,11 +24,11 @@ namespace BRadLibCS
             this.Resource.Section.Clear();
         }
 
-        public override void Write(BreastRadiologyDocument doc)
+        public override void Write()
         {
-            base.Write(doc);
-            this.Resource.Encounter = doc.Encounter;
-            this.Resource.Subject = doc.Subject;
+            base.Write();
+            this.Resource.Encounter = this.Doc.Encounter;
+            this.Resource.Subject = this.Doc.Subject;
         }
 
     }

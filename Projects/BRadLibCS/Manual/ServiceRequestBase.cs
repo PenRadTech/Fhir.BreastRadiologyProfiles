@@ -13,15 +13,15 @@ namespace BRadLibCS
     {
         public ServiceRequest Resource => (ServiceRequest)this.resource;
 
-        public ServiceRequestBase() : base()
+        public ServiceRequestBase(BreastRadiologyDocument doc) : base(doc)
         {
         }
 
-        public override void Write(BreastRadiologyDocument doc)
+        public override void Write()
         {
-            base.Write(doc);
-            this.Resource.Encounter = doc.Encounter;
-            this.Resource.Subject = doc.Subject;
+            base.Write();
+            this.Resource.Encounter = this.Doc.Encounter;
+            this.Resource.Subject = this.Doc.Subject;
         }
     }
 }

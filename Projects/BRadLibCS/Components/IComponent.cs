@@ -9,25 +9,29 @@ namespace BRadLibCS
         where B : DomainResource
         where T : class
     {
+        B ContainingResource { get; }
         T Get();
         void Set(T value);
 
-        void Read(BreastRadiologyDocument doc, B resource);
-        void Write(BreastRadiologyDocument doc, B resource);
+        void Read();
+        void Write();
         void Validate(StringBuilder sb);
     }
+
     public interface IComponentItem<B, S, T, U>
         where B : DomainResource
         where S : class
         where T : S
         where U : S
     {
+        B ContainingResource { get; }
+
         S Get();
         void Set(T value);
         void Set(U value);
 
-        void Read(BreastRadiologyDocument doc, B resource);
-        void Write(BreastRadiologyDocument doc, B resource);
+        void Read();
+        void Write();
         void Validate(StringBuilder sb);
     }
 
@@ -35,13 +39,15 @@ namespace BRadLibCS
         where B : DomainResource
         where T : class
     {
+        B ContainingResource { get; }
+
         Int32 Count();
         void Clear();
         void Append(T item);
         IEnumerable<T> Items();
 
-        void Read(BreastRadiologyDocument doc, B resource);
-        void Write(BreastRadiologyDocument doc, B resource);
+        void Read();
+        void Write();
         void Validate(StringBuilder sb);
     }
 }

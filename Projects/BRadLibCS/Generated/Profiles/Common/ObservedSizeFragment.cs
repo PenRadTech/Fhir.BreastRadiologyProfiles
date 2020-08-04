@@ -50,15 +50,11 @@ namespace BRadLibCS
 		}                                                                                                                                         // CSComponentSlice.cs:153
 		}
 
-		public static void Read<T>(this IObservedSizeFragment fragment,
-								BreastRadiologyDocument doc,
-								T resource)
-		    where T : DomainResource
+		public static void Read(this IObservedSizeFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Write(this IObservedSizeFragment fragment,
-								BreastRadiologyDocument doc)
+		public static void Write(this IObservedSizeFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 

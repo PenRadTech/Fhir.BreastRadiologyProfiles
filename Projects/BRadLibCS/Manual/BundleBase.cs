@@ -15,13 +15,13 @@ namespace BRadLibCS
     {
         public Bundle Resource => (Bundle)this.resource;
 
-        public BundleBase() : base()
+        public BundleBase(BreastRadiologyDocument doc) : base(doc)
         {
         }
 
-        public override void Write(BreastRadiologyDocument doc)
+        public override void Write()
         {
-            base.Write(doc);
+            base.Write();
         }
     }
 }

@@ -34,15 +34,11 @@ namespace BRadLibCS
 		fragment.ConsistentWith = new ObservationHasMemberCollection<ConsistentWithProfile>();                                                    // CSHasMemberSlice.cs:154
 		}
 
-		public static void Read<T>(this IConsistentWithFragment fragment,
-								BreastRadiologyDocument doc,
-								T resource)
-		    where T : DomainResource
+		public static void Read(this IConsistentWithFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Write(this IConsistentWithFragment fragment,
-								BreastRadiologyDocument doc)
+		public static void Write(this IConsistentWithFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 

@@ -16,7 +16,7 @@ namespace BRadLibCS
         public Observation Resource => (Observation)this.resource;
 
 
-        public ObservationBase() : base()
+        public ObservationBase(BreastRadiologyDocument doc) : base(doc)
         {
         }
 
@@ -30,11 +30,11 @@ namespace BRadLibCS
             this.Resource.Component.Clear();
         }
 
-        public override void Write(BreastRadiologyDocument doc)
+        public override void Write()
         {
-            base.Write(doc);
-            this.Resource.Encounter = doc.Encounter;
-            this.Resource.Subject = doc.Subject;
+            base.Write();
+            this.Resource.Encounter = this.Doc.Encounter;
+            this.Resource.Subject = this.Doc.Subject;
         }
     }
 }

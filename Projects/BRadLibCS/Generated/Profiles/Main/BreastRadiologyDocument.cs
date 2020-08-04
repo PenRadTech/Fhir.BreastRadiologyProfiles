@@ -32,7 +32,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public BreastRadiologyDocumentProfile() : base()
+		public BreastRadiologyDocumentProfile(BreastRadiologyDocument doc) : base(doc)
 		{
 		    this.Init();
 		}
@@ -60,18 +60,17 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write(BreastRadiologyDocument doc)
+		public override void Write()
 		{
-			base.Write(doc);
+			base.Write();
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read<Bundle>(BreastRadiologyDocument doc,
-							      Bundle resource)
+		public override void Read()
 		{
-			base.Read(doc, resource);
+			base.Read();
 		}
 
 	}

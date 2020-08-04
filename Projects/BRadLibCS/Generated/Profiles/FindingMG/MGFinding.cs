@@ -58,7 +58,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public MGFindingProfile() : base()
+		public MGFindingProfile(BreastRadiologyDocument doc) : base(doc)
 		{
 		    this.Init();
 		}
@@ -112,44 +112,43 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write(BreastRadiologyDocument doc)
+		public override void Write()
 		{
-			base.Write(doc);
-			this.AbnormalityCyst.Write(doc);                                                                                                         // CSHasMemberSlice.cs:123
-			this.AbnormalityDuct.Write(doc);                                                                                                         // CSHasMemberSlice.cs:123
-			this.AbnormalityForeignObject.Write(doc);                                                                                                // CSHasMemberSlice.cs:123
-			this.AbnormalityLymphNode.Write(doc);                                                                                                    // CSHasMemberSlice.cs:123
-			this.AbnormalityMass.Write(doc);                                                                                                         // CSHasMemberSlice.cs:123
-			this.AssociatedFeature.Write(doc);                                                                                                       // CSHasMemberSlice.cs:123
-			this.AbnormalityFibroadenoma.Write(doc);                                                                                                 // CSHasMemberSlice.cs:123
-			this.AbnormalityArchDist.Write(doc);                                                                                                     // CSHasMemberSlice.cs:123
-			this.AbnormalityAsymmetry.Write(doc);                                                                                                    // CSHasMemberSlice.cs:123
-			this.AbnormalityCalcification.Write(doc);                                                                                                // CSHasMemberSlice.cs:123
-			this.AbnormalityDensity.Write(doc);                                                                                                      // CSHasMemberSlice.cs:123
-			this.AbnormalityFatNecrosis.Write(doc);                                                                                                  // CSHasMemberSlice.cs:123
-			this.MgBreastDensity.Write(doc);                                                                                                         // CSHasMemberSlice.cs:123
+			base.Write();
+			this.AbnormalityCyst.Write();                                                                                                            // CSHasMemberSlice.cs:123
+			this.AbnormalityDuct.Write();                                                                                                            // CSHasMemberSlice.cs:123
+			this.AbnormalityForeignObject.Write();                                                                                                   // CSHasMemberSlice.cs:123
+			this.AbnormalityLymphNode.Write();                                                                                                       // CSHasMemberSlice.cs:123
+			this.AbnormalityMass.Write();                                                                                                            // CSHasMemberSlice.cs:123
+			this.AssociatedFeature.Write();                                                                                                          // CSHasMemberSlice.cs:123
+			this.AbnormalityFibroadenoma.Write();                                                                                                    // CSHasMemberSlice.cs:123
+			this.AbnormalityArchDist.Write();                                                                                                        // CSHasMemberSlice.cs:123
+			this.AbnormalityAsymmetry.Write();                                                                                                       // CSHasMemberSlice.cs:123
+			this.AbnormalityCalcification.Write();                                                                                                   // CSHasMemberSlice.cs:123
+			this.AbnormalityDensity.Write();                                                                                                         // CSHasMemberSlice.cs:123
+			this.AbnormalityFatNecrosis.Write();                                                                                                     // CSHasMemberSlice.cs:123
+			this.MgBreastDensity.Write();                                                                                                            // CSHasMemberSlice.cs:123
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read<Observation>(BreastRadiologyDocument doc,
-							      Observation resource)
+		public override void Read()
 		{
-			base.Read(doc, resource);
-			this.AbnormalityCyst.Read(doc, resource);                                                                                                // CSHasMemberSlice.cs:117
-			this.AbnormalityDuct.Read(doc, resource);                                                                                                // CSHasMemberSlice.cs:117
-			this.AbnormalityForeignObject.Read(doc, resource);                                                                                       // CSHasMemberSlice.cs:117
-			this.AbnormalityLymphNode.Read(doc, resource);                                                                                           // CSHasMemberSlice.cs:117
-			this.AbnormalityMass.Read(doc, resource);                                                                                                // CSHasMemberSlice.cs:117
-			this.AssociatedFeature.Read(doc, resource);                                                                                              // CSHasMemberSlice.cs:117
-			this.AbnormalityFibroadenoma.Read(doc, resource);                                                                                        // CSHasMemberSlice.cs:117
-			this.AbnormalityArchDist.Read(doc, resource);                                                                                            // CSHasMemberSlice.cs:117
-			this.AbnormalityAsymmetry.Read(doc, resource);                                                                                           // CSHasMemberSlice.cs:117
-			this.AbnormalityCalcification.Read(doc, resource);                                                                                       // CSHasMemberSlice.cs:117
-			this.AbnormalityDensity.Read(doc, resource);                                                                                             // CSHasMemberSlice.cs:117
-			this.AbnormalityFatNecrosis.Read(doc, resource);                                                                                         // CSHasMemberSlice.cs:117
-			this.MgBreastDensity.Read(doc, resource);                                                                                                // CSHasMemberSlice.cs:117
+			base.Read();
+			this.AbnormalityCyst.Read();                                                                                                             // CSHasMemberSlice.cs:117
+			this.AbnormalityDuct.Read();                                                                                                             // CSHasMemberSlice.cs:117
+			this.AbnormalityForeignObject.Read();                                                                                                    // CSHasMemberSlice.cs:117
+			this.AbnormalityLymphNode.Read();                                                                                                        // CSHasMemberSlice.cs:117
+			this.AbnormalityMass.Read();                                                                                                             // CSHasMemberSlice.cs:117
+			this.AssociatedFeature.Read();                                                                                                           // CSHasMemberSlice.cs:117
+			this.AbnormalityFibroadenoma.Read();                                                                                                     // CSHasMemberSlice.cs:117
+			this.AbnormalityArchDist.Read();                                                                                                         // CSHasMemberSlice.cs:117
+			this.AbnormalityAsymmetry.Read();                                                                                                        // CSHasMemberSlice.cs:117
+			this.AbnormalityCalcification.Read();                                                                                                    // CSHasMemberSlice.cs:117
+			this.AbnormalityDensity.Read();                                                                                                          // CSHasMemberSlice.cs:117
+			this.AbnormalityFatNecrosis.Read();                                                                                                      // CSHasMemberSlice.cs:117
+			this.MgBreastDensity.Read();                                                                                                             // CSHasMemberSlice.cs:117
 		}
 
 	}

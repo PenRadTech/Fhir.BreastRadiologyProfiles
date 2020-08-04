@@ -15,12 +15,12 @@ namespace BRadLibCS
             this.conceptCode = conceptCode;
         }
 
-        public override void Read(BreastRadiologyDocument doc, Observation resource)
+        public override void Read()
         {
             throw new NotImplementedException();
         }
 
-        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Write() => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
@@ -36,8 +36,8 @@ namespace BRadLibCS
             this.conceptCode = conceptCode;
         }
 
-        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
-        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Read() => throw new NotImplementedException();
+        public override void Write() => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
@@ -53,8 +53,8 @@ namespace BRadLibCS
             throw new NotImplementedException();
         }
 
-        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
-        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Read() => throw new NotImplementedException();
+        public override void Write() => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
 
     }

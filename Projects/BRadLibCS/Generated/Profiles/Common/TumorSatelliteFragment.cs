@@ -34,15 +34,11 @@ namespace BRadLibCS
 		fragment.TumorSatellite = new ObservationHasMemberCollection<TumorSatelliteProfile>();                                                    // CSHasMemberSlice.cs:154
 		}
 
-		public static void Read<T>(this ITumorSatelliteFragment fragment,
-								BreastRadiologyDocument doc,
-								T resource)
-		    where T : DomainResource
+		public static void Read(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 
-		public static void Write(this ITumorSatelliteFragment fragment,
-								BreastRadiologyDocument doc)
+		public static void Write(this ITumorSatelliteFragment fragment, BreastRadiologyDocument doc)
 		{
 		}
 

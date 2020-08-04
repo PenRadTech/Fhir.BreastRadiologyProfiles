@@ -18,11 +18,13 @@ namespace BRadLibCS
     {
         public abstract String Id { get; set; }
 
+        public BreastRadiologyDocument Doc { get; }
         public Base BaseResource => this.resource;
         protected Base resource;
 
-        public BaseBase()
+        public BaseBase(BreastRadiologyDocument doc)
         {
+            this.Doc = doc;
         }
 
         protected virtual void Init()
@@ -34,12 +36,11 @@ namespace BRadLibCS
             return true;
         }
 
-        public virtual void Write(BreastRadiologyDocument doc)
+        public virtual void Write()
         {
         }
 
-        public virtual void Read<T>(BreastRadiologyDocument doc, T Resource)
-            where T : DomainResource
+        public virtual void Read()
         {
         }
     }

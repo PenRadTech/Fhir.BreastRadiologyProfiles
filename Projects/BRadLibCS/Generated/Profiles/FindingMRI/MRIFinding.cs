@@ -32,7 +32,7 @@ namespace BRadLibCS
 		/// Constructor.
 		/// Caller must call Init();
 		/// </summary>
-		public MRIFindingProfile() : base()
+		public MRIFindingProfile(BreastRadiologyDocument doc) : base(doc)
 		{
 		    this.Init();
 		}
@@ -60,18 +60,17 @@ namespace BRadLibCS
 		/// <summary>
 		/// Write to fhir resource
 		/// </summary>
-		public override void Write(BreastRadiologyDocument doc)
+		public override void Write()
 		{
-			base.Write(doc);
+			base.Write();
 		}
 
 		/// <summary>
 		/// Read from fhir resource
 		/// </summary>
-		public override void Read<Observation>(BreastRadiologyDocument doc,
-							      Observation resource)
+		public override void Read()
 		{
-			base.Read(doc, resource);
+			base.Read();
 		}
 
 	}
