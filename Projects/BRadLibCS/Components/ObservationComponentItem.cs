@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public class ObservationComponentItem<T> : ComponentSimpleItem<T>
+    public class ObservationComponentItem<T> : ComponentSimpleItem<Observation, T>
         where T : class
     {
         CodeableConcept conceptCode;
@@ -15,16 +15,16 @@ namespace BRadLibCS
             this.conceptCode = conceptCode;
         }
 
-        public override void Read<F>(BreastRadiologyDocument doc, F resource)
+        public override void Read(BreastRadiologyDocument doc, Observation resource)
         {
             throw new NotImplementedException();
         }
 
-        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
-    public class ObservationComponentItem<S, T, U> : ComponentSimpleItem<S, T, U>
+    public class ObservationComponentItem<S, T, U> : ComponentSimpleItem<Observation, S, T, U>
         where S : class
         where T : class, S
         where U : class, S
@@ -36,17 +36,13 @@ namespace BRadLibCS
             this.conceptCode = conceptCode;
         }
 
-        public override void Read<F>(BreastRadiologyDocument doc, F resource)
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
     }
 
 
-    public class ObservationComponentCollection<T> : ComponentSimpleCollection<T>
+    public class ObservationComponentCollection<T> : ComponentSimpleCollection<Observation, T>
         where T : class
     {
         CodeableConcept conceptCode;
@@ -57,8 +53,8 @@ namespace BRadLibCS
             throw new NotImplementedException();
         }
 
-        public override void Read<F>(BreastRadiologyDocument doc, F resource) => throw new NotImplementedException();
-        public override void Write(BreastRadiologyDocument doc) => throw new NotImplementedException();
+        public override void Read(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
+        public override void Write(BreastRadiologyDocument doc, Observation resource) => throw new NotImplementedException();
         public override void Validate(StringBuilder sb) => throw new NotImplementedException();
 
     }

@@ -5,18 +5,19 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public interface IComponentItem<T>
+    public interface IComponentItem<B, T>
+        where B : DomainResource
         where T : class
     {
         T Get();
         void Set(T value);
 
-        void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F :DomainResource;
-        void Write(BreastRadiologyDocument doc);
+        void Read(BreastRadiologyDocument doc, B resource);
+        void Write(BreastRadiologyDocument doc, B resource);
         void Validate(StringBuilder sb);
     }
-    public interface IComponentItem<S, T, U>
+    public interface IComponentItem<B, S, T, U>
+        where B : DomainResource
         where S : class
         where T : S
         where U : S
@@ -25,13 +26,13 @@ namespace BRadLibCS
         void Set(T value);
         void Set(U value);
 
-        void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F : DomainResource;
-        void Write(BreastRadiologyDocument doc);
+        void Read(BreastRadiologyDocument doc, B resource);
+        void Write(BreastRadiologyDocument doc, B resource);
         void Validate(StringBuilder sb);
     }
 
-    public interface IComponentCollection<T>
+    public interface IComponentCollection<B, T>
+        where B : DomainResource
         where T : class
     {
         Int32 Count();
@@ -39,9 +40,8 @@ namespace BRadLibCS
         void Append(T item);
         IEnumerable<T> Items();
 
-        void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F : DomainResource;
-        void Write(BreastRadiologyDocument doc);
+        void Read(BreastRadiologyDocument doc, B resource);
+        void Write(BreastRadiologyDocument doc, B resource);
         void Validate(StringBuilder sb);
     }
 }

@@ -5,20 +5,21 @@ using System.Text;
 
 namespace BRadLibCS
 {
-    public abstract class ComponentSimpleItem<T> : IComponentItem<T>
+    public abstract class ComponentSimpleItem<B, T> : IComponentItem<B, T>
+        where B : DomainResource
         where T : class
     {
         T value;
         public T Get() => this.value;
         public void Set(T value) => this.value = value;
 
-        public abstract void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F : DomainResource;
-        public abstract void Write(BreastRadiologyDocument doc);
+        public abstract void Read(BreastRadiologyDocument doc, B resource);
+        public abstract void Write(BreastRadiologyDocument doc, B resource);
         public abstract void Validate(StringBuilder sb);
     }
 
-    public abstract class ComponentSimpleItem<S, T, U> : IComponentItem<S, T, U>
+    public abstract class ComponentSimpleItem<B, S, T, U> : IComponentItem<B, S, T, U>
+        where B : DomainResource
         where S : class
         where T : class, S
         where U : class, S
@@ -29,13 +30,13 @@ namespace BRadLibCS
         public void Set(T value) => this.value = value;
         public void Set(U value) => this.value = value;
 
-        public abstract void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F : DomainResource;
-        public abstract void Write(BreastRadiologyDocument doc);
+        public abstract void Read(BreastRadiologyDocument doc, B resource);
+        public abstract void Write(BreastRadiologyDocument doc, B resource);
         public abstract void Validate(StringBuilder sb);
     }
 
-    public abstract class ComponentSimpleCollection<T> : IComponentCollection<T>
+    public abstract class ComponentSimpleCollection<B, T> : IComponentCollection<B, T>
+        where B : DomainResource
         where T : class
     {
         protected List<T> items = new List<T>();
@@ -44,9 +45,8 @@ namespace BRadLibCS
         public Int32 Count() => items.Count;
         public IEnumerable<T> Items() => items;
 
-        public abstract void Read<F>(BreastRadiologyDocument doc, F resource)
-            where F : DomainResource;
-        public abstract void Write(BreastRadiologyDocument doc);
+        public abstract void Read(BreastRadiologyDocument doc, B resource);
+        public abstract void Write(BreastRadiologyDocument doc, B resource);
         public abstract void Validate(StringBuilder sb);
     }
 }
