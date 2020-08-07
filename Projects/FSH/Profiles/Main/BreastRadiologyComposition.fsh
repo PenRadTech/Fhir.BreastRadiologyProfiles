@@ -114,7 +114,7 @@ Description: """
   * section[recommendations] 0..1
 
   * section[recommendations].entry 0..*
-  * section[recommendations].entry only Reference(MEDICATIONREQUESTURL or SERVICEREQUESTURL or ServiceRecommendation)
+  * section[recommendations].entry only Reference(MEDICATIONREQUESTURL) or Reference(SERVICEREQUESTURL) or Reference(ServiceRecommendation)
 								  
   * section[recommendations].entry ^short = "Recommendation resources"
   * section[recommendations].entry ^definition = """
