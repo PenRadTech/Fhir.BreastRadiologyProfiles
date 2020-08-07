@@ -1,4 +1,5 @@
 [Bb]uild
-[Gg]raph[Ff]iles
+IGFile.cmds
+*.nodeGraph
 [Cc]s[Bb]uild
 
