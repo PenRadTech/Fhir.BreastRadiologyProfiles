@@ -22,6 +22,22 @@
 					"cmdArgs": "FSH --out Build"
 				}
 			]
+		},
+		{
+			"name": "FGraph",
+			"watchPaths": ["..\\FSH", "..\\GraphFiles"],
+			"commands": [
+				{
+  			        "workingDir": "..",
+					"cmdPath": "FGraph",
+					"cmdArgs": "AutoMate\\fgraph.json"
+				},
+				{
+  			        "workingDir": "..",
+					"cmdPath": "IGBuilder",
+					"cmdArgs": "AutoMate\\igbuilder.json"
+				}
+			]
 		}
 	]
 }
