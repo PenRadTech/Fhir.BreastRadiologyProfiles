@@ -9,7 +9,6 @@ Description: """
     """
 
   * . ^short = "Breast Body Location extension"
-
   
   * extension contains laterality 0..1
   * extension[laterality] ^short = "Body side"
@@ -20,7 +19,6 @@ Description: """
   * extension[laterality].value[x] 1..1
   * extension[laterality].value[x] only CodeableConcept
   * extension[laterality].value[x] from LateralityVS
-
   
   * extension contains quadrant 0..1
   * extension[quadrant] ^short = "Quadrant of the body location"
@@ -31,7 +29,6 @@ Description: """
   * extension[quadrant].value[x] 1..1
   * extension[quadrant].value[x] only CodeableConcept
   * extension[quadrant].value[x] from BreastBodyLocationQuadrantsVS
-
   
   * extension contains region 0..1
   * extension[region] ^short = "Region of the body location"
@@ -42,7 +39,6 @@ Description: """
   * extension[region].value[x] 1..1
   * extension[region].value[x] only CodeableConcept
   * extension[region].value[x] from BreastBodyLocationRegionsVS
-
   
   * extension contains clockDirection 0..1
   * extension[clockDirection] ^short = "Clock direction of the body location"
@@ -53,7 +49,6 @@ Description: """
   * extension[clockDirection].value[x] 1..1
   * extension[clockDirection].value[x] only CodeableConcept
   * extension[clockDirection].value[x] from BreastBodyLocationClockPositionsVS
-
   
   * extension contains depth 0..1
   * extension[depth] ^short = "Depth of the body location"
@@ -64,8 +59,6 @@ Description: """
   * extension[depth].value[x] 1..1
   * extension[depth].value[x] only CodeableConcept
   * extension[depth].value[x] from BreastBodyLocationDepthVS
-
-
   
   * extension contains landmark 0..*
   * extension[landmark] ^short = "Body landmark. Origin of distance measurement."
@@ -79,7 +72,6 @@ Description: """
   * extension[landmark].value[x] 1..1
   * extension[landmark].value[x] only CodeableConcept
   * extension[landmark].value[x] from BreastLandmarkVS
-
   
   * extension contains distanceFromLandmark 0..*
   * extension[distanceFromLandmark] ^short = "Distance from landmark"

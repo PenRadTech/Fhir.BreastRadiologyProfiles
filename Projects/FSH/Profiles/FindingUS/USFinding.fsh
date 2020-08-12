@@ -7,7 +7,6 @@ Description: """
 
   * code 1..1
   * code = ObservationCodesCS#usFindingObservation
-
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

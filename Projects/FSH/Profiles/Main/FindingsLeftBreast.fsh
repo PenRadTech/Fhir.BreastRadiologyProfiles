@@ -36,7 +36,6 @@ Description: """
 	Typically this is the most severe of all the BiRad 
 	codes set in any of the child observations of the Left Breast.
     """
-
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
@@ -46,29 +45,18 @@ Description: """
   * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
   * hasMember[mgFinding] only Reference(MGFinding)
   * hasMember[mgFinding] MS
-
   * hasMember contains mriFinding 0..1
   * hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
   * hasMember[mriFinding] only Reference(MRIFinding)
   * hasMember[mriFinding] MS
-
   * hasMember contains nmFinding 0..1
   * hasMember[nmFinding] ^short = "'Nuclear Medicine Finding' reference. hasMember."
   * hasMember[nmFinding] only Reference(NMFinding)
   * hasMember[nmFinding] MS
-
   * hasMember contains usFinding 0..1
   * hasMember[usFinding] ^short = "'Ultra Sound Finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
   * hasMember[usFinding] MS
-
-
-
-
-
-
-
-
 
   * bodySite 1..1
   * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"

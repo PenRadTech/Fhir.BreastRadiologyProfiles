@@ -9,8 +9,6 @@ Description:  "BiRads Assessment Category Value Set"
 
 
 
-
-
 /*
   Code system for ACR birads codes.
  */

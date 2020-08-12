@@ -8,8 +8,6 @@ Description:  "Breast Body Location Quadrants Value Set"
 
 
 
-
-
 CodeSystem:  BreastBodyLocationQuadrantsCS
 Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"

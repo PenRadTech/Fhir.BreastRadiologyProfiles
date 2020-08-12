@@ -6,9 +6,6 @@ Description:  "Orientation Value Set"
 
 
 
-
-
-
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"

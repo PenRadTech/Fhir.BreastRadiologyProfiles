@@ -1,7 +1,7 @@
 //
 // Define a CS Class.
 //
-#macro CSBuild.DefineClass() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.DefineClass() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
   `{
   `  "defineClass" : {
   `    "className" : "%ProfileId%",
@@ -15,7 +15,7 @@
 //	* ^extension[0].url = $IMPFRAG
 //	* ^extension[0].valueString = "XXYYZ"
 //
-#macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
   `{
   `  "implementFragment" : {
   `    "className" : "%ProfileId%",
@@ -32,7 +32,7 @@
 // Name is name of interface.
 // Id is name of profile that implements interface (used to query element definitions)
 //
-#macro CSBuild.DefineFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseNameNoExtension%.csBuild"
+#macro CSBuild.DefineFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
   `{
   `  "defineFragment" : {
   `    "fragmentName" : "%FragmentId%",

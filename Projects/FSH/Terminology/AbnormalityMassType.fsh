@@ -6,8 +6,6 @@ Description:  "Mass Type Value Set"
 
 
 
-
-
 CodeSystem:  AbnormalityMassTypeCS
 Title: "Mass Type CodeSystem"
 Description:  "Mass Type CodeSystem"

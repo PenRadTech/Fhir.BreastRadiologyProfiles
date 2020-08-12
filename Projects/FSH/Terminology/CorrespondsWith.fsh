@@ -5,9 +5,6 @@ Description:  "CorrespondsWith Value Set"
 
 
 
-
-
-
 CodeSystem:  CorrespondsWithCS
 Title: "CorrespondsWith CodeSystem"
 Description:  "CorrespondsWith CodeSystem"

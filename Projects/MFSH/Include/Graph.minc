@@ -24,7 +24,7 @@
 //
 // Make a graph node that refers to a fragment.
 //
-#macro Graph.NodeFragment(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.NodeFragment(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%FragmentId%/",
@@ -47,7 +47,7 @@
 //
 // Make a graph node that refers to an extension.
 //
-#macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/",
@@ -70,7 +70,7 @@
 //
 // Make a graph node that refers to an element in a profile.
 //
-#macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/%Path%/",
@@ -86,7 +86,7 @@
   `  },
 #end
 
-#macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByName" : {
   `      "traversalName" : "TraversalName",
@@ -98,7 +98,7 @@
   `  },
 #end
 
-#macro Graph.LinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.LinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByBinding" : {
   `      "traversalName" : "TraversalName",
@@ -109,7 +109,7 @@
   `  },
 #end
 
-#macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByReference" : {
   `      "traversalName" : "TraversalName",
