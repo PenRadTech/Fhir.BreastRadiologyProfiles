@@ -20,7 +20,7 @@
 		{
 			"name": "single",
 			"cssFile": "FocusGraph.css",
-			"param1": "BreastRadiologyComposition/",
+			"param1": "BreastRadiologyDocument/",
 			"param2": "TotalGraph",
 			"depth": 10000
 		},

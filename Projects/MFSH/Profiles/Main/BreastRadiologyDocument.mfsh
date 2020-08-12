@@ -46,6 +46,6 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply Graph.NodeProfile("Breast/Radiology/Document")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/entry:", "0", "Cmp")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/entry:", ".resource", "1", "Cmp")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/entry:", "0", "Bas")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/entry:", ".resource", "1", "Bas")
   #apply Graph.NodeElement("entry:index", "Composition index")
