@@ -7,6 +7,7 @@ Description: """
 
   * code 1..1
   * code = ObservationCodesCS#mriFindingObservation
+
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
