@@ -3,7 +3,7 @@
  */
 #macro once Observation.HasMember.Slice()
   #apply Graph.NodeElement("hasMember", "HasMember")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/hasMember/$", "0")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/hasMember/$", "0", "Cmp")
   #
   #incompatible Observation.LeafFragment
   * hasMember ^slicing.discriminator.type = #value

@@ -2,7 +2,7 @@
 
 #macro Extension.ExtensionX(SliceName, Cardinality, ExtensionName, Short, Definition)
   #apply Extension.Configure()
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/extension/$", "%ExtensionName$", "1")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/extension/$", "%ExtensionName$", "1", "Cmp")
   
   * extension contains ExtensionName named SliceName Cardinality
   * extension[SliceName] ^short = "Short"

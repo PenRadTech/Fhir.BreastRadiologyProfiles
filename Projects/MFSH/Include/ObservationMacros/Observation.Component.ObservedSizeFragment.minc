@@ -24,7 +24,7 @@
   #incompatible Observation.Component.Zero
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #
   // Define distribution region size.
   #apply Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",

@@ -86,36 +86,46 @@
   `  },
 #end
 
-#macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+
+#macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth, %Level%) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByName" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "target" : "TargetName",
   `      "depth": Depth,
+  `      "cssSuffix" : "%Level%",
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end
 
-#macro Graph.LinkByBinding(TraversalName, SourceName, Item) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+
+
+
+#macro Graph.LinkByBinding(TraversalName, SourceName, Item, %Level%) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByBinding" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
+  `      "cssSuffix" : "%Level%",
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },
 #end
 
-#macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+
+
+
+#macro Graph.LinkByReference(TraversalName, SourceName, Item, Depth, %Level%) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "linkByReference" : {
   `      "traversalName" : "TraversalName",
   `      "source" : "SourceName",
   `      "item" : "Item",
   `      "depth": Depth,
+  `      "cssSuffix" : "%Level%",
   `      "traceMsg" : "%ApplyStackFrame%"
   `    }
   `  },

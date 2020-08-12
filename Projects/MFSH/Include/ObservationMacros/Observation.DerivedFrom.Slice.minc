@@ -3,8 +3,8 @@
  */
 #macro once Observation.DerivedFrom.Slice()
   #apply Graph.NodeElement("derivedFrom", "DerivedFrom")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/derivedFrom/$", "0")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%/derivedFrom:", "1")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/derivedFrom/$", "0", "Cmp")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%/derivedFrom:", "1", "Cmp")
   #
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"

@@ -61,5 +61,5 @@ Description: """
 
   #apply Graph.NodeProfile("Tumor Satellite")
   #apply Graph.NodeElement("value[x]", "Value")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/value\\\\[x\\\\]/$", "0")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/value\\\\[x\\\\]/$", "0", "Cmp")
   

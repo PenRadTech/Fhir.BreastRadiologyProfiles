@@ -20,7 +20,7 @@
   #apply CSBuild.ImplementFragment()
   #
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #
   #apply Observation.HasMember.Add("associatedFeature", "0..*", "Associated Feature", "AssociatedFeature",
   #  "'Associated Feature' reference.",

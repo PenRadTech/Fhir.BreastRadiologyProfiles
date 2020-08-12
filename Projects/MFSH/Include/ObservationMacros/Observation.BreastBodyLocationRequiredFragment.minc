@@ -30,13 +30,13 @@
   #apply CSBuild.ImplementFragment()
 
   #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
 
   #apply Graph.NodeElement("bodySite", "BodySite")
   #apply Graph.NodeElement("bodySite.extension", "extension")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/bodySite/$", "0")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite/$", "^%ProfileId%/bodySite.extension/$", "0")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/bodySite/$", "0", "Cmp")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite/$", "^%ProfileId%/bodySite.extension/$", "0", "Cmp")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1", "Cmp")
   #
 
 #end

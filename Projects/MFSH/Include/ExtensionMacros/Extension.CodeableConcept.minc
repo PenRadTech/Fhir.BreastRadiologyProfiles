@@ -1,6 +1,6 @@
 #macro Extension.CodeableConcept(SliceName, Cardinality, ValueSet, Short, Definition)
   #apply Extension.Configure()
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/extension/$", "%ProfileId%.extension:SliceName", "1")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/extension/$", "%ProfileId%.extension:SliceName", "1", "Cmp")
   
   * extension contains SliceName Cardinality
   * extension[SliceName] ^short = "Short"
