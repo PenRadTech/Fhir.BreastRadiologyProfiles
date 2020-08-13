@@ -21,7 +21,7 @@
 			"filter": "*.nodeGraph"
 		},
 		{
-			"path": "CSBuilder",
+			"path": "CSBuild",
 			"filter": "*.*"
 		}
 
