@@ -21,7 +21,24 @@
 			"name": "single",
 			"cssFile": "FocusGraph.css",
 			"param1": "BreastRadiologyDocument/",
-			"param2": "TotalGraph",
+			"param2": "TotalGraph.Basic",
+			"param3": "Bas",
+			"depth": 10000
+		},
+		{
+			"name": "single",
+			"cssFile": "FocusGraph.css",
+			"param1": "BreastRadiologyDocument/",
+			"param2": "TotalGraph.Enhanced",
+			"param3": "Bas,Enh",
+			"depth": 10000
+		},
+		{
+			"name": "single",
+			"cssFile": "FocusGraph.css",
+			"param1": "BreastRadiologyDocument/",
+			"param2": "TotalGraph.Comprehensive",
+			"param3": "Bas,Enh,Cmp",
 			"depth": 10000
 		},
 		{

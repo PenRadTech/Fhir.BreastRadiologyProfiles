@@ -2,82 +2,24 @@ rect {
     stroke: Black;
 	stroke-width:2;
 }
-
 rect.focus {
     fill: white;
 }
-
-
 rect.profile {
     fill: LightBlue;
 }
-rect.profileCmp {
-    fill: LightBlue;
-	stroke-dasharray:5,1;
-}
-rect.profileEnh {
-    fill: LightBlue;
-	stroke-dasharray:20,1;
-}
-rect.profileBas {
-    fill: LightBlue;
-}
-
-
-
 rect.extension {
     fill: LightSalmon;
 }
-rect.extensionCmp {
-    fill: LightSalmon;
-	stroke-dasharray:5,1;
-}
-rect.extensionEnh {
-    fill: LightSalmon;
-	stroke-dasharray:20,1;
-}
-rect.extensionBas {
-    fill: LightSalmon;
-}
-
-
-
 rect.element {
     fill: LightYellow;
 }
-rect.elementCmp {
-    fill: LightYellow;
-	stroke-dasharray:5,1;
-}
-rect.elementEnh {
-    fill: LightYellow;
-	stroke-dasharray:20,1;
-}
-rect.elementBas {
-    fill: LightYellow;
-}
-
-
-
 rect.fhir {
     fill: LightCoral;
 }
-rect.fhirCmp {
-    fill: LightCoral;
-	stroke-dasharray:5,1;
-}
-rect.fhirEnh {
-    fill: LightCoral;
-	stroke-dasharray:20,1;
-}
-rect.fhirBas {
-    fill: LightCoral;
-}
-
 rect.value {
     fill: cornsilk;
 }
-
 rect.valueSet {
     fill: lightgreen;
 }
