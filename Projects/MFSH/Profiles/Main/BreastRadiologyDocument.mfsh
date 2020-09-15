@@ -14,6 +14,7 @@ Description: """
   * entry ^slicing.description = "Index composition slice"
   * entry contains index 1..1
   * entry[index].fullUrl = "index"
+  * entry[index].resource 1..1
   * entry[index].resource only BreastRadiologyComposition
 
 
@@ -48,4 +49,4 @@ Description: """
   #apply Graph.NodeProfile("Breast/Radiology/Document")
   #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/entry:", "0", "Bas")
   #apply Graph.LinkByReference("focus", "^%ProfileId%/entry:", ".resource", "1", "Bas")
-  #apply Graph.NodeElement("entry:index", "Composition index")
+  #apply Graph.NodeElement("entry:index", "Entry")
