@@ -19,4 +19,5 @@ Description: """
   * entry ^slicing.description = "Index composition slice"
   * entry contains index 1..1
   * entry[index].fullUrl = "index"
-  * entry[index].resource only BreastRadiologyComposition 1..1
+  * entry[index].resource 1..1
+  * entry[index].resource only BreastRadiologyComposition
