@@ -1,7 +1,7 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseNameNoExtension%.nodeGraph"
+#macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/",
