@@ -130,17 +130,3 @@
   `    }
   `  },
 #end
-
-#macro Graph.LinkByReference2(TraversalName, SourceName, Item, Depth, %Key%) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
-  `  {
-  `    "linkByReference2" : {
-  `      "traversalName" : "TraversalName",
-  `      "source" : "SourceName",
-  `      "item" : "Item",
-  `      "depth": Depth,
-  `      "key" : "%Key%",
-  `      "traceMsg" : "%ApplyStackFrame%",
-  `      "break": true
-  `    }
-  `  },
-#end
