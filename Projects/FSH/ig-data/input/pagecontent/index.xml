@@ -20,7 +20,7 @@
 	<p>
 	In later ballot(s) we intend to add the following:
 	<ul>
-		<li>FHIR artifacts to support Ultra Sound based findings.</li>
+		<li>FHIR artifacts to support Ultrasound based findings.</li>
 		<li>FHIR artifacts to support Magnetic Resonance Imaging based findings.</li>
 		<li>FHIR artifacts to support Nuclear Medicine based findings.</li>
 		<li>Harmonization of Terminology with Standardized Terminology Sources such as SNOMED, LOINC, RxNorm, and SOLOR.</li>
@@ -51,7 +51,7 @@
 		<a href="mgfinding.html">Mammography Finding</a> - Mammography Finding Resources.
 		</li>
 		<li>
-		<a href="usfinding.html">Ultra-Sound Finding</a> - Ultra-Sound Finding Resources.
+		<a href="usfinding.html">Ultrasound Finding</a> - Ultrasound Finding Resources.
 		</li>
 		<li>
 		<a href="mrifinding.html">Magnetic Resonance Imaging Finding</a> - Magnetic Resonance Imaging Finding Resources.

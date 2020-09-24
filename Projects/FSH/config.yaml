@@ -42,7 +42,7 @@ releaseLabel: STU2
 #     Complete Graph of Elements: fullGraph.html
 #     " Breast Radiology Document": StructureDefinition-BreastRadiologyDocument.html
 #     Mammography Finding: StructureDefinition-MGFinding.html
-#     Ultra-Sound Finding: StructureDefinition-USFinding.html
+#     Ultrasound Finding: StructureDefinition-USFinding.html
 #     MRI Finding: StructureDefinition-MRIFinding.html
 #     Nuclear Medicine Finding: StructureDefinition-NMFinding.html
 #   Artifact Index: artifacts.html

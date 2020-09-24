@@ -1,8 +1,8 @@
 Profile: USFinding
 Parent: Observation
-Title: "Ultra-Sound Finding"
+Title: "Ultrasound Finding"
 Description: """
-    Ultra-Sound Finding
+    Ultrasound Finding
     """
 
   * code 1..1

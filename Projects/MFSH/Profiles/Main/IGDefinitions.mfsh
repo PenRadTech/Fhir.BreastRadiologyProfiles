@@ -32,9 +32,9 @@
 # """)
 
 #apply IGGroup("USResources", 
-# "Ultra-Sound Resources", 
+# "Ultrasound Resources", 
 # """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Ultra-Sound exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Ultrasound exam.
 # """)
 
 #apply IGGroup("NMResources", 

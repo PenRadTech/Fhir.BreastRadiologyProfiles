@@ -28,7 +28,7 @@ Description:  "ServiceRecommendations CodeSystem"
   * #AdditionalViews "Additional views"
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
-  * #AddlitionalViewsWithPossibleUltrasound "Addlitional views with possible ultrasound"
+  * #AddlitionalViewsWithPossibleUltrasound "Addlitional views with possible Ultrasound"
 
   * #AxillaView "Axilla view"
 
@@ -132,9 +132,9 @@ Description:  "ServiceRecommendations CodeSystem"
 
   * #Mammogram6MonthFollow-up "Mammogram 6 month follow-up"
 
-  * #MammogramAndUltrasound3MonthFollow-up "Mammogram and ultrasound 3 month follow-up"
+  * #MammogramAndUltrasound3MonthFollow-up "Mammogram and Ultrasound 3 month follow-up"
 
-  * #MammogramAndUltrasound6MonthFollow-up "Mammogram and ultrasound 6 month follow-up"
+  * #MammogramAndUltrasound6MonthFollow-up "Mammogram and Ultrasound 6 month follow-up"
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier)
   * #MediolateralObliqueView "Mediolateral oblique view"
@@ -181,10 +181,10 @@ Description:  "ServiceRecommendations CodeSystem"
 
   * #PossibleSurgicalEvaluation "Possible surgical evaluation"
 
-  * #PossibleUltrasound "Possible ultrasound"
+  * #PossibleUltrasound "Possible Ultrasound"
 
-  // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using ultrasound guidance (Procedure) +++ POSSIBLE
-  * #PossibleUltrasoundGuidedBiopsy "Possible ultrasound guided biopsy"
+  // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using Ultrasound guidance (Procedure) +++ POSSIBLE
+  * #PossibleUltrasoundGuidedBiopsy "Possible Ultrasound guided biopsy"
 
   * #PossibleVacuumBiopsy "Possible vacuum biopsy"
 
@@ -245,7 +245,7 @@ Description:  "ServiceRecommendations CodeSystem"
 
   * #Ultrasound6MonthFollow-up "Ultrasound 6 month follow-up"
 
-  // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using ultrasound guidance (Procedure)
+  // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using Ultrasound guidance (Procedure)
   * #UltrasoundGuidedBx "Ultrasound guided bx"
 
   // .SnomedDescription Procedure | 274331003 | Surgical biopsy of breast (Procedure)++++++++++++

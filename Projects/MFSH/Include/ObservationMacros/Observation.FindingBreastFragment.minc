@@ -42,9 +42,9 @@ Description: """
   * hasMember[nmFinding] MS
 
   #apply Observation.HasMember.Add("usFinding", "0..1", "US Finding", "USFinding",
-  #  "'Ultra Sound Finding' reference.",
+  #  "'Ultrasound Finding' reference.",
   #  """
-  #  This slice references the Ultra Sound findings section.
+  #  This slice references the Ultrasound findings section.
   #  """)
   * hasMember[usFinding] MS
 
