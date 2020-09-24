@@ -48,8 +48,8 @@ Description: """
   # </P>
   # <P>
   # A. Report Section.
-  # This contains a single reference to the Breast Radiology Report
-  # All Breast Radiology Findings are referenced by the reports results element.
+  # This contains a single reference to the Breast Radiology Report.
+  # All Breast Radiology Findings are referenced by the report's results element.
   # </P>
   # <P>
   # B. Impressions Section.

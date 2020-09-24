@@ -23,7 +23,7 @@ Description: """
 
   #apply IntroDocProfile( """
   # <P>
-  # A Breast Radiology Document is an implementation of a Fhir Document. 
+  # A Breast Radiology Document is an implementation of a FHIR Document. 
   # </P>
   # <P>
   # A FHIR Document is a Bundle that provides a single item containing all the 
@@ -32,7 +32,7 @@ Description: """
   # <P>
   # The Breast Radiology Document is an atomic item, meaning that no part in 
   # it can be changed without changing the entire bundle, and that 
-  # all the parts are contained and in a single bundle  
+  # all the parts are contained in a single bundle  
   # </P>
   # <P>
   # The first entry in the bundle is a composition instance that provides an index
