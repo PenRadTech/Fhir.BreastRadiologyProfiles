@@ -15,16 +15,16 @@ CodeSystem:  BreastBodyLocationQuadrantsCS
 Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"
   // .SnomedDescription BodyStructure | 19100000 | Structure of lower inner quadrant of breast (Bodypart)
-  * #InferiorMedialQuadrent "Inferior medial quadrent (lower inner)"
+  * #InferiorMedialQuadrant "Inferior medial quadrant (lower inner)"
 
   // .SnomedDescription BodyStructure | 33564002 | Structure of lower outer quadrant of breast (Bodypart)
-  * #InferiorLateralQuadrent "Inferior lateral quadrent (lower outer)"
+  * #InferiorLateralQuadrant "Inferior lateral quadrant (lower outer)"
 
   // .SnomedDescription BodyStructure | 77831004 | Structure of upper inner quadrant of breast (Bodypart)
-  * #SuperiorMedialQuadrent "Superior medial quadrent (upper inner)"
+  * #SuperiorMedialQuadrant "Superior medial quadrant (upper inner)"
 
   // .SnomedDescription BodyStructure | 76365002 | Structure of upper outer quadrant of breast (Bodypart)
-  * #SuperiorLateralQuadrent "Superior lateral quadrent (upper outer)"
+  * #SuperiorLateralQuadrant "Superior lateral quadrant (upper outer)"
 
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
