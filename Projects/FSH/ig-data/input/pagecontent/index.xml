@@ -20,10 +20,10 @@
 	<p>
 	In later ballot(s) we intend to add the following:
 	<ul>
-		<li>FHIR artifacts to support Ultrasound based findings.</li>
-		<li>FHIR artifacts to support Magnetic Resonance Imaging based findings.</li>
-		<li>FHIR artifacts to support Nuclear Medicine based findings.</li>
-		<li>Harmonization of Terminology with Standardized Terminology Sources such as SNOMED, LOINC, RxNorm, and SOLOR.</li>
+		<li>FHIR artifacts to support ultrasound based findings.</li>
+		<li>FHIR artifacts to support magnetic resonance imaging based findings.</li>
+		<li>FHIR artifacts to support nuclear medicine based findings.</li>
+		<li>Harmonization of terminology with standardized terminology sources such as SNOMED, LOINC, RxNorm, and SOLOR.</li>
 		<li>Modifications to support non-us realm examinations.</li>
 		<li>Enhancements to support CAD/AI based findings and determinations.</li>
 		<li>Enhancements for provenance, security and signing.</li>

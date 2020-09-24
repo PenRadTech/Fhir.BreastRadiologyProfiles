@@ -21,7 +21,7 @@
 #apply IGGroup("MGResources", 
 # "Mammography Resources", 
 # """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Mammography exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a mammography exam.
 # """)
 
 
@@ -34,13 +34,13 @@
 #apply IGGroup("USResources", 
 # "Ultrasound Resources", 
 # """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Ultrasound exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an ultrasound exam.
 # """)
 
 #apply IGGroup("NMResources", 
 # "Nuclear Medicine Resources", 
 # """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a Nuclear Medicine exam.
+# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a nuclear medicine exam.
 # """)
 
 #apply IGGroup("CommonCodesVS", 

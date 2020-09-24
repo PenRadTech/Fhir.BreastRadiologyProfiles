@@ -54,7 +54,7 @@ Description: """
   * hasMember[nmFinding] only Reference(NMFinding)
   * hasMember[nmFinding] MS
   * hasMember contains usFinding 0..1
-  * hasMember[usFinding] ^short = "'Ultrasound Finding' reference. hasMember."
+  * hasMember[usFinding] ^short = "'Ultrasound finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
   * hasMember[usFinding] MS
 
