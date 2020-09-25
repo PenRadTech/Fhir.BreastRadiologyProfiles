@@ -28,7 +28,7 @@ Description:  "ServiceRecommendations CodeSystem"
   * #AdditionalViews "Additional views"
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
-  * #AddlitionalViewsWithPossibleUltrasound "Addlitional views with possible Ultrasound"
+  * #AddlitionalViewsWithPossibleUltrasound "Addlitional views with possible ultrasound"
 
   * #AxillaView "Axilla view"
 

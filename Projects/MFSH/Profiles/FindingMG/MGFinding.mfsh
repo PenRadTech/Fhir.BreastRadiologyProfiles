@@ -10,87 +10,87 @@ Description: """
 
   #apply Observation.SectionFragment()
 
-  #apply Observation.HasMember.Add("abnormalityCyst", "0..*", "Cyst", "AbnormalityCyst", 
+  #apply Observation.HasMember.Add("abnormalityCyst", "0..*", "AbnormalityCyst", 
   #  "'Cyst' reference.",
   #  """
   #  This slice references the target 'Cyst'.
   #  """)
 
-  #apply Observation.HasMember.Add("abnormalityDuct", "0..*", "Duct", "AbnormalityDuct", 
+  #apply Observation.HasMember.Add("abnormalityDuct", "0..*", "AbnormalityDuct", 
   #  "'Duct' reference.",
   #  """
   #  This slice references the target 'Duct'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityForeignObject", "0..*", "Foreign Object", "AbnormalityForeignObject", 
+  #apply Observation.HasMember.Add("abnormalityForeignObject", "0..*", "AbnormalityForeignObject", 
   #  "'Foreign Object' reference.",
   #  """
   #  This slice references the target 'Foreign Object'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityLymphNode", "0..*", "Lymph Node", "AbnormalityLymphNode", 
+  #apply Observation.HasMember.Add("abnormalityLymphNode", "0..*", "AbnormalityLymphNode", 
   #  "'Lymph Node' reference.",
   #  """
   #  This slice references the target 'Lymph Node'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityMass", "0..*", "Mass", "AbnormalityMass", 
+  #apply Observation.HasMember.Add("abnormalityMass", "0..*", "AbnormalityMass", 
   #  "'Mass' reference.",
   #  """
   #  This slice references the target 'Mass'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("associatedFeature", "0..*", "Associated Feature", "AssociatedFeature", 
+  #apply Observation.HasMember.Add("associatedFeature", "0..*", "AssociatedFeature", 
   #  "'Associated Feature' reference.",
   #  """
   #  This slice references the target 'Associated Feature'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityFibroadenoma", "0..*", "Fibroadenoma", "AbnormalityFibroadenoma", 
+  #apply Observation.HasMember.Add("abnormalityFibroadenoma", "0..*", "AbnormalityFibroadenoma", 
   #  "'Fibroadenoma' reference.",
   #  """
   #  This slice references the target 'Fibroadenoma'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityArchDist", "0..*", "Architectural Distortion", "AbnormalityArchitecturalDistortion", 
+  #apply Observation.HasMember.Add("abnormalityArchDist", "0..*", "AbnormalityArchitecturalDistortion", 
   #  "'Architectural Distortion' reference.",
   #  """
   #  This slice references the target 'Architectural Distortion'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityAsymmetry", "0..*", "Asymmetry", "AbnormalityAsymmetry", 
+  #apply Observation.HasMember.Add("abnormalityAsymmetry", "0..*", "AbnormalityAsymmetry", 
   #  "'Asymmetry' reference.",
   #  """
   #  This slice references the target 'Asymmetry'.
   #  """)
 
 
-  #apply Observation.HasMember.Add("abnormalityCalcification", "0..*", "Calcification", "AbnormalityCalcification", 
+  #apply Observation.HasMember.Add("abnormalityCalcification", "0..*", "AbnormalityCalcification", 
   #  "'Calcification' reference.",
   #  """
   #  This slice references the target 'Calcification'.
   #  """)
 
-  #apply Observation.HasMember.Add("abnormalityDensity", "0..*", "Density", "AbnormalityDensity", 
+  #apply Observation.HasMember.Add("abnormalityDensity", "0..*", "AbnormalityDensity", 
   #  "'Density' reference.",
   #  """
   #  This slice references the target 'Density'.
   #  """)
 
-  #apply Observation.HasMember.Add("abnormalityFatNecrosis", "0..*", "Fat Necrosis", "AbnormalityFatNecrosis", 
+  #apply Observation.HasMember.Add("abnormalityFatNecrosis", "0..*", "AbnormalityFatNecrosis", 
   #  "'FatNecrosis' reference.",
   #  """
   #  This slice references the target 'FatNecrosis'.
   #  """)
 
-  #apply Observation.HasMember.Add("mgBreastDensity", "1..1", "Mammography Breast Density", "MGBreastDensity", 
+  #apply Observation.HasMember.Add("mgBreastDensity", "1..1", "MGBreastDensity", 
   #  "'Mammo Breast Density' reference.",
   #  """
   #  This slice references the target 'Mammography Breast Density'.

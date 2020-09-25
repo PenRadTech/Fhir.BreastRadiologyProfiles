@@ -8,7 +8,6 @@
 
 #macro Observation.HasMember.Add(SliceName, 
 #      Cardinality, 
-#      DisplayName, 
 #      Target,
 #      ShortDesc, 
 #      Definition)

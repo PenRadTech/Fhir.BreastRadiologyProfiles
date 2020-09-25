@@ -23,7 +23,7 @@
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #
-  #apply Observation.HasMember.Add("consistentWith", "0..*", "Consistent With", "ConsistentWith",
+  #apply Observation.HasMember.Add("consistentWith", "0..*", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """
   #  This slice references the target 'Consistent With'.

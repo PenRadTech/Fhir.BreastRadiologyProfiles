@@ -1,8 +1,8 @@
 Profile: FindingsLeftBreast
-  #apply CSBuild.DefineClass()
   #apply Observation.FindingBreastFragment("Left")
-  #apply IGGroupMemberProfile("BaseResources", "C")
-
   * bodySite 1..1
   * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"
   * code = ObservationCodesCS#findingsLeftBreastObservation
+
+  #apply CSBuild.DefineClass()
+  #apply IGGroupMemberProfile("BaseResources", "C")

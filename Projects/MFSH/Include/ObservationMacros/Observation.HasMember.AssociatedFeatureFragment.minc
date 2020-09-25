@@ -22,7 +22,7 @@
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #
-  #apply Observation.HasMember.Add("associatedFeature", "0..*", "Associated Feature", "AssociatedFeature",
+  #apply Observation.HasMember.Add("associatedFeature", "0..*", "AssociatedFeature",
   #  "'Associated Feature' reference.",
   #  """
   #  This slice references the target 'Associated Feature'.

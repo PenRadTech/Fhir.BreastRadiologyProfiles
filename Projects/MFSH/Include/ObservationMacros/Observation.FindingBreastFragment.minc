@@ -20,34 +20,41 @@ Description: """
 	codes set in any of the child observations of the %Laterality% Breast.
     """
 
-  #apply Observation.HasMember.Add("mgFinding", "0..1", "MG Finding", "MGFinding", 
+  #apply Observation.HasMember.Add("mgFinding", "0..1", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """
   #  This slice references the Mammography findings section.
   #  """)
   * hasMember[mgFinding] MS
 
-  #apply Observation.HasMember.Add("mriFinding", "0..1", "MRI Finding", "MRIFinding",
+  #apply Observation.HasMember.Add("mriFinding", "0..1", "MRIFinding",
   #  "'Magnetic Resonance Imaging Finding' reference.",
   #  """
   #  This slice references the MRI findings section.
   #  """)
   * hasMember[mriFinding] MS
 
-  #apply Observation.HasMember.Add("nmFinding", "0..1", "NM Finding", "NMFinding", 
+  #apply Observation.HasMember.Add("nmFinding", "0..1", "NMFinding", 
   #  "'Nuclear Medicine Finding' reference.",
   #  """
   #  This slice references the NM findings section.
   #  """)
   * hasMember[nmFinding] MS
 
-  #apply Observation.HasMember.Add("usFinding", "0..1", "US Finding", "USFinding",
+  #apply Observation.HasMember.Add("usFinding", "0..1", "USFinding",
   #  "'Ultrasound Finding' reference.",
   #  """
   #  This slice references the ultrasound findings section.
   #  """)
   * hasMember[usFinding] MS
 
+  #apply Observation.HasMember.Add("other", "0..1", "Observation",
+  #  "Other modality finding.",
+  #  """
+  #  This slice references the other findings section.
+  #  Findings that do not 'fit' into the defined modality finding sections defined above are put here.
+  #  """)
+  * hasMember[other] MS
 
 
 
