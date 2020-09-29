@@ -92,6 +92,11 @@ Description: """
   """
   * section[relatedResources] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
+
+	Fhir resources that are related to this report, but dont fit into any of the other defined sections
+	may be placed here. This section allows 'other' resources that the report author wants
+	to be referenced by this report to be included without being constrained by only including
+	those resourced that fit into the other defined sections.
   """
   * section[relatedResources] ^short = "Related Clinical Resources Section."
   * section[relatedResources].code = CompositionSectionSliceCodesCS#relatedResources
