@@ -43,8 +43,7 @@ Description: """
   # <b>Mass Abnormality Observation</b>
   # </p>
   # <p>
-  # This resource and referenced child resources contain 
-  # information about a mass abnormality observation 
+  # This resource contains information about a mass abnormality observation. 
   # </p>
   #""")
 

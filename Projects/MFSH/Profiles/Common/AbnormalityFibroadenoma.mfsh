@@ -11,8 +11,8 @@ Description: """
 
   #apply Observation.Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
   #	 """
-  #  This resource and referenced child resources contain
-  #  information about a Fibroadenoma abnormality observation
+  #  This resource contains
+  #  information about a Fibroadenoma abnormality observation.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType")
 
@@ -41,8 +41,7 @@ Description: """
   # <b>Fibroadenoma Abnormality Observation</b>
   # </p>
   # <p>
-  # This resource and referenced child resources contain 
-  # information about a fibroadenoma abnormality observation 
+  # This resource contains information about a fibroadenoma abnormality observation. 
   # </p>
   #""")
 

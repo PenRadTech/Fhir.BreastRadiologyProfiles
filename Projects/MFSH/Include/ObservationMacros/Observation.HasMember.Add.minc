@@ -11,11 +11,11 @@
 #      Target,
 #      ShortDesc, 
 #      Definition)
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/hasMember/$", "%ProfileId%.hasMember:SliceName", "1", "Cmp")
-  #
   #apply Observation.HasMember.Slice()
   * hasMember contains SliceName Cardinality
   * hasMember[SliceName] ^short = "ShortDesc hasMember."
   * hasMember[SliceName] only Reference(Target)
+
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/hasMember/$", "%ProfileId%.hasMember:SliceName", "1", "Cmp")
 #end
 

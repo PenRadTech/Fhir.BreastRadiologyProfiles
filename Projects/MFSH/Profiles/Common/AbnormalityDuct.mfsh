@@ -11,8 +11,7 @@ Description: """
 
   #apply Observation.Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
   #	 """
-  #  This resource and referenced child resources contain
-  #  information about a duct abnormality observation
+  #  This resource contains information about a duct abnormality observation.
   #	 """,
   #  "ObservationComponentSliceCodesCS#abnormalityDuctType")
 
@@ -45,8 +44,7 @@ Description: """
   # <b>Duct Abnormality Observation</b>
   # </p>
   # <p>
-  # This resource and referenced child resources contain 
-  # information about a duct abnormality observation 
+  # This resource contains information about a duct abnormality observation. 
   # </p>
   # """)
 
