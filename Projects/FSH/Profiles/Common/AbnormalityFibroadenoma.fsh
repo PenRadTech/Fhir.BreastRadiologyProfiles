@@ -18,8 +18,8 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[fibroAdenomaType] ^definition = """
-    This resource and referenced child resources contain
-    information about a Fibroadenoma abnormality observation
+    This resource contains
+    information about a Fibroadenoma abnormality observation.
     """
   * component[fibroAdenomaType].code 1..1
   * component[fibroAdenomaType].code ^short = "Fibroadenoma Abnormality component code."

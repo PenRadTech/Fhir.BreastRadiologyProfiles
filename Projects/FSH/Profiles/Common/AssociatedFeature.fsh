@@ -6,8 +6,7 @@ Description: """
     """
 
   * . ^definition = """
-    This resource and referenced child resources contain 
-    information about associated feature observations
+    This resource contains information about an associated feature observation.
      
     The feature observed is defined by the codeable concept in the value[x] field.
     """

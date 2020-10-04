@@ -18,8 +18,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[ductType] ^definition = """
-    This resource and referenced child resources contain
-    information about a duct abnormality observation
+    This resource contains information about a duct abnormality observation.
     """
   * component[ductType].code 1..1
   * component[ductType].code ^short = "Duct Abnormality component code."
