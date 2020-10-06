@@ -7,7 +7,7 @@ Title: "Breast Body Location Extension"
 Description: """
     Breast Body Location Extension
     """
-
+  
   * . ^short = "Breast Body Location extension"
   
   * extension contains laterality 0..1
@@ -74,7 +74,7 @@ Description: """
   * extension[landmark].value[x] from BreastLandmarkVS
   
   * extension contains distanceFromLandmark 0..*
-  * extension[distanceFromLandmark] ^short = "Distance from landmark"
+  * extension[distanceFromLandmark] ^short = "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark."
   * extension[distanceFromLandmark] ^definition =
     """
 		 Distance from body landmark to body location
