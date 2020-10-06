@@ -44,7 +44,7 @@ Description: """
   #  landmarks like nipple.  
   #  """)
 
-  #apply Extension.Quantity("distanceFromLandmark", "0..*", "UNITSOFLENGTH", "Distance from landmark", 
+  #apply Extension.Quantity("distanceFromLandmark", "0..*", "UNITSOFLENGTH", "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark.", 
   #  """
   #	 Distance from body landmark to body location
   #
