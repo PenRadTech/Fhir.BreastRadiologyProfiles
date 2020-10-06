@@ -54,5 +54,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Mass")
+  #apply Graph.NodeProfile("", "Mass")
 

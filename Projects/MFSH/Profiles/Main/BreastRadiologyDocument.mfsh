@@ -46,5 +46,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Breast/Radiology/Document")
+  #apply Graph.NodeProfile("", "Breast/Radiology/Document")
   #apply Graph.LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "1", "Bas,Ovr")

@@ -4,7 +4,7 @@
  It does not constrain the component value.
  */
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
-  #apply Graph.NodeElement("component:SliceName", "DisplayName")
+  #apply Graph.NodeElement("", "component:SliceName", "DisplayName")
   #
   #apply Observation.Component.Slice()
   * component contains SliceName Cardinality

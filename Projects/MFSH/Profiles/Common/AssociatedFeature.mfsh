@@ -53,5 +53,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Associated Feature")
+  #apply Graph.NodeProfile("", "Associated Feature")
 

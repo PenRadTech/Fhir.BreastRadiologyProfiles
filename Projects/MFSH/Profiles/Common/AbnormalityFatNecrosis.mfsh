@@ -41,5 +41,5 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("Fat Necrosis")
+  #apply Graph.NodeProfile("", "Fat Necrosis")
 

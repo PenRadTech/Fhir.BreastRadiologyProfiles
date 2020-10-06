@@ -35,4 +35,4 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Nuclear Medicine/Findings")
+  #apply Graph.NodeProfile("D", "Nuclear Medicine/Findings")

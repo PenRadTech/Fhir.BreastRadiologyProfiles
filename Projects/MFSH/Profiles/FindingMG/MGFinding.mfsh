@@ -117,5 +117,5 @@ Description: """
   #apply IGGroupMemberProfile("MGResources", "%Title%")
  
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Mg Finding")
+  #apply Graph.NodeProfile("A", "Mg Findings")
 

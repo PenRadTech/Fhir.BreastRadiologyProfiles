@@ -13,7 +13,7 @@
    Composition section for Breast Radiology Report.
    */
 #macro ReportSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Report Section")
+  #apply Graph.NodeElement("A", "section:SliceName", "Report Section")
   
   * section[SliceName] ^definition = """
     This section references the Breast Radiology Report.
@@ -38,7 +38,7 @@
    Composition section for Impressions.
    */
 #macro ImpressionsSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Impressions Section")
+  #apply Graph.NodeElement("B", "section:SliceName", "Impressions Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's clinical impressions.
     """
@@ -65,7 +65,7 @@
    Composition section for Left Breast Findings.
    */
 #macro FindingsLeftBreastSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Findings/Left Breast/Section")
+  #apply Graph.NodeElement("C", "section:SliceName", "Findings/Left Breast/Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
@@ -92,7 +92,7 @@
    Composition section for Right Breast Findings.
    */
 #macro FindingsRightBreastSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Findings/Right Breast/Section")
+  #apply Graph.NodeElement("C", "section:SliceName", "Findings/Right Breast/Section")
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
@@ -119,7 +119,7 @@
    Composition section for Related Resources.
    */
 #macro RelatedResourcesSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Related Resources/Section")
+  #apply Graph.NodeElement("E", "section:SliceName", "Related Resources/Section")
   * section[SliceName] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
 
@@ -150,7 +150,7 @@
    Composition section for recommendations.
    */
 #macro RecommendationsSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Recommendations/Section")
+  #apply Graph.NodeElement("D", "section:SliceName", "Recommendations/Section")
   * section[SliceName] ^definition = """
     This section contains references to recommended actions 
 	taken in response to the observations and findings of this report.
@@ -177,7 +177,7 @@
    Administrative section.
    */
 #macro AdminSection(SliceName) 
-  #apply Graph.NodeElement("section:SliceName", "Admin/Section")
+  #apply Graph.NodeElement("F", "section:SliceName", "Admin/Section")
   * section[SliceName] ^definition = """
     References to all administrative resources go here.
   """

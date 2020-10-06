@@ -72,6 +72,6 @@ Description: """
 
   #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
 
-  #apply Graph.NodeExtension("BreastBodyLocation")
+  #apply Graph.NodeExtension("", "BreastBodyLocation")
   #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
 

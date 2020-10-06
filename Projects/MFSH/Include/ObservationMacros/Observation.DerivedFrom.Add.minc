@@ -4,7 +4,7 @@
  It does not constrain the derivedFrom target.
  */
 #macro Observation.DerivedFrom.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, Url)
-  #apply Graph.NodeElement("derivedFrom:SliceName", "DisplayName")
+  #apply Graph.NodeElement("", "derivedFrom:SliceName", "DisplayName")
   #apply Graph.LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%.derivedFrom:SliceName", "1", "Cmp")
   #
   #apply Observation.DerivedFrom.Slice()

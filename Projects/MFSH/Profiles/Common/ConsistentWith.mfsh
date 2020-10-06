@@ -63,5 +63,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Consistent With")
+  #apply Graph.NodeProfile("", "Consistent With")
 

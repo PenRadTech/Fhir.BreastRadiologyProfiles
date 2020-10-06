@@ -38,5 +38,5 @@ Description: """
 
   
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Service Recommendation")
+  #apply Graph.NodeProfile("", "Service Recommendation")
 

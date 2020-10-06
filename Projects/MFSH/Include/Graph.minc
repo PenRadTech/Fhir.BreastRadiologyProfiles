@@ -1,13 +1,14 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro Graph.NodeProfile(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+#macro Graph.NodeProfile(SortPrefix, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/",
   `      "anchor" : {
   `        "url" : "%Url%"
   `      },
+  `      "sortPrefix" : "SortPrefix",
   `      "displayName" : "DisplayName",
   `      "cssClass" : "profile",
   `      "traceMsg" : "%ApplyStackFrame%"
@@ -47,13 +48,14 @@
 //
 // Make a graph node that refers to an extension.
 //
-#macro Graph.NodeExtension(DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+#macro Graph.NodeExtension(SortPrefix, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/",
   `      "anchor" : {
   `        "url" : "%Url%"
   `      },
+  `      "sortPrefix" : "SortPrefix",
   `      "displayName" : "DisplayName",
   `      "cssClass" : "extension",
   `      "traceMsg" : "%ApplyStackFrame%"
@@ -70,7 +72,7 @@
 //
 // Make a graph node that refers to an element in a profile.
 //
-#macro Graph.NodeElement(%Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+#macro Graph.NodeElement(SortPrefix, %Path%, DisplayName) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {
   `    "node" : {
   `      "nodeName" : "%ProfileId%/%Path%/",
@@ -78,6 +80,7 @@
   `        "url" : "%Url%",
   `        "item" : "%Path%"
   `      },
+  `      "sortPrefix" : "SortPrefix",
   `      "displayName" : "DisplayName",
   `      "cssClass" : "element",
   `      "lhsAnnotationText": "^%ProfileId%.%Path%",

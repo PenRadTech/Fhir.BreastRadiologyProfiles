@@ -41,5 +41,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Report")
-  #apply Graph.NodeElement("code", "Code")
+  #apply Graph.NodeProfile("", "Report")
+  #apply Graph.NodeElement("", "code", "Code")

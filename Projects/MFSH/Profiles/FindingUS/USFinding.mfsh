@@ -33,5 +33,5 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("Ultrasound Findings")
+  #apply Graph.NodeProfile("C", "Ultrasound Findings")
 
