@@ -13,11 +13,6 @@
 	],
 	"traversals": [
 		{
-			"name": "frag",
-			"cssFile": "FragGraph.css",
-			"depth": 1
-		},
-		{
 			"name": "single",
 			"cssFile": "FocusGraph.css",
 			"param1": "BreastRadiologyDocument/",
@@ -48,6 +43,11 @@
 			"param2": "TotalGraph.Comprehensive",
 			"param3": "Bas,Enh,Cmp",
 			"depth": 10000
+		},
+		{
+			"name": "frag",
+			"cssFile": "FragGraph.css",
+			"depth": 1
 		},
 		{
 			"name": "focus",

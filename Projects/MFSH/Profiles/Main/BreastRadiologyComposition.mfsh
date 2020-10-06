@@ -68,9 +68,12 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply Graph.NodeProfile("Breast/Radiology/Composition")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas,Ovr")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:report", ".entry", "1", "Bas")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:impressions", ".entry", "1", "Bas")
+
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
+  #apply Graph.LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
 
 
