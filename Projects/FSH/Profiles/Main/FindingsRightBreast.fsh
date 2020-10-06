@@ -57,9 +57,9 @@ Description: """
   * hasMember[usFinding] ^short = "'Ultrasound Finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
   * hasMember[usFinding] MS
-  * hasMember contains other 0..1
+  * hasMember contains other 0..*
   * hasMember[other] ^short = "Other modality finding. hasMember."
-  * hasMember[other] only Reference(Observation)
+  * hasMember[other] only Reference(OtherFinding)
   * hasMember[other] MS
   * bodySite 1..1
   * bodySite = SNOMED#73056007 // "Right breast structure (body structure)"

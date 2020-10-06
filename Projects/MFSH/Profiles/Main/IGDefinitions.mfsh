@@ -43,6 +43,13 @@
 # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a nuclear medicine exam.
 # """)
 
+#apply IGGroup("OtherResources", 
+# "Other Resources", 
+# """
+# This section contains resources that are defined in this Breast Radiology Implementation Guide 
+# that are not one of the predefined exam types.
+# """)
+
 #apply IGGroup("CommonCodesVS", 
 # "Common ValueSets", 
 # """
