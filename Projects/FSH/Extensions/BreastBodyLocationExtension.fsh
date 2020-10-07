@@ -7,7 +7,7 @@ Title: "Breast Body Location Extension"
 Description: """
     Breast Body Location Extension
     """
-  
+
   * . ^short = "Breast Body Location extension"
   
   * extension contains laterality 0..1
