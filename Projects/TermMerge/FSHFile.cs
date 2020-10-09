@@ -56,8 +56,12 @@ namespace TermMerge
             bool Header()
             {
                 String line = this.Lines[retVal];
-                if (line.IndexOf(':') > 0)
-                    return true;
+                Int32 colonIndex = line.IndexOf(':');
+                if (colonIndex < 0)
+                    return false;
+                Int32 spaceIndex = line.IndexOf(' ');
+                if (spaceIndex < colonIndex)
+                    return false;
                 return false;
             }
 
