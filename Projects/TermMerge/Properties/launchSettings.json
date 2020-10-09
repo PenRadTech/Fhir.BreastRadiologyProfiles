@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TermMerge": {
+      "commandName": "Project",
+      "commandLineArgs": "-fhir \"C:\\Development\\HL7\\BreastRadiologyProfilesV2\\IG\\Guide\\input\\resources\""
+    }
+  }
+}
