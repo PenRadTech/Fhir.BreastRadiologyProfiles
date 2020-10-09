@@ -93,12 +93,16 @@ namespace TermMerge
                 return;
 
             InsertLine("    \"\"\"");
+            bool blankLineFlag = false;
             foreach (String s in concept.Definition.Split('\n'))
             {
                 String line = s.Trim()
                     .Replace("\r", "")
                     ;
-                InsertLine($"    {line}");
+                bool thisBlanksLine = String.IsNullOrEmpty(line);
+                if ((blankLineFlag == false) || (thisBlanksLine == false))
+                    InsertLine($"    {line}");
+                blankLineFlag = thisBlanksLine;
             }
 
             InsertLine("    \"\"\"");
