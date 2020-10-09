@@ -191,7 +191,7 @@ namespace TermMerge
         {
             foreach (CodeSystem codeSystem in fhirResources.CodeSystems)
                 Process(codeSystem);
-            //this.fshFiles.Save();
+            this.fshFiles.Save();
         }
     }
 }
