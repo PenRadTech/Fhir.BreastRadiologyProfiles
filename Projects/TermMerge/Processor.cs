@@ -98,6 +98,7 @@ namespace TermMerge
             {
                 String line = s.Trim()
                     .Replace("\r", "")
+                    .Replace("\"", "'")
                     ;
                 bool thisBlanksLine = String.IsNullOrEmpty(line);
                 if ((blankLineFlag == false) || (thisBlanksLine == false))

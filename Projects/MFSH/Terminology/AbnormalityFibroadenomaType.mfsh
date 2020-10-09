@@ -12,7 +12,26 @@ CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"
 Description: "Fibroadenoma  type code system."
   * #Fibroadenoma "Fibroadenoma"
-  * #FibroadenomaDegeneration "Fibroadenoma degeneration"
+    """
+    A fibroadenoma is a benign, or noncancerous, breast
+    tumor.
+    Unlike a breast cancer, which grows larger over time
+    and can spread to other organs,
+    a fibroadenoma remains in the breast tissue.
+    Most are only 1 or 2 centimeters in size.
+    [www.webmd.com > breast-cancer > what-are-fibroadenomas]
+    
+    Valid for the following modalities: MG US.
+    """
 
+  * #FibroadenomaDegeneration "Fibroadenoma degeneration"
+    """
+    These are non-cancerous breast lumps.
+    Fibroadenomas usually go away with age.
+    By the time an individual is menopausal, Fibroadenomas
+    degenerate.
+    
+    Valid for the following modalities: MG.
+    """
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
