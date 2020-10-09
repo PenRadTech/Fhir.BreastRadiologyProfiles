@@ -1,6 +1,7 @@
 ﻿using Hl7.Fhir.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace TermMerge
@@ -13,6 +14,20 @@ namespace TermMerge
 
         public void AddResources(params String[] inputDirs) => this.fhirResources.AddResources(inputDirs);
         public void AddFSHFiles(params String[] inputDirs) => this.fshFiles.AddFiles(inputDirs);
+
+        void Process(String codeSystemName,
+            CodeSystem.ConceptDefinitionComponent concept, 
+            FSHFile f)
+        {
+            if (String.IsNullOrEmpty(concept.Definition) == true)
+                return;
+            Int32 i = f.FindConcept(codeSystemName, concept.Code);
+            if (i < 0)
+            {
+                Console.WriteLine($"Error finding codesystem '{codeSystemName}' in FSH file {Path.GetFileName(f.Path)}");
+                return;
+            }
+        }
 
         void Process(CodeSystem codeSystem)
         {
@@ -104,6 +119,11 @@ namespace TermMerge
             {
                 Console.WriteLine($"Cant find code system {name}");
                 return;
+            }
+
+            foreach (CodeSystem.ConceptDefinitionComponent concept in codeSystem.Concept)
+            {
+                Process(name, concept, f);
             }
         }
 
