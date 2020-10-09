@@ -1,13 +1,13 @@
-ValueSet:  BreastBodyLocationRegionsVS
+ValueSet:  BreastBodyLocationRegionVS
 Title: "Breast Body Location Regions ValueSet"
 Description:  "Breast Body Location Regions Value Set"
-  * codes from system BreastBodyLocationRegionsCS
+  * codes from system BreastBodyLocationRegionCS
 
 
 
 
 
-CodeSystem:  BreastBodyLocationRegionsCS
+CodeSystem:  BreastBodyLocationRegionCS
 Title: "Breast Body Location Regions CodeSystem"
 Description:  "Breast Body Location Regions CodeSystem"
   // .SnomedDescription BodyStructure | 416710001 | Skin and subcutaneous tissue structure of axilla

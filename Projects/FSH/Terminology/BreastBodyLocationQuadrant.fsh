@@ -1,14 +1,14 @@
-ValueSet:  BreastBodyLocationQuadrantsVS
+ValueSet:  BreastBodyLocationQuadrantVS
 Title: "Breast Body Location Quadrants ValueSet"
 Description:  "Breast Body Location Quadrants Value Set"
-  * codes from system BreastBodyLocationQuadrantsCS
+  * codes from system BreastBodyLocationQuadrantCS
 
 
 
 
 
 
-CodeSystem:  BreastBodyLocationQuadrantsCS
+CodeSystem:  BreastBodyLocationQuadrantCS
 Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"
   // .SnomedDescription BodyStructure | 19100000 | Structure of lower inner quadrant of breast (Bodypart)

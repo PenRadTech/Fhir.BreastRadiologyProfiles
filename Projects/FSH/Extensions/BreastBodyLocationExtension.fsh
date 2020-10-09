@@ -28,7 +28,7 @@ Description: """
 	"""
   * extension[quadrant].value[x] 1..1
   * extension[quadrant].value[x] only CodeableConcept
-  * extension[quadrant].value[x] from BreastBodyLocationQuadrantsVS
+  * extension[quadrant].value[x] from BreastBodyLocationQuadrantVS
   
   * extension contains region 0..1
   * extension[region] ^short = "Region of the body location"
@@ -38,7 +38,7 @@ Description: """
 	"""
   * extension[region].value[x] 1..1
   * extension[region].value[x] only CodeableConcept
-  * extension[region].value[x] from BreastBodyLocationRegionsVS
+  * extension[region].value[x] from BreastBodyLocationRegionVS
   
   * extension contains clockDirection 0..1
   * extension[clockDirection] ^short = "Clock direction of the body location"

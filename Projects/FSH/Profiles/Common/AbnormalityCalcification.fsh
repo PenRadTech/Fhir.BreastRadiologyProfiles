@@ -19,7 +19,7 @@ Description: """
     """
   * component[calcificationType] ^definition = """
     This slice contains the optional component that refines the calcification type.
-    The value of this component is a codeable concept chosen from the MammoCalcificationTypeVS valueset.
+    The value of this component is a codeable concept chosen from the CalcificationTypeVS valueset.
     """
   * component[calcificationType].code 1..1
   * component[calcificationType].code ^short = "Calcification Type component code."

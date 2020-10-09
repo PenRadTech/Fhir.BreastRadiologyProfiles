@@ -41,19 +41,19 @@ namespace TermMerge
                     break;
 
                 case "CompositionSectionSliceCodes":
-                    name = "";
+                    name = "CompositionSectionSliceCodesCS";
                     break;
 
                 case "ConsistentWithCodeSystemCS":
-                    name = "";
+                    name = "ConsistentWithCS";
                     break;
 
                 case "FibroadenomaCodeSystemCS":
-                    name = "";
+                    name = "AbnormalityFibroadenomaTypeCS";
                     break;
 
                 case "ForeignObjectCS":
-                    name = "";
+                    name = "AbnormalityForeignObjectTypeCS";
                     break;
 
                 case "GraphicTypeCS":
@@ -61,39 +61,39 @@ namespace TermMerge
                     break;
 
                 case "MammoCalcificationTypeCS":
-                    name = "";
+                    name = "CalcificationTypeCS";
                     break;
 
                 case "MGAbnormalityAsymmetryTypeCS":
-                    name = "";
+                    name = "AbnormalityAsymmetryTypeCS";
                     break;
 
                 case "MGAbnormalityDensityTypeCS":
-                    name = "";
+                    name = "AbnormalityDensityTypeCS";
                     break;
 
                 case "MGDensityCS":
-                    name = "";
+                    name = "MGBreastDensityCS";
                     break;
 
                 case "NotPreviouslySeenCodeSystemCS":
-                    name = "";
+                    name = "NotPreviouslySeenCS";
                     break;
 
                 case "ObservationCodes":
-                    name = "";
+                    name = "ObservationCodesCS";
                     break;
 
                 case "ObservationComponentSliceCodes":
-                    name = "";
+                    name = "ObservationComponentSliceCodesCS";
                     break;
 
                 case "PreviouslyDemonstratedByCodeSystemCS":
-                    name = "";
+                    name = "PreviouslyDemonstratedByCS";
                     break;
 
                 case "RecommendationsCodeSystemCS":
-                    name = "";
+                    name = "ServiceRecommendationsCS";
                     break;
             }
 
