@@ -47,11 +47,18 @@ namespace TermMerge
         [STAThread]
         static void Main(String[] args)
         {
-            ParseParams(args);
-            Application.SetHighDpiMode(HighDpiMode.SystemAware);
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            try
+            {
+                ParseParams(args);
+                processor.Process();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Console.WriteLine("enter to exit");
+            Console.ReadLine();
         }
     }
 }
