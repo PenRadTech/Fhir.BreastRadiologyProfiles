@@ -17,7 +17,7 @@ namespace TermMerge
         public void AddFSHFiles(params String[] inputDirs) => this.fshFiles.AddFiles(inputDirs);
 
         void Process(String codeSystemName,
-            CodeSystem.ConceptDefinitionComponent concept, 
+            CodeSystem.ConceptDefinitionComponent concept,
             FSHFile f)
         {
             if (String.IsNullOrEmpty(concept.Definition) == true)
@@ -72,6 +72,17 @@ namespace TermMerge
                 f.Lines.Insert(i, s);
             }
 
+            void RemoveBlanks()
+            {
+                Int32 j = i + 1;
+                while (j < f.Lines.Count)
+                {
+                    if (String.IsNullOrEmpty(f.Lines[j].Trim()) == false)
+                        return;
+                    f.Lines.RemoveAt(j);
+                }
+            }
+
             bool HasMLComment()
             {
                 if (i >= f.Lines.Count)
@@ -82,7 +93,17 @@ namespace TermMerge
                 return;
 
             InsertLine("    \"\"\"");
+            foreach (String s in concept.Definition.Split('\n'))
+            {
+                String line = s.Trim()
+                    .Replace("\r", "")
+                    ;
+                InsertLine($"    {line}");
+            }
+
             InsertLine("    \"\"\"");
+            InsertLine("");
+            RemoveBlanks();
         }
 
         void Process(CodeSystem codeSystem)
