@@ -12,11 +12,10 @@ namespace TermMerge
 {
     class FhirResources
     {
+        public List<CodeSystem> CodeSystems = new List<CodeSystem>();
 
         public void AddResources(params String[] inputDirs)
         {
-            List<CodeSystem> codeSystems = new List<CodeSystem>();
-
             foreach (String inputDir in inputDirs)
             {
                 foreach (String file in Directory.GetFiles(inputDir))
@@ -27,7 +26,7 @@ namespace TermMerge
                     switch (resource)
                     {
                         case CodeSystem codeSystem:
-                            codeSystems.Add(codeSystem);
+                            CodeSystems.Add(codeSystem);
                             break;
                     }
                 }

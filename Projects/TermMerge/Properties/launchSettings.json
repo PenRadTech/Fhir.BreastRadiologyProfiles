@@ -2,7 +2,7 @@
   "profiles": {
     "TermMerge": {
       "commandName": "Project",
-      "commandLineArgs": "-fhir \"C:\\Development\\HL7\\BreastRadiologyProfilesV2\\IG\\Guide\\input\\resources\""
+      "commandLineArgs": "-fhir \"C:\\Development\\HL7\\BreastRadiologyProfilesV2\\IG\\Guide\\input\\resources\" -fsh \"C:\\Development\\HL7\\BreastRadiologyProfilesV3\\Projects\\MFSH\\Terminology\""
     }
   }
 }

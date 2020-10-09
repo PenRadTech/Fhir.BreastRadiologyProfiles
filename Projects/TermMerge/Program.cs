@@ -8,7 +8,7 @@ namespace TermMerge
 {
     static class Program
     {
-        public static FhirResources fhirResources = new FhirResources();
+        static Processor processor = new Processor();
 
 
         static void ParseParams(String[] args)
@@ -28,7 +28,11 @@ namespace TermMerge
                 switch (cmd)
                 {
                     case "-fhir":
-                        fhirResources.AddResources(Next());
+                        processor.AddResources(Next());
+                        break;
+
+                    case "-fsh":
+                        processor.AddFSHFiles(Next());
                         break;
 
                     default:
