@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Windows.Forms;
 
 namespace TermMerge
 {
@@ -21,12 +22,67 @@ namespace TermMerge
         {
             if (String.IsNullOrEmpty(concept.Definition) == true)
                 return;
-            Int32 i = f.FindConcept(codeSystemName, concept.Code);
+
+            String code = concept.Code;
+            switch (code)
+            {
+                case "mgBreastDensityObservation":
+                    break;
+                case "mgFindingObservationObservation":
+                    code = "mgFindingObservation";
+                    break;
+                case "mgDensity":
+                    code = "mgBreastDensity";
+                    break;
+                case "EqualDensity":
+                    code = "HeterogeneouslyDense";
+                    break;
+                case "FatContaining":
+                    code = "AlmostEntirelyFat";
+                    break;
+                case "HighDensity":
+                    code = "ExtremelyDense";
+                    break;
+                case "LowDensity":
+                    code = "ScatteredAreasOfFibroglandularDensity";
+                    break;
+                case "mgCalcificationDistribution":
+                case "CentralLucent":
+                    return;
+                default:
+                    code = code.Replace("Quadrent", "Quadrant");
+                    if (code.StartsWith("sectionCode"))
+                        code = code.Substring(11);
+                    if (code.StartsWith("section"))
+                        code = code.Substring(7);
+                    if (code.StartsWith("mg"))
+                        code = code.Substring(2);
+                    break;
+
+            }
+            Int32 i = f.FindConcept(codeSystemName, code);
             if (i < 0)
             {
-                Console.WriteLine($"Error finding codesystem '{codeSystemName}' in FSH file {Path.GetFileName(f.Path)}");
+                Console.WriteLine($"Error finding concept '{codeSystemName}#{code}' in FSH file {Path.GetFileName(f.Path)}");
                 return;
             }
+            void InsertLine(String s)
+            {
+                i += 1;
+                f.Lines.Insert(i, s);
+            }
+
+            bool HasMLComment()
+            {
+                if (i >= f.Lines.Count)
+                    return false;
+                return f.Lines[i + 1].Trim().StartsWith("\"\"\"");
+            }
+            if (HasMLComment())
+                return;
+
+            InsertLine("    \"\"\"");
+            InsertLine("    \"\"\"");
         }
 
         void Process(CodeSystem codeSystem)
@@ -61,6 +117,10 @@ namespace TermMerge
 
                 case "ConsistentWithCodeSystemCS":
                     name = "ConsistentWithCS";
+                    break;
+
+                case "CorrespondsWithCodeSystemCS":
+                    name = "CorrespondsWithCS";
                     break;
 
                 case "FibroadenomaCodeSystemCS":
@@ -131,6 +191,7 @@ namespace TermMerge
         {
             foreach (CodeSystem codeSystem in fhirResources.CodeSystems)
                 Process(codeSystem);
+            //this.fshFiles.Save();
         }
     }
 }

@@ -75,7 +75,7 @@ namespace TermMerge
                 if (i < 0)
                     Console.WriteLine("Badly formated line {line}");
                 line = line.Substring(0, i);
-                if (String.Compare(line, concept) == 0)
+                if (String.Compare(line.ToUpper(), concept.ToUpper()) == 0)
                     return true;
                 return false;
             }
@@ -92,7 +92,7 @@ namespace TermMerge
                 retVal += 1;
             }
 
-            return retVal;
+            return -1;
         }
     }
 }
