@@ -15,7 +15,9 @@ version: 0.3.0
 name: BreastRadiologyReporting2ndSTUballot
 title: Breast Radiology Reporting - 2nd STU ballot
 status: active
-publisher: CIC
+publisher:
+  name: HL7 International - Clinical Interoperability Council
+  url: http://www.hl7.org/Special/committees/cic
 description: Breast Radiology Reporting Implementation Guide
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -28,7 +30,8 @@ jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To control the ig.ini using this config, uncomment and set the "template" property.           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-template: fhir.base.template
+#template: fhir.base.template
+template: hl7.fhir.template#current
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
