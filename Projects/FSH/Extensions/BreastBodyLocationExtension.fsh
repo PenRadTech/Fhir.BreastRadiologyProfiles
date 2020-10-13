@@ -64,15 +64,12 @@ Description: """
   * extension[landmark] ^short = "Body landmark. Origin of distance measurement."
   * extension[landmark] ^definition =
     """
-	  Body landmark which defines the origin of the measurement.
-	
-	Currently the value set this is bound to does not contain the required breast 
-	landmarks like nipple.  
+	Body landmark which defines the origin of the measurement.
 	"""
   * extension[landmark].value[x] 1..1
   * extension[landmark].value[x] only CodeableConcept
   * extension[landmark].value[x] from BreastLandmarkVS
-  
+ 
   * extension contains distanceFromLandmark 0..*
   * extension[distanceFromLandmark] ^short = "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark."
   * extension[distanceFromLandmark] ^definition =

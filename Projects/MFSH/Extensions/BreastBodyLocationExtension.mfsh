@@ -10,41 +10,38 @@ Description: """
 
   * . ^short = "Breast Body Location extension"
 
-  #apply Extension.CodeableConcept("laterality", "0..1", "LateralityVS", "Body side",
+  #apply Extension.CodeableConcept("laterality", "Laterality", "0..1", "LateralityVS", "Body side",
   #  """
   #  The side of the body being examined.
   #  """)
 
-  #apply Extension.CodeableConcept("quadrant", "0..1", "BreastBodyLocationQuadrantVS", "Quadrant of the body location",
+  #apply Extension.CodeableConcept("quadrant", "Quadrant", "0..1", "BreastBodyLocationQuadrantVS", "Quadrant of the body location",
   #  """
   #  The quadrant  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("region", "0..1", "BreastBodyLocationRegionVS", "Region of the body location",
+  #apply Extension.CodeableConcept("region", "Region", "0..1", "BreastBodyLocationRegionVS", "Region of the body location",
   #  """
   #  The region  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("clockDirection", "0..1", "BreastBodyLocationClockPositionsVS", "Clock direction of the body location",
+  #apply Extension.CodeableConcept("clockDirection", "Clock Direction", "0..1", "BreastBodyLocationClockPositionsVS", "Clock direction of the body location",
   #  """
   #  The clock direction of the body location.
   # """)
 
-  #apply Extension.CodeableConcept("depth", "0..1", "BreastBodyLocationDepthVS", "Depth of the body location",
+  #apply Extension.CodeableConcept("depth", "Depth", "0..1", "BreastBodyLocationDepthVS", "Depth of the body location",
   #  """
   #  The depth of the body location.
   # """)
 
 
-  #apply Extension.CodeableConcept("landmark", "0..*", "BreastLandmarkVS", "Body landmark. Origin of distance measurement.",
+  #apply Extension.CodeableConcept("landmark", "Landmark", "0..*", "BreastLandmarkVS", "Body landmark. Origin of distance measurement.",
   #  """
   #  Body landmark which defines the origin of the measurement.
-  #
-  #  Currently the value set this is bound to does not contain the required breast 
-  #  landmarks like nipple.  
   #  """)
 
-  #apply Extension.Quantity("distanceFromLandmark", "0..*", "UNITSOFLENGTH", "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark.", 
+  #apply Extension.Quantity("distanceFromLandmark", "DistanceFromLandmark", "0..*", "UNITSOFLENGTH", "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark.", 
   #  """
   #	 Distance from body landmark to body location
   #
@@ -73,5 +70,5 @@ Description: """
   #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
 
   #apply Graph.NodeExtension("", "BreastBodyLocation")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+
 
