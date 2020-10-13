@@ -2,7 +2,6 @@
   #apply Extension.Configure()
   #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
   #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
-  #apply Graph.LinkByBinding("focus", "^%ProfileId%.extension:SliceName", ".value[x]", "cmp")
  
   * extension contains SliceName Cardinality
   * extension[SliceName] ^short = "Short"
