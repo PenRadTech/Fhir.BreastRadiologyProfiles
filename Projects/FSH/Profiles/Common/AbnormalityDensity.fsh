@@ -266,7 +266,8 @@ Description: """
     """
   * component[obsDistRegionSize] ^definition = """
     This component slice contains the size of an region inside of which there 
-    is a distribution of abnormalities.
+    is a distribution of abnormalities. This is not the size of one specific distinct abnormality, but is the size of
+    the region in which a one or more abnormalities are found.
     
     There may be one, two, or three values indicating a size of
     one dimension (length), two dimensions (area), or three dimensions (volume).
