@@ -14,8 +14,6 @@ Description: "Asymmetry type code system."
     Breast asymmetry refers to when one breast is a different
     size or shape than the
     other.
-    
-    Valid for the following modalities: MG.
     """
 
   * #AsymmetryFocal "Asymmetry focal"
@@ -31,8 +29,6 @@ Description: "Asymmetry type code system."
     The frequency of finding focal asymmetry at screening
     mammography is less than 1%.
     [https://pubs.rsna.org/doi/10.1148/rg.e33]
-    
-    Valid for the following modalities: MG.
     """
 
   * #AsymmetryGlobal "Asymmetry global"
@@ -42,8 +38,6 @@ Description: "Asymmetry type code system."
     quadrant of a breast has a larger amount of fibroglandular
     density than the corresponding
     area in the contralateral breast.
-    
-    Valid for the following modalities: MG.
     """
 
   * #DevelopingAsymmetry "Developing Asymmetry"
@@ -58,6 +52,4 @@ Description: "Asymmetry type code system."
     because it is an uncommon
     manifestation of breast cancer.
     [https://pubs.rsna.org/doi/full/10.1148/rg.2016150123]
-    
-    Valid for the following modalities: MG.
     """

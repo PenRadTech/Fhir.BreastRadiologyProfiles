@@ -21,8 +21,6 @@ Description: "Lymph node types code system."
     namely the lateral (humeral), anterior (pectoral),
     posterior (subscapular), central
     and apical nodes.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeEnlarged "Node enlarged"
@@ -39,8 +37,6 @@ Description: "Lymph node types code system."
     
     Common areas subject to swollen lymph nodes include
     the neck, under chin,  armpits and groin.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeFocalCortex "Node focal cortex"
@@ -51,8 +47,6 @@ Description: "Lymph node types code system."
     peripheral area, causing enlargement of the cortex,
     usually focal (at early stages), or uniform.
     [www.ncbi.nlm.nih.gov > pmc > articles > PMC4337126]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeInfraclavicular "Node infraclavicular"
@@ -65,16 +59,12 @@ Description: "Lymph node types code system."
     .
     Lymph nodes are situated in the course of the external
     collecting trunks of the arm.
-    
-    Valid for the following modalities: US.
     """
 
   * #NodeIntramammary "Node intramammary"
     """
     Intramammary lymph nodes are defined as lymph nodes
     surrounded by breast tissue.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeLymph "Node lymph"
@@ -85,15 +75,11 @@ Description: "Lymph node types code system."
     if new or considerably larger or rounder when compared
     to previous examination.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeLymphNormal "Node lymph normal"
     """
     The lymph node appears normal and is probably benign.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NodeSupraclavicular "Node supraclavicular"
@@ -104,8 +90,6 @@ Description: "Lymph node types code system."
     Lymph nodes are responsible for filtering the lymphatic
     fluid of unwanted debris
     and bacteria.
-    
-    Valid for the following modalities: US.
     """
 
   * #NodeUniformThickness "Node uniform thickness"
@@ -117,6 +101,4 @@ Description: "Lymph node types code system."
     lymph node metastases on US include a round morphology,
     hypoechogenicity, loss of central hilum, or eccentric
     cortical hypertrophy.
-    
-    Valid for the following modalities: MG US.
     """

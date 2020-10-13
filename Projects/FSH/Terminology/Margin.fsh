@@ -14,8 +14,6 @@ Description: "Margin code system."
     Some or all of the margin has sharp corners, often
     forming acute angles.
     The margin of the mass is not circumscribed.
-    
-    Valid for the following modalities: US.
     """
 
   * #CircumscribedMargin "Circumscribed margin"
@@ -27,8 +25,6 @@ Description: "Margin code system."
     entire margin must be sharply defined.
     Most circumscribed lesions have round or oval shapes.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 49]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #IndistinctMargin "Indistinct margin"
@@ -44,8 +40,6 @@ Description: "Margin code system."
     Use of this descriptor
     usually implies a suspicious finding.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 23]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #IntraductalExtension "Intraductal extension"
@@ -55,8 +49,6 @@ Description: "Margin code system."
     and is an important consideration in patients undergoing
     breast conservative surgery.
     [https://www.ncbi.nlm.nih.gov/pubmed/8630874]
-    
-    Valid for the following modalities: US.
     """
 
   * #IrregularMargin "Irregular margin"
@@ -64,8 +56,6 @@ Description: "Margin code system."
     Edges around the soft tissue that don't look smooth.
     Indicative of some sort of growth or mass rather
     than a cyst.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #LobulatedMargin "Lobulated margin"
@@ -74,8 +64,6 @@ Description: "Margin code system."
     Much like a 6 or 8 leaf clover.
     The edge of all of the leaves would be considered
     lobulated.
-    
-    Valid for the following modalities: US.
     """
 
   * #MacrolobulatedMargin "Macrolobulated margin"
@@ -84,8 +72,6 @@ Description: "Margin code system."
     mass and the surrounding border.
     Macrolobulaed margins are  oval-shaped and  have
     a wide rather than tall formation.
-    
-    Valid for the following modalities: MG.
     """
 
   * #MicrolobulatedMargin "Microlobulated margin"
@@ -94,8 +80,6 @@ Description: "Margin code system."
     or scalloped appearance,and
     the margin of the mass is not circumscribed.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 54]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #NonCircumscribedMargin "Non circumscribed margin"
@@ -107,8 +91,6 @@ Description: "Margin code system."
     the mass and the surrounding
     tissue.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 153]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #ObscuredMagin "Obscured magin"
@@ -118,8 +100,6 @@ Description: "Margin code system."
     This is used primarily when some of the margin of
     the mass is circumscribed, but
     the rest (more than 25%) is hidden.
-    
-    Valid for the following modalities: MG.
     """
 
   * #SmoothMargin "Smooth margin"
@@ -127,8 +107,6 @@ Description: "Margin code system."
     The edges of the mass have a smooth appearance and
     distinct separation between the
     mass and surrounding tissue.
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #SpiculatedMargin "Spiculated margin"
@@ -139,6 +117,4 @@ Description: "Margin code system."
     but the significant feature is that the margin of
     the mass is not circumscribed.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 55]
-    
-    Valid for the following modalities: MG US MRI.
     """

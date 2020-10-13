@@ -19,8 +19,6 @@ Description: "Associated Feature seen during a breast examination."
     distortion of the ducts, these findings may be termed
     architectural distortion.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 139]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #AxillaryAdenopathy "Axillary adenopathy"
@@ -29,8 +27,6 @@ Description: "Associated Feature seen during a breast examination."
     Additional evaluation is needed to determine the
     cause.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 110]
-    
-    Valid for the following modalities: MG MRI.
     """
 
   * #BiopsyClip "Biopsy clip"
@@ -48,8 +44,6 @@ Description: "Associated Feature seen during a breast examination."
     with varied shapes, composition,
     and associated bio-absorbable components.
     [https://www.ncbi.nlm.nih.gov/pubmed/30059952]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #BrachytherapyTube "Brachytherapy tube"
@@ -66,15 +60,11 @@ Description: "Associated Feature seen during a breast examination."
     permanently.
     After several months, the seeds lose their radioactivity.
     [https://www.radiologyinfo.org/en/info.cfm?pg=brachy]
-    
-    Valid for the following modalities: MG.
     """
 
   * #ChestWallInvasion "Chest wall invasion"
     """
     A tumor of the lung that has invaded the chest wall.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #CooperDistorted "Cooper distorted"
@@ -94,8 +84,6 @@ Description: "Associated Feature seen during a breast examination."
     once distorted.
     This can be because of swelling, bulges, retraction,
     etc.
-    
-    Valid for the following modalities: US.
     """
 
   * #CooperThickened "Cooper thickened"
@@ -117,8 +105,6 @@ Description: "Associated Feature seen during a breast examination."
     of a mass, benign or malignant, that causes shortening
     in the Coopers ligaments due
     to fibrosis.
-    
-    Valid for the following modalities: US.
     """
 
   * #Edema "Edema"
@@ -126,8 +112,6 @@ Description: "Associated Feature seen during a breast examination."
     Edema (swelling of the breasts)  may be due to blockage
     of subdermal lymphatics by tumor cells or an inflammatory
     process within the breast or axilla.
-    
-    Valid for the following modalities: US.
     """
 
   * #EdemaAdj "Edema adj"
@@ -135,8 +119,6 @@ Description: "Associated Feature seen during a breast examination."
     This is swelling of one or both breasts.
     A mammographic pattern of skin thickening, increased
     parenchymal density, and interstitial marking.
-    
-    Valid for the following modalities: US.
     """
 
   * #GoldSeed "Gold Seed"
@@ -151,8 +133,6 @@ Description: "Associated Feature seen during a breast examination."
     markers, and gold-seed fiducial
     markers.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/gold-seeds]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Hematoma "Hematoma"
@@ -163,8 +143,6 @@ Description: "Associated Feature seen during a breast examination."
     blood continuing to seep from
     broken capillaries.
     en.wikipedia.org > wiki > Hematoma
-    
-    Valid for the following modalities: MG.
     """
 
   * #NippleRetraction "Nipple retraction"
@@ -177,15 +155,11 @@ Description: "Associated Feature seen during a breast examination."
     In the case of breast cancer, nipple retraction occurs
     when the tumor attacks the
     duct behind the nipple, pulling it in.
-    
-    Valid for the following modalities: MG MRI.
     """
 
   * #NOChestWallInvasion "NO Chest wall invasion"
     """
     The mass has not attached itself to the chest wall.
-    
-    Valid for the following modalities: MRI.
     """
 
   * #PectoralisMuscleInvasion "Pectoralis muscle invasion"
@@ -193,8 +167,6 @@ Description: "Associated Feature seen during a breast examination."
     Pectoralis muscle invasion is when a tumor has become
     large enough to invade into
     the pectoralis muscle.
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #PectoralisMuscleInvolvement "Pectoralis muscle involvement"
@@ -204,8 +176,6 @@ Description: "Associated Feature seen during a breast examination."
     enhancement with obliteration of the fat plane between
     the tumor and the muscle.
     pubs.rsna.org > doi > pdf
-    
-    Valid for the following modalities: MRI.
     """
 
   * #PectoralisMuscleTenting "Pectoralis muscle tenting"
@@ -217,8 +187,6 @@ Description: "Associated Feature seen during a breast examination."
     its retraction and forms an inverted 'V' that resembles
     the tip of a circus tent.
     [https://radiopaedia.org/articles/tent-sign-breast?lang=us]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #PostSurgicalScar "Post surgical scar"
@@ -229,8 +197,6 @@ Description: "Associated Feature seen during a breast examination."
     The amount of scarring is connected to the different
     stages of wound healing.
     Surgical scar care should be continued for a year.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Seroma "Seroma"
@@ -243,8 +209,6 @@ Description: "Associated Feature seen during a breast examination."
     that contains protein, but no blood
     cells or pus.
     [https://www.verywellhealth.com/seroma-medical-definition-430372]
-    
-    Valid for the following modalities: MG.
     """
 
   * #SkinInvolvement "Skin involvement"
@@ -254,8 +218,6 @@ Description: "Associated Feature seen during a breast examination."
     There are several layers of skin that the mass or
     lesion can penetrate and that is
     what determines the level of skin invasion.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #SkinLesion "Skin lesion"
@@ -264,8 +226,6 @@ Description: "Associated Feature seen during a breast examination."
     growth or appearance compared
     to the skin around it.In order to diagnose a skin
     lesion, a full physical exam is necessary.
-    
-    Valid for the following modalities: MG.
     """
 
   * #SkinRetraction "Skin retraction"
@@ -278,8 +238,6 @@ Description: "Associated Feature seen during a breast examination."
     a woman raises her arms above her
     head or leans forward.
     [https://www.drholmesmd.com/blog/early-signs-of-breast-cancer]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #SkinThickening "Skin thickening"
@@ -290,8 +248,6 @@ Description: "Associated Feature seen during a breast examination."
     It can result from a number of both benign and malignant
     causes.
     [https://radiopaedia.org/articles/skin-thickening-on-mammography-differential?lang=us]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #SurgicalClip "Surgical clip"
@@ -301,8 +257,6 @@ Description: "Associated Feature seen during a breast examination."
     may be used during a single surgical procedure.
     Surgical clips may remain inside the patient's body
     after the wounds are healed.
-    
-    Valid for the following modalities: MG.
     """
 
   * #TrabecularThickening "Trabecular thickening"
@@ -315,8 +269,6 @@ Description: "Associated Feature seen during a breast examination."
     together, and they have similar
     differential diagnoses.
     [https://oxfordmedicine.com/view/10.1093/med/9780190270261.001.0001/med-9780190270261-chapter-48]
-    
-    Valid for the following modalities: MG.
     """
 
   * #CalcificationInMass "Calcification in mass"
@@ -327,8 +279,6 @@ Description: "Associated Feature seen during a breast examination."
     size, and number, further tests may be necessary.
     Larger 'macrocalcifications' are usually not associated
     with cancer.
-    
-    Valid for the following modalities: US.
     """
 
   * #CalcificationNotOnMammogarm "Calcification Not on mammogarm"
@@ -339,8 +289,6 @@ Description: "Associated Feature seen during a breast examination."
     size, and number.
     Large 'macrocalcifications' are usually not associated
     with cancer.
-    
-    Valid for the following modalities: US.
     """
 
   * #CalcificationOnMammogram "Calcification on mammogram"
@@ -350,8 +298,6 @@ Description: "Associated Feature seen during a breast examination."
     white specks or dots on the soft tissue background
     of the breasts.
     The calcium readily absorbs the X-rays from mammograms
-    
-    Valid for the following modalities: US.
     """
 
   * #Calcifications "Calcifications"
@@ -360,8 +306,6 @@ Description: "Associated Feature seen during a breast examination."
     show up on mammograms as bright
     white specks or dots on the soft tissue background
     of the breasts.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #MicroCalcifications "Micro calcifications"
@@ -370,8 +314,6 @@ Description: "Associated Feature seen during a breast examination."
     in a mammogram, similar to grains of salt; usually
     noncancerous, but certain patterns can be an early
     sign of cancer.
-    
-    Valid for the following modalities: US.
     """
 
   * #MilkOfCalcium "Milk of calcium"
@@ -382,8 +324,6 @@ Description: "Associated Feature seen during a breast examination."
     This sort of colloidal calcium suspension layering
     can occur in various regions.
     [https://radiopaedia.org/articles/milk-of-calcium-disambiguation?lang=us]
-    
-    Valid for the following modalities: US.
     """
 
   * #RimCalcifications "Rim calcifications"
@@ -394,6 +334,4 @@ Description: "Associated Feature seen during a breast examination."
     Although fat necrosis can produce these thin deposits,
     calcifications in the wall
     of cysts are the most common 'rim' calcifications.
-    
-    Valid for the following modalities: US.
     """

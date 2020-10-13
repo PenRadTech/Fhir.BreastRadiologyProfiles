@@ -27,8 +27,6 @@ Description: "Calcification Distribution in an abnormality code system."
     cm of each
     other.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 73]
-    
-    Valid for the following modalities: MG.
     """
 
   * #DiffuseDistribution "Diffuse distribution"
@@ -41,8 +39,6 @@ Description: "Calcification Distribution in an abnormality code system."
     Even when clusters of calcifications are scattered
     throughout the breast, this favors a benign entity.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """
 
   * #GroupedDistribution "Grouped distribution"
@@ -59,8 +55,6 @@ Description: "Calcification Distribution in an abnormality code system."
     
     calcifications are grouped within 2 cm of each other.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 74]
-    
-    Valid for the following modalities: MG.
     """
 
   * #LinearDistribution "Linear distribution"
@@ -75,8 +69,6 @@ Description: "Calcification Distribution in an abnormality code system."
     
     morphology.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #RegionalDistribution "Regional distribution"
@@ -88,8 +80,6 @@ Description: "Calcification Distribution in an abnormality code system."
     
     benignity)
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """
 
   * #ScatteredDistribution "Scattered distribution"
@@ -101,8 +91,6 @@ Description: "Calcification Distribution in an abnormality code system."
     are almost always benign, especially
     if bilateral (in both breasts).
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 70]
-    
-    Valid for the following modalities: MG.
     """
 
   * #SegmentalDistribution "Segmental distribution"
@@ -118,6 +106,4 @@ Description: "Calcification Distribution in an abnormality code system."
     clear on a mammogram or MRI where the bounderies
     of a segment (or a lobe) exactly are.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """

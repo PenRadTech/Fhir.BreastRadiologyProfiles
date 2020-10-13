@@ -17,8 +17,6 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     These substances can be air, body fluids, or bone
     fragments.
     [https://medlineplus.gov/ency/article/002216.htm]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 122548005 | Biopsy of breast (Procedure)
@@ -28,8 +26,6 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     tissue removed from the body.
     The examination is used to check for abnormalities
     or cancer cells.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241615005 | Magnetic resonance imaging of breast (Procedure)
@@ -37,14 +33,10 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     """
     Findings on the Mammogram was previously demonstrated
     by the MRI.
-    
-    Valid for the following modalities: MG.
     """
 
   * #US "US"
     """
     Findings on the Mammogram was previously demonstrated
     by the Ultrasound.
-    
-    Valid for the following modalities: MG.
     """

@@ -20,8 +20,6 @@ Description:  "Breast Body Location Depth CodeSystem"
     depth within the breast.
     Anterior depth is the outer most depth (closest to
     the nipple) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Not found
@@ -29,8 +27,6 @@ Description:  "Breast Body Location Depth CodeSystem"
     """
     Middle depth in between the anterior and posterior
     portion of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription QualifierValue | 255551008 | Posterior (Qualifier) + depth
@@ -38,6 +34,4 @@ Description:  "Breast Body Location Depth CodeSystem"
     """
     Posterior depth (closest to the chest wall) of the
     breast.
-    
-    Valid for the following modalities: MG US.
     """

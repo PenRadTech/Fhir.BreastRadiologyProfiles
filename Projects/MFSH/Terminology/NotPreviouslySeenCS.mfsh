@@ -16,8 +16,6 @@ Description:  "NotPreviouslySeen CodeSystem"
   * #ClinicalExam "Clinical exam"
     """
     Not previously seen on clinical exam.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Procedure | 420131003 | Fluoroscopic mammary ductography (Procedure)
@@ -34,16 +32,12 @@ Description:  "NotPreviouslySeen CodeSystem"
     for performing the ductogram.
     The abnormal duct is identified and cannulated.
     [https://radiopaedia.org/articles/breast-ductography-1?lang=us]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #Mammogram "Mammogram"
     """
     A mammogram is an X-Ray picture of the breast.
     It is used to look for early signs of breast cancer.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Procedure | 241615005 | Magnetic resonance imaging of breast (Procedure)
@@ -53,16 +47,12 @@ Description:  "NotPreviouslySeen CodeSystem"
     powerful magnets, radio waves,
     and a computer to make detailed pictures inside the
     body.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #OutsideExam "Outside exam"
     """
     The findings on the Mammogram were not previously
     seen on the outside exam.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Scintimammography "Scintimammography"
@@ -70,8 +60,6 @@ Description:  "NotPreviouslySeen CodeSystem"
     This is a type of breast imaging that is used to
     detect cancer cells in the breasts
     of some patients who have had abnormal mammograms.
-    
-    Valid for the following modalities: NM.
     """
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
@@ -81,8 +69,6 @@ Description:  "NotPreviouslySeen CodeSystem"
     This information is relayed in real time to produce
     images on a computer screen.
     This can help diagnose and treat disease or conditions.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

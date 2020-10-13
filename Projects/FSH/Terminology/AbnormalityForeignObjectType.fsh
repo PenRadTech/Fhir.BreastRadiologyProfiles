@@ -14,7 +14,7 @@ Description:  "Foreign Object Type CodeSystem"
     A BB pellet is present in the body and is visible
     by the Mammogram, MRI and/or Ultrasound.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .SnomedDescription ClinicalFinding | 283574001 | Pellet wound of breast (Disorder) | [0/0] | S21.039?
@@ -23,7 +23,7 @@ Description:  "Foreign Object Type CodeSystem"
     BB pellets are present in the body and is visible
     by the Mammogram, MRI and/or Ultrasound.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .Snomed 470272007
@@ -50,7 +50,7 @@ Description:  "Foreign Object Type CodeSystem"
     settings.
     [https://www.ncbi.nlm.nih.gov/pubmed/30059952]
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .Snomed 470272007
@@ -77,7 +77,7 @@ Description:  "Foreign Object Type CodeSystem"
     settings.
     [https://www.ncbi.nlm.nih.gov/pubmed/30059952]
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .Snomed 470272007
@@ -104,7 +104,7 @@ Description:  "Foreign Object Type CodeSystem"
     settings.
     www.ncbi.nlm.nih.gov > pubmed
     
-    Valid for the following modalities: MRI.
+ 
     """
 
   * #CatheterSleeves "Catheter sleeves"
@@ -114,7 +114,7 @@ Description:  "Foreign Object Type CodeSystem"
     A catheter is a flexible tube used to deliver fluids
     into or withdraw fluids from the body.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   * #ChemotherapyPort "Chemotherapy port"
@@ -122,8 +122,6 @@ Description:  "Foreign Object Type CodeSystem"
     A soft thin tube called a catheter connects the port
     to a large vein for administering
     chemotherapy is present in the MRI/Ultrasound.
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 470342004
@@ -134,7 +132,7 @@ Description:  "Foreign Object Type CodeSystem"
     frequency signal.
     This is present on the Mammogram, MRI and/or Ultrasound.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .Snomed 283258005
@@ -144,7 +142,7 @@ Description:  "Foreign Object Type CodeSystem"
     Glass is present in the body and shows up on the
     MRI, Mammogram, and/or Ultrasound.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   * #GoldSeed "Gold seed"
@@ -153,7 +151,7 @@ Description:  "Foreign Object Type CodeSystem"
     tumor to show exactly where the
     tumor is are present in the ultrasound/MRI.
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .SnomedDescription ClinicalFinding | 425055008 | Gunshot entry wound (Disorder) | [0/0] | T14.8
@@ -162,7 +160,7 @@ Description:  "Foreign Object Type CodeSystem"
     There is a gunshot would present in the body and
     is viewable on the Ultrasound, Mammogram and/or MRI
     
-    Valid for the following modalities: MG US MRI.
+ 
     """
 
   // .Snomed 470272007
@@ -171,8 +169,6 @@ Description:  "Foreign Object Type CodeSystem"
     """
     A marker clip (from possible previous biopsy) is
     visable in the Mammogram
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 283169003
@@ -181,8 +177,6 @@ Description:  "Foreign Object Type CodeSystem"
     """
     A piece of metal is present in the body and is viewable
     on the MRI and/or Ultrasound.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 470272007
@@ -190,8 +184,6 @@ Description:  "Foreign Object Type CodeSystem"
   * #MetallicMarker "Metallic marker"
     """
     A metallic tissue marker is present in the ultrasound/MRI.
-    
-    Valid for the following modalities: MRI.
     """
 
   // .Snomed 470272007
@@ -199,8 +191,6 @@ Description:  "Foreign Object Type CodeSystem"
   * #MetallicMarkers "Metallic markers"
     """
     Metallic tissue markers are present in the MRI/Ultrasound.
-    
-    Valid for the following modalities: MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 283169003 | Metal foreign body in breast (Disorder) | [0/0] | S21.009?
@@ -209,16 +199,12 @@ Description:  "Foreign Object Type CodeSystem"
     The Mammogram suggests a foreign body in the breast
     that appears to be a metallic
     object.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Needle "Needle"
     """
     The Mammogram suggests a foreign body in the breast
     that appears to be a needle.
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 80919006
@@ -228,24 +214,18 @@ Description:  "Foreign Object Type CodeSystem"
     The Mammogram suggests a foreign body in the breast
     that appears to be a piece of
     nipple jewelry.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Non-metallicBody "Non-metallic body"
     """
     A non-metallic foreign body was located in the breast
     tissue.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Pacemaker "Pacemaker"
     """
     A pacemaker is present showing up on the MRI and/or
     Ultrasound.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #SiliconeGranuloma "Silicone granuloma"
@@ -259,8 +239,6 @@ Description:  "Foreign Object Type CodeSystem"
     Silicone granulomas are a skin condition that occur
     as a reaction to liquid silicones,
     and are characterized by the formation of nodules.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription PhysicalObject | 706640008 | Sponge (Object)
@@ -268,8 +246,6 @@ Description:  "Foreign Object Type CodeSystem"
     """
     A surgical sponge can be viewed from the images in
     the Mammogram, MRI and/or ultrasound.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 470342004
@@ -281,8 +257,6 @@ Description:  "Foreign Object Type CodeSystem"
     A tissue marker (or clip) is placed in the breast
     after a breast biopsy to help locate the site for
     future reference.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 470342004
@@ -294,8 +268,6 @@ Description:  "Foreign Object Type CodeSystem"
     A tissue marker (or clip) is placed in the breast
     after a breast biopsy to help locate the site for
     future reference.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription PhysicalObject | 408098004 | Swab (Object
@@ -304,8 +276,6 @@ Description:  "Foreign Object Type CodeSystem"
     A Retained surgical swab appears to have been identified
     in the breast during the
     mammogram, ultrasound and/or MRI.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 470272007
@@ -322,8 +292,6 @@ Description:  "Foreign Object Type CodeSystem"
     
     part of the breast biopsy procedure.
     [https://med.nyu.edu/radiology/about-nyu-langone-radiology/subspecialty-sections/breast-imaging/image-guided-procedures]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 470272007
@@ -340,8 +308,6 @@ Description:  "Foreign Object Type CodeSystem"
     
     part of the breast biopsy procedure.
     [https://med.nyu.edu/radiology/about-nyu-langone-radiology/subspecialty-sections/breast-imaging/image-guided-procedures]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #Wire "Wire"
@@ -351,8 +317,6 @@ Description:  "Foreign Object Type CodeSystem"
     Guidewire is used during medical procedures such
     as biopsy or placement of medical
     devices such as a catheter or pacemaker.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #WireFragment "Wire fragment"
@@ -362,6 +326,4 @@ Description:  "Foreign Object Type CodeSystem"
     Guidewire is used during medical procedures such
     as a biopsy or  placement of medical
     devices such as a catheter or pacemaker.
-    
-    Valid for the following modalities: MG US MRI.
     """

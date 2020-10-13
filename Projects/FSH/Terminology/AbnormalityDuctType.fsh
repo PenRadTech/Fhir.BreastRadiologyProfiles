@@ -15,8 +15,6 @@ Description: "Duct types code system."
     the breast with no abnormalities.
     A system of ducts in the breast carries milk to the
     nipples.
-    
-    Valid for the following modalities: MG.
     """
 
   * #SolitaryDilatedDuct "Solitary dilated duct"
@@ -27,7 +25,7 @@ Description: "Duct types code system."
     duct appears to be filled with some debris, with
     or without accompanying fluid, as seen at ultrasound.
     
-    Valid for the following modalities: MG US.
+ 
     """
 
   * #DuctEctasia "Duct ectasia"
@@ -41,5 +39,5 @@ Description: "Duct types code system."
     breast duct.
     www.healthline.com > health > duct-ectasia-of-the-breast
     
-    Valid for the following modalities: MG US.
+ 
     """

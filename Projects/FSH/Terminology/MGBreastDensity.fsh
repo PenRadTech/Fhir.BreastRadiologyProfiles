@@ -22,8 +22,6 @@ Description: "Mammography breast density values code system."
     to describe a level of breast
     density seen on a mammogram.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/search?contains=false&q=fatty]
-    
-    Valid for the following modalities: MG.
     """
 
   * #ScatteredAreasOfFibroglandularDensity "Scattered areas of fibroglandular density"
@@ -40,8 +38,6 @@ Description: "Mammography breast density values code system."
     a level of breast density seen on a mammogram.
     About 40% of women have this type of breast tissue.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/scattered-fibroglandular-breast-tissue]
-    
-    Valid for the following modalities: MG.
     """
 
   * #HeterogeneouslyDense "Heterogeneously dense"
@@ -57,8 +53,6 @@ Description: "Mammography breast density values code system."
     level of breast density seen on a mammogram.
     About 40% of women have this type of breast tissue.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/heterogeneously-dense-breast-tissue]
-    
-    Valid for the following modalities: MG.
     """
 
   * #ExtremelyDense "Extremely dense"
@@ -78,6 +72,4 @@ Description: "Mammography breast density values code system."
     of breast density seen on a mammogram.
     About 10% of women have this type of breast tissue.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/extremely-dense-breast-tissue]
-    
-    Valid for the following modalities: MG.
     """

@@ -29,8 +29,6 @@ Description: "Mammography calcification type code system."
     should be placed into BI-RADS  assessment category
     4B (PPV range > 10% to ? 50%).
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Coarse "Coarse"
@@ -46,8 +44,6 @@ Description: "Mammography calcification type code system."
     diameter) calcifications produced by an involuting
     fibroadenoma.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Dystrophic "Dystrophic"
@@ -62,8 +58,6 @@ Description: "Mammography calcification type code system."
     characterized by cortical formation and a central
     medullary cavity.
     [https://radiopaedia.org/articles/dystrophic-soft-tissue-calcification-1?lang=us]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Eggshell "Eggshell"
@@ -78,16 +72,12 @@ Description: "Mammography calcification type code system."
     may disappear (fat necrosis)
     
     [https://radiopaedia.org/articles/eggshell-calcification-breast-1?lang=us]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Fine "Fine"
     """
     These are thin, linear or curvilinear irregular calcifications
     and may be discontinuous.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Generic "Generic"
@@ -100,8 +90,6 @@ Description: "Mammography calcification type code system."
     is also found in every cell.
     As a result, calcification can occur in almost any
     part of the body.
-    
-    Valid for the following modalities: MG.
     """
 
   * #CoarseHeterogeneous "Coarse Heterogeneous"
@@ -126,8 +114,6 @@ Description: "Mammography calcification type code system."
     
     > 10% to ? 50%).
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Indistinct "Indistinct"
@@ -138,8 +124,6 @@ Description: "Mammography calcification type code system."
     and/or hazy such that no clearly
     defined shape/form can be ascribed.
     [https://radiopaedia.org > articles > amorphous-calcifications-breast]
-    
-    Valid for the following modalities: MG.
     """
 
   * #LargeRodlike "Large rodlike"
@@ -165,16 +149,12 @@ Description: "Mammography calcification type code system."
     
     in women older than 60 years.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Layering "Layering"
     """
     Layering of calcium within the calcification.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """
 
   * #FineLinear "Fine Linear"
@@ -189,8 +169,6 @@ Description: "Mammography calcification type code system."
     suggests filling of the lumen of a duct or ducts
     involved irregularly by breast cancer.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 66]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Lucent-centered "Lucent-centered"
@@ -200,8 +178,6 @@ Description: "Mammography calcification type code system."
     They are the result of fat necrosis, calcified debris
     in ducts, and occasional fibroadenomas.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """
 
   * #MilkOfCalcium "Milk of calcium"
@@ -230,8 +206,6 @@ Description: "Mammography calcification type code system."
     
     projection to the CC projection.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #FinePleomorphic "Fine Pleomorphic"
@@ -247,8 +221,6 @@ Description: "Mammography calcification type code system."
     size and shape and are usually smaller than 0.5 mm
     in diameter.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 64]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Punctate "Punctate"
@@ -264,8 +236,6 @@ Description: "Mammography calcification type code system."
     surveillance.
     
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Rim "Rim"
@@ -281,8 +251,6 @@ Description: "Mammography calcification type code system."
     in the
     walls of oil cysts or simple cysts may be seen.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 49]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Round "Round"
@@ -304,8 +272,6 @@ Description: "Mammography calcification type code system."
     
     adjacent to a known cancer.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Skin "Skin"
@@ -321,8 +287,6 @@ Description: "Mammography calcification type code system."
     Skin calcifications may develop from a degenerative
     metaplastic process.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 36]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Spherical "Spherical"
@@ -331,8 +295,6 @@ Description: "Mammography calcification type code system."
     are usually associated with benign
     lesions.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Suture "Suture"
@@ -340,8 +302,6 @@ Description: "Mammography calcification type code system."
     Calcified suture materials are typically linear or
     tubular in appearance, and when present in Mammogram,
     may show up in a knot pattern.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Vascular "Vascular"
@@ -355,6 +315,4 @@ Description: "Mammography calcification type code system."
     
     ducts) calcification.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
-    
-    Valid for the following modalities: MG.
     """

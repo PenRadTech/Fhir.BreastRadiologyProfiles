@@ -21,7 +21,7 @@ Description: "Fibroadenoma  type code system."
     Most are only 1 or 2 centimeters in size.
     [www.webmd.com > breast-cancer > what-are-fibroadenomas]
     
-    Valid for the following modalities: MG US.
+ 
     """
 
   * #FibroadenomaDegeneration "Fibroadenoma degeneration"
@@ -30,8 +30,6 @@ Description: "Fibroadenoma  type code system."
     Fibroadenomas usually go away with age.
     By the time an individual is menopausal, Fibroadenomas
     degenerate.
-    
-    Valid for the following modalities: MG.
     """
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

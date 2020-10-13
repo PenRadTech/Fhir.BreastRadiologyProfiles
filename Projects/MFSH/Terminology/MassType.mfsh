@@ -8,8 +8,6 @@ Description: "Codes defining mass refinements."
     It feels different from the surrounding tissue.
     Breast pain, nipple discharge, or skin changes may
     be present.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #MassIntraductal "Mass intraductal"
@@ -17,16 +15,12 @@ Description: "Codes defining mass refinements."
     An intraductal mass has been identified in the breast.
     It is a lump that originates in one or more of the
     milk ducts in the breast.
-    
-    Valid for the following modalities: US.
     """
 
   * #MassPartiallySolid "Mass partially solid"
     """
     A mass that is partially solid has been identified
     in the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #MassSkinATLASIsSkinLesion "Mass skin ATLAS is skin lesion"
@@ -39,8 +33,6 @@ Description: "Codes defining mass refinements."
     
     lesion.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #MassSolid "Mass solid"
@@ -50,8 +42,6 @@ Description: "Codes defining mass refinements."
     This can be nodules, fibrocystic tissue, phylloides
     tumor, breast cancer or metastatic.
     A biopsy confirmation may be required.
-    
-    Valid for the following modalities: MG US.
     """
 
 #apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")

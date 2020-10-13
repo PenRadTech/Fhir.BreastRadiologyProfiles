@@ -17,8 +17,6 @@ Description:  "ServiceRecommendations CodeSystem"
     X-rays, of breast tissue to recreate
     a 3-dimensional picture of the breast.
     Also called breast tomosynthesis.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier) + SPOT
@@ -28,8 +26,6 @@ Description:  "ServiceRecommendations CodeSystem"
     X-rays, of breast tissue to recreate
     a 3-dimensional picture of the breast.
     Cranial-Caudal (CC) is a 3D view from above the breast.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) + QualifierValue | 399352003 | Lateral-medial projection (Qualifier) + SPOT
@@ -39,8 +35,6 @@ Description:  "ServiceRecommendations CodeSystem"
     X-rays, of breast tissue to recreate
     a 3-dimensional picture of the breast.
     Lateral-medial (LM) is
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) + QualifierValue | 399260004 | Medial-lateral projection (Qualifier) + SPOT
@@ -50,8 +44,6 @@ Description:  "ServiceRecommendations CodeSystem"
     X-rays, of breast tissue to recreate
     a 3-dimensional picture of the breast.
     Mediolateral (ML) is
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier) + SPOT
@@ -61,8 +53,6 @@ Description:  "ServiceRecommendations CodeSystem"
     X-rays, of breast tissue to recreate
     a 3-dimensional picture of the breast.
     Mediolateral-oblique (MLO) is
-    
-    Valid for the following modalities: MG.
     """
 
   * #AdditionalViews "Additional views"
@@ -70,8 +60,6 @@ Description:  "ServiceRecommendations CodeSystem"
     Additional views in Mammography, MRI and US, help
     increase the chances of finding
     any possible tumors in the breast.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
@@ -79,8 +67,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     Additional views in a Mammogram, MRI or Ultrasound
     are recommended.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #AxillaView "Axilla view"
@@ -99,8 +85,6 @@ Description:  "ServiceRecommendations CodeSystem"
     the pectoral muscle and the nipple
     in profile.
     [https://radiopaedia.org/articles/axillary-view?lang=us]
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 442580003 | Axillary tissue mammography view (Qualifier)
@@ -116,8 +100,6 @@ Description:  "ServiceRecommendations CodeSystem"
     deep fascia called foramen of
     Langer.
     [https://en.wikipedia.org/wiki/Tail_of_Spence]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Biopsy "Biopsy"
@@ -127,15 +109,11 @@ Description:  "ServiceRecommendations CodeSystem"
     tissue removed from the body.
     The examination is used to check for abnormalities
     or cancer cells.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #BiopsyBaseOnClinical "Biopsy base on clinical"
     """
     Based on the clinical exam, a biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #CaudocranialView "Caudocranial view"
@@ -155,8 +133,6 @@ Description:  "ServiceRecommendations CodeSystem"
     the possibility to flatten it properly, reducing
     the formation of scar folds as well
     artifacts from false parenchymal distortion.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure)+ QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
@@ -164,8 +140,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a CC with compression view
     to be completed on an Ultrasound and/or Mammogram.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
@@ -173,8 +147,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a CC with magnification
     view to be completed on an Ultrasound and/or Mammogram.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399161006 | Cleavage mammography view (Qualifier)
@@ -189,39 +161,29 @@ Description:  "ServiceRecommendations CodeSystem"
     technologist will place
     both breasts on the plate at the same time to image
     the medial half of both breasts.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #ClinicalConsultation "Clinical consultation"
     """
     A clinical consultation is recommended.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #ClinicalCorrelation "Clinical correlation"
     """
     The recommendation is for a clinicial correlation
     and/or comparison to be completed.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #ClinicalFollow-up "Clinical follow-up"
     """
     The recommendation is for a clinical follow-up to
     be completed.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #CompareToPriorExams "Compare to prior exams"
     """
     The recommendation is for a compare to prior exams
     to be completed.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure)
@@ -236,8 +198,6 @@ Description:  "ServiceRecommendations CodeSystem"
     This results in better tissue separation and allows
     better visualization of the area
     of the breast needing additional examination.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure)
@@ -249,8 +209,6 @@ Description:  "ServiceRecommendations CodeSystem"
     Spot views apply the compression to a smaller area
     of tissue using a small compression
     plate or 'cone'.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 44578009 | Core needle biopsy of breast (Procedure)
@@ -263,8 +221,6 @@ Description:  "ServiceRecommendations CodeSystem"
     from a mass or lump.
     The tissue is then examined under a microscope for
     any abnormalities.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
@@ -272,8 +228,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     Cranial-Caudal (CC) is a view from above the breast
     during a mammogram or ultrasound.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Cryoablation "Cryoablation"
@@ -286,8 +240,6 @@ Description:  "ServiceRecommendations CodeSystem"
     It may be used to treat a variety of skin conditions
     as well as tumors within the
     liver, kidneys, bones, lungs and breasts.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
@@ -301,8 +253,6 @@ Description:  "ServiceRecommendations CodeSystem"
     or discomfort.
     In some cases, specimens are sent to pathology.
     [www.carolmilgardbreastcenter.org > Cyst_Aspiration]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
@@ -312,8 +262,6 @@ Description:  "ServiceRecommendations CodeSystem"
     to remove fluid from
     the cyst, thereby decreasing the pressure.
     This is called aspiration for relief.
-    
-    Valid for the following modalities: US.
     """
 
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
@@ -325,8 +273,6 @@ Description:  "ServiceRecommendations CodeSystem"
     into an area of abnormal-appearing
     tissue or body fluid.
     [https://www.webmd.com > a-to-z-guides > fine-needle-aspiration]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #DiagnosticMammogram "Diagnostic Mammogram"
@@ -339,8 +285,6 @@ Description:  "ServiceRecommendations CodeSystem"
     the tissue.These signs may include
     a lump or breast pain.
     [https://www.nationalbreastcancer.org/diagnostic-mammogram]
-    
-    Valid for the following modalities: MG.
     """
 
   * #DrainageTube "Drainage tube"
@@ -352,8 +296,6 @@ Description:  "ServiceRecommendations CodeSystem"
     This is a common practice by surgeons or interventional
     radiologists.
     [https://en.wikipedia.org/wiki/Drain_(surgery)]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 420131003 | Fluoroscopic mammary ductography (Procedure)
@@ -373,8 +315,6 @@ Description:  "ServiceRecommendations CodeSystem"
     valuable in diagnosing intraductal papillomas and
     other conditions.
     [https://www.imaginis.com/mammography/ductogram-galactogram-imaging-the-breast-ducts]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399265009 | Exaggerated cranio-caudal projection (Qualifier)
@@ -402,8 +342,6 @@ Description:  "ServiceRecommendations CodeSystem"
     of the breast and the nipple
     in profile to be clearly displayed.
     [https://radiopaedia.org/articles/xccl-view?lang=us]
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription not matching
@@ -419,39 +357,29 @@ Description:  "ServiceRecommendations CodeSystem"
     can help make a diagnosis or rule out conditions
     such as cancer.
     [https://www.webmd.com/a-to-z-guides/fine-needle-aspiration#1]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Follow-up "Follow-up"
     """
     It is recommended to make a follow-up appointment.
-    
-    Valid for the following modalities: US.
     """
 
   * #Followup3Months "Followup 3 months"
     """
     It is recommended to make a follow-up appointment
     in 3 months.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Followup6Months "Followup 6 months"
     """
     It is recommended to make a follow-up appointment
     in 6 months.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #IfPreviousShowNoChange "If previous show no change"
     """
     The recommendation is for a if previous show no change
     to be completed.
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure) + QualifierValue | 399067008 | Lateral projection (Qualifier)
@@ -459,8 +387,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a Lateral magnification
     view to be completed on Mammogram and/or Ultrasound.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399352003 | Lateral-medial projection (Qualifier)
@@ -470,8 +396,6 @@ Description:  "ServiceRecommendations CodeSystem"
     For the LM view, the tube is lateral and the detector
     is placed medially
     LM view is best for evaluating medial lesions.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399067008 | Lateral projection (Qualifier)
@@ -484,8 +408,6 @@ Description:  "ServiceRecommendations CodeSystem"
     view (ML) or lateromedial view (LM)
     view depending on where the imaging tube and detector
     are located.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure) + QualifierValue | 399067008 | Lateral projection (Qualifier)
@@ -493,8 +415,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a Lateral with compression
     view to be completed on Mammogram.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure)+ QualifierValue | 399352003 | Lateral-medial projection (Qualifier)
@@ -502,8 +422,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a lateromedial oblique
     view to be completed on Mammogram and/or Ultrasound.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399352003 | Lateral-medial projection (Qualifier)
@@ -511,8 +429,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     The recommendation is for a lateromedial view to
     be completed on Mammogram and/or Ultrasound.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #LymphNodeAssessment "Lymph node assessment"
@@ -524,8 +440,6 @@ Description:  "ServiceRecommendations CodeSystem"
     or generalization of that
     process.
     [https://stanfordmedicine25.stanford.edu/the25/lymph.html]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure)
@@ -542,8 +456,6 @@ Description:  "ServiceRecommendations CodeSystem"
     This allows the acquisition of magnified images (1.5x
     to 2x magnification) of the
     region of interest. radiopaedia.org > articles > magnification-view-mammography
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure)
@@ -551,52 +463,38 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     A mammogram is an X-Ray picture of the breast.
     It is used to look for early signs of breast cancer.
-    
-    Valid for the following modalities: MRI.
     """
 
   * #Mammogram3MonthFollow-up "Mammogram 3 month follow-up"
     """
     A three month follow-up is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Mammogram6MonthFollow-up "Mammogram 6 month follow-up"
     """
     A six month follow-up is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #MammogramAndUltrasound3MonthFollow-up "Mammogram and ultrasound 3 month follow-up"
     """
     A three month follow-up with ultrasound is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #MammogramAndUltrasound6MonthFollow-up "Mammogram and ultrasound 6 month follow-up"
     """
     A six month follow-up with ultrasound is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier)
   * #MediolateralObliqueView "Mediolateral oblique view"
     """
     A mediolateral oblique view is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399260004 | Medial-lateral projection (Qualifier)
   * #MediolateralView "Mediolateral view"
     """
     A mediolateral view is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier)
@@ -604,8 +502,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     An additional MLO with compression view of the breast
     is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier)
@@ -613,38 +509,28 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     An additional MLO with magnification view of the
     breast is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241615005 | Magnetic resonance imaging of breast (Procedure)
   * #MRI "MRI"
     """
     An MRI is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 433008009 | Core needle biopsy of breast using magnetic resonance imaging guidance (Procedure)
   * #MRIBiopsy "MRI biopsy"
     """
     An MRI with biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #MRIFollow-up "MRI follow-up"
     """
     An MRI follow-up is recommended.
-    
-    Valid for the following modalities: MRI NM.
     """
 
   * #NeedleLocationAndSurgicalBiopsy "Needle location and surgical biopsy"
     """
     A Needle localization and surgical biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 442581004 | Nipple in profile mammography view (Qualifier)
@@ -657,8 +543,6 @@ Description:  "ServiceRecommendations CodeSystem"
     nipple line (an oblique line drawn straight back
     from the nipple.)
     [https://www.mammoguide.com/mammo-techniques.html]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
@@ -666,8 +550,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     An additional off angle CC view of the breast is
     recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier) +++++
@@ -675,8 +557,6 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     An additional off angle MLO  view of the breast is
     recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 116334007 | Stereotactically guided core needle biopsy of breast (Procedure) ++ POSSILE
@@ -693,8 +573,6 @@ Description:  "ServiceRecommendations CodeSystem"
     tiny masses that are not visible
     on ultrasound.
     [https://www.radiologyinfo.org/en/info.cfm?pg=breastbixr]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 44578009 | Core needle biopsy of breast (Procedure) ++ POSSIBLE
@@ -712,15 +590,11 @@ Description:  "ServiceRecommendations CodeSystem"
     the needle.
     Several cores are often removed.
     [https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/breast-biopsy/core-needle-biopsy-of-the-breast.html]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #PossibleDiagnosticMammogram "Possible Diagnostic Mammogram"
     """
     A possible diagnostic mammogram is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   * #PossibleStereotacticVacuumBiopsy "Possible stereotactic vacuum biopsy"
@@ -734,60 +608,44 @@ Description:  "ServiceRecommendations CodeSystem"
     computer generated coordinates of the concerning
     area of breast tissue.
     [https://www.genesishealth.com/care-treatment/cancer/treat/breast/diagnosis/sterotactic_vacuum/]
-    
-    Valid for the following modalities: MG.
     """
 
   * #PossibleSurgicalConsult "Possible surgical consult"
     """
     A possible surgical consultation may be recommended.
-    
-    Valid for the following modalities: NM.
     """
 
   * #PossibleSurgicalEvaluation "Possible surgical evaluation"
     """
     A possible surgical evaluation is recommended.
-    
-    Valid for the following modalities: NM.
     """
 
   * #PossibleUltrasound "Possible ultrasound"
     """
     A possible ultrasound is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using ultrasound guidance (Procedure) +++ POSSIBLE
   * #PossibleUltrasoundGuidedBiopsy "Possible ultrasound guided biopsy"
     """
     A possible ultrasound guided biopsy is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   * #PossibleVacuumBiopsy "Possible vacuum biopsy"
     """
     A possible vacuum biopsy is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
   * #RepeatCCView "Repeat CC view"
     """
     Another CC view of Mammogram is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399368009 | Medio-lateral oblique projection (Qualifier)
   * #RepeatMLOView "Repeat MLO view"
     """
     Another MLO view of Mammogram is recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 399197002 | Lateral rolling of breast (Procedure)
@@ -811,16 +669,12 @@ Description:  "ServiceRecommendations CodeSystem"
     of the nipple prior to applying
     compression.
     [https://radiopaedia.org/articles/rolled-cc-view-1?lang=us]
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 399226006 | Medial rolling of breast (Procedure)
   * #RolledMedialView "Rolled medial view"
     """
     A rolled medial view is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #ScintimammogramGuidedBiopsy "Scintimammogram Guided Biopsy"
@@ -835,8 +689,6 @@ Description:  "ServiceRecommendations CodeSystem"
     
     to the site of the imaging abnormality.
     [https://www.radiologyinfo.org/en/info.cfm?pg=breastbixr]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Scintimammography "Scintimammography"
@@ -857,8 +709,6 @@ Description:  "ServiceRecommendations CodeSystem"
     It can reduce unnecessary procedures by helping determine
     whether a biopsy is needed.
     [https://www.radiologyinfo.org/en/info.cfm?pg=scintimammo]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure)
@@ -882,24 +732,18 @@ Description:  "ServiceRecommendations CodeSystem"
     or a little cluster of faint microcalcifications
     in a dense area.
     [https://radiopaedia.org/articles/spot-view-mammography?lang=us]
-    
-    Valid for the following modalities: MG US NM.
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure) +++++
   * #SpotMagnificationViews "Spot magnification views"
     """
     Spot magnification views are recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription Procedure | 116334007 | Stereotactically guided core needle biopsy of breast (Procedure)
   * #StereotacticBx "Stereotactic bx"
     """
     A stereotactic biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #SuperolateralIOView "Superolateral IO view"
@@ -909,8 +753,6 @@ Description:  "ServiceRecommendations CodeSystem"
     This is the quadrant of the breast that is closest
     to the armpit.
     There are 4 quadrants in the anatomy of a breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 274331003 | Surgical biopsy of breast (Procedure)
@@ -926,133 +768,97 @@ Description:  "ServiceRecommendations CodeSystem"
     or incisional (removal of a piece of a lump or abnormal
     area).
     [https://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/tests-and-procedures/surgical-biopsy/?region=on]
-    
-    Valid for the following modalities: NM.
     """
 
   * #SurgicalConsult "Surgical consult"
     """
     A surgical consult is recommended.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Procedure | 274331003 | Surgical biopsy of breast (Procedure) ++++
   * #SurgicalConsultAndBiopsy "Surgical consult and biopsy"
     """
     A surgical consult and biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #SurgicalEvaluation "Surgical evaluation"
     """
     The recommendation is for a surgical evaluation.
-    
-    Valid for the following modalities: NM.
     """
 
   // .SnomedDescription Procedure | 237372000 | Excisional biopsy of breast (Procedure)
   * #SurgicalExcision "Surgical excision"
     """
     The recommendation is for a surgical excision.
-    
-    Valid for the following modalities: NM.
     """
 
   * #SurgicalOncologicEvaluation "Surgical oncologic evaluation"
     """
     The recommendation is for a surgical oncologic evaluation.
-    
-    Valid for the following modalities: NM.
     """
 
   * #SurgicalOncologicalConsult "Surgical oncological consult"
     """
     The recommendation is for a surgical oncologic consult.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #TangentialView "Tangential view"
     """
     A tangential view is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #TangentialViews "Tangential views"
     """
     Tangential views are recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
   * #Ultrasound "Ultrasound"
     """
     An ultrasound is recommended.
-    
-    Valid for the following modalities: MG MRI NM.
     """
 
   * #Ultrasound2ndLook "Ultrasound 2nd Look"
     """
     An additional ultrasound is recommended.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #Ultrasound3MonthFollow-up "Ultrasound 3 month follow-up"
     """
     An additional ultrasound is recommended in a 3 month
     follow-up.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Ultrasound6MonthFollow-up "Ultrasound 6 month follow-up"
     """
     An additional ultrasound is recommended in a 3 month
     follow-up.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription Procedure | 432550005 | Core needle biopsy of breast using ultrasound guidance (Procedure)
   * #UltrasoundGuidedBx "Ultrasound guided bx"
     """
     An ultrasound guided biopsy is recommended.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Procedure | 274331003 | Surgical biopsy of breast (Procedure)++++++++++++
   * #UltrasoundLocationAndSurgicalBiopsy "Ultrasound location and surgical biopsy"
     """
     An ultrasound localized and surgical biopsy is recommended.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #UltrasoundWithPossibleAddlitonalViews "Ultrasound with possible addlitonal views"
     """
     An ultrasound with possible additional views are
     recommended.
-    
-    Valid for the following modalities: MG.
     """
 
   * #Unspecified/Other "Unspecified / other"
     """
     Unspecified / other
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #VacuumBx "Vacuum Bx"
     """
     A vacuum biopsy is recommended.
-    
-    Valid for the following modalities: MG US.
     """

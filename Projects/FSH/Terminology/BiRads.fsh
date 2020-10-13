@@ -23,8 +23,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     Recall for additional imaging and/or comparison with
     prior examination(s)
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription ClinicalFinding | 397141009 | Mammography assessment (Category 2)
@@ -38,8 +36,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     It does not invade nearby tissue.
     Essentially 0% likelihood of malignancy.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription ClinicalFinding | 397143007 | Mammography assessment (Category 3)
@@ -59,8 +55,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     Six month follow-up and/or
     surveillance mammography is recommended.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription ClinicalFinding | 397144001 | Mammography assessment (Category 4)
@@ -76,8 +70,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     made using
     this category.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Not found
@@ -93,8 +85,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     Likelihood of malignancy is > 2% to <= 10% likelihood
     of malignancy.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Not found
@@ -107,8 +97,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     of
     malignancy.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription Not found
@@ -124,8 +112,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     95% likelihood of malignancy.
     It is more likely malignant versus benign.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription ClinicalFinding | 397145000 | Mammography assessment (Category 5)
@@ -137,8 +123,6 @@ Description:  "BiRads Assessment Category CodeSystem"
     value of at least 95%.
     Tissue Diagnosis is highly recommended or required.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #Category6 "Category 6 (Known Biopsy-Proven Malignancy)"
@@ -152,6 +136,4 @@ Description:  "BiRads Assessment Category CodeSystem"
     Mammograms may be used in this way to see how well
     the cancer is responding to treatment.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG US MRI NM.
     """

@@ -18,8 +18,6 @@ Description:  "Breast Body Location Regions CodeSystem"
     under the joint where the arm connects to the shoulder.
     It also contains many sweat glands.
     [https://en.wikipedia.org/wiki/Axilla]
-    
-    Valid for the following modalities: US.
     """
 
   // .SnomedDescription BodyStructure | 38412008 | Structure of axillary tail of breast (Bodypart)
@@ -35,8 +33,6 @@ Description:  "Breast Body Location Regions CodeSystem"
     deep fascia called foramen of
     Langer.
     [https://en.wikipedia.org/wiki/Tail_of_Spence]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #AxillaI "Axilla I"
@@ -69,15 +65,11 @@ Description:  "Breast Body Location Regions CodeSystem"
     The mass/lesion is located in the inframammary crease
     where the lower boundary of the breast and the chest
     meet.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #InSkin "In skin"
     """
     Located within the skin.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription BodyStructure | 49058007 | Structure of central portion of breast (Bodypart)
@@ -85,6 +77,4 @@ Description:  "Breast Body Location Regions CodeSystem"
     """
     Central to the nipple (central portion of the breast-behind
     the nipple).
-    
-    Valid for the following modalities: MG US.
     """

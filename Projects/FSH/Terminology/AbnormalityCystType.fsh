@@ -16,8 +16,6 @@ Description: "Cyst type CodeSystem."
     substances.
     Cysts can grow almost anywhere in the body or under
     the skin.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #CystComplex "Cyst complex"
@@ -34,8 +32,6 @@ Description: "Cyst type CodeSystem."
     testing may be needed to rule
     out breast cancer.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #CystComplicated "Cyst complicated"
@@ -49,9 +45,7 @@ Description: "Cyst type CodeSystem."
     solid components that a complex
     cyst has.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: MG US.
-    """
+     """
 
   * #CystMicro "Cyst micro"
     """
@@ -60,8 +54,6 @@ Description: "Cyst type CodeSystem."
     A Microcyst is small and less than 2-3 mm and are
     often in clusters and only show up on a mammogram
     or ultrasound.
-    
-    Valid for the following modalities: US.
     """
 
   * #CystOil "Cyst oil"
@@ -69,8 +61,6 @@ Description: "Cyst type CodeSystem."
     Oil cysts are filled with fluid that may feel smooth
     and soft/squishy.
     Oil cysts are caused by the breakdown of fatty tissue.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #CystSimple "Cyst simple"
@@ -78,8 +68,6 @@ Description: "Cyst type CodeSystem."
     A simple cyst is a sac-like pocket of membranous
     tissue that only contains clear
     fluid.
-    
-    Valid for the following modalities: MG US.
     """
 
   * #CystWithDebris "Cyst with debris"
@@ -88,6 +76,4 @@ Description: "Cyst type CodeSystem."
     It Is either considered a complex or complicated
     cyst.
     The type of debris determines what kind of cyst.
-    
-    Valid for the following modalities: MG US.
     """

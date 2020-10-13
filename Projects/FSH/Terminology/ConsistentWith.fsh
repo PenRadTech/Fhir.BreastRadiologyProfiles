@@ -20,8 +20,6 @@ Description:  "ConsistentWith CodeSystem"
     """
     An area within the body tissue that is swollen and
     contains an accumulation of pus.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 404057003
@@ -34,8 +32,6 @@ Description:  "ConsistentWith CodeSystem"
     Unlike other types of lipomas, angiolipomas are
     often painful or tender.
     [https://www.healthline.com/health/angiolipoma]
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 37009001 | Apocrine metaplasia of breast (Disorder) | [0/0] | N60.89
@@ -51,8 +47,6 @@ Description:  "ConsistentWith CodeSystem"
     biopsy as a mass or benign lesion,
     or possibly even develop into a palpable mass.
     [https://breast-cancer.ca/apo-meta/]
-    
-    Valid for the following modalities: US.
     """
 
   * #Artifact "Artifact"
@@ -70,8 +64,6 @@ Description:  "ConsistentWith CodeSystem"
     errors while processing the films
     patient movement while taking the image.
     [https://radiopaedia.org/articles/x-ray-artifacts?lang=us]
-    
-    Valid for the following modalities: NM.
     """
 
   * #AtypicalHyperplasia "Atypical hyperplasia"
@@ -89,8 +81,6 @@ Description:  "ConsistentWith CodeSystem"
     noninvasive breast cancer (carcinoma
     in situ) or invasive breast cancer.
     [https://www.mayoclinic.org/diseases-conditions/atypical-hyperplasia/symptoms-causes/syc-20369773]
-    
-    Valid for the following modalities: MRI.
     """
 
   // .SnomedDescription BodyStructure | 245269009 | Axillary lymph node group (Bodypart)
@@ -107,8 +97,6 @@ Description:  "ConsistentWith CodeSystem"
     cells.
     They are a part of the lymph system of the body.
     [https://www.verywellhealth.com/axillary-lymph-nodes-2252131]
-    
-    Valid for the following modalities: NM.
     """
 
   // .SnomedDescription ClinicalFinding | 254838004 | Carcinoma of breast (Disorder) | [4/33] | C50.929
@@ -117,8 +105,6 @@ Description:  "ConsistentWith CodeSystem"
     Carcinoma is a type of cancer that starts in cells
     that make up the skin or the tissue
     lining organs.
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .SnomedDescription ClinicalFinding | 254838004 | Carcinoma of breast (Disorder) | [4/33] | C50.929
@@ -142,8 +128,6 @@ Description:  "ConsistentWith CodeSystem"
     (milk-producing glands).
     www.mayoclinic.org > cancer > diagnosis-treatment >
     drc-20370594
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 399294002
@@ -156,8 +140,6 @@ Description:  "ConsistentWith CodeSystem"
     be large and uncomfortable.
     Sometimes there are clusters of cysts in one breast
     or both.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 399294002
@@ -170,8 +152,6 @@ Description:  "ConsistentWith CodeSystem"
     be large and uncomfortable.
     Sometimes there are clusters of cysts in one breast
     or both.
-    
-    Valid for the following modalities: MG MRI.
     """
 
   // .Snomed 449837001
@@ -190,8 +170,6 @@ Description:  "ConsistentWith CodeSystem"
     testing may be needed to rule
     out breast cancer.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #CystComplicated "Cyst complicated"
@@ -205,8 +183,6 @@ Description:  "ConsistentWith CodeSystem"
     solid components that a complex
     cyst has.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #CystOil "Cyst oil"
@@ -214,8 +190,6 @@ Description:  "ConsistentWith CodeSystem"
     Oil cysts are filled with fluid that may feel smooth
     and squishy.
     Oil cysts are caused by the breakdown of fatty tissue.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .Snomed 76649007
@@ -232,8 +206,6 @@ Description:  "ConsistentWith CodeSystem"
     they may become uncomfortable if
     they go unchecked.
     www.healthline.com > health > sebaceous-cyst
-    
-    Valid for the following modalities: US.
     """
 
   // .Snomed 399253005
@@ -248,8 +220,6 @@ Description:  "ConsistentWith CodeSystem"
     there are no solid areas.
     Simple cysts are always benign.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .Snomed 449837001
@@ -268,8 +238,6 @@ Description:  "ConsistentWith CodeSystem"
     testing may be needed to rule
     out breast cancer.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #CystsComplicated "Cysts complicated"
@@ -283,8 +251,6 @@ Description:  "ConsistentWith CodeSystem"
     solid components that a complex
     cyst has.
     [https://www.breastcancer.org/symptoms/benign/cysts]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #CystsMicroClustered "Cysts micro clustered"
@@ -293,8 +259,6 @@ Description:  "ConsistentWith CodeSystem"
     Clustered microcysts are a cluster of these tiny
     cysts and only have fluid inside
     of them.
-    
-    Valid for the following modalities: US.
     """
 
   // .SnomedDescription BodyStructure | 399935008 | Ductal carcinoma in situ - category (Morphologic-Abnormality)
@@ -308,16 +272,12 @@ Description:  "ConsistentWith CodeSystem"
     of the milk duct and has a low
     risk of becoming invasive.
     [https://www.mayoclinic.org/diseases-conditions/dcis/symptoms-causes/syc-20371889]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #Debris "Debris"
     """
     Debris is a substance that is anything other than
     a liquid inside of the cyst.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .Snomed 39432004
@@ -333,8 +293,6 @@ Description:  "ConsistentWith CodeSystem"
     may have direct activity in breast
     tissue.
     [https://www.cancer.gov/about-cancer/causes-prevention/risk/myths/antiperspirants-fact-sheet]
-    
-    Valid for the following modalities: MG.
     """
 
   * #DermalCalcification "Dermal calcification"
@@ -348,8 +306,6 @@ Description:  "ConsistentWith CodeSystem"
     extend into small glands in the
     skin.
     [https://radiopaedia.org/articles/skin-calcification-in-breast?lang=us]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription ClinicalFinding | 22049009 | Mammary duct ectasia (Disorder) | [0/0] | N60.49
@@ -362,8 +318,6 @@ Description:  "ConsistentWith CodeSystem"
     may be accompanied by inflammation and infiltration
     by plasma cells.
     [https://www.hoafredericksburg.com/duct-ectasia/]
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .Snomed 290077003
@@ -379,8 +333,6 @@ Description:  "ConsistentWith CodeSystem"
     by breast, lymphatic drainage
     obstruction, or by congestive heart failure.
     [https://www.researchgate.net/publication/7988898_Unilateral_Breast_Edema_Spectrum_of_Etiologies_and_Imaging_Appearances]
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .SnomedDescription no direct match possible fat necrosis?
@@ -398,8 +350,6 @@ Description:  "ConsistentWith CodeSystem"
     The connective tissue (or stroma) in the breast is
     composed of various proportions
     of fat and fibrous tissue.
-    
-    Valid for the following modalities: US.
     """
 
   // .Snomed 21381006
@@ -417,8 +367,6 @@ Description:  "ConsistentWith CodeSystem"
     term used to describe damaged
     or dead tissue).
     [https://breastcancernow.org/information-support/have-i-got-breast-cancer/breast-pain-other-benign-conditions/fat-necrosis]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #Fibroadenolipoma "Fibroadenolipoma"
@@ -432,8 +380,6 @@ Description:  "ConsistentWith CodeSystem"
     which is why the lesions are considered
     hamartomatous.
     [https://radiopaedia.org/articles/breast-hamartoma?lang=us]
-    
-    Valid for the following modalities: MG US.
     """
 
   * #Fibroadenoma "Fibroadenoma"
@@ -446,8 +392,6 @@ Description:  "ConsistentWith CodeSystem"
     in women of any age.
     They tend to shrink after a woman goes through menopause.
     [https://www.cancer.org/cancer/breast-cancer/non-cancerous-breast-conditions/fibroadenomas-of-the-breast.html]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   * #FibroadenomaDegenerating "Fibroadenoma degenerating"
@@ -456,8 +400,6 @@ Description:  "ConsistentWith CodeSystem"
     Fibroadenomas usually go away with age.
     By the time an individual is menopausal, Fibroadenomas
     degenerate.
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 367647000
@@ -473,8 +415,6 @@ Description:  "ConsistentWith CodeSystem"
     lumpy or rope-like in texture.
     This is called nodular or glandular breast tissue.
     [https://www.mayoclinic.org/diseases-conditions/fibrocystic-breasts/symptoms-causes/syc-20350438]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #FibroglandularTissue "Fibroglandular tissue"
@@ -488,8 +428,6 @@ Description:  "ConsistentWith CodeSystem"
     lumpy or rope-like in texture.
     This is called nodular or glandular breast tissue.
     [https://www.mayoclinic.org/diseases-conditions/fibrocystic-breasts/symptoms-causes/syc-20350438]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription ???????????
@@ -502,8 +440,6 @@ Description:  "ConsistentWith CodeSystem"
     When fibrosis occurs in response to injury, the term
     'scarring' is used.
     [https://www.news-medical.net/health/What-is-Fibrosis.aspx]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #FibrousRidge "Fibrous ridge"
@@ -516,8 +452,6 @@ Description:  "ConsistentWith CodeSystem"
     and form a prominent ridge called
     the inframammary ridge.
     [https://www.stjoeshealth.org/find-a-service-or-specialty/womens-health/]
-    
-    Valid for the following modalities: US.
     """
 
   // .SnomedDescription ClinicalFinding | 13600006 | Folliculitis (Disorder) | [6/113] | L73.9
@@ -533,8 +467,6 @@ Description:  "ConsistentWith CodeSystem"
     lesions that are painful and
     usually firm.
     [https://www.hopkinsmedicine.org/health/conditions-and-diseases/folliculitis-boils-and-carbuncles]
-    
-    Valid for the following modalities: US.
     """
 
   * #Gynecomastia "Gynecomastia"
@@ -545,8 +477,6 @@ Description:  "ConsistentWith CodeSystem"
     that are too high or are out of
     balance with testosterone levels.
     [https://my.clevelandclinic.org/health/diseases/16227-enlarged-male-breast-tissue-gynecomastia]
-    
-    Valid for the following modalities: US.
     """
 
   // .Snomed 51398009
@@ -558,8 +488,6 @@ Description:  "ConsistentWith CodeSystem"
     normally found in the area of the body where the
     growth occurs.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hamartoma]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 302924003
@@ -575,8 +503,6 @@ Description:  "ConsistentWith CodeSystem"
     that mimics the shape of a breast
     tumor.
     [https://www.verywellhealth.com/breast-hematomas-430281]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #HormonalStimulation "Hormonal stimulation"
@@ -588,8 +514,6 @@ Description:  "ConsistentWith CodeSystem"
     development of rudimentary breast
     tissue.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: US.
     """
 
   * #IntracysticLesion "Intracystic lesion"
@@ -599,8 +523,6 @@ Description:  "ConsistentWith CodeSystem"
     and aspiration cytology, it is difficult to distinguish
     cancer from a benign tumor.
     [https://www.ncbi.nlm.nih.gov/pubmed/11911303]
-    
-    Valid for the following modalities: US NM.
     """
 
   // .SnomedDescription BodyStructure | 443159006 | Intramammary lymph node group (Bodypart)
@@ -618,8 +540,6 @@ Description:  "ConsistentWith CodeSystem"
     the lymphatic drainage of the breast
     parallels the venous drainage.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 276891009
@@ -636,8 +556,6 @@ Description:  "ConsistentWith CodeSystem"
     Some people have more than one lipoma.A lipoma isn't
     cancer and usually is harmless.
     www.mayoclinic.org > lipoma > symptoms-causes > syc-20374470
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription BodyStructure | 261719000 | Breast cavity (Morphologic-Abnormality)
@@ -649,8 +567,6 @@ Description:  "ConsistentWith CodeSystem"
     The cavity is the hollow area or hole left behind
     after the tumor and surrounding
     tissue is removed.
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .SnomedDescription BodyStructure | 261719000 | Breast cavity (Morphologic-Abnormality)
@@ -658,8 +574,6 @@ Description:  "ConsistentWith CodeSystem"
     """
     The area of the breast where the incision is made
     during the lumpectomy.
-    
-    Valid for the following modalities: MRI.
     """
 
   * #LymphNode "Lymph node"
@@ -680,8 +594,6 @@ Description:  "ConsistentWith CodeSystem"
     the axilla.
     Also called lymph gland.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/lymph-node]
-    
-    Valid for the following modalities: MG US MRI NM.
     """
 
   // .Snomed 274741002
@@ -697,8 +609,6 @@ Description:  "ConsistentWith CodeSystem"
     a vital role in the body's immune
     system.
     Swollen lymph nodes are also known as swollen glands.
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #LymphNodeNormal "Lymph node normal"
@@ -717,8 +627,6 @@ Description:  "ConsistentWith CodeSystem"
     A normal sized lymph node is about pea-sized or bean-sized
     (or smaller than 1/2 inch
     or 12mm).
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #LymphNodePathological "Lymph node pathological"
@@ -731,8 +639,6 @@ Description:  "ConsistentWith CodeSystem"
     architecture (e.g.
     cystic or necrotic nodes).
     [https://radiopaedia.org/articles/lymph-node-enlargement?lang=us]
-    
-    Valid for the following modalities: MRI.
     """
 
   * #MassSolid "Mass solid"
@@ -748,8 +654,6 @@ Description:  "ConsistentWith CodeSystem"
     Leukemias (cancer of the blood) generally do not
     form solid mass/tumors.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/solid-tumor]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   * #MassSolidW/tumorVasc "Mass solid w/tumor vasc"
@@ -776,8 +680,6 @@ Description:  "ConsistentWith CodeSystem"
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/solid-tumor ]
     
     https://www.cancer.gov/publications/dictionaries/cancer-terms/def/vascular-tumor
-    
-    Valid for the following modalities: MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 45198002 | Mastitis (Disorder) | [3/51] | P39.0 | Neonatal infective mastitis | N61 | Inflammatory disorders of breast |
@@ -785,8 +687,6 @@ Description:  "ConsistentWith CodeSystem"
     """
     Infection of the breast tissue resulting in pain,
     swelling, warmth and redness.
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Dicom F-01765
@@ -800,8 +700,6 @@ Description:  "ConsistentWith CodeSystem"
     This sort of colloidal calcium suspension layering
     can occur in various regions.
     [https://radiopaedia.org/articles/milk-of-calcium-disambiguation?lang=us]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Multi-focalCancer "Multi-focal cancer"
@@ -812,8 +710,6 @@ Description:  "ConsistentWith CodeSystem"
     The tumors are also all in the same quadrant - or
     section - of the breast.
     [https://www.healthline.com/health/breast-cancer/multifocal-breast-cancer]
-    
-    Valid for the following modalities: NM.
     """
 
   // .SnomedDescription need help
@@ -830,8 +726,6 @@ Description:  "ConsistentWith CodeSystem"
     of a palpable breast mass or unilateral spontaneous
     nipple discharge.
     [https://ecancer.org/es/journal/article/461-breast-papillary-lesions-an-analysis-of-70-cases]
-    
-    Valid for the following modalities: MG US.
     """
 
   // .Snomed 99571000119102
@@ -845,8 +739,6 @@ Description:  "ConsistentWith CodeSystem"
     tissue and blood vessels (called
     fibrovascular tissue).
     [https://www.cancer.org/cancer/breast-cancer/non-cancerous-breast-conditions/intraductal-papillomas.html]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 712989008 | Phyllodes tumor of breast (Disorder) | D48.6 |
@@ -872,8 +764,6 @@ Description:  "ConsistentWith CodeSystem"
     to reduce the risk of a phyllodes tumor coming back
     in the breast (local recurrence).
     [https://www.breastcancer.org/symptoms/types/phyllodes]
-    
-    Valid for the following modalities: US MRI.
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
@@ -893,8 +783,6 @@ Description:  "ConsistentWith CodeSystem"
     appear a little firmer or
     rounder than before surgery and/or radiation.
     [https://www.breastcancer.org/treatment/side_effects/scar_tissue]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
@@ -906,24 +794,18 @@ Description:  "ConsistentWith CodeSystem"
     The amount of scarring is connected to the different
     stages of wound healing.
     Surgical scar care should be continued for a year.
-    
-    Valid for the following modalities: MG NM.
     """
 
   * #PreviousBiopsy "Previous biopsy"
     """
     Findings on mammogram are  consistent with previous
     biopsy.
-    
-    Valid for the following modalities: MG.
     """
 
   * #PreviousSurgery "Previous surgery"
     """
     Findings on mammogram are consistent with previous
     surgery.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription ClinicalFinding | 62112002 | Injury of breast (Disorder) | [4/41] | S29.9XX?
@@ -931,8 +813,6 @@ Description:  "ConsistentWith CodeSystem"
     """
     Findings on mammogram are consistent with previous
     trauma to breast.
-    
-    Valid for the following modalities: MG.
     """
 
   // .Snomed 390787006
@@ -951,8 +831,6 @@ Description:  "ConsistentWith CodeSystem"
     Another term for this condition is complex sclerosing
     lesions.
     [https://www.breastcancer.org/symptoms/benign/radial-scars]
-    
-    Valid for the following modalities: MG US.
     """
 
   // .Snomed 143501000119107
@@ -962,8 +840,6 @@ Description:  "ConsistentWith CodeSystem"
     Radiation levels during radiation therapy may change
     as a result of side effects
     or to complete a more aggressive cancer treatment.
-    
-    Valid for the following modalities: MRI.
     """
 
   // .Snomed 429479009
@@ -984,8 +860,6 @@ Description:  "ConsistentWith CodeSystem"
     the body.
     Also called irradiation and radiotherapy.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/44971]
-    
-    Valid for the following modalities: MRI.
     """
 
   * #Scar "Scar"
@@ -995,8 +869,6 @@ Description:  "ConsistentWith CodeSystem"
     A scar is fibrous tissue made of collagen that replaces
     the injured skin.
     [https://www.breastcancer.org/treatment/side_effects/scar_tissue]
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #ScarWithShadowing "Scar with shadowing"
@@ -1010,8 +882,6 @@ Description:  "ConsistentWith CodeSystem"
     a scar from a carcinoma, which has
     shadowing arising from a central mass.
     onlinelibrary.wiley.com > doi > full > jum.2004.23.1.73
-    
-    Valid for the following modalities: US MRI.
     """
 
   * #SclerosingAdenosis "Sclerosing adenosis"
@@ -1022,8 +892,6 @@ Description:  "ConsistentWith CodeSystem"
     The normal lobular architecture of the breast is
     maintained, but becomes exaggerated
     and distorted.
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription ??????????????
@@ -1036,8 +904,6 @@ Description:  "ConsistentWith CodeSystem"
     Usually bilateral and symmetric and may appear lucent-centered.
     Also known as plasma cell mastitis.
     [https://radiopaedia.org/cases/secretory-calcifications?lang=us]
-    
-    Valid for the following modalities: MG.
     """
 
   * #SentinelNode "Sentinel node"
@@ -1050,8 +916,6 @@ Description:  "ConsistentWith CodeSystem"
     The sentinel nodes are removed and analyzed in a
     laboratory.
     [https://www.mayoclinic.org/tests-procedures/sentinel-node-biopsy/about/pac-20385264]
-    
-    Valid for the following modalities: NM.
     """
 
   // .Snomed 297178008
@@ -1066,8 +930,6 @@ Description:  "ConsistentWith CodeSystem"
     that contains protein, but no blood
     cells or pus.
     [https://www.verywellhealth.com/seroma-medical-definition-430372]
-    
-    Valid for the following modalities: MG US MRI.
     """
 
   // .Snomed 126510002
@@ -1083,8 +945,6 @@ Description:  "ConsistentWith CodeSystem"
     Secondary skin lesions are the result of irritated
     or manipulated primary skin lesions.
     [https://www.healthline.com/health/skin-lesions]
-    
-    Valid for the following modalities: MG.
     """
 
   * #Surgery "Surgery"
@@ -1095,8 +955,6 @@ Description:  "ConsistentWith CodeSystem"
     or otherwise physically changing
     body tissues and organs.
     [https://www.medicinenet.com/script/main/art.asp?articlekey=5603]
-    
-    Valid for the following modalities: MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 62112002 | Injury of breast (Disorder)
@@ -1104,8 +962,6 @@ Description:  "ConsistentWith CodeSystem"
     """
     Previous injury to breast consistent with surgery,
     infection, etc.
-    
-    Valid for the following modalities: MRI.
     """
 
   // .SnomedDescription ClinicalFinding | 396779001 | Breast arterial calcification (Finding) | [0/0] | R92.1
@@ -1124,8 +980,6 @@ Description:  "ConsistentWith CodeSystem"
     may be needed to further characterize
     their nature.
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 38]
-    
-    Valid for the following modalities: MG.
     """
 
   // .SnomedDescription ClinicalFinding | 71897006 | Venous stasis (Finding) | [0/0] | I87.8
@@ -1138,6 +992,4 @@ Description:  "ConsistentWith CodeSystem"
     leaks out of the veins and into
     the skin.
     [https://www.webmd.com/skin-problems-and-treatments/eczema/venous-stasis-dermatitis#1]
-    
-    Valid for the following modalities: NM.
     """

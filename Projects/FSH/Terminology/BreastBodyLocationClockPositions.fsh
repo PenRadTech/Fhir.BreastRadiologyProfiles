@@ -19,8 +19,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     1 o'clock position is at the 1 o'clock position and
     in the Upper Inner Quandrant
     (UIQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129773009 | 2 o'clock position on mammogram (Finding) | [0/0] |
@@ -32,8 +30,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     2 o'clock position is at the 2 o'clock position and
     in the Upper Inner Quandrant
     (UIQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129774003 | 3 o'clock position on mammogram (Finding) | [0/0] |
@@ -43,8 +39,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     the position of the tumor
     in the breast.
     3 o'clock position is at the 3 o'clock position.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129775002 | 4 o'clock position on mammogram (Finding) | [0/0] |
@@ -56,8 +50,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     4 o'clock position is at the 4 o'clock position and
     in the Lower Inner Quandrant
     (LIQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129776001 | 5 o'clock position on mammogram (Finding) | [0/0] |
@@ -69,8 +61,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     5 o'clock position is at the 5 o'clock position and
     in the Lower Inner Quandrant
     (LIQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129777005 | 6 o'clock position on mammogram (Finding) | [0/0] |
@@ -80,8 +70,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     the position of the tumor
     in the breast.
     6 o'clock position is at the 6 o'clock position.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129778000 | 7 o'clock position on mammogram (Finding) | [0/0] |
@@ -93,8 +81,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     7 o'clock position is at the 7 o'clock position and
     in the Lower Outer Quandrant
     (LOQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129779008 | 8 o'clock position on mammogram (Finding) | [0/0] |
@@ -106,8 +92,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     8 o'clock position is at the 8 o'clock position and
     in the Lower Outer Quandrant
     (LOQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129780006 | 9 o'clock position on mammogram (Finding) | [0/0] |
@@ -117,8 +101,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     the position of the tumor
     in the breast.
     9 o'clock position is at the 9 o'clock position.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129781005 | 10 o'clock position on mammogram (Finding) | [0/0] |
@@ -130,8 +112,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     10 o'clock position is at the 10 o'clock position
     and in the Upper Outer Quandrant
     (UOQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129782003 | 11 o'clock position on mammogram (Finding) | [0/0] |
@@ -143,8 +123,6 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     11 o'clock position is at the 11 o'clock position
     and in the Upper Outer Quandrant
     (UOQ) of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription ClinicalFinding | 129783008 | 12 o'clock position on mammogram (Finding) | [0/0] |
@@ -154,6 +132,4 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     the position of the tumor
     in the breast.
     12 o'clock position is at the 12 o'clock position.
-    
-    Valid for the following modalities: MG US.
     """

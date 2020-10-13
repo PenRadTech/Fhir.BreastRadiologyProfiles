@@ -17,8 +17,6 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     The lower inside (closest to the cleavage of the
     breasts) quadrant of each breast.
     There are 4 quadrants to the anatomy of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription BodyStructure | 33564002 | Structure of lower outer quadrant of breast (Bodypart)
@@ -27,8 +25,6 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     The upper inside (closest to the armpit of each breast)
     quadrant of each breast.
     There are 4 quadrants to the anatomy of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription BodyStructure | 77831004 | Structure of upper inner quadrant of breast (Bodypart)
@@ -37,8 +33,6 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     The upper inside (closest to the cleavage of the
     breasts) quadrant of each breast.
     There are 4 quadrants to the anatomy of the breast.
-    
-    Valid for the following modalities: MG US.
     """
 
   // .SnomedDescription BodyStructure | 76365002 | Structure of upper outer quadrant of breast (Bodypart)
@@ -47,6 +41,4 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     The upper outside (closest to the armpit on each
     breast) quadrant of each breast.
     There are 4 quadrants to the anatomy of the breast.
-    
-    Valid for the following modalities: MG US.
     """
