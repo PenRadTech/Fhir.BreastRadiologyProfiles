@@ -5,8 +5,7 @@ Description: """
     Other Finding
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#usFindingObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#usFindingObservation", "Code")
 
   #apply Observation.SectionFragment()
 
@@ -34,5 +33,9 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("Z", "Other Findings")
 

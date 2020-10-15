@@ -8,16 +8,22 @@ Description: """
   * . ^definition = """
     This resource contains information about an associated feature observation.
      
-    The feature observed is defined by the codeable concept in the value[x] field.
+    The feature observed is defined by the festureType conponent slice.
     """
-
-  * code 1..1
   * code = ObservationCodesCS#associatedFeaturesObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains featureType 1..1
   * component[featureType] ^short = "Associated Feature Type component."
   * component[featureType] ^comment = """
@@ -35,9 +41,17 @@ Description: """
     This code identifies the Associated Feature Type component.
 	"""
   * component[featureType].code = ObservationComponentSliceCodesCS#featureType
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[featureType].value[x] 1..1
   * component[featureType].value[x] only CodeableConcept
   * component[featureType].value[x] from AssociatedFeatureVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
@@ -62,6 +76,10 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -83,5 +101,17 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

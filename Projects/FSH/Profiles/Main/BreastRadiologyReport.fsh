@@ -20,6 +20,15 @@ Description: """
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
 
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
-  * code = LOINC#10193-1
+  * code = ObservationCodesCS#LOINC#10193-1
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
   * specimen 0..0
   * result 0..0
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

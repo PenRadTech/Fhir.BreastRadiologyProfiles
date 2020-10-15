@@ -5,8 +5,7 @@ Description: """
     Mammography Finding
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#mgFindingObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#mgFindingObservation", "Code")
 
   #apply Observation.SectionFragment()
 
@@ -117,5 +116,9 @@ Description: """
   #apply IGGroupMemberProfile("MGResources", "%Title%")
  
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("A", "Mg Findings")
 

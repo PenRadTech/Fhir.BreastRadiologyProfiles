@@ -10,6 +10,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -25,6 +29,18 @@ Description: """
     This code identifies the Not Previously Seen component.
 	"""
   * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

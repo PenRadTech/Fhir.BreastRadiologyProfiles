@@ -4,9 +4,11 @@ Title: "Mammography Breast Density"
 Description: """
     Mammography Breast Density
     """
-
-  * code 1..1
   * code = ObservationCodesCS#mgBreastDensityObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
@@ -28,3 +30,7 @@ Description: """
   * value[x] only CodeableConcept
   * value[x] 1..1
   * value[x] = ObservationCodesCS#mgBreastDensityObservation
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

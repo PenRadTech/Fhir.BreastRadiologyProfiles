@@ -89,6 +89,19 @@
   `  },
 #end
 
+//
+// Add a graph legend item.
+//
+#macro Graph.Legend(Legend, Item, CssClass) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
+  `  {
+  `    "legend" : {
+  `      "legendName" : "Legend",
+  `      "item" : "Item",
+  `      "cssClass": "CssClass"
+  `    }
+  `  },
+#end
+
 
 #macro Graph.LinkByName(TraversalName, SourceName, TargetName, Depth, %Key%) > "%GraphDir%\\%BaseDir%\\%BaseName%.nodeGraph"
   `  {

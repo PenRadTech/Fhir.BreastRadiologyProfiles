@@ -19,9 +19,6 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-  #
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
   # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
@@ -30,4 +27,10 @@
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
   #
   #apply Observation.Component.SetConcept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
 #end

@@ -10,6 +10,18 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains tumorSatellite 0..*
   * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
   * hasMember[tumorSatellite] only Reference(TumorSatellite)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

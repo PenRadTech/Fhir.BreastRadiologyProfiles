@@ -5,8 +5,7 @@ Description: """
     Mammography Calcification
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityCalcificationObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityCalcificationObservation", "Code")
   
   #apply Observation.Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
   #	 """
@@ -47,5 +46,8 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("", "Calcification")
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.NodeProfile("", "Calcification")

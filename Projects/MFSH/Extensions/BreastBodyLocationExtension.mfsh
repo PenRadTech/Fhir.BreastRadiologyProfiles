@@ -69,6 +69,9 @@ Description: """
 
   #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeExtension("", "BreastBodyLocation")
 
 

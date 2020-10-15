@@ -11,6 +11,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
   * component[obsDistribution] ^comment = """
@@ -28,9 +32,17 @@ Description: """
     This code identifies the Observed distribution of abnormalities component.
 	"""
   * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsDistribution].value[x] 1..1
   * component[obsDistribution].value[x] only CodeableConcept
   * component[obsDistribution].value[x] from CalcificationDistributionVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define distribution region size.
   * component contains obsDistRegionSize 0..1
   * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
@@ -61,8 +73,16 @@ Description: """
 	"""
   * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

@@ -32,6 +32,9 @@
   #apply once Graph.NodeFragment("%FTitle%")
   #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeElement("", "bodySite", "BodySite")
   #apply Graph.NodeElement("", "bodySite.extension", "extension")
   #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/bodySite/$", "0", "Cmp")

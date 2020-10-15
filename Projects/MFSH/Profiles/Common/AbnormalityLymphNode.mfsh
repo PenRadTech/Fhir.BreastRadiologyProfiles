@@ -6,8 +6,7 @@ Description: """
   LymphNode Abnormality
   """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityLymphNodeObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#bnormalityLymphNodeObservation", "Code")
 
   #apply Observation.Component.Add("lymphNodeType", "1..1", "Lymph Node Abnormality Type", "Lymph Node Abnormality Type",
   #	 """
@@ -54,4 +53,8 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Cyst")

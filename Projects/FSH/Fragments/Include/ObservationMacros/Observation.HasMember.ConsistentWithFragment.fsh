@@ -10,6 +10,18 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

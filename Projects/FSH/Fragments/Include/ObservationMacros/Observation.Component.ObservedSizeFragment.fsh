@@ -11,6 +11,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
@@ -35,8 +39,16 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity from UNITSOFLENGTH
   * component[obsSize].valueRange.low from UNITSOFLENGTH
   * component[obsSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

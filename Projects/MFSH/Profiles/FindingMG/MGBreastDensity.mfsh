@@ -5,8 +5,7 @@ Description: """
     Mammography Breast Density
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#mgBreastDensityObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#mgBreastDensityObservation", "Code")
 
   #apply Observation.LeafFragment()
   #apply Observation.Component.Zero()
@@ -29,5 +28,9 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Breast Density")
 

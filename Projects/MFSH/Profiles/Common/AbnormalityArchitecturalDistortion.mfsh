@@ -5,8 +5,7 @@ Description: """
     Mammography Architectural Distortion
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityArchitecturalDistortionObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityArchitecturalDistortionObservation", "Code")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
@@ -37,7 +36,9 @@ Description: """
 
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
 
-
-
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Architectural Distortion")

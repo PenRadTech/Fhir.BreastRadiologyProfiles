@@ -10,6 +10,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -31,5 +35,13 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

@@ -10,6 +10,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -25,6 +29,18 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

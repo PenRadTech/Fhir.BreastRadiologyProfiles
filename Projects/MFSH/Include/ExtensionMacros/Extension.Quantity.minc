@@ -1,7 +1,5 @@
 #macro Extension.Quantity(SliceName, DisplayName, Cardinality, UnitsCS, Short, Definition)
   #apply Extension.Configure()
-  #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
  
   * extension contains SliceName Cardinality
   * extension[SliceName] ^short = "Short"
@@ -12,4 +10,10 @@
   * extension[SliceName].value[x] 1..1
   * extension[SliceName].value[x] only Quantity
   * extension[SliceName].valueQuantity from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
 #end

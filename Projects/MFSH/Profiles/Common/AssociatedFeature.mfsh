@@ -8,11 +8,10 @@ Description: """
   * . ^definition = """
     This resource contains information about an associated feature observation.
      
-    The feature observed is defined by the codeable concept in the value[x] field.
+    The feature observed is defined by the festureType conponent slice.
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#associatedFeaturesObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#associatedFeaturesObservation", "Code")
 
   #apply Observation.Component.Add("featureType", "1..1", "Feature Type", "Associated Feature Type",
   #	 """
@@ -53,5 +52,9 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Associated Feature")
 

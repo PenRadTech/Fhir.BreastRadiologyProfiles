@@ -28,7 +28,6 @@ Description: """
   * section contains relatedResources 0..1 MS
   * section contains recommendations 0..1 MS
   * section contains admin 0..1 MS
-  
   * section[report] ^definition = """
     This section references the Breast Radiology Report.
 
@@ -45,6 +44,10 @@ Description: """
   * section[report].entry ^definition = """
     Reference to the Breast Radiology Report.
 	"""
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[impressions] ^definition = """
     This section contains references to the report's clinical impressions.
     """
@@ -60,6 +63,10 @@ Description: """
   * section[impressions].entry ^definition = """
     Reference to the clinical impression(s).
     """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[findingsRightBreast] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
@@ -75,6 +82,10 @@ Description: """
   * section[findingsRightBreast].entry ^definition = """
   Reference to the finding for the Right breast.
   """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[findingsLeftBreast] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
@@ -90,6 +101,10 @@ Description: """
   * section[findingsLeftBreast].entry ^definition = """
   Reference to the finding for the Left breast.
   """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[relatedResources] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
 
@@ -109,6 +124,10 @@ Description: """
   * section[relatedResources].entry ^definition = """
   Reference to related resources.
   """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[recommendations] ^definition = """
     This section contains references to recommended actions 
 	taken in response to the observations and findings of this report.
@@ -124,6 +143,10 @@ Description: """
   * section[recommendations].entry ^definition = """
   Reference to any recommendations.
   """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * section[admin] ^definition = """
     References to all administrative resources go here.
   """
@@ -138,3 +161,11 @@ Description: """
   * section[admin].entry ^definition = """
   Reference to any administrative resource.
   """
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

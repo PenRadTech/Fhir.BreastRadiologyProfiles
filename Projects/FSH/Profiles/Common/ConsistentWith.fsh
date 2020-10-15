@@ -8,10 +8,11 @@ Description: """
   * . ^definition = """
     Consistent With Observation.
 	"""
-
-
-  * code 1..1
   * code = ObservationCodesCS#consistentWithObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
@@ -39,6 +40,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains consistentWith 1..1
   * component[consistentWith] ^short = "Consistent With component."
   * component[consistentWith] ^comment = """
@@ -57,9 +62,17 @@ Description: """
     This code identifies the Consistent With component.
 	"""
   * component[consistentWith].code = ObservationComponentSliceCodesCS#consistentWithValue
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[consistentWith].value[x] 1..1
   * component[consistentWith].value[x] only CodeableConcept
   * component[consistentWith].value[x] from ConsistentWithVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
 
 
   // Define Consistent With Qualifier Slice
@@ -78,6 +91,14 @@ Description: """
     This code identifies the Consistent With Qualifier component.
 	"""
   * component[qualifier].code = ObservationComponentSliceCodesCS#consistentWithQualifier
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[qualifier].value[x] 0..1
   * component[qualifier].value[x] only CodeableConcept
   * component[qualifier].value[x] from ConsistentWithQualifierVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

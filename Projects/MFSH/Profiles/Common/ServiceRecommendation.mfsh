@@ -38,5 +38,11 @@ Description: """
 
   
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("", "Service Recommendation")
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.NodeProfile("", "Service Recommendation")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+  #apply Graph.NodeElement("", "code", "Code")
+  #apply Graph.LinkByBinding("focus", "^%ProfileId%.code", "", "cmp")

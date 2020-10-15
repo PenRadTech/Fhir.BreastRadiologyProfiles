@@ -5,8 +5,7 @@ Description: """
     Mammography Fat Necrosis
     """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityFatNecrosisObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityFatNecrosisObservation", "Code")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()
@@ -41,5 +40,9 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Fat Necrosis")
 

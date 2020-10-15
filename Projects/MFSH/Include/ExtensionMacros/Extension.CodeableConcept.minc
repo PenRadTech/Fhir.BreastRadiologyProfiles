@@ -1,8 +1,5 @@
 #macro Extension.CodeableConcept(SliceName, DisplayName, Cardinality, ValueSet, Short, Definition)
   #apply Extension.Configure()
-  #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
-  #apply Graph.LinkByBinding("focus", "^%ProfileId%.extension:SliceName", ".value[x]", "cmp")
   
   * extension contains SliceName Cardinality
   * extension[SliceName] ^short = "Short"
@@ -13,4 +10,11 @@
   * extension[SliceName].value[x] 1..1
   * extension[SliceName].value[x] only CodeableConcept
   * extension[SliceName].value[x] from ValueSet
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
+  #apply Graph.LinkByBinding("focus", "^%ProfileId%.extension:SliceName", ".value[x]", "Cmp")
 #end

@@ -5,8 +5,7 @@ Description: """
   Cyst
   """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityCyst
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityCyst", "Code")
 
   #apply Observation.Component.Add("cystType", "0..1", "Cyst Type", "Cyst Type",
   #	 """
@@ -53,5 +52,9 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Cyst")
 

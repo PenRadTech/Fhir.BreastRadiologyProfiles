@@ -6,8 +6,7 @@ Description: """
   Duct
   """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityCyst
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityCyst", "Code")
 
   #apply Observation.Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
   #	 """
@@ -51,5 +50,9 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Duct")
 

@@ -4,8 +4,6 @@
  It does not constrain the component value.
  */
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
-  #apply Graph.NodeElement("", "component:SliceName", "DisplayName")
-  #
   #apply Observation.Component.Slice()
   * component contains SliceName Cardinality
   * component[SliceName] ^short = "ShortDesc component."
@@ -21,4 +19,9 @@
     This code identifies the ShortDesc component.
 	"""
   * component[SliceName].code = ComponentCode
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.NodeElement("", "component:SliceName", "DisplayName")
 #end

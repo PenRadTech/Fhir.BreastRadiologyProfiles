@@ -1,0 +1,16 @@
+/*
+ Resource.FixCode
+ Fix resource.code to passed value.
+ */
+ 
+#macro Resource.Fix(%Element%, %Code%, %DisplayName%)
+  * %Element% = %Code%
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/%Element%", "0", "Cmp")
+  #apply Graph.NodeElement("1", "%Element%", "%DisplayName%")
+  #apply Graph.LinkByBinding("focus", "^%ProfileId%.%Element%", "", "Cmp")
+  
+#end

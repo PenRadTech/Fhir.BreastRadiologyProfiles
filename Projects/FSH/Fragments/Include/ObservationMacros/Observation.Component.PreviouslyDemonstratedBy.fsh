@@ -10,6 +10,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -27,6 +31,18 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

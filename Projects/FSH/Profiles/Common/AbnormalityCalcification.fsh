@@ -4,14 +4,20 @@ Title: "Mammography Calcification"
 Description: """
     Mammography Calcification
     """
-
-  * code 1..1
   * code = ObservationCodesCS#abnormalityCalcificationObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains calcificationType 1..1
   * component[calcificationType] ^short = "Calcification Type component."
   * component[calcificationType] ^comment = """
@@ -27,9 +33,17 @@ Description: """
     This code identifies the Calcification Type component.
 	"""
   * component[calcificationType].code = ObservationComponentSliceCodesCS#calcificationType
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[calcificationType].value[x] 1..1
   * component[calcificationType].value[x] only CodeableConcept
   * component[calcificationType].value[x] from CalcificationTypeVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -53,6 +67,10 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -68,9 +86,21 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -86,9 +116,21 @@ Description: """
     This code identifies the BiRads Assessment Category component. component.
 	"""
   * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -104,9 +146,21 @@ Description: """
     This code identifies the Not Previously Seen component.
 	"""
   * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -128,8 +182,16 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define distribution region size.
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
@@ -155,11 +217,19 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity from UNITSOFLENGTH
   * component[obsSize].valueRange.low from UNITSOFLENGTH
   * component[obsSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // define calcification distribution slice
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
@@ -178,9 +248,17 @@ Description: """
     This code identifies the Observed distribution of abnormalities component.
 	"""
   * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsDistribution].value[x] 1..1
   * component[obsDistribution].value[x] only CodeableConcept
   * component[obsDistribution].value[x] from CalcificationDistributionVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define distribution region size.
   * component contains obsDistRegionSize 0..1
   * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
@@ -211,11 +289,19 @@ Description: """
 	"""
   * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -231,9 +317,21 @@ Description: """
     This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[correspondsWith].value[x] 1..1
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -251,17 +349,53 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

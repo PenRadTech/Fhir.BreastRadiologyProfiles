@@ -18,8 +18,7 @@ Description: """
     Tumor Satellite Observation.
 	"""
 
-  * code 1..1
-  * code = ObservationCodesCS#tumorSatelliteObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#tumorSatelliteObservation", "Code")
 
   * value[x] 0..1
   * value[x] only Quantity or Range
@@ -59,6 +58,10 @@ Description: """
 
   #apply CSBuild.DefineClass()
 
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Tumor Satellite")
   #apply Graph.NodeElement("", "value[x]", "Value")
   #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/value\\\\[x\\\\]/$", "0", "Cmp")

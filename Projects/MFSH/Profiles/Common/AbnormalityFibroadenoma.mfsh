@@ -6,8 +6,7 @@ Description: """
   Fibroadenoma
   """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityFibroadenomaObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityFibroadenomaObservation", "Code")
 
   #apply Observation.Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
   #	 """
@@ -47,5 +46,9 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Fibroadenoma")
 

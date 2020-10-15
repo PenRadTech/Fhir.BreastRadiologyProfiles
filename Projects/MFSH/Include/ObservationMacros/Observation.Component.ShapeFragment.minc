@@ -22,9 +22,6 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-  #
   // Define Orientation Slice
   #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
@@ -65,4 +62,11 @@
   #  "ObservationComponentSliceCodesCS#mgBreastDensity")
   #
   #apply Observation.Component.SetConcept("mgBreastDensity", "1..1", "MGBreastDensityVS")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+
 #end

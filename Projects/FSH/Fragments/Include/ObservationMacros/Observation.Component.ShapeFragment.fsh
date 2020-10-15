@@ -11,6 +11,10 @@ Description: """
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
   * component[orientation] ^comment = """
@@ -26,9 +30,17 @@ Description: """
     This code identifies the Orientation component.
 	"""
   * component[orientation].code = ObservationComponentSliceCodesCS#orientation
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[orientation].value[x] 1..1
   * component[orientation].value[x] only CodeableConcept
   * component[orientation].value[x] from OrientationVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Shape Slice
   * component contains shape 0..1
   * component[shape] ^short = "Shape component."
@@ -45,9 +57,17 @@ Description: """
     This code identifies the Shape component.
 	"""
   * component[shape].code = ObservationComponentSliceCodesCS#shape
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[shape].value[x] 1..1
   * component[shape].value[x] only CodeableConcept
   * component[shape].value[x] from ShapeVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Margin Slice
   * component contains margin 0..1
   * component[margin] ^short = "Margin component."
@@ -64,9 +84,17 @@ Description: """
     This code identifies the Margin component.
 	"""
   * component[margin].code = ObservationComponentSliceCodesCS#margin
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from MarginVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Breast Density
   * component contains mgBreastDensity 0..1
   * component[mgBreastDensity] ^short = "Density component."
@@ -84,6 +112,18 @@ Description: """
     This code identifies the Density component.
 	"""
   * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[mgBreastDensity].value[x] 1..1
   * component[mgBreastDensity].value[x] only CodeableConcept
   * component[mgBreastDensity].value[x] from MGBreastDensityVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

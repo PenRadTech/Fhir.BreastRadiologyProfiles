@@ -22,9 +22,6 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-  #
   #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
@@ -35,4 +32,10 @@
   #  "ObservationComponentSliceCodesCS#prevDemBy")
   #
   #apply Observation.Component.SetConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
 #end

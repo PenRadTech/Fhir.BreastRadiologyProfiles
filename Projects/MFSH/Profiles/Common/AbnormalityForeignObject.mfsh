@@ -6,8 +6,7 @@ Description: """
   Foreign Object
   """
 
-  * code 1..1
-  * code = ObservationCodesCS#abnormalityForeignObjectObservation
+  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityForeignObjectObservation", "Code")
 
   #apply Observation.Component.Add("abnormalityForeignObjectType", "1..1", "Foreign Object Type", "Foreign Object Type",
   #	 """

@@ -4,14 +4,20 @@ Title: "Mass Abnormality"
 Description: """
   Mass Abnormality
   """
-
-  * code 1..1
   * code = ObservationCodesCS#abnormalityMassObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains massType 1..1
   * component[massType] ^short = "Mass Abnormality Type component."
   * component[massType] ^comment = """
@@ -27,9 +33,17 @@ Description: """
     This code identifies the Mass Abnormality Type component.
 	"""
   * component[massType].code = ObservationComponentSliceCodesCS#abnormalityMassType
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[massType].value[x] 1..1
   * component[massType].value[x] only CodeableConcept
   * component[massType].value[x] from AbnormalityMassTypeVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -53,6 +67,10 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -68,9 +86,21 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -86,9 +116,21 @@ Description: """
     This code identifies the BiRads Assessment Category component. component.
 	"""
   * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Orientation Slice
   * component contains orientation 0..1
   * component[orientation] ^short = "Orientation component."
@@ -105,9 +147,17 @@ Description: """
     This code identifies the Orientation component.
 	"""
   * component[orientation].code = ObservationComponentSliceCodesCS#orientation
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[orientation].value[x] 1..1
   * component[orientation].value[x] only CodeableConcept
   * component[orientation].value[x] from OrientationVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Shape Slice
   * component contains shape 0..1
   * component[shape] ^short = "Shape component."
@@ -124,9 +174,17 @@ Description: """
     This code identifies the Shape component.
 	"""
   * component[shape].code = ObservationComponentSliceCodesCS#shape
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[shape].value[x] 1..1
   * component[shape].value[x] only CodeableConcept
   * component[shape].value[x] from ShapeVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Margin Slice
   * component contains margin 0..1
   * component[margin] ^short = "Margin component."
@@ -143,9 +201,17 @@ Description: """
     This code identifies the Margin component.
 	"""
   * component[margin].code = ObservationComponentSliceCodesCS#margin
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from MarginVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define Breast Density
   * component contains mgBreastDensity 0..1
   * component[mgBreastDensity] ^short = "Density component."
@@ -163,9 +229,21 @@ Description: """
     This code identifies the Density component.
 	"""
   * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[mgBreastDensity].value[x] 1..1
   * component[mgBreastDensity].value[x] only CodeableConcept
   * component[mgBreastDensity].value[x] from MGBreastDensityVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -187,8 +265,16 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define distribution region size.
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
@@ -214,11 +300,19 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsSize].value[x] 1..1
   * component[obsSize].value[x] only Quantity or Range
   * component[obsSize].valueQuantity from UNITSOFLENGTH
   * component[obsSize].valueRange.low from UNITSOFLENGTH
   * component[obsSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // define calcification distribution slice
   * component contains obsDistribution 0..*
   * component[obsDistribution] ^short = "Observed distribution of abnormalities component."
@@ -237,9 +331,17 @@ Description: """
     This code identifies the Observed distribution of abnormalities component.
 	"""
   * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[obsDistribution].value[x] 1..1
   * component[obsDistribution].value[x] only CodeableConcept
   * component[obsDistribution].value[x] from CalcificationDistributionVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   // Define distribution region size.
   * component contains obsDistRegionSize 0..1
   * component[obsDistRegionSize] ^short = "Observed size of distribution region. component."
@@ -270,11 +372,19 @@ Description: """
 	"""
   * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
   * component[obsDistRegionSize].value[x] 1..1
   * component[obsDistRegionSize].value[x] only Quantity or Range
   * component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -290,9 +400,21 @@ Description: """
     This code identifies the Not Previously Seen component.
 	"""
   * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -308,9 +430,21 @@ Description: """
     This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[correspondsWith].value[x] 1..1
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -328,20 +462,64 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains tumorSatellite 0..*
   * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
   * hasMember[tumorSatellite] only Reference(TumorSatellite)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

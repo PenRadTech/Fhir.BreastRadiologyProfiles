@@ -18,3 +18,7 @@ Description: """
 
   * code 1..1
   * code from ServiceRecommendationsVS  (extensible)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

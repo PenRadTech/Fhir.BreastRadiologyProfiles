@@ -16,6 +16,9 @@
   * hasMember[SliceName] ^short = "ShortDesc hasMember."
   * hasMember[SliceName] only Reference(Target)
 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.LinkByReference("focus", "^%ProfileId%/hasMember/$", "%ProfileId%.hasMember:SliceName", "1", "Cmp")
 #end
 

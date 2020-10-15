@@ -4,9 +4,11 @@ Title: "Other Finding"
 Description: """
     Other Finding
     """
-
-  * code 1..1
   * code = ObservationCodesCS#usFindingObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -27,4 +29,8 @@ Description: """
   * interpretation 0..0
   * referenceRange 0..0
   * interpretation 0..0
-  * method 0..0
+  * method 0..0  
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

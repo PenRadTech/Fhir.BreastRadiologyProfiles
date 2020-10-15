@@ -76,6 +76,10 @@ Description: """
 
 
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Findings/%Laterality% Breast")
   #apply Graph.NodeElement("", "bodySite", "Body Site")
 

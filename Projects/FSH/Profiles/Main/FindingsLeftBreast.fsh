@@ -41,26 +41,58 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains mgFinding 0..1
   * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
   * hasMember[mgFinding] only Reference(MGFinding)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember[mgFinding] MS
   * hasMember contains mriFinding 0..1
   * hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
   * hasMember[mriFinding] only Reference(MRIFinding)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember[mriFinding] MS
   * hasMember contains nmFinding 0..1
   * hasMember[nmFinding] ^short = "'Nuclear Medicine Finding' reference. hasMember."
   * hasMember[nmFinding] only Reference(NMFinding)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember[nmFinding] MS
   * hasMember contains usFinding 0..1
   * hasMember[usFinding] ^short = "'Ultrasound Finding' reference. hasMember."
   * hasMember[usFinding] only Reference(USFinding)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember[usFinding] MS
   * hasMember contains other 0..*
   * hasMember[other] ^short = "Other modality finding. hasMember."
   * hasMember[other] only Reference(OtherFinding)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember[other] MS
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * bodySite 1..1
   * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"
   * code = ObservationCodesCS#findingsLeftBreastObservation
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

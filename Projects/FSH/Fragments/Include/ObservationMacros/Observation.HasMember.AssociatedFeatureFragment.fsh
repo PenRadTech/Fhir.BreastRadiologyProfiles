@@ -10,6 +10,18 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------

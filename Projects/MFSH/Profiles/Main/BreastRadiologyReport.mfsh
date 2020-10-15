@@ -10,7 +10,9 @@ Description: """
   #apply Observation.CategoryFragment()
 
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
-  * code = LOINC#10193-1
+
+  #apply Resource.Fix("code", "ObservationCodesCS#LOINC#10193-1", "Code")
+
   * specimen 0..0
   * result 0..0
   
@@ -41,5 +43,11 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
   #apply Graph.NodeProfile("", "Report")
-  #apply Graph.NodeElement("", "code", "Code")
+  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+  #apply Graph.NodeElement("", "conclusionCode", "ConclusionCode")
+  #apply Graph.LinkByBinding("focus", "^%ProfileId%.conclusionCode", "", "Cmp")

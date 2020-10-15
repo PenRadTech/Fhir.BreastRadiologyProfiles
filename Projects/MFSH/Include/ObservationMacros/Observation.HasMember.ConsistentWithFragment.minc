@@ -20,12 +20,15 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-  #
   #apply Observation.HasMember.Add("consistentWith", "0..*", "ConsistentWith",
   #  "'Consistent With' reference.",
   #  """
   #  This slice references the target 'Consistent With'.
   #  """)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #apply once Graph.NodeFragment("%FTitle%")
+  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
 #end
