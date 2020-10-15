@@ -33,23 +33,24 @@ Description: """
   #apply Observation.Component.ObservedCountFragment()
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Associated Feature Observation</b>
+    # </p>
+    # <p>
+    # This resource contains information about an associated feature observation.
+    # </p>
+    # <p>
+    # The feature observed is defined by the codeable concept in the value[x] field.
+    # </p>
+    # """)
 
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Associated Feature Observation</b>
-  # </p>
-  # <p>
-  # This resource contains information about an associated feature observation.
-  # </p>
-  # <p>
-  # The feature observed is defined by the codeable concept in the value[x] field.
-  # </p>
-  # """)
-
-
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
 
   #apply CSBuild.DefineClass()
 

@@ -4,6 +4,11 @@ Description:  "ServiceRecommendations Value Set"
   * codes from system ServiceRecommendationsCS
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 
 
 
@@ -862,3 +867,7 @@ Description:  "ServiceRecommendations CodeSystem"
     """
     A vacuum biopsy is recommended.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

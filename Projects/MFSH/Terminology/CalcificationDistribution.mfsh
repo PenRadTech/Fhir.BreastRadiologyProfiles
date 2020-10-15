@@ -4,7 +4,12 @@ Description:  "CalcificationDistribution Value Set"
   * codes from system CalcificationDistributionCS
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -111,4 +116,9 @@ Description: "Calcification Distribution in an abnormality code system."
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

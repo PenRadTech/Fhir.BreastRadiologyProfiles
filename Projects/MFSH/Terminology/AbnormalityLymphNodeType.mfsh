@@ -4,7 +4,12 @@ Description:  "LymphNode Type Value Set"
   * codes from system AbnormalityLymphNodeTypeCS
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -106,4 +111,9 @@ Description: "Lymph node types code system."
     cortical hypertrophy.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

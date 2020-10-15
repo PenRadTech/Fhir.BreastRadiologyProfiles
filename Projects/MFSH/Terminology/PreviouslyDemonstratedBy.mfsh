@@ -5,7 +5,12 @@ Description:  "PreviouslyDemonstratedBy Value Set"
 
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -45,4 +50,9 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     by the Ultrasound.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

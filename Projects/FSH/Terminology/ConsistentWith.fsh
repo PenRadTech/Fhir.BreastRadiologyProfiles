@@ -8,6 +8,12 @@ Description:  "ConsistentWith Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 
 /*
@@ -993,3 +999,7 @@ Description:  "ConsistentWith CodeSystem"
     the skin.
     [https://www.webmd.com/skin-problems-and-treatments/eczema/venous-stasis-dermatitis#1]
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

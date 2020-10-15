@@ -44,4 +44,9 @@ Description: "Codes defining mass refinements."
     A biopsy confirmation may be required.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

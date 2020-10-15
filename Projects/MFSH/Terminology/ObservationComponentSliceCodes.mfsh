@@ -122,4 +122,9 @@ Description: "Component Slice Codes code system"
     Code to identify the component slice MGCalcificationType.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

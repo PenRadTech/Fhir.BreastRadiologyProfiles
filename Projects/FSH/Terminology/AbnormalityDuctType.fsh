@@ -4,6 +4,11 @@ Description: "Duct Type Value Set"
   * codes from system AbnormalityDuctTypeCS
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Type CodeSystem"
@@ -41,3 +46,7 @@ Description: "Duct types code system."
     
  
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

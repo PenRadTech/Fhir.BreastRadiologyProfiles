@@ -5,6 +5,12 @@ Description:  "NotPreviouslySeen Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 CodeSystem:  NotPreviouslySeenCS
 Title: "NotPreviouslySeen CodeSystem"
@@ -66,3 +72,7 @@ Description:  "NotPreviouslySeen CodeSystem"
     images on a computer screen.
     This can help diagnose and treat disease or conditions.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

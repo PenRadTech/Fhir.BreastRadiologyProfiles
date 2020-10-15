@@ -8,7 +8,12 @@ Description:  "ConsistentWith Value Set"
 
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -998,6 +1003,11 @@ Description:  "ConsistentWith CodeSystem"
     [https://www.webmd.com/skin-problems-and-treatments/eczema/venous-stasis-dermatitis#1]
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end
 
 

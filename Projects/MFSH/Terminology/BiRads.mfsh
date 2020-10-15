@@ -7,7 +7,12 @@ Description:  "BiRads Assessment Category Value Set"
   * codes from system BiRadsAssessmentCategoryCS
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -141,4 +146,9 @@ Description:  "BiRads Assessment Category CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

@@ -5,6 +5,12 @@ Description:  "Calcification Type Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 
 CodeSystem: CalcificationTypeCS
@@ -316,3 +322,7 @@ Description: "Mammography calcification type code system."
     ducts) calcification.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

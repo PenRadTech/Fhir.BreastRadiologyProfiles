@@ -30,27 +30,28 @@ Description: """
   #apply Observation.HasMember.ConsistentWithFragment()
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Foreign Object Observation</b>
+    # </p>
+    # <p>
+    # This resource contains information about a foreign object observation.
+    # </p>
+    # <p>
+    # A foreign object is some non-biological item observed in the patient.
+    #  These can include misplaced surgical items, trauma related items (bullet fragments), or 
+    # jewelery.
+    # </p>
+    #""")
 
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Foreign Object Observation</b>
-  # </p>
-  # <p>
-  # This resource contains information about a foreign object observation.
-  # </p>
-  # <p>
-  # A foreign object is some non-biological item observed in the patient.
-  #  These can include misplaced surgical items, trauma related items (bullet fragments), or 
-  # jewelery.
-  # </p>
-  #""")
-
-
-
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
+  
   #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
 
   // -----------------------------------------
   // Graph Macros

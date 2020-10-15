@@ -54,21 +54,26 @@ Description: """
 
 
 
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Breast Body Location extension</b>
-  # </p>
-  # <p>
-  # this extension defines the fields that are used to describe the
-  #  location of an observed item in a breast radiology report.
-  # </p>
-  # <p>
-  # Breast radiology exams have specific ways of defining a location that are unique to this field.
-  # </p>
-  #""")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Breast Body Location extension</b>
+    # </p>
+    # <p>
+    # this extension defines the fields that are used to describe the
+    #  location of an observed item in a breast radiology report.
+    # </p>
+    # <p>
+    # Breast radiology exams have specific ways of defining a location that are unique to this field.
+    # </p>
+    #""")
 
-  #apply IGGroupMemberProfile("ExtensionResources", "%Title%")
-
+    #apply GroupMemberProfile("ExtensionResources", "%Title%")
+  #end
+  
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------

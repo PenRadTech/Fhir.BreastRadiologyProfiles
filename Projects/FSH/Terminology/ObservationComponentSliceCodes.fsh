@@ -121,3 +121,7 @@ Description: "Component Slice Codes code system"
     """
     Code to identify the component slice MGCalcificationType.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

@@ -5,6 +5,12 @@ Description:  "Shape Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 
 CodeSystem: ShapeCS
@@ -39,3 +45,7 @@ Description: "Shape values code system."
     There is a mass that is spherical, ball-shaped, circular
     or global.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

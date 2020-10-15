@@ -38,18 +38,21 @@ Description: """
 
 
 
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>LymphNode Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource contains information about a lymph node abnormality observation. 
-  # </p>
-  #""")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>LymphNode Abnormality Observation</b>
+    # </p>
+    # <p>
+    # This resource contains information about a lymph node abnormality observation. 
+    # </p>
+    #""")
 
-
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
 
 
   #apply CSBuild.DefineClass()

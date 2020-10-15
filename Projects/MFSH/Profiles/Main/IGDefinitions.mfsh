@@ -1,72 +1,74 @@
 // This file sets up the ImplementationGuide groups.
 
-#apply IGGroup("BaseResources", 
-# "Main Resources", 
-# """
-# This section contains the main top level resources that are defined in this Breast Radiology Implementation Guide.
-# """)
+#use IG
+  #apply Group("BaseResources", 
+  # "Main Resources", 
+  # """
+  # This section contains the main top level resources that are defined in this Breast Radiology Implementation Guide.
+  # """)
 
-#apply IGGroup("CommonResources", 
-# "Common Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide.
-# """)
+  #apply Group("CommonResources", 
+  # "Common Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide.
+  # """)
 
-#apply IGGroup("ExtensionResources", 
-# "Extension Resources", 
-# """
-# This section contains extension resources that are defined in this Breast Radiology Implementation Guide.
-# """)
+  #apply Group("ExtensionResources", 
+  # "Extension Resources", 
+  # """
+  # This section contains extension resources that are defined in this Breast Radiology Implementation Guide.
+  # """)
 
-#apply IGGroup("MGResources", 
-# "Mammography Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a mammography exam.
-# """)
+  #apply Group("MGResources", 
+  # "Mammography Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a mammography exam.
+  # """)
 
 
-#apply IGGroup("MRIResources", 
-# "MRI Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an MRI exam.
-# """)
+  #apply Group("MRIResources", 
+  # "MRI Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an MRI exam.
+  # """)
 
-#apply IGGroup("USResources", 
-# "Ultrasound Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an ultrasound exam.
-# """)
+  #apply Group("USResources", 
+  # "Ultrasound Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an ultrasound exam.
+  # """)
 
-#apply IGGroup("NMResources", 
-# "Nuclear Medicine Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a nuclear medicine exam.
-# """)
+  #apply Group("NMResources", 
+  # "Nuclear Medicine Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a nuclear medicine exam.
+  # """)
 
-#apply IGGroup("OtherResources", 
-# "Other Resources", 
-# """
-# This section contains resources that are defined in this Breast Radiology Implementation Guide 
-# that are not one of the predefined exam types.
-# """)
+  #apply Group("OtherResources", 
+  # "Other Resources", 
+  # """
+  # This section contains resources that are defined in this Breast Radiology Implementation Guide 
+  # that are not one of the predefined exam types.
+  # """)
 
-#apply IGGroup("CommonCodesVS", 
-# "Common ValueSets", 
-# """
-# This section contains value sets that are defined in this Breast Radiology Implementation Guide.
-# """)
+  #apply Group("CommonCodesVS", 
+  # "Common ValueSets", 
+  # """
+  # This section contains value sets that are defined in this Breast Radiology Implementation Guide.
+  # """)
 
-#apply IGGroup("CommonCodesCS", 
-# "Common CodeSystems", 
-# """
-# This section contains code systems that are defined in this Breast Radiology Implementation Guide.
-# """)
+  #apply Group("CommonCodesCS", 
+  # "Common CodeSystems", 
+  # """
+  # This section contains code systems that are defined in this Breast Radiology Implementation Guide.
+  # """)
 
-#apply IGGroup("Fragments", 
-# "Resource Fragments", 
-# """
-# This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
-#
-# They are included here only to better convey the structure and composition of the components that are used to create the
-# Breast Radiology Resources.
-# """)
+  #apply Group("Fragments", 
+  # "Resource Fragments", 
+  # """
+  # This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
+  #
+  # They are included here only to better convey the structure and composition of the components that are used to create the
+  # Breast Radiology Resources.
+  # """)
+#end

@@ -5,6 +5,12 @@ Description:  "Mammography BreastDensity Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 CodeSystem: MGBreastDensityCS
 Title: "Mammography Breast Density CodeSystem"
@@ -73,3 +79,7 @@ Description: "Mammography breast density values code system."
     About 10% of women have this type of breast tissue.
     [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/extremely-dense-breast-tissue]
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

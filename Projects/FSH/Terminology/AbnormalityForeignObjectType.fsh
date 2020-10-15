@@ -4,6 +4,11 @@ Description:  "Foreign Object Type Value Set"
   * codes from system AbnormalityForeignObjectTypeCS
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 
 CodeSystem:  AbnormalityForeignObjectTypeCS
 Title: "Foreign Object Type CodeSystem"
@@ -327,3 +332,7 @@ Description:  "Foreign Object Type CodeSystem"
     as a biopsy or  placement of medical
     devices such as a catheter or pacemaker.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
