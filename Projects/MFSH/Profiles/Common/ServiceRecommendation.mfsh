@@ -42,7 +42,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Service Recommendation")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
-  #apply Graph.NodeElement("", "code", "Code")
-  #apply Graph.LinkByBinding("focus", "^%ProfileId%.code", "", "cmp")
+  #use Graph
+    #apply NodeProfile("", "Service Recommendation")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+    #apply NodeElement("", "code", "Code")
+    #apply LinkByBinding("focus", "^%ProfileId%.code", "", "cmp")
+  #end

@@ -80,7 +80,8 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Findings/%Laterality% Breast")
-  #apply Graph.NodeElement("", "bodySite", "Body Site")
-
+  #use Graph
+    #apply NodeProfile("", "Findings/%Laterality% Breast")
+    #apply NodeElement("", "bodySite", "Body Site")
+  #end
 #end

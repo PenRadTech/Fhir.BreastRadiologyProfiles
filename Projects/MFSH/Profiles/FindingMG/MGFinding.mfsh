@@ -120,5 +120,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("A", "Mg Findings")
+  #use Graph
+    #apply NodeProfile("A", "Mg Findings")
+  #end
 

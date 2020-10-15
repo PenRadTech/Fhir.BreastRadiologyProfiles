@@ -14,6 +14,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("", "extension:SliceName", "DisplayName")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
+  #use Graph
+    #apply NodeElement("", "extension:SliceName", "DisplayName")
+    #apply LinkByName("focus", "^%ProfileId%/$", "%ProfileId%.extension:SliceName", "0", "Cmp")
+  #end
 #end

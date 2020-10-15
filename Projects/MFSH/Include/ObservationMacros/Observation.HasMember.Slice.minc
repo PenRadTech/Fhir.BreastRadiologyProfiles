@@ -12,6 +12,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("", "hasMember", "HasMember")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/hasMember/$", "0", "Cmp")
+  #use Graph
+    #apply NodeElement("", "hasMember", "HasMember")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/hasMember/$", "0", "Cmp")
+  #end
 #end

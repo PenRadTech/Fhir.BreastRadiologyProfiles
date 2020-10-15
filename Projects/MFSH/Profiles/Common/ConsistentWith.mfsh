@@ -61,5 +61,11 @@ Description: """
 
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("", "Consistent With")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Consistent With")
+  #end
 

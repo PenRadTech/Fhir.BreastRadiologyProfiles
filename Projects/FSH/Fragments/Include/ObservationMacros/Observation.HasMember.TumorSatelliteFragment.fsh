@@ -14,9 +14,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains tumorSatellite 0..*
-  * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
-  * hasMember[tumorSatellite] only Reference(TumorSatellite)
+  * Observation.hasMember contains tumorSatellite 0..*
+  * Observation.hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
+  * Observation.hasMember[tumorSatellite] only Reference(TumorSatellite)
 
   // -----------------------------------------
   // Graph Macros

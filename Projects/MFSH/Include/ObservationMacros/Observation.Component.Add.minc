@@ -23,5 +23,7 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("", "component:SliceName", "DisplayName")
+  #use Graph
+    #apply NodeElement("", "component:SliceName", "DisplayName")
+  #end
 #end

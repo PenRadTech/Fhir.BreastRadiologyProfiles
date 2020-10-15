@@ -50,4 +50,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Calcification")
+  #use Graph
+    #apply NodeProfile("", "Calcification")
+  #end

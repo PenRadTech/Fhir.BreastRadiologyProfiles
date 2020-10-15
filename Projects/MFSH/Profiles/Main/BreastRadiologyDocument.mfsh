@@ -50,13 +50,14 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Breast/Radiology/Document")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "1", "Bas,Ovr")
-  #apply Graph.Legend("focus", "Focus", "focus")
-  #apply Graph.Legend("focus", "Profiled Resource", "profile")
-  #apply Graph.Legend("focus", "Extension", "extension")
-  #apply Graph.Legend("focus", "Base Resource", "fhir")
-  #apply Graph.Legend("focus", "Resource Element", "element")
-  #apply Graph.Legend("focus", "ValueSet", "valueSet")
-  #apply Graph.Legend("focus", "Value", "value")
- 
+  #use Graph
+    #apply NodeProfile("", "Breast/Radiology/Document")
+    #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "1", "Bas,Ovr")
+    #apply Legend("focus", "Focus", "focus")
+    #apply Legend("focus", "Profiled Resource", "profile")
+    #apply Legend("focus", "Extension", "extension")
+    #apply Legend("focus", "Base Resource", "fhir")
+    #apply Legend("focus", "Resource Element", "element")
+    #apply Legend("focus", "ValueSet", "valueSet")
+    #apply Legend("focus", "Value", "value")
+  #end

@@ -33,8 +33,10 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("A", "section:SliceName", "Report Section")
+  #use Graph
+    #apply NodeElement("A", "section:SliceName", "Report Section")
   #end
+#end
 
 
   /*
@@ -60,7 +62,9 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("B", "section:SliceName", "Impressions Section")
+  #use Graph
+    #apply NodeElement("B", "section:SliceName", "Impressions Section")
+  #end
 #end
 
 
@@ -91,7 +95,9 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("C", "section:SliceName", "Findings/Left Breast/Section")
+  #use Graph
+    #apply NodeElement("C", "section:SliceName", "Findings/Left Breast/Section")
+  #end
 #end
 
 
@@ -122,7 +128,9 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("C", "section:SliceName", "Findings/Right Breast/Section")
+  #use Graph
+    #apply NodeElement("C", "section:SliceName", "Findings/Right Breast/Section")
+  #end
 #end
 
 
@@ -157,7 +165,9 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("E", "section:SliceName", "Related Resources/Section")
+  #use Graph
+    #apply NodeElement("E", "section:SliceName", "Related Resources/Section")
+  #end
 #end
 
 
@@ -188,7 +198,9 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("D", "section:SliceName", "Recommendations/Section")
+  #use Graph
+    #apply NodeElement("D", "section:SliceName", "Recommendations/Section")
+  #end
 #end
 
 
@@ -218,5 +230,7 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("F", "section:SliceName", "Admin/Section")
+  #use Graph
+    #apply NodeElement("F", "section:SliceName", "Admin/Section")
+  #end
 #end

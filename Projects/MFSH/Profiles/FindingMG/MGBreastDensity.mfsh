@@ -32,5 +32,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Breast Density")
+  #use Graph
+    #apply NodeProfile("", "Breast Density")
+  #end
 

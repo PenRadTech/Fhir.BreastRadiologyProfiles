@@ -18,6 +18,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("", "derivedFrom:SliceName", "DisplayName")
-  #apply Graph.LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%.derivedFrom:SliceName", "1", "Cmp")
+  #use Graph
+    #apply NodeElement("", "derivedFrom:SliceName", "DisplayName")
+    #apply LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%.derivedFrom:SliceName", "1", "Cmp")
+  #end
 #end

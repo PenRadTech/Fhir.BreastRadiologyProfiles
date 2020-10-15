@@ -3,8 +3,6 @@
  Fragment that adds 'Observed Size' components to Observation.
  */
  
-#use Observation
-
 #Fragment: Observation.Component.ObservedSizeFragment
 #Parent: Observation
 #Title: "Observed Size Fragment"
@@ -24,7 +22,7 @@
   #incompatible Observation.Component.Zero
   #
   // Define distribution region size.
-  #apply Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",
+  #apply Observation.Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",
   #	 """
   #  This component slice contains the size of an item observed.
   #  There may be one, two, or three values indicating a size of
@@ -40,15 +38,17 @@
   #	 """,
   # "ObservationComponentSliceCodesCS#obsSize")
   #
-  * component[obsSize].value[x] 1..1
-  * component[obsSize].value[x] only Quantity or Range
-  * component[obsSize].valueQuantity from UNITSOFLENGTH
-  * component[obsSize].valueRange.low from UNITSOFLENGTH
-  * component[obsSize].valueRange.high from UNITSOFLENGTH
+  * Observation.component[obsSize].value[x] 1..1
+  * Observation.component[obsSize].value[x] only Quantity or Range
+  * Observation.component[obsSize].valueQuantity from UNITSOFLENGTH
+  * Observation.component[obsSize].valueRange.low from UNITSOFLENGTH
+  * Observation.component[obsSize].valueRange.high from UNITSOFLENGTH
 
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #end
 #end

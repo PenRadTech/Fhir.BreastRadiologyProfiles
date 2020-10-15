@@ -3,8 +3,6 @@
  Observation 'Demonstrated By' Component Fragment
  */
 
-#use Observation
-
 #Fragment: Observation.Component.PreviouslyDemonstratedByFragment
 #Parent: Observation
 #Title: "Previously Demonstrated By Fragment"
@@ -22,7 +20,7 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
-  #apply Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
+  #apply Observation.Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
   #  has been previously demonstrated by.
@@ -36,6 +34,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #end
 #end

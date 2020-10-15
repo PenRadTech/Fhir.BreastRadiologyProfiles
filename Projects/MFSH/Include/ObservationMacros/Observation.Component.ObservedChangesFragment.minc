@@ -30,6 +30,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #end
 #end

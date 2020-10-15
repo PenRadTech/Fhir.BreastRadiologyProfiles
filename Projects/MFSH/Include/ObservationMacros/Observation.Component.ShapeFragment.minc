@@ -3,8 +3,6 @@
   Adds Orientation, Shape, Margin, and Density Components
   */
   
-#use Observation
-
 #Fragment: Observation.Component.ShapeFragment
 #Parent: Observation
 #Title: "Shape Components Fragment"
@@ -23,7 +21,7 @@
   #apply CSBuild.ImplementFragment()
   #
   // Define Orientation Slice
-  #apply Component.Add("orientation", "0..1", "Orientation", "Orientation",
+  #apply Observation.Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
   #  This slice contains the optional component that define the orientation of the abnormality.
   #  The value of this component is a codeable concept chosen from the OrientationVS valueset.
@@ -33,7 +31,7 @@
   #apply Observation.Component.SetConcept("orientation", "1..1", "OrientationVS")
   #
   // Define Shape Slice
-  #apply Component.Add("shape", "0..1", "Shape", "Shape",
+  #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
   #	 """
   #  This slice contains the optional component that define the shape of the abnormality.
   #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
@@ -43,7 +41,7 @@
   #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
   #
   // Define Margin Slice
-  #apply Component.Add("margin", "0..1", "Margin", "Margin",
+  #apply Observation.Component.Add("margin", "0..1", "Margin", "Margin",
   #	 """
   #  This slice contains the optional component that define the margin of the abnormality.
   #  The value of this component is a codeable concept chosen from the MarginVS valueset.
@@ -53,7 +51,7 @@
   #apply Observation.Component.SetConcept("margin", "1..1", "MarginVS")
   #
   // Define Breast Density
-  #apply Component.Add("mgBreastDensity", "0..1", "Density", "Density",
+  #apply Observation.Component.Add("mgBreastDensity", "0..1", "Density", "Density",
   #	 """
   #  This slice contains the optional component that define the 
   #  observed density of the breast tissue.
@@ -66,7 +64,8 @@
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #end
 #end

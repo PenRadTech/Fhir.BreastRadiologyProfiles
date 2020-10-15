@@ -52,4 +52,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Asymmetry")
+  #use Graph
+    #apply NodeProfile("", "Asymmetry")
+  #end

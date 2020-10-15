@@ -36,5 +36,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("C", "Ultrasound Findings")
+  #use Graph
+    #apply NodeProfile("C", "Ultrasound Findings")
+  #end
 

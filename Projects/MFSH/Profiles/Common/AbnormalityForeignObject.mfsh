@@ -51,4 +51,10 @@ Description: """
 
   #apply CSBuild.DefineClass()
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
-  #apply Graph.NodeProfile("", "Foreign Object")
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Foreign Object")
+  #end

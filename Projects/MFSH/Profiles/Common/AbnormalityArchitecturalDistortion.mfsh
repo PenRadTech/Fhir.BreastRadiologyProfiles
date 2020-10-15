@@ -41,4 +41,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Architectural Distortion")
+  #use Graph
+    #apply NodeProfile("", "Architectural Distortion")
+  #end

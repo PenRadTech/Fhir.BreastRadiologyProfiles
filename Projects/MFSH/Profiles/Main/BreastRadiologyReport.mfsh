@@ -47,7 +47,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Report")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
-  #apply Graph.NodeElement("", "conclusionCode", "ConclusionCode")
-  #apply Graph.LinkByBinding("focus", "^%ProfileId%.conclusionCode", "", "Cmp")
+  #use Graph
+    #apply NodeProfile("", "Report")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+    #apply NodeElement("", "conclusionCode", "ConclusionCode")
+    #apply LinkByBinding("focus", "^%ProfileId%.conclusionCode", "", "Cmp")
+  #end

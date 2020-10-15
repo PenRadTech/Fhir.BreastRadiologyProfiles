@@ -29,17 +29,17 @@
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
 
-  #apply once Graph.NodeFragment("%FTitle%")
-  #apply Graph.LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeElement("", "bodySite", "BodySite")
-  #apply Graph.NodeElement("", "bodySite.extension", "extension")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/bodySite/$", "0", "Cmp")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite/$", "^%ProfileId%/bodySite.extension/$", "0", "Cmp")
-  #apply Graph.LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1", "Cmp")
-  #
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+    #apply NodeElement("", "bodySite", "BodySite")
+    #apply NodeElement("", "bodySite.extension", "extension")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/bodySite/$", "0", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/bodySite/$", "^%ProfileId%/bodySite.extension/$", "0", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1", "Cmp")
+  #end
 
 #end

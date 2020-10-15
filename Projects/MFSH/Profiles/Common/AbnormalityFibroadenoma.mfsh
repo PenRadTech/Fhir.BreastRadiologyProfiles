@@ -50,5 +50,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Fibroadenoma")
+  #use Graph
+    #apply NodeProfile("", "Fibroadenoma")
+  #end
 

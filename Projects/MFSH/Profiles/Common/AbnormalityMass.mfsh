@@ -55,5 +55,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Mass")
+  #use Graph
+    #apply NodeProfile("", "Mass")
+  #end
 

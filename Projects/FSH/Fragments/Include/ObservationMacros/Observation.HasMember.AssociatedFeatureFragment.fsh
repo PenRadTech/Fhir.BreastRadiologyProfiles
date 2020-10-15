@@ -14,9 +14,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains associatedFeature 0..*
-  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
-  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+  * Observation.hasMember contains associatedFeature 0..*
+  * Observation.hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * Observation.hasMember[associatedFeature] only Reference(AssociatedFeature)
 
   // -----------------------------------------
   // Graph Macros

@@ -56,5 +56,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Cyst")
-
+  #use Graph
+    #apply NodeProfile("", "Cyst")
+  #end

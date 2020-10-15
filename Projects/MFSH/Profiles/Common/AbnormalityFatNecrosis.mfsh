@@ -44,5 +44,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Fat Necrosis")
-
+  #use Graph
+    #apply NodeProfile("", "Fat Necrosis")
+  #end

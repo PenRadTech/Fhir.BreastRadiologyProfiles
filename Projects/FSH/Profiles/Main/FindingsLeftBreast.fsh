@@ -45,41 +45,41 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains mgFinding 0..1
-  * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
-  * hasMember[mgFinding] only Reference(MGFinding)
+  * Observation.hasMember contains mgFinding 0..1
+  * Observation.hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
+  * Observation.hasMember[mgFinding] only Reference(MGFinding)
 
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
   * hasMember[mgFinding] MS
-  * hasMember contains mriFinding 0..1
-  * hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
-  * hasMember[mriFinding] only Reference(MRIFinding)
+  * Observation.hasMember contains mriFinding 0..1
+  * Observation.hasMember[mriFinding] ^short = "'Magnetic Resonance Imaging Finding' reference. hasMember."
+  * Observation.hasMember[mriFinding] only Reference(MRIFinding)
 
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
   * hasMember[mriFinding] MS
-  * hasMember contains nmFinding 0..1
-  * hasMember[nmFinding] ^short = "'Nuclear Medicine Finding' reference. hasMember."
-  * hasMember[nmFinding] only Reference(NMFinding)
+  * Observation.hasMember contains nmFinding 0..1
+  * Observation.hasMember[nmFinding] ^short = "'Nuclear Medicine Finding' reference. hasMember."
+  * Observation.hasMember[nmFinding] only Reference(NMFinding)
 
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
   * hasMember[nmFinding] MS
-  * hasMember contains usFinding 0..1
-  * hasMember[usFinding] ^short = "'Ultrasound Finding' reference. hasMember."
-  * hasMember[usFinding] only Reference(USFinding)
+  * Observation.hasMember contains usFinding 0..1
+  * Observation.hasMember[usFinding] ^short = "'Ultrasound Finding' reference. hasMember."
+  * Observation.hasMember[usFinding] only Reference(USFinding)
 
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
   * hasMember[usFinding] MS
-  * hasMember contains other 0..*
-  * hasMember[other] ^short = "Other modality finding. hasMember."
-  * hasMember[other] only Reference(OtherFinding)
+  * Observation.hasMember contains other 0..*
+  * Observation.hasMember[other] ^short = "Other modality finding. hasMember."
+  * Observation.hasMember[other] only Reference(OtherFinding)
 
   // -----------------------------------------
   // Graph Macros

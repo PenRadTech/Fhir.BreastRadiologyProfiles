@@ -232,9 +232,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains associatedFeature 0..*
-  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
-  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+  * Observation.hasMember contains associatedFeature 0..*
+  * Observation.hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * Observation.hasMember[associatedFeature] only Reference(AssociatedFeature)
 
   // -----------------------------------------
   // Graph Macros
@@ -243,9 +243,13 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains consistentWith 0..*
-  * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
-  * hasMember[consistentWith] only Reference(ConsistentWith)
+  * Observation.hasMember contains consistentWith 0..*
+  * Observation.hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
+  * Observation.hasMember[consistentWith] only Reference(ConsistentWith)
+
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
 
   // -----------------------------------------
   // Graph Macros

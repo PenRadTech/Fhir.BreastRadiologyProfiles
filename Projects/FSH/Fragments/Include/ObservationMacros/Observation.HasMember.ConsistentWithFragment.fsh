@@ -14,9 +14,9 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * hasMember contains consistentWith 0..*
-  * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
-  * hasMember[consistentWith] only Reference(ConsistentWith)
+  * Observation.hasMember contains consistentWith 0..*
+  * Observation.hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
+  * Observation.hasMember[consistentWith] only Reference(ConsistentWith)
 
   // -----------------------------------------
   // Graph Macros

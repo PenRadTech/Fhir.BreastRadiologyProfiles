@@ -54,5 +54,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Duct")
-
+  #use Graph
+    #apply NodeProfile("", "Duct")
+  #end

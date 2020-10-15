@@ -47,5 +47,10 @@ Description: """
   #apply IGGroupMemberProfile("CommonResources", "%Title%")
 
   #apply CSBuild.DefineClass()
-  #apply Graph.NodeProfile("", "Density")
-
+ 
+  // -----------------------------------------
+  // Graph Macros
+  // -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Density")
+  #end

@@ -72,6 +72,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeExtension("", "BreastBodyLocation")
-
-
+  #use Graph
+    #apply NodeExtension("", "BreastBodyLocation")
+  #end

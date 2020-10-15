@@ -56,5 +56,7 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("", "Associated Feature")
+  #use Graph
+    #apply NodeProfile("", "Associated Feature")
+  #end
 

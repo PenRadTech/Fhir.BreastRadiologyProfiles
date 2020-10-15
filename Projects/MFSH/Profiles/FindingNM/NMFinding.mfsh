@@ -37,4 +37,6 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  #apply Graph.NodeProfile("D", "Nuclear Medicine/Findings")
+  #use Graph
+    #apply NodeProfile("D", "Nuclear Medicine/Findings")
+  #end

@@ -43,11 +43,11 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
-  * component[obsSize].value[x] 1..1
-  * component[obsSize].value[x] only Quantity or Range
-  * component[obsSize].valueQuantity from UNITSOFLENGTH
-  * component[obsSize].valueRange.low from UNITSOFLENGTH
-  * component[obsSize].valueRange.high from UNITSOFLENGTH
+  * Observation.component[obsSize].value[x] 1..1
+  * Observation.component[obsSize].value[x] only Quantity or Range
+  * Observation.component[obsSize].valueQuantity from UNITSOFLENGTH
+  * Observation.component[obsSize].valueRange.low from UNITSOFLENGTH
+  * Observation.component[obsSize].valueRange.high from UNITSOFLENGTH
 
   // -----------------------------------------
   // Graph Macros
