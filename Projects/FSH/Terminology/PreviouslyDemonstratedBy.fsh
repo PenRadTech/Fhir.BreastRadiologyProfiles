@@ -5,12 +5,6 @@ Description:  "PreviouslyDemonstratedBy Value Set"
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-
 
 CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
@@ -46,7 +40,3 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     Findings on the Mammogram was previously demonstrated
     by the Ultrasound.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

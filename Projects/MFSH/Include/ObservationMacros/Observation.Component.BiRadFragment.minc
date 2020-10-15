@@ -9,9 +9,6 @@
 #Description: """
 # Fragment that adds 'BiRad code' element to profile
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that define the BiRAD risk code.
@@ -21,18 +18,18 @@
   #
   #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -40,5 +37,10 @@
     # </p>
     #""")
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

@@ -10,9 +10,6 @@
 #Description: """
 #  Fragment that adds 'Observed Distribution' components to Observation.
 #  """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #incompatible Observation.Component.Zero
   #
   // define calcification distribution slice
@@ -55,17 +52,17 @@
   * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
   * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
   
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -76,4 +73,9 @@
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
   #end
   
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
+  #end
 #end

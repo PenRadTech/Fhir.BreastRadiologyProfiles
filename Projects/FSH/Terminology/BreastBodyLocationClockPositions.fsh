@@ -4,11 +4,6 @@ Description:  "Breast Body Location Clock Positions Value Set"
   * codes from system BreastBodyLocationClockPositionsCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 
@@ -122,7 +117,3 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     in the breast.
     12 o'clock position is at the 12 o'clock position (from the perspective of the provider).
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

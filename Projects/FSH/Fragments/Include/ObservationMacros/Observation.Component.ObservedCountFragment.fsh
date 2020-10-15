@@ -4,19 +4,11 @@ Title: "Observed Count Fragment"
 Description: """
   Fragment that adds 'Observed Count' element to profile.
   """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """
@@ -38,17 +30,5 @@ Description: """
     This code identifies the Observed Count component. component.
 	"""
   * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

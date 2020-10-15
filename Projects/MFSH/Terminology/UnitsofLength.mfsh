@@ -10,9 +10,9 @@ Description:  "Units of length used in Breast radiology."
   * UCUM#mm "millimeter"
   
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end

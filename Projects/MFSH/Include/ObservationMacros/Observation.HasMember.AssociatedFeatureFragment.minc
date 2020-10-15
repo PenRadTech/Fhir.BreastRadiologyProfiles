@@ -9,26 +9,23 @@
 #Description: """
 # This fragment adds the references for the Associated Feature hasMember slice.
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #apply Observation.HasMember.Add("associatedFeature", "0..*", "AssociatedFeature",
   #  "'Associated Feature' reference.",
   #  """
   #  This slice references the target 'Associated Feature'.
   #  """)
   
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -37,5 +34,9 @@
     #""")
 
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

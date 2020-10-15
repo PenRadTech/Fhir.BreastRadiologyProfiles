@@ -43,7 +43,3 @@ Description: "Codes defining mass refinements."
     tumor, breast cancer or metastatic.
     A biopsy confirmation may be required.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

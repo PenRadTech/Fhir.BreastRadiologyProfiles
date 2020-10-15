@@ -8,12 +8,6 @@ Description:  "ConsistentWith Qualifier Value Set"
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-
   
 /*
    Code system that defines consistent with qualifier codes.
@@ -43,7 +37,3 @@ Description: "ConsistentWithQualifier  code system"
     """
     Resembles
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

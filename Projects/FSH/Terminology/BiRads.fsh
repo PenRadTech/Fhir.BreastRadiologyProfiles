@@ -7,11 +7,6 @@ Description:  "BiRads Assessment Category Value Set"
   * codes from system BiRadsAssessmentCategoryCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 /*
@@ -142,7 +137,3 @@ Description:  "BiRads Assessment Category CodeSystem"
     the cancer is responding to treatment.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

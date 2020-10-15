@@ -9,9 +9,6 @@
 #Description: """
 # 'Demonstrated By' Component Fragment
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #apply Observation.Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
@@ -23,24 +20,29 @@
   #
   #apply Observation.Component.SetConcept("prevDemBy", "1..1", "PreviouslyDemonstratedByVS")
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
-  #apply once IntroDocFragment("""
-  # <p>
-  # <b>%FTitle%</b>
-  # </p>
-  #""")
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
 
-  #apply once GroupMemberFragment("Fragments", "%FTitle%")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

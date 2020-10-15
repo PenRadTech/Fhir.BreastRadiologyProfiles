@@ -4,11 +4,6 @@ Description:  "Mass Type Value Set"
   * codes from system AbnormalityMassTypeCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 CodeSystem:  AbnormalityMassTypeCS
@@ -26,8 +21,3 @@ Description:  "Mass Type CodeSystem"
   * #MassSkinATLASIsSkinLesion "Mass skin ATLAS is skin lesion"
 
   * #MassSolid "Mass solid"
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

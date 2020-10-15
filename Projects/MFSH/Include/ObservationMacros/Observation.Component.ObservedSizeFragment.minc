@@ -9,9 +9,6 @@
 #Description: """
 # Fragment that adds 'Observed Size' components to Observation.
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #incompatible Observation.Component.Zero
   #
   // Define distribution region size.
@@ -31,30 +28,34 @@
   #	 """,
   # "ObservationComponentSliceCodesCS#obsSize")
   #
-  * Observation.component[obsSize].value[x] 1..1
-  * Observation.component[obsSize].value[x] only Quantity or Range
-  * Observation.component[obsSize].valueQuantity from UNITSOFLENGTH
-  * Observation.component[obsSize].valueRange.low from UNITSOFLENGTH
-  * Observation.component[obsSize].valueRange.high from UNITSOFLENGTH
+  * component[obsSize].value[x] 1..1
+  * component[obsSize].value[x] only Quantity or Range
+  * component[obsSize].valueQuantity from UNITSOFLENGTH
+  * component[obsSize].valueRange.low from UNITSOFLENGTH
+  * component[obsSize].valueRange.high from UNITSOFLENGTH
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
-  #apply once IntroDocFragment("""
-  # <p>
-  # <b>%FTitle%</b>
-  # </p>
-  #""")
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
 
-  #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

@@ -18,9 +18,9 @@ Description: """
   * entry[index].resource only BreastRadiologyComposition
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile( """
     # <P>
@@ -46,11 +46,10 @@ Description: """
   #end
 
 
-  #apply CSBuild.DefineClass()
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Document")
     #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "1", "Bas,Ovr")
@@ -61,4 +60,11 @@ Description: """
     #apply Legend("focus", "Resource Element", "element")
     #apply Legend("focus", "ValueSet", "valueSet")
     #apply Legend("focus", "Value", "value")
+  #end
+  
+    #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
   #end

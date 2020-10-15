@@ -9,9 +9,6 @@
 #Description: """
 #  Fragment that adds 'Observed Count' element to profile.
 #  """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
   #	  """
@@ -29,17 +26,17 @@
   * component[observedCount].value[x] 1..1
   * component[observedCount].value[x] only Quantity or Range
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -49,4 +46,9 @@
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
   #end
 
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
+  #end
 #end

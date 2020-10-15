@@ -40,9 +40,9 @@ Description: """
   #apply Observation.Component.SetConcept("qualifier", "0..1", "ConsistentWithQualifierVS")
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     # <p>
@@ -59,12 +59,16 @@ Description: """
   #end
 
 
-  #apply CSBuild.DefineClass()
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Consistent With")
   #end
 
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

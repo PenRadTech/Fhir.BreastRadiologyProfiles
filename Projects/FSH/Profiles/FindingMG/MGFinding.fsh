@@ -5,10 +5,6 @@ Description: """
     Mammography Finding
     """
   * code = ObservationCodesCS#mgFindingObservation
-  
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -35,107 +31,42 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityCyst 0..*
-  * Observation.hasMember[abnormalityCyst] ^short = "'Cyst' reference. hasMember."
-  * Observation.hasMember[abnormalityCyst] only Reference(AbnormalityCyst)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityDuct 0..*
-  * Observation.hasMember[abnormalityDuct] ^short = "'Duct' reference. hasMember."
-  * Observation.hasMember[abnormalityDuct] only Reference(AbnormalityDuct)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityForeignObject 0..*
-  * Observation.hasMember[abnormalityForeignObject] ^short = "'Foreign Object' reference. hasMember."
-  * Observation.hasMember[abnormalityForeignObject] only Reference(AbnormalityForeignObject)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityLymphNode 0..*
-  * Observation.hasMember[abnormalityLymphNode] ^short = "'Lymph Node' reference. hasMember."
-  * Observation.hasMember[abnormalityLymphNode] only Reference(AbnormalityLymphNode)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityMass 0..*
-  * Observation.hasMember[abnormalityMass] ^short = "'Mass' reference. hasMember."
-  * Observation.hasMember[abnormalityMass] only Reference(AbnormalityMass)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains associatedFeature 0..*
-  * Observation.hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
-  * Observation.hasMember[associatedFeature] only Reference(AssociatedFeature)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityFibroadenoma 0..*
-  * Observation.hasMember[abnormalityFibroadenoma] ^short = "'Fibroadenoma' reference. hasMember."
-  * Observation.hasMember[abnormalityFibroadenoma] only Reference(AbnormalityFibroadenoma)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityArchDist 0..*
-  * Observation.hasMember[abnormalityArchDist] ^short = "'Architectural Distortion' reference. hasMember."
-  * Observation.hasMember[abnormalityArchDist] only Reference(AbnormalityArchitecturalDistortion)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityAsymmetry 0..*
-  * Observation.hasMember[abnormalityAsymmetry] ^short = "'Asymmetry' reference. hasMember."
-  * Observation.hasMember[abnormalityAsymmetry] only Reference(AbnormalityAsymmetry)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityCalcification 0..*
-  * Observation.hasMember[abnormalityCalcification] ^short = "'Calcification' reference. hasMember."
-  * Observation.hasMember[abnormalityCalcification] only Reference(AbnormalityCalcification)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityDensity 0..*
-  * Observation.hasMember[abnormalityDensity] ^short = "'Density' reference. hasMember."
-  * Observation.hasMember[abnormalityDensity] only Reference(AbnormalityDensity)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains abnormalityFatNecrosis 0..*
-  * Observation.hasMember[abnormalityFatNecrosis] ^short = "'FatNecrosis' reference. hasMember."
-  * Observation.hasMember[abnormalityFatNecrosis] only Reference(AbnormalityFatNecrosis)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains mgBreastDensity 1..1
-  * Observation.hasMember[mgBreastDensity] ^short = "'Mammo Breast Density' reference. hasMember."
-  * Observation.hasMember[mgBreastDensity] only Reference(MGBreastDensity)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  * hasMember contains abnormalityCyst 0..*
+  * hasMember[abnormalityCyst] ^short = "'Cyst' reference. hasMember."
+  * hasMember[abnormalityCyst] only Reference(AbnormalityCyst)
+  * hasMember contains abnormalityDuct 0..*
+  * hasMember[abnormalityDuct] ^short = "'Duct' reference. hasMember."
+  * hasMember[abnormalityDuct] only Reference(AbnormalityDuct)
+  * hasMember contains abnormalityForeignObject 0..*
+  * hasMember[abnormalityForeignObject] ^short = "'Foreign Object' reference. hasMember."
+  * hasMember[abnormalityForeignObject] only Reference(AbnormalityForeignObject)
+  * hasMember contains abnormalityLymphNode 0..*
+  * hasMember[abnormalityLymphNode] ^short = "'Lymph Node' reference. hasMember."
+  * hasMember[abnormalityLymphNode] only Reference(AbnormalityLymphNode)
+  * hasMember contains abnormalityMass 0..*
+  * hasMember[abnormalityMass] ^short = "'Mass' reference. hasMember."
+  * hasMember[abnormalityMass] only Reference(AbnormalityMass)
+  * hasMember contains associatedFeature 0..*
+  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+  * hasMember contains abnormalityFibroadenoma 0..*
+  * hasMember[abnormalityFibroadenoma] ^short = "'Fibroadenoma' reference. hasMember."
+  * hasMember[abnormalityFibroadenoma] only Reference(AbnormalityFibroadenoma)
+  * hasMember contains abnormalityArchDist 0..*
+  * hasMember[abnormalityArchDist] ^short = "'Architectural Distortion' reference. hasMember."
+  * hasMember[abnormalityArchDist] only Reference(AbnormalityArchitecturalDistortion)
+  * hasMember contains abnormalityAsymmetry 0..*
+  * hasMember[abnormalityAsymmetry] ^short = "'Asymmetry' reference. hasMember."
+  * hasMember[abnormalityAsymmetry] only Reference(AbnormalityAsymmetry)
+  * hasMember contains abnormalityCalcification 0..*
+  * hasMember[abnormalityCalcification] ^short = "'Calcification' reference. hasMember."
+  * hasMember[abnormalityCalcification] only Reference(AbnormalityCalcification)
+  * hasMember contains abnormalityDensity 0..*
+  * hasMember[abnormalityDensity] ^short = "'Density' reference. hasMember."
+  * hasMember[abnormalityDensity] only Reference(AbnormalityDensity)
+  * hasMember contains abnormalityFatNecrosis 0..*
+  * hasMember[abnormalityFatNecrosis] ^short = "'FatNecrosis' reference. hasMember."
+  * hasMember[abnormalityFatNecrosis] only Reference(AbnormalityFatNecrosis)
+  * hasMember contains mgBreastDensity 1..1
+  * hasMember[mgBreastDensity] ^short = "'Mammo Breast Density' reference. hasMember."
+  * hasMember[mgBreastDensity] only Reference(MGBreastDensity)

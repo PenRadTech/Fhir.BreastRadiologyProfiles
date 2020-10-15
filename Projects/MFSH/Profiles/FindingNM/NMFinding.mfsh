@@ -11,9 +11,9 @@ Description: """
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     # <p>
@@ -32,11 +32,17 @@ Description: """
     #apply GroupMemberProfile("NMResources", "%Title%")
   #end
 
-  #apply CSBuild.DefineClass()
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("D", "Nuclear Medicine/Findings")
+  #end
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
   #end

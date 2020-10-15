@@ -4,11 +4,6 @@ Description:  "ObservedChanges Value Set"
   * codes from system ObservedChangesCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 
@@ -98,7 +93,3 @@ Description: "Observed changes in an abnormality code system."
     Mammogram, Ultrasound, MRI or Nuclear
     Medicine exam.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

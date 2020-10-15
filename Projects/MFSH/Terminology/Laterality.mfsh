@@ -8,9 +8,9 @@ Description:  "Laterality Value Set"
   
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end

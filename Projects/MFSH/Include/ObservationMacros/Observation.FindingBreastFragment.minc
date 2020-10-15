@@ -59,9 +59,9 @@ Description: """
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     #<p>
@@ -82,9 +82,9 @@ Description: """
     #apply GroupMemberProfile("CommonResources", "%Title%")
   #end
   
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Findings/%Laterality% Breast")
     #apply NodeElement("", "bodySite", "Body Site")

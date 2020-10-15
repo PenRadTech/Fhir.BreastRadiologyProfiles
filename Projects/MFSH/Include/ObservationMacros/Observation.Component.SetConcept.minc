@@ -6,9 +6,9 @@
   * component[SliceName].value[x] only CodeableConcept
   * component[SliceName].value[x] from ValueSet
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply LinkByBinding("focus", "^%ProfileId%/component:SliceName/$", ".value[x]", "Cmp")
   #end

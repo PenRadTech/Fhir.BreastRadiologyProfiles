@@ -5,9 +5,9 @@ Description:  "Calcification Type Value Set"
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
@@ -326,9 +326,9 @@ Description: "Mammography calcification type code system."
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
     """
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end

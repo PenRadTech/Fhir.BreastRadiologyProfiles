@@ -4,20 +4,12 @@ Title: "Observed Size Fragment"
 Description: """
   Fragment that adds 'Observed Size' components to Observation.
   """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
     // Define distribution region size.
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains obsSize 0..3
   * component[obsSize] ^short = "Observed size. component."
   * component[obsSize] ^comment = """
@@ -42,20 +34,8 @@ Description: """
     This code identifies the Observed size. component.
 	"""
   * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.component[obsSize].value[x] 1..1
-  * Observation.component[obsSize].value[x] only Quantity or Range
-  * Observation.component[obsSize].valueQuantity from UNITSOFLENGTH
-  * Observation.component[obsSize].valueRange.low from UNITSOFLENGTH
-  * Observation.component[obsSize].valueRange.high from UNITSOFLENGTH
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  * component[obsSize].value[x] 1..1
+  * component[obsSize].value[x] only Quantity or Range
+  * component[obsSize].valueQuantity from UNITSOFLENGTH
+  * component[obsSize].valueRange.low from UNITSOFLENGTH
+  * component[obsSize].valueRange.high from UNITSOFLENGTH

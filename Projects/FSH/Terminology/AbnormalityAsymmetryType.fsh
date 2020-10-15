@@ -2,10 +2,6 @@ ValueSet:  AbnormalityAsymmetryTypeVS
 Title: "Asymmetry Type ValueSet"
 Description:  "Asymmetry Type Value Set"
   * codes from system AbnormalityAsymmetryTypeCS
-  
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
 
 
 
@@ -56,7 +52,3 @@ Description: "Asymmetry type code system."
     manifestation of breast cancer.
     [https://pubs.rsna.org/doi/full/10.1148/rg.2016150123]
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

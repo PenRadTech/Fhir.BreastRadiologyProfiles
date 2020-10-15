@@ -20,9 +20,9 @@
 	"""
   * component[SliceName].code = ComponentCode
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("", "component:SliceName", "DisplayName")
   #end

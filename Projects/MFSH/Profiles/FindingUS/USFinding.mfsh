@@ -10,9 +10,9 @@ Description: """
   #apply Observation.SectionFragment()
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     # <p>
@@ -31,12 +31,17 @@ Description: """
     #apply GroupMemberProfile("USResources", "%Title%")
   #end
 
-  #apply CSBuild.DefineClass()
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("C", "Ultrasound Findings")
   #end
 
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

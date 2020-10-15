@@ -6,9 +6,9 @@
 #macro Resource.Fix(%Element%, %Code%, %DisplayName%)
   * %Element% = %Code%
   
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/%Element%", "0", "Cmp")
     #apply NodeElement("1", "%Element%", "%DisplayName%")

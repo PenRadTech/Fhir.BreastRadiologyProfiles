@@ -4,9 +4,9 @@ Description:  "ServiceRecommendations Value Set"
   * codes from system ServiceRecommendationsCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
@@ -871,9 +871,9 @@ Description:  "ServiceRecommendations CodeSystem"
     A vacuum biopsy is recommended.
     """
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end

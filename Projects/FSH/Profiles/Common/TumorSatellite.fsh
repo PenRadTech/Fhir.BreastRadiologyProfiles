@@ -37,10 +37,6 @@ Description: """
     Tumor Satellite Observation.
 	"""
   * code = ObservationCodesCS#tumorSatelliteObservation
-  
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
 
   * value[x] 0..1
   * value[x] only Quantity or Range
@@ -52,10 +48,6 @@ Description: """
   * derivedFrom ^slicing.rules = #open
   * derivedFrom ^slicing.ordered = false
   * derivedFrom ^slicing.description = "derivedFrom slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * derivedFrom contains indexTumor 0..1
   * derivedFrom[indexTumor] ^short = "Index Tumor Observation reference component."
   * derivedFrom[indexTumor] ^comment = """
@@ -65,17 +57,3 @@ Description: """
     This derivedFrom slice references the index tumor.
     """
   * derivedFrom[indexTumor] only Reference(OBSERVATIONURL)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------

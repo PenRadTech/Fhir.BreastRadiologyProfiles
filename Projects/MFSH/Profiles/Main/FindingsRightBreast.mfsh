@@ -5,12 +5,16 @@ Profile: FindingsRightBreast
 
   #apply Resource.Fix("code", "ObservationCodesCS#findingsRightBreastObservation", "Code")
 
-  #apply CSBuild.DefineClass()
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberProfile("BaseResources", "C")
   #end
   
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

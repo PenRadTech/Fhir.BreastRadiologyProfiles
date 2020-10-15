@@ -15,9 +15,9 @@
     """
   * derivedFrom[SliceName] only Reference(Url)
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("", "derivedFrom:SliceName", "DisplayName")
     #apply LinkByReference("focus", "^%ProfileId%/derivedFrom/$", "%ProfileId%.derivedFrom:SliceName", "1", "Cmp")

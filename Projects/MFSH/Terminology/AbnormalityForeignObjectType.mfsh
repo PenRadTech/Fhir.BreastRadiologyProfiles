@@ -4,9 +4,9 @@ Description:  "Foreign Object Type Value Set"
   * codes from system AbnormalityForeignObjectTypeCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
@@ -336,9 +336,9 @@ Description:  "Foreign Object Type CodeSystem"
     devices such as a catheter or pacemaker.
     """
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end

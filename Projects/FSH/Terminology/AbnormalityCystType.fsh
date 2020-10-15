@@ -2,12 +2,6 @@ ValueSet: AbnormalityCystTypeVS
 Title: "Cyst Type Value Set"
 Description: "Cyst type Value Set."
   * codes from system AbnormalityCystTypeCS
-  
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
 
 
 
@@ -83,7 +77,3 @@ Description: "Cyst type CodeSystem."
     cyst.
     The type of debris determines what kind of cyst.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

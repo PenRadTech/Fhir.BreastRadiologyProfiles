@@ -5,12 +5,6 @@ Description:  "Breast Body Location Regions Value Set"
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-
 
 
 CodeSystem:  BreastBodyLocationRegionCS
@@ -84,7 +78,3 @@ Description:  "Breast Body Location Regions CodeSystem"
     Central to the nipple (central portion of the breast-behind
     the nipple).
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

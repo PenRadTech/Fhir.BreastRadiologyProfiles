@@ -30,9 +30,9 @@
     Reference to the Breast Radiology Report.
 	"""
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("A", "section:SliceName", "Report Section")
   #end
@@ -59,9 +59,9 @@
     Reference to the clinical impression(s).
     """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("B", "section:SliceName", "Impressions Section")
   #end
@@ -92,9 +92,9 @@
   Reference to the finding for the Left breast.
   """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("C", "section:SliceName", "Findings/Left Breast/Section")
   #end
@@ -125,9 +125,9 @@
   Reference to the finding for the Right breast.
   """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("C", "section:SliceName", "Findings/Right Breast/Section")
   #end
@@ -162,9 +162,9 @@
   Reference to related resources.
   """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("E", "section:SliceName", "Related Resources/Section")
   #end
@@ -195,9 +195,9 @@
   Reference to any recommendations.
   """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("D", "section:SliceName", "Recommendations/Section")
   #end
@@ -227,9 +227,9 @@
   Reference to any administrative resource.
   """
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeElement("F", "section:SliceName", "Admin/Section")
   #end

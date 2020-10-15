@@ -4,9 +4,9 @@ Description:  "Margin Value Set"
   * codes from system MarginCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
@@ -127,9 +127,9 @@ Description: "Margin code system."
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 55]
     """
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end

@@ -105,7 +105,3 @@ Description: "Observation Codes code system"
     """
     Observation.code to identify a SectionFindingsRightBreast observation.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

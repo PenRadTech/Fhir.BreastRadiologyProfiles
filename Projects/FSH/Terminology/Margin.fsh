@@ -4,11 +4,6 @@ Description:  "Margin Value Set"
   * codes from system MarginCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 CodeSystem: MarginCS
@@ -123,7 +118,3 @@ Description: "Margin code system."
     the mass is not circumscribed.
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 55]
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

@@ -16,9 +16,9 @@
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -28,12 +28,9 @@
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
   #end
   
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
@@ -44,4 +41,8 @@
     #apply LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1", "Cmp")
   #end
 
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
+  #end
 #end

@@ -36,9 +36,9 @@ Description: "Composition Section Slice Codes code system"
     Slicing CompositionSection Code - Admin.
     """
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end

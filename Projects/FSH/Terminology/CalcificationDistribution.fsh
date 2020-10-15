@@ -4,11 +4,6 @@ Description:  "CalcificationDistribution Value Set"
   * codes from system CalcificationDistributionCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 
@@ -112,7 +107,3 @@ Description: "Calcification Distribution in an abnormality code system."
     of a segment (or a lobe) exactly are.
     [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

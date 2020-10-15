@@ -21,12 +21,3 @@ Description: """
   * entry[index].fullUrl = "index"
   * entry[index].resource 1..1
   * entry[index].resource only BreastRadiologyComposition
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------

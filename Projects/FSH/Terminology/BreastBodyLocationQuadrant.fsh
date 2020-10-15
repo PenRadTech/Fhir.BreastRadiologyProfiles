@@ -4,11 +4,6 @@ Description:  "Breast Body Location Quadrants Value Set"
   * codes from system BreastBodyLocationQuadrantCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 
@@ -43,7 +38,3 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     The upper outside (closest to the armpit on each
     breast) quadrant of each breast.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

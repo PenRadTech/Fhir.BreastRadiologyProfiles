@@ -16,9 +16,9 @@ Description: """
   * value[x] = ObservationCodesCS#mgBreastDensityObservation
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     # <p>
@@ -29,12 +29,17 @@ Description: """
     #apply GroupMemberProfile("MGResources", "%Title%")
   #end
 
-  #apply CSBuild.DefineClass()
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast Density")
   #end
 
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

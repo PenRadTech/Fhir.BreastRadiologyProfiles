@@ -5,19 +5,11 @@ Description: """
   'Corresponds With' Component Fragment
   Adds CorrespondsWith component
   """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -33,23 +25,6 @@ Description: """
     This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[correspondsWith].value[x] 1..1
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

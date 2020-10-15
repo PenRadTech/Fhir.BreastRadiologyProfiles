@@ -7,9 +7,6 @@
 #Parent: Observation
 #Title: "Observed Changes Fragment"
 #Description: "Add Observed Changes Component Slice"
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #apply Observation.Component.Add("obsChanges", "0..*", "Observed Changes", "Observed Change In Abnormality",
   #	 """
   #  This slice contains the optional components that define observed changes in this abnormality.
@@ -19,17 +16,17 @@
   #
   #apply Observation.Component.SetConcept("obsChanges", "1..1", "ObservedChangesVS")
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -39,4 +36,9 @@
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
   #end
 
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
+  #end
 #end

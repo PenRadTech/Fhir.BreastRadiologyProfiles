@@ -11,9 +11,6 @@
 # 'Corresponds With' Component Fragment
 # Adds CorrespondsWith component
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
   #	 """
   #  This slice contains the optional components that define what this observation corresponds with.
@@ -23,18 +20,18 @@
   #
   #apply Observation.Component.SetConcept("correspondsWith", "1..1", "CorrespondsWithVS")
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -42,5 +39,10 @@
     # </p>
     #""")
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

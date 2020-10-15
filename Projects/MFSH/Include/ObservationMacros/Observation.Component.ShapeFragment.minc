@@ -9,9 +9,6 @@
 #Description: """
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
-  #apply once CSBuild.DefineFragment()
-  #apply CSBuild.ImplementFragment()
-  #
   // Define Orientation Slice
   #apply Observation.Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
@@ -53,17 +50,17 @@
   #
   #apply Observation.Component.SetConcept("mgBreastDensity", "1..1", "MGBreastDensityVS")
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
   #end
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply once IntroDocFragment("""
     # <p>
@@ -72,5 +69,9 @@
     #""")
 
     #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
   #end
 #end

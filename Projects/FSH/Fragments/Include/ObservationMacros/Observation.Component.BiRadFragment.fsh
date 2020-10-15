@@ -4,19 +4,11 @@ Title: "BiRad Fragment"
 Description: """
   Fragment that adds 'BiRad code' element to profile
   """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
     * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -32,23 +24,6 @@ Description: """
     This code identifies the BiRads Assessment Category component. component.
 	"""
   * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

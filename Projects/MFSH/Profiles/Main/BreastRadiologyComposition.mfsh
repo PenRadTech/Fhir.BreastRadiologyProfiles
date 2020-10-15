@@ -28,9 +28,9 @@ Description: """
   #apply AdminSection("admin")
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
   #use IG
     #apply IntroDocProfile("""
     # <P>
@@ -67,9 +67,9 @@ Description: """
     #apply GroupMemberProfile("BaseResources", "B")
   #end
 
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Composition")
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
@@ -80,4 +80,9 @@ Description: """
     #apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
   #end
 
-  #apply CSBuild.DefineClass()
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

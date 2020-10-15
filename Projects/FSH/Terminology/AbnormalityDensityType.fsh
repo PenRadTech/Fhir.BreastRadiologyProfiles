@@ -5,12 +5,6 @@ Description:  "Density Type Value Set"
 
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-
 CodeSystem: AbnormalityDensityTypeCS
 Title: "Density Type CodeSystem"
 Description: "Density refinement types code system."
@@ -37,7 +31,3 @@ Description: "Density refinement types code system."
     The milk ducts have formed a tubular appearing dense
     structure.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

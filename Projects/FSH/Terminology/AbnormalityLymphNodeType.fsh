@@ -4,11 +4,6 @@ Description:  "LymphNode Type Value Set"
   * codes from system AbnormalityLymphNodeTypeCS
 
 
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
 
 
 CodeSystem: AbnormalityLymphNodeTypeCS
@@ -107,7 +102,3 @@ Description: "Lymph node types code system."
     hypoechogenicity, loss of central hilum, or eccentric
     cortical hypertrophy.
     """
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------

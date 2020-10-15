@@ -5,19 +5,11 @@ Description: """
   Foreign Object
   """
   * code = ObservationCodesCS#abnormalityForeignObjectObservation
-  
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
   * component ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains abnormalityForeignObjectType 1..1
   * component[abnormalityForeignObjectType] ^short = "Foreign Object Type component."
   * component[abnormalityForeignObjectType] ^comment = """
@@ -33,17 +25,9 @@ Description: """
     This code identifies the Foreign Object Type component.
 	"""
   * component[abnormalityForeignObjectType].code = ObservationComponentSliceCodesCS#abnormalityForeignObjectType
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[abnormalityForeignObjectType].value[x] 1..1
   * component[abnormalityForeignObjectType].value[x] only CodeableConcept
   * component[abnormalityForeignObjectType].value[x] from AbnormalityForeignObjectTypeVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -67,14 +51,6 @@ Description: """
   * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component contains obsChanges 0..*
   * component[obsChanges] ^short = "Observed Change In Abnormality component."
   * component[obsChanges] ^comment = """
@@ -90,25 +66,9 @@ Description: """
     This code identifies the Observed Change In Abnormality component.
 	"""
   * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[obsChanges].value[x] 1..1
   * component[obsChanges].value[x] only CodeableConcept
   * component[obsChanges].value[x] from ObservedChangesVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -124,26 +84,9 @@ Description: """
     This code identifies the BiRads Assessment Category component. component.
 	"""
   * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -159,25 +102,9 @@ Description: """
     This code identifies the Not Previously Seen component.
 	"""
   * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[notPreviouslySeen].value[x] 1..1
   * component[notPreviouslySeen].value[x] only CodeableConcept
   * component[notPreviouslySeen].value[x] from NotPreviouslySeenVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -193,26 +120,9 @@ Description: """
     This code identifies the Abnormality Corresponds With component.
 	"""
   * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[correspondsWith].value[x] 1..1
   * component[correspondsWith].value[x] only CodeableConcept
   * component[correspondsWith].value[x] from CorrespondsWithVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
   * component[prevDemBy] ^comment = """
@@ -230,70 +140,17 @@ Description: """
     This code identifies the Previously Demonstrated by component.
 	"""
   * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  * Observation.hasMember contains associatedFeature 0..*
-  * Observation.hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
-  * Observation.hasMember[associatedFeature] only Reference(AssociatedFeature)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-  
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-  * Observation.hasMember contains consistentWith 0..*
-  * Observation.hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
-  * Observation.hasMember[consistentWith] only Reference(ConsistentWith)
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-
-  // -----------------------------------------
-  // IG Macros
-  // -----------------------------------------
-
-  // -----------------------------------------
-  // Graph Macros
-  // -----------------------------------------
+  * hasMember contains associatedFeature 0..*
+  * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
+  * hasMember[associatedFeature] only Reference(AssociatedFeature)
+  * hasMember contains consistentWith 0..*
+  * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
+  * hasMember[consistentWith] only Reference(ConsistentWith)
