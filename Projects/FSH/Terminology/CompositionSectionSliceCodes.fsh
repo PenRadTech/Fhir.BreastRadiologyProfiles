@@ -35,3 +35,7 @@ Description: "Composition Section Slice Codes code system"
     """
     Slicing CompositionSection Code - Admin.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

@@ -16,16 +16,18 @@ Description: """
   * value[x] = ObservationCodesCS#mgBreastDensityObservation
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Breast Density Observation</b>
+    # </p>
+    #""")
 
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Breast Density Observation</b>
-  # </p>
-  #""")
-
-  #apply IGGroupMemberProfile("MGResources", "%Title%")
-
+    #apply GroupMemberProfile("MGResources", "%Title%")
+  #end
 
   #apply CSBuild.DefineClass()
 

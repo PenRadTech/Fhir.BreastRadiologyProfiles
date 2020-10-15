@@ -106,4 +106,9 @@ Description: "Observation Codes code system"
     Observation.code to identify a SectionFindingsRightBreast observation.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

@@ -1,7 +1,7 @@
 //
 // Make a graph node that refers to a profile.
 //
-#macro IGGroup(%ProfileId%, %Name%, %Description%) > "%GraphDir%\\IGFile.cmds"
+#macro IG.Group(%ProfileId%, %Name%, %Description%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "group" : {
   `      "id" : "%ProfileId%",
@@ -11,7 +11,7 @@
   `  },
 #end
 
-#macro IGGroupMemberProfile(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+#macro IG.GroupMemberProfile(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
   `      "groupingId" : "%GroupId%",
@@ -21,7 +21,7 @@
   `  },
 #end
 
-#macro IGGroupMemberFragment(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+#macro IG.GroupMemberFragment(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
   `      "groupingId" : "%GroupId%",
@@ -31,7 +31,7 @@
   `  },
 #end
 
-#macro IGGroupMemberValueSet(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+#macro IG.GroupMemberValueSet(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
   `      "groupingId" : "%GroupId%",
@@ -41,7 +41,7 @@
   `  },
 #end
 
-#macro IGGroupMemberCodeSystem(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
+#macro IG.GroupMemberCodeSystem(%GroupId%, %Sort%) > "%GraphDir%\\IGFile.cmds"
   `  {
   `    "member" : {
   `      "groupingId" : "%GroupId%",
@@ -50,3 +50,62 @@
   `    }
   `  },
 #end
+
+
+
+//
+// Write out an intro doc for a profile.
+// The output of this gets automatically put at the start of the profile
+// web page.
+//
+#macro IG.IntroDocProfile(%Description%) > "%PageContent%\\StructureDefinition-%ProfileId%-intro.xml"
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   %Description%
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profile, and its dependencies.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FocusGraph-%ProfileId%.svg" type="image/svg+xml">
+  `     <img src="FocusGraph-%ProfileId%.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
+#end
+
+//
+// Write out an intro doc for a fragment.
+// The output of this gets automatically put at the start of the profile
+// web page.
+//
+#macro IG.IntroDocFragment(%Description%) > "%PageContent%\\StructureDefinition-%FragmentId%-intro.xml"
+  ` <div xmlns="http://www.w3.org/1999/xhtml"
+  `     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  `     xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+  `   <p>
+  `     <u style="font-size:large;">Description</u>
+  `   </p>
+  `   %Description%
+  `   <p>
+  `     <u style="font-size:large;">Graphical Overview</u>
+  `   </p>
+  `   <p>
+  `     This graph provides an overview of this profile fragment.
+  `   </p>
+  `   <p>
+  `     Click on any of the elements of the graph to go to a section describing that element.
+  `   </p>
+  `   <object data="FragGraph-%FragmentId%.svg" type="image/svg+xml">
+  `     <img src="FragGraph-%FragmentId%.svg" alt="image/svg+xml" />
+  `   </object>
+  ` </div>
+#end
+

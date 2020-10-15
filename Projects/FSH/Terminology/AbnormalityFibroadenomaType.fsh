@@ -4,6 +4,12 @@ Description:  "FibroAdenoma Type Value Set"
   * codes from system AbnormalityFibroadenomaTypeCS
 
 
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"
 Description: "Fibroadenoma  type code system."
@@ -27,3 +33,7 @@ Description: "Fibroadenoma  type code system."
     By the time an individual is menopausal, Fibroadenomas
     degenerate.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

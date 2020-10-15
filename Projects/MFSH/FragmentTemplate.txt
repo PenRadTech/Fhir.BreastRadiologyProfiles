@@ -1,5 +1,3 @@
-#apply once IGGroupMemberFragment("Fragments", "%FTitle%")
-
 Profile: %FragmentId%
 Parent: %FParent%
 Title: "%FTitle%"
@@ -7,4 +5,10 @@ Description: """
   %FDescription%
   """
 
-   
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+  

@@ -5,6 +5,12 @@ Description:  "Breast Body Location Depth Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 CodeSystem:  BreastBodyLocationDepthCS
 Title: "Breast Body Location Depth CodeSystem"
@@ -35,3 +41,7 @@ Description:  "Breast Body Location Depth CodeSystem"
     Posterior depth (closest to the chest wall) of the
     breast.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

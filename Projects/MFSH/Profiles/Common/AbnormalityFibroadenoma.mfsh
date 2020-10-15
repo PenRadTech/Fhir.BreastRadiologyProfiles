@@ -32,21 +32,23 @@ Description: """
   #apply Observation.HasMember.AssociatedFeatureFragment()
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Fibroadenoma Abnormality Observation</b>
+    # </p>
+    # <p>
+    # This resource contains information about a fibroadenoma abnormality observation. 
+    # </p>
+    #""")
 
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Fibroadenoma Abnormality Observation</b>
-  # </p>
-  # <p>
-  # This resource contains information about a fibroadenoma abnormality observation. 
-  # </p>
-  #""")
-
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
+  
   #apply CSBuild.DefineClass()
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------

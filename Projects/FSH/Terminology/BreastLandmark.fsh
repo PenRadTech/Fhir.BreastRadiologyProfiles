@@ -4,6 +4,11 @@ Description:  "BreastLandmark Value Set"
   * codes from system BreastLandmarkCS
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 
 CodeSystem:  BreastLandmarkCS
 Title: "BreastLandmark CodeSystem"
@@ -15,3 +20,9 @@ Description:
   * #Nipple "Nipple"
   * #ChestWall "Chest Wall"
   * #Skin "Skin"
+  
+
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

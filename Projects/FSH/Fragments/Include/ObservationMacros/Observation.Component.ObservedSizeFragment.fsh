@@ -5,7 +5,10 @@ Description: """
   Fragment that adds 'Observed Size' components to Observation.
   """
 
-     // Define distribution region size.
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+    // Define distribution region size.
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -51,4 +54,8 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------

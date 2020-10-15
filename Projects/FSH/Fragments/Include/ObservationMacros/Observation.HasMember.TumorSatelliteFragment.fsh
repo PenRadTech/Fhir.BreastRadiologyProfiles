@@ -5,7 +5,10 @@ Description: """
   This fragment adds the references for the Tumor Satellite extension.
   """
 
-     * hasMember ^slicing.discriminator.type = #value
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+    * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
@@ -24,4 +27,8 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------

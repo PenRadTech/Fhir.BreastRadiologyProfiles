@@ -33,19 +33,6 @@ Description: """
   #apply Observation.HasMember.AssociatedFeatureFragment()
   #apply Observation.HasMember.ConsistentWithFragment()
 
-
-
-
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Mammography Density Abnormality Observation</b>
-  # </p>
-  #""")
-
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-
   #apply CSBuild.DefineClass()
  
   // -----------------------------------------
@@ -54,3 +41,18 @@ Description: """
   #use Graph
     #apply NodeProfile("", "Density")
   #end
+
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Mammography Density Abnormality Observation</b>
+    # </p>
+    #""")
+
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
+  

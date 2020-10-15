@@ -69,6 +69,10 @@ Description: """
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
   // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
   * component contains obsChanges 0..*
@@ -101,6 +105,10 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
   * component contains biRadsAssessmentCategory 0..1
   * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
   * component[biRadsAssessmentCategory] ^comment = """
@@ -130,6 +138,11 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
@@ -161,6 +174,10 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
   * component contains correspondsWith 0..*
   * component[correspondsWith] ^short = "Abnormality Corresponds With component."
   * component[correspondsWith] ^comment = """
@@ -190,6 +207,11 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------
   * component contains prevDemBy 0..*
   * component[prevDemBy] ^short = "Previously Demonstrated by component."
@@ -223,6 +245,10 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
@@ -243,6 +269,10 @@ Description: """
   // -----------------------------------------
   // Graph Macros
   // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
   * Observation.hasMember contains consistentWith 0..*
   * Observation.hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * Observation.hasMember[consistentWith] only Reference(ConsistentWith)
@@ -253,6 +283,15 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------
 
   // -----------------------------------------

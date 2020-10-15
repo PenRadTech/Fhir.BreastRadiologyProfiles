@@ -11,26 +11,26 @@ Description: """
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Nuclear Medicine Finding</b>
+    # </p>
+    # <p>
+    # This Observation contains all references to all the observations
+    #  and exam information related to a nuclear medicine (NM) exam.
+    # </p>
+    # <p>
+    # As of this ballot, the child observations of an NM Exam have not
+    #  been defined. They will be defined in a later ballot.
+    # </p>
+    #""")
 
-
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Nuclear Medicine Finding</b>
-  # </p>
-  # <p>
-  # This Observation contains all references to all the observations
-  #  and exam information related to a nuclear medicine (NM) exam.
-  # </p>
-  # <p>
-  # As of this ballot, the child observations of an NM Exam have not
-  #  been defined. They will be defined in a later ballot.
-  # </p>
-  #""")
-
-  #apply IGGroupMemberProfile("NMResources", "%Title%")
-
+    #apply GroupMemberProfile("NMResources", "%Title%")
+  #end
 
   #apply CSBuild.DefineClass()
 

@@ -5,7 +5,12 @@ Description:  "FibroAdenoma Type Value Set"
 
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 CodeSystem: AbnormalityFibroadenomaTypeCS
@@ -32,4 +37,9 @@ Description: "Fibroadenoma  type code system."
     degenerate.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

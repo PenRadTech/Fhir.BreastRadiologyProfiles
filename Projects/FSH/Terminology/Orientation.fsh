@@ -5,6 +5,12 @@ Description:  "Orientation Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
@@ -34,3 +40,7 @@ Description: "Orientation CodeSystem"
     larger in the direction not parallel to the direction
     of the skin.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

@@ -6,7 +6,10 @@ Description: """
   Adds CorrespondsWith component
   """
 
-     * component ^slicing.discriminator.type = #pattern
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+    * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
   * component ^slicing.ordered = false
@@ -44,4 +47,9 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+
+
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------

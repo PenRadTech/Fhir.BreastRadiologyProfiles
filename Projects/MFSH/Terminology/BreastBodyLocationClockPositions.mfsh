@@ -4,7 +4,12 @@ Description:  "Breast Body Location Clock Positions Value Set"
   * codes from system BreastBodyLocationClockPositionsCS
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -121,4 +126,9 @@ Description:  "BreastBodyLocationClockPositions CodeSystem"
     12 o'clock position is at the 12 o'clock position (from the perspective of the provider).
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

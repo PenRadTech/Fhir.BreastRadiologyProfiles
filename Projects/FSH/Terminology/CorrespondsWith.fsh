@@ -5,6 +5,12 @@ Description:  "CorrespondsWith Value Set"
 
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
+
 CodeSystem:  CorrespondsWithCS
 Title: "CorrespondsWith CodeSystem"
 Description:  "CorrespondsWith CodeSystem"
@@ -211,3 +217,7 @@ Description:  "CorrespondsWith CodeSystem"
     Medicine exam, correspond with this
     Ultrasound.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

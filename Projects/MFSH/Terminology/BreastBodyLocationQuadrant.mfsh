@@ -4,7 +4,12 @@ Description:  "Breast Body Location Quadrants Value Set"
   * codes from system BreastBodyLocationQuadrantCS
 
 
-#apply IGGroupMemberValueSet("CommonCodesVS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
+  #end
 
 
 
@@ -42,4 +47,9 @@ Description:  "BreastBodyLocationQuadrants CodeSystem"
     breast) quadrant of each breast.
     """
 
-#apply IGGroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
+  #end

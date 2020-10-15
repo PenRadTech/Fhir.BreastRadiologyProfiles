@@ -9,14 +9,6 @@
 #Description: """
 # Fragment that adds 'BiRad code' element to profile
 # """
-  #
-  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
-  #apply once IntroDocFragment("""
-  # <p>
-  # <b>%FTitle%</b>
-  # </p>
-  #""")
-  #
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
   #
@@ -35,5 +27,18 @@
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+  #end
+
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
   #end
 #end

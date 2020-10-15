@@ -16,16 +16,18 @@
   * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
   * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
 
-
-
-
-  #apply once IGGroupMemberFragment("Fragments", "%FTitle%")
-  #apply once IntroDocFragment("""
-  # <p>
-  # <b>%FTitle%</b>
-  # </p>
-  #""")
-
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+  
   #apply once CSBuild.DefineFragment()
   #apply CSBuild.ImplementFragment()
 

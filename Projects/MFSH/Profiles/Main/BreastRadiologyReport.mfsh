@@ -16,31 +16,32 @@ Description: """
   * specimen 0..0
   * result 0..0
   
-  
-  
-  
-  #apply IntroDocProfile( """
-  # <p>
-  # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
-  # </p>
-  # <p>
-  # Each Breast Radiology Document bundle will contain exactly one
-  # Breast Radiology Document instance that is referenced in the
-  # document's 'Report' section.
-  # </p>
-  # <p>
-  # This instance will contain the top level results of the exam,
-  # including the narrative result.
-  # </p>
-  # <p>
-  # The report may be a 'traditional' mammography report, or it may be a newer type of report such as a
-  # "3D mammography exam report". The Breast Radiology Document contains sections for commonly used modalities
-  # such as mammography, ultrasource and nuclear medicine, and also has a place for 'other' modalities.
-  # </p>
-  # """)
-  
-  #apply IGGroupMemberProfile("BaseResources", "C")
-
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile( """
+    # <p>
+    # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
+    # </p>
+    # <p>
+    # Each Breast Radiology Document bundle will contain exactly one
+    # Breast Radiology Document instance that is referenced in the
+    # document's 'Report' section.
+    # </p>
+    # <p>
+    # This instance will contain the top level results of the exam,
+    # including the narrative result.
+    # </p>
+    # <p>
+    # The report may be a 'traditional' mammography report, or it may be a newer type of report such as a
+    # "3D mammography exam report". The Breast Radiology Document contains sections for commonly used modalities
+    # such as mammography, ultrasource and nuclear medicine, and also has a place for 'other' modalities.
+    # </p>
+    # """)
+    
+    #apply GroupMemberProfile("BaseResources", "C")
+  #end
 
   #apply CSBuild.DefineClass()
 

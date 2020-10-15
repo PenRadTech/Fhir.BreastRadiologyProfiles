@@ -36,14 +36,18 @@ Description: """
 
 
 
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Calcification Abnormality Observation</b>
-  # </p>
-  #""")
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Calcification Abnormality Observation</b>
+    # </p>
+    #""")
 
-  #apply IGGroupMemberProfile("CommonResources", "%Title%")
-
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
 
   #apply CSBuild.DefineClass()
 

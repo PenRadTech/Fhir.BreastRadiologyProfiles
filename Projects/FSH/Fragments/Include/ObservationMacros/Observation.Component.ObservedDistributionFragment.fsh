@@ -5,7 +5,10 @@ Description: """
   Fragment that adds 'Observed Distribution' components to Observation.
   """
 
-     // define calcification distribution slice
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+    // define calcification distribution slice
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open
@@ -85,4 +88,8 @@ Description: """
 
   // -----------------------------------------
   // Graph Macros
+  // -----------------------------------------
+  
+  // -----------------------------------------
+  // IG Macros
   // -----------------------------------------

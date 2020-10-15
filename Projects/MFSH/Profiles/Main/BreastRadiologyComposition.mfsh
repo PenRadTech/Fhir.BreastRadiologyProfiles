@@ -28,45 +28,44 @@ Description: """
   #apply AdminSection("admin")
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <P>
+    # This profile defines the composition instance for the Breast Radiology FHIR Document.
+    # </P>
+    # <P>
+    # The composition object is a required part of the FHIR Document structure.
+    # One composition must exist, and it must be the first resource stored in the FHIR document bundle.
+    # </P>
+    # <P>
+    # The other exam related resources are referenced through the 
+    # sections defined in this resource.
+    # </P>
+    # <P>
+    # This composition creates the following sections.
+    # </P>
+    # <P>
+    # A. Report Section.
+    # This contains a single reference to the Breast Radiology Report.
+    # All Breast Radiology Findings are referenced by the report's results element.
+    # </P>
+    # <P>
+    # B. Impressions Section.
+    # All of the clinical impressions created for this exam are referenced in this section.
+    # </P>
+    # <P>
+    # C. Recommendations Section.
+    # All of the service and medication recommendations created for this exam are referenced in this section.
+    # If a recommendation is in response to a particular observation or finding, then 
+    # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
+    # </P>
+    # """)
 
-
-
-  #apply IntroDocProfile("""
-  # <P>
-  # This profile defines the composition instance for the Breast Radiology FHIR Document.
-  # </P>
-  # <P>
-  # The composition object is a required part of the FHIR Document structure.
-  # One composition must exist, and it must be the first resource stored in the FHIR document bundle.
-  # </P>
-  # <P>
-  # The other exam related resources are referenced through the 
-  # sections defined in this resource.
-  # </P>
-  # <P>
-  # This composition creates the following sections.
-  # </P>
-  # <P>
-  # A. Report Section.
-  # This contains a single reference to the Breast Radiology Report.
-  # All Breast Radiology Findings are referenced by the report's results element.
-  # </P>
-  # <P>
-  # B. Impressions Section.
-  # All of the clinical impressions created for this exam are referenced in this section.
-  # </P>
-  # <P>
-  # C. Recommendations Section.
-  # All of the service and medication recommendations created for this exam are referenced in this section.
-  # If a recommendation is in response to a particular observation or finding, then 
-  # the recommendations 'reasonReference' should contain a  reference to the pertinant observation or finding.
-  # </P>
-  # """)
-
-
-  #apply IGGroupMemberProfile("BaseResources", "B")
-
-  #apply CSBuild.DefineClass()
+    #apply GroupMemberProfile("BaseResources", "B")
+  #end
 
   // -----------------------------------------
   // Graph Macros
@@ -80,3 +79,5 @@ Description: """
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
     #apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
   #end
+
+  #apply CSBuild.DefineClass()

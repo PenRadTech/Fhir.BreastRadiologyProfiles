@@ -4,6 +4,11 @@ Description:  "AssociatedFeature Value Set"
   * codes from system AssociatedFeatureCS
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+
+
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
@@ -335,3 +340,7 @@ Description: "Associated Feature seen during a breast examination."
     calcifications in the wall
     of cysts are the most common 'rim' calcifications.
     """
+
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------

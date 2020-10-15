@@ -10,27 +10,27 @@ Description: """
   #apply Observation.SectionFragment()
 
 
+  // -----------------------------------------
+  // IG Macros
+  // -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Other Finding</b>
+    # </p>
+    # <p>
+    # This Observation contains all references to all the observations
+    # and exam information related to an exam that is not one of the predefined types
+    # (i.e. not an US, MG, NM, etc).
+    # </p>
+    # <p>
+    # As of this ballot, the child observations of a US Exam have not
+    # been defined. They will be defined in a later ballot.
+    # </p>
+    #""")
 
-
-
-  #apply IntroDocProfile("""
-  # <p>
-  # <b>Other Finding</b>
-  # </p>
-  # <p>
-  # This Observation contains all references to all the observations
-  # and exam information related to an exam that is not one of the predefined types
-  # (i.e. not an US, MG, NM, etc).
-  # </p>
-  # <p>
-  # As of this ballot, the child observations of a US Exam have not
-  # been defined. They will be defined in a later ballot.
-  # </p>
-  #""")
-
-
-  #apply IGGroupMemberProfile("OtherResources", "%Title%")
-
+    #apply GroupMemberProfile("OtherResources", "%Title%")
+  #end
 
   #apply CSBuild.DefineClass()
 
