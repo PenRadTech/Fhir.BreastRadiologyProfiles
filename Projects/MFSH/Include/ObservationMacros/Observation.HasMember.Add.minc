@@ -9,6 +9,7 @@
 #      Target,
 #      ShortDesc, 
 #      Definition)
+  #incompatible Observation.LeafFragment
   #apply Observation.HasMember.Slice()
   * hasMember contains SliceName Cardinality
   * hasMember[SliceName] ^short = "ShortDesc hasMember."

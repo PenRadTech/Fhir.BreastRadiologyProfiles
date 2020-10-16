@@ -4,6 +4,7 @@
  It does not constrain the component value.
  */
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
+  #incompatible Observation.Component.Zero
   #apply Observation.Component.Slice()
   * component contains SliceName Cardinality
   * component[SliceName] ^short = "ShortDesc component."
