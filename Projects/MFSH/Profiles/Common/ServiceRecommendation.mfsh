@@ -7,14 +7,9 @@ Description: """
 
   #apply HeaderFragment()
 
-  * . ^definition = """
-    Followup Service Recommendation.
-	"""
+  * . ^definition = "Followup Service Recommendation."
 
-  * code 1..1
-  * code from ServiceRecommendationsVS  (extensible)
-  
-  
+  #apply Resource.Bind("1", "1..1", "code", "ServiceRecommendationsVS  (extensible)", "Code")
   
   #// -----------------------------------------
   #// IG Macros
@@ -46,8 +41,6 @@ Description: """
   #use Graph
     #apply NodeProfile("", "Service Recommendation")
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
-    #apply NodeElement("", "code", "Code")
-    #apply LinkByBinding("focus", "^%ProfileId%.code", "", "cmp")
   #end
 
   #// -----------------------------------------

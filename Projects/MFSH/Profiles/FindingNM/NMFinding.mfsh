@@ -5,7 +5,7 @@ Description: """
     NM Finding
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#nmFindingObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#nmFindingObservation", "Code")
 
   #apply Observation.SectionFragment()
 

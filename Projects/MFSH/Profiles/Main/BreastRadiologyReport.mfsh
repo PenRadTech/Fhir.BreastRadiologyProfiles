@@ -9,9 +9,8 @@ Description: """
 
   #apply Observation.CategoryFragment()
 
-  * conclusionCode from BiRadsAssessmentCategoryVS (required)
-
-  #apply Resource.Fix("code", "ObservationCodesCS#LOINC#10193-1", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#LOINC#10193-1", "Code")
+  #apply Resource.Bind("2", "1..1", "conclusionCode", "BiRadsAssessmentCategoryVS (required)", "ConclusionCode")
 
   * specimen 0..0
   * result 0..0
@@ -50,8 +49,6 @@ Description: """
   #use Graph
     #apply NodeProfile("", "Report")
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
-    #apply NodeElement("", "conclusionCode", "ConclusionCode")
-    #apply LinkByBinding("focus", "^%ProfileId%.conclusionCode", "", "Cmp")
   #end
   
     #// -----------------------------------------

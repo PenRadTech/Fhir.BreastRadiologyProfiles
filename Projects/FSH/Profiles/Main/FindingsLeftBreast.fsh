@@ -26,15 +26,13 @@ Description: """
   * specimen 0..0
   * contained 0..0
   * device 0..0
-
-  * value[x] only CodeableConcept
-  * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] 0..1 MS
+  * value[x] from BiRadsAssessmentCategoryVS (required)
   * value[x] ^definition = """
-	Composite BiRad value for Left Breast.
+	  Composite BiRad value for Left Breast.
 
-	Typically this is the most severe of all the BiRad 
-	codes set in any of the child observations of the Left Breast.
+	  Typically this is the most severe of all the BiRad 
+	  codes set in any of the child observations of the Left Breast.
     """
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
@@ -61,6 +59,7 @@ Description: """
   * hasMember[other] ^short = "Other modality finding. hasMember."
   * hasMember[other] only Reference(OtherFinding)
   * hasMember[other] MS
-  * bodySite 1..1
-  * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"
   * code = ObservationCodesCS#findingsLeftBreastObservation
+  * code 1..1
+  * bodySite = SNOMED#80248007 "Left breast structure (body structure)"
+  * bodySite 1..1

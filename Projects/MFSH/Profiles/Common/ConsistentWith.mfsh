@@ -9,7 +9,7 @@ Description: """
     Consistent With Observation.
 	"""
 
-  #apply Resource.Fix("code", "ObservationCodesCS#consistentWithObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#consistentWithObservation", "Code")
 
   #apply Observation.LeafFragment()
   #apply Observation.Device.Zero()

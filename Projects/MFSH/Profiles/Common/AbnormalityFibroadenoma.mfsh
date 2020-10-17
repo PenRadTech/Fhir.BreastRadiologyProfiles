@@ -6,7 +6,7 @@ Description: """
   Fibroadenoma
   """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityFibroadenomaObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityFibroadenomaObservation", "Code")
 
   #apply Observation.Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
   #	 """

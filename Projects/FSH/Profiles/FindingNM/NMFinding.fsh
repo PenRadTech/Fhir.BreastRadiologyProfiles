@@ -5,6 +5,7 @@ Description: """
     NM Finding
     """
   * code = ObservationCodesCS#nmFindingObservation
+  * code 1..1
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

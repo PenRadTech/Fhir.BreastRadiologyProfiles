@@ -5,7 +5,7 @@ Description: """
     Ultrasound Finding
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#usFindingObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#usFindingObservation", "Code")
 
   #apply Observation.SectionFragment()
 

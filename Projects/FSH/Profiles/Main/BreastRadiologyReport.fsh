@@ -18,9 +18,10 @@ Description: """
   * category ^slicing.description = "Observation Category = imaging"
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
-
-  * conclusionCode from BiRadsAssessmentCategoryVS (required)
   * code = ObservationCodesCS#LOINC#10193-1
+  * code 1..1
+  * conclusionCode 1..1
+  * conclusionCode from BiRadsAssessmentCategoryVS (required)
 
   * specimen 0..0
   * result 0..0

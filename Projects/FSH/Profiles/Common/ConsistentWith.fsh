@@ -9,6 +9,7 @@ Description: """
     Consistent With Observation.
 	"""
   * code = ObservationCodesCS#consistentWithObservation
+  * code 1..1
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"

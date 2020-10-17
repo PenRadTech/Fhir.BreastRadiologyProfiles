@@ -1,11 +1,7 @@
 Profile: FindingsLeftBreast
   #apply Observation.FindingBreastFragment("Left")
-  * bodySite 1..1
-  * bodySite = SNOMED#80248007 // "Left breast structure (body structure)"
-
-  #apply Resource.Fix("code", "ObservationCodesCS#findingsLeftBreastObservation", "Code")
-
- 
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#findingsLeftBreastObservation", "Code")
+  #apply Resource.Fix("2", "bodySite", "SNOMED#80248007 \"Left breast structure (body structure)\"", "Body Site")
   
   #// -----------------------------------------
   #// IG Macros
@@ -15,7 +11,7 @@ Profile: FindingsLeftBreast
   #end
   
   
-    #// -----------------------------------------
+  #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use CSBuild

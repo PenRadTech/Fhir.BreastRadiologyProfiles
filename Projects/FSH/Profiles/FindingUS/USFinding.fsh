@@ -5,6 +5,7 @@ Description: """
     Ultrasound Finding
     """
   * code = ObservationCodesCS#usFindingObservation
+  * code 1..1
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

@@ -6,7 +6,7 @@ Description: """
     Asymmetry
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityAsymmetryObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityAsymmetryObservation", "Code")
 
   #apply Observation.Component.Add("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
   #	 """

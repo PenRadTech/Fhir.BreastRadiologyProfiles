@@ -1,9 +1,7 @@
 Profile: FindingsRightBreast
   #apply Observation.FindingBreastFragment("Right")
-  * bodySite 1..1
-  * bodySite = SNOMED#73056007 // "Right breast structure (body structure)"
-
-  #apply Resource.Fix("code", "ObservationCodesCS#findingsRightBreastObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#findingsRightBreastObservation", "Code")
+  #apply Resource.Fix("2", "bodySite", "SNOMED#73056007 \"Right breast structure (body structure)\"", "Body Site")
 
   #// -----------------------------------------
   #// IG Macros

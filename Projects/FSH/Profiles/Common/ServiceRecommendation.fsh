@@ -12,9 +12,6 @@ Description: """
   * ^version = "0.0.2"
   * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
 
-  * . ^definition = """
-    Followup Service Recommendation.
-	"""
-
+  * . ^definition = "Followup Service Recommendation."
   * code 1..1
   * code from ServiceRecommendationsVS  (extensible)

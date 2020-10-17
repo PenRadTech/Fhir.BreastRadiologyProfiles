@@ -5,6 +5,7 @@ Description: """
   Fibroadenoma
   """
   * code = ObservationCodesCS#abnormalityFibroadenomaObservation
+  * code 1..1
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open

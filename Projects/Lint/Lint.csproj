@@ -12,4 +12,10 @@
     <PackageReference Include="Hl7.Fhir.Specification.R4" Version="2.0.0-beta1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="LintStuff.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

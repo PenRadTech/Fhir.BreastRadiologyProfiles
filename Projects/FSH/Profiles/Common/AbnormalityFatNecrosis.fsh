@@ -5,6 +5,7 @@ Description: """
     Mammography Fat Necrosis
     """
   * code = ObservationCodesCS#abnormalityFatNecrosisObservation
+  * code 1..1
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open

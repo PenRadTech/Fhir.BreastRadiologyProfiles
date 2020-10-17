@@ -5,7 +5,7 @@ Description: """
     Mammography Architectural Distortion
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityArchitecturalDistortionObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityArchitecturalDistortionObservation", "Code")
 
   #apply Observation.Device.Zero()
   #apply Observation.Value.Zero()

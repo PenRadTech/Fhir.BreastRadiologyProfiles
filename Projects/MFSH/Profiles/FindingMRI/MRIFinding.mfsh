@@ -5,7 +5,7 @@ Description: """
     MRI Finding
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#mriFindingObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#mriFindingObservation", "Code")
 
   #apply Observation.SectionFragment()
 

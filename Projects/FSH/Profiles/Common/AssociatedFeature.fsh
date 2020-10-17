@@ -11,6 +11,7 @@ Description: """
     The feature observed is defined by the festureType conponent slice.
     """
   * code = ObservationCodesCS#associatedFeaturesObservation
+  * code 1..1
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"
   * component ^slicing.rules = #open

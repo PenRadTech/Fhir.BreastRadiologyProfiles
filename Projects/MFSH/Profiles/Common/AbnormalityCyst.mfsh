@@ -5,7 +5,7 @@ Description: """
   Cyst
   """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityCyst", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityCyst", "Code")
 
   #apply Observation.Component.Add("cystType", "0..1", "Cyst Type", "Cyst Type",
   #	 """

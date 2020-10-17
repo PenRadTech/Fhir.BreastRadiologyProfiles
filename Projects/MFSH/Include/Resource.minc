@@ -3,15 +3,30 @@
  Fix resource.code to passed value.
  */
  
-#macro Resource.Fix(%Element%, %Code%, %DisplayName%)
+#macro Resource.Fix(Sort, %Element%, %Code%, %DisplayName%)
   * %Element% = %Code%
+  * %Element% 1..1
   
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/%Element%", "0", "Cmp")
-    #apply NodeElement("1", "%Element%", "%DisplayName%")
+    #apply NodeElement("Sort", "%Element%", "%DisplayName%")
     #apply LinkByBinding("focus", "^%ProfileId%.%Element%", "", "Cmp")
+  #end  
+#end
+
+#macro Resource.Bind(Sort, Card, %Element%, %ValueSet%, %DisplayName%)
+  * %Element% Card
+  * %Element% from %ValueSet%
+  
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/%Element%", "0", "Cmp")
+    #apply NodeElement("Sort", "%Element%", "%DisplayName%")
+    #apply LinkByBinding("focus", "^%ProfileId%/%Element%/$", "", "Cmp")
   #end  
 #end

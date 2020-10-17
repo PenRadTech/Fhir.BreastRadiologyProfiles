@@ -5,7 +5,7 @@ Description: """
     Mammography Calcification
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#abnormalityCalcificationObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityCalcificationObservation", "Code")
   
   #apply Observation.Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
   #	 """

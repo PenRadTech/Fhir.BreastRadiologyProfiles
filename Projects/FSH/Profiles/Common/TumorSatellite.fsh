@@ -37,6 +37,7 @@ Description: """
     Tumor Satellite Observation.
 	"""
   * code = ObservationCodesCS#tumorSatelliteObservation
+  * code 1..1
 
   * value[x] 0..1
   * value[x] only Quantity or Range

@@ -5,7 +5,7 @@ Description: """
     Mammography Breast Density
     """
 
-  #apply Resource.Fix("code", "ObservationCodesCS#mgBreastDensityObservation", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#mgBreastDensityObservation", "Code")
 
   #apply Observation.LeafFragment()
   #apply Observation.Component.Zero()
