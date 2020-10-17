@@ -4,7 +4,7 @@
  */
  
 #macro once Observation.Fragment()
-  #apply Observation.CategoryFragment()
+  #apply Resource.SetCategoryImaging()
   #
   * interpretation 0..0
   * referenceRange 0..0

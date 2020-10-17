@@ -44,6 +44,8 @@ Description: """
   * valueQuantity from UNITSOFLENGTH
   * valueRange.low from UNITSOFLENGTH
   * valueRange.high from UNITSOFLENGTH
+
+  * derivedFrom 0..1
   * derivedFrom ^slicing.discriminator.type = #value
   * derivedFrom ^slicing.discriminator.path = "url"
   * derivedFrom ^slicing.rules = #open

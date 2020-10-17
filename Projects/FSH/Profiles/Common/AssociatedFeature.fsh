@@ -10,6 +10,7 @@ Description: """
      
     The feature observed is defined by the festureType conponent slice.
     """
+  * component 1..2
   * code = ObservationCodesCS#associatedFeaturesObservation
   * code 1..1
   * component ^slicing.discriminator.type = #pattern

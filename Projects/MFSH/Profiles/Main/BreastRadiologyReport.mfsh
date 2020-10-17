@@ -7,7 +7,7 @@ Description: """
 
   #apply HeaderFragment()
 
-  #apply Observation.CategoryFragment()
+  #apply Resource.SetCategoryImaging()
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#LOINC#10193-1", "Code")
   #apply Resource.Bind("2", "1..1", "conclusionCode", "BiRadsAssessmentCategoryVS (required)", "ConclusionCode")

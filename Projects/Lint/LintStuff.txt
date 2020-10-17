@@ -1,2 +1,6 @@
-﻿100-.+-Observation\.category
+﻿100-BreastRadiologyDocument-Bundle.entry
+100-.+-.+\.category
 100-.+-.+\.extension
+100-BreastRadiologyComposition-Composition\.section
+100-.*Fragment-Observation\.component
+100-TumorSatellite-Observation.value

@@ -30,3 +30,18 @@
     #apply LinkByBinding("focus", "^%ProfileId%/%Element%/$", "", "Cmp")
   #end  
 #end
+
+
+// CategoryFragment
+// This fragment slices .category and 
+// fixes the .category value to 'imaging'.
+
+#macro Resource.SetCategoryImaging()
+  * category ^slicing.discriminator.type = #pattern
+  * category ^slicing.discriminator.path = "$this"
+  * category ^slicing.rules = #open
+  * category ^slicing.ordered = false
+  * category ^slicing.description = "Observation Category = imaging"
+  * category contains categoryImaging 1..1
+  * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
+#end

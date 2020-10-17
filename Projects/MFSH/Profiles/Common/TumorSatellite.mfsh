@@ -26,6 +26,7 @@ Description: """
   * valueRange.low from UNITSOFLENGTH
   * valueRange.high from UNITSOFLENGTH
 
+  * derivedFrom 0..1
   #apply Observation.DerivedFrom.Add("indexTumor", "0..1", "Index Tumor", "Index Tumor Observation reference",
   #  """
   #  This derivedFrom slice references the index tumor.

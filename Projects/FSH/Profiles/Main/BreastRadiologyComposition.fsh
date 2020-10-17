@@ -33,7 +33,6 @@ Description: """
 
     One and only one Breast Radiology Report must be included in this section.
   """
-  * section[report] 1..1
   * section[report] ^short = "Report Section."
   * section[report].code = CompositionSectionSliceCodesCS#report
   * section[report].title = "Breast Radiology Report"
@@ -47,7 +46,6 @@ Description: """
   * section[impressions] ^definition = """
     This section contains references to the report's clinical impressions.
     """
-  * section[impressions] 0..1
   * section[impressions] ^short = "Clinical Impressions Section."
   * section[impressions].code = CompositionSectionSliceCodesCS#report
   * section[impressions].title = "Clinical Impressions"
@@ -66,7 +64,6 @@ Description: """
   * section[findingsRightBreast] ^short = "Findings Right Breast Section."
   * section[findingsRightBreast].code = CompositionSectionSliceCodesCS#findingsRightBreast
   * section[findingsRightBreast].title = "Findings Right Breast Section"
-  * section[findingsRightBreast] 0..1
 
   * section[findingsRightBreast].entry 0..*
   * section[findingsRightBreast].entry only Reference(FindingsRightBreast)
@@ -81,7 +78,6 @@ Description: """
   * section[findingsLeftBreast] ^short = "Findings Left Breast Section."
   * section[findingsLeftBreast].code = CompositionSectionSliceCodesCS#findingsLeftBreast
   * section[findingsLeftBreast].title = "Findings Left Breast Section"
-  * section[findingsLeftBreast] 0..1
 
   * section[findingsLeftBreast].entry 0..*
   * section[findingsLeftBreast].entry only Reference(FindingsLeftBreast)
@@ -100,7 +96,6 @@ Description: """
   * section[relatedResources] ^short = "Related Clinical Resources Section."
   * section[relatedResources].code = CompositionSectionSliceCodesCS#relatedResources
   * section[relatedResources].title = "Related Clinical Resources Section."
-  * section[relatedResources] 0..1
 
   * section[relatedResources].entry 0..*
   * section[relatedResources].entry only Reference(RESOURCEURL)
@@ -115,7 +110,6 @@ Description: """
   * section[recommendations] ^short = "Recommendation/Follow up Resources Section."
   * section[recommendations].code = CompositionSectionSliceCodesCS#recommendations
   * section[recommendations].title = "Recommendations Section."
-  * section[recommendations] 0..1
 
   * section[recommendations].entry 0..*
   * section[recommendations].entry only Reference(MEDICATIONREQUESTURL or SERVICEREQUESTURL or ServiceRecommendation)
@@ -129,7 +123,6 @@ Description: """
   * section[admin] ^short = "Administrative section."
   * section[admin].code = CompositionSectionSliceCodesCS#admin
   * section[admin].title = "Administrative Section."
-  * section[admin] 0..1
 
   * section[admin].entry 0..*
   * section[admin].entry only Reference(RESOURCEURL)

@@ -8,10 +8,8 @@ namespace Lint
 {
     static class Program
     {
-        static Processor processor = new Processor();
-
-
-        static void ParseParams(String[] args)
+        static void ParseParams(Processor processor,
+            String[] args)
         {
             Int32 i = 0;
 
@@ -43,18 +41,22 @@ namespace Lint
         [STAThread]
         static void Main(String[] args)
         {
-            try
+            while (true)
             {
-                ParseParams(args);
-                processor.Process();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+                try
+                {
+                    Processor processor = new Processor();
+                    ParseParams(processor, args);
+                    processor.Process();
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
 
-            Console.WriteLine("enter to exit");
-            Console.ReadLine();
+                Console.WriteLine("enter to re-run");
+                Console.ReadLine();
+            }
         }
     }
 }
