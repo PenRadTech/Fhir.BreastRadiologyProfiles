@@ -171,7 +171,9 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[notPreviouslySeen] ^definition = """
-    This slice contains the optional components that define previous encounters in which this abnormality was not seen.
+    This optional slice indicates previous procedures in which this abnormality was not seen. The reason why the 
+    the abnormality was not seen is not defined, but is ofen related to mechanical positioning or other circumstances which
+    caused the abnormality to not show up on a previous procedure.
     The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
     """
   * component[notPreviouslySeen].code 1..1
