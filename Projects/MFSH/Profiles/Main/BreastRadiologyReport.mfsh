@@ -11,7 +11,13 @@ Description: """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#LOINC#10193-1", "Code")
   #apply Resource.Bind("2", "1..1", "conclusionCode", "BiRadsAssessmentCategoryVS (required)", "ConclusionCode")
-
+  * conclusionCode ^definition =
+    """
+	  A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
+    found in either of the right or left breast observation sections.
+    """
+  
+ 
   * specimen 0..0
   * result 0..0
   

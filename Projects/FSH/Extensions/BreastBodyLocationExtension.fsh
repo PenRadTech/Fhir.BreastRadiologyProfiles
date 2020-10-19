@@ -14,8 +14,8 @@ Description: """
   * extension[laterality] ^short = "Body side"
   * extension[laterality] ^definition =
     """
-	The side of the body being examined.
-	"""
+	  The side of the body being examined.
+	  """
   * extension[laterality].value[x] 1..1
   * extension[laterality].value[x] only CodeableConcept
   * extension[laterality].value[x] from LateralityVS
@@ -24,8 +24,8 @@ Description: """
   * extension[quadrant] ^short = "Quadrant of the body location"
   * extension[quadrant] ^definition =
     """
-	The quadrant  of the body location.
-	"""
+	  The quadrant  of the body location.
+	  """
   * extension[quadrant].value[x] 1..1
   * extension[quadrant].value[x] only CodeableConcept
   * extension[quadrant].value[x] from BreastBodyLocationQuadrantVS
@@ -34,8 +34,8 @@ Description: """
   * extension[region] ^short = "Region of the body location"
   * extension[region] ^definition =
     """
-	The region  of the body location.
-	"""
+	  The region  of the body location.
+	  """
   * extension[region].value[x] 1..1
   * extension[region].value[x] only CodeableConcept
   * extension[region].value[x] from BreastBodyLocationRegionVS
@@ -44,8 +44,8 @@ Description: """
   * extension[clockDirection] ^short = "Clock direction of the body location"
   * extension[clockDirection] ^definition =
     """
-	The clock direction of the body location.
-	"""
+	  The clock direction of the body location.
+	  """
   * extension[clockDirection].value[x] 1..1
   * extension[clockDirection].value[x] only CodeableConcept
   * extension[clockDirection].value[x] from BreastBodyLocationClockPositionsVS
@@ -54,8 +54,8 @@ Description: """
   * extension[depth] ^short = "Depth of the body location"
   * extension[depth] ^definition =
     """
-	The depth of the body location.
-	"""
+	  The depth of the body location.
+	  """
   * extension[depth].value[x] 1..1
   * extension[depth].value[x] only CodeableConcept
   * extension[depth].value[x] from BreastBodyLocationDepthVS
@@ -64,8 +64,8 @@ Description: """
   * extension[landmark] ^short = "Body landmark. Origin of distance measurement."
   * extension[landmark] ^definition =
     """
-	Body landmark which defines the origin of the measurement.
-	"""
+	  Body landmark which defines the origin of the measurement.
+	  """
   * extension[landmark].value[x] 1..1
   * extension[landmark].value[x] only CodeableConcept
   * extension[landmark].value[x] from BreastLandmarkVS

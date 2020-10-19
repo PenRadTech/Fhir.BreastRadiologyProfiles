@@ -22,6 +22,12 @@ Description: """
   * code 1..1
   * conclusionCode 1..1
   * conclusionCode from BiRadsAssessmentCategoryVS (required)
-
+  * conclusionCode ^definition =
+    """
+	  A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
+    found in either of the right or left breast observation sections.
+    """
+  
+ 
   * specimen 0..0
   * result 0..0

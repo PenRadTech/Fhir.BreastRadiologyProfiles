@@ -5,8 +5,8 @@
   * extension[SliceName] ^short = "Short"
   * extension[SliceName] ^definition =
     """
-	Definition
-	"""
+	  Definition
+	  """
   * extension[SliceName].value[x] 1..1
   * extension[SliceName].value[x] only CodeableConcept
   * extension[SliceName].value[x] from ValueSet
