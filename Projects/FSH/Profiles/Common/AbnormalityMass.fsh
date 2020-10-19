@@ -343,6 +343,6 @@ Description: """
   * hasMember contains consistentWith 0..*
   * hasMember[consistentWith] ^short = "'Consistent With' reference. hasMember."
   * hasMember[consistentWith] only Reference(ConsistentWith)
-  * hasMember contains tumorSatellite 0..*
+  * hasMember contains tumorSatellite 0..1
   * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
   * hasMember[tumorSatellite] only Reference(TumorSatellite)

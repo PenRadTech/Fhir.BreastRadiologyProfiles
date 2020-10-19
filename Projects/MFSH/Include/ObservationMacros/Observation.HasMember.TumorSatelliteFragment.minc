@@ -9,7 +9,7 @@
 #Description: """
 # This fragment adds the references for the Tumor Satellite extension.
 # """
-  #apply Observation.HasMember.Add("tumorSatellite", "0..*", "TumorSatellite",
+  #apply Observation.HasMember.Add("tumorSatellite", "0..1", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """
   #  This slice references the target 'Consistent With'.

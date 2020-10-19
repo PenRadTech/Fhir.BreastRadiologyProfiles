@@ -340,6 +340,6 @@ Description: """
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)
-  * hasMember contains tumorSatellite 0..*
+  * hasMember contains tumorSatellite 0..1
   * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
   * hasMember[tumorSatellite] only Reference(TumorSatellite)
