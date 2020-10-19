@@ -21,6 +21,7 @@ Description: """
   #apply Observation.Value.Zero()
   #apply Observation.BreastBodyLocationRequiredFragment()
   #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.ObservedSizeFragment()
   #apply Observation.Component.BiRadFragment()
   #apply Observation.Component.NotPreviouslySeenFragment()
   #apply Observation.Component.CorrespondsWithFragment()
