@@ -94,7 +94,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[notPreviouslySeen] ^definition = """
-    This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
+    This slice contains the optional components that define previous encounters in which this abnormality was not seen.
     The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
     """
   * component[notPreviouslySeen].code 1..1

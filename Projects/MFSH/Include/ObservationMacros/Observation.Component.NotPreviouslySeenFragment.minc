@@ -10,7 +10,7 @@
 #  """
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
   #	"""
-  # This slice contains the optional components that define prevous encounters in which this abnormality was not seen.
+  # This slice contains the optional components that define previous encounters in which this abnormality was not seen.
   # The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
   #	""",
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
