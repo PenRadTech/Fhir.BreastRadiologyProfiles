@@ -12,7 +12,7 @@
   #apply Observation.HasMember.Add("tumorSatellite", "0..1", "TumorSatellite",
   #  "'Tumor Satellite' reference.",
   #  """
-  #  This slice references the target 'Consistent With'.
+  #  This slice references the target 'Tumour Satellite'.
   #  """)
 
   #// -----------------------------------------
