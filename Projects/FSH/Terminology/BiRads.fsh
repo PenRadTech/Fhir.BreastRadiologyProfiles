@@ -25,6 +25,12 @@ Description:  "BiRads Assessment Category CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
+  * #Category1 "Category 1 (Negative)"
+    """
+    Routine mammography screening Essentially 0% likelihood of malignancy 
+    [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
+    """
+
   // .SnomedDescription ClinicalFinding | 397141009 | Mammography assessment (Category 2)
   * #Category2 "Category 2 (Benign)"
     """
