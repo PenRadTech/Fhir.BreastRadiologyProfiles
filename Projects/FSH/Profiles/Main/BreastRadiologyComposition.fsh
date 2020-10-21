@@ -112,7 +112,7 @@ Description: """
   * section[recommendations].title = "Recommendations Section."
 
   * section[recommendations].entry 0..*
-  * section[recommendations].entry only Reference(MEDICATIONREQUESTURL or SERVICEREQUESTURL or ServiceRecommendation)
+  * section[recommendations].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
   * section[recommendations].entry ^short = "Recommendation resources"
   * section[recommendations].entry ^definition = """
   Reference to any recommendations.

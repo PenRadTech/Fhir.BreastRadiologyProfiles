@@ -3,15 +3,17 @@
 // 
 // This fragment adds the references for the breast laterality extension.
 
-#Fragment: Observation.BreastLateralityFragment
-#Parent: Resource
-#Title: "Breast Laqterality Fragment"
+#Fragment: DomainResource.BreastLateralityFragment
+#Parent: DomainResource
+#Title: "Breast Laterality Fragment"
 #Description: """
-#  This fragment adds the references for the breast laterality extension.
+#  This fragment adds the references for the breast laterality .
 #  """
-  * extension contains BreastLateralityExtension named breastLaterality 1..1
-  * extension[breastLaterality] ^short = "breastLaterality extension."
-  * extension[breastLaterality] ^definition = "This extension slice contains the breastLaterality extension."
+  # apply Extension.CodeableConcept("breastLaterality", "Breast Laterality", "1..1", "BreastLateralityVS", "Breast Laterality", 
+  # """
+  # The laterality of the breast that the container resource is referring to.
+  # """
+  #)
 
   #// -----------------------------------------
   #// IG Macros
@@ -30,8 +32,6 @@
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
-    #apply LinkByName("focus", "^%ProfileId%/$", "^BreastLateralityExtension/$", "1", "Cmp")
   #end
 
   #use CSBuild

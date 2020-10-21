@@ -1,0 +1,38 @@
+Profile: BreastServiceRequest
+Parent: ServiceRequest
+Title: "Breast Radiology Service Request"
+Description: """
+  Service request with required breast laterality field.
+  """
+
+  #apply HeaderFragment()
+  #apply DomainResource.BreastLateralityFragment()
+
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    
+    #apply IntroDocProfile("""
+    # <p>
+    # Service request with required breast laterality field.
+    # </p>
+    #""")
+    
+    #apply GroupMemberProfile("BaseResources", "%Title%")
+  #end
+  
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Service Request")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+  #end
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use CSBuild
+    #apply DefineClass()
+  #end

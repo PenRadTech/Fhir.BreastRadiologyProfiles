@@ -1,8 +1,8 @@
-Profile: ServiceRecommendation
-Parent: ServiceRequest
-Title: "Service Recommendation"
+Profile: BreastMedicationRequest
+Parent: MedicationRequest
+Title: "Breast Radiology Medication Request"
 Description: """
-  Service Recommendation
+  Medication request with required breast laterality field.
   """
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://hl7.org/Special/committees/cic"
@@ -21,7 +21,3 @@ Description: """
   * extension[breastLaterality].value[x] 1..1
   * extension[breastLaterality].value[x] only CodeableConcept
   * extension[breastLaterality].value[x] from BreastLateralityVS
-
-  * . ^definition = "Followup Service Recommendation."
-  * code 1..1
-  * code from ServiceRecommendationsVS  (extensible)

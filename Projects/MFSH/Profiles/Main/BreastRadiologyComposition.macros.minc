@@ -182,7 +182,7 @@
   * section[SliceName].title = "Recommendations Section."
 
   * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(MEDICATIONREQUESTURL or SERVICEREQUESTURL or ServiceRecommendation)
+  * section[SliceName].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
   * section[SliceName].entry ^short = "Recommendation resources"
   * section[SliceName].entry ^definition = """
   Reference to any recommendations.
