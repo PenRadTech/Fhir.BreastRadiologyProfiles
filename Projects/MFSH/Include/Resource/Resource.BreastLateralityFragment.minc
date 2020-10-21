@@ -1,0 +1,41 @@
+// Breast Body Location (Required) Fragment
+// <b>Required Breast Body Location fragment</b>
+// 
+// This fragment adds the references for the breast laterality extension.
+
+#Fragment: Observation.BreastLateralityFragment
+#Parent: Resource
+#Title: "Breast Laqterality Fragment"
+#Description: """
+#  This fragment adds the references for the breast laterality extension.
+#  """
+  * extension contains BreastLateralityExtension named breastLaterality 1..1
+  * extension[breastLaterality] ^short = "breastLaterality extension."
+  * extension[breastLaterality] ^definition = "This extension slice contains the breastLaterality extension."
+
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+  
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "1", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^BreastLateralityExtension/$", "1", "Cmp")
+  #end
+
+  #use CSBuild
+    #apply once DefineFragment()
+    #apply ImplementFragment()
+  #end
+#end

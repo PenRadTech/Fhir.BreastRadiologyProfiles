@@ -1,0 +1,42 @@
+/*
+  Extension that defined Breast Body Laterality
+*/
+Extension: BreastBodyLateralityExtension
+Parent: Extension
+Title: "Breast Body Laterality Extension"
+Description: """
+    Breast Body Laterality Extension
+    """
+
+  * . ^short = "Breast Body Laterality extension"
+
+  * value[x] 1..1
+  * value[x] only CodeableConcept
+  * value[x] from BreastLateralityVS
+  * value ^short = "Breast Laterality"
+  * value ^definition = "Breast laterality can be left, right , or both"
+
+
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Breast Body Laterality extension</b>
+    # </p>
+    # <p>
+    # this extension identifies breast laterality.
+    # Breast laterality can be left, right , or both.
+    # </p>
+    #""")
+
+    #apply GroupMemberProfile("ExtensionResources", "%Title%")
+  #end
+  
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeExtension("", "BreastBodyLaterality")
+  #end
