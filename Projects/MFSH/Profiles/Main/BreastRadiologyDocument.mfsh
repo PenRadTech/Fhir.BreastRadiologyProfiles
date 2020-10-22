@@ -53,6 +53,7 @@ Description: """
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Document")
     #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "0", "Bas,Ovr")
+    #// Creates the legend graphical nodes.
     #apply Legend("focus", "Focus", "focus")
     #apply Legend("focus", "Profiled Resource", "profile")
     #apply Legend("focus", "Extension", "extension")
@@ -62,9 +63,9 @@ Description: """
     #apply Legend("focus", "Value", "value")
   #end
   
-    #// -----------------------------------------
-  #// Graph Macros
   #// -----------------------------------------
-  #use CSBuild
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
     #apply DefineClass()
   #end

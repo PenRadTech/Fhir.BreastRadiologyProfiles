@@ -1,7 +1,7 @@
 //
-// Define a CS Class.
+// Define a Class.
 //
-#macro CSBuild.DefineClass() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
+#macro ApiBuild.DefineClass() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.ApiBuild"
   `{
   `  "defineClass" : {
   `    "className" : "%ProfileId%",
@@ -12,7 +12,7 @@
 
 //
 // Attach an fragment to class.
-#macro CSBuild.ImplementFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
+#macro ApiBuild.ImplementFragment() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{
   `  "implementFragment" : {
   `    "className" : "%ProfileId%",
@@ -25,11 +25,11 @@
 
 
 //
-// Define an CS Interface.
+// Define an Interface.
 // Name is name of interface.
 // Id is name of profile that implements interface (used to query element definitions)
 //
-#macro CSBuild.DefineFragment() > "%CSBuildDir%\\%BaseDir%\\%BaseName%.csBuild"
+#macro ApiBuild.DefineFragment() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{
   `  "defineFragment" : {
   `    "fragmentName" : "%FragmentId%",

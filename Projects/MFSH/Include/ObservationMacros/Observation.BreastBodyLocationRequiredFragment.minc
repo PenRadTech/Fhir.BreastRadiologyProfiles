@@ -41,7 +41,10 @@
     #apply LinkByName("focus", "^%ProfileId%/bodySite.extension/$", "^BreastBodyLocationExtension/$", "1", "Cmp")
   #end
 
-  #use CSBuild
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
     #apply once DefineFragment()
     #apply ImplementFragment()
   #end
