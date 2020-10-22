@@ -52,7 +52,7 @@ Description: """
   #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Document")
-    #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "1", "Bas,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "0", "Bas,Ovr")
     #apply Legend("focus", "Focus", "focus")
     #apply Legend("focus", "Profiled Resource", "profile")
     #apply Legend("focus", "Extension", "extension")
