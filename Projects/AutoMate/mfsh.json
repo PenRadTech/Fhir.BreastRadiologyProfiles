@@ -21,7 +21,7 @@
 			"filter": "*.nodeGraph"
 		},
 		{
-			"path": "CSBuild",
+			"path": "ApiBuild",
 			"filter": "*.*"
 		}
 
@@ -32,8 +32,8 @@
 			"value": "..\\GraphFiles"
 		},
 		{
-			"name": "%CSBuildDir%",
-			"value": "..\\CSBuild"
+			"name": "%ApiBuildDir%",
+			"value": "..\\ApiBuild"
 		},
 		{
 			"name": "%PageContent%",

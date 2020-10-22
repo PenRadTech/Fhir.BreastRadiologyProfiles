@@ -1,5 +1,5 @@
 {
-	"inputPath": "CSBuild",
+	"inputPath": "ApiBuild",
 	"csOutputDir": "BRadLibCS",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology/",
 	"resourcePaths": [
