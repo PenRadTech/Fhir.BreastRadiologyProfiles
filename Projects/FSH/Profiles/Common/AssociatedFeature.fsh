@@ -8,7 +8,7 @@ Description: """
   * . ^definition = """
     This resource contains information about an associated feature observation.
      
-    The feature observed is defined by the festureType conponent slice.
+    The feature observed is defined by the featureType component slice.
     """
   * component 1..2
   * code = ObservationCodesCS#associatedFeaturesObservation
