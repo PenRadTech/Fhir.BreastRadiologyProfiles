@@ -25,7 +25,6 @@ Description: """
   #apply FindingsLeftBreastSection("findingsLeftBreast")
   #apply RelatedResourcesSection("relatedResources")
   #apply RecommendationsSection("recommendations")
-  #apply AdminSection("admin")
 
 
   #// -----------------------------------------

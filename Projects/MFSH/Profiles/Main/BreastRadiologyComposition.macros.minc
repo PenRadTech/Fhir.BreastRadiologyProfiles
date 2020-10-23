@@ -195,34 +195,3 @@
     #apply NodeElement("D", "section:SliceName", "Recommendations/Section")
   #end
 #end
-
-
-
-
-
-
-  /*
-   Administrative section.
-   */
-#macro AdminSection(SliceName) 
-  * section[SliceName] ^definition = """
-    References to all administrative resources go here.
-  """
-  * section[SliceName] ^short = "Administrative section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#admin
-  * section[SliceName].title = "Administrative Section."
-
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(RESOURCEURL)
-  * section[SliceName].entry ^short = "Administrative resources"
-  * section[SliceName].entry ^definition = """
-  Reference to any administrative resource.
-  """
-
-  #// -----------------------------------------
-  #// Graph Macros
-  #// -----------------------------------------
-  #use Graph
-    #apply NodeElement("F", "section:SliceName", "Admin/Section")
-  #end
-#end

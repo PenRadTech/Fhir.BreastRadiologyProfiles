@@ -30,8 +30,3 @@ Description: "Composition Section Slice Codes code system"
     """
     Slicing CompositionSection Code - Findings Right Breast.
     """
-
-  * #admin "Code to identify the 'Admin' section slice"
-    """
-    Slicing CompositionSection Code - Admin.
-    """

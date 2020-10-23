@@ -117,16 +117,3 @@ Description: """
   * section[recommendations].entry ^definition = """
   Reference to any recommendations.
   """
-  * section[admin] ^definition = """
-    References to all administrative resources go here.
-  """
-  * section[admin] ^short = "Administrative section."
-  * section[admin].code = CompositionSectionSliceCodesCS#admin
-  * section[admin].title = "Administrative Section."
-
-  * section[admin].entry 0..*
-  * section[admin].entry only Reference(RESOURCEURL)
-  * section[admin].entry ^short = "Administrative resources"
-  * section[admin].entry ^definition = """
-  Reference to any administrative resource.
-  """
