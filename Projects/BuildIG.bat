@@ -1,3 +1,3 @@
-pushd build
+pushd IG
 _genonce.bat
 popd
