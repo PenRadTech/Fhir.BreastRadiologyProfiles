@@ -1,4 +1,88 @@
 {
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "BreastBodyLocationRequiredFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#49/nProfiles/Common/AbnormalityFatNecrosis.mfsh#12/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ObservedChangesFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#45/nProfiles/Common/AbnormalityFatNecrosis.mfsh#14/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "BiRadFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityFatNecrosis.mfsh#15/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ShapeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#79/nProfiles/Common/AbnormalityFatNecrosis.mfsh#16/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "NotPreviouslySeenFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityFatNecrosis.mfsh#17/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ObservedCountFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityFatNecrosis.mfsh#18/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ObservedSizeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityFatNecrosis.mfsh#19/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ObservedDistributionFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityFatNecrosis.mfsh#20/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "CorrespondsWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityFatNecrosis.mfsh#21/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityFatNecrosis.mfsh#22/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "AssociatedFeatureFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityFatNecrosis.mfsh#24/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityFatNecrosis",
+    "fragmentName" : "ConsistentWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityFatNecrosis.mfsh#25/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "AbnormalityFatNecrosis",
     "traceMsg" : "Profiles/Common/AbnormalityFatNecrosis.mfsh#59/n"

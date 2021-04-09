@@ -1,4 +1,93 @@
 {
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "BreastBodyLocationRequiredFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#49/nProfiles/Common/AbnormalityCalcification.mfsh#21/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ObservedChangesFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#45/nProfiles/Common/AbnormalityCalcification.mfsh#23/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "BiRadFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityCalcification.mfsh#24/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "NotPreviouslySeenFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityCalcification.mfsh#25/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ObservedCountFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityCalcification.mfsh#26/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "ObservedSizeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#61/nProfiles/Common/AbnormalityCalcification.mfsh#27/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ObservedSizeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityCalcification.mfsh#27/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "ObservedDistributionFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#81/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ObservedDistributionFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "CorrespondsWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityCalcification.mfsh#29/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityCalcification.mfsh#30/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "AssociatedFeatureFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityCalcification.mfsh#32/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityCalcification",
+    "fragmentName" : "ConsistentWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityCalcification.mfsh#33/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "AbnormalityCalcification",
     "traceMsg" : "Profiles/Common/AbnormalityCalcification.mfsh#63/n"

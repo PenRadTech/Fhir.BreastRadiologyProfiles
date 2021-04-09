@@ -1,0 +1,40 @@
+polygon.connector {
+    stroke: Black;
+	stroke-width:0;
+    fill: black;
+}
+circle.connector {
+    stroke: Black;
+	stroke-width:0;
+    fill: black;
+}
+line.connector {
+    stroke: Black;
+	stroke-width:1.875;
+}
+
+rect {
+    stroke: Black;
+	stroke-width:2;
+}
+rect.focus {
+    fill: white;
+}
+rect.profile {
+    fill: LightBlue;
+}
+rect.extension {
+    fill: LightSalmon;
+}
+rect.element {
+    fill: LightYellow;
+}
+rect.fhir {
+    fill: LightCoral;
+}
+rect.value {
+    fill: cornsilk;
+}
+rect.valueSet {
+    fill: lightgreen;
+}

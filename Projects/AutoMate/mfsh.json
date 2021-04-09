@@ -1,7 +1,7 @@
 {
 	"baseInputDir": "MFSH",
-	"baseOutputDir": "FSH",
-	"fragDir": "FSH//Fragments",
+	"baseOutputDir": "IG//Input//FSH",
+	"fragDir": "IG//Input//FSH//Fragments",
 	"fragTemplatePath": "MFSH//FragmentTemplate.txt",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology",
 	"mfshPaths": [
@@ -9,11 +9,11 @@
 	],
 	"cleanDirs": [
 		{
-			"path": "build\\input\\pagecontent",
+			"path": "IG\\input\\pagecontent",
 			"filter": "StructureDefinition-*-intro.xml"
 		},
 		{
-			"path": "FSH",
+			"path": "IG\\Input\\FSH",
 			"filter": "*.fsh"
 		},
 		{
@@ -29,15 +29,15 @@
 	"defines": [
 		{
 			"name": "%GraphDir%",
-			"value": "..\\GraphFiles"
+			"value": "..\\..\\..\\GraphFiles"
 		},
 		{
 			"name": "%ApiBuildDir%",
-			"value": "..\\ApiBuild"
+			"value": "..\\..\\..\\ApiBuild"
 		},
 		{
 			"name": "%PageContent%",
-			"value": "..\\build\\input\\pagecontent"
+			"value": "..\\..\\input\\pagecontent"
 		}
 	]
 }

@@ -46,10 +46,10 @@ Description: """
   #  """)
   * hasMember[usFinding] MS
 
-  #apply Observation.HasMember.Add("other", "0..*", "OtherFinding",
+  #apply Observation.HasMember.Add("other", "0..1", "OtherModalityFinding",
   #  "Other modality finding.",
   #  """
-  #  This slice references the other findings section.
+  #  This slice references the other modality findings section.
   #  Findings that do not 'fit' into the defined modality finding sections defined above are put here.
   #  """)
   * hasMember[other] MS

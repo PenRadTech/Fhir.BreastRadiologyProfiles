@@ -1,4 +1,67 @@
 {
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "BreastBodyLocationRequiredFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#49/nProfiles/Common/AbnormalityForeignObject.mfsh#22/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "ObservedChangesFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#45/nProfiles/Common/AbnormalityForeignObject.mfsh#23/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "ObservedSizeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityForeignObject.mfsh#24/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "BiRadFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityForeignObject.mfsh#25/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "NotPreviouslySeenFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityForeignObject.mfsh#26/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "CorrespondsWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityForeignObject.mfsh#27/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "PreviouslyDemonstratedByFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityForeignObject.mfsh#28/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "AssociatedFeatureFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityForeignObject.mfsh#30/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityForeignObject",
+    "fragmentName" : "ConsistentWithFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityForeignObject.mfsh#31/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "AbnormalityForeignObject",
     "traceMsg" : "Profiles/Common/AbnormalityForeignObject.mfsh#66/n"

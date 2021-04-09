@@ -1,4 +1,4 @@
 {
 	"cmdsPath": "GraphFiles\\IGFile.cmds",
-	"igPath": "build\\input\\ImplementationGuide-hl7.fhir.us.breast-radiology.json"
+	"igPath": "IG\\fsh-generated\\resources\\ImplementationGuide-hl7.fhir.us.breast-radiology.json"
 }

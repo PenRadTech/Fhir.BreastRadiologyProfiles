@@ -1,4 +1,18 @@
 {
+  "implementFragment" : {
+    "className" : "AssociatedFeature",
+    "fragmentName" : "BreastBodyLocationRequiredFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#49/nProfiles/Common/AssociatedFeature.mfsh#32/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AssociatedFeature",
+    "fragmentName" : "ObservedCountFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AssociatedFeature.mfsh#34/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "AssociatedFeature",
     "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#67/n"

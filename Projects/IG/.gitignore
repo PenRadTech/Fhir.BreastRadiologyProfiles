@@ -1,0 +1,10 @@
+[Bb]uild
+fsh-generated
+[Tt]emp
+[Tt]emplate
+[Oo]utput
+[Ii]nput-[Cc]ache
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh

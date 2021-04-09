@@ -3,8 +3,8 @@
 	"csOutputDir": "BRadLibCS",
 	"baseUrl": "http://hl7.org/fhir/us/breast-radiology/",
 	"resourcePaths": [
-		"build\\input\\profiles",
-		"build\\input\\extensions",
-		"build\\input\\vocabulary"
+		"IG\build\\input\\profiles",
+		"IG\build\\input\\extensions",
+		"IG\build\\input\\vocabulary"
 	]
 }

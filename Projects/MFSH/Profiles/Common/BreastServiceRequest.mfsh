@@ -6,7 +6,7 @@ Description: """
   """
 
   #apply HeaderFragment()
-  #apply DomainResource.BreastLateralityFragment()
+   * extension contains BreastLateralityExtension named breastLaterality 1..1
 
   #// -----------------------------------------
   #// IG Macros
@@ -27,7 +27,10 @@ Description: """
   #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Service Request")
-    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+    #apply NodeElement("", "extension", "extension")
+    #//apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/$", "%ProfileId%/extension/$", "0", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/extension/$", "^BreastLateralityExtension/$", "1", "Cmp")
   #end
 
   #// -----------------------------------------

@@ -6,9 +6,9 @@ Description: """
   """
 
   #apply HeaderFragment()
-  #apply DomainResource.BreastLateralityFragment()
 
   * . ^definition = "Followup Service Recommendation."
+  * extension contains BreastLateralityExtension named breastLaterality 1..1
 
   #apply Resource.Bind("1", "1..1", "code", "ServiceRecommendationsVS  (extensible)", "Code")
   
