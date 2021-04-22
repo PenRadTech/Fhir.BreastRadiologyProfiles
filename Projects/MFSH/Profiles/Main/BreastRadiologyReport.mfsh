@@ -27,12 +27,12 @@ Description: """
   #use IG
     #apply IntroDocProfile( """
     # <p>
-    # Breast Radiology Diagnostic Report is one of the components of a Breast Radiology Document.
+    # This resource is one of the components of a Breast Radiology Composition.
     # </p>
     # <p>
-    # Each Breast Radiology Document bundle will contain exactly one
-    # Breast Radiology Document instance that is referenced in the
-    # document's 'Report' section.
+    # Each Breast Radiology Composition will contain exactly one
+    # Breast Radiology Report instance that is referenced in the
+    # composition's 'Report' section.
     # </p>
     # <p>
     # This instance will contain the top level results of the exam,
