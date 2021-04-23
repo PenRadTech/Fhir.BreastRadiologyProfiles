@@ -121,7 +121,7 @@
 	</ul>
 	<a name="terminologySources"> </a>
 	<h3>Terminology Sources</h3>
-	This ballot version of the Breast Radiology Specification contains minimal LOINC and SNOMED coding's. 
+	This ballot version of the Breast Radiology Specification contains minimal LOINC and SNOMED codings. 
 	The vast majority of the terminology defined herein are locally defined code systems and codes. Future
 	versions of this specification will define and utilize codes from LOINC, SNOMED, RxNORM, and/or SOLOR rather than
 	the locally defined codes used in this version.
