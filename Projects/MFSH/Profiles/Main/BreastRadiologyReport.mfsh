@@ -9,7 +9,8 @@ Description: """
 
   #apply Resource.SetCategoryImaging()
 
-  #apply Resource.Fix("1", "code", "ObservationCodesCS#LOINC#10193-1", "Code")
+  * code from BreastRadReportTypesVS
+  * code 1..1
 
   * conclusionCode ^slicing.discriminator.type = #pattern
   * conclusionCode ^slicing.rules = #open
