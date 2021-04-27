@@ -20,14 +20,19 @@ Description: """
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
   * code = ObservationCodesCS#LOINC#10193-1
   * code 1..1
-  * conclusionCode 1..1
-  * conclusionCode from BiRadsAssessmentCategoryVS (required)
-  * conclusionCode ^definition =
-    """
-	  A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
+
+  * conclusionCode ^slicing.discriminator.type = #pattern
+  * conclusionCode ^slicing.rules = #open
+  * conclusionCode ^slicing.ordered = false
+  * conclusionCode ^slicing.description = "ConclusionCode slicing"
+
+  * conclusionCode contains BiRads 1..1
+  * conclusionCode[BiRads] ^short = "BiRads assessment value."
+  * conclusionCode[BiRads] ^definition = """
+    A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
     found in either of the right or left breast observation sections.
     """
-  
- 
+  * conclusionCode[BiRads] from BiRadsAssessmentCategoryVS
+
   * specimen 0..0
   * result 0..0

@@ -10,14 +10,19 @@ Description: """
   #apply HeaderFragment()
   #apply Observation.Device.Zero()
 
-  #apply Resource.Bind("2", "0..1 MS", "value[x]", "BiRadsAssessmentCategoryVS (required)", "Value")
-  * value[x] ^definition = """
-	  Composite BiRad value for %Laterality% Breast.
+  * value[x] 0..0
 
-	  Typically this is the most severe of all the BiRad 
-	  codes set in any of the child observations of the %Laterality% Breast.
-    """
+  #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
+  #	 """
+  #  Composite BiRad value for %Laterality% Breast.
+  #  Typically this is the most severe of all the BiRad 
+  #  codes set in any of the child observations of the %Laterality% Breast.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#targetBiRads")
+  #
+  #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 
+  
   #apply Observation.HasMember.Add("mgFinding", "0..1", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """

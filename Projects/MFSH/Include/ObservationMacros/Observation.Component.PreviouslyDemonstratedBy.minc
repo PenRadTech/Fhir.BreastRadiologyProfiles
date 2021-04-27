@@ -9,7 +9,7 @@
 #Description: """
 # 'Demonstrated By' Component Fragment
 # """
-  #apply Observation.Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by Changes", "Previously Demonstrated by",
+  #apply Observation.Component.Add("prevDemBy", "0..*", "Previously/Demonstrated by", "Previously Demonstrated by",
   #	 """
   #  This slice contains the optional components that specifies what this observation 
   #  has been previously demonstrated by.

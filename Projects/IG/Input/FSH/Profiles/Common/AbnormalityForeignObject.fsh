@@ -106,7 +106,7 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[biRadsAssessmentCategory] ^definition = """
-    This slice contains the optional component that define the BiRAD risk code.
+    This slice contains the optional component that defines the BiRAD risk code.
     The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
     """
   * component[biRadsAssessmentCategory].code 1..1

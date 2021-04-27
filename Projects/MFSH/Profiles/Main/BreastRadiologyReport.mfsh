@@ -10,14 +10,20 @@ Description: """
   #apply Resource.SetCategoryImaging()
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#LOINC#10193-1", "Code")
-  #apply Resource.Bind("2", "1..1", "conclusionCode", "BiRadsAssessmentCategoryVS (required)", "ConclusionCode")
-  * conclusionCode ^definition =
-    """
-	  A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
+
+  * conclusionCode ^slicing.discriminator.type = #pattern
+  * conclusionCode ^slicing.rules = #open
+  * conclusionCode ^slicing.ordered = false
+  * conclusionCode ^slicing.description = "ConclusionCode slicing"
+
+  * conclusionCode contains BiRads 1..1
+  * conclusionCode[BiRads] ^short = "BiRads assessment value."
+  * conclusionCode[BiRads] ^definition = """
+    A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
     found in either of the right or left breast observation sections.
     """
-  
- 
+  * conclusionCode[BiRads] from BiRadsAssessmentCategoryVS
+
   * specimen 0..0
   * result 0..0
   
@@ -55,7 +61,14 @@ Description: """
   #use Graph
     #apply NodeProfile("", "Report")
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
-  #end
+
+    #apply NodeElement("", "conclusionCode", "ConclusionCode")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/conclusionCode/$", "0", "Cmp")
+
+    #apply NodeElement("", "conclusionCode:BiRads", "BiRads")
+    #apply LinkByName("focus", "^%ProfileId%/conclusionCode/$", "^%ProfileId%/conclusionCode:BiRads/$", "0", "Cmp")
+
+	#end
   
   #// -----------------------------------------
   #// Code API Macros

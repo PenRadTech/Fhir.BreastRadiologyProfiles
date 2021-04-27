@@ -26,14 +26,32 @@ Description: """
   * specimen 0..0
   * contained 0..0
   * device 0..0
-  * value[x] 0..1 MS
-  * value[x] from BiRadsAssessmentCategoryVS (required)
-  * value[x] ^definition = """
-	  Composite BiRad value for Right Breast.
 
-	  Typically this is the most severe of all the BiRad 
-	  codes set in any of the child observations of the Right Breast.
+  * value[x] 0..0
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "code"
+  * component ^slicing.rules = #open
+  * component ^slicing.ordered = false
+  * component ^slicing.description = "Component slicing"
+  * component contains biRadsAssessmentCategory 0..1
+  * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
+  * component[biRadsAssessmentCategory] ^comment = """
+    This is one component of a group of components that are part of the observation.
     """
+  * component[biRadsAssessmentCategory] ^definition = """
+    Composite BiRad value for Right Breast.
+    Typically this is the most severe of all the BiRad 
+    codes set in any of the child observations of the Right Breast.
+    """
+  * component[biRadsAssessmentCategory].code 1..1
+  * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
+  * component[biRadsAssessmentCategory].code ^definition = """
+    This code identifies the BiRads Assessment Category component. component.
+	"""
+  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
+  * component[biRadsAssessmentCategory].value[x] 1..1
+  * component[biRadsAssessmentCategory].value[x] only CodeableConcept
+  * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
