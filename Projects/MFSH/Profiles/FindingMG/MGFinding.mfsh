@@ -42,6 +42,11 @@ Description: """
   #  This slice references the target 'Mass'.
   #  """)
 
+  #apply Observation.HasMember.Add("abnormalitySkinLesion", "0..*", "AbnormalitySkinLesion", 
+  #  "'Skin Lesion' reference.",
+  #  """
+  #  This slice references the target 'Skin Lesion'.
+  #  """)
 
   #apply Observation.HasMember.Add("associatedFeature", "0..*", "AssociatedFeature", 
   #  "'Associated Feature' reference.",

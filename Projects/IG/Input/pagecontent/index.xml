@@ -62,9 +62,11 @@
 		<li>
 		<a href="fragments.html">Resource Fragments</a> - Developer related information on resource fragments created and used to build this guide,
 		</li>
+		<!-- 
 		<li>
 		<a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
 		</li>
+		-->
 	</ul>
 	<a name="authors"> </a>
 	<h3>Authors</h3>

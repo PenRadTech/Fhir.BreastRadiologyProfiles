@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FragGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="537.38" height="502.5">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="537.38" height="543.75">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -37,8 +37,10 @@
 <text x="287.25" y="309.38" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="283.5" y1="354.38" x2="343.5" y2="354.38" />
 <text x="287.25" y="350.62" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="283.5" y1="395.62" x2="343.5" y2="395.62" />
+<text x="287.25" y="391.88" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="253.5" y1="24.38" x2="283.5" y2="24.38" />
-<line class="connector" x1="283.5" y1="24.38" x2="283.5" y2="354.38" />
+<line class="connector" x1="283.5" y1="24.38" x2="283.5" y2="395.62" />
 </g>
 <g>
 <g transform="translate(343.5 7.5)">
@@ -131,11 +133,21 @@
 </g>
 </g>
 <g>
-<g transform="translate(7.5 453.75)">
+<g transform="translate(343.5 378.75)">
+<a href="StructureDefinition-AbnormalitySkinLesion.html" target="_top">
+<rect class="profile" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-AbnormalitySkinLesion.html" target="_top">
+<text x="65.25" y="22.5" text-anchor="middle" class="profile">Skin Lesion</text>
+</a>
+</g>
+</g>
+<g>
+<g transform="translate(7.5 495)">
 <rect class="focus" x="0" y="0" width="67.5" height="33.75" rx="3.75" ry="3.75" />
 <text x="33.75" y="22.5" text-anchor="middle" class="focus">Focus</text>
 </g>
-<g transform="translate(82.5 453.75)">
+<g transform="translate(82.5 495)">
 <rect class="profile" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
 <text x="96.75" y="22.5" text-anchor="middle" class="profile">Profiled Resource</text>
 </g>

@@ -47,6 +47,9 @@ Description: """
   * hasMember contains abnormalityMass 0..*
   * hasMember[abnormalityMass] ^short = "'Mass' reference. hasMember."
   * hasMember[abnormalityMass] only Reference(AbnormalityMass)
+  * hasMember contains abnormalitySkinLesion 0..*
+  * hasMember[abnormalitySkinLesion] ^short = "'Skin Lesion' reference. hasMember."
+  * hasMember[abnormalitySkinLesion] only Reference(AbnormalitySkinLesion)
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)

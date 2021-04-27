@@ -1,0 +1,57 @@
+Profile: AbnormalitySkinLesion
+Parent: Observation
+Title: "Skin Lesion Abnormality"
+Description: """
+  Skin Lesion Abnormality
+  """
+
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalitySkinLesionObservation", "Code")
+
+  #apply Observation.Device.Zero()
+  #apply Observation.Value.Zero()
+  #apply Observation.BreastBodyLocationRequiredFragment()
+
+  #apply Observation.Component.ObservedChangesFragment()
+  #apply Observation.Component.BiRadFragment()
+  #apply Observation.Component.ShapeFragment()
+  #apply Observation.Component.ObservedCountFragment()
+  #apply Observation.Component.ObservedSizeFragment()
+  #apply Observation.Component.ObservedDistributionFragment()
+  #apply Observation.Component.NotPreviouslySeenFragment()
+  #apply Observation.Component.CorrespondsWithFragment()
+  #apply Observation.Component.PreviouslyDemonstratedByFragment()
+
+  #apply Observation.HasMember.AssociatedFeatureFragment()
+  #apply Observation.HasMember.ConsistentWithFragment()
+  #apply Observation.HasMember.TumorSatelliteFragment()
+
+
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply IntroDocProfile("""
+    # <p>
+    # <b>Skin Lesion Abnormality Observation</b>
+    # </p>
+    # <p>
+    # This resource contains information about a skin lesion abnormality observation. 
+    # </p>
+    #""")
+
+    #apply GroupMemberProfile("CommonResources", "%Title%")
+  #end
+  
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Skin Lesion")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineClass()
+  #end
