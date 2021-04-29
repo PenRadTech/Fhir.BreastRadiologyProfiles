@@ -17,7 +17,7 @@ Description:  "Breast Body Location Regions CodeSystem"
     area on the human body directly
     under the joint where the arm connects to the shoulder.
     It also contains many sweat glands.
-    [https://en.wikipedia.org/wiki/Axilla]
+    [en.wikipedia.org]
     """
 
   // .SnomedDescription BodyStructure | 38412008 | Structure of axillary tail of breast (Bodypart)
@@ -32,7 +32,7 @@ Description:  "Breast Body Location Regions CodeSystem"
     It passes into the axilla through an opening in the
     deep fascia called foramen of
     Langer.
-    [https://en.wikipedia.org/wiki/Tail_of_Spence]
+    [en.wikipedia.org]
     """
 
   * #AxillaI "Axilla I"
@@ -41,7 +41,7 @@ Description:  "Breast Body Location Regions CodeSystem"
     nodes in the underarm or 'axilla' area): Level I is
     the bottom level, below the lower edge of the pectoralis
     minor muscle.
-    [https://www.breastcancer.org/treatment/surgery/lymph_node_removal/axillary_dissection]
+    [www.breastcancer.org]
     """
 
   * #AxillaII "Axilla II"
@@ -49,7 +49,7 @@ Description:  "Breast Body Location Regions CodeSystem"
     There are three levels of axillary lymph nodes (the
     nodes in the underarm or 'axilla' area):Level II is
     lying underneath the pectoralis minor muscle.
-    [https://www.breastcancer.org/treatment/surgery/lymph_node_removal/axillary_dissection]
+    [www.breastcancer.org]
     """
 
   * #AxillaIII "Axilla III"
@@ -57,7 +57,7 @@ Description:  "Breast Body Location Regions CodeSystem"
     There are three levels of axillary lymph nodes (the
     nodes in the underarm or 'axilla' area): Level III
     is above the pectoralis minor muscle.
-    [https://www.breastcancer.org/treatment/surgery/lymph_node_removal/axillary_dissection]
+    [www.breastcancer.org]
     """
 
   * #InframammaryFold "Inframammary fold"

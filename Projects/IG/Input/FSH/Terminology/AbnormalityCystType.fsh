@@ -31,7 +31,7 @@ Description: "Cyst type CodeSystem."
     If blood or any unusual cells are present, further
     testing may be needed to rule
     out breast cancer.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   * #CystComplicated "Cyst complicated"
@@ -44,7 +44,7 @@ Description: "Cyst type CodeSystem."
     However, they don't have the thick walls or obvious
     solid components that a complex
     cyst has.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
      """
 
   * #CystMicro "Cyst micro"

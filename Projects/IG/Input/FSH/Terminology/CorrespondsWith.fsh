@@ -15,7 +15,7 @@ Description:  "CorrespondsWith CodeSystem"
     area of the body.
     These substances can be air, body fluids, or bone
     fragments.
-    [https://medlineplus.gov/ency/article/002216.htm]
+    [medlineplus.gov]
     """
 
   // .SnomedDescription Procedure | 122548005 | Biopsy of breast (Procedure)
@@ -45,7 +45,7 @@ Description:  "CorrespondsWith CodeSystem"
     abnormal nipple discharge and is
     valuable in diagnosing intraductal papillomas and
     other conditions.
-    [https://www.imaginis.com/mammography/ductogram-galactogram-imaging-the-breast-ducts]
+    [www.imaginis.com]
     """
 
   * #IncidentalFinding "Incidental finding"

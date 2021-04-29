@@ -27,7 +27,7 @@ Description: "Asymmetry type code system."
     the breast and is of more concern.
     The frequency of finding focal asymmetry at screening
     mammography is less than 1%.
-    [https://pubs.rsna.org/doi/10.1148/rg.e33]
+    [pubs.rsna.org]
     """
 
   * #AsymmetryGlobal "Asymmetry global"
@@ -50,5 +50,5 @@ Description: "Asymmetry type code system."
     A developing asymmetry should be viewed with suspicion
     because it is an uncommon
     manifestation of breast cancer.
-    [https://pubs.rsna.org/doi/full/10.1148/rg.2016150123]
+    [pubs.rsna.org]
     """

@@ -16,7 +16,7 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     area of the body.
     These substances can be air, body fluids, or bone
     fragments.
-    [https://medlineplus.gov/ency/article/002216.htm]
+    [medlineplus.gov]
     """
 
   // .SnomedDescription Procedure | 122548005 | Biopsy of breast (Procedure)

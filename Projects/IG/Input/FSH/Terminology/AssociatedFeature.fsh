@@ -43,7 +43,7 @@ Description: "Associated Feature seen during a breast examination."
     Numerous breast tissue markers are currently available,
     with varied shapes, composition,
     and associated bio-absorbable components.
-    [https://www.ncbi.nlm.nih.gov/pubmed/30059952]
+    [www.ncbi.nlm.nih.gov/pubmed]
     """
 
   * #BrachytherapyTube "Brachytherapy tube"
@@ -59,7 +59,7 @@ Description: "Associated Feature seen during a breast examination."
     of rice) in or near the tumor
     permanently.
     After several months, the seeds lose their radioactivity.
-    [https://www.radiologyinfo.org/en/info.cfm?pg=brachy]
+    [www.radiologyinfo.org]
     """
 
   * #ChestWallInvasion "Chest wall invasion"
@@ -132,7 +132,7 @@ Description: "Associated Feature seen during a breast examination."
     Also called gold fiducial marker seeds, gold fiducial
     markers, and gold-seed fiducial
     markers.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/gold-seeds]
+    [www.cancer.gov]
     """
 
   * #Hematoma "Hematoma"
@@ -186,7 +186,7 @@ Description: "Associated Feature seen during a breast examination."
     an infiltrating lesion) causes
     its retraction and forms an inverted 'V' that resembles
     the tip of a circus tent.
-    [https://radiopaedia.org/articles/tent-sign-breast?lang=us]
+    [radiopaedia.org]
     """
 
   * #PostSurgicalScar "Post surgical scar"
@@ -208,7 +208,7 @@ Description: "Associated Feature seen during a breast examination."
     Serous fluid is a pale yellow, transparent fluid
     that contains protein, but no blood
     cells or pus.
-    [https://www.verywellhealth.com/seroma-medical-definition-430372]
+    [www.verywellhealth.com]
     """
 
   * #SkinInvolvement "Skin involvement"
@@ -237,7 +237,7 @@ Description: "Associated Feature seen during a breast examination."
     Skin and nipple retraction are more obvious when
     a woman raises her arms above her
     head or leans forward.
-    [https://www.drholmesmd.com/blog/early-signs-of-breast-cancer]
+    [www.drholmesmd.com]
     """
 
   * #SkinThickening "Skin thickening"
@@ -247,7 +247,7 @@ Description: "Associated Feature seen during a breast examination."
     more than 2 mm in thickness.
     It can result from a number of both benign and malignant
     causes.
-    [https://radiopaedia.org/articles/skin-thickening-on-mammography-differential?lang=us]
+    [radiopaedia.org]
     """
 
   * #SurgicalClip "Surgical clip"
@@ -268,7 +268,7 @@ Description: "Associated Feature seen during a breast examination."
     Skin thickening and trabecular thickening often occur
     together, and they have similar
     differential diagnoses.
-    [https://oxfordmedicine.com/view/10.1093/med/9780190270261.001.0001/med-9780190270261-chapter-48]
+    [oxfordmedicine.com]
     """
 
   * #CalcificationInMass "Calcification in mass"
@@ -323,7 +323,7 @@ Description: "Associated Feature seen during a breast examination."
     a cystic structure or hollow organ.
     This sort of colloidal calcium suspension layering
     can occur in various regions.
-    [https://radiopaedia.org/articles/milk-of-calcium-disambiguation?lang=us]
+    [radiopaedia.org]
     """
 
   * #RimCalcifications "Rim calcifications"

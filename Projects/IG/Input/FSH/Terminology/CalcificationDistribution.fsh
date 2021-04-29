@@ -38,7 +38,7 @@ Description: "Calcification Distribution in an abnormality code system."
     in benign entities.
     Even when clusters of calcifications are scattered
     throughout the breast, this favors a benign entity.
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """
 
   * #GroupedDistribution "Grouped distribution"
@@ -79,7 +79,7 @@ Description: "Calcification Distribution in an abnormality code system."
     would favor a non-ductal distribution (i.e.
     
     benignity)
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """
 
   * #ScatteredDistribution "Scattered distribution"
@@ -105,5 +105,5 @@ Description: "Calcification Distribution in an abnormality code system."
     and 'segmental' is problematic, because it is not
     clear on a mammogram or MRI where the bounderies
     of a segment (or a lobe) exactly are.
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """

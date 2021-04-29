@@ -57,7 +57,7 @@ Description: "Mammography calcification type code system."
     In some cases, ossification may occur - this is
     characterized by cortical formation and a central
     medullary cavity.
-    [https://radiopaedia.org/articles/dystrophic-soft-tissue-calcification-1?lang=us]
+    [radiopaedia.org]
     """
 
   * #Eggshell "Eggshell"
@@ -71,7 +71,7 @@ Description: "Mammography calcification type code system."
     small to several centimeters in diameter (oil cyst)
     may disappear (fat necrosis)
     
-    [https://radiopaedia.org/articles/eggshell-calcification-breast-1?lang=us]
+    [radiopaedia.org]
     """
 
   * #Fine "Fine"
@@ -123,7 +123,7 @@ Description: "Mammography calcification type code system."
     descriptor for breast calcifications that are small
     and/or hazy such that no clearly
     defined shape/form can be ascribed.
-    [https://radiopaedia.org > articles > amorphous-calcifications-breast]
+    [radiopaedia.org]
     """
 
   * #LargeRodlike "Large rodlike"
@@ -154,7 +154,7 @@ Description: "Mammography calcification type code system."
   * #Layering "Layering"
     """
     Layering of calcium within the calcification.
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """
 
   * #FineLinear "Fine Linear"
@@ -177,7 +177,7 @@ Description: "Mammography calcification type code system."
     from under 1 mm to over a centimeter.
     They are the result of fat necrosis, calcified debris
     in ducts, and occasional fibroadenomas.
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """
 
   * #MilkOfCalcium "Milk of calcium"
@@ -314,5 +314,5 @@ Description: "Mammography calcification type code system."
     may simulate intraductal (across a group of milk
     
     ducts) calcification.
-    [https://radiologyassistant.nl/breast/breast-calcifications-differential-diagnosis]
+    [radiologyassistant.nl]
     """

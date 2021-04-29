@@ -84,7 +84,7 @@ Description:  "ServiceRecommendations CodeSystem"
     of the breast including the axillary tail, as well
     the pectoral muscle and the nipple
     in profile.
-    [https://radiopaedia.org/articles/axillary-view?lang=us]
+    [radiopaedia.org]
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 442580003 | Axillary tissue mammography view (Qualifier)
@@ -99,7 +99,7 @@ Description:  "ServiceRecommendations CodeSystem"
     It passes into the axilla through an opening in the
     deep fascia called foramen of
     Langer.
-    [https://en.wikipedia.org/wiki/Tail_of_Spence]
+    [en.wikipedia.org]
     """
 
   * #Biopsy "Biopsy"
@@ -272,7 +272,7 @@ Description:  "ServiceRecommendations CodeSystem"
     In fine needle aspiration, a thin needle is inserted
     into an area of abnormal-appearing
     tissue or body fluid.
-    [https://www.webmd.com > a-to-z-guides > fine-needle-aspiration]
+    [www.webmd.com]
     """
 
   * #DiagnosticMammogram "Diagnostic Mammogram"
@@ -284,7 +284,7 @@ Description:  "ServiceRecommendations CodeSystem"
     signs of breast cancer alert the physician to check
     the tissue.These signs may include
     a lump or breast pain.
-    [https://www.nationalbreastcancer.org/diagnostic-mammogram]
+    [www.nationalbreastcancer.org]
     """
 
   * #DrainageTube "Drainage tube"
@@ -295,7 +295,7 @@ Description:  "ServiceRecommendations CodeSystem"
     or other fluids from a wound.
     This is a common practice by surgeons or interventional
     radiologists.
-    [https://en.wikipedia.org/wiki/Drain_(surgery)]
+    [en.wikipedia.org]
     """
 
   // .SnomedDescription Procedure | 420131003 | Fluoroscopic mammary ductography (Procedure)
@@ -314,7 +314,7 @@ Description:  "ServiceRecommendations CodeSystem"
     abnormal nipple discharge and is
     valuable in diagnosing intraductal papillomas and
     other conditions.
-    [https://www.imaginis.com/mammography/ductogram-galactogram-imaging-the-breast-ducts]
+    [www.imaginis.com]
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399265009 | Exaggerated cranio-caudal projection (Qualifier)
@@ -341,7 +341,7 @@ Description:  "ServiceRecommendations CodeSystem"
     An optimal XCCM view requires the most medial portion
     of the breast and the nipple
     in profile to be clearly displayed.
-    [https://radiopaedia.org/articles/xccl-view?lang=us]
+    [radiopaedia.org]
     """
 
   // .SnomedDescription not matching
@@ -356,7 +356,7 @@ Description:  "ServiceRecommendations CodeSystem"
     during fine needle aspiration
     can help make a diagnosis or rule out conditions
     such as cancer.
-    [https://www.webmd.com/a-to-z-guides/fine-needle-aspiration#1]
+    [www.webmd.com]
     """
 
   * #Follow-up "Follow-up"
@@ -439,7 +439,7 @@ Description:  "ServiceRecommendations CodeSystem"
     a malignant or inflammatory process and the localization
     or generalization of that
     process.
-    [https://stanfordmedicine25.stanford.edu/the25/lymph.html]
+    [stanford.edu]
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure)
@@ -542,7 +542,7 @@ Description:  "ServiceRecommendations CodeSystem"
     extending down to the posterior
     nipple line (an oblique line drawn straight back
     from the nipple.)
-    [https://www.mammoguide.com/mammo-techniques.html]
+    [www.mammoguide.com]
     """
 
   // .SnomedDescription Procedure | 241055006 | Mammogram - symptomatic (Procedure) + QualifierValue | 399162004 | Cranio-caudal projection (Qualifier)
@@ -572,7 +572,7 @@ Description:  "ServiceRecommendations CodeSystem"
     an excellent way to evaluate calcium deposits or
     tiny masses that are not visible
     on ultrasound.
-    [https://www.radiologyinfo.org/en/info.cfm?pg=breastbixr]
+    [www.radiologyinfo.org]
     """
 
   // .SnomedDescription Procedure | 44578009 | Core needle biopsy of breast (Procedure) ++ POSSIBLE
@@ -589,7 +589,7 @@ Description:  "ServiceRecommendations CodeSystem"
     A small cylinder (core) of tissue is taken out in
     the needle.
     Several cores are often removed.
-    [https://www.cancer.org/cancer/breast-cancer/screening-tests-and-early-detection/breast-biopsy/core-needle-biopsy-of-the-breast.html]
+    [www.cancer.org]
     """
 
   * #PossibleDiagnosticMammogram "Possible Diagnostic Mammogram"
@@ -607,7 +607,7 @@ Description:  "ServiceRecommendations CodeSystem"
     correct location using x-rays and
     computer generated coordinates of the concerning
     area of breast tissue.
-    [https://www.genesishealth.com/care-treatment/cancer/treat/breast/diagnosis/sterotactic_vacuum/]
+    [www.genesishealth.com]
     """
 
   * #PossibleSurgicalConsult "Possible surgical consult"
@@ -668,7 +668,7 @@ Description:  "ServiceRecommendations CodeSystem"
     is rotated medially or laterally around the axis
     of the nipple prior to applying
     compression.
-    [https://radiopaedia.org/articles/rolled-cc-view-1?lang=us]
+    [radiopaedia.org]
     """
 
   // .SnomedDescription Procedure | 399226006 | Medial rolling of breast (Procedure)
@@ -688,7 +688,7 @@ Description:  "ServiceRecommendations CodeSystem"
     This helps to guide the radiologist's biopsy equipment
     
     to the site of the imaging abnormality.
-    [https://www.radiologyinfo.org/en/info.cfm?pg=breastbixr]
+    [www.radiologyinfo.org]
     """
 
   * #Scintimammography "Scintimammography"
@@ -708,7 +708,7 @@ Description:  "ServiceRecommendations CodeSystem"
     are present.
     It can reduce unnecessary procedures by helping determine
     whether a biopsy is needed.
-    [https://www.radiologyinfo.org/en/info.cfm?pg=scintimammo]
+    [www.radiologyinfo.org]
     """
 
   // .SnomedDescription Procedure | 439324009 | Mammogram in compression view (Procedure)
@@ -731,7 +731,7 @@ Description:  "ServiceRecommendations CodeSystem"
     abnormality or questionable area
     or a little cluster of faint microcalcifications
     in a dense area.
-    [https://radiopaedia.org/articles/spot-view-mammography?lang=us]
+    [radiopaedia.org]
     """
 
   // .SnomedDescription Procedure | 241058008 | Mammogram magnification (Procedure) +++++
@@ -767,7 +767,7 @@ Description:  "ServiceRecommendations CodeSystem"
     entire lump or abnormal area)
     or incisional (removal of a piece of a lump or abnormal
     area).
-    [https://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/tests-and-procedures/surgical-biopsy/?region=on]
+    [www.cancer.ca]
     """
 
   * #SurgicalConsult "Surgical consult"

@@ -31,7 +31,7 @@ Description:  "ConsistentWith CodeSystem"
     develops under the skin.
     Unlike other types of lipomas, angiolipomas are
     often painful or tender.
-    [https://www.healthline.com/health/angiolipoma]
+    [www.healthline.com]
     """
 
   // .SnomedDescription ClinicalFinding | 37009001 | Apocrine metaplasia of breast (Disorder) | [0/0] | N60.89
@@ -46,7 +46,7 @@ Description:  "ConsistentWith CodeSystem"
     These breast changes may show on a mammogram and
     biopsy as a mass or benign lesion,
     or possibly even develop into a palpable mass.
-    [https://breast-cancer.ca/apo-meta/]
+    [breast-cancer.ca]
     """
 
   * #Artifact "Artifact"
@@ -63,7 +63,7 @@ Description:  "ConsistentWith CodeSystem"
     Common causes are improper handling of the films
     errors while processing the films
     patient movement while taking the image.
-    [https://radiopaedia.org/articles/x-ray-artifacts?lang=us]
+    [radiopaedia.org]
     """
 
   * #AtypicalHyperplasia "Atypical hyperplasia"
@@ -80,7 +80,7 @@ Description:  "ConsistentWith CodeSystem"
     and become more abnormal, this can transition into
     noninvasive breast cancer (carcinoma
     in situ) or invasive breast cancer.
-    [https://www.mayoclinic.org/diseases-conditions/atypical-hyperplasia/symptoms-causes/syc-20369773]
+    [www.mayoclinic.org]
     """
 
   // .SnomedDescription BodyStructure | 245269009 | Axillary lymph node group (Bodypart)
@@ -96,7 +96,7 @@ Description:  "ConsistentWith CodeSystem"
     act as filters and can accumulate germs or cancer
     cells.
     They are a part of the lymph system of the body.
-    [https://www.verywellhealth.com/axillary-lymph-nodes-2252131]
+    [www.verywellhealth.com]
     """
 
   // .SnomedDescription ClinicalFinding | 254838004 | Carcinoma of breast (Disorder) | [4/33] | C50.929
@@ -169,7 +169,7 @@ Description:  "ConsistentWith CodeSystem"
     If blood or any unusual cells are present, further
     testing may be needed to rule
     out breast cancer.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   * #CystComplicated "Cyst complicated"
@@ -182,7 +182,7 @@ Description:  "ConsistentWith CodeSystem"
     However, they don't have the thick walls or obvious
     solid components that a complex
     cyst has.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   * #CystOil "Cyst oil"
@@ -219,7 +219,7 @@ Description:  "ConsistentWith CodeSystem"
     right through them, indicating
     there are no solid areas.
     Simple cysts are always benign.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   // .Snomed 449837001
@@ -237,7 +237,7 @@ Description:  "ConsistentWith CodeSystem"
     If blood or any unusual cells are present, further
     testing may be needed to rule
     out breast cancer.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   * #CystsComplicated "Cysts complicated"
@@ -250,7 +250,7 @@ Description:  "ConsistentWith CodeSystem"
     However, they don't have the thick walls or obvious
     solid components that a complex
     cyst has.
-    [https://www.breastcancer.org/symptoms/benign/cysts]
+    [www.breastcancer.org]
     """
 
   * #CystsMicroClustered "Cysts micro clustered"
@@ -271,7 +271,7 @@ Description:  "ConsistentWith CodeSystem"
     DCIS is noninvasive, meaning it hasn't spread out
     of the milk duct and has a low
     risk of becoming invasive.
-    [https://www.mayoclinic.org/diseases-conditions/dcis/symptoms-causes/syc-20371889]
+    [www.mayoclinic.org]
     """
 
   * #Debris "Debris"
@@ -292,7 +292,7 @@ Description:  "ConsistentWith CodeSystem"
     In addition, it has been suggested that aluminum
     may have direct activity in breast
     tissue.
-    [https://www.cancer.gov/about-cancer/causes-prevention/risk/myths/antiperspirants-fact-sheet]
+    [www.cancer.gov]
     """
 
   * #DermalCalcification "Dermal calcification"
@@ -305,7 +305,7 @@ Description:  "ConsistentWith CodeSystem"
     Often, these calcifications are in groups as they
     extend into small glands in the
     skin.
-    [https://radiopaedia.org/articles/skin-calcification-in-breast?lang=us]
+    [radiopaedia.org]
     """
 
   // .SnomedDescription ClinicalFinding | 22049009 | Mammary duct ectasia (Disorder) | [0/0] | N60.49
@@ -317,7 +317,7 @@ Description:  "ConsistentWith CodeSystem"
     to affect postmenopausal women,
     may be accompanied by inflammation and infiltration
     by plasma cells.
-    [https://www.hoafredericksburg.com/duct-ectasia/]
+    [www.hoafredericksburg.com]
     """
 
   // .Snomed 290077003
@@ -332,7 +332,7 @@ Description:  "ConsistentWith CodeSystem"
     lymphatics of the breast, lymphatic congestion caused
     by breast, lymphatic drainage
     obstruction, or by congestive heart failure.
-    [https://www.researchgate.net/publication/7988898_Unilateral_Breast_Edema_Spectrum_of_Etiologies_and_Imaging_Appearances]
+    [www.researchgate.net]
     """
 
   // .SnomedDescription no direct match possible fat necrosis?
@@ -366,7 +366,7 @@ Description:  "ConsistentWith CodeSystem"
     This is called fat necrosis (necrosis is a medical
     term used to describe damaged
     or dead tissue).
-    [https://breastcancernow.org/information-support/have-i-got-breast-cancer/breast-pain-other-benign-conditions/fat-necrosis]
+    [breastcancernow.org]
     """
 
   * #Fibroadenolipoma "Fibroadenolipoma"
@@ -379,7 +379,7 @@ Description:  "ConsistentWith CodeSystem"
     All components are found in normal breast tissue,
     which is why the lesions are considered
     hamartomatous.
-    [https://radiopaedia.org/articles/breast-hamartoma?lang=us]
+    [radiopaedia.org]
     """
 
   * #Fibroadenoma "Fibroadenoma"
@@ -391,7 +391,7 @@ Description:  "ConsistentWith CodeSystem"
     and 30s, but they can be found
     in women of any age.
     They tend to shrink after a woman goes through menopause.
-    [https://www.cancer.org/cancer/breast-cancer/non-cancerous-breast-conditions/fibroadenomas-of-the-breast.html]
+    [www.cancer.org]
     """
 
   * #FibroadenomaDegenerating "Fibroadenoma degenerating"
@@ -414,7 +414,7 @@ Description:  "ConsistentWith CodeSystem"
     Fibrocystic breasts are composed of tissue that feels
     lumpy or rope-like in texture.
     This is called nodular or glandular breast tissue.
-    [https://www.mayoclinic.org/diseases-conditions/fibrocystic-breasts/symptoms-causes/syc-20350438]
+    [www.mayoclinic.org]
     """
 
   * #FibroglandularTissue "Fibroglandular tissue"
@@ -427,7 +427,7 @@ Description:  "ConsistentWith CodeSystem"
     Fibrocystic breasts are composed of tissue that feels
     lumpy or rope-like in texture.
     This is called nodular or glandular breast tissue.
-    [https://www.mayoclinic.org/diseases-conditions/fibrocystic-breasts/symptoms-causes/syc-20350438]
+    [www.mayoclinic.org]
     """
 
   // .SnomedDescription ???????????
@@ -439,7 +439,7 @@ Description:  "ConsistentWith CodeSystem"
     as a pathological process.
     When fibrosis occurs in response to injury, the term
     'scarring' is used.
-    [https://www.news-medical.net/health/What-is-Fibrosis.aspx]
+    [www.news-medical.net]
     """
 
   * #FibrousRidge "Fibrous ridge"
@@ -451,7 +451,7 @@ Description:  "ConsistentWith CodeSystem"
     Strands of supportive tissue surround the breast
     and form a prominent ridge called
     the inframammary ridge.
-    [https://www.stjoeshealth.org/find-a-service-or-specialty/womens-health/]
+    [www.stjoeshealth.org]
     """
 
   // .SnomedDescription ClinicalFinding | 13600006 | Folliculitis (Disorder) | [6/113] | L73.9
@@ -466,7 +466,7 @@ Description:  "ConsistentWith CodeSystem"
     Boils (also referred to as furuncles) are pus-filled
     lesions that are painful and
     usually firm.
-    [https://www.hopkinsmedicine.org/health/conditions-and-diseases/folliculitis-boils-and-carbuncles]
+    [www.hopkinsmedicine.org]
     """
 
   * #Gynecomastia "Gynecomastia"
@@ -476,7 +476,7 @@ Description:  "ConsistentWith CodeSystem"
     It is most commonly caused by male estrogen levels
     that are too high or are out of
     balance with testosterone levels.
-    [https://my.clevelandclinic.org/health/diseases/16227-enlarged-male-breast-tissue-gynecomastia]
+    [my.clevelandclinic.org]
     """
 
   // .Snomed 51398009
@@ -487,7 +487,7 @@ Description:  "ConsistentWith CodeSystem"
     mixture of cells and tissues
     normally found in the area of the body where the
     growth occurs.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/hamartoma]
+    [www.cancer.gov]
     """
 
   // .Snomed 302924003
@@ -502,7 +502,7 @@ Description:  "ConsistentWith CodeSystem"
     skin discoloration, and may leave behind scar tissue
     that mimics the shape of a breast
     tumor.
-    [https://www.verywellhealth.com/breast-hematomas-430281]
+    [www.verywellhealth.com]
     """
 
   * #HormonalStimulation "Hormonal stimulation"
@@ -522,7 +522,7 @@ Description:  "ConsistentWith CodeSystem"
     at the time of ultrasonography
     and aspiration cytology, it is difficult to distinguish
     cancer from a benign tumor.
-    [https://www.ncbi.nlm.nih.gov/pubmed/11911303]
+    [www.ncbi.nlm.nih.gov/pubmed]
     """
 
   // .SnomedDescription BodyStructure | 443159006 | Intramammary lymph node group (Bodypart)
@@ -593,7 +593,7 @@ Description:  "ConsistentWith CodeSystem"
     For example, there are about 20-40 lymph nodes in
     the axilla.
     Also called lymph gland.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/lymph-node]
+    [www.cancer.gov]
     """
 
   // .Snomed 274741002
@@ -638,7 +638,7 @@ Description:  "ConsistentWith CodeSystem"
     abnormal number of nodes, or derangement of internal
     architecture (e.g.
     cystic or necrotic nodes).
-    [https://radiopaedia.org/articles/lymph-node-enlargement?lang=us]
+    [radiopaedia.org]
     """
 
   * #MassSolid "Mass solid"
@@ -653,7 +653,7 @@ Description:  "ConsistentWith CodeSystem"
     and lymphomas.
     Leukemias (cancer of the blood) generally do not
     form solid mass/tumors.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/solid-tumor]
+    [www.cancer.gov]
     """
 
   * #MassSolidW/tumorVasc "Mass solid w/tumor vasc"
@@ -677,9 +677,7 @@ Description:  "ConsistentWith CodeSystem"
     They may form on the skin, in the tissues below the
     skin, and/or in an organ.
     There are many types of vascular tumors.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/solid-tumor ]
-    
-    https://www.cancer.gov/publications/dictionaries/cancer-terms/def/vascular-tumor
+    [www.cancer.gov]
     """
 
   // .SnomedDescription ClinicalFinding | 45198002 | Mastitis (Disorder) | [3/51] | P39.0 | Neonatal infective mastitis | N61 | Inflammatory disorders of breast |
@@ -699,7 +697,7 @@ Description:  "ConsistentWith CodeSystem"
     a cystic structure or hollow organ.
     This sort of colloidal calcium suspension layering
     can occur in various regions.
-    [https://radiopaedia.org/articles/milk-of-calcium-disambiguation?lang=us]
+    [radiopaedia.org]
     """
 
   * #Multi-focalCancer "Multi-focal cancer"
@@ -709,7 +707,7 @@ Description:  "ConsistentWith CodeSystem"
     All of the tumors begin in one original tumor.
     The tumors are also all in the same quadrant - or
     section - of the breast.
-    [https://www.healthline.com/health/breast-cancer/multifocal-breast-cancer]
+    [www.healthline.com]
     """
 
   // .SnomedDescription need help
@@ -725,7 +723,7 @@ Description:  "ConsistentWith CodeSystem"
     imaging or clinically by the presence
     of a palpable breast mass or unilateral spontaneous
     nipple discharge.
-    [https://ecancer.org/es/journal/article/461-breast-papillary-lesions-an-analysis-of-70-cases]
+    [ecancer.org]
     """
 
   // .Snomed 99571000119102
@@ -738,7 +736,7 @@ Description:  "ConsistentWith CodeSystem"
     They are made up of gland tissue along with fibrous
     tissue and blood vessels (called
     fibrovascular tissue).
-    [https://www.cancer.org/cancer/breast-cancer/non-cancerous-breast-conditions/intraductal-papillomas.html]
+    [www.cancer.org]
     """
 
   // .SnomedDescription ClinicalFinding | 712989008 | Phyllodes tumor of breast (Disorder) | D48.6 |
@@ -763,7 +761,7 @@ Description:  "ConsistentWith CodeSystem"
     quickly, and they require surgery
     to reduce the risk of a phyllodes tumor coming back
     in the breast (local recurrence).
-    [https://www.breastcancer.org/symptoms/types/phyllodes]
+    [www.breastcancer.org]
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
@@ -782,7 +780,7 @@ Description:  "ConsistentWith CodeSystem"
     Scar tissue and fluid retention can make breast tissue
     appear a little firmer or
     rounder than before surgery and/or radiation.
-    [https://www.breastcancer.org/treatment/side_effects/scar_tissue]
+    [www.breastcancer.org]
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
@@ -830,7 +828,7 @@ Description:  "ConsistentWith CodeSystem"
     Often, more than one radial scar is present.
     Another term for this condition is complex sclerosing
     lesions.
-    [https://www.breastcancer.org/symptoms/benign/radial-scars]
+    [www.breastcancer.org]
     """
 
   // .Snomed 143501000119107
@@ -859,7 +857,7 @@ Description:  "ConsistentWith CodeSystem"
     antibody, that travels in the blood to tissues throughout
     the body.
     Also called irradiation and radiotherapy.
-    [https://www.cancer.gov/publications/dictionaries/cancer-terms/def/44971]
+    [www.cancer.gov]
     """
 
   * #Scar "Scar"
@@ -868,7 +866,7 @@ Description:  "ConsistentWith CodeSystem"
     after a skin injury.
     A scar is fibrous tissue made of collagen that replaces
     the injured skin.
-    [https://www.breastcancer.org/treatment/side_effects/scar_tissue]
+    [www.breastcancer.org]
     """
 
   * #ScarWithShadowing "Scar with shadowing"
@@ -903,7 +901,7 @@ Description:  "ConsistentWith CodeSystem"
     smooth, linear and rod-like calcifications.
     Usually bilateral and symmetric and may appear lucent-centered.
     Also known as plasma cell mastitis.
-    [https://radiopaedia.org/cases/secretory-calcifications?lang=us]
+    [radiopaedia.org]
     """
 
   * #SentinelNode "Sentinel node"
@@ -915,7 +913,7 @@ Description:  "ConsistentWith CodeSystem"
     locate the sentinel nodes during surgery.
     The sentinel nodes are removed and analyzed in a
     laboratory.
-    [https://www.mayoclinic.org/tests-procedures/sentinel-node-biopsy/about/pac-20385264]
+    [www.mayoclinic.org]
     """
 
   // .Snomed 297178008
@@ -929,7 +927,7 @@ Description:  "ConsistentWith CodeSystem"
     Serous fluid is a pale yellow, transparent fluid
     that contains protein, but no blood
     cells or pus.
-    [https://www.verywellhealth.com/seroma-medical-definition-430372]
+    [www.verywellhealth.com]
     """
 
   // .Snomed 126510002
@@ -944,7 +942,7 @@ Description:  "ConsistentWith CodeSystem"
     a person's lifetime.
     Secondary skin lesions are the result of irritated
     or manipulated primary skin lesions.
-    [https://www.healthline.com/health/skin-lesions]
+    [www.healthline.com]
     """
 
   * #Surgery "Surgery"
@@ -954,7 +952,7 @@ Description:  "ConsistentWith CodeSystem"
     Surgery can involve cutting, abrading, suturing,
     or otherwise physically changing
     body tissues and organs.
-    [https://www.medicinenet.com/script/main/art.asp?articlekey=5603]
+    [www.medicinenet.com]
     """
 
   // .SnomedDescription ClinicalFinding | 62112002 | Injury of breast (Disorder)
@@ -991,5 +989,5 @@ Description:  "ConsistentWith CodeSystem"
     As more fluid and pressure build, some of the blood
     leaks out of the veins and into
     the skin.
-    [https://www.webmd.com/skin-problems-and-treatments/eczema/venous-stasis-dermatitis#1]
+    [www.webmd.com]
     """

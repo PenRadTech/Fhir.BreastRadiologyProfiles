@@ -27,7 +27,7 @@ Description:  "NotPreviouslySeen CodeSystem"
     A blunt-tipped sialogram needle (30-gauge) is used
     for performing the ductogram.
     The abnormal duct is identified and cannulated.
-    [https://radiopaedia.org/articles/breast-ductography-1?lang=us]
+    [radiopaedia.org]
     """
 
   * #Mammogram "Mammogram"
