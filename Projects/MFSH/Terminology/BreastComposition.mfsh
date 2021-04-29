@@ -1,7 +1,7 @@
-ValueSet:  MGBreastDensityVS
-Title: "Mammography BreastDensity ValueSet"
-Description:  "Mammography BreastDensity Value Set"
-  * codes from system MGBreastDensityCS
+ValueSet:  BreastCompositionVS
+Title: "BreastComposition ValueSet"
+Description:  "BreastComposition Value Set"
+  * codes from system BreastCompositionCS
 
 
 
@@ -15,29 +15,29 @@ Description:  "Mammography BreastDensity Value Set"
 
 
 
-CodeSystem: MGBreastDensityCS
-Title: "Mammography Breast Density CodeSystem"
-Description: "Mammography breast density values code system."
-  * #AlmostEntirelyFat "Almost entirely fat"
+CodeSystem: BreastCompositionCS
+Title: "Breast Composition CodeSystem"
+Description: "Breast composition values code system."
+  * #AlmostEntirelyFat "(a) Almost entirely fat"
     """
     A term used to describe breast tissue that is made
     up of almost all fatty tissue.
     """
 
-  * #ScatteredAreasOfFibroglandularDensity "Scattered areas of fibroglandular density"
+  * #ScatteredAreasOfFibroglandularDensity "(b) Scattered areas of fibroglandular density"
     """
     A term used to describe breast tissue that is made
     up of mostly fatty tissue and also has some dense fibrous tissue and glandular
     tissue.
     """
 
-  * #HeterogeneouslyDense "Heterogeneously dense"
+  * #HeterogeneouslyDense "(c) Heterogeneously dense"
     """
     A term used to describe breast tissue that has large
     areas of dense fibrous tissue and glandular tissue and also has some fatty tissue.
     """
 
-  * #ExtremelyDense "Extremely dense"
+  * #ExtremelyDense "(d) Extremely dense"
     """
     Also called extremely dense breast tissue.
     A term used to describe breast tissue that is made

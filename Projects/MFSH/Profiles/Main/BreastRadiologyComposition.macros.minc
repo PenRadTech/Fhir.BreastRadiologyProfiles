@@ -69,9 +69,9 @@
 
 
 
-  /*
-   Composition section for Left Breast Findings.
-   */
+/*
+ Composition section for Left Breast Findings.
+ */
 #macro FindingsLeftBreastSection(SliceName) 
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -101,9 +101,9 @@
 
 
 
-  /*
-   Composition section for Right Breast Findings.
-   */
+/*
+  Composition section for Right Breast Findings.
+ */
 #macro FindingsRightBreastSection(SliceName) 
   * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -128,6 +128,37 @@
   #end
 #end
 
+
+
+
+
+
+/*
+ Composition section for BiLateral Breast Findings.
+ */
+#macro FindingsBiLateralBreastSection(SliceName) 
+  * section[SliceName] ^definition = """
+    This section contains references to the report's findings 
+    that are common to both breasts.
+  """
+  * section[SliceName] ^short = "Findings BiLateral Breast Section."
+  * section[SliceName].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
+  * section[SliceName].title = "Findings BiLateral Breast Section"
+
+  * section[SliceName].entry 0..*
+  * section[SliceName].entry only Reference(FindingsBiLateralBreast)
+  * section[SliceName].entry ^short = "Finding BiLateral breast reference"
+  * section[SliceName].entry ^definition = """
+  Reference to the finding common to both breasts.
+  """
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeElement("C", "section:SliceName", "Findings/BiLateral Breast/Section")
+  #end
+#end
 
 
 

@@ -71,6 +71,3 @@ Description: """
   * hasMember contains abnormalityFatNecrosis 0..*
   * hasMember[abnormalityFatNecrosis] ^short = "'FatNecrosis' reference. hasMember."
   * hasMember[abnormalityFatNecrosis] only Reference(AbnormalityFatNecrosis)
-  * hasMember contains mgBreastDensity 1..1
-  * hasMember[mgBreastDensity] ^short = "'Mammo Breast Density' reference. hasMember."
-  * hasMember[mgBreastDensity] only Reference(MGBreastDensity)

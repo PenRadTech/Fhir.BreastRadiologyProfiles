@@ -1,11 +1,14 @@
-Profile: MGBreastDensity
+Profile: BreastComposition
 Parent: Observation
-Title: "Mammography Breast Density"
+Title: "Breast Composition"
 Description: """
-    Mammography Breast Density
+    Breast Composition
     """
-  * code = ObservationCodesCS#mgBreastDensityObservation
+  * code = ObservationCodesCS#breastCompositionObservation
   * code 1..1
+  * value[x] 1..1
+  * value[x] from BreastCompositionVS
+  * value[x] only CodeableConcept
   * hasMember 0..0
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
@@ -23,7 +26,3 @@ Description: """
   * contained 0..0
   * component 0..0
   * device 0..0
-
-  * value[x] only CodeableConcept
-  * value[x] 1..1
-  * value[x] from MGBreastDensityVS

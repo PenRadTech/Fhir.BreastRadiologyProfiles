@@ -1,8 +1,8 @@
-Profile: FindingsRightBreast
+Profile: FindingsBiLateralBreast
 Parent: Observation
-Title: "Findings Right Breast"
+Title: "Findings BiLateral Breast"
 Description: """
-	Findings Right Breast profile.
+	Findings BiLateral Breast profile.
 	"""  
   * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
   * ^contact[0].telecom.value = "http://hl7.org/Special/committees/cic"
@@ -39,9 +39,9 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[biRadsAssessmentCategory] ^definition = """
-    Composite BiRad value for Right Breast.
+    Composite BiRad value for BiLateral Breast.
     Typically this is the most severe of all the BiRad 
-    codes set in any of the child observations of the Right Breast.
+    codes set in any of the child observations of the BiLateral Breast.
     """
   * component[biRadsAssessmentCategory].code 1..1
   * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
@@ -81,7 +81,7 @@ Description: """
   * hasMember[other] ^short = "Other modality finding. hasMember."
   * hasMember[other] only Reference(OtherModalityFinding)
   * hasMember[other] MS
-  * code = ObservationCodesCS#findingsRightBreastObservation
+  * code = ObservationCodesCS#findingsBiLateralBreastObservation
   * code 1..1
-  * bodySite = SNOMED#73056007 "Right breast structure (body structure)"
+  * bodySite = SNOMED#181131000 "Entire breast (body structure)"
   * bodySite 1..1

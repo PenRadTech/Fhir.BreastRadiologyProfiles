@@ -36,7 +36,7 @@ Description: """
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeProfile("C", "Ultrasound Findings")
+    #apply NodeProfile("E", "Ultrasound Findings")
   #end
 
   #// -----------------------------------------

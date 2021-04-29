@@ -1,0 +1,18 @@
+Profile: FindingsBiLateralBreast
+  #apply Observation.FindingBreastFragment("BiLateral")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#findingsBiLateralBreastObservation", "Code")
+  #apply Resource.Fix("2", "bodySite", "SNOMED#181131000 \"Entire breast (body structure)\"", "Body Site")
+
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply GroupMemberProfile("BaseResources", "C")
+  #end
+  
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineClass()
+  #end

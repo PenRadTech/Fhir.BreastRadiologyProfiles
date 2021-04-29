@@ -94,13 +94,6 @@ Description: """
   #  This slice references the target 'FatNecrosis'.
   #  """)
 
-  #apply Observation.HasMember.Add("mgBreastDensity", "1..1", "MGBreastDensity", 
-  #  "'Mammo Breast Density' reference.",
-  #  """
-  #  This slice references the target 'Mammography Breast Density'.
-  #  """)
-
-
   #// -----------------------------------------
   #// IG Macros
   #// -----------------------------------------
@@ -123,7 +116,7 @@ Description: """
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeProfile("A", "Mg Findings")
+    #apply NodeProfile("B", "Mg Findings")
   #end
 
   #// -----------------------------------------

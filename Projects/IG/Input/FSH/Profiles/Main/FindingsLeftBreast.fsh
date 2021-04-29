@@ -57,6 +57,10 @@ Description: """
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains breastComposition 0..1
+  * hasMember[breastComposition] ^short = "'Breast Composition Finding' reference. hasMember."
+  * hasMember[breastComposition] only Reference(BreastComposition)
+  * hasMember[breastComposition] MS
   * hasMember contains mgFinding 0..1
   * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
   * hasMember[mgFinding] only Reference(MGFinding)

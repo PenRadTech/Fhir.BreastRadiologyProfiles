@@ -13,6 +13,7 @@ Description: """
 
   * section contains report 1..1 MS
   * section contains impressions 0..1 MS
+  * section contains findingsBiLateralBreast 0..1 MS
   * section contains findingsRightBreast 0..1 MS
   * section contains findingsLeftBreast 0..1 MS
   * section contains relatedResources 0..1 MS
@@ -23,6 +24,7 @@ Description: """
   #apply ImpressionsSection("impressions")
   #apply FindingsRightBreastSection("findingsRightBreast")
   #apply FindingsLeftBreastSection("findingsLeftBreast")
+  #apply FindingsBiLateralBreastSection("findingsBiLateralBreast")
   #apply RelatedResourcesSection("relatedResources")
   #apply RecommendationsSection("recommendations")
 

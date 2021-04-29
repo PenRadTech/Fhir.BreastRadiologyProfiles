@@ -23,6 +23,13 @@ Description: """
   #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 
   
+  #apply Observation.HasMember.Add("breastComposition", "0..1", "BreastComposition",
+  #  "'Breast Composition Finding' reference.",
+  #  """
+  #  This slice references the optopnal Breast Composition observation.
+  #  """)
+  * hasMember[breastComposition] MS
+
   #apply Observation.HasMember.Add("mgFinding", "0..1", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """

@@ -127,26 +127,6 @@ Description: """
   * component[margin].value[x] 1..1
   * component[margin].value[x] only CodeableConcept
   * component[margin].value[x] from MarginVS
-  // Define Breast Density
-  * component contains mgBreastDensity 0..1
-  * component[mgBreastDensity] ^short = "Density component."
-  * component[mgBreastDensity] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[mgBreastDensity] ^definition = """
-    This slice contains the optional component that define the 
-    observed density of the breast tissue.
-    The value of this component is a codeable concept chosen from the MarginVS valueset.
-    """
-  * component[mgBreastDensity].code 1..1
-  * component[mgBreastDensity].code ^short = "Density component code."
-  * component[mgBreastDensity].code ^definition = """
-    This code identifies the Density component.
-	"""
-  * component[mgBreastDensity].code = ObservationComponentSliceCodesCS#mgBreastDensity
-  * component[mgBreastDensity].value[x] 1..1
-  * component[mgBreastDensity].value[x] only CodeableConcept
-  * component[mgBreastDensity].value[x] from MGBreastDensityVS
   * component contains observedCount 0..1
   * component[observedCount] ^short = "Observed Count component. component."
   * component[observedCount] ^comment = """

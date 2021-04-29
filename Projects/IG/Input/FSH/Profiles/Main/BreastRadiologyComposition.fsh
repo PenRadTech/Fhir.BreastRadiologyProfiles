@@ -23,6 +23,7 @@ Description: """
 
   * section contains report 1..1 MS
   * section contains impressions 0..1 MS
+  * section contains findingsBiLateralBreast 0..1 MS
   * section contains findingsRightBreast 0..1 MS
   * section contains findingsLeftBreast 0..1 MS
   * section contains relatedResources 0..1 MS
@@ -84,6 +85,20 @@ Description: """
   * section[findingsLeftBreast].entry ^short = "Finding Left breast reference"
   * section[findingsLeftBreast].entry ^definition = """
   Reference to the finding for the Left breast.
+  """
+  * section[findingsBiLateralBreast] ^definition = """
+    This section contains references to the report's findings 
+    that are common to both breasts.
+  """
+  * section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section."
+  * section[findingsBiLateralBreast].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
+  * section[findingsBiLateralBreast].title = "Findings BiLateral Breast Section"
+
+  * section[findingsBiLateralBreast].entry 0..*
+  * section[findingsBiLateralBreast].entry only Reference(FindingsBiLateralBreast)
+  * section[findingsBiLateralBreast].entry ^short = "Finding BiLateral breast reference"
+  * section[findingsBiLateralBreast].entry ^definition = """
+  Reference to the finding common to both breasts.
   """
   * section[relatedResources] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.

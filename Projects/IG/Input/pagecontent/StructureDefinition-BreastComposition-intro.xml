@@ -5,7 +5,7 @@
      <u style="font-size:large;">Description</u>
    </p>
    <p>
-   <b>Breast Density Observation</b>
+   <b>Breast Composition Observation</b>
    </p>
    <p>
      <u style="font-size:large;">Graphical Overview</u>
@@ -16,7 +16,7 @@
    <p>
      Click on any of the elements of the graph to go to a section describing that element.
    </p>
-   <object data="FocusGraph-MGBreastDensity.svg" type="image/svg+xml">
-     <img src="FocusGraph-MGBreastDensity.svg" alt="image/svg+xml" />
+   <object data="FocusGraph-BreastComposition.svg" type="image/svg+xml">
+     <img src="FocusGraph-BreastComposition.svg" alt="image/svg+xml" />
    </object>
  </div>
