@@ -3,18 +3,17 @@
  Fragment that adds 'BiRad code' element to profile
  */
  
-#Fragment: Observation.Component.BiRadBreastCompositionFragment
+#Fragment: Observation.HasMember.BiRadBreastCompositionFragment
 #Parent: Observation
 #Title: "BiRad Fragment"
 #Description: """
 # Fragment that adds 'BiRad code' element to profile
 # """
-  #apply Observation.Component.Add("biRadsBreastComposition", "0..1", "BiRads Code", "BiRads Assessment Category component.",
+  #apply Observation.HasMember.Add("biRadsBreastComposition", "0..1", "BreastComposition", "BiRads Code",
   #	 """
-  #	 """,
-  #  "ObservationComponentSliceCodesCS#biRadsBreastComposition")
+  #	 BiRads Assessment Category component.
+  #	 """)
   #
-  #apply Observation.Component.SetConcept("biRadsBreastComposition", "1..1", "BiRadsBreastCompositionVS")
 
   #// -----------------------------------------
   #// Graph Macros

@@ -56,31 +56,17 @@ Description: """
    Typically this is the most severe of all the BiRad 
    codes set in any of the child observations of the Left Breast.
     """
-  * component contains biRadsBreastComposition 0..1
-  * component[biRadsBreastComposition] ^short = "BiRads Assessment Category component. component."
-  * component[biRadsBreastComposition] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[biRadsBreastComposition] ^definition = """
-    
-    """
-  * component[biRadsBreastComposition].code 1..1
-  * component[biRadsBreastComposition].code ^short = "BiRads Assessment Category component. component code."
-  * component[biRadsBreastComposition].code ^definition = """
-    This code identifies the BiRads Assessment Category component. component.
-	"""
-  * component[biRadsBreastComposition].code = ObservationComponentSliceCodesCS#biRadsBreastComposition
-  * component[biRadsBreastComposition].value[x] 1..1
-  * component[biRadsBreastComposition].value[x] only CodeableConcept
-  * component[biRadsBreastComposition].value[x] from BiRadsBreastCompositionVS
-  * component[biRadsBreastComposition] ^definition = """
-   BiRad Breast Composition value for Left Breast.
-    """
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains biRadsBreastComposition 0..1
+  * hasMember[biRadsBreastComposition] ^short = "BiRads Code hasMember."
+  * hasMember[biRadsBreastComposition] only Reference(BreastComposition)
+  * hasMember[biRadsBreastComposition] ^definition = """
+   BiRad Breast Composition value for Left Breast.
+   """
   * hasMember contains mgFinding 0..1
   * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
   * hasMember[mgFinding] only Reference(MGFinding)

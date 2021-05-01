@@ -20,12 +20,10 @@ Description: """
     """
 
 
-  #apply Observation.Component.BiRadBreastCompositionFragment()
-  * component[biRadsBreastComposition] ^definition = """
+  #apply Observation.HasMember.BiRadBreastCompositionFragment()
+  * hasMember[biRadsBreastComposition] ^definition = """
    BiRad Breast Composition value for %Laterality% Breast.
-    """
-
-
+   """
 
   
   #apply Observation.HasMember.Add("mgFinding", "0..1", "MGFinding", 
@@ -94,6 +92,5 @@ Description: """
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeProfile("", "Findings/%Laterality% Breast")
   #end
 #end

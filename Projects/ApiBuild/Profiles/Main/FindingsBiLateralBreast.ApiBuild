@@ -8,19 +8,19 @@
 {
   "defineFragment" : {
     "fragmentName" : "BiRadBreastCompositionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadBreastCompositionFragment.minc#44/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsBiLateralBreast.mfsh#2/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadBreastCompositionFragment.minc#43/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsBiLateralBreast.mfsh#2/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "FindingsBiLateralBreast",
     "fragmentName" : "BiRadBreastCompositionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadBreastCompositionFragment.minc#45/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsBiLateralBreast.mfsh#2/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadBreastCompositionFragment.minc#44/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsBiLateralBreast.mfsh#2/n"
   }
 },
 {
   "defineClass" : {
     "className" : "FindingsBiLateralBreast",
-    "traceMsg" : "Profiles/Main/FindingsBiLateralBreast.mfsh#17/n"
+    "traceMsg" : "Profiles/Main/FindingsBiLateralBreast.mfsh#26/n"
   }
 },

@@ -12,6 +12,14 @@ Profile: FindingsLeftBreast
   
   
   #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Findings/Left Breast ")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+  #end
+
+  #// -----------------------------------------
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild

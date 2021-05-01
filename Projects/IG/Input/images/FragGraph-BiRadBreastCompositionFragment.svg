@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FragGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="474.38" height="311.25">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="432.37" height="311.25">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -31,13 +31,13 @@
 <g>
 <g transform="translate(259.5 7.5)">
 <a href="StructureDefinition-FindingsBiLateralBreast.html" target="_top">
-<rect class="profile" x="0" y="0" width="183" height="52.5" rx="3.75" ry="3.75" />
+<rect class="profile" x="0" y="0" width="109.5" height="52.5" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-FindingsBiLateralBreast.html" target="_top">
-<text x="91.5" y="22.5" text-anchor="middle" class="profile">Findings</text>
+<text x="54.75" y="22.5" text-anchor="middle" class="profile">Findings</text>
 </a>
 <a href="StructureDefinition-FindingsBiLateralBreast.html" target="_top">
-<text x="91.5" y="41.25" text-anchor="middle" class="profile">BiLateral Breast</text>
+<text x="54.75" y="41.25" text-anchor="middle" class="profile">BiLateral</text>
 </a>
 </g>
 </g>

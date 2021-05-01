@@ -9,12 +9,12 @@
   "implementFragment" : {
     "className" : "FindingsRightBreast",
     "fragmentName" : "BiRadBreastCompositionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadBreastCompositionFragment.minc#45/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsRightBreast.mfsh#2/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadBreastCompositionFragment.minc#44/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsRightBreast.mfsh#2/n"
   }
 },
 {
   "defineClass" : {
     "className" : "FindingsRightBreast",
-    "traceMsg" : "Profiles/Main/FindingsRightBreast.mfsh#17/n"
+    "traceMsg" : "Profiles/Main/FindingsRightBreast.mfsh#25/n"
   }
 },

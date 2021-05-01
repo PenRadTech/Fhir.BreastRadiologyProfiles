@@ -11,6 +11,15 @@ Profile: FindingsBiLateralBreast
   #end
   
   #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply NodeProfile("", "Findings/BiLateral")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/.+", "0", "Cmp")
+  #end
+
+
+  #// -----------------------------------------
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
