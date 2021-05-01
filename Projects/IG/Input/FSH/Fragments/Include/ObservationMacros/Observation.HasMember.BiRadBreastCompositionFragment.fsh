@@ -1,8 +1,8 @@
 Profile: BiRadBreastCompositionFragment
 Parent: Observation
-Title: "BiRad Fragment"
+Title: "BiRad Breast Composition Fragment"
 Description: """
-  Fragment that adds 'BiRad code' element to profile
+  Fragment that adds 'BiRad Breast Composition code' element to profile
   """
     * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
@@ -10,5 +10,5 @@ Description: """
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
   * hasMember contains biRadsBreastComposition 0..1
-  * hasMember[biRadsBreastComposition] ^short = "BiRads Code hasMember."
+  * hasMember[biRadsBreastComposition] ^short = "BiRads Breast Composition Code hasMember."
   * hasMember[biRadsBreastComposition] only Reference(BreastComposition)

@@ -39,10 +39,10 @@
 <text x="392.25" y="61.88" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="106.88" x2="448.5" y2="106.88" />
 <text x="392.25" y="103.12" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="620.62" x2="448.5" y2="620.62" />
-<text x="392.25" y="616.88" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="579.38" x2="448.5" y2="579.38" />
+<text x="392.25" y="575.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="358.5" y1="24.38" x2="388.5" y2="24.38" />
-<line class="connector" x1="388.5" y1="24.38" x2="388.5" y2="620.62" />
+<line class="connector" x1="388.5" y1="24.38" x2="388.5" y2="579.38" />
 </g>
 <g>
 <g transform="translate(448.5 7.5)">
@@ -115,58 +115,32 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="106.88" x2="658.5" y2="106.88" />
-<text x="602.25" y="103.12" text-anchor="right" class="lhsText">0..1</text>
+<text x="602.25" y="103.12" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="148.12" x2="658.5" y2="148.12" />
-<text x="602.25" y="144.38" text-anchor="right" class="lhsText">0..*</text>
+<text x="602.25" y="144.38" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="189.38" x2="658.5" y2="189.38" />
-<text x="602.25" y="185.62" text-anchor="right" class="lhsText">0..1</text>
+<text x="602.25" y="185.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="230.62" x2="658.5" y2="230.62" />
 <text x="602.25" y="226.88" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="271.88" x2="658.5" y2="271.88" />
-<text x="602.25" y="268.12" text-anchor="right" class="lhsText">0..*</text>
+<text x="602.25" y="268.12" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="313.12" x2="658.5" y2="313.12" />
-<text x="602.25" y="309.38" text-anchor="right" class="lhsText">0..1</text>
+<text x="602.25" y="309.38" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="354.38" x2="658.5" y2="354.38" />
-<text x="602.25" y="350.62" text-anchor="right" class="lhsText">0..*</text>
+<text x="602.25" y="350.62" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="395.62" x2="658.5" y2="395.62" />
-<text x="602.25" y="391.88" text-anchor="right" class="lhsText">0..1</text>
+<text x="602.25" y="391.88" text-anchor="right" class="lhsText">0..3</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="436.88" x2="658.5" y2="436.88" />
-<text x="602.25" y="433.12" text-anchor="right" class="lhsText">0..3</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="478.12" x2="658.5" y2="478.12" />
-<text x="602.25" y="474.38" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="528.75" x2="658.5" y2="528.75" />
-<text x="602.25" y="525" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="579.38" x2="658.5" y2="579.38" />
-<text x="602.25" y="575.62" text-anchor="right" class="lhsText">0..1</text>
+<text x="602.25" y="433.12" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="487.5" x2="658.5" y2="487.5" />
+<text x="602.25" y="483.75" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="538.12" x2="658.5" y2="538.12" />
+<text x="602.25" y="534.38" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="568.5" y1="106.88" x2="598.5" y2="106.88" />
-<line class="connector" x1="598.5" y1="106.88" x2="598.5" y2="579.38" />
+<line class="connector" x1="598.5" y1="106.88" x2="598.5" y2="538.12" />
 </g>
 <g>
 <g transform="translate(658.5 90)">
-<a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
-<rect class="element" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
-<text x="65.25" y="22.5" text-anchor="middle" class="element">BiRads Code</text>
-</a>
-</g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="819" y1="106.88" x2="879" y2="106.88" />
-<text x="822.75" y="103.12" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="789" y1="106.88" x2="819" y2="106.88" />
-<line class="connector" x1="819" y1="106.88" x2="819" y2="106.88" />
-</g>
-<g>
-<g transform="translate(879 90)">
-<a href="ValueSet-BiRadsAssessmentCategoryVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="ValueSet-BiRadsAssessmentCategoryVS.html" target="_top">
-<text x="144" y="22.5" text-anchor="middle" class="valueSet">BiRadsAssessmentCategoryVS</text>
-</a>
-</g>
-</g>
-<g>
-<g transform="translate(658.5 131.25)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:correspondsWith" target="_top">
 <rect class="element" x="0" y="0" width="183" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -174,13 +148,13 @@
 <text x="91.5" y="22.5" text-anchor="middle" class="element">Corresponds With</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="871.5" y1="148.12" x2="931.5" y2="148.12" />
-<text x="875.25" y="144.38" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="841.5" y1="148.12" x2="871.5" y2="148.12" />
-<line class="connector" x1="871.5" y1="148.12" x2="871.5" y2="148.12" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="871.5" y1="106.88" x2="931.5" y2="106.88" />
+<text x="875.25" y="103.12" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="841.5" y1="106.88" x2="871.5" y2="106.88" />
+<line class="connector" x1="871.5" y1="106.88" x2="871.5" y2="106.88" />
 </g>
 <g>
-<g transform="translate(931.5 131.25)">
+<g transform="translate(931.5 90)">
 <a href="ValueSet-CorrespondsWithVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -190,7 +164,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 172.5)">
+<g transform="translate(658.5 131.25)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:margin" target="_top">
 <rect class="element" x="0" y="0" width="78" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -198,13 +172,13 @@
 <text x="39" y="22.5" text-anchor="middle" class="element">Margin</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="766.5" y1="189.38" x2="826.5" y2="189.38" />
-<text x="770.25" y="185.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="736.5" y1="189.38" x2="766.5" y2="189.38" />
-<line class="connector" x1="766.5" y1="189.38" x2="766.5" y2="189.38" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="766.5" y1="148.12" x2="826.5" y2="148.12" />
+<text x="770.25" y="144.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="736.5" y1="148.12" x2="766.5" y2="148.12" />
+<line class="connector" x1="766.5" y1="148.12" x2="766.5" y2="148.12" />
 </g>
 <g>
-<g transform="translate(826.5 172.5)">
+<g transform="translate(826.5 131.25)">
 <a href="ValueSet-MarginVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="99" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -214,7 +188,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 213.75)">
+<g transform="translate(658.5 172.5)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:notPreviouslySeen" target="_top">
 <rect class="element" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -222,13 +196,13 @@
 <text x="107.25" y="22.5" text-anchor="middle" class="element">Not Previously Seen</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="230.62" x2="963" y2="230.62" />
-<text x="906.75" y="226.88" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="230.62" x2="903" y2="230.62" />
-<line class="connector" x1="903" y1="230.62" x2="903" y2="230.62" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="189.38" x2="963" y2="189.38" />
+<text x="906.75" y="185.62" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="189.38" x2="903" y2="189.38" />
+<line class="connector" x1="903" y1="189.38" x2="903" y2="189.38" />
 </g>
 <g>
-<g transform="translate(963 213.75)">
+<g transform="translate(963 172.5)">
 <a href="ValueSet-NotPreviouslySeenVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -238,7 +212,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 255)">
+<g transform="translate(658.5 213.75)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:obsChanges" target="_top">
 <rect class="element" x="0" y="0" width="183" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -246,13 +220,13 @@
 <text x="91.5" y="22.5" text-anchor="middle" class="element">Observed Changes</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="871.5" y1="271.88" x2="931.5" y2="271.88" />
-<text x="875.25" y="268.12" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="841.5" y1="271.88" x2="871.5" y2="271.88" />
-<line class="connector" x1="871.5" y1="271.88" x2="871.5" y2="271.88" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="871.5" y1="230.62" x2="931.5" y2="230.62" />
+<text x="875.25" y="226.88" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="841.5" y1="230.62" x2="871.5" y2="230.62" />
+<line class="connector" x1="871.5" y1="230.62" x2="871.5" y2="230.62" />
 </g>
 <g>
-<g transform="translate(931.5 255)">
+<g transform="translate(931.5 213.75)">
 <a href="ValueSet-ObservedChangesVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -262,7 +236,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 296.25)">
+<g transform="translate(658.5 255)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:observedCount" target="_top">
 <rect class="element" x="0" y="0" width="162" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -272,7 +246,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 337.5)">
+<g transform="translate(658.5 296.25)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:obsDistribution" target="_top">
 <rect class="element" x="0" y="0" width="235.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -280,13 +254,13 @@
 <text x="117.75" y="22.5" text-anchor="middle" class="element">Observed Distribution</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="924" y1="354.38" x2="984" y2="354.38" />
-<text x="927.75" y="350.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="894" y1="354.38" x2="924" y2="354.38" />
-<line class="connector" x1="924" y1="354.38" x2="924" y2="354.38" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="924" y1="313.12" x2="984" y2="313.12" />
+<text x="927.75" y="309.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="894" y1="313.12" x2="924" y2="313.12" />
+<line class="connector" x1="924" y1="313.12" x2="924" y2="313.12" />
 </g>
 <g>
-<g transform="translate(984 337.5)">
+<g transform="translate(984 296.25)">
 <a href="ValueSet-CalcificationDistributionVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="298.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -296,7 +270,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 378.75)">
+<g transform="translate(658.5 337.5)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:obsDistRegionSize" target="_top">
 <rect class="element" x="0" y="0" width="361.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -306,7 +280,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 420)">
+<g transform="translate(658.5 378.75)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:obsSize" target="_top">
 <rect class="element" x="0" y="0" width="151.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -316,7 +290,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 461.25)">
+<g transform="translate(658.5 420)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:orientation" target="_top">
 <rect class="element" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -324,13 +298,13 @@
 <text x="65.25" y="22.5" text-anchor="middle" class="element">Orientation</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="819" y1="478.12" x2="879" y2="478.12" />
-<text x="822.75" y="474.38" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="789" y1="478.12" x2="819" y2="478.12" />
-<line class="connector" x1="819" y1="478.12" x2="819" y2="478.12" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="819" y1="436.88" x2="879" y2="436.88" />
+<text x="822.75" y="433.12" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="789" y1="436.88" x2="819" y2="436.88" />
+<line class="connector" x1="819" y1="436.88" x2="819" y2="436.88" />
 </g>
 <g>
-<g transform="translate(879 461.25)">
+<g transform="translate(879 420)">
 <a href="ValueSet-OrientationVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="151.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -340,7 +314,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 502.5)">
+<g transform="translate(658.5 461.25)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:prevDemBy" target="_top">
 <rect class="element" x="0" y="0" width="172.5" height="52.5" rx="3.75" ry="3.75" />
 </a>
@@ -351,13 +325,13 @@
 <text x="86.25" y="41.25" text-anchor="middle" class="element">Demonstrated by</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="861" y1="519.38" x2="921" y2="519.38" />
-<text x="864.75" y="515.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="831" y1="528.75" x2="861" y2="528.75" />
-<line class="connector" x1="861" y1="519.38" x2="861" y2="528.75" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="861" y1="478.12" x2="921" y2="478.12" />
+<text x="864.75" y="474.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="831" y1="487.5" x2="861" y2="487.5" />
+<line class="connector" x1="861" y1="478.12" x2="861" y2="487.5" />
 </g>
 <g>
-<g transform="translate(921 502.5)">
+<g transform="translate(921 461.25)">
 <a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -367,7 +341,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(658.5 562.5)">
+<g transform="translate(658.5 521.25)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.component:shape" target="_top">
 <rect class="element" x="0" y="0" width="67.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -375,13 +349,13 @@
 <text x="33.75" y="22.5" text-anchor="middle" class="element">Shape</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="756" y1="579.38" x2="816" y2="579.38" />
-<text x="759.75" y="575.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="726" y1="579.38" x2="756" y2="579.38" />
-<line class="connector" x1="756" y1="579.38" x2="756" y2="579.38" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="756" y1="538.12" x2="816" y2="538.12" />
+<text x="759.75" y="534.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="726" y1="538.12" x2="756" y2="538.12" />
+<line class="connector" x1="756" y1="538.12" x2="756" y2="538.12" />
 </g>
 <g>
-<g transform="translate(816 562.5)">
+<g transform="translate(816 521.25)">
 <a href="ValueSet-ShapeVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="88.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -391,7 +365,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(448.5 603.75)">
+<g transform="translate(448.5 562.5)">
 <a href="StructureDefinition-AbnormalitySkinLesion-definitions.html#Observation.hasMember" target="_top">
 <rect class="element" x="0" y="0" width="109.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -399,14 +373,26 @@
 <text x="54.75" y="22.5" text-anchor="middle" class="element">HasMember</text>
 </a>
 </g>
+<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="579.38" x2="648" y2="579.38" />
+<text x="591.75" y="575.62" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="620.62" x2="648" y2="620.62" />
 <text x="591.75" y="616.88" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="661.88" x2="648" y2="661.88" />
 <text x="591.75" y="658.12" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="703.12" x2="648" y2="703.12" />
 <text x="591.75" y="699.38" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="558" y1="620.62" x2="588" y2="620.62" />
-<line class="connector" x1="588" y1="620.62" x2="588" y2="703.12" />
+<line class="connector" marker-start="url(#arrowStart)" x1="558" y1="579.38" x2="588" y2="579.38" />
+<line class="connector" x1="588" y1="579.38" x2="588" y2="703.12" />
+</g>
+<g>
+<g transform="translate(648 562.5)">
+<a href="StructureDefinition-BreastAssessmentCategory.html" target="_top">
+<rect class="profile" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-BreastAssessmentCategory.html" target="_top">
+<text x="144" y="22.5" text-anchor="middle" class="profile">Breast Assessment Category</text>
+</a>
+</g>
 </g>
 <g>
 <g transform="translate(648 603.75)">

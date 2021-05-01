@@ -39,10 +39,10 @@
 <text x="423.75" y="61.88" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="420" y1="106.88" x2="480" y2="106.88" />
 <text x="423.75" y="103.12" text-anchor="right" class="lhsText">1..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="420" y1="414.38" x2="480" y2="414.38" />
-<text x="423.75" y="410.62" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="420" y1="373.12" x2="480" y2="373.12" />
+<text x="423.75" y="369.38" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="390" y1="24.38" x2="420" y2="24.38" />
-<line class="connector" x1="420" y1="24.38" x2="420" y2="414.38" />
+<line class="connector" x1="420" y1="24.38" x2="420" y2="373.12" />
 </g>
 <g>
 <g transform="translate(480 7.5)">
@@ -115,48 +115,22 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="106.88" x2="690" y2="106.88" />
-<text x="633.75" y="103.12" text-anchor="right" class="lhsText">0..1</text>
+<text x="633.75" y="103.12" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="148.12" x2="690" y2="148.12" />
-<text x="633.75" y="144.38" text-anchor="right" class="lhsText">0..*</text>
+<text x="633.75" y="144.38" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="189.38" x2="690" y2="189.38" />
-<text x="633.75" y="185.62" text-anchor="right" class="lhsText">1..1</text>
+<text x="633.75" y="185.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="230.62" x2="690" y2="230.62" />
 <text x="633.75" y="226.88" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="271.88" x2="690" y2="271.88" />
-<text x="633.75" y="268.12" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="313.12" x2="690" y2="313.12" />
-<text x="633.75" y="309.38" text-anchor="right" class="lhsText">0..3</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="363.75" x2="690" y2="363.75" />
-<text x="633.75" y="360" text-anchor="right" class="lhsText">0..*</text>
+<text x="633.75" y="268.12" text-anchor="right" class="lhsText">0..3</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="630" y1="322.5" x2="690" y2="322.5" />
+<text x="633.75" y="318.75" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="600" y1="106.88" x2="630" y2="106.88" />
-<line class="connector" x1="630" y1="106.88" x2="630" y2="363.75" />
+<line class="connector" x1="630" y1="106.88" x2="630" y2="322.5" />
 </g>
 <g>
 <g transform="translate(690 90)">
-<a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
-<rect class="element" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
-<text x="65.25" y="22.5" text-anchor="middle" class="element">BiRads Code</text>
-</a>
-</g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="850.5" y1="106.88" x2="910.5" y2="106.88" />
-<text x="854.25" y="103.12" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="820.5" y1="106.88" x2="850.5" y2="106.88" />
-<line class="connector" x1="850.5" y1="106.88" x2="850.5" y2="106.88" />
-</g>
-<g>
-<g transform="translate(910.5 90)">
-<a href="ValueSet-BiRadsAssessmentCategoryVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="ValueSet-BiRadsAssessmentCategoryVS.html" target="_top">
-<text x="144" y="22.5" text-anchor="middle" class="valueSet">BiRadsAssessmentCategoryVS</text>
-</a>
-</g>
-</g>
-<g>
-<g transform="translate(690 131.25)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:correspondsWith" target="_top">
 <rect class="element" x="0" y="0" width="183" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -164,13 +138,13 @@
 <text x="91.5" y="22.5" text-anchor="middle" class="element">Corresponds With</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="148.12" x2="963" y2="148.12" />
-<text x="906.75" y="144.38" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="148.12" x2="903" y2="148.12" />
-<line class="connector" x1="903" y1="148.12" x2="903" y2="148.12" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="106.88" x2="963" y2="106.88" />
+<text x="906.75" y="103.12" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="106.88" x2="903" y2="106.88" />
+<line class="connector" x1="903" y1="106.88" x2="903" y2="106.88" />
 </g>
 <g>
-<g transform="translate(963 131.25)">
+<g transform="translate(963 90)">
 <a href="ValueSet-CorrespondsWithVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -180,7 +154,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(690 172.5)">
+<g transform="translate(690 131.25)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:abnormalityForeignObjectType" target="_top">
 <rect class="element" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -188,13 +162,13 @@
 <text x="107.25" y="22.5" text-anchor="middle" class="element">Foreign Object Type</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="934.5" y1="189.38" x2="994.5" y2="189.38" />
-<text x="938.25" y="185.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="904.5" y1="189.38" x2="934.5" y2="189.38" />
-<line class="connector" x1="934.5" y1="189.38" x2="934.5" y2="189.38" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="934.5" y1="148.12" x2="994.5" y2="148.12" />
+<text x="938.25" y="144.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="904.5" y1="148.12" x2="934.5" y2="148.12" />
+<line class="connector" x1="934.5" y1="148.12" x2="934.5" y2="148.12" />
 </g>
 <g>
-<g transform="translate(994.5 172.5)">
+<g transform="translate(994.5 131.25)">
 <a href="ValueSet-AbnormalityForeignObjectTypeVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="330" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -204,7 +178,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(690 213.75)">
+<g transform="translate(690 172.5)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:notPreviouslySeen" target="_top">
 <rect class="element" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -212,13 +186,13 @@
 <text x="107.25" y="22.5" text-anchor="middle" class="element">Not Previously Seen</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="934.5" y1="230.62" x2="994.5" y2="230.62" />
-<text x="938.25" y="226.88" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="904.5" y1="230.62" x2="934.5" y2="230.62" />
-<line class="connector" x1="934.5" y1="230.62" x2="934.5" y2="230.62" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="934.5" y1="189.38" x2="994.5" y2="189.38" />
+<text x="938.25" y="185.62" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="904.5" y1="189.38" x2="934.5" y2="189.38" />
+<line class="connector" x1="934.5" y1="189.38" x2="934.5" y2="189.38" />
 </g>
 <g>
-<g transform="translate(994.5 213.75)">
+<g transform="translate(994.5 172.5)">
 <a href="ValueSet-NotPreviouslySeenVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -228,7 +202,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(690 255)">
+<g transform="translate(690 213.75)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:obsChanges" target="_top">
 <rect class="element" x="0" y="0" width="183" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -236,13 +210,13 @@
 <text x="91.5" y="22.5" text-anchor="middle" class="element">Observed Changes</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="271.88" x2="963" y2="271.88" />
-<text x="906.75" y="268.12" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="271.88" x2="903" y2="271.88" />
-<line class="connector" x1="903" y1="271.88" x2="903" y2="271.88" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="903" y1="230.62" x2="963" y2="230.62" />
+<text x="906.75" y="226.88" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="873" y1="230.62" x2="903" y2="230.62" />
+<line class="connector" x1="903" y1="230.62" x2="903" y2="230.62" />
 </g>
 <g>
-<g transform="translate(963 255)">
+<g transform="translate(963 213.75)">
 <a href="ValueSet-ObservedChangesVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -252,7 +226,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(690 296.25)">
+<g transform="translate(690 255)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:obsSize" target="_top">
 <rect class="element" x="0" y="0" width="151.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -262,7 +236,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(690 337.5)">
+<g transform="translate(690 296.25)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.component:prevDemBy" target="_top">
 <rect class="element" x="0" y="0" width="172.5" height="52.5" rx="3.75" ry="3.75" />
 </a>
@@ -273,13 +247,13 @@
 <text x="86.25" y="41.25" text-anchor="middle" class="element">Demonstrated by</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="892.5" y1="354.38" x2="952.5" y2="354.38" />
-<text x="896.25" y="350.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="862.5" y1="363.75" x2="892.5" y2="363.75" />
-<line class="connector" x1="892.5" y1="354.38" x2="892.5" y2="363.75" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="892.5" y1="313.12" x2="952.5" y2="313.12" />
+<text x="896.25" y="309.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="862.5" y1="322.5" x2="892.5" y2="322.5" />
+<line class="connector" x1="892.5" y1="313.12" x2="892.5" y2="322.5" />
 </g>
 <g>
-<g transform="translate(952.5 337.5)">
+<g transform="translate(952.5 296.25)">
 <a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -289,7 +263,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(480 397.5)">
+<g transform="translate(480 356.25)">
 <a href="StructureDefinition-AbnormalityForeignObject-definitions.html#Observation.hasMember" target="_top">
 <rect class="element" x="0" y="0" width="109.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -297,12 +271,24 @@
 <text x="54.75" y="22.5" text-anchor="middle" class="element">HasMember</text>
 </a>
 </g>
+<line class="connector" marker-end="url(#arrowEnd)" x1="619.5" y1="373.12" x2="679.5" y2="373.12" />
+<text x="623.25" y="369.38" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="619.5" y1="414.38" x2="679.5" y2="414.38" />
 <text x="623.25" y="410.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="619.5" y1="455.62" x2="679.5" y2="455.62" />
 <text x="623.25" y="451.88" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="589.5" y1="414.38" x2="619.5" y2="414.38" />
-<line class="connector" x1="619.5" y1="414.38" x2="619.5" y2="455.62" />
+<line class="connector" marker-start="url(#arrowStart)" x1="589.5" y1="373.12" x2="619.5" y2="373.12" />
+<line class="connector" x1="619.5" y1="373.12" x2="619.5" y2="455.62" />
+</g>
+<g>
+<g transform="translate(679.5 356.25)">
+<a href="StructureDefinition-BreastAssessmentCategory.html" target="_top">
+<rect class="profile" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-BreastAssessmentCategory.html" target="_top">
+<text x="144" y="22.5" text-anchor="middle" class="profile">Breast Assessment Category</text>
+</a>
+</g>
 </g>
 <g>
 <g transform="translate(679.5 397.5)">

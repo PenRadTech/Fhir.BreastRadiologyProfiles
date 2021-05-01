@@ -100,24 +100,14 @@ Description: """
   * component[obsSize].valueQuantity from UNITSOFLENGTH
   * component[obsSize].valueRange.low from UNITSOFLENGTH
   * component[obsSize].valueRange.high from UNITSOFLENGTH
-  * component contains biRadsAssessmentCategory 0..1
-  * component[biRadsAssessmentCategory] ^short = "BiRads Assessment Category component. component."
-  * component[biRadsAssessmentCategory] ^comment = """
-    This is one component of a group of components that are part of the observation.
-    """
-  * component[biRadsAssessmentCategory] ^definition = """
-    This slice contains the optional component that defines the BiRAD risk code.
-    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoryVS valueset.
-    """
-  * component[biRadsAssessmentCategory].code 1..1
-  * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
-  * component[biRadsAssessmentCategory].code ^definition = """
-    This code identifies the BiRads Assessment Category component. component.
-	"""
-  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#biRadsAssessmentCategory
-  * component[biRadsAssessmentCategory].value[x] 1..1
-  * component[biRadsAssessmentCategory].value[x] only CodeableConcept
-  * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+  * hasMember ^slicing.discriminator.type = #value
+  * hasMember ^slicing.discriminator.path = "url"
+  * hasMember ^slicing.rules = #open
+  * hasMember ^slicing.ordered = false
+  * hasMember ^slicing.description = "Component slicing"
+  * hasMember contains biRadAssessmentCategory 0..1
+  * hasMember[biRadAssessmentCategory] ^short = "BiRads Assessment Category Code Code hasMember."
+  * hasMember[biRadAssessmentCategory] only Reference(BreastAssessmentCategory)
   * component contains notPreviouslySeen 0..*
   * component[notPreviouslySeen] ^short = "Not Previously Seen component."
   * component[notPreviouslySeen] ^comment = """
@@ -176,11 +166,6 @@ Description: """
   * component[prevDemBy].value[x] 1..1
   * component[prevDemBy].value[x] only CodeableConcept
   * component[prevDemBy].value[x] from PreviouslyDemonstratedByVS
-  * hasMember ^slicing.discriminator.type = #value
-  * hasMember ^slicing.discriminator.path = "url"
-  * hasMember ^slicing.rules = #open
-  * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
   * hasMember contains associatedFeature 0..*
   * hasMember[associatedFeature] ^short = "'Associated Feature' reference. hasMember."
   * hasMember[associatedFeature] only Reference(AssociatedFeature)

@@ -5,13 +5,13 @@
  
 #Fragment: Observation.HasMember.BiRadBreastCompositionFragment
 #Parent: Observation
-#Title: "BiRad Fragment"
+#Title: "BiRad Breast Composition Fragment"
 #Description: """
-# Fragment that adds 'BiRad code' element to profile
+# Fragment that adds 'BiRad Breast Composition code' element to profile
 # """
-  #apply Observation.HasMember.Add("biRadsBreastComposition", "0..1", "BreastComposition", "BiRads Code",
+  #apply Observation.HasMember.Add("biRadsBreastComposition", "0..1", "BreastComposition", "BiRads Breast Composition Code",
   #	 """
-  #	 BiRads Assessment Category component.
+  #	 BiRads Breast Composition component.
   #	 """)
   #
 

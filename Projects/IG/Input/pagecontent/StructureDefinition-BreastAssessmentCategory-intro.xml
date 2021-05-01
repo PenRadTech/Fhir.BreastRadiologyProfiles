@@ -5,18 +5,18 @@
      <u style="font-size:large;">Description</u>
    </p>
    <p>
-   <b>BiRad Breast Composition Fragment</b>
+   <b>Breast Assessment Category Observation</b>
    </p>
    <p>
      <u style="font-size:large;">Graphical Overview</u>
    </p>
    <p>
-     This graph provides an overview of this profile fragment.
+     This graph provides an overview of this profile, and its dependencies.
    </p>
    <p>
      Click on any of the elements of the graph to go to a section describing that element.
    </p>
-   <object data="FragGraph-BiRadBreastCompositionFragment.svg" type="image/svg+xml">
-     <img src="FragGraph-BiRadBreastCompositionFragment.svg" alt="image/svg+xml" />
+   <object data="FocusGraph-BreastAssessmentCategory.svg" type="image/svg+xml">
+     <img src="FocusGraph-BreastAssessmentCategory.svg" alt="image/svg+xml" />
    </object>
  </div>

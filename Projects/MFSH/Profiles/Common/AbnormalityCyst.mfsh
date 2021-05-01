@@ -21,7 +21,7 @@ Description: """
   #apply Observation.BreastBodyLocationRequiredFragment()
   
   #apply Observation.Component.ObservedChangesFragment()
-  #apply Observation.Component.BiRadAssessmentCategoryFragment()
+  #apply Observation.Hasmember.BiRadAssessmentCategoryFragment()
   #apply Observation.Component.ShapeFragment()
   #apply Observation.Component.ObservedCountFragment()
   #apply Observation.Component.ObservedDistributionFragment()

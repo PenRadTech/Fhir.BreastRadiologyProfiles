@@ -16,7 +16,7 @@
   "implementFragment" : {
     "className" : "AbnormalityCyst",
     "fragmentName" : "BiRadAssessmentCategoryFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityCyst.mfsh#24/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadAssessmentCategoryFragment.minc#44/nProfiles/Common/AbnormalityCyst.mfsh#24/n"
   }
 },
 {
