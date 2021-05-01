@@ -39,28 +39,48 @@ Description: """
     This is one component of a group of components that are part of the observation.
     """
   * component[biRadsAssessmentCategory] ^definition = """
-    Composite BiRad value for Left Breast.
-    Typically this is the most severe of all the BiRad 
-    codes set in any of the child observations of the Left Breast.
+    This slice contains the optional component that defines the BiRAD risk code.
+    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoryVS valueset.
     """
   * component[biRadsAssessmentCategory].code 1..1
   * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
   * component[biRadsAssessmentCategory].code ^definition = """
     This code identifies the BiRads Assessment Category component. component.
 	"""
-  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
+  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#biRadsAssessmentCategory
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS
+  * component[biRadsAssessmentCategory] ^definition = """
+   Composite BiRad value for Left Breast.
+   Typically this is the most severe of all the BiRad 
+   codes set in any of the child observations of the Left Breast.
+    """
+  * component contains biRadsBreastComposition 0..1
+  * component[biRadsBreastComposition] ^short = "BiRads Assessment Category component. component."
+  * component[biRadsBreastComposition] ^comment = """
+    This is one component of a group of components that are part of the observation.
+    """
+  * component[biRadsBreastComposition] ^definition = """
+    
+    """
+  * component[biRadsBreastComposition].code 1..1
+  * component[biRadsBreastComposition].code ^short = "BiRads Assessment Category component. component code."
+  * component[biRadsBreastComposition].code ^definition = """
+    This code identifies the BiRads Assessment Category component. component.
+	"""
+  * component[biRadsBreastComposition].code = ObservationComponentSliceCodesCS#biRadsBreastComposition
+  * component[biRadsBreastComposition].value[x] 1..1
+  * component[biRadsBreastComposition].value[x] only CodeableConcept
+  * component[biRadsBreastComposition].value[x] from BiRadsBreastCompositionVS
+  * component[biRadsBreastComposition] ^definition = """
+   BiRad Breast Composition value for Left Breast.
+    """
   * hasMember ^slicing.discriminator.type = #value
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
   * hasMember ^slicing.description = "Component slicing"
-  * hasMember contains breastComposition 0..1
-  * hasMember[breastComposition] ^short = "'Breast Composition Finding' reference. hasMember."
-  * hasMember[breastComposition] only Reference(BreastComposition)
-  * hasMember[breastComposition] MS
   * hasMember contains mgFinding 0..1
   * hasMember[mgFinding] ^short = "'MG Finding' reference. hasMember."
   * hasMember[mgFinding] only Reference(MGFinding)

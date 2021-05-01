@@ -26,15 +26,15 @@
 },
 {
   "defineFragment" : {
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#46/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#46/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
   }
 },
 {

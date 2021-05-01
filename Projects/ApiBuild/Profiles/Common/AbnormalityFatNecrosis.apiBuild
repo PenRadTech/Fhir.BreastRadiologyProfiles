@@ -15,8 +15,8 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityFatNecrosis",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityFatNecrosis.mfsh#15/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityFatNecrosis.mfsh#15/n"
   }
 },
 {

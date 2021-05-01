@@ -1,4 +1,18 @@
 {
+  "implementFragment" : {
+    "className" : "FindingsLeftBreast",
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#15/nProfiles/Main/FindingsLeftBreast.mfsh#2/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "FindingsLeftBreast",
+    "fragmentName" : "BiRadBreastCompositionFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadBreastCompositionFragment.minc#45/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsLeftBreast.mfsh#2/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "FindingsLeftBreast",
     "traceMsg" : "Profiles/Main/FindingsLeftBreast.mfsh#18/n"

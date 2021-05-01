@@ -107,14 +107,14 @@ Description: """
     """
   * component[biRadsAssessmentCategory] ^definition = """
     This slice contains the optional component that defines the BiRAD risk code.
-    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
+    The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoryVS valueset.
     """
   * component[biRadsAssessmentCategory].code 1..1
   * component[biRadsAssessmentCategory].code ^short = "BiRads Assessment Category component. component code."
   * component[biRadsAssessmentCategory].code ^definition = """
     This code identifies the BiRads Assessment Category component. component.
 	"""
-  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#targetBiRads
+  * component[biRadsAssessmentCategory].code = ObservationComponentSliceCodesCS#biRadsAssessmentCategory
   * component[biRadsAssessmentCategory].value[x] 1..1
   * component[biRadsAssessmentCategory].value[x] only CodeableConcept
   * component[biRadsAssessmentCategory].value[x] from BiRadsAssessmentCategoryVS

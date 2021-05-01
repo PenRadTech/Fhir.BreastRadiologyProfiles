@@ -48,10 +48,10 @@
 <text x="392.25" y="61.88" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="106.88" x2="448.5" y2="106.88" />
 <text x="392.25" y="103.12" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="148.12" x2="448.5" y2="148.12" />
-<text x="392.25" y="144.38" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="388.5" y1="189.38" x2="448.5" y2="189.38" />
+<text x="392.25" y="185.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="358.5" y1="33.75" x2="388.5" y2="33.75" />
-<line class="connector" x1="388.5" y1="24.38" x2="388.5" y2="148.12" />
+<line class="connector" x1="388.5" y1="24.38" x2="388.5" y2="189.38" />
 </g>
 <g>
 <g transform="translate(448.5 7.5)">
@@ -112,15 +112,17 @@
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="106.88" x2="658.5" y2="106.88" />
 <text x="602.25" y="103.12" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="598.5" y1="148.12" x2="658.5" y2="148.12" />
+<text x="602.25" y="144.38" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="568.5" y1="106.88" x2="598.5" y2="106.88" />
-<line class="connector" x1="598.5" y1="106.88" x2="598.5" y2="106.88" />
+<line class="connector" x1="598.5" y1="106.88" x2="598.5" y2="148.12" />
 </g>
 <g>
 <g transform="translate(658.5 90)">
-<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
+<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsBreastComposition" target="_top">
 <rect class="element" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
+<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsBreastComposition" target="_top">
 <text x="65.25" y="22.5" text-anchor="middle" class="element">BiRads Code</text>
 </a>
 </g>
@@ -131,6 +133,30 @@
 </g>
 <g>
 <g transform="translate(879 90)">
+<a href="ValueSet-BiRadsBreastCompositionVS.html" target="_top">
+<rect class="valueSet" x="0" y="0" width="277.5" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="ValueSet-BiRadsBreastCompositionVS.html" target="_top">
+<text x="138.75" y="22.5" text-anchor="middle" class="valueSet">BiRadsBreastCompositionVS</text>
+</a>
+</g>
+</g>
+<g>
+<g transform="translate(658.5 131.25)">
+<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
+<rect class="element" x="0" y="0" width="130.5" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.component:biRadsAssessmentCategory" target="_top">
+<text x="65.25" y="22.5" text-anchor="middle" class="element">BiRads Code</text>
+</a>
+</g>
+<line class="connector" marker-end="url(#arrowEnd)" x1="819" y1="148.12" x2="879" y2="148.12" />
+<text x="822.75" y="144.38" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="789" y1="148.12" x2="819" y2="148.12" />
+<line class="connector" x1="819" y1="148.12" x2="819" y2="148.12" />
+</g>
+<g>
+<g transform="translate(879 131.25)">
 <a href="ValueSet-BiRadsAssessmentCategoryVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="288" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -140,7 +166,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(448.5 131.25)">
+<g transform="translate(448.5 172.5)">
 <a href="StructureDefinition-FindingsLeftBreast-definitions.html#Observation.hasMember" target="_top">
 <rect class="element" x="0" y="0" width="109.5" height="33.75" rx="3.75" ry="3.75" />
 </a>
@@ -148,30 +174,18 @@
 <text x="54.75" y="22.5" text-anchor="middle" class="element">HasMember</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="148.12" x2="648" y2="148.12" />
-<text x="591.75" y="144.38" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="189.38" x2="648" y2="189.38" />
 <text x="591.75" y="185.62" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="230.62" x2="648" y2="230.62" />
 <text x="591.75" y="226.88" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="271.88" x2="648" y2="271.88" />
-<text x="591.75" y="268.12" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="322.5" x2="648" y2="322.5" />
-<text x="591.75" y="318.75" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="281.25" x2="648" y2="281.25" />
+<text x="591.75" y="277.5" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="331.88" x2="648" y2="331.88" />
+<text x="591.75" y="328.12" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="373.12" x2="648" y2="373.12" />
 <text x="591.75" y="369.38" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="558" y1="148.12" x2="588" y2="148.12" />
-<line class="connector" x1="588" y1="148.12" x2="588" y2="373.12" />
-</g>
-<g>
-<g transform="translate(648 131.25)">
-<a href="StructureDefinition-BreastComposition.html" target="_top">
-<rect class="profile" x="0" y="0" width="204" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="StructureDefinition-BreastComposition.html" target="_top">
-<text x="102" y="22.5" text-anchor="middle" class="profile">Breast Composition</text>
-</a>
-</g>
+<line class="connector" marker-start="url(#arrowStart)" x1="558" y1="189.38" x2="588" y2="189.38" />
+<line class="connector" x1="588" y1="189.38" x2="588" y2="373.12" />
 </g>
 <g>
 <g transform="translate(648 172.5)">
@@ -195,16 +209,6 @@
 </g>
 <g>
 <g transform="translate(648 255)">
-<a href="StructureDefinition-USFinding.html" target="_top">
-<rect class="profile" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
-</a>
-<a href="StructureDefinition-USFinding.html" target="_top">
-<text x="107.25" y="22.5" text-anchor="middle" class="profile">Ultrasound Findings</text>
-</a>
-</g>
-</g>
-<g>
-<g transform="translate(648 296.25)">
 <a href="StructureDefinition-NMFinding.html" target="_top">
 <rect class="profile" x="0" y="0" width="183" height="52.5" rx="3.75" ry="3.75" />
 </a>
@@ -213,6 +217,16 @@
 </a>
 <a href="StructureDefinition-NMFinding.html" target="_top">
 <text x="91.5" y="41.25" text-anchor="middle" class="profile">Findings</text>
+</a>
+</g>
+</g>
+<g>
+<g transform="translate(648 315)">
+<a href="StructureDefinition-USFinding.html" target="_top">
+<rect class="profile" x="0" y="0" width="214.5" height="33.75" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-USFinding.html" target="_top">
+<text x="107.25" y="22.5" text-anchor="middle" class="profile">Ultrasound Findings</text>
 </a>
 </g>
 </g>

@@ -15,8 +15,8 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityCalcification",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityCalcification.mfsh#24/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityCalcification.mfsh#24/n"
   }
 },
 {

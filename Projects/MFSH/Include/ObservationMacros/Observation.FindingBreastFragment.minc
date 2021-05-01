@@ -12,24 +12,22 @@ Description: """
 
   * value[x] 0..0
 
-  #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
-  #	 """
-  #  Composite BiRad value for %Laterality% Breast.
-  #  Typically this is the most severe of all the BiRad 
-  #  codes set in any of the child observations of the %Laterality% Breast.
-  #	 """,
-  #  "ObservationComponentSliceCodesCS#targetBiRads")
-  #
-  #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
+  #apply Observation.Component.BiRadAssessmentCategoryFragment()
+  * component[biRadsAssessmentCategory] ^definition = """
+   Composite BiRad value for %Laterality% Breast.
+   Typically this is the most severe of all the BiRad 
+   codes set in any of the child observations of the %Laterality% Breast.
+    """
+
+
+  #apply Observation.Component.BiRadBreastCompositionFragment()
+  * component[biRadsBreastComposition] ^definition = """
+   BiRad Breast Composition value for %Laterality% Breast.
+    """
+
+
 
   
-  #apply Observation.HasMember.Add("breastComposition", "0..1", "BreastComposition",
-  #  "'Breast Composition Finding' reference.",
-  #  """
-  #  This slice references the optopnal Breast Composition observation.
-  #  """)
-  * hasMember[breastComposition] MS
-
   #apply Observation.HasMember.Add("mgFinding", "0..1", "MGFinding", 
   #  "'MG Finding' reference.",
   #  """

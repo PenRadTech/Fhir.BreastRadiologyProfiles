@@ -1,12 +1,12 @@
-ValueSet:  BreastCompositionVS
-Title: "BreastComposition ValueSet"
-Description:  "BreastComposition Value Set"
-  * codes from system BreastCompositionCS
+ValueSet:  BiRadsBreastCompositionVS
+Title: "BiRadsBreastComposition ValueSet"
+Description:  "BiRadsBreastComposition Value Set"
+  * codes from system BiRadsBreastCompositionCS
 
 
 
 
-CodeSystem: BreastCompositionCS
+CodeSystem: BiRadsBreastCompositionCS
 Title: "Breast Composition CodeSystem"
 Description: "Breast composition values code system."
   * #AlmostEntirelyFat "(a) Almost entirely fat"

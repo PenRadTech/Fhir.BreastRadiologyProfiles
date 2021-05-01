@@ -15,8 +15,8 @@
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalitySkinLesion.mfsh#15/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalitySkinLesion.mfsh#15/n"
   }
 },
 {

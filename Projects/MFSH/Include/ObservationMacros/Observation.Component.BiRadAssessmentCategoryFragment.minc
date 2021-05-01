@@ -1,9 +1,9 @@
 /*
  BiRad Fragment
- Fragment that adds 'BiRad code' element to profile
+ Fragment that adds 'BiRad RadAssessment Category code' element to profile
  */
  
-#Fragment: Observation.Component.BiRadFragment
+#Fragment: Observation.Component.BiRadAssessmentCategoryFragment
 #Parent: Observation
 #Title: "BiRad Fragment"
 #Description: """
@@ -12,9 +12,9 @@
   #apply Observation.Component.Add("biRadsAssessmentCategory", "0..1", "BiRads Code", "BiRads Assessment Category component.",
   #	 """
   #  This slice contains the optional component that defines the BiRAD risk code.
-  #  The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoriesVS valueset.
+  #  The value of this component is a codeable concept chosen from the BiRadsAssessmentCategoryVS valueset.
   #	 """,
-  #  "ObservationComponentSliceCodesCS#targetBiRads")
+  #  "ObservationComponentSliceCodesCS#biRadsAssessmentCategory")
   #
   #apply Observation.Component.SetConcept("biRadsAssessmentCategory", "1..1", "BiRadsAssessmentCategoryVS")
 

@@ -15,8 +15,8 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityLymphNode.mfsh#25/n"
   }
 },
 {

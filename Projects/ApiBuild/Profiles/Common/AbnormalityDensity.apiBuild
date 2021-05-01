@@ -15,8 +15,8 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityDensity",
-    "fragmentName" : "BiRadFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadFragment.minc#47/nProfiles/Common/AbnormalityDensity.mfsh#24/n"
+    "fragmentName" : "BiRadAssessmentCategoryFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.BiRadAssessmentCategoryFragment.minc#47/nProfiles/Common/AbnormalityDensity.mfsh#24/n"
   }
 },
 {

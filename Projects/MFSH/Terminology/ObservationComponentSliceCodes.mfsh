@@ -41,7 +41,12 @@ Description: "Component Slice Codes code system"
     Code to identify the component slice MGCodeAbnormalityDensityType.
     """
 
-  * #targetBiRads "Component code for 'BiRads Code' slice"
+  * #biRadsAssessmentCategory "Component code for 'BiRads Code' slice"
+    """
+    Code to identify the component slice BiRads Assessment Category.
+    """
+
+  * #biRadsBreastCompositionCategory "Component code for 'BiRads BreastComposition Code' slice"
     """
     Code to identify the component slice BiRads.
     """
@@ -69,11 +74,6 @@ Description: "Component Slice Codes code system"
   * #margin "Component code for 'Margin' slice"
     """
     Code to identify the component slice Margin.
-    """
-
-  * #mgBreastDensity "Component code for 'MG Density' slice"
-    """
-    Code to identify the component slice MGDensity.
     """
 
   * #notPreviouslySeen "Component code for 'Not Previously Seen' slice"
