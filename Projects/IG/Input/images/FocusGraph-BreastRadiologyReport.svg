@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FocusGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="757.88" height="213.75">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="672.05" height="191.25">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -11,87 +11,87 @@
 </marker>
 </defs>
 <g>
-<g transform="translate(7.5 7.5)">
+<g transform="translate(3.75 3.75)">
 <a href="StructureDefinition-BreastRadiologyComposition.html" target="_top">
-<rect class="profile" x="0" y="0" width="130.5" height="71.25" rx="3.75" ry="3.75" />
+<rect class="profile" x="0" y="0" width="104.43" height="63.75" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyComposition.html" target="_top">
-<text x="65.25" y="22.5" text-anchor="middle" class="profile">Breast</text>
+<text x="5.62" y="18.75" text-anchor="left" class="profile">Breast</text>
 </a>
 <a href="StructureDefinition-BreastRadiologyComposition.html" target="_top">
-<text x="65.25" y="41.25" text-anchor="middle" class="profile">Radiology</text>
+<text x="5.62" y="37.5" text-anchor="left" class="profile">Radiology</text>
 </a>
 <a href="StructureDefinition-BreastRadiologyComposition.html" target="_top">
-<text x="65.25" y="60" text-anchor="middle" class="profile">Composition</text>
+<text x="5.62" y="56.25" text-anchor="left" class="profile">Composition</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="168" y1="24.38" x2="228" y2="24.38" />
-<text x="171.75" y="20.62" text-anchor="right" class="lhsText">1..1</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="138" y1="43.12" x2="168" y2="43.12" />
-<line class="connector" x1="168" y1="24.38" x2="168" y2="43.12" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="138.18" y1="16.88" x2="198.18" y2="16.88" />
+<text x="141.93" y="13.12" text-anchor="right" class="lhsText">1..1</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="108.18" y1="35.62" x2="138.18" y2="35.62" />
+<line class="connector" x1="138.18" y1="16.88" x2="138.18" y2="35.62" />
 </g>
 <g>
-<g transform="translate(228 7.5)">
+<g transform="translate(198.18 3.75)">
 <a href="StructureDefinition-BreastRadiologyReport.html" target="_top">
-<rect class="focus" x="0" y="0" width="78" height="33.75" rx="3.75" ry="3.75" />
+<rect class="focus" x="0" y="0" width="62.29" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyReport.html" target="_top">
-<text x="39" y="22.5" text-anchor="middle" class="focus">Report</text>
+<text x="5.62" y="18.75" text-anchor="left" class="focus">Report</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="336" y1="24.38" x2="396" y2="24.38" />
-<text x="339.75" y="20.62" text-anchor="right" class="lhsText">1..1</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="336" y1="65.62" x2="396" y2="65.62" />
-<text x="339.75" y="61.88" text-anchor="right" class="lhsText">1..*</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="306" y1="24.38" x2="336" y2="24.38" />
-<line class="connector" x1="336" y1="24.38" x2="336" y2="65.62" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="290.46" y1="16.88" x2="350.46" y2="16.88" />
+<text x="294.21" y="13.12" text-anchor="right" class="lhsText">1..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="290.46" y1="50.62" x2="350.46" y2="50.62" />
+<text x="294.21" y="46.88" text-anchor="right" class="lhsText">1..*</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="260.46" y1="16.88" x2="290.46" y2="16.88" />
+<line class="connector" x1="290.46" y1="16.88" x2="290.46" y2="50.62" />
 </g>
 <g>
-<g transform="translate(396 7.5)">
+<g transform="translate(350.46 3.75)">
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode:BiRads" target="_top">
-<rect class="element" x="0" y="0" width="78" height="33.75" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="65.96" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode:BiRads" target="_top">
-<text x="39" y="22.5" text-anchor="middle" class="element">BiRads</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">BiRads</text>
 </a>
 </g>
 </g>
 <g>
-<g transform="translate(396 48.75)">
+<g transform="translate(350.46 37.5)">
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode" target="_top">
-<rect class="element" x="0" y="0" width="162" height="33.75" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="133.76" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode" target="_top">
-<text x="81" y="22.5" text-anchor="middle" class="element">ConclusionCode</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">ConclusionCode</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="588" y1="65.62" x2="648" y2="65.62" />
-<text x="591.75" y="61.88" text-anchor="right" class="lhsText">1..1</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="558" y1="65.62" x2="588" y2="65.62" />
-<line class="connector" x1="588" y1="65.62" x2="588" y2="65.62" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="514.22" y1="50.62" x2="574.22" y2="50.62" />
+<text x="517.97" y="46.88" text-anchor="right" class="lhsText">1..1</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="484.22" y1="50.62" x2="514.22" y2="50.62" />
+<line class="connector" x1="514.22" y1="50.62" x2="514.22" y2="50.62" />
 </g>
 <g>
-<g transform="translate(648 48.75)">
+<g transform="translate(574.22 37.5)">
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode:BiRads" target="_top">
-<rect class="element" x="0" y="0" width="78" height="33.75" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="65.96" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyReport-definitions.html#DiagnosticReport.conclusionCode:BiRads" target="_top">
-<text x="39" y="22.5" text-anchor="middle" class="element">BiRads</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">BiRads</text>
 </a>
 </g>
 </g>
 <g>
-<g transform="translate(7.5 165)">
-<rect class="focus" x="0" y="0" width="67.5" height="33.75" rx="3.75" ry="3.75" />
-<text x="33.75" y="22.5" text-anchor="middle" class="focus">Focus</text>
+<g transform="translate(3.75 150)">
+<rect class="focus" x="0" y="0" width="57.72" height="26.25" rx="3.75" ry="3.75" />
+<text x="5.62" y="18.75" text-anchor="left" class="focus">Focus</text>
 </g>
-<g transform="translate(82.5 165)">
-<rect class="profile" x="0" y="0" width="193.5" height="33.75" rx="3.75" ry="3.75" />
-<text x="96.75" y="22.5" text-anchor="middle" class="profile">Profiled Resource</text>
+<g transform="translate(68.97 150)">
+<rect class="profile" x="0" y="0" width="143.81" height="26.25" rx="3.75" ry="3.75" />
+<text x="5.62" y="18.75" text-anchor="left" class="profile">Profiled Resource</text>
 </g>
-<g transform="translate(283.5 165)">
-<rect class="element" x="0" y="0" width="183" height="33.75" rx="3.75" ry="3.75" />
-<text x="91.5" y="22.5" text-anchor="middle" class="element">Resource Element</text>
+<g transform="translate(220.28 150)">
+<rect class="element" x="0" y="0" width="148.39" height="26.25" rx="3.75" ry="3.75" />
+<text x="5.62" y="18.75" text-anchor="left" class="element">Resource Element</text>
 </g>
 </g>
 </svg>
