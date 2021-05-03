@@ -47,16 +47,13 @@
 #end
 
 
-#macro Resource.Slice(ard, %Element%, %ValueSet%, %DisplayName%)
-  * %Element% Card
-  * %Element% from %ValueSet%
-  
-  #// -----------------------------------------
-  #// Graph Macros
-  #// -----------------------------------------
-  #use Graph
-    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/%Element%", "0", "Cmp")
-    #apply NodeElement("Sort", "%Element%", "%DisplayName%")
-    #apply LinkByBinding("focus", "^%ProfileId%/%Element%/$", "", "Cmp")
-  #end  
+/*
+ Slice Observation.component.
+ */
+#macro Resource.Slice(%Element%, %Path%, %Type%, %Description%)
+  * %Element% ^slicing.discriminator.type = #%Type%
+  * %Element% ^slicing.discriminator.path = "%Path%"
+  * %Element% ^slicing.rules = #open
+  * %Element% ^slicing.ordered = false
+  * %Element% ^slicing.description = "%Description%"
 #end

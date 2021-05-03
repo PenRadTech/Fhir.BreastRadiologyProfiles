@@ -3,11 +3,8 @@
  */
 #macro once Observation.HasMember.Slice()
   #incompatible Observation.LeafFragment
-  * hasMember ^slicing.discriminator.type = #value
-  * hasMember ^slicing.discriminator.path = "url"
-  * hasMember ^slicing.rules = #open
-  * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
+
+  #apply Resource.Slice("hasMember", "url", "value", "hasMember slicing")
 
   #// -----------------------------------------
   #// Graph Macros

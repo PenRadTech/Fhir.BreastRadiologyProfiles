@@ -2,11 +2,8 @@
  Slice Observation.derivedFrom.
  */
 #macro once Observation.DerivedFrom.Slice()
-  * derivedFrom ^slicing.discriminator.type = #value
-  * derivedFrom ^slicing.discriminator.path = "url"
-  * derivedFrom ^slicing.rules = #open
-  * derivedFrom ^slicing.ordered = false
-  * derivedFrom ^slicing.description = "derivedFrom slicing"
+
+  #apply Resource.Slice("derivedFrom", "url", "value", "derivedFrom slicing")
 
   #// -----------------------------------------
   #// Graph Macros

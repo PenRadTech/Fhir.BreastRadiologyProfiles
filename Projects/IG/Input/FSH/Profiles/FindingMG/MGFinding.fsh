@@ -31,7 +31,7 @@ Description: """
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
+  * hasMember ^slicing.description = "hasMember slicing"
   * hasMember contains abnormalityCyst 0..*
   * hasMember[abnormalityCyst] ^short = "'Cyst' reference. hasMember."
   * hasMember[abnormalityCyst] only Reference(AbnormalityCyst)

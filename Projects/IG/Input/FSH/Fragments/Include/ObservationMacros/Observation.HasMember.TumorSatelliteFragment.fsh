@@ -8,7 +8,7 @@ Description: """
   * hasMember ^slicing.discriminator.path = "url"
   * hasMember ^slicing.rules = #open
   * hasMember ^slicing.ordered = false
-  * hasMember ^slicing.description = "Component slicing"
+  * hasMember ^slicing.description = "hasMember slicing"
   * hasMember contains tumorSatellite 0..1
   * hasMember[tumorSatellite] ^short = "'Tumor Satellite' reference. hasMember."
   * hasMember[tumorSatellite] only Reference(TumorSatellite)
