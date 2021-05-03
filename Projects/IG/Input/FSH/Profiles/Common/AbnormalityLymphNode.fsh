@@ -4,7 +4,7 @@ Title: "LymphNode Abnormality"
 Description: """
   LymphNode Abnormality
   """
-  * code = ObservationCodesCS#bnormalityLymphNodeObservation
+  * code = ObservationCodesCS#abnormalityLymphNodeObservation
   * code 1..1
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "code"

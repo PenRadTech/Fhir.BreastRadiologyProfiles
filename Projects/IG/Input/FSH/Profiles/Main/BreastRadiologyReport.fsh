@@ -11,6 +11,8 @@ Description: """
   * ^publisher = "Hl7-Clinical Interoperability Council"
   * ^version = "0.0.2"
   * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
+  * code 1..1
+  * code from BreastRadReportTypesVS
   * category ^slicing.discriminator.type = #pattern
   * category ^slicing.discriminator.path = "$this"
   * category ^slicing.rules = #open
@@ -19,10 +21,8 @@ Description: """
   * category contains categoryImaging 1..1
   * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
 
-  * code from BreastRadReportTypesVS
-  * code 1..1
-
   * conclusionCode ^slicing.discriminator.type = #pattern
+  * conclusionCode ^slicing.discriminator.path = "$this"
   * conclusionCode ^slicing.rules = #open
   * conclusionCode ^slicing.ordered = false
   * conclusionCode ^slicing.description = "ConclusionCode slicing"
