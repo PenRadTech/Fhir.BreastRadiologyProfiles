@@ -12,16 +12,13 @@ Description:  "ObservedChanges Value Set"
   #end
 
 
-
-
-
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."
   * #DecreaseInCalcifications "Decrease in calcifications"
     """
     There is an decrease in the number of calcifications associated with the item being observed.
-	This decrease is from the previous observation of this item.
+    This decrease is from the previous observation of this item.
     """
 
   * #DecreaseInNumber "Decrease in number"
@@ -36,27 +33,32 @@ Description: "Observed changes in an abnormality code system."
 
   * #IncreaseInCalcifications "Increase in calcifications"
     """
-    There is an increase in the number of calcifications associated with the item being observed. This increase is from the previous observation of this item.
+    There is an increase in the number of calcifications associated with the item being observed.
+    This increase is from the previous observation of this item.
     """
 
   * #IncreaseInNumber "Increase in number"
     """
-    There is an increase in the number of items being observed. This increase is from the previous observation of this item.
+    There is an increase in the number of items being observed.
+    This increase is from the previous observation of this item.
     """
 
   * #IncreaseInSize "Increase in size"
     """
-    The item being observed has increased in size. This increase is from the previous observation of this item.
+    The item being observed has increased in size.
+    This increase is from the previous observation of this item.
     """
 
   * #LessProminent "Less prominent"
     """
-    The item being observed has decreased in prominance. This decrease is from the previous observation of this item.
+    The item being observed has decreased in prominance.
+    This decrease is from the previous observation of this item.
     """
 
   * #MoreProminent "More prominent"
     """
-    The item being observed has increased in prominance. This increase is from the previous observation of this item.
+    The item being observed has increased in prominance.
+    This increase is from the previous observation of this item.
     """
 
   * #New "New"
@@ -67,13 +69,13 @@ Description: "Observed changes in an abnormality code system."
 
   * #NoLongerSeen "No longer seen"
     """
-    The item being observed is no longer visible. It was visible on previous observations.
+    The item being observed is no longer visible.
+    It was visible on previous observations.
     """
 
   * #NotSignificantChanged "Not significant changed"
     """
-    The item being observed has not significantly changed since
-    the last Mammogram.
+    The item being observed has not significantly changed since the last Mammogram.
     """
 
   * #PartiallyRemoved "Partially removed"

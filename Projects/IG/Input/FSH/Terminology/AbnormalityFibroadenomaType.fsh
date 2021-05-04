@@ -16,8 +16,6 @@ Description: "Fibroadenoma  type code system."
     a fibroadenoma remains in the breast tissue.
     Most are only 1 or 2 centimeters in size.
     [www.webmd.com > breast-cancer > what-are-fibroadenomas]
-    
- 
     """
 
   * #FibroadenomaDegeneration "Fibroadenoma degeneration"

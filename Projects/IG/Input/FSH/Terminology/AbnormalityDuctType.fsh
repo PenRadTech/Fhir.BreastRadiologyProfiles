@@ -24,8 +24,6 @@ Description: "Duct types code system."
     In almost all solitary dilated duct cases, the dilated
     duct appears to be filled with some debris, with
     or without accompanying fluid, as seen at ultrasound.
-    
- 
     """
 
   * #DuctEctasia "Duct ectasia"
@@ -38,6 +36,4 @@ Description: "Duct types code system."
     If left untreated, it can eventually obliterate the
     breast duct.
     www.healthline.com > health > duct-ectasia-of-the-breast
-    
- 
     """
