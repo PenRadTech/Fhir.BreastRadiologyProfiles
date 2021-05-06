@@ -1,4 +1,4 @@
-﻿using Eir.DevTools;
+using Eir.DevTools;
 using Eir.FhirKhit.R4;
 using Hl7.Fhir.Model;
 using System;
