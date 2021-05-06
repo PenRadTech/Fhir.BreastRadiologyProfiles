@@ -5,6 +5,13 @@
 ValueSet:  UnitsOfLengthVS
 Title: "Units of length value set"
 Description:  "Units of length used in Breast radiology."
-  * UCUM#m "meter"
-  * UCUM#cm "centimeter"
-  * UCUM#mm "millimeter"
+  * ^copyright =
+    """
+    This material contains content from UCUM (https://ucum.org/). 
+	UCUM is Copyright © 1999-2014 Regenstrief Institute, Inc. 
+	and The UCUM Organization, Indianapolis, IN. 
+	All rights reserved. See https://ucum.org/trac/wiki/TermsOfUse for details.
+    """
+  * include UCUM#m
+  * include UCUM#cm
+  * include UCUM#mm
