@@ -1,3 +1,5 @@
+# dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
+
 dotnet nuget locals all --clear
 
 dotnet tool uninstall --global Eir.AutoMate
