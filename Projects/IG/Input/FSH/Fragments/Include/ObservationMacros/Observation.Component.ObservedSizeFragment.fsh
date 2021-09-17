@@ -4,7 +4,7 @@ Title: "Observed Size Fragment"
 Description: """
   Fragment that adds 'Observed Size' components to Observation.
   """
-    // Define distribution region size.
+  // Define distribution region size.
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open

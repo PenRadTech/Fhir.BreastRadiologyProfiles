@@ -4,7 +4,7 @@ Title: "Shape Components Fragment"
 Description: """
   Adds Orientation, Shape, Margin, and Density Components
   """
-    // Define Orientation Slice
+  // Define Orientation Slice
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open

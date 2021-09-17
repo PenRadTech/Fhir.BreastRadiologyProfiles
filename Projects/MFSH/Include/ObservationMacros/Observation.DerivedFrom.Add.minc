@@ -2,7 +2,7 @@
  Add a derivedFrom slice to an observation.
  This adds the component slicing discriminator.
  It does not constrain the derivedFrom target.
- */
+*/
 #macro Observation.DerivedFrom.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, Url)
   #apply Observation.DerivedFrom.Slice()
 * derivedFrom contains SliceName Cardinality

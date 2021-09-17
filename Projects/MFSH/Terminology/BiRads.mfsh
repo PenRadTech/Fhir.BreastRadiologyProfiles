@@ -1,6 +1,6 @@
 /*
   Value set for ACR birads codes.
- */
+*/
 ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
@@ -19,7 +19,7 @@ Description:  "BiRads Assessment Category Value Set"
 
 /*
   Code system for ACR birads codes.
- */
+*/
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRads Assessment Category CodeSystem"
 Description:  "BiRads Assessment Category CodeSystem"

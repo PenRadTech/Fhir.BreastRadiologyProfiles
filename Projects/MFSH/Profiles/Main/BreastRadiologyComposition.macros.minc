@@ -10,7 +10,7 @@
 
   /*
    Composition section for Breast Radiology Report.
- */
+*/
 #macro ReportSection(SliceName) 
 * section[SliceName] ^definition = """
     This section references the Breast Radiology Report.
@@ -39,7 +39,7 @@
 
   /*
    Composition section for Impressions.
- */
+*/
 #macro ImpressionsSection(SliceName) 
 * section[SliceName] ^definition = """
     This section contains references to the report's clinical impressions.
@@ -71,7 +71,7 @@
 
 /*
  Composition section for Left Breast Findings.
- */
+*/
 #macro FindingsLeftBreastSection(SliceName) 
 * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -103,7 +103,7 @@
 
 /*
   Composition section for Right Breast Findings.
- */
+*/
 #macro FindingsRightBreastSection(SliceName) 
 * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -135,7 +135,7 @@
 
 /*
  Composition section for BiLateral Breast Findings.
- */
+*/
 #macro FindingsBiLateralBreastSection(SliceName) 
 * section[SliceName] ^definition = """
     This section contains references to the report's findings 
@@ -166,7 +166,7 @@
 
   /*
    Composition section for Related Resources.
- */
+*/
 #macro RelatedResourcesSection(SliceName) 
 * section[SliceName] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
@@ -202,7 +202,7 @@
 
   /*
    Composition section for recommendations.
- */
+*/
 #macro RecommendationsSection(SliceName) 
 * section[SliceName] ^definition = """
     This section contains references to recommended actions 

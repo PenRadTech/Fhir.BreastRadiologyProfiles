@@ -1,7 +1,7 @@
 /*
  ConsistentWith HasMember Fragment
  This fragment adds the references for the ConsistentWith HasMember.
- */
+*/
  
 #Fragment: once Observation.HasMember.ConsistentWithFragment
 #Parent: Observation

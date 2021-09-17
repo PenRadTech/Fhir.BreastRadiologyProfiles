@@ -1,6 +1,6 @@
 /*
    Value set that defines Consistent With codes.
- */
+*/
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
@@ -21,7 +21,7 @@ Description:  "ConsistentWith Value Set"
 
 /*
    Code system that defines Consistent With codes.
- */
+*/
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"

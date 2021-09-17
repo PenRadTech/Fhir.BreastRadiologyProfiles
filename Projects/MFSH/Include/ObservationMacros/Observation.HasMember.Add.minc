@@ -2,7 +2,7 @@
  Add an Observation.hasMember slice to an observation.
  This adds the hasMember slicing discriminator.
  It does not constrain the hasMember target.
- */
+*/
 
 #macro Observation.HasMember.Add(SliceName, 
 #      Cardinality, 

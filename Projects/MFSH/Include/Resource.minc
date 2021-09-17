@@ -1,7 +1,7 @@
 /*
  Resource.FixCode
  Fix resource.code to passed value.
- */
+*/
  
 #macro Resource.Fix(Sort, %Element%, %Code%, %DisplayName%)
 * %Element% = %Code%
@@ -49,7 +49,7 @@
 
 /*
  Slice Observation.component.
- */
+*/
 #macro Resource.Slice(%Element%, %Path%, %Type%, %Description%)
 * %Element% ^slicing.discriminator.type = #%Type%
 * %Element% ^slicing.discriminator.path = "%Path%"

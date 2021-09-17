@@ -4,7 +4,7 @@ Title: "NotPreviously Seen Fragment"
 Description: """
   Adds NotPreviously Seen Component slice.
   """
-  * component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false

@@ -1,7 +1,7 @@
 /*
  ObservedCount Fragment
  Fragment that adds 'Observed Count' element to profile.
- */
+*/
 
 #Fragment: Observation.Component.ObservedCountFragment
 #Parent: Observation

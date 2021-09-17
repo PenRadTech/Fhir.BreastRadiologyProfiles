@@ -1,7 +1,7 @@
 /*
  BiRad Fragment
  Fragment that adds 'BiRad code' element to profile
- */
+*/
  
 #Fragment: Observation.HasMember.BiRadBreastCompositionFragment
 #Parent: Observation

@@ -18,3 +18,4 @@ Alias: UCUM = http://unitsofmeasure.org
 
 Alias: CONTACTURL = http://hl7.org/Special/committees/cic
 
+Alias: PUBLICATIONSTATUS = 	http://hl7.org/fhir/publication-status

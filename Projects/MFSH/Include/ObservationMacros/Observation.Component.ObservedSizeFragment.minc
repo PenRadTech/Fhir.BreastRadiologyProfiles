@@ -1,7 +1,7 @@
 /*
  ObservedSize Fragment
  Fragment that adds 'Observed Size' components to Observation.
- */
+*/
  
 #Fragment: Observation.Component.ObservedSizeFragment
 #Parent: Observation

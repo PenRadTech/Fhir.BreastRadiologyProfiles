@@ -1,7 +1,7 @@
 /*
  Observation.Fragment
  constraints used in all breast radiology observations.
- */
+*/
  
 #macro once Observation.Fragment()
   #apply Resource.SetCategoryImaging()

@@ -1,7 +1,7 @@
 /*
  ObservedChanges Fragment
  Fragment that adds 'Observed Changes' element to profile.
- */
+*/
 
 #Fragment: Observation.Component.ObservedChangesFragment
 #Parent: Observation

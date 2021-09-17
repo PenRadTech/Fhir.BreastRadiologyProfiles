@@ -1,7 +1,7 @@
 /*
  Observation.Value.Zero
  Observations that have no explicit value.
- */
+*/
  
 #macro Observation.Value.Zero()
   #apply Observation.Fragment()

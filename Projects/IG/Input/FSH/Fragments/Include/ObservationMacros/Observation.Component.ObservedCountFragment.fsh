@@ -4,7 +4,7 @@ Title: "Observed Count Fragment"
 Description: """
   Fragment that adds 'Observed Count' element to profile.
   """
-  * component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false

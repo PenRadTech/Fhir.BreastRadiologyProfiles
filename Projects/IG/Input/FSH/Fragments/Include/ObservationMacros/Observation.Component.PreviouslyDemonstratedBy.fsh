@@ -4,7 +4,7 @@ Title: "Previously Demonstrated By Fragment"
 Description: """
   'Demonstrated By' Component Fragment
   """
-  * component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false

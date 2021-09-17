@@ -1,6 +1,6 @@
 /*
  Slice Observation.component.
- */
+*/
 #macro once Observation.Component.Slice()
   #incompatible Observation.Component.Zero
 
