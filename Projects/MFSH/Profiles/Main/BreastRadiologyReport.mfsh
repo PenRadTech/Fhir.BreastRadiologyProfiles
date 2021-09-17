@@ -10,22 +10,22 @@ Description: """
   #apply Resource.Bind("", "1..1", "code", "BreastRadReportTypesVS", "Report Type")
   #apply Resource.SetCategoryImaging()
 
-  * conclusionCode ^slicing.discriminator.type = #pattern
-  * conclusionCode ^slicing.discriminator.path = "$this"
-  * conclusionCode ^slicing.rules = #open
-  * conclusionCode ^slicing.ordered = false
-  * conclusionCode ^slicing.description = "ConclusionCode slicing"
+* conclusionCode ^slicing.discriminator.type = #pattern
+* conclusionCode ^slicing.discriminator.path = "$this"
+* conclusionCode ^slicing.rules = #open
+* conclusionCode ^slicing.ordered = false
+* conclusionCode ^slicing.description = "ConclusionCode slicing"
 
-  * conclusionCode contains BiRads 1..1
-  * conclusionCode[BiRads] ^short = "BiRads assessment value."
-  * conclusionCode[BiRads] ^definition = """
+* conclusionCode contains BiRads 1..1
+* conclusionCode[BiRads] ^short = "BiRads assessment value."
+* conclusionCode[BiRads] ^definition = """
     A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
     found in either of the right or left breast observation sections.
     """
-  * conclusionCode[BiRads] from BiRadsAssessmentCategoryVS
+* conclusionCode[BiRads] from BiRadsAssessmentCategoryVS
 
-  * specimen 0..0
-  * result 0..0
+* specimen 0..0
+* result 0..0
   
   #// -----------------------------------------
   #// IG Macros

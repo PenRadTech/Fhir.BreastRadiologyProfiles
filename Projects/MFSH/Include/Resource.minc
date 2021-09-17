@@ -4,8 +4,8 @@
  */
  
 #macro Resource.Fix(Sort, %Element%, %Code%, %DisplayName%)
-  * %Element% = %Code%
-  * %Element% 1..1
+* %Element% = %Code%
+* %Element% 1..1
   
   #// -----------------------------------------
   #// Graph Macros
@@ -18,8 +18,8 @@
 #end
 
 #macro Resource.Bind(Sort, Card, %Element%, %ValueSet%, %DisplayName%)
-  * %Element% Card
-  * %Element% from %ValueSet%
+* %Element% Card
+* %Element% from %ValueSet%
   
   #// -----------------------------------------
   #// Graph Macros
@@ -37,13 +37,13 @@
 // fixes the .category value to 'imaging'.
 
 #macro Resource.SetCategoryImaging()
-  * category ^slicing.discriminator.type = #pattern
-  * category ^slicing.discriminator.path = "$this"
-  * category ^slicing.rules = #open
-  * category ^slicing.ordered = false
-  * category ^slicing.description = "Observation Category = imaging"
-  * category contains categoryImaging 1..1
-  * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category ^slicing.ordered = false
+* category ^slicing.description = "Observation Category = imaging"
+* category contains categoryImaging 1..1
+* category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
 #end
 
 
@@ -51,9 +51,9 @@
  Slice Observation.component.
  */
 #macro Resource.Slice(%Element%, %Path%, %Type%, %Description%)
-  * %Element% ^slicing.discriminator.type = #%Type%
-  * %Element% ^slicing.discriminator.path = "%Path%"
-  * %Element% ^slicing.rules = #open
-  * %Element% ^slicing.ordered = false
-  * %Element% ^slicing.description = "%Description%"
+* %Element% ^slicing.discriminator.type = #%Type%
+* %Element% ^slicing.discriminator.path = "%Path%"
+* %Element% ^slicing.rules = #open
+* %Element% ^slicing.ordered = false
+* %Element% ^slicing.description = "%Description%"
 #end

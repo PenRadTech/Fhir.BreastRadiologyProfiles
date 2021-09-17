@@ -1,7 +1,7 @@
 ValueSet:  PreviouslyDemonstratedByVS
 Title: "PreviouslyDemonstratedBy ValueSet"
 Description:  "PreviouslyDemonstratedBy Value Set"
-  * codes from system PreviouslyDemonstratedByCS
+* codes from system PreviouslyDemonstratedByCS
 
 
 
@@ -10,7 +10,7 @@ CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
 Description:  "PreviouslyDemonstratedBy CodeSystem"
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure) | [0/0] |
-  * #Aspiration "Aspiration"
+* #Aspiration "Aspiration"
     """
     A medical procedure that removes something from an
     area of the body.
@@ -20,7 +20,7 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     """
 
   // .SnomedDescription Procedure | 122548005 | Biopsy of breast (Procedure)
-  * #Biopsy "Biopsy"
+* #Biopsy "Biopsy"
     """
     An examination under a microscope  of the specific
     tissue removed from the body.
@@ -29,13 +29,13 @@ Description:  "PreviouslyDemonstratedBy CodeSystem"
     """
 
   // .SnomedDescription Procedure | 241615005 | Magnetic resonance imaging of breast (Procedure)
-  * #MRI "MRI"
+* #MRI "MRI"
     """
     Findings on the Mammogram was previously demonstrated
     by the MRI.
     """
 
-  * #US "US"
+* #US "US"
     """
     Findings on the Mammogram was previously demonstrated
     by the Ultrasound.

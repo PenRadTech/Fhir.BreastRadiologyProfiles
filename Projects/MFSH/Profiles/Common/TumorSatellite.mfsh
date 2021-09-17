@@ -14,19 +14,19 @@ Description: """
   #apply Observation.Device.Zero()
   #apply Observation.Component.Zero()
 
-  * . ^definition = """
+* . ^definition = """
     Tumor Satellite Observation.
 	"""
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#tumorSatelliteObservation", "Code")
 
-  * value[x] 0..1
-  * value[x] only Quantity or Range
-  * valueQuantity from UNITSOFLENGTH
-  * valueRange.low from UNITSOFLENGTH
-  * valueRange.high from UNITSOFLENGTH
+* value[x] 0..1
+* value[x] only Quantity or Range
+* valueQuantity from UNITSOFLENGTH
+* valueRange.low from UNITSOFLENGTH
+* valueRange.high from UNITSOFLENGTH
 
-  * derivedFrom 0..1
+* derivedFrom 0..1
   #apply Observation.DerivedFrom.Add("indexTumor", "0..1", "Index Tumor", "Index Tumor Observation reference",
   #  """
   #  This derivedFrom slice references the index tumor.

@@ -1,15 +1,15 @@
 #macro Extension.CodeableConcept(SliceName, DisplayName, Cardinality, ValueSet, Short, Definition)
   #apply Extension.Configure()
   
-  * extension contains SliceName Cardinality
-  * extension[SliceName] ^short = "Short"
-  * extension[SliceName] ^definition =
+* extension contains SliceName Cardinality
+* extension[SliceName] ^short = "Short"
+* extension[SliceName] ^definition =
     """
 	Definition
 	"""
-  * extension[SliceName].value[x] 1..1
-  * extension[SliceName].value[x] only CodeableConcept
-  * extension[SliceName].value[x] from ValueSet
+* extension[SliceName].value[x] 1..1
+* extension[SliceName].value[x] only CodeableConcept
+* extension[SliceName].value[x] from ValueSet
 
   #// -----------------------------------------
   #// Graph Macros

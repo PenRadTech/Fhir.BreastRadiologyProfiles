@@ -6,19 +6,19 @@ Description: """
 """
 
   #apply HeaderFragment()
-  * . ^short = "US Core Race Extension"
-  * type = LOINC#42132-1 "US Breast screening"
+* . ^short = "US Core Race Extension"
+* type = LOINC#42132-1 "US Breast screening"
 
   #apply StartSectionSlicing()
 
-  * section contains report 1..1 MS
-  * section contains impressions 0..1 MS
-  * section contains findingsBiLateralBreast 0..1 MS
-  * section contains findingsRightBreast 0..1 MS
-  * section contains findingsLeftBreast 0..1 MS
-  * section contains relatedResources 0..1 MS
-  * section contains recommendations 0..1 MS
-  * section contains admin 0..1 MS
+* section contains report 1..1 MS
+* section contains impressions 0..1 MS
+* section contains findingsBiLateralBreast 0..1 MS
+* section contains findingsRightBreast 0..1 MS
+* section contains findingsLeftBreast 0..1 MS
+* section contains relatedResources 0..1 MS
+* section contains recommendations 0..1 MS
+* section contains admin 0..1 MS
 
   #apply ReportSection("report") 
   #apply ImpressionsSection("impressions")

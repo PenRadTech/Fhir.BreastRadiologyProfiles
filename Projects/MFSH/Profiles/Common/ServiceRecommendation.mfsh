@@ -7,8 +7,8 @@ Description: """
 
   #apply HeaderFragment()
 
-  * . ^definition = "Followup Service Recommendation."
-  * extension contains BreastLateralityExtension named breastLaterality 1..1
+* . ^definition = "Followup Service Recommendation."
+* extension contains BreastLateralityExtension named breastLaterality 1..1
 
   #apply Resource.Bind("1", "1..1", "code", "ServiceRecommendationsVS  (extensible)", "Code")
   

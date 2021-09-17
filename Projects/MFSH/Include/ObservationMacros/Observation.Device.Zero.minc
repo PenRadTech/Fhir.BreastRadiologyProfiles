@@ -5,5 +5,5 @@
  
 #macro once Observation.Device.Zero()
   #apply Observation.Fragment()
-  * device 0..0
+* device 0..0
 #end

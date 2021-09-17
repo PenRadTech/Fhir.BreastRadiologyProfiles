@@ -1,7 +1,7 @@
 ValueSet:  BreastLandmarkVS
 Title: "BreastLandmark ValueSet"
 Description:  "BreastLandmark Value Set"
-  * codes from system BreastLandmarkCS
+* codes from system BreastLandmarkCS
 
 
 
@@ -12,6 +12,6 @@ Description:
   Breast Landmark CodeSystem defines the various breast 
   body locations that can be used as a land mark.
   """
-  * #Nipple "Nipple"
-  * #ChestWall "Chest Wall"
-  * #Skin "Skin"
+* #Nipple "Nipple"
+* #ChestWall "Chest Wall"
+* #Skin "Skin"

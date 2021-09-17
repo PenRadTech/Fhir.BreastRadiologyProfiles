@@ -4,5 +4,5 @@
  */
  
 #macro once Observation.LeafFragment()
-  * hasMember 0..0
+* hasMember 0..0
 #end

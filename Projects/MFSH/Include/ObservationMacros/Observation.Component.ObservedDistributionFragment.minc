@@ -1,7 +1,7 @@
 /*
   ObservedDistribution Fragment
   Fragment that adds 'Observed Distribution' components to Observation.
-  */
+*/
 
 
 #Fragment: Observation.Component.ObservedDistributionFragment
@@ -46,11 +46,11 @@
   #  "ObservationComponentSliceCodesCS#obsDistRegionSize")
   #
 
-  * component[obsDistRegionSize].value[x] 1..1
-  * component[obsDistRegionSize].value[x] only Quantity or Range
-  * component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
-  * component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
+* component[obsDistRegionSize].value[x] 1..1
+* component[obsDistRegionSize].value[x] only Quantity or Range
+* component[obsDistRegionSize].valueQuantity from UNITSOFLENGTH
+* component[obsDistRegionSize].valueRange.low from UNITSOFLENGTH
+* component[obsDistRegionSize].valueRange.high from UNITSOFLENGTH
 
   #// -----------------------------------------
   #// Graph Macros

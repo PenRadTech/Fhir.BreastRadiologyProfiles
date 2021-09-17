@@ -1,32 +1,32 @@
 ValueSet:  AbnormalityForeignObjectTypeVS
 Title: "Foreign Object Type ValueSet"
 Description:  "Foreign Object Type Value Set"
-  * codes from system AbnormalityForeignObjectTypeCS
+* codes from system AbnormalityForeignObjectTypeCS
 
 CodeSystem:  AbnormalityForeignObjectTypeCS
 Title: "Foreign Object Type CodeSystem"
 Description:  "Foreign Object Type CodeSystem"
   // .SnomedDescription ClinicalFinding | 283574001 | Pellet wound of breast (Disorder) | [0/0] | S21.039?
-  * #BBPellet "BB pellet"
+* #BBPellet "BB pellet"
     """
     A BB pellet is observed as present in the body.
     """
 
   // .Snomed 470272007
   // .SnomedDescription PhysicalObject | Implantable lesion localization marker (Object)
-  * #BiopsyClip "Biopsy clip"
+* #BiopsyClip "Biopsy clip"
     """
     A biopsy clip is observed as present in the body.
     """
 
   // .Snomed 470272007
   // .SnomedDescription PhysicalObject | Implantable lesion localization marker (Object)
-  * #BreastMarker "Breast Marker"
+* #BreastMarker "Breast Marker"
     """
     A breast marker is observed as present in the body.
     """
 
-  * #CatheterSleeves "Catheter sleeve"
+* #CatheterSleeves "Catheter sleeve"
     """
     A catheter sleeve is observed as present in the body.
 
@@ -34,7 +34,7 @@ Description:  "Foreign Object Type CodeSystem"
     into or withdraw fluids from the body.
     """
 
-  * #ChemotherapyPort "Chemotherapy port"
+* #ChemotherapyPort "Chemotherapy port"
     """
     A chemo therapy port is observed as present in the body.
     
@@ -45,19 +45,19 @@ Description:  "Foreign Object Type CodeSystem"
 
   // .Snomed 470342004
   // .SnomedDescription PhysicalObject | Implantable tissue clip (Object)
-  * #Coil "Coil"
+* #Coil "Coil"
     """
     A radio antenna coil (to receive a radio frequency signal) is observed as present in the body.
     """
 
   // .Snomed 283258005
   // .SnomedDescription ClinicalFinding | Glass in breast (Disorder)
-  * #Glass "Glass"
+* #Glass "Glass"
     """
     Glass is observed as present in the body.
     """
 
-  * #GoldSeed "Gold seed"
+* #GoldSeed "Gold seed"
     """
     Tiny, gold seeds that are put in and/or around a
     tumor to show exactly where the
@@ -65,14 +65,14 @@ Description:  "Foreign Object Type CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 425055008 | Gunshot entry wound (Disorder) | [0/0] | T14.8
-  * #GunshotWound "Gunshot wound"
+* #GunshotWound "Gunshot wound"
     """
     There is a gunshot wound observed as present in the body
     """
 
   // .Snomed 470272007
   // .SnomedDescription PhysicalObject | Implantable lesion localization marker (Object)
-  * #MarkerClip "Marker clip"
+* #MarkerClip "Marker clip"
     """
     A marker clip (from possible previous biopsy)
     is observed as present in the body
@@ -80,47 +80,47 @@ Description:  "Foreign Object Type CodeSystem"
 
   // .Snomed 283169003
   // .SnomedDescription ClinicalFinding | Metal foreign body in breast (Disorder)
-  * #Metal "Metal"
+* #Metal "Metal"
     """
     A piece of metal is observed as present in the body.
     """
 
   // .Snomed 470272007
   // .SnomedDescription PhysicalObject | Implantable lesion localization marker (Object)
-  * #MetallicMarker "Metallic marker"
+* #MetallicMarker "Metallic marker"
     """
     A metallic tissue marker is observed as present in the body.
     """
 
    // .SnomedDescription ClinicalFinding | 283169003 | Metal foreign body in breast (Disorder) | [0/0] | S21.009?
-  * #MetallicObjects "Metallic object"
+* #MetallicObjects "Metallic object"
     """
     A metallic object is observed as present in the body.
     """
 
-  * #Needle "Needle"
+* #Needle "Needle"
     """
     A needle is observed as present in the body.
     """
 
   // .Snomed 80919006
   // .SnomedDescription PhysicalObject | Jewelry (Object)
-  * #NippleJewelry "Nipple jewelry"
+* #NippleJewelry "Nipple jewelry"
     """
     Metallic jewelry is observed as present in the body.
     """
 
-  * #Non-metallicBody "Non-metallic body"
+* #Non-metallicBody "Non-metallic body"
     """
     Non-metallic jewelry is observed as present in the body.
     """
 
-  * #Pacemaker "Pacemaker"
+* #Pacemaker "Pacemaker"
     """
     A pacemaker is observed as present in the body.
     """
 
-  * #SiliconeGranuloma "Silicone granuloma"
+* #SiliconeGranuloma "Silicone granuloma"
     """
     A Silicone granuloma is observed as present in the body.
 
@@ -133,14 +133,14 @@ Description:  "Foreign Object Type CodeSystem"
     """
 
   // .SnomedDescription PhysicalObject | 706640008 | Sponge (Object)
-  * #Sponge "Sponge"
+* #Sponge "Sponge"
     """
     A surgical sponge is observed as present in the body.
     """
 
   // .Snomed 470342004
   // .SnomedDescription PhysicalObject | Implantable tissue clip (Object)
-  * #SurgicalClip "Surgical clip"
+* #SurgicalClip "Surgical clip"
     """
     A surgical clip is observed as present in the body.
 
@@ -150,19 +150,19 @@ Description:  "Foreign Object Type CodeSystem"
     """
 
   // .SnomedDescription PhysicalObject | 408098004 | Swab (Object
-  * #Swab "Swab"
+* #Swab "Swab"
     """
     A surgical swab is observed as present in the body.
     """
 
   // .Snomed 470272007
   // .SnomedDescription PhysicalObject | Implantable lesion localization marker (Object)
-  * #TitaniumClip "Titanium clip"
+* #TitaniumClip "Titanium clip"
     """
     A titanium clip is observed as present in the body.
     """
 
-  * #GuideWire "Guide Wire"
+* #GuideWire "Guide Wire"
     """
     A Guide wire is observed as present in the body.
 
@@ -170,7 +170,7 @@ Description:  "Foreign Object Type CodeSystem"
     as biopsy or placement of medical devices such as a catheter or pacemaker.
     """
 
-  * #WireFragment "Wire fragment"
+* #WireFragment "Wire fragment"
     """
     A fragment of a guidewire is observed as present in the body.
     It is viewable in the MRI and/or Ultrasound.

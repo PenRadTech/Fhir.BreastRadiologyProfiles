@@ -8,7 +8,7 @@ Description: """
     Breast Body Location Extension
     """
 
-  * . ^short = "Breast Body Location extension"
+* . ^short = "Breast Body Location extension"
 
   #apply Extension.CodeableConcept("laterality", "Laterality", "0..1", "LateralityVS", "Body side",
   #  """

@@ -1,13 +1,13 @@
 ValueSet:  AbnormalityFibroAdenomaTypeVS
 Title: "FibroAdenoma  Type ValueSet"
 Description:  "FibroAdenoma Type Value Set"
-  * codes from system AbnormalityFibroadenomaTypeCS
+* codes from system AbnormalityFibroadenomaTypeCS
 
 
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"
 Description: "Fibroadenoma  type code system."
-  * #Fibroadenoma "Fibroadenoma"
+* #Fibroadenoma "Fibroadenoma"
     """
     A fibroadenoma is a benign, or noncancerous, breast
     tumor.
@@ -18,7 +18,7 @@ Description: "Fibroadenoma  type code system."
     [www.webmd.com > breast-cancer > what-are-fibroadenomas]
     """
 
-  * #FibroadenomaDegeneration "Fibroadenoma degeneration"
+* #FibroadenomaDegeneration "Fibroadenoma degeneration"
     """
     These are non-cancerous breast lumps.
     Fibroadenomas usually go away with age.

@@ -1,7 +1,7 @@
 ValueSet:  CalcificationDistributionVS
 Title: "CalcificationDistribution ValueSet"
 Description:  "CalcificationDistribution Value Set"
-  * codes from system CalcificationDistributionCS
+* codes from system CalcificationDistributionCS
 
 
 
@@ -10,7 +10,7 @@ Description:  "CalcificationDistribution Value Set"
 CodeSystem: CalcificationDistributionCS
 Title: "Calcification Distribution CodeSystem"
 Description: "Calcification Distribution in an abnormality code system."
-  * #ClusteredDistribution "Clustered distribution"
+* #ClusteredDistribution "Clustered distribution"
     """
     Grouped (historically, 'clustered')
     This term should be used when relatively few calcifications
@@ -29,7 +29,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 73]
     """
 
-  * #DiffuseDistribution "Diffuse distribution"
+* #DiffuseDistribution "Diffuse distribution"
     """
     Diffuse or Scattered: diffuse calcifications may
     be scattered calcifications or multiple similar appearing
@@ -41,7 +41,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [radiologyassistant.nl]
     """
 
-  * #GroupedDistribution "Grouped distribution"
+* #GroupedDistribution "Grouped distribution"
     """
     This term should be used when relatively few calcifications
     occupy a
@@ -57,7 +57,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 74]
     """
 
-  * #LinearDistribution "Linear distribution"
+* #LinearDistribution "Linear distribution"
     """
     These are calcifications arrayed in a line.
     This distribution may elevate suspicion for malignancy,
@@ -71,7 +71,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #RegionalDistribution "Regional distribution"
+* #RegionalDistribution "Regional distribution"
     """
     Scattered in a larger volume (> 2 cc) of breast tissue
     and not in the expected ductal distribution.
@@ -82,7 +82,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [radiologyassistant.nl]
     """
 
-  * #ScatteredDistribution "Scattered distribution"
+* #ScatteredDistribution "Scattered distribution"
     """
     Scattered distributions are also called diffuse distributions.
     These are calcifications that are distributed randomly
@@ -93,7 +93,7 @@ Description: "Calcification Distribution in an abnormality code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 70]
     """
 
-  * #SegmentalDistribution "Segmental distribution"
+* #SegmentalDistribution "Segmental distribution"
     """
     Segmental: calcium deposits in ducts and branches
     of a segment or lobe.

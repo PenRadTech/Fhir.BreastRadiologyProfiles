@@ -6,20 +6,20 @@
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Slice()
-  * component contains SliceName Cardinality
-  * component[SliceName] ^short = "ShortDesc component."
-  * component[SliceName] ^comment = """
+* component contains SliceName Cardinality
+* component[SliceName] ^short = "ShortDesc component."
+* component[SliceName] ^comment = """
     This is one component of a group of components that are part of the observation.
     """
-  * component[SliceName] ^definition = """
+* component[SliceName] ^definition = """
     Definition
     """
-  * component[SliceName].code 1..1
-  * component[SliceName].code ^short = "ShortDesc component code."
-  * component[SliceName].code ^definition = """
+* component[SliceName].code 1..1
+* component[SliceName].code ^short = "ShortDesc component code."
+* component[SliceName].code ^definition = """
     This code identifies the ShortDesc component.
 	"""
-  * component[SliceName].code = ComponentCode
+* component[SliceName].code = ComponentCode
 
   #// -----------------------------------------
   #// Graph Macros

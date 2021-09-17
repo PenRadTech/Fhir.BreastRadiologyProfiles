@@ -4,7 +4,7 @@
 ValueSet:  ConsistentWithVS
 Title: "ConsistentWith ValueSet"
 Description:  "ConsistentWith Value Set"
-  * codes from system ConsistentWithCS
+* codes from system ConsistentWithCS
 
 
 
@@ -16,7 +16,7 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
-  * #Abscess "Abscess"
+* #Abscess "Abscess"
     """
     An area within the body tissue that is swollen and
     contains an accumulation of pus.
@@ -24,7 +24,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 404057003
   // .SnomedDescription ClinicalFinding | Angiolipoma (Disorder)
-  * #Angiolipoma "Angiolipoma"
+* #Angiolipoma "Angiolipoma"
     """
     Angiolipoma is a rare type of lipoma - a growth made
     of fat and blood vessels that
@@ -35,7 +35,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 37009001 | Apocrine metaplasia of breast (Disorder) | [0/0] | N60.89
-  * #ApocrineMetaplasia "Apocrine metaplasia"
+* #ApocrineMetaplasia "Apocrine metaplasia"
     """
     A benign condition; Apocrine Metaplasia refers to
     a particular type of cell change.
@@ -49,7 +49,7 @@ Description:  "ConsistentWith CodeSystem"
     [breast-cancer.ca]
     """
 
-  * #Artifact "Artifact"
+* #Artifact "Artifact"
     """
     X-ray artifacts can present in a variety of ways
     including abnormal shadows noted
@@ -66,7 +66,7 @@ Description:  "ConsistentWith CodeSystem"
     [radiopaedia.org]
     """
 
-  * #AtypicalHyperplasia "Atypical hyperplasia"
+* #AtypicalHyperplasia "Atypical hyperplasia"
     """
     Atypical hyperplasia is a precancerous condition
     that affects cells in the breast.
@@ -84,7 +84,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 245269009 | Axillary lymph node group (Bodypart)
-  * #AxillaryLymphNode "Axillary lymph node"
+* #AxillaryLymphNode "Axillary lymph node"
     """
     Axillary lymph nodes are the lymph nodes located
     in the armpits.
@@ -100,7 +100,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 254838004 | Carcinoma of breast (Disorder) | [4/33] | C50.929
-  * #Carcinoma "Carcinoma"
+* #Carcinoma "Carcinoma"
     """
     Carcinoma is a type of cancer that starts in cells
     that make up the skin or the tissue
@@ -108,7 +108,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 254838004 | Carcinoma of breast (Disorder) | [4/33] | C50.929
-  * #CarcinomaKnown "Carcinoma known"
+* #CarcinomaKnown "Carcinoma known"
     """
     Imaging tests used in diagnosing cancer may include
     a computerized tomography (CT)
@@ -132,7 +132,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 399294002
   // .SnomedDescription ClinicalFinding |Cyst of breast (Disorder) ++++++
-  * #ClusterOfCysts "Cluster of cysts"
+* #ClusterOfCysts "Cluster of cysts"
     """
     A breast cyst is a non-cancerous (benign) fluid-filled
     sac in the breast.
@@ -144,7 +144,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 399294002
   // .SnomedDescription ClinicalFinding |Cyst of breast (Disorder)
-  * #Cyst "Cyst"
+* #Cyst "Cyst"
     """
     A breast cyst is a non-cancerous (benign) fluid-filled
     sac in the breast.
@@ -156,7 +156,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 449837001
   // .SnomedDescription ClinicalFinding | Complex cyst of breast (Disorder)
-  * #CystComplex "Cyst complex"
+* #CystComplex "Cyst complex"
     """
     Complex cysts have irregular or scalloped borders,
     thick walls, and some evidence
@@ -172,7 +172,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.breastcancer.org]
     """
 
-  * #CystComplicated "Cyst complicated"
+* #CystComplicated "Cyst complicated"
     """
     Complicated cysts are 'in between' simple and complex.
     Although they share most of the features of simple
@@ -185,7 +185,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.breastcancer.org]
     """
 
-  * #CystOil "Cyst oil"
+* #CystOil "Cyst oil"
     """
     Oil cysts are filled with fluid that may feel smooth
     and squishy.
@@ -194,7 +194,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 76649007
   // .SnomedDescription ClinicalFinding | Sebaceous cyst of skin of breast (Disorder)
-  * #CystSebaceous "Cyst sebaceous"
+* #CystSebaceous "Cyst sebaceous"
     """
     Sebaceous cysts are common noncancerous cysts of
     the skin.
@@ -210,7 +210,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 399253005
   // .SnomedDescription ClinicalFinding | Simple cyst of breast (Disorder)
-  * #CystSimple "Cyst simple"
+* #CystSimple "Cyst simple"
     """
     Simple cysts have smooth, thin, regularly shaped
     walls and are completely filled
@@ -224,7 +224,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 449837001
   // .SnomedDescription ClinicalFinding | Complex cyst of breast (Disorder)
-  * #CystsComplex "Cysts complex"
+* #CystsComplex "Cysts complex"
     """
     Complex cysts have irregular or scalloped borders,
     thick walls, and some evidence
@@ -240,7 +240,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.breastcancer.org]
     """
 
-  * #CystsComplicated "Cysts complicated"
+* #CystsComplicated "Cysts complicated"
     """
     Complicated cysts are 'in between' simple and complex.
     Although they share most of the features of simple
@@ -253,7 +253,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.breastcancer.org]
     """
 
-  * #CystsMicroClustered "Cysts micro clustered"
+* #CystsMicroClustered "Cysts micro clustered"
     """
     Microcysts are tiny, microscopic cysts.
     Clustered microcysts are a cluster of these tiny
@@ -262,7 +262,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 399935008 | Ductal carcinoma in situ - category (Morphologic-Abnormality)
-  * #DCIS "DCIS"
+* #DCIS "DCIS"
     """
     Ductal carcinoma in situ (DCIS) is the presence of
     abnormal cells inside a milk duct
@@ -274,7 +274,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.mayoclinic.org]
     """
 
-  * #Debris "Debris"
+* #Debris "Debris"
     """
     Debris is a substance that is anything other than
     a liquid inside of the cyst.
@@ -282,7 +282,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 39432004
   // .SnomedDescription PharmaceuticalBiologicProduct | Deodorant (Product)
-  * #Deodorant "Deodorant"
+* #Deodorant "Deodorant"
     """
     Because estrogen can promote the growth of breast
     cancer cells, some scientists have
@@ -295,7 +295,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.cancer.gov]
     """
 
-  * #DermalCalcification "Dermal calcification"
+* #DermalCalcification "Dermal calcification"
     """
     Skin calcifications in the breast usually form in
     dermal sweat glands after low grade
@@ -309,7 +309,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 22049009 | Mammary duct ectasia (Disorder) | [0/0] | N60.49
-  * #DuctEctasia "Duct ectasia"
+* #DuctEctasia "Duct ectasia"
     """
     An abnormal dilation of a duct by lipids and cellular
     debris.
@@ -322,7 +322,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 290077003
   // .SnomedDescription ClinicalFinding | Edema of breast (Finding)
-  * #Edema "Edema"
+* #Edema "Edema"
     """
     Breast edema is defined as a mammographic pattern
     of skin thickening, increased parenchymal
@@ -336,7 +336,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription no direct match possible fat necrosis?
-  * #FatLobule "Fat lobule"
+* #FatLobule "Fat lobule"
     """
     Fat Lobule.
     The normal breast is composed of numerous fat lobules
@@ -354,7 +354,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 21381006
   // .SnomedDescription ClinicalFinding | Fat necrosis of breast (Disorder)
-  * #FatNecrosis "Fat necrosis"
+* #FatNecrosis "Fat necrosis"
     """
     Breasts are made up of lobules (milk-producing glands)
     and ducts (tubes that carry
@@ -369,7 +369,7 @@ Description:  "ConsistentWith CodeSystem"
     [breastcancernow.org]
     """
 
-  * #Fibroadenolipoma "Fibroadenolipoma"
+* #Fibroadenolipoma "Fibroadenolipoma"
     """
     Another name for Hamartomas, Hamartomas represent
     benign proliferation of fibrous,
@@ -382,7 +382,7 @@ Description:  "ConsistentWith CodeSystem"
     [radiopaedia.org]
     """
 
-  * #Fibroadenoma "Fibroadenoma"
+* #Fibroadenoma "Fibroadenoma"
     """
     Fibroadenomas are common benign (non-cancerous) breast
     tumors made up of both glandular
@@ -394,7 +394,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.cancer.org]
     """
 
-  * #FibroadenomaDegenerating "Fibroadenoma degenerating"
+* #FibroadenomaDegenerating "Fibroadenoma degenerating"
     """
     These are non-cancerous breast lumps.
     Fibroadenomas usually go away with age.
@@ -404,7 +404,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 367647000
   // .SnomedDescription BodyStructure | Fibrocystic change
-  * #FibrocysticChange "Fibrocystic change"
+* #FibrocysticChange "Fibrocystic change"
     """
     Fibrocystic breast changes lead to the development
     of fluid-filled round or oval
@@ -417,7 +417,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.mayoclinic.org]
     """
 
-  * #FibroglandularTissue "Fibroglandular tissue"
+* #FibroglandularTissue "Fibroglandular tissue"
     """
     Fibrocystic breast changes lead to the development
     of fluid-filled round or oval
@@ -431,7 +431,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ???????????
-  * #Fibrosis "Fibrosis"
+* #Fibrosis "Fibrosis"
     """
     Fibrosis may refer to the connective tissue deposition
     that occurs as part of normal
@@ -442,7 +442,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.news-medical.net]
     """
 
-  * #FibrousRidge "Fibrous ridge"
+* #FibrousRidge "Fibrous ridge"
     """
     Fibrous tissue, which extends under the skin, from
     the front of the breast to the
@@ -455,7 +455,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 13600006 | Folliculitis (Disorder) | [6/113] | L73.9
-  * #Folliculitis "Folliculitis"
+* #Folliculitis "Folliculitis"
     """
     Folliculitis is the inflammation of hair follicles
     due to an infection, injury, or
@@ -469,7 +469,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.hopkinsmedicine.org]
     """
 
-  * #Gynecomastia "Gynecomastia"
+* #Gynecomastia "Gynecomastia"
     """
     Gynecomastia is an enlargement or swelling of breast
     tissue in males.
@@ -481,7 +481,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 51398009
   // .SnomedDescription BodyStructure | Hamartoma (Morphologic-Abnormality)
-  * #Hamartoma "Hamartoma"
+* #Hamartoma "Hamartoma"
     """
     A benign (not cancer) growth made up of an abnormal
     mixture of cells and tissues
@@ -492,7 +492,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 302924003
   // .SnomedDescription ClinicalFinding | Breast hematoma (Disorder) | N64.89
-  * #Hematoma "Hematoma"
+* #Hematoma "Hematoma"
     """
     A breast hematoma is a collection of blood that forms
     under the skin's surface.
@@ -505,7 +505,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.verywellhealth.com]
     """
 
-  * #HormonalStimulation "Hormonal stimulation"
+* #HormonalStimulation "Hormonal stimulation"
     """
     Hormonal effects of certain medications including
     antihypertensives, antidepressants,
@@ -516,7 +516,7 @@ Description:  "ConsistentWith CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
-  * #IntracysticLesion "Intracystic lesion"
+* #IntracysticLesion "Intracystic lesion"
     """
     Intracystic tumors of the breast are uncommon and,
     at the time of ultrasonography
@@ -526,7 +526,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 443159006 | Intramammary lymph node group (Bodypart)
-  * #IntramammaryNode "Intramammary node"
+* #IntramammaryNode "Intramammary node"
     """
     These are lymph  nodes within the breast tissue.
     They are generally 1 cm or smaller
@@ -544,7 +544,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 276891009
   // .SnomedDescription ClinicalFinding | Lipoma of breast (Disorder)
-  * #Lipoma "Lipoma"
+* #Lipoma "Lipoma"
     """
     A lipoma is a slow-growing, fatty lump that's most
     often situated between the skin
@@ -559,7 +559,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 261719000 | Breast cavity (Morphologic-Abnormality)
-  * #LumpectomyCavity "Lumpectomy cavity"
+* #LumpectomyCavity "Lumpectomy cavity"
     """
     With a lumpectomy, the surgeon removes only the tumor
     and a small amount of normal
@@ -570,13 +570,13 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 261719000 | Breast cavity (Morphologic-Abnormality)
-  * #LumpectomySite "Lumpectomy site"
+* #LumpectomySite "Lumpectomy site"
     """
     The area of the breast where the incision is made
     during the lumpectomy.
     """
 
-  * #LymphNode "Lymph node"
+* #LymphNode "Lymph node"
     """
     A small bean-shaped structure that is part of the
     body's immune system.
@@ -598,7 +598,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 274741002
   // .SnomedDescription ClinicalFinding | Generalized enlarged lymph nodes (Disorder) | [0/0] | R59.1
-  * #LymphNodeEnlarged "Lymph node enlarged"
+* #LymphNodeEnlarged "Lymph node enlarged"
     """
     Enlarged or swollen lymph nodes usually indicate
     a common infection, but can
@@ -611,7 +611,7 @@ Description:  "ConsistentWith CodeSystem"
     Swollen lymph nodes are also known as swollen glands.
     """
 
-  * #LymphNodeNormal "Lymph node normal"
+* #LymphNodeNormal "Lymph node normal"
     """
     Lymph nodes filter substances that travel through
     the lymphatic fluid, and they contain
@@ -629,7 +629,7 @@ Description:  "ConsistentWith CodeSystem"
     or 12mm).
     """
 
-  * #LymphNodePathological "Lymph node pathological"
+* #LymphNodePathological "Lymph node pathological"
     """
     Lymphadenopathy (or adenopathy) is, if anything,
     a broader term, referring to any
@@ -641,7 +641,7 @@ Description:  "ConsistentWith CodeSystem"
     [radiopaedia.org]
     """
 
-  * #MassSolid "Mass solid"
+* #MassSolid "Mass solid"
     """
     An abnormal mass of tissue that usually does not
     contain cysts or liquid areas.
@@ -656,7 +656,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.cancer.gov]
     """
 
-  * #MassSolidW/tumorVasc "Mass solid w/tumor vasc"
+* #MassSolidW/tumorVasc "Mass solid w/tumor vasc"
     """
     An abnormal mass of tissue that usually does not
     contain cysts or liquid areas.
@@ -681,7 +681,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 45198002 | Mastitis (Disorder) | [3/51] | P39.0 | Neonatal infective mastitis | N61 | Inflammatory disorders of breast |
-  * #Mastitis "Mastitis"
+* #Mastitis "Mastitis"
     """
     Infection of the breast tissue resulting in pain,
     swelling, warmth and redness.
@@ -690,7 +690,7 @@ Description:  "ConsistentWith CodeSystem"
   // .Dicom F-01765
   // .Snomed 129753004
   // .SnomedDescription ClinicalFinding | 129753004 | Milk of calcium radiographic calcification (Finding)
-  * #MilkOfCalcium "Milk of calcium"
+* #MilkOfCalcium "Milk of calcium"
     """
     The term milk of calcium (MOC) is given to dependent,
     sedimented calcification within
@@ -700,7 +700,7 @@ Description:  "ConsistentWith CodeSystem"
     [radiopaedia.org]
     """
 
-  * #Multi-focalCancer "Multi-focal cancer"
+* #Multi-focalCancer "Multi-focal cancer"
     """
     Multifocal breast cancer occurs when there are two
     or more tumors in the same breast.
@@ -711,7 +711,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription need help
-  * #PapillaryLesion "Papillary lesion"
+* #PapillaryLesion "Papillary lesion"
     """
     Breast papillary lesions are characterised by growth
     inside the milk ducts, and they
@@ -728,7 +728,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 99571000119102
   // .SnomedDescription ClinicalFinding | Papilloma of breast (Disorder)
-  * #Papilloma "Papilloma"
+* #Papilloma "Papilloma"
     """
     Intraductal papillomas are benign (non-cancerous),
     wart-like tumors that grow within
@@ -740,7 +740,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 712989008 | Phyllodes tumor of breast (Disorder) | D48.6 |
-  * #PhyllodesTumor "Phyllodes tumor"
+* #PhyllodesTumor "Phyllodes tumor"
     """
     Phyllodes tumors of the breast are rare, accounting
     for less than 1% of all breast
@@ -765,7 +765,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
-  * #PostLumpectomyScar "Post lumpectomy scar"
+* #PostLumpectomyScar "Post lumpectomy scar"
     """
     This is scarring that occurs from the lumpectomy
     site.
@@ -784,7 +784,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription BodyStructure | 63130001 | Surgical scar (Morphologic-Abnormality)
-  * #PostSurgicalScar "Post surgical scar"
+* #PostSurgicalScar "Post surgical scar"
     """
     Post surgical scarring happens because of the incisions
     needed to surgically remove
@@ -794,20 +794,20 @@ Description:  "ConsistentWith CodeSystem"
     Surgical scar care should be continued for a year.
     """
 
-  * #PreviousBiopsy "Previous biopsy"
+* #PreviousBiopsy "Previous biopsy"
     """
     Findings on mammogram are  consistent with previous
     biopsy.
     """
 
-  * #PreviousSurgery "Previous surgery"
+* #PreviousSurgery "Previous surgery"
     """
     Findings on mammogram are consistent with previous
     surgery.
     """
 
   // .SnomedDescription ClinicalFinding | 62112002 | Injury of breast (Disorder) | [4/41] | S29.9XX?
-  * #PreviousTrauma "Previous trauma"
+* #PreviousTrauma "Previous trauma"
     """
     Findings on mammogram are consistent with previous
     trauma to breast.
@@ -815,7 +815,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 390787006
   // .SnomedDescription ClinicalFinding | Radial scar of breast (Finding)
-  * #RadialScar "Radial scar"
+* #RadialScar "Radial scar"
     """
     Radial scar is a growth that looks like a scar when
     the tissue is viewed under a
@@ -833,7 +833,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 143501000119107
   // .SnomedDescription SituationWithExplicitContext  | History of radiation therapy to breast area (Situation)
-  * #RadiationChanges "Radiation changes"
+* #RadiationChanges "Radiation changes"
     """
     Radiation levels during radiation therapy may change
     as a result of side effects
@@ -842,7 +842,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 429479009
   // .SnomedDescription SituationWithExplicitContext | History of radiation therapy (Situation)
-  * #RadiationTherapy "Radiation therapy"
+* #RadiationTherapy "Radiation therapy"
     """
     The use of high-energy radiation from x-rays, gamma
     rays, neutrons, protons, and
@@ -860,7 +860,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.cancer.gov]
     """
 
-  * #Scar "Scar"
+* #Scar "Scar"
     """
     Scar tissue forms as part of the healing process
     after a skin injury.
@@ -869,7 +869,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.breastcancer.org]
     """
 
-  * #ScarWithShadowing "Scar with shadowing"
+* #ScarWithShadowing "Scar with shadowing"
     """
     In cases when the appropriate history is not available,
     a postsurgical scar may mimic
@@ -882,7 +882,7 @@ Description:  "ConsistentWith CodeSystem"
     onlinelibrary.wiley.com > doi > full > jum.2004.23.1.73
     """
 
-  * #SclerosingAdenosis "Sclerosing adenosis"
+* #SclerosingAdenosis "Sclerosing adenosis"
     """
     Sclerosing adenosis is a type of adenosis in which
     enlarged acini become slightly
@@ -893,7 +893,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ??????????????
-  * #SecretoryCalcification "Secretory calcification"
+* #SecretoryCalcification "Secretory calcification"
     """
     Secretory calcifications are benign calcifications
     usually in women older than 60.
@@ -904,7 +904,7 @@ Description:  "ConsistentWith CodeSystem"
     [radiopaedia.org]
     """
 
-  * #SentinelNode "Sentinel node"
+* #SentinelNode "Sentinel node"
     """
     The sentinel nodes are the first few lymph nodes
     into which a tumor drains.
@@ -918,7 +918,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 297178008
   // .SnomedDescription ClinicalFinding | Breast seroma (Disorder)
-  * #Seroma "Seroma"
+* #Seroma "Seroma"
     """
     A breast seroma is a collection (pocket) of serous
     fluid that can develop after trauma
@@ -932,7 +932,7 @@ Description:  "ConsistentWith CodeSystem"
 
   // .Snomed 126510002
   // .SnomedDescription ClinicalFinding | Neoplasm of skin of breast (Disorder)
-  * #SkinLesion "Skin lesion"
+* #SkinLesion "Skin lesion"
     """
     A skin lesion is a part of the skin that has an abnormal
     growth or appearance compared
@@ -945,7 +945,7 @@ Description:  "ConsistentWith CodeSystem"
     [www.healthline.com]
     """
 
-  * #Surgery "Surgery"
+* #Surgery "Surgery"
     """
     The branch of medicine that employs operations in
     the treatment of disease or injury.
@@ -956,14 +956,14 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 62112002 | Injury of breast (Disorder)
-  * #Trauma "Trauma"
+* #Trauma "Trauma"
     """
     Previous injury to breast consistent with surgery,
     infection, etc.
     """
 
   // .SnomedDescription ClinicalFinding | 396779001 | Breast arterial calcification (Finding) | [0/0] | R92.1
-  * #VascularCalcifications "Vascular calcifications"
+* #VascularCalcifications "Vascular calcifications"
     """
     Parallel tracks, or linear tubular calcifications
     that are clearly associated with
@@ -981,7 +981,7 @@ Description:  "ConsistentWith CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 71897006 | Venous stasis (Finding) | [0/0] | I87.8
-  * #VenousStasis "Venous stasis"
+* #VenousStasis "Venous stasis"
     """
     Venous stasis dermatitis happens when there's a problem
     with the veins, that keeps

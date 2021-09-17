@@ -1,7 +1,7 @@
 /*
   Shape Components Fragment
   Adds Orientation, Shape, Margin, and Density Components
-  */
+*/
   
 #Fragment: Observation.Component.ShapeFragment
 #Parent: Observation

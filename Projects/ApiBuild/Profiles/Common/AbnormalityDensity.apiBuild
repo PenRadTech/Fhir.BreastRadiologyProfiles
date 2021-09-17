@@ -2,7 +2,7 @@
   "implementFragment" : {
     "className" : "AbnormalityDensity",
     "fragmentName" : "BreastBodyLocationRequiredFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#49/nProfiles/Common/AbnormalityDensity.mfsh#21/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.BreastBodyLocationRequiredFragment.minc#50/nProfiles/Common/AbnormalityDensity.mfsh#21/n"
   }
 },
 {

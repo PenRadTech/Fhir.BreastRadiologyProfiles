@@ -1,7 +1,7 @@
 ValueSet:  NotPreviouslySeenVS
 Title: "NotPreviouslySeen ValueSet"
 Description:  "NotPreviouslySeen Value Set"
-  * codes from system NotPreviouslySeenCS
+* codes from system NotPreviouslySeenCS
 
 
 
@@ -9,13 +9,13 @@ Description:  "NotPreviouslySeen Value Set"
 CodeSystem:  NotPreviouslySeenCS
 Title: "NotPreviouslySeen CodeSystem"
 Description:  "NotPreviouslySeen CodeSystem"
-  * #ClinicalExam "Clinical exam"
+* #ClinicalExam "Clinical exam"
     """
     Not previously seen on clinical exam.
     """
 
   // .SnomedDescription Procedure | 420131003 | Fluoroscopic mammary ductography (Procedure)
-  * #Ductogram "Ductogram"
+* #Ductogram "Ductogram"
     """
     Breast ductography (a.k.a.
     galactography) is an imaging technique which is used
@@ -30,14 +30,14 @@ Description:  "NotPreviouslySeen CodeSystem"
     [radiopaedia.org]
     """
 
-  * #Mammogram "Mammogram"
+* #Mammogram "Mammogram"
     """
     A mammogram is an X-Ray picture of the breast.
     It is used to look for early signs of breast cancer.
     """
 
   // .SnomedDescription Procedure | 241615005 | Magnetic resonance imaging of breast (Procedure)
-  * #MRI "MRI"
+* #MRI "MRI"
     """
     Magnetic Resonance Imaging (MRI) is a test that uses
     powerful magnets, radio waves,
@@ -45,13 +45,13 @@ Description:  "NotPreviouslySeen CodeSystem"
     body.
     """
 
-  * #OutsideExam "Outside exam"
+* #OutsideExam "Outside exam"
     """
     The findings on the Mammogram were not previously
     seen on the outside exam.
     """
 
-  * #Scintimammography "Scintimammography"
+* #Scintimammography "Scintimammography"
     """
     This is a type of breast imaging that is used to
     detect cancer cells in the breasts
@@ -59,7 +59,7 @@ Description:  "NotPreviouslySeen CodeSystem"
     """
 
   // .SnomedDescription Procedure | 47079000 | Ultrasonography of breast (Procedure)
-  * #Ultrasound "Ultrasound"
+* #Ultrasound "Ultrasound"
     """
     Uses soundwaves to develop ultrasound images.
     This information is relayed in real time to produce

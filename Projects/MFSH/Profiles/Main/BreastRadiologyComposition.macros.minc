@@ -1,30 +1,30 @@
 #macro once StartSectionSlicing()
-  * section ^slicing.discriminator.type = #pattern
-  * section ^slicing.discriminator.path = "code"
-  * section ^slicing.rules = #open
-  * section ^slicing.ordered = false
-  * section ^slicing.description = """
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section ^slicing.ordered = false
+* section ^slicing.description = """
     Breast Radiology Report Section
     """
 #end
 
   /*
    Composition section for Breast Radiology Report.
-   */
+ */
 #macro ReportSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section references the Breast Radiology Report.
 
     One and only one Breast Radiology Report must be included in this section.
   """
-  * section[SliceName] ^short = "Report Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#report
-  * section[SliceName].title = "Breast Radiology Report"
+* section[SliceName] ^short = "Report Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#report
+* section[SliceName].title = "Breast Radiology Report"
 
-  * section[SliceName].entry 1..1
-  * section[SliceName].entry only Reference(BreastRadiologyReport)
-  * section[SliceName].entry ^short = "Breast Radiology Report reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 1..1
+* section[SliceName].entry only Reference(BreastRadiologyReport)
+* section[SliceName].entry ^short = "Breast Radiology Report reference"
+* section[SliceName].entry ^definition = """
     Reference to the Breast Radiology Report.
 	"""
 
@@ -39,20 +39,20 @@
 
   /*
    Composition section for Impressions.
-   */
+ */
 #macro ImpressionsSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section contains references to the report's clinical impressions.
     """
-  * section[SliceName] ^short = "Clinical Impressions Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#report
-  * section[SliceName].title = "Clinical Impressions"
+* section[SliceName] ^short = "Clinical Impressions Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#report
+* section[SliceName].title = "Clinical Impressions"
 
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(ClinicalImpression)
-  * section[SliceName].entry ^short = "Clinical Impression reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(ClinicalImpression)
+* section[SliceName].entry ^short = "Clinical Impression reference"
+* section[SliceName].entry ^definition = """
     Reference to the clinical impression(s).
     """
 
@@ -73,18 +73,18 @@
  Composition section for Left Breast Findings.
  */
 #macro FindingsLeftBreastSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the left breast.
   """
-  * section[SliceName] ^short = "Findings Left Breast Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#findingsLeftBreast
-  * section[SliceName].title = "Findings Left Breast Section"
+* section[SliceName] ^short = "Findings Left Breast Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#findingsLeftBreast
+* section[SliceName].title = "Findings Left Breast Section"
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(FindingsLeftBreast)
-  * section[SliceName].entry ^short = "Finding Left breast reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(FindingsLeftBreast)
+* section[SliceName].entry ^short = "Finding Left breast reference"
+* section[SliceName].entry ^definition = """
   Reference to the finding for the Left breast.
   """
 
@@ -105,18 +105,18 @@
   Composition section for Right Breast Findings.
  */
 #macro FindingsRightBreastSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section contains references to the report's findings 
     for the right breast.
   """
-  * section[SliceName] ^short = "Findings Right Breast Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#findingsRightBreast
-  * section[SliceName].title = "Findings Right Breast Section"
+* section[SliceName] ^short = "Findings Right Breast Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#findingsRightBreast
+* section[SliceName].title = "Findings Right Breast Section"
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(FindingsRightBreast)
-  * section[SliceName].entry ^short = "Finding Right breast reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(FindingsRightBreast)
+* section[SliceName].entry ^short = "Finding Right breast reference"
+* section[SliceName].entry ^definition = """
   Reference to the finding for the Right breast.
   """
 
@@ -137,18 +137,18 @@
  Composition section for BiLateral Breast Findings.
  */
 #macro FindingsBiLateralBreastSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section contains references to the report's findings 
     that are common to both breasts.
   """
-  * section[SliceName] ^short = "Findings BiLateral Breast Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
-  * section[SliceName].title = "Findings BiLateral Breast Section"
+* section[SliceName] ^short = "Findings BiLateral Breast Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
+* section[SliceName].title = "Findings BiLateral Breast Section"
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(FindingsBiLateralBreast)
-  * section[SliceName].entry ^short = "Finding BiLateral breast reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(FindingsBiLateralBreast)
+* section[SliceName].entry ^short = "Finding BiLateral breast reference"
+* section[SliceName].entry ^definition = """
   Reference to the finding common to both breasts.
   """
 
@@ -166,9 +166,9 @@
 
   /*
    Composition section for Related Resources.
-   */
+ */
 #macro RelatedResourcesSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     References to FHIR clinical resources used during the exam or referenced by this report.
 
 	Fhir resources that are related to this report, but dont fit into any of the other defined sections
@@ -176,14 +176,14 @@
 	to be referenced by this report to be included without being constrained by only including
 	those resourced that fit into the other defined sections.
   """
-  * section[SliceName] ^short = "Related Clinical Resources Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#relatedResources
-  * section[SliceName].title = "Related Clinical Resources Section."
+* section[SliceName] ^short = "Related Clinical Resources Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#relatedResources
+* section[SliceName].title = "Related Clinical Resources Section."
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(RESOURCEURL)
-  * section[SliceName].entry ^short = "Finding Right breast reference"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(RESOURCEURL)
+* section[SliceName].entry ^short = "Finding Right breast reference"
+* section[SliceName].entry ^definition = """
   Reference to related resources.
   """
 
@@ -202,20 +202,20 @@
 
   /*
    Composition section for recommendations.
-   */
+ */
 #macro RecommendationsSection(SliceName) 
-  * section[SliceName] ^definition = """
+* section[SliceName] ^definition = """
     This section contains references to recommended actions 
 	taken in response to the observations and findings of this report.
   """
-  * section[SliceName] ^short = "Recommendation/Follow up Resources Section."
-  * section[SliceName].code = CompositionSectionSliceCodesCS#recommendations
-  * section[SliceName].title = "Recommendations Section."
+* section[SliceName] ^short = "Recommendation/Follow up Resources Section."
+* section[SliceName].code = CompositionSectionSliceCodesCS#recommendations
+* section[SliceName].title = "Recommendations Section."
 
-  * section[SliceName].entry 0..*
-  * section[SliceName].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
-  * section[SliceName].entry ^short = "Recommendation resources"
-  * section[SliceName].entry ^definition = """
+* section[SliceName].entry 0..*
+* section[SliceName].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
+* section[SliceName].entry ^short = "Recommendation resources"
+* section[SliceName].entry ^definition = """
   Reference to any recommendations.
   """
 

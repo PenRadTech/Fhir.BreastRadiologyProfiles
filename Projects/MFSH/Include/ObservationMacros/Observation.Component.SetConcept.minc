@@ -2,9 +2,9 @@
   Constrain a  component slice value.
  */
 #macro Observation.Component.SetConcept(SliceName, Cardinality, ValueSet)
-  * component[SliceName].value[x] Cardinality
-  * component[SliceName].value[x] only CodeableConcept
-  * component[SliceName].value[x] from ValueSet
+* component[SliceName].value[x] Cardinality
+* component[SliceName].value[x] only CodeableConcept
+* component[SliceName].value[x] from ValueSet
 
   #// -----------------------------------------
   #// Graph Macros

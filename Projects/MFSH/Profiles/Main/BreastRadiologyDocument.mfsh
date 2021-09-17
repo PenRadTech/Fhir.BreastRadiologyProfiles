@@ -7,15 +7,15 @@ Description: """
 
   #apply HeaderFragment()
 
-  * entry ^slicing.discriminator.type = #value
-  * entry ^slicing.discriminator.path = "fullUrl"
-  * entry ^slicing.rules = #open
-  * entry ^slicing.ordered = false
-  * entry ^slicing.description = "Index composition slice"
-  * entry contains index 1..1
-  * entry[index].fullUrl = "index"
-  * entry[index].resource 1..1
-  * entry[index].resource only BreastRadiologyComposition
+* entry ^slicing.discriminator.type = #value
+* entry ^slicing.discriminator.path = "fullUrl"
+* entry ^slicing.rules = #open
+* entry ^slicing.ordered = false
+* entry ^slicing.description = "Index composition slice"
+* entry contains index 1..1
+* entry[index].fullUrl = "index"
+* entry[index].resource 1..1
+* entry[index].resource only BreastRadiologyComposition
 
 
   #// -----------------------------------------

@@ -5,8 +5,8 @@
  
 #macro Observation.Value.Zero()
   #apply Observation.Fragment()
-  * dataAbsentReason 0..0
-  * value[x] 0..0
-  * interpretation 0..0
-  * referenceRange 0..0
+* dataAbsentReason 0..0
+* value[x] 0..0
+* interpretation 0..0
+* referenceRange 0..0
 #end

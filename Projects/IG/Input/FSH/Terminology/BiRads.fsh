@@ -4,7 +4,7 @@
 ValueSet:  BiRadsAssessmentCategoryVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
-  * codes from system BiRadsAssessmentCategoryCS
+* codes from system BiRadsAssessmentCategoryCS
 
 
 
@@ -17,7 +17,7 @@ Title: "BiRads Assessment Category CodeSystem"
 Description:  "BiRads Assessment Category CodeSystem"
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
 
-  * #Category0 "Category 0 (Incomplete)"
+* #Category0 "Category 0 (Incomplete)"
     """
     Need additional Imaging Evaluation and/or prior Mammograms
     for comparison.
@@ -26,14 +26,14 @@ Description:  "BiRads Assessment Category CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
-  * #Category1 "Category 1 (Negative)"
+* #Category1 "Category 1 (Negative)"
     """
     Routine mammography screening Essentially 0% likelihood of malignancy 
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
   // .SnomedDescription ClinicalFinding | 397141009 | Mammography assessment (Category 2)
-  * #Category2 "Category 2 (Benign)"
+* #Category2 "Category 2 (Benign)"
     """
     This is a normal assessment.
     Benign refers to a condition, tumor, or growth that
@@ -46,7 +46,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 397143007 | Mammography assessment (Category 3)
-  * #Category3 "Category 3 (Probably Benign)"
+* #Category3 "Category 3 (Probably Benign)"
     """
     A finding assessed using this category should have
     a <= 2% likelihood of malignancy,
@@ -65,7 +65,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 397144001 | Mammography assessment (Category 4)
-  * #Category4 "Category 4 (Suspicious)"
+* #Category4 "Category 4 (Suspicious)"
     """
     This category is reserved for findings that do not
     have the classic appearance of
@@ -80,7 +80,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription Not found
-  * #Category4A "Category 4A (Low suspicion)"
+* #Category4A "Category 4A (Low suspicion)"
     """
     Low suspicion for malignancy.
     A malignant finding is not suspected.
@@ -95,7 +95,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription Not found
-  * #Category4B "Category 4B (Moderate suspicion)"
+* #Category4B "Category 4B (Moderate suspicion)"
     """
     Category 4B: Moderate suspicion for malignancy.
     It warrants radiologic and pathologic correlation
@@ -107,7 +107,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription Not found
-  * #Category4C "Category 4C (High suspicion)"
+* #Category4C "Category 4C (High suspicion)"
     """
     Category 4C: High suspicion for
     malignancy.
@@ -122,7 +122,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     """
 
   // .SnomedDescription ClinicalFinding | 397145000 | Mammography assessment (Category 5)
-  * #Category5 "Category 5 (Highly Suggestive of Malignancy)"
+* #Category5 "Category 5 (Highly Suggestive of Malignancy)"
     """
     Highly Suggestive of Malignancy.
     Almost certainly predictive of breast cancer with
@@ -132,7 +132,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
-  * #Category6 "Category 6 (Known Biopsy-Proven Malignancy)"
+* #Category6 "Category 6 (Known Biopsy-Proven Malignancy)"
     """
     Known Biopsy-Proven Malignancy.
     Surgical excision when clinically
@@ -145,7 +145,7 @@ Description:  "BiRads Assessment Category CodeSystem"
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition]
     """
 
-  * #Other "Other (Non BiRads Code) used"
+* #Other "Other (Non BiRads Code) used"
     """
 	This is used when the code that needs to be entered is a non BiRads code.
 	This should not be used for a Breast Exam where a BiRads code is required. When this code

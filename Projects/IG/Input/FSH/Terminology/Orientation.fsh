@@ -1,7 +1,7 @@
 ValueSet:  OrientationVS
 Title: "Orientation ValueSet"
 Description:  "Orientation Value Set"
-  * codes from system OrientationCS
+* codes from system OrientationCS
 
 
 
@@ -9,17 +9,17 @@ Description:  "Orientation Value Set"
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
-  * #ParallelToSkin "Parallel to skin"
+* #ParallelToSkin "Parallel to skin"
     """
     The lesion/mass is oriented parellel to skin.
     """
 
-  * #PerpendicularToSkin "Perpendicular to skin (not parallel)"
+* #PerpendicularToSkin "Perpendicular to skin (not parallel)"
     """
     The lesion/mass is oriented perpendicular to skin.
     """
 
-  * #TallerThanWide "Taller than wide"
+* #TallerThanWide "Taller than wide"
     """
     The nodule is taller than wide.
     A nodule is said to be taller than wide when it is
@@ -27,7 +27,7 @@ Description: "Orientation CodeSystem"
     in the parallel ones.
     """
 
-  * #WiderThanTall "Wider than tall"
+* #WiderThanTall "Wider than tall"
     """
     The nodule is wider than tall.
     A nodule is said to be wider than tall when it is
