@@ -8,6 +8,8 @@ Description: "Duct Type Value Set"
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Type CodeSystem"
 Description: "Duct types code system."
+* ^caseSensitive = false
+
 * #DuctNormal "Duct normal"
     """
     Duct is considered normal.

@@ -9,6 +9,8 @@ Description:  "LymphNode Type Value Set"
 CodeSystem: AbnormalityLymphNodeTypeCS
 Title: "Lymph Node Type CodeSystem"
 Description: "Lymph node types code system."
+* ^caseSensitive = false
+
 * #NodeAxillary "Node axillary"
     """
     The axillary nodes are a group of lymph nodes located

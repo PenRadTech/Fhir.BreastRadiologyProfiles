@@ -18,6 +18,8 @@ Description:  "BiRadsBreastComposition Value Set"
 CodeSystem: BiRadsBreastCompositionCS
 Title: "Breast Composition CodeSystem"
 Description: "Breast composition values code system."
+#apply CodeSystem.Common()
+
 * #AlmostEntirelyFat "(a) Almost entirely fat"
     """
     A term used to describe breast tissue that is made

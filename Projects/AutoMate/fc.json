@@ -1,0 +1,15 @@
+{
+  "BaseInputDir": "inputDir",
+  "BaseOutputDir": "outputDir",
+  "CleanDirs": [
+    {
+      "CleanPath": "cleanPath",
+      "CleanFilter": "*.cs"
+    }
+  ],
+  "FcPaths": [
+    "fcPath1",
+    "fcPath2"
+  ],
+  "NameSpace": "namespace"
+}

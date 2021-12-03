@@ -1,0 +1,8 @@
+/*
+ Observation.Fragment
+ constraints used in all breast radiology observations.
+*/
+ 
+#macro CodeSystem.Common()
+* ^caseSensitive = false
+#end

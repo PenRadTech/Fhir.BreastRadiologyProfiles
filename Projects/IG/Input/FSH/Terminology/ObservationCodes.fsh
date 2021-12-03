@@ -1,6 +1,8 @@
 CodeSystem: ObservationCodesCS
 Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
+* ^caseSensitive = false
+
 * #mgFindingObservation "MG Finding observation"
     """
     Observation.code to identify an MGFinding observation.

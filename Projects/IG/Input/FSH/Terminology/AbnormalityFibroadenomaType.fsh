@@ -7,6 +7,8 @@ Description:  "FibroAdenoma Type Value Set"
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"
 Description: "Fibroadenoma  type code system."
+* ^caseSensitive = false
+
 * #Fibroadenoma "Fibroadenoma"
     """
     A fibroadenoma is a benign, or noncancerous, breast

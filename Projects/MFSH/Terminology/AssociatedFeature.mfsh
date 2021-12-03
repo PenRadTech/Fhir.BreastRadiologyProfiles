@@ -16,6 +16,8 @@ Description:  "AssociatedFeature Value Set"
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
+#apply CodeSystem.Common()
+
 * #ArchitecturalDistortion "Architectural distortion"
     """
     Many breast masses are found within the zone of fibroglandular

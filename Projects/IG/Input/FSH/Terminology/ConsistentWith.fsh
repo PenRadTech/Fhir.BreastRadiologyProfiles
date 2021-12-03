@@ -16,6 +16,8 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
+* ^caseSensitive = false
+
 * #Abscess "Abscess"
     """
     An area within the body tissue that is swollen and

@@ -9,6 +9,8 @@ Description:  "Mass Type Value Set"
 CodeSystem:  AbnormalityMassTypeCS
 Title: "Mass Type CodeSystem"
 Description:  "Mass Type CodeSystem"
+* ^caseSensitive = false
+
 * #Mass "Mass"
 
   // .SnomedDescription ClinicalFinding | 369753003 | Intraductal tumor configuration (Finding)

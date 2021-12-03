@@ -9,6 +9,8 @@ Description:  "NotPreviouslySeen Value Set"
 CodeSystem:  NotPreviouslySeenCS
 Title: "NotPreviouslySeen CodeSystem"
 Description:  "NotPreviouslySeen CodeSystem"
+* ^caseSensitive = false
+
 * #ClinicalExam "Clinical exam"
     """
     Not previously seen on clinical exam.

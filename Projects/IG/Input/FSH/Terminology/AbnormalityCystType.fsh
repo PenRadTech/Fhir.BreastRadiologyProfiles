@@ -9,6 +9,8 @@ Description: "Cyst type Value Set."
 CodeSystem: AbnormalityCystTypeCS
 Title: "Cyst Type CodeSystem"
 Description: "Cyst type CodeSystem."
+* ^caseSensitive = false
+
 * #Cyst "Cyst"
     """
     A cyst is a sac-like pocket of membranous tissue

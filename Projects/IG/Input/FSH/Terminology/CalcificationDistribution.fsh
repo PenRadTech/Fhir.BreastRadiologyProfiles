@@ -10,6 +10,8 @@ Description:  "CalcificationDistribution Value Set"
 CodeSystem: CalcificationDistributionCS
 Title: "Calcification Distribution CodeSystem"
 Description: "Calcification Distribution in an abnormality code system."
+* ^caseSensitive = false
+
 * #ClusteredDistribution "Clustered distribution"
     """
     Grouped (historically, 'clustered')

@@ -8,6 +8,8 @@ Description:  "Asymmetry Type Value Set"
 CodeSystem: AbnormalityAsymmetryTypeCS
 Title: "Asymmetry Type CodeSystem"
 Description: "Asymmetry type code system."
+* ^caseSensitive = false
+
 * #Asymmetry "Asymmetry"
     """
     Breast asymmetry refers to when one breast is a different

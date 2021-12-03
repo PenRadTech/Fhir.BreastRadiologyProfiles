@@ -15,6 +15,8 @@ Description:  "BiRads Assessment Category Value Set"
 CodeSystem:  BiRadsAssessmentCategoryCS
 Title: "BiRads Assessment Category CodeSystem"
 Description:  "BiRads Assessment Category CodeSystem"
+* ^caseSensitive = false
+
   // .SnomedDescription ClinicalFinding | 397138000 | Mammography assessment (Category 0)
 
 * #Category0 "Category 0 (Incomplete)"

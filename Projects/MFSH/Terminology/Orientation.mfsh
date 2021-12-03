@@ -18,6 +18,8 @@ Description:  "Orientation Value Set"
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
+#apply CodeSystem.Common()
+
 * #ParallelToSkin "Parallel to skin"
     """
     The lesion/mass is oriented parellel to skin.

@@ -9,6 +9,8 @@ Description:  "Orientation Value Set"
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
+* ^caseSensitive = false
+
 * #ParallelToSkin "Parallel to skin"
     """
     The lesion/mass is oriented parellel to skin.

@@ -9,6 +9,8 @@ Description:  "Margin Value Set"
 CodeSystem: MarginCS
 Title: "Margin CodeSystem"
 Description: "Margin code system."
+* ^caseSensitive = false
+
 * #AngularMargin "Angular margin"
     """
     Some or all of the margin has sharp corners, often

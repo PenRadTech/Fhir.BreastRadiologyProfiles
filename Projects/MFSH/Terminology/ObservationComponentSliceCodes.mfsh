@@ -1,6 +1,8 @@
 CodeSystem: ObservationComponentSliceCodesCS
 Title: "Component Slice Codes CodeSystem"
 Description: "Component Slice Codes code system"
+#apply CodeSystem.Common()
+
 * #abnormalityCystType "Component code for 'Cyst Type' slice"
     """
     Code to identify the component slice AbnormalityCystType.

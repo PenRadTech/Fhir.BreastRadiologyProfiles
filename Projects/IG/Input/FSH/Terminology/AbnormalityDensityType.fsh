@@ -8,6 +8,8 @@ Description:  "Density Type Value Set"
 CodeSystem: AbnormalityDensityTypeCS
 Title: "Density Type CodeSystem"
 Description: "Density refinement types code system."
+* ^caseSensitive = false
+
 * #Density "Density"
     """
     The density types are referring to the amount of

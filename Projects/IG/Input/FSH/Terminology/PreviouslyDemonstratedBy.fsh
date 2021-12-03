@@ -9,6 +9,8 @@ Description:  "PreviouslyDemonstratedBy Value Set"
 CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
 Description:  "PreviouslyDemonstratedBy CodeSystem"
+* ^caseSensitive = false
+
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure) | [0/0] |
 * #Aspiration "Aspiration"
     """

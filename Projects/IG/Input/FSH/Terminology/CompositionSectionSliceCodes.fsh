@@ -1,6 +1,8 @@
 CodeSystem: CompositionSectionSliceCodesCS
 Title: "Composition Section Slice Codes CodeSystem"
 Description: "Composition Section Slice Codes code system"
+* ^caseSensitive = false
+
 * #report "Code to identify the 'Report' section slice"
     """
     Slicing CompositionSection Code - Report.

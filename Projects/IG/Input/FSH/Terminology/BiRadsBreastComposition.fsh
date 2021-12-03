@@ -9,6 +9,8 @@ Description:  "BiRadsBreastComposition Value Set"
 CodeSystem: BiRadsBreastCompositionCS
 Title: "Breast Composition CodeSystem"
 Description: "Breast composition values code system."
+* ^caseSensitive = false
+
 * #AlmostEntirelyFat "(a) Almost entirely fat"
     """
     A term used to describe breast tissue that is made

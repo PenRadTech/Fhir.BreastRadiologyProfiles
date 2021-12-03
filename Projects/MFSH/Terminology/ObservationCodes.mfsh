@@ -1,6 +1,8 @@
 CodeSystem: ObservationCodesCS
 Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
+#apply CodeSystem.Common()
+
 * #mgFindingObservation "MG Finding observation"
     """
     Observation.code to identify an MGFinding observation.
