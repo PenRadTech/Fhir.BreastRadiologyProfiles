@@ -86,9 +86,9 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="680.23" y1="16.88" x2="740.23" y2="16.88" />
-<text x="683.98" y="13.12" text-anchor="right" class="lhsText">1..1</text>
+<text x="683.98" y="13.12" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="680.23" y1="50.62" x2="740.23" y2="50.62" />
-<text x="683.98" y="46.88" text-anchor="right" class="lhsText">1..*</text>
+<text x="683.98" y="46.88" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="680.23" y1="84.38" x2="740.23" y2="84.38" />
 <text x="683.98" y="80.62" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="650.23" y1="16.88" x2="680.23" y2="16.88" />
@@ -114,7 +114,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="903.99" y1="50.62" x2="963.99" y2="50.62" />
-<text x="907.74" y="46.88" text-anchor="right" class="lhsText">1..1</text>
+<text x="907.74" y="46.88" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="873.99" y1="50.62" x2="903.99" y2="50.62" />
 <line class="connector" x1="903.99" y1="50.62" x2="903.99" y2="50.62" />
 </g>

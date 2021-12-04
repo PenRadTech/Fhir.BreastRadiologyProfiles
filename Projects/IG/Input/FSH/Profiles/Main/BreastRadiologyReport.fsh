@@ -27,11 +27,20 @@ Description: """
 * conclusionCode ^slicing.ordered = false
 * conclusionCode ^slicing.description = "ConclusionCode slicing"
 
-* conclusionCode contains BiRads 1..1
+* conclusionCode contains BiRads 0..1
 * conclusionCode[BiRads] ^short = "BiRads assessment value."
 * conclusionCode[BiRads] ^definition = """
     A required summary conclusion of the breast radiology report. Typically this is the most severe BiRads code
     found in either of the right or left breast observation sections.
+	In general, it is expected that a BiRads conclusion code will be included, though there are cases 
+	where a BiRads conclusion code can not be included.
+	
+	In these cases the actual non-BiRads code will be found in a separate slice of the FHIR CodeableConcept element
+	that contains this value or alternately (though not preferred) described in the text section of the report.
+
+	An example of this being used: A procedure is performed to implant a surgical marker. There is no BiRads code
+	associated with this completion of the procedure, though regulation may require a specific non Birads 
+	code to be used to descibe the completion of this procedure.
     """
 * conclusionCode[BiRads] from BiRadsAssessmentCategoryVS
 
