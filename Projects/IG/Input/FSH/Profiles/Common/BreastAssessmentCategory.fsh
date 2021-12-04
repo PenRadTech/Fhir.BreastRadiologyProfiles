@@ -7,7 +7,7 @@ Description: """
 * code = ObservationCodesCS#breastAssessmentCategoryObservation
 * code 1..1
 * value[x] 1..1
-* value[x] from BiRadsAssessmentCategoryVS
+* value[x] from BreastAssessmentCategoryVS
 * value[x] only CodeableConcept
 * hasMember 0..0
 * category ^slicing.discriminator.type = #pattern

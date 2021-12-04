@@ -1,14 +1,8 @@
 /*
   Value set for ACR birads codes.
 */
-ValueSet:  BiRadsAssessmentCategoryVS
+ValueSet:  BiRadsAssessmentCategory
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
 * include codes from system $SCT where concept descendent-of #397137005 "Mammography assessment finding (finding)"
-
-  #// -----------------------------------------
-  #// IG Macros
-  #// -----------------------------------------
-  #use IG
-    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
-  #end
+* $SCT#470272007 "Implantable lesion localization marker (Object)"

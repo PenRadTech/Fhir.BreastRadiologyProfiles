@@ -6,7 +6,7 @@ Description: """
     """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#breastAssessmentCategoryObservation", "Code")
-  #apply Resource.Bind("1", "1..1", "value[x]", "BiRadsAssessmentCategoryVS", "Value")
+  #apply Resource.Bind("1", "1..1", "value[x]", "BreastAssessmentCategoryVS", "Value")
 * value[x] only CodeableConcept
 
   #apply Observation.LeafFragment()
