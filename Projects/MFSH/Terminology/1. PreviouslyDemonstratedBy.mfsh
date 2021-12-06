@@ -19,7 +19,7 @@ Description:  "PreviouslyDemonstratedBy Value Set"
 CodeSystem:  PreviouslyDemonstratedByCS
 Title: "PreviouslyDemonstratedBy CodeSystem"
 Description:  "PreviouslyDemonstratedBy CodeSystem"
-#apply CodeSystem.Common()
+* insert CodeSystem_Common
 
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure) | [0/0] |
 * #Aspiration "Aspiration"

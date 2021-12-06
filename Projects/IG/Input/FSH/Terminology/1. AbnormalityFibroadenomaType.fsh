@@ -8,7 +8,7 @@ Description:  "FibroAdenoma Type Value Set"
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"
 Description: "Fibroadenoma  type code system."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Fibroadenoma "Fibroadenoma"
     """

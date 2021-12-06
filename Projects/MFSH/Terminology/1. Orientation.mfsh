@@ -19,7 +19,7 @@ Description:  "Orientation Value Set"
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
-#apply CodeSystem.Common()
+* insert CodeSystem_Common
 
 * #ParallelToSkin "Parallel to skin"
     """

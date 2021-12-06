@@ -18,7 +18,7 @@ Description:  "Mass Type Value Set"
 CodeSystem:  AbnormalityMassTypeCS
 Title: "Mass Type CodeSystem"
 Description:  "Mass Type CodeSystem"
-#apply CodeSystem.Common()
+* insert CodeSystem_Common
 
 * #Mass "Mass"
 

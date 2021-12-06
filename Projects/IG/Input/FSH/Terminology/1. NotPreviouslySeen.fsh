@@ -10,7 +10,7 @@ Description:  "NotPreviouslySeen Value Set"
 CodeSystem:  NotPreviouslySeenCS
 Title: "NotPreviouslySeen CodeSystem"
 Description:  "NotPreviouslySeen CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #ClinicalExam "Clinical exam"
     """

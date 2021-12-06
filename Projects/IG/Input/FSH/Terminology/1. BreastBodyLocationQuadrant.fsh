@@ -12,7 +12,7 @@ Description:  "Breast Body Location Quadrants Value Set"
 CodeSystem:  BreastBodyLocationQuadrantCS
 Title: "BreastBody Location Quadrants CodeSystem"
 Description:  "BreastBodyLocationQuadrants CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
   // .SnomedDescription BodyStructure | 19100000 | Structure of lower inner quadrant of breast (Bodypart)
 * #InferiorMedialQuadrant "Inferior medial quadrant (lower inner)"

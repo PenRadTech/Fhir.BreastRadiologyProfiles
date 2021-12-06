@@ -26,7 +26,7 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
-#apply CodeSystem.Common()
+* insert CodeSystem_Common
 
 * #Abscess "Abscess"
     """

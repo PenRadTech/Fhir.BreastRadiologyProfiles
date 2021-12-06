@@ -11,7 +11,7 @@ Description:  "Breast Body Location Regions Value Set"
 CodeSystem:  BreastBodyLocationRegionCS
 Title: "Breast Body Location Regions CodeSystem"
 Description:  "Breast Body Location Regions CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
   // .SnomedDescription BodyStructure | 416710001 | Skin and subcutaneous tissue structure of axilla
 * #Axilla "Axilla"

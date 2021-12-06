@@ -19,7 +19,7 @@ Description: "Cyst type Value Set."
 CodeSystem: AbnormalityCystTypeCS
 Title: "Cyst Type CodeSystem"
 Description: "Cyst type CodeSystem."
-#apply CodeSystem.Common()
+* insert CodeSystem_Common
 
 * #Cyst "Cyst"
     """

@@ -10,7 +10,7 @@ Description:  "Orientation Value Set"
 CodeSystem: OrientationCS
 Title: "Orientation CodeSystem"
 Description: "Orientation CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #ParallelToSkin "Parallel to skin"
     """

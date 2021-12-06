@@ -11,7 +11,7 @@ Description:  "CalcificationDistribution Value Set"
 CodeSystem: CalcificationDistributionCS
 Title: "Calcification Distribution CodeSystem"
 Description: "Calcification Distribution in an abnormality code system."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #ClusteredDistribution "Clustered distribution"
     """

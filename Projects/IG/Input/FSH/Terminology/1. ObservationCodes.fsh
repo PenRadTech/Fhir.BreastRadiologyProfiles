@@ -2,7 +2,7 @@
 CodeSystem: ObservationCodesCS
 Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #mgFindingObservation "MG Finding observation"
     """

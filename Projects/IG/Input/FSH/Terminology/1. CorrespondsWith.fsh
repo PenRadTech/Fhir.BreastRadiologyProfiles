@@ -9,7 +9,7 @@ Description:  "CorrespondsWith Value Set"
 CodeSystem:  CorrespondsWithCS
 Title: "CorrespondsWith CodeSystem"
 Description:  "CorrespondsWith CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
   // .SnomedDescription Procedure | 287572003 | Diagnostic aspiration of breast cyst (Procedure)
 * #Aspiration "Aspiration"

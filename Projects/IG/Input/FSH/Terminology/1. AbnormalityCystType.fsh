@@ -10,7 +10,7 @@ Description: "Cyst type Value Set."
 CodeSystem: AbnormalityCystTypeCS
 Title: "Cyst Type CodeSystem"
 Description: "Cyst type CodeSystem."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Cyst "Cyst"
     """

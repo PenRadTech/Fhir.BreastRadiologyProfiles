@@ -10,7 +10,7 @@ Description:  "Margin Value Set"
 CodeSystem: MarginCS
 Title: "Margin CodeSystem"
 Description: "Margin code system."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #AngularMargin "Angular margin"
     """

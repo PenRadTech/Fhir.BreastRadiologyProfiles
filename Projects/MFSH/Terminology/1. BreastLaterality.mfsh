@@ -2,7 +2,7 @@
 ValueSet: BreastLateralityVS
 Title: "Breast Laterality ValueSet"
 Description:  "Breast Laterality Value Set"
-#apply CodeSystem.Snomed.Copyright()
+* insert Terminology_SnomedCopyright
 * include SNOMED#361716006 "Entire left breast"
 * include SNOMED#361715005 "Entire right breast"
 * include SNOMED#63762007 "Both breasts (body structure)"

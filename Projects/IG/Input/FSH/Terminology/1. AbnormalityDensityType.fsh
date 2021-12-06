@@ -9,7 +9,7 @@ Description:  "Density Type Value Set"
 CodeSystem: AbnormalityDensityTypeCS
 Title: "Density Type CodeSystem"
 Description: "Density refinement types code system."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Density "Density"
     """

@@ -1,7 +1,7 @@
 ValueSet:  ObservedChangesVS
 Title: "ObservedChanges ValueSet"
 Description:  "ObservedChanges Value Set"
-#apply CodeSystem.Snomed.Copyright()
+* insert Terminology_SnomedCopyright
 * include codes from system $SCT where concept descendent-of #129720009 " Finding of change since previous mammogram (finding)"
 
 /*

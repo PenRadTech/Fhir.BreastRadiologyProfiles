@@ -16,7 +16,7 @@ Description:  "ConsistentWith Qualifier Value Set"
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #DifferentialDiagnosis "Differential diagnosis"
     """

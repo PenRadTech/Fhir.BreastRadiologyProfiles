@@ -9,7 +9,7 @@ Description:  "Asymmetry Type Value Set"
 CodeSystem: AbnormalityAsymmetryTypeCS
 Title: "Asymmetry Type CodeSystem"
 Description: "Asymmetry type code system."
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Asymmetry "Asymmetry"
     """

@@ -6,8 +6,8 @@
 ValueSet:  BreastAssessmentCategoryVS
 Title: "Breast Assessment Category ValueSet"
 Description:  "Breast Assessment Category Value Set"
-#apply CodeSystem.Snomed.Copyright()
-* include codes from valueset BiRadsAssessmentCategory"
+* insert Terminology_SnomedCopyright
+* include codes from valueset BiRadsAssessmentCategory
 * $SCT#470272007 "Implantable lesion localization marker (Object)"
 
   #// -----------------------------------------

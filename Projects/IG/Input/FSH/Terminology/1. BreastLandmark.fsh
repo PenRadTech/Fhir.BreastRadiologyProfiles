@@ -13,7 +13,7 @@ Description:
   Breast Landmark CodeSystem defines the various breast 
   body locations that can be used as a land mark.
   """
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Nipple "Nipple"
 * #ChestWall "Chest Wall"

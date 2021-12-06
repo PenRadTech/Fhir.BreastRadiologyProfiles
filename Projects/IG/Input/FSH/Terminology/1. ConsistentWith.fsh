@@ -17,7 +17,7 @@ Description:  "ConsistentWith Value Set"
 CodeSystem:  ConsistentWithCS
 Title: "ConsistentWith CodeSystem"
 Description:  "ConsistentWith CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Abscess "Abscess"
     """

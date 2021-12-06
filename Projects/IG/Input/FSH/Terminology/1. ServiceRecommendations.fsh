@@ -11,7 +11,7 @@ Description:  "ServiceRecommendations Value Set"
 CodeSystem:  ServiceRecommendationsCS
 Title: "ServiceRecommendations CodeSystem"
 Description:  "ServiceRecommendations CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
   // .SnomedDescription Procedure | 450566007 | Digital breast tomosynthesis (Procedure) +
 * #3DImaging "3D Imaging"

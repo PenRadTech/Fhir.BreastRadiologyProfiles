@@ -2,7 +2,7 @@
 CodeSystem: CompositionSectionSliceCodesCS
 Title: "Composition Section Slice Codes CodeSystem"
 Description: "Composition Section Slice Codes code system"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #report "Code to identify the 'Report' section slice"
     """

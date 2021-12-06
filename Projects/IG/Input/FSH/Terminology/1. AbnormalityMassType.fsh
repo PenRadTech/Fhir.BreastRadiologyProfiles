@@ -10,7 +10,7 @@ Description:  "Mass Type Value Set"
 CodeSystem:  AbnormalityMassTypeCS
 Title: "Mass Type CodeSystem"
 Description:  "Mass Type CodeSystem"
-* ^caseSensitive = false
+* insert CodeSystem_Common
 
 * #Mass "Mass"
 
