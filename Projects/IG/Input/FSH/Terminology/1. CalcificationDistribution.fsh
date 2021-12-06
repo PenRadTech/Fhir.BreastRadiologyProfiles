@@ -11,7 +11,7 @@ Description:  "CalcificationDistribution Value Set"
 * include SNOMED#129769006 " Radiographic calcification with clustered distribution (Finding)"
 
 // #DiffuseDistribution "Diffuse distribution"
-* include SNOMED#129766004 "Radiographic calcification with diffuse distribution (Finding)"
+* include SNOMED#129764001 "Radiographic calcification with diffuse distribution (Finding)"
 
 // #GroupedDistribution "Grouped distribution"
 * include SNOMED#129766004 "Radiographic calcification with grouped distribution (Finding) "
