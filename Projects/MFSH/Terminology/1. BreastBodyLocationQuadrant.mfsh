@@ -2,8 +2,8 @@
 ValueSet:  BreastBodyLocationQuadrantVS
 Title: "Breast Body Location Quadrants ValueSet"
 Description:  "Breast Body Location Quadrants Value Set"
-* codes from system BreastBodyLocationQuadrantCS
-
+* insert Terminology_SnomedCopyright
+* include codes from system $SCT where concept descendent-of #272670002 "Breast quadrant (body structure)"
 
   #// -----------------------------------------
   #// IG Macros
