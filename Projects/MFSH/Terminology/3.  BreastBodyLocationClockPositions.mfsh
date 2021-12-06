@@ -1,6 +1,7 @@
 ValueSet:  BreastBodyLocationClockPositionsVS
 Title: "Breast Body Location Clock Positions ValueSet"
 Description:  "Breast Body Location Clock Positions Value Set"
+#apply CodeSystem.Snomed.Copyright()
 
 * $SCT#129772004 "1 o'clock position on mammogram (Finding)"
 * $SCT#129773009 "2 o'clock position on mammogram (Finding)"
