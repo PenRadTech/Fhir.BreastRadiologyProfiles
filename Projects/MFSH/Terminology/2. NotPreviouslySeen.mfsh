@@ -1,6 +1,7 @@
 ValueSet:  NotPreviouslySeenVS
 Title: "NotPreviouslySeen ValueSet"
 Description:  "NotPreviouslySeen Value Set"
+* insert Terminology_SnomedCopyright
 
 // Outside exam
 // $FIXME Have GG validate that this ok code for outside exam.
