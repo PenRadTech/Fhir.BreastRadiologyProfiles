@@ -1,4 +1,3 @@
-// $FIXME
 ValueSet: LateralityVS
 Title: "Laterality ValueSet"
 Description:  "Laterality Value Set"
