@@ -2,19 +2,24 @@
 ValueSet:  MarginVS
 Title: "Margin ValueSet"
 Description:  "Margin Value Set"
-* insert Terminology_SnomedCopyright
-* insert Terminology_DICOMCopyright
+* ^copyright = """
+	This value set includes content from SNOMED CT, 
+	which is copyright © 2002+ International Health 
+	Terminology Standards Development Organisation (IHTSDO), 
+	and distributed by agreement between IHTSDO and HL7. 
+	Implementer use of SNOMED CT is not covered by this agreement"
+
+	This value set includes content excerpted from Digital Imaging and 
+	Communications in Medicine (DICOM) Standard, 
+	Part 16: Content Mapping Resource, 
+	Copyright © 2011 by the National Electrical Manufacturers Association."
+    """
+
 * include codes from system $SCT where concept descendent-of #129737002 " Radiographic lesion margin characteristics (finding)"
 * include $DCM#111343 "Angular margin"
+* include $DCM#112135 "Lobulated"
 
 /*
-* #AngularMargin "Angular margin"
-    """
-    Some or all of the margin has sharp corners, often
-    forming acute angles.
-    The margin of the mass is not circumscribed.
-    """
-
 * #IntraductalExtension "Intraductal extension"
     """
     Intraductal tumor extension is a characteristic feature
@@ -29,14 +34,6 @@ Description:  "Margin Value Set"
     Edges around the soft tissue that don't look smooth.
     Indicative of some sort of growth or mass rather
     than a cyst.
-    """
-
-* #LobulatedMargin "Lobulated margin"
-    """
-    The edge of the mass has broad bulges.
-    Much like a 6 or 8 leaf clover.
-    The edge of all of the leaves would be considered
-    lobulated.
     """
 
 * #MacrolobulatedMargin "Macrolobulated margin"
