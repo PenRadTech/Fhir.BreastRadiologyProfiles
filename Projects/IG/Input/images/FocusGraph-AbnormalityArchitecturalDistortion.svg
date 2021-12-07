@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FocusGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1215.64" height="618.75">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1215.64" height="543.75">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -39,10 +39,10 @@
 <text x="408.7" y="46.88" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="404.95" y1="84.38" x2="464.95" y2="84.38" />
 <text x="408.7" y="80.62" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="404.95" y1="414.38" x2="464.95" y2="414.38" />
-<text x="408.7" y="410.62" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="404.95" y1="339.38" x2="464.95" y2="339.38" />
+<text x="408.7" y="335.62" text-anchor="right" class="lhsText">0..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="374.95" y1="16.88" x2="404.95" y2="16.88" />
-<line class="connector" x1="404.95" y1="16.88" x2="404.95" y2="414.38" />
+<line class="connector" x1="404.95" y1="16.88" x2="404.95" y2="339.38" />
 </g>
 <g>
 <g transform="translate(464.95 3.75)">
@@ -126,10 +126,10 @@
 <text x="604.96" y="215.62" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="601.21" y1="262.5" x2="661.21" y2="262.5" />
 <text x="604.96" y="258.75" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="601.21" y1="380.62" x2="661.21" y2="380.62" />
-<text x="604.96" y="376.88" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="601.21" y1="305.62" x2="661.21" y2="305.62" />
+<text x="604.96" y="301.88" text-anchor="right" class="lhsText">0..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="571.21" y1="84.38" x2="601.21" y2="84.38" />
-<line class="connector" x1="601.21" y1="84.38" x2="601.21" y2="380.62" />
+<line class="connector" x1="601.21" y1="84.38" x2="601.21" y2="305.62" />
 </g>
 <g>
 <g transform="translate(661.21 71.25)">
@@ -263,38 +263,23 @@
 <text x="5.62" y="37.5" text-anchor="left" class="element">Demonstrated by</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="829.52" y1="300" x2="889.52" y2="300" />
-<text x="833.27" y="296.25" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="829.52" y1="253.12" x2="889.52" y2="253.12" />
+<text x="833.27" y="249.38" text-anchor="right" class="lhsText">bind</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="799.52" y1="262.5" x2="829.52" y2="262.5" />
-<line class="connector" x1="829.52" y1="262.5" x2="829.52" y2="300" />
+<line class="connector" x1="829.52" y1="253.12" x2="829.52" y2="262.5" />
 </g>
 <g>
 <g transform="translate(889.52 240)">
 <a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="233.57" height="120" rx="3.75" ry="3.75" />
+<rect class="valueSet" x="0" y="0" width="233.57" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">org</text>
-</a>
-<a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="37.5" text-anchor="left" class="valueSet">fhir</text>
-</a>
-<a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="56.25" text-anchor="left" class="valueSet">us</text>
-</a>
-<a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="75" text-anchor="left" class="valueSet">breast-radiology</text>
-</a>
-<a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="93.75" text-anchor="left" class="valueSet">ValueSet</text>
-</a>
-<a href="ValueSet-PreviouslyDemonstratedByVS.html" target="_top">
-<text x="5.62" y="112.5" text-anchor="left" class="valueSet">PreviouslyDemonstratedByVS</text>
+<text x="5.62" y="18.75" text-anchor="left" class="valueSet">PreviouslyDemonstratedByVS</text>
 </a>
 </g>
 </g>
 <g>
-<g transform="translate(661.21 367.5)">
+<g transform="translate(661.21 292.5)">
 <a href="StructureDefinition-AbnormalityArchitecturalDistortion-definitions.html#Observation.component:shape" target="_top">
 <rect class="element" x="0" y="0" width="60.48" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -302,13 +287,13 @@
 <text x="5.62" y="18.75" text-anchor="left" class="element">Shape</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="751.69" y1="380.62" x2="811.69" y2="380.62" />
-<text x="755.44" y="376.88" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="721.69" y1="380.62" x2="751.69" y2="380.62" />
-<line class="connector" x1="751.69" y1="380.62" x2="751.69" y2="380.62" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="751.69" y1="305.62" x2="811.69" y2="305.62" />
+<text x="755.44" y="301.88" text-anchor="right" class="lhsText">bind</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="721.69" y1="305.62" x2="751.69" y2="305.62" />
+<line class="connector" x1="751.69" y1="305.62" x2="751.69" y2="305.62" />
 </g>
 <g>
-<g transform="translate(811.69 367.5)">
+<g transform="translate(811.69 292.5)">
 <a href="ValueSet-ShapeVS.html" target="_top">
 <rect class="valueSet" x="0" y="0" width="82.47" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -318,7 +303,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(464.95 401.25)">
+<g transform="translate(464.95 326.25)">
 <a href="StructureDefinition-AbnormalityArchitecturalDistortion-definitions.html#Observation.hasMember" target="_top">
 <rect class="element" x="0" y="0" width="102.57" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -326,17 +311,17 @@
 <text x="5.62" y="18.75" text-anchor="left" class="element">HasMember</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="414.38" x2="657.52" y2="414.38" />
-<text x="601.27" y="410.62" text-anchor="right" class="lhsText">0..1</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="448.12" x2="657.52" y2="448.12" />
-<text x="601.27" y="444.38" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="481.88" x2="657.52" y2="481.88" />
-<text x="601.27" y="478.12" text-anchor="right" class="lhsText">0..*</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="567.52" y1="414.38" x2="597.52" y2="414.38" />
-<line class="connector" x1="597.52" y1="414.38" x2="597.52" y2="481.88" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="339.38" x2="657.52" y2="339.38" />
+<text x="601.27" y="335.62" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="373.12" x2="657.52" y2="373.12" />
+<text x="601.27" y="369.38" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="597.52" y1="406.88" x2="657.52" y2="406.88" />
+<text x="601.27" y="403.12" text-anchor="right" class="lhsText">0..*</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="567.52" y1="339.38" x2="597.52" y2="339.38" />
+<line class="connector" x1="597.52" y1="339.38" x2="597.52" y2="406.88" />
 </g>
 <g>
-<g transform="translate(657.52 401.25)">
+<g transform="translate(657.52 326.25)">
 <a href="StructureDefinition-BreastAssessmentCategory.html" target="_top">
 <rect class="profile" x="0" y="0" width="226.23" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -346,7 +331,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(657.52 435)">
+<g transform="translate(657.52 360)">
 <a href="StructureDefinition-AssociatedFeature.html" target="_top">
 <rect class="profile" x="0" y="0" width="154.82" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -356,7 +341,7 @@
 </g>
 </g>
 <g>
-<g transform="translate(657.52 468.75)">
+<g transform="translate(657.52 393.75)">
 <a href="StructureDefinition-ConsistentWith.html" target="_top">
 <rect class="profile" x="0" y="0" width="128.23" height="26.25" rx="3.75" ry="3.75" />
 </a>
@@ -366,27 +351,27 @@
 </g>
 </g>
 <g>
-<g transform="translate(3.75 577.5)">
+<g transform="translate(3.75 502.5)">
 <rect class="focus" x="0" y="0" width="57.72" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="focus">Focus</text>
 </g>
-<g transform="translate(68.97 577.5)">
+<g transform="translate(68.97 502.5)">
 <rect class="profile" x="0" y="0" width="143.81" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="profile">Profiled Resource</text>
 </g>
-<g transform="translate(220.28 577.5)">
+<g transform="translate(220.28 502.5)">
 <rect class="extension" x="0" y="0" width="85.21" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="extension">Extension</text>
 </g>
-<g transform="translate(312.98 577.5)">
+<g transform="translate(312.98 502.5)">
 <rect class="element" x="0" y="0" width="148.39" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="element">Resource Element</text>
 </g>
-<g transform="translate(468.87 577.5)">
+<g transform="translate(468.87 502.5)">
 <rect class="valueSet" x="0" y="0" width="79.72" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="valueSet">ValueSet</text>
 </g>
-<g transform="translate(556.09 577.5)">
+<g transform="translate(556.09 502.5)">
 <rect class="value" x="0" y="0" width="54.98" height="26.25" rx="3.75" ry="3.75" />
 <text x="5.62" y="18.75" text-anchor="left" class="value">Value</text>
 </g>

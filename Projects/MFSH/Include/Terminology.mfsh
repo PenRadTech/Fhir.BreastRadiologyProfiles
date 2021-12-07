@@ -16,4 +16,18 @@ RuleSet: Terminology_UCUMCopyright
     """
 
 RuleSet: Terminology_SnomedCopyright
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^copyright = """
+	This value set includes content from SNOMED CT, 
+	which is copyright © 2002+ International Health 
+	Terminology Standards Development Organisation (IHTSDO), 
+	and distributed by agreement between IHTSDO and HL7. 
+	Implementer use of SNOMED CT is not covered by this agreement"
+    """
+
+RuleSet: Terminology_DICOMCopyright
+* ^copyright = """
+	DICOM codes are excerpted from Digital Imaging and 
+	Communications in Medicine (DICOM) Standard, 
+	Part 16: Content Mapping Resource, 
+	Copyright © 2011 by the National Electrical Manufacturers Association."
+    """

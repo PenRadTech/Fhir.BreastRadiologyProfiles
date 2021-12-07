@@ -1,7 +1,6 @@
 ValueSet:  PreviouslyDemonstratedByVS
 Title: "PreviouslyDemonstratedBy ValueSet"
 Description:  "PreviouslyDemonstratedBy Value Set"
-* codes from system PreviouslyDemonstratedByCS
 
 // $FIXME
 // GG ask about making all descendents of 
