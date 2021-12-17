@@ -59,11 +59,6 @@ Description: "Observation Codes code system"
     Observation.code to identify an AbnormalitySkinLesion observation.
     """
 
-* #abnormalityFibroadenomaObservation "Abnormality Fibroadenoma observation"
-    """
-    Observation.code to identify an AbnormalityFibroadenoma observation.
-    """
-
 * #abnormalityAsymmetryObservation "MG Abnormality Asymmetry observation"
     """
     Observation.code to identify an MGAbnormalityAsymmetry observation.

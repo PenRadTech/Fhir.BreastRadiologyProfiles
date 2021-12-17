@@ -6,7 +6,7 @@ Description: """
   Duct
   """
 
-  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityCyst", "Code")
+  #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityDuct", "Code")
 
   #apply Observation.Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
   #	 """
