@@ -1,2 +1,4 @@
 # BreastRadiologyProfilesV3
-Version 3 of Breast Radiology Profiles. FSH version
+FHIR Breast Radiology Profiles.
+MFSH version
+Working copy.
