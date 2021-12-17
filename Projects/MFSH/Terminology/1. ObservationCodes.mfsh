@@ -4,11 +4,6 @@ Title: "Observation Codes CodeSystem"
 Description: "Observation Codes code system"
 * insert CodeSystem_Common
 
-* #mgFindingObservation "MG Finding observation"
-    """
-    Observation.code to identify an MGFinding observation.
-    """
-
 * #abnormalityCyst "Abnormality Cyst observation"
     """
     Observation.code to identify an AbnormalityCyst observation.

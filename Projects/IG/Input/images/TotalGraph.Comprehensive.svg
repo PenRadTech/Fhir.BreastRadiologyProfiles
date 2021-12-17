@@ -451,11 +451,11 @@
 </g>
 <g>
 <g transform="translate(1351.45 341.25)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="125.54" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#mgFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#129714008</text>
 </a>
 </g>
 </g>
@@ -12829,11 +12829,11 @@
 </g>
 <g>
 <g transform="translate(1328.54 14625)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="125.54" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#mgFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#129714008</text>
 </a>
 </g>
 </g>
@@ -25207,11 +25207,11 @@
 </g>
 <g>
 <g transform="translate(1350.51 28908.75)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="125.54" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#mgFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#129714008</text>
 </a>
 </g>
 </g>

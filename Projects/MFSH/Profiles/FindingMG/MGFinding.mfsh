@@ -5,7 +5,7 @@ Description: """
     Mammography Finding
     """
 
-  #apply Resource.Fix("1", "code", "ObservationCodesCS#mgFindingObservation", "Code")
+  #apply Resource.Fix("1", "code", "$SCT#129714008 \"Mammography finding (finding)\"", "Code")
 
   #apply Observation.SectionFragment()
 
