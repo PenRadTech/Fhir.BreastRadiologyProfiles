@@ -11,3 +11,4 @@ Description:  "Observation Codes for Fibroadenoma ValueSet"
 
 * $SCT#1156873009:363698007=73056007    // 1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 73056007 "Right breast structure (body structure)"
 * $SCT#1156873009:363698007=80248007	// 1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 80248007 "Left breast structure (body structure)"
+* $SCT#1156873009:363698007=181131000	// 1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 181131000 "Entire breast (body structure)"

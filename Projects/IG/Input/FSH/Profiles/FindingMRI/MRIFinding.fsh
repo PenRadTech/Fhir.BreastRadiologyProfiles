@@ -4,7 +4,9 @@ Title: "MRI Finding"
 Description: """
     MRI Finding
     """
-* code = ObservationCodesCS#mriFindingObservation
+
+  // 365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 241615005 "Magnetic resonance imaging of breast (procedure)"
+* code = $SCT#365853002:363714003=241615005
 * code 1..1
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"

@@ -5,7 +5,8 @@ Description: """
     MRI Finding
     """
 
-  #apply Resource.Fix("1", "code", "ObservationCodesCS#mriFindingObservation", "Code")
+  // 365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 241615005 "Magnetic resonance imaging of breast (procedure)"
+  #apply Resource.Fix("1", "code", "$SCT#365853002:363714003=241615005", "Code")
 
   #apply Observation.SectionFragment()
 
