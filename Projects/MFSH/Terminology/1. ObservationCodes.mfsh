@@ -84,11 +84,6 @@ Description: "Observation Codes code system"
     Observation.code to identify an BreastAssessmentCategory observation.
     """
 
-* #nmFindingObservation "NM Findingobservation"
-    """
-    Observation.code to identify an NM Finding observation.
-    """
-
 * #usFindingObservation "US Finding observation"
     """
     Observation.code to identify a US Finding .

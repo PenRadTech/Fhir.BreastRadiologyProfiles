@@ -1,0 +1,36 @@
+Modified
+
+Profile: MGFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#mgFindingObservation to 
+	Snomed#129714008 "Mammography finding (finding)"
+
+Profile: MRIFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#mriFindingObservation to 
+	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 241615005 "Magnetic resonance imaging of breast (procedure)"
+
+Profile: NMFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#nmFindingObservation to 
+	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 373205008 "Nuclear medicine imaging procedure (procedure)"
+
+Profile: USFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#usFindingObservation to 
+	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 16310003 "Diagnostic ultrasonography (procedure)"
+
+Profile: NMFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#nmFindingObservation to 
+	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 71651007 "Mammography (procedure)"
+
+Profile: AbnormalityFibroadenoma
+	Changed  Observation.code from ObservationCodesCS#abnormalityFibroadenomaObservation to
+	member of valueset ObservationCodesFibroadenoma. This has codes
+	1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 73056007 "Right breast structure (body structure)"
+	1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 80248007 "Left breast structure (body structure)"
+	1156873009 "Benign fibroadenoma (morphologic abnormality)" : 363698007 "Finding site (attribute)" = 181131000 "Entire breast (body structure)"
+
+
+129714008 "Mammography finding (finding)" : 363714003 "Interprets (attribute)" = 71651007 "Mammography (procedure)"

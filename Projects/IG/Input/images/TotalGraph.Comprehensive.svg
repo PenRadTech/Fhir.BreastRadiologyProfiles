@@ -12470,11 +12470,11 @@
 </g>
 <g>
 <g transform="translate(1389 14302.5)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="304.69" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#nmFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=373205008</text>
 </a>
 </g>
 </g>
@@ -12508,11 +12508,11 @@
 </g>
 <g>
 <g transform="translate(1408.25 14355)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="341.68" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="295.53" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#usFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=16310003</text>
 </a>
 </g>
 </g>
@@ -24848,11 +24848,11 @@
 </g>
 <g>
 <g transform="translate(1366.09 28586.25)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="304.69" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#nmFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=373205008</text>
 </a>
 </g>
 </g>
@@ -24886,11 +24886,11 @@
 </g>
 <g>
 <g transform="translate(1385.34 28638.75)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="341.68" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="295.53" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#usFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=16310003</text>
 </a>
 </g>
 </g>
@@ -37226,11 +37226,11 @@
 </g>
 <g>
 <g transform="translate(1388.06 42870)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="347.17" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="304.69" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#nmFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=373205008</text>
 </a>
 </g>
 </g>
@@ -37264,11 +37264,11 @@
 </g>
 <g>
 <g transform="translate(1407.31 42922.5)">
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<rect class="value" x="0" y="0" width="341.68" height="26.25" rx="3.75" ry="3.75" />
+<a href="http://snomed.info/sct" target="_top">
+<rect class="value" x="0" y="0" width="295.53" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="http://hl7.org/fhir/us/breast-radiology/CodeSystem/ObservationCodesCS" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="value">ObservationCodesCS#usFindingObservation</text>
+<a href="http://snomed.info/sct" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#365853002:363714003=16310003</text>
 </a>
 </g>
 </g>

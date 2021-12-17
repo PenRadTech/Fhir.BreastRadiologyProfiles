@@ -5,7 +5,8 @@ Description: """
     NM Finding
     """
 
-  #apply Resource.Fix("1", "code", "ObservationCodesCS#nmFindingObservation", "Code")
+  // $SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 373205008 "Nuclear medicine imaging procedure (procedure)"
+  #apply Resource.Fix("1", "code", "$SCT#365853002:363714003=373205008", "Code")
 
   #apply Observation.SectionFragment()
 
