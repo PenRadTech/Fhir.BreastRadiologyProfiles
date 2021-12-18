@@ -84,16 +84,6 @@ Description: "Observation Codes code system"
     Observation.code to identify an BreastAssessmentCategory observation.
     """
 
-* #usFindingObservation "US Finding observation"
-    """
-    Observation.code to identify a US Finding .
-    """
-
-* #otherModalityFindingObservation "Other Modality Finding observation"
-    """
-    Observation.code to identify an 'other' finding observation. A finding that is not onje of the predefined types, such as MG, NM, US, etc.
-    """
-
 * #findingsLeftBreastObservation "Findings Left Breast observation"
     """
     Observation.code to identify a SectionFindingsLeftBreast observation.

@@ -17,8 +17,13 @@ Profile: NMFinding
 
 Profile: USFinding
 	Changed  Observation.code from 
-	ObservationCodesCS#usFindingObservation to 
+	ObservationCodesCS#otherModalityFindingObservation to 
 	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 16310003 "Diagnostic ultrasonography (procedure)"
+
+Profile: OtherModalityFinding
+	Changed  Observation.code from 
+	ObservationCodesCS#usFindingObservation to 
+	$SCT#365853002 "Imaging finding (finding)" : 363714003 "Interprets (attribute)" = 71388002 "Procedure (procedure)"
 
 Profile: NMFinding
 	Changed  Observation.code from 
