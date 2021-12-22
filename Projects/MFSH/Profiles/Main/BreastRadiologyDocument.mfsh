@@ -1,8 +1,8 @@
 Profile: BreastRadiologyDocument
 Parent: Bundle
-Title: "Breast Radiology Document"
+Title: "Breast Imaging Document"
 Description: """
-	Breast Radiology Document Bundle.
+	Breast Imaging Document Bundle.
     """
 
   #apply HeaderFragment()
@@ -24,14 +24,14 @@ Description: """
   #use IG
     #apply IntroDocProfile( """
     # <P>
-    # A Breast Radiology Document is an implementation of a FHIR Document. 
+    # A Breast Imaging Document is an implementation of a FHIR Document. 
     # </P>
     # <P>
     # A FHIR Document is a Bundle that provides a single item containing all the 
-    # resource instances that are a part of the Breast Radiology Diagnostic Report.
+    # resource instances that are a part of the Breast Imaging Diagnostic Report.
     # </P>
     # <P>
-    # The Breast Radiology Document is an atomic item, meaning that no part in 
+    # The Breast Imaging Document is an atomic item, meaning that no part in 
     # it can be changed without changing the entire bundle, and that 
     # all the parts are contained in a single bundle  
     # </P>

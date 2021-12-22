@@ -4,28 +4,28 @@
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = """
-    Breast Radiology Report Section
+    Breast Imaging Report Section
     """
 #end
 
   /*
-   Composition section for Breast Radiology Report.
+   Composition section for Breast Imaging Report.
 */
 #macro ReportSection(SliceName) 
 * section[SliceName] ^definition = """
-    This section references the Breast Radiology Report.
+    This section references the Breast Imaging Report.
 
-    One and only one Breast Radiology Report must be included in this section.
+    One and only one Breast Imaging Report must be included in this section.
   """
 * section[SliceName] ^short = "Report Section."
 * section[SliceName].code = CompositionSectionSliceCodesCS#report
-* section[SliceName].title = "Breast Radiology Report"
+* section[SliceName].title = "Breast Imaging Report"
 
 * section[SliceName].entry 1..1
 * section[SliceName].entry only Reference(BreastRadiologyReport)
-* section[SliceName].entry ^short = "Breast Radiology Report reference"
+* section[SliceName].entry ^short = "Breast Imaging Report reference"
 * section[SliceName].entry ^definition = """
-    Reference to the Breast Radiology Report.
+    Reference to the Breast Imaging Report.
 	"""
 
   #// -----------------------------------------
