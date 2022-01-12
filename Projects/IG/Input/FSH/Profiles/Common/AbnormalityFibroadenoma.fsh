@@ -4,8 +4,8 @@ Title: "Fibroadenoma"
 Description: """
   Fibroadenoma
   """
+* code = $SCT#1156873009
 * code 1..1
-* code from ObservationCodesFibroadenomaVS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open

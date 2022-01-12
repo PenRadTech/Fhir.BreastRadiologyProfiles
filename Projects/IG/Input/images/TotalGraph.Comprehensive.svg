@@ -7501,24 +7501,24 @@
 <g>
 <g transform="translate(1550.89 8471.25)">
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<rect class="element" x="0" y="0" width="257.42" height="26.25" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="52.22" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">Firboadenoma observation codes</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">Code</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="1838.3" y1="8484.38" x2="1898.3" y2="8484.38" />
-<text x="1842.05" y="8480.62" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="1808.3" y1="8484.38" x2="1838.3" y2="8484.38" />
-<line class="connector" x1="1838.3" y1="8484.38" x2="1838.3" y2="8484.38" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="1633.11" y1="8484.38" x2="1753.11" y2="8484.38" />
+<text x="1636.86" y="8480.62" text-anchor="right" class="lhsText">pattern </text>
+<line class="connector" marker-start="url(#arrowStart)" x1="1603.11" y1="8484.38" x2="1633.11" y2="8484.38" />
+<line class="connector" x1="1633.11" y1="8484.38" x2="1633.11" y2="8484.38" />
 </g>
 <g>
-<g transform="translate(1898.3 8471.25)">
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="277.56" height="26.25" rx="3.75" ry="3.75" />
+<g transform="translate(1753.11 8471.25)">
+<a target="_top">
+<rect class="value" x="0" y="0" width="134.7" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">ObservationCodesFibroadenomaVS</text>
+<a target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#1156873009</text>
 </a>
 </g>
 </g>
@@ -19879,24 +19879,24 @@
 <g>
 <g transform="translate(1527.98 22755)">
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<rect class="element" x="0" y="0" width="257.42" height="26.25" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="52.22" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">Firboadenoma observation codes</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">Code</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="1815.4" y1="22768.12" x2="1875.4" y2="22768.12" />
-<text x="1819.15" y="22764.38" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="1785.4" y1="22768.12" x2="1815.4" y2="22768.12" />
-<line class="connector" x1="1815.4" y1="22768.12" x2="1815.4" y2="22768.12" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="1610.2" y1="22768.12" x2="1730.2" y2="22768.12" />
+<text x="1613.95" y="22764.38" text-anchor="right" class="lhsText">pattern </text>
+<line class="connector" marker-start="url(#arrowStart)" x1="1580.2" y1="22768.12" x2="1610.2" y2="22768.12" />
+<line class="connector" x1="1610.2" y1="22768.12" x2="1610.2" y2="22768.12" />
 </g>
 <g>
-<g transform="translate(1875.4 22755)">
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="277.56" height="26.25" rx="3.75" ry="3.75" />
+<g transform="translate(1730.2 22755)">
+<a target="_top">
+<rect class="value" x="0" y="0" width="134.7" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">ObservationCodesFibroadenomaVS</text>
+<a target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#1156873009</text>
 </a>
 </g>
 </g>
@@ -32257,24 +32257,24 @@
 <g>
 <g transform="translate(1549.95 37038.75)">
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<rect class="element" x="0" y="0" width="257.42" height="26.25" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="52.22" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-AbnormalityFibroadenoma-definitions.html#Observation.code" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">Firboadenoma observation codes</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">Code</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="1837.37" y1="37051.88" x2="1897.37" y2="37051.88" />
-<text x="1841.12" y="37048.12" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="1807.37" y1="37051.88" x2="1837.37" y2="37051.88" />
-<line class="connector" x1="1837.37" y1="37051.88" x2="1837.37" y2="37051.88" />
+<line class="connector" marker-end="url(#arrowEnd)" x1="1632.17" y1="37051.88" x2="1752.17" y2="37051.88" />
+<text x="1635.92" y="37048.12" text-anchor="right" class="lhsText">pattern </text>
+<line class="connector" marker-start="url(#arrowStart)" x1="1602.17" y1="37051.88" x2="1632.17" y2="37051.88" />
+<line class="connector" x1="1632.17" y1="37051.88" x2="1632.17" y2="37051.88" />
 </g>
 <g>
-<g transform="translate(1897.37 37038.75)">
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="277.56" height="26.25" rx="3.75" ry="3.75" />
+<g transform="translate(1752.17 37038.75)">
+<a target="_top">
+<rect class="value" x="0" y="0" width="134.7" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-ObservationCodesFibroadenomaVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">ObservationCodesFibroadenomaVS</text>
+<a target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="value">sct#1156873009</text>
 </a>
 </g>
 </g>
