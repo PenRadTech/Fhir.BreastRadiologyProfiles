@@ -4,9 +4,9 @@ Profile: MGFinding
 	Changed  Observation.code from 
 	ObservationCodesCS#mgFindingObservation to 
 	Snomed#129714008 "Mammography finding (finding)"
-	
-	Should this be
-	129714008 "Mammography finding (finding)" : 363714003 "Interprets (attribute)" = 71651007 "Mammography (procedure)"
+
+	Note: SNOMED 129714008 diagram has tree of
+	118247008 Radiologic finding (finding) : 363714003 Interprets (attribute) = 71651007 Mammography (procedure)
 
 Profile: MRIFinding
 	Changed  Observation.code from 
