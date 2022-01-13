@@ -7,7 +7,7 @@ Description: """
 
   #apply HeaderFragment()
 * . ^short = "US Core Race Extension"
-* type = LOINC#42132-1 "US Breast screening"
+* type = $LOINC#42132-1 "US Breast screening"
 
   #apply StartSectionSlicing()
 

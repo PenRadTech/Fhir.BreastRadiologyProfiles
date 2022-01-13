@@ -31,3 +31,6 @@ Profile: OtherModalityFinding
 Profile: AbnormalityFibroadenoma
 	Changed  Observation.code from ObservationCodesCS#abnormalityFibroadenomaObservation to
 	1156873009 "Benign fibroadenoma (morphologic abnormality)" 
+
+Value Set: CalcificationDistribution
+	Removed "Scattered distribution" as it is not in use in BiRads. Use Linear Distrubution instead.
