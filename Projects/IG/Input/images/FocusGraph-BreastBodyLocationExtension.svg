@@ -272,20 +272,6 @@
 <text x="5.62" y="18.75" text-anchor="left" class="element">Quadrant</text>
 </a>
 </g>
-<line class="connector" marker-end="url(#arrowEnd)" x1="604.21" y1="185.62" x2="664.21" y2="185.62" />
-<text x="607.96" y="181.88" text-anchor="right" class="lhsText">bind</text>
-<line class="connector" marker-start="url(#arrowStart)" x1="574.21" y1="185.62" x2="604.21" y2="185.62" />
-<line class="connector" x1="604.21" y1="185.62" x2="604.21" y2="185.62" />
-</g>
-<g>
-<g transform="translate(664.21 172.5)">
-<a href="ValueSet-BreastBodyLocationQuadrantVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="251.01" height="26.25" rx="3.75" ry="3.75" />
-</a>
-<a href="ValueSet-BreastBodyLocationQuadrantVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">BreastBodyLocationQuadrantVS</text>
-</a>
-</g>
 </g>
 <g>
 <g transform="translate(492.67 206.25)">

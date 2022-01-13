@@ -1,7 +1,6 @@
-// $FIXME
-ValueSet:  BreastBodyLocationQuadrantVS
-Title: "Breast Body Location Quadrants ValueSet"
-Description:  "Breast Body Location Quadrants Value Set"
+ValueSet:  BreastQuadrantVS
+Title: "Breast Quadrant ValueSet"
+Description:  "Breast Quadrant Value Set"
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 

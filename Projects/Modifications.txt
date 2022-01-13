@@ -43,3 +43,6 @@ Value Set BiRadsAssessmentCategoryVS
 	
 Value Set BiRadsBreastCompositionVS
 	renamed to MammographyBreastCompositonFindingVS to match SNOMED parent node of all items in value set.		
+	
+Value Set BreastBodyLocationQuadrantVS
+	renamed to BreastQuadrantVSVS to match SNOMED parent node of all items in value set.		
