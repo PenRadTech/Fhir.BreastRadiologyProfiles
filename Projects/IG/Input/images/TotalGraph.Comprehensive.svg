@@ -3049,11 +3049,11 @@
 </g>
 <g>
 <g transform="translate(1962.65 3180)">
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="160.31" height="26.25" rx="3.75" ry="3.75" />
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<rect class="valueSet" x="0" y="0" width="274.83" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">CalcificationTypeVS</text>
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="valueSet">RadiographicCalcificationFindingVS</text>
 </a>
 </g>
 </g>
@@ -15687,11 +15687,11 @@
 </g>
 <g>
 <g transform="translate(1939.74 17801.25)">
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="160.31" height="26.25" rx="3.75" ry="3.75" />
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<rect class="valueSet" x="0" y="0" width="274.83" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">CalcificationTypeVS</text>
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="valueSet">RadiographicCalcificationFindingVS</text>
 </a>
 </g>
 </g>
@@ -28325,11 +28325,11 @@
 </g>
 <g>
 <g transform="translate(1961.71 32422.5)">
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<rect class="valueSet" x="0" y="0" width="160.31" height="26.25" rx="3.75" ry="3.75" />
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<rect class="valueSet" x="0" y="0" width="274.83" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="ValueSet-CalcificationTypeVS.html" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="valueSet">CalcificationTypeVS</text>
+<a href="ValueSet-RadiographicCalcificationFindingVS.html" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="valueSet">RadiographicCalcificationFindingVS</text>
 </a>
 </g>
 </g>

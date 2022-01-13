@@ -1,6 +1,6 @@
-ValueSet:  CalcificationTypeVS
+ValueSet:  RadiographicCalcificationFindingVS
 Title: "Calcification Type Value Set"
-Description:  "Calcification Type Value Set"
+Description:  "Radiographic calcification finding Value Set"
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 
