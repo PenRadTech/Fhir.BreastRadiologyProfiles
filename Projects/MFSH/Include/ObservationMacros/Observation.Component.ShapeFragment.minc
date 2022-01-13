@@ -9,6 +9,7 @@
 #Description: """
 #  Adds Orientation, Shape, Margin, and Density Components
 # """
+
   // Define Orientation Slice
   #apply Observation.Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
@@ -18,7 +19,8 @@
   #  "ObservationComponentSliceCodesCS#orientation")
   #
   #apply Observation.Component.SetConcept("orientation", "1..1", "OrientationVS")
-  #
+
+
   // Define Shape Slice
   #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
   #	 """
@@ -28,7 +30,8 @@
   #  "ObservationComponentSliceCodesCS#shape")
   #
   #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
-  #
+
+  
   // Define Margin Slice
   #apply Observation.Component.Add("margin", "0..1", "Margin", "Margin",
   #	 """
@@ -38,7 +41,18 @@
   #  "ObservationComponentSliceCodesCS#margin")
   #
   #apply Observation.Component.SetConcept("margin", "1..1", "MarginVS")
+
+
+  // Define Density Slice
+  #apply Observation.Component.Add("density", "0..1", "Density", "Density",
+  #	 """
+  #  This slice contains the optional component that define the density of the abnormality.
+  #  The value of this component is a codeable concept chosen from the DensityVS valueset.
+  #	 """,
+  #  "ObservationComponentSliceCodesCS#density")
   #
+  #apply Observation.Component.SetConcept("density", "1..1", "DensityVS")
+
 
   #// -----------------------------------------
   #// Graph Macros
