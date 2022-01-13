@@ -1,4 +1,4 @@
-ValueSet:  BreastBodyLocationQuadrantVS
+ValueSet:  BreastQuadrantVS
 Title: "Breast Body Location Quadrants ValueSet"
 Description:  "Breast Body Location Quadrants Value Set"
   * codes from system BreastBodyLocationQuadrantCS

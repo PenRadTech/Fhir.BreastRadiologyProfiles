@@ -15,7 +15,7 @@ Description: """
   #  The side of the body being examined.
   #  """)
 
-  #apply Extension.CodeableConcept("quadrant", "Quadrant", "0..1", "BreastBodyLocationQuadrantVS", "Quadrant of the body location",
+  #apply Extension.CodeableConcept("quadrant", "Quadrant", "0..1", "BreastQuadrantVS", "Quadrant of the body location",
   #  """
   #  The quadrant  of the body location.
   #  """)
