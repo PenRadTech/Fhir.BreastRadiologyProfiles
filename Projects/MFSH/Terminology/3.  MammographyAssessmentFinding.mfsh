@@ -1,9 +1,9 @@
 /*
   Value set for ACR birads codes.
 */
-ValueSet:  BiRadsAssessmentCategoryVS
-Title: "BiRads Assessment Category ValueSet"
-Description:  "BiRads Assessment Category Value Set"
+ValueSet:  MammographyAssessmentFindingVS
+Title: "Mammography assessment finding ValueSet"
+Description:  "Mammography assessment finding Value Set"
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 

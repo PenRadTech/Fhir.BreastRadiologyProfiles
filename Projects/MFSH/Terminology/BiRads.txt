@@ -1,7 +1,7 @@
 /*
   Value set for ACR birads codes.
  */
-ValueSet:  BiRadsAssessmentCategoryVS
+ValueSet:  MammographyAssessmentFindingVS
 Title: "BiRads Assessment Category ValueSet"
 Description:  "BiRads Assessment Category Value Set"
   * codes from system BiRadsAssessmentCategoryCS

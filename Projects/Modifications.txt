@@ -34,3 +34,9 @@ Profile: AbnormalityFibroadenoma
 
 Value Set: CalcificationDistribution
 	Removed "Scattered distribution" as it is not in use in BiRads. Use Linear Distrubution instead.
+
+Value Set CalcificationTypeVS
+	renamed to RadiographicCalcificationTypeVS to match SNOMED parent node of all items in value set.
+	
+Value Set BiRadsAssessmentCategoryVS
+	renamed to MammographyAssessmentFindingVS to match SNOMED parent node of all items in value set.	
