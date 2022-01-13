@@ -40,3 +40,6 @@ Value Set CalcificationTypeVS
 	
 Value Set BiRadsAssessmentCategoryVS
 	renamed to MammographyAssessmentFindingVS to match SNOMED parent node of all items in value set.	
+	
+Value Set BiRadsBreastCompositionVS
+	renamed to MammographyBreastCompositonFindingVS to match SNOMED parent node of all items in value set.		
