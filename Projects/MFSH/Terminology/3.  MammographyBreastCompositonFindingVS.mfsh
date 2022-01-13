@@ -1,6 +1,6 @@
-ValueSet:  BiRadsBreastCompositionVS
-Title: "BiRadsBreastComposition ValueSet"
-Description:  "BiRadsBreastComposition Value Set"
+ValueSet:  MammographyBreastCompositonFindingVS
+Title: "Mammography Breast Compositon Finding ValueSet"
+Description:  "Mammography Breast Compositon Finding Value Set"
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 
