@@ -10,7 +10,6 @@ Description:  "NotPreviouslySeen Value Set"
     """
 
 // Outside exam
-// $FIXME Have GG validate that this ok code for outside exam.
 * include $SCT#386053000 "Evaluation procedure (procedure)"
 
 * include codes from system $SCT where concept Is-A #420131003 "Fluoroscopic mammary ductography (Procedure)"

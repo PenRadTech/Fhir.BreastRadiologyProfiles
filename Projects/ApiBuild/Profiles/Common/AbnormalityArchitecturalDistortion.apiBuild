@@ -40,14 +40,14 @@
 {
   "defineFragment" : {
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#68/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#16/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#82/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#16/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#69/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#16/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#16/n"
   }
 },
 {
