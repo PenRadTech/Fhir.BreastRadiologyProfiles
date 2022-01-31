@@ -12,6 +12,13 @@ Description:  "Foreign Object Type Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 CodeSystem:  AbnormalityForeignObjectTypeCS
 Title: "Foreign Object Type CodeSystem"
 Description:  "Foreign Object Type CodeSystem"

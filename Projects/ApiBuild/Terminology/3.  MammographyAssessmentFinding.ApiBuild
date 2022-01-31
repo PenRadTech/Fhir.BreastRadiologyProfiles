@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "MammographyAssessmentFindingVS",
+    "traceMsg" : "Terminology/3.  MammographyAssessmentFinding.mfsh#28/n"
+  }
+},

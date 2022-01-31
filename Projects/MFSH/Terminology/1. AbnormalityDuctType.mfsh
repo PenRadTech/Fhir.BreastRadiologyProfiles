@@ -13,6 +13,13 @@ Description: "Duct Type Value Set"
   #end
 
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Type CodeSystem"

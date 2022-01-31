@@ -14,6 +14,13 @@ Description:  "Density Type Value Set"
   #end
 
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 CodeSystem: AbnormalityDensityTypeCS
 Title: "Density Type CodeSystem"

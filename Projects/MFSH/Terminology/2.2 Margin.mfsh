@@ -80,3 +80,9 @@ $FIXME* #SmoothMargin "Smooth margin"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
   
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end

@@ -14,6 +14,13 @@ Description:  "Breast Body Location Depth Value Set"
   #end
 
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 
 CodeSystem:  BreastBodyLocationDepthCS

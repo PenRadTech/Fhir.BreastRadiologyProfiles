@@ -13,6 +13,13 @@ Description:  "ServiceRecommendations Value Set"
   #end
 
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 
 

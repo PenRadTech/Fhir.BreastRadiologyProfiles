@@ -13,6 +13,13 @@ Description:  "FibroAdenoma Type Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 CodeSystem: AbnormalityFibroadenomaTypeCS
 Title: "Fibroadenoma Type CodeSystem"

@@ -5,7 +5,6 @@ Description:  "Breast Body Location Regions Value Set"
 * codes from system BreastBodyLocationRegionCS
 
 
-
   #// -----------------------------------------
   #// IG Macros
   #// -----------------------------------------
@@ -13,6 +12,13 @@ Description:  "Breast Body Location Regions Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
+
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
 
 
 

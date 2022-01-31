@@ -14,6 +14,13 @@ Description:  "LymphNode Type Value Set"
 
 
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 CodeSystem: AbnormalityLymphNodeTypeCS
 Title: "Lymph Node Type CodeSystem"

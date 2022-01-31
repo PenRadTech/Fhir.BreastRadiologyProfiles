@@ -26,3 +26,10 @@ Description:  "Radiographic calcification finding Value Set"
   #use IG
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
+
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end

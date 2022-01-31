@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "ConsistentWithQualifierVS",
+    "traceMsg" : "Terminology/2.2. ConsistentWithQualifier.mfsh#35/n"
+  }
+},

@@ -12,6 +12,13 @@ Description:  "AssociatedFeature Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// ValueSet API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+
 
 
 CodeSystem: AssociatedFeatureCS

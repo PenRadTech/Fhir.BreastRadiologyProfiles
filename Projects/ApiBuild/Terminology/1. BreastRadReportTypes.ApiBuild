@@ -1,0 +1,12 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "BreastRadReportTypesVS",
+    "traceMsg" : "Terminology/1. BreastRadReportTypes.mfsh#24/n"
+  }
+},
+{
+  "defineValueSet" : {
+    "valueSetName" : "BreastRadReportTypesVS",
+    "traceMsg" : "Terminology/1. BreastRadReportTypes.mfsh#31/n"
+  }
+},
