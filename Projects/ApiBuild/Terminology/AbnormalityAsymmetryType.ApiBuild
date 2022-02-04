@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "AbnormalityAsymmetryTypeVS",
-    "traceMsg" : "Terminology/1. AbnormalityAsymmetryType.mfsh#18/n"
+    "traceMsg" : "Terminology/AbnormalityAsymmetryType.mfsh#18/n"
   }
 },

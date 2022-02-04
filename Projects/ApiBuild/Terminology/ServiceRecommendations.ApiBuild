@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "ServiceRecommendationsVS",
-    "traceMsg" : "Terminology/1. ServiceRecommendations.mfsh#20/n"
+    "traceMsg" : "Terminology/ServiceRecommendations.mfsh#20/n"
   }
 },

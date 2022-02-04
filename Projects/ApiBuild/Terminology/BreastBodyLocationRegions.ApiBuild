@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "BreastBodyLocationRegionVS",
-    "traceMsg" : "Terminology/1. BreastBodyLocationRegions.mfsh#20/n"
+    "traceMsg" : "Terminology/BreastBodyLocationRegions.mfsh#20/n"
   }
 },

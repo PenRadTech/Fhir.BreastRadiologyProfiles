@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "AssociatedFeatureVS",
-    "traceMsg" : "Terminology/1. AssociatedFeature.mfsh#19/n"
+    "traceMsg" : "Terminology/AssociatedFeature.mfsh#19/n"
   }
 },
