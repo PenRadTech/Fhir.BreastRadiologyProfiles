@@ -5,15 +5,6 @@ Description:  "Lesion density ValueSet"
 
 
 
-  #// -----------------------------------------
-  #// IG Macros
-  #// -----------------------------------------
-  #use IG
-    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
-  #end
-
-
-
 
 CodeSystem: LesionDensityCS
 Title: "Lesion density CodeSystem"
@@ -40,14 +31,6 @@ Description:
     """
     Low density
     """
-
-
-  #// -----------------------------------------
-  #// IG Macros
-  #// -----------------------------------------
-  #use IG
-    #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
-  #end
 
 
 
