@@ -1,6 +1,6 @@
-ValueSet:  MammographyBreastCompositonFindingVS
-Title: "Mammography Breast Compositon Finding ValueSet"
-Description:  "Mammography Breast Compositon Finding Value Set"
+ValueSet:  BreastCompositonVS
+Title: "Breast Compositon ValueSet"
+Description:  "Breast Compositon Value Set"
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 
