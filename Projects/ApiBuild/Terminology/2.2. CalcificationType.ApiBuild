@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "RadiographicCalcificationFindingVS",
-    "traceMsg" : "Terminology/2.2. RadiographicCalcificationFinding.mfsh#34/n"
+    "traceMsg" : "Terminology/2.2. CalcificationType.mfsh#34/n"
   }
 },
