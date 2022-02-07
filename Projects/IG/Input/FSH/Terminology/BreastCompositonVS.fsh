@@ -1,12 +1,42 @@
 ValueSet:  BreastCompositonVS
-Title: "Breast Compositon ValueSet"
-Description:  "Breast Compositon Value Set"
-* ^copyright = """
-	This value set includes content from SNOMED CT, 
-	which is copyright © 2002+ International Health 
-	Terminology Standards Development Organisation (IHTSDO), 
-	and distributed by agreement between IHTSDO and HL7. 
-	Implementer use of SNOMED CT is not covered by this agreement"
+Title: "Breast Composition ValueSet"
+Description:  """
+	Breast Composition Value Set
+	Codes that describe the observed composition of 
+	the breast.
+	"""
+* codes from system BiRadsBreastCompositionCS
+
+
+
+
+CodeSystem: BiRadsBreastCompositionCS
+Title: "Breast Composition CodeSystem"
+Description: "Breast composition values code system."
+* #AlmostEntirelyFat "(a) Almost entirely fat"
+    """
+    A term used to describe breast tissue that is made
+    up of almost all fatty tissue.
     """
 
-* include codes from system $SCT where concept descendent-of #129715009 "Mammographic breast composition finding (finding)"
+* #ScatteredAreasOfFibroglandularDensity "(b) Scattered areas of fibroglandular density"
+    """
+    A term used to describe breast tissue that is made
+    up of mostly fatty tissue and also has some dense fibrous tissue and glandular
+    tissue.
+    """
+
+* #HeterogeneouslyDense "(c) Heterogeneously dense"
+    """
+    A term used to describe breast tissue that has large
+    areas of dense fibrous tissue and glandular tissue and also has some fatty tissue.
+    """
+
+* #ExtremelyDense "(d) Extremely dense"
+    """
+    Also called extremely dense breast tissue.
+    A term used to describe breast tissue that is made
+    up of almost all dense fibrous tissue and glandular tissue.
+    """
+
+// * include codes from system $SCT where concept descendent-of #129715009 "Mammographic breast composition finding (finding)"
