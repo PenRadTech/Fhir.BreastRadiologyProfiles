@@ -1,6 +1,6 @@
 {
   "defineValueSet" : {
     "valueSetName" : "MammographyBreastCompositonFindingVS",
-    "traceMsg" : "Terminology/3a.  MammographyBreastCompositonFindingVS.mfsh#25/n"
+    "traceMsg" : "Terminology/BreastCompositonVS.mfsh#25/n"
   }
 },
