@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "AbnormalityFibroAdenomaTypeVS",
+    "traceMsg" : "Terminology/AbnormalityFibroadenomaType.mfsh#20/n"
+  }
+},

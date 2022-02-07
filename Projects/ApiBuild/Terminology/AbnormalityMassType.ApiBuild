@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "AbnormalityMassTypeVS",
+    "traceMsg" : "Terminology/AbnormalityMassType.mfsh#19/n"
+  }
+},
