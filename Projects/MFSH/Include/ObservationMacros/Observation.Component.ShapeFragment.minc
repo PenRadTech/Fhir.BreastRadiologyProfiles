@@ -51,7 +51,7 @@
   #	 """,
   #  "ObservationComponentSliceCodesCS#density")
   #
-  #apply Observation.Component.SetConcept("density", "1..1", "LesionRadiographicDensityVS")
+  #apply Observation.Component.SetConcept("density", "1..1", "LesionDensityVS")
 
 
   #// -----------------------------------------
