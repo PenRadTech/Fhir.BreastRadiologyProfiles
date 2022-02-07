@@ -12,9 +12,31 @@ Description:  "ConsistentWith Qualifier Value Set"
 	Implementer use of SNOMED CT is not covered by this agreement"
     """
 
-* include codes from system $SCT where concept descendent-of #106230009 "Qualifier for certainty of diagnosis (qualifier value)"
+  * #DifferentialDiagnosis "Differential diagnosis"
+    """
+    More than one possibility for a diagnosis.
+    The process of weighing the probability of one disease
+    versus that of other diseases
+    possibly accounting for a patient's illness.
+    """
 
-* include $SCT#47965005 "Differential diagnosis (contextual qualifier) (qualifier value)"
+  * #LikelyRepresents "Likely represents"
+    """
+    Likely represents
+    """
+
+  * #MostLikely "Most likely"
+    """
+    Most likely
+    """
+
+  * #Resembles "Resembles"
+    """
+    Resembles
+    """
+	
+// * include codes from system $SCT where concept descendent-of #106230009 "Qualifier for certainty of diagnosis (qualifier value)"
+// * include $SCT#47965005 "Differential diagnosis (contextual qualifier) (qualifier value)"
 
 // #Resembles "Resembles"
 // $FIXME
