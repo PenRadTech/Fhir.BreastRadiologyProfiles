@@ -36,17 +36,3 @@ Description:  """
 * $SCT#260325006  "11:30 o'clock position (Qualifier Value)"
 * $SCT#260326007 "12 o'clock position (Qualifier Value)"
 * $SCT#260327003  "12:30 o'clock position (Qualifier Value)"
-
-  #// -----------------------------------------
-  #// IG Macros
-  #// -----------------------------------------
-  #use IG
-    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
-  #end
-
-  #// -----------------------------------------
-  #// ValueSet API Macros
-  #// -----------------------------------------
-  #use ApiBuild
-    #apply DefineValueSet()
-  #end

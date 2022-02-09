@@ -25,7 +25,7 @@ Description: """
   #  The region  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("clockDirection", "Clock Direction", "0..1", "BreastBodyLocationClockPositionsVS", "Clock direction of the body location",
+  #apply Extension.CodeableConcept("clockDirection", "Clock Position", "0..1", "ClockPositionsVS", "Clock Position of the body location",
   #  """
   #  The clock direction of the body location.
   # """)
