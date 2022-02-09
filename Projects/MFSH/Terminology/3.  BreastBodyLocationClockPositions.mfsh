@@ -1,5 +1,5 @@
-ValueSet:  BreastBodyLocationClockPositionsVS
-Title: "Breast Body Location Clock Positions ValueSet"
+ValueSet:  ClockPositionsVS
+Title: "Clock Positions ValueSet"
 Description:  """
 	This value set contains the codes that describe the location 
 	of an item of interest as a clock face position.
