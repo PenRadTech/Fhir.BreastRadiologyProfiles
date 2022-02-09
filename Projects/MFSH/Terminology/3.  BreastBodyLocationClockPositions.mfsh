@@ -1,6 +1,9 @@
 ValueSet:  BreastBodyLocationClockPositionsVS
 Title: "Breast Body Location Clock Positions ValueSet"
-Description:  "Breast Body Location Clock Positions Value Set"
+Description:  """
+	This value set contains the codes that describe the location 
+	of an item of interest as a clock face position.
+	"""
 * ^copyright = """
 	This value set includes content from SNOMED CT, 
 	which is copyright © 2002+ International Health 
