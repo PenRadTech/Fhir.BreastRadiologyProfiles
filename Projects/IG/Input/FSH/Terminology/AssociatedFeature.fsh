@@ -1,14 +1,17 @@
+// $FIXME
 ValueSet:  AssociatedFeatureVS
 Title: "Associated Feature ValueSet"
 Description:  "AssociatedFeature Value Set"
-  * codes from system AssociatedFeatureCS
+* codes from system AssociatedFeatureCS
 
 
 
 CodeSystem: AssociatedFeatureCS
 Title: "Associated Feature CodeSystem"
 Description: "Associated Feature seen during a breast examination."
-  * #ArchitecturalDistortion "Architectural distortion"
+* insert CodeSystem_Common
+
+* #ArchitecturalDistortion "Architectural distortion"
     """
     Many breast masses are found within the zone of fibroglandular
     tissue or at a fat-fibroglandular
@@ -21,7 +24,7 @@ Description: "Associated Feature seen during a breast examination."
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 139]
     """
 
-  * #AxillaryAdenopathy "Axillary adenopathy"
+* #AxillaryAdenopathy "Axillary adenopathy"
     """
     Enlarged axillary (under the armpit) lymph nodes.
     Additional evaluation is needed to determine the
@@ -29,7 +32,7 @@ Description: "Associated Feature seen during a breast examination."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 110]
     """
 
-  * #BiopsyClip "Biopsy clip"
+* #BiopsyClip "Biopsy clip"
     """
     Tissue marker placement after image-guided breast
     biopsy has become a routine component
@@ -46,7 +49,7 @@ Description: "Associated Feature seen during a breast examination."
     [www.ncbi.nlm.nih.gov/pubmed]
     """
 
-  * #BrachytherapyTube "Brachytherapy tube"
+* #BrachytherapyTube "Brachytherapy tube"
     """
     Brachytherapy may be temporary or permanent.
     Temporary brachytherapy places radioactive material
@@ -62,12 +65,12 @@ Description: "Associated Feature seen during a breast examination."
     [www.radiologyinfo.org]
     """
 
-  * #ChestWallInvasion "Chest wall invasion"
+* #ChestWallInvasion "Chest wall invasion"
     """
     A tumor of the lung that has invaded the chest wall.
     """
 
-  * #CooperDistorted "Cooper distorted"
+* #CooperDistorted "Cooper distorted"
     """
     The cooper's ligaments are fibrous bands extending
     vertically from surface attached to
@@ -86,7 +89,7 @@ Description: "Associated Feature seen during a breast examination."
     etc.
     """
 
-  * #CooperThickened "Cooper thickened"
+* #CooperThickened "Cooper thickened"
     """
     The cooper's ligaments are fibrous bands extending
     vertically from surface attached
@@ -107,21 +110,21 @@ Description: "Associated Feature seen during a breast examination."
     to fibrosis.
     """
 
-  * #Edema "Edema"
+* #Edema "Edema"
     """
     Edema (swelling of the breasts)  may be due to blockage
     of subdermal lymphatics by tumor cells or an inflammatory
     process within the breast or axilla.
     """
 
-  * #EdemaAdj "Edema adj"
+* #EdemaAdj "Edema adj"
     """
     This is swelling of one or both breasts.
     A mammographic pattern of skin thickening, increased
     parenchymal density, and interstitial marking.
     """
 
-  * #GoldSeed "Gold Seed"
+* #GoldSeed "Gold Seed"
     """
     Tiny, gold seeds, about the size of a grain of rice,
     that are put in and/or around
@@ -135,7 +138,7 @@ Description: "Associated Feature seen during a breast examination."
     [www.cancer.gov]
     """
 
-  * #Hematoma "Hematoma"
+* #Hematoma "Hematoma"
     """
     A hematoma is a localized bleeding outside of blood
     vessels, due to either disease
@@ -145,7 +148,7 @@ Description: "Associated Feature seen during a breast examination."
     en.wikipedia.org > wiki > Hematoma
     """
 
-  * #NippleRetraction "Nipple retraction"
+* #NippleRetraction "Nipple retraction"
     """
     Retracted nipples lie flat against the areola.
     The condition can be the result of inflammation or
@@ -157,19 +160,19 @@ Description: "Associated Feature seen during a breast examination."
     duct behind the nipple, pulling it in.
     """
 
-  * #NOChestWallInvasion "NO Chest wall invasion"
+* #NOChestWallInvasion "NO Chest wall invasion"
     """
     The mass has not attached itself to the chest wall.
     """
 
-  * #PectoralisMuscleInvasion "Pectoralis muscle invasion"
+* #PectoralisMuscleInvasion "Pectoralis muscle invasion"
     """
     Pectoralis muscle invasion is when a tumor has become
     large enough to invade into
     the pectoralis muscle.
     """
 
-  * #PectoralisMuscleInvolvement "Pectoralis muscle involvement"
+* #PectoralisMuscleInvolvement "Pectoralis muscle involvement"
     """
     Pectoralis muscle involvement of the tumor has been
     detected on the MRI by muscle
@@ -178,7 +181,7 @@ Description: "Associated Feature seen during a breast examination."
     pubs.rsna.org > doi > pdf
     """
 
-  * #PectoralisMuscleTenting "Pectoralis muscle tenting"
+* #PectoralisMuscleTenting "Pectoralis muscle tenting"
     """
     The tent sign is a term referring to a characteristic
     appearance of the posterior
@@ -189,7 +192,7 @@ Description: "Associated Feature seen during a breast examination."
     [radiopaedia.org]
     """
 
-  * #PostSurgicalScar "Post surgical scar"
+* #PostSurgicalScar "Post surgical scar"
     """
     Post surgical scarring happens because of the incisions
     needed to surgically remove
@@ -199,7 +202,7 @@ Description: "Associated Feature seen during a breast examination."
     Surgical scar care should be continued for a year.
     """
 
-  * #Seroma "Seroma"
+* #Seroma "Seroma"
     """
     A breast seroma is a collection (pocket) of serous
     fluid that can develop after trauma
@@ -211,7 +214,7 @@ Description: "Associated Feature seen during a breast examination."
     [www.verywellhealth.com]
     """
 
-  * #SkinInvolvement "Skin involvement"
+* #SkinInvolvement "Skin involvement"
     """
     The mass or lesion has attached itself to the skin
     of the breast.
@@ -220,7 +223,7 @@ Description: "Associated Feature seen during a breast examination."
     what determines the level of skin invasion.
     """
 
-  * #SkinLesion "Skin lesion"
+* #SkinLesion "Skin lesion"
     """
     A skin lesion is a part of the skin that has an abnormal
     growth or appearance compared
@@ -228,7 +231,7 @@ Description: "Associated Feature seen during a breast examination."
     lesion, a full physical exam is necessary.
     """
 
-  * #SkinRetraction "Skin retraction"
+* #SkinRetraction "Skin retraction"
     """
     Skin retraction (or inversion) or Skin retraction.
     Breast cancers that are located near the skin or
@@ -240,7 +243,7 @@ Description: "Associated Feature seen during a breast examination."
     [www.drholmesmd.com]
     """
 
-  * #SkinThickening "Skin thickening"
+* #SkinThickening "Skin thickening"
     """
     The presence of skin thickening on mammography is
     variably defined, usually being
@@ -250,7 +253,7 @@ Description: "Associated Feature seen during a breast examination."
     [radiopaedia.org]
     """
 
-  * #SurgicalClip "Surgical clip"
+* #SurgicalClip "Surgical clip"
     """
     Most surgical clips are currently made of titanium,
     and as many as 30 to 40 clips
@@ -259,7 +262,7 @@ Description: "Associated Feature seen during a breast examination."
     after the wounds are healed.
     """
 
-  * #TrabecularThickening "Trabecular thickening"
+* #TrabecularThickening "Trabecular thickening"
     """
     Trabecular thickening-thickening of the Cooper's ligaments
     and fibrous stroma-is
@@ -271,7 +274,7 @@ Description: "Associated Feature seen during a breast examination."
     [oxfordmedicine.com]
     """
 
-  * #CalcificationInMass "Calcification in mass"
+* #CalcificationInMass "Calcification in mass"
     """
     Calcifications usually can't be felt, but appear
     on a mammogram.
@@ -281,7 +284,7 @@ Description: "Associated Feature seen during a breast examination."
     with cancer.
     """
 
-  * #CalcificationNotOnMammogarm "Calcification Not on mammogarm"
+* #CalcificationNotOnMammogarm "Calcification Not on mammogarm"
     """
     Calcifications usually can't be felt, but appear
     on a mammogram.
@@ -291,7 +294,7 @@ Description: "Associated Feature seen during a breast examination."
     with cancer.
     """
 
-  * #CalcificationOnMammogram "Calcification on mammogram"
+* #CalcificationOnMammogram "Calcification on mammogram"
     """
     Calcifications are small deposits of calcium that
     show up on mammograms as bright
@@ -300,7 +303,7 @@ Description: "Associated Feature seen during a breast examination."
     The calcium readily absorbs the X-rays from mammograms
     """
 
-  * #Calcifications "Calcifications"
+* #Calcifications "Calcifications"
     """
     Calcifications are small deposits of calcium that
     show up on mammograms as bright
@@ -308,7 +311,7 @@ Description: "Associated Feature seen during a breast examination."
     of the breasts.
     """
 
-  * #MicroCalcifications "Micro calcifications"
+* #MicroCalcifications "Micro calcifications"
     """
     Micro-calcifications show up as fine, white specks
     in a mammogram, similar to grains of salt; usually
@@ -316,7 +319,7 @@ Description: "Associated Feature seen during a breast examination."
     sign of cancer.
     """
 
-  * #MilkOfCalcium "Milk of calcium"
+* #MilkOfCalcium "Milk of calcium"
     """
     The term milk of calcium (MOC) is given to dependent,
     sedimented calcification within
@@ -326,7 +329,7 @@ Description: "Associated Feature seen during a breast examination."
     [radiopaedia.org]
     """
 
-  * #RimCalcifications "Rim calcifications"
+* #RimCalcifications "Rim calcifications"
     """
     These are very thin benign calcifications that appear
     as calcium is deposited on

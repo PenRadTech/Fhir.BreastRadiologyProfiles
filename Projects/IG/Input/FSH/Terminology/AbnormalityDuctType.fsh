@@ -1,14 +1,16 @@
+// $FIXME
 ValueSet:  AbnormalityDuctTypeVS
 Title: "Duct Type ValueSet"
 Description: "Duct Type Value Set"
-  * codes from system AbnormalityDuctTypeCS
-
+* codes from system AbnormalityDuctTypeCS
 
 
 CodeSystem: AbnormalityDuctTypeCS
 Title: "Duct Type CodeSystem"
 Description: "Duct types code system."
-  * #DuctNormal "Duct normal"
+* insert CodeSystem_Common
+
+* #DuctNormal "Duct normal"
     """
     Duct is considered normal.
     It is surrounded by normal cells and collagen in
@@ -17,7 +19,7 @@ Description: "Duct types code system."
     nipples.
     """
 
-  * #SolitaryDilatedDuct "Solitary dilated duct"
+* #SolitaryDilatedDuct "Solitary dilated duct"
     """
     When it is malignant, solitary dilated duct appears
     to indicate the presence of DCIS.
@@ -26,7 +28,7 @@ Description: "Duct types code system."
     or without accompanying fluid, as seen at ultrasound.
     """
 
-  * #DuctEctasia "Duct ectasia"
+* #DuctEctasia "Duct ectasia"
     """
     A noncancerous condition that results in clogged
     ducts around the nipple.

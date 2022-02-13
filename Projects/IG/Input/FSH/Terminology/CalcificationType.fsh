@@ -1,7 +1,11 @@
 ValueSet:  CalcificationTypeVS
 Title: "Calcification Type Value Set"
-Description:  "Calcification Type Value Set"
-  * codes from system CalcificationTypeCS
+Description:  """
+	Calcification Type Value Set
+	This value set describes the types of calcification findings that may be found
+	during an exam.
+	"""
+* codes from system CalcificationTypeCS
 
 
 
@@ -10,7 +14,7 @@ Description:  "Calcification Type Value Set"
 CodeSystem: CalcificationTypeCS
 Title: "Calcification Type CodeSystem"
 Description: "Mammography calcification type code system."
-  * #Amorphous "Amorphous"
+* #Amorphous "Amorphous"
     """
     (historically, 'indistinct')
     These are sufficiently small and/or hazy in appearance
@@ -31,7 +35,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Coarse "Coarse"
+* #Coarse "Coarse"
     """
     The classic large 'popcorn-like' calcifications are
     produced by involuting fibroadenomas.
@@ -46,7 +50,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Dystrophic "Dystrophic"
+* #Dystrophic "Dystrophic"
     """
     Dystrophic soft tissue calcification is a broad term
     that encompasses a wide range of pathologies that
@@ -60,7 +64,7 @@ Description: "Mammography calcification type code system."
     [radiopaedia.org]
     """
 
-  * #Eggshell "Eggshell"
+* #Eggshell "Eggshell"
     """
     Eggshell calcifications in the breast are benign
     peripheral rim like calcifications
@@ -74,13 +78,13 @@ Description: "Mammography calcification type code system."
     [radiopaedia.org]
     """
 
-  * #Fine "Fine"
+* #Fine "Fine"
     """
     These are thin, linear or curvilinear irregular calcifications
     and may be discontinuous.
     """
 
-  * #Generic "Generic"
+* #Generic "Generic"
     """
     Calcification happens when calcium builds up in body
     tissue, blood vessels, or organs.
@@ -92,7 +96,7 @@ Description: "Mammography calcification type code system."
     part of the body.
     """
 
-  * #CoarseHeterogeneous "Coarse Heterogeneous"
+* #CoarseHeterogeneous "Coarse Heterogeneous"
     """
     These are irregular, conspicuous calcifications that
     are generally between 0.5 mm and 1 mm
@@ -116,7 +120,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Indistinct "Indistinct"
+* #Indistinct "Indistinct"
     """
     Amorphous calcifications, previously known as indistinct
     calcifications, are a morphological
@@ -126,7 +130,7 @@ Description: "Mammography calcification type code system."
     [radiopaedia.org]
     """
 
-  * #LargeRodlike "Large rodlike"
+* #LargeRodlike "Large rodlike"
     """
     These benign calcifications associated with ductal
     ectasia may form solid or discontinuous
@@ -151,13 +155,13 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Layering "Layering"
+* #Layering "Layering"
     """
     Layering of calcium within the calcification.
     [radiologyassistant.nl]
     """
 
-  * #FineLinear "Fine Linear"
+* #FineLinear "Fine Linear"
     """
     Also called fine linear branching.
     These are thin, linear, irregular calcifications,
@@ -171,7 +175,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 66]
     """
 
-  * #Lucent-centered "Lucent-centered"
+* #Lucent-centered "Lucent-centered"
     """
     These are round or oval calcifications that range
     from under 1 mm to over a centimeter.
@@ -180,7 +184,7 @@ Description: "Mammography calcification type code system."
     [radiologyassistant.nl]
     """
 
-  * #MilkOfCalcium "Milk of calcium"
+* #MilkOfCalcium "Milk of calcium"
     """
     This is a manifestation of sedimented calcifications
     in macro- or microcysts, usually but not
@@ -208,7 +212,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #FinePleomorphic "Fine Pleomorphic"
+* #FinePleomorphic "Fine Pleomorphic"
     """
     These calcifications are usually more conspicuous
     than amorphous forms and are seen
@@ -223,7 +227,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 64]
     """
 
-  * #Punctate "Punctate"
+* #Punctate "Punctate"
     """
     Calcification is punctate/round.
     It's different than a 'round' calcification though
@@ -238,7 +242,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Rim "Rim"
+* #Rim "Rim"
     """
     Eggshell or Rim Calcifications
     These are very thin benign calcifications that appear
@@ -253,7 +257,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 49]
     """
 
-  * #Round "Round"
+* #Round "Round"
     """
     When multiple, they may vary in size and therefore
     also in opacity.
@@ -274,7 +278,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Skin "Skin"
+* #Skin "Skin"
     """
     These are usually lucent-centered and pathognomonic
     in their appearance.
@@ -289,7 +293,7 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 36]
     """
 
-  * #Spherical "Spherical"
+* #Spherical "Spherical"
     """
     Calcifications that have formed a  spherical shape
     are usually associated with benign
@@ -297,14 +301,14 @@ Description: "Mammography calcification type code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition]
     """
 
-  * #Suture "Suture"
+* #Suture "Suture"
     """
     Calcified suture materials are typically linear or
     tubular in appearance, and when present in Mammogram,
     may show up in a knot pattern.
     """
 
-  * #Vascular "Vascular"
+* #Vascular "Vascular"
     """
     These are linear or form parallel tracks, that are
     usually clearly associated with blood vessels.
@@ -316,3 +320,15 @@ Description: "Mammography calcification type code system."
     ducts) calcification.
     [radiologyassistant.nl]
     """
+
+
+
+// * include codes from system $SCT where concept descendent-of #129748009 "Radiographic calcification finding (finding)"
+
+/*
+  $FIXME Missing
+
+  Indistinct "Indistinct"
+  Layering "Layering"
+  Rim "Rim"
+  */

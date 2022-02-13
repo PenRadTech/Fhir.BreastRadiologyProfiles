@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "AbnormalityForeignObjectTypeVS",
+    "traceMsg" : "Terminology/AbnormalityForeignObjectType.mfsh#19/n"
+  }
+},

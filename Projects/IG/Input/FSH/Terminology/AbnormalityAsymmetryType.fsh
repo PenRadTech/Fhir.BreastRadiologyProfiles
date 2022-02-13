@@ -1,21 +1,23 @@
+// $FIXME
 ValueSet:  AbnormalityAsymmetryTypeVS
 Title: "Asymmetry Type ValueSet"
 Description:  "Asymmetry Type Value Set"
-  * codes from system AbnormalityAsymmetryTypeCS
-
+* codes from system AbnormalityAsymmetryTypeCS
 
 
 CodeSystem: AbnormalityAsymmetryTypeCS
 Title: "Asymmetry Type CodeSystem"
 Description: "Asymmetry type code system."
-  * #Asymmetry "Asymmetry"
+* insert CodeSystem_Common
+
+* #Asymmetry "Asymmetry"
     """
     Breast asymmetry refers to when one breast is a different
     size or shape than the
     other.
     """
 
-  * #AsymmetryFocal "Asymmetry focal"
+* #AsymmetryFocal "Asymmetry focal"
     """
     Focal asymmetry is visible as a confined asymmetry
     with a similar shape on two views
@@ -30,7 +32,7 @@ Description: "Asymmetry type code system."
     [pubs.rsna.org]
     """
 
-  * #AsymmetryGlobal "Asymmetry global"
+* #AsymmetryGlobal "Asymmetry global"
     """
     Global asymmetry in breast tissue is a form of breast
     asymmetry where at least one
@@ -39,7 +41,7 @@ Description: "Asymmetry type code system."
     area in the contralateral breast.
     """
 
-  * #DevelopingAsymmetry "Developing Asymmetry"
+* #DevelopingAsymmetry "Developing Asymmetry"
     """
     A developing asymmetry is a focal asymmetry that
     is new or increased in conspicuity

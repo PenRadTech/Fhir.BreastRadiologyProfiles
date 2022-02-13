@@ -1,0 +1,12 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "UnitsOfLengthVS",
+    "traceMsg" : "Terminology/3. UnitsofLength.mfsh#31/n"
+  }
+},
+{
+  "defineValueSet" : {
+    "valueSetName" : "UnitsOfLengthVS",
+    "traceMsg" : "Terminology/3. UnitsofLength.mfsh#38/n"
+  }
+},

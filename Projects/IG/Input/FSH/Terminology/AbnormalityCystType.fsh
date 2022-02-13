@@ -1,15 +1,17 @@
+// $FIXME
 ValueSet: AbnormalityCystTypeVS
 Title: "Cyst Type Value Set"
 Description: "Cyst type Value Set."
-  * codes from system AbnormalityCystTypeCS
-
+* codes from system AbnormalityCystTypeCS
 
 
   
 CodeSystem: AbnormalityCystTypeCS
 Title: "Cyst Type CodeSystem"
 Description: "Cyst type CodeSystem."
-  * #Cyst "Cyst"
+* insert CodeSystem_Common
+
+* #Cyst "Cyst"
     """
     A cyst is a sac-like pocket of membranous tissue
     that contains fluid, air, or other
@@ -18,7 +20,7 @@ Description: "Cyst type CodeSystem."
     the skin.
     """
 
-  * #CystComplex "Cyst complex"
+* #CystComplex "Cyst complex"
     """
     Complex cysts have irregular or scalloped borders,
     thick walls, and some evidence
@@ -34,7 +36,7 @@ Description: "Cyst type CodeSystem."
     [www.breastcancer.org]
     """
 
-  * #CystComplicated "Cyst complicated"
+* #CystComplicated "Cyst complicated"
     """
     Complicated cysts are 'in between' simple and complex.
     Although they share most of the features of simple
@@ -47,7 +49,7 @@ Description: "Cyst type CodeSystem."
     [www.breastcancer.org]
      """
 
-  * #CystMicro "Cyst micro"
+* #CystMicro "Cyst micro"
     """
     A microcyst Is a sac-like pocket of tissue that contains
     fluid, air, or other substances.
@@ -56,21 +58,21 @@ Description: "Cyst type CodeSystem."
     or ultrasound.
     """
 
-  * #CystOil "Cyst oil"
+* #CystOil "Cyst oil"
     """
     Oil cysts are filled with fluid that may feel smooth
     and soft/squishy.
     Oil cysts are caused by the breakdown of fatty tissue.
     """
 
-  * #CystSimple "Cyst simple"
+* #CystSimple "Cyst simple"
     """
     A simple cyst is a sac-like pocket of membranous
     tissue that only contains clear
     fluid.
     """
 
-  * #CystWithDebris "Cyst with debris"
+* #CystWithDebris "Cyst with debris"
     """
     A cyst that is filled with debris and fluid substance.
     It Is either considered a complex or complicated

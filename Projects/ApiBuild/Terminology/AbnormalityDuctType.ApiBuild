@@ -1,0 +1,6 @@
+{
+  "defineValueSet" : {
+    "valueSetName" : "AbnormalityDuctTypeVS",
+    "traceMsg" : "Terminology/AbnormalityDuctType.mfsh#20/n"
+  }
+},

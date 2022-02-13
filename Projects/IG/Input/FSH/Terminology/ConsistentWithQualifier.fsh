@@ -4,7 +4,7 @@
 ValueSet:  ConsistentWithQualifierVS
 Title: "ConsistentWith Qualifier ValueSet"
 Description:  "ConsistentWith Qualifier Value Set"
-  * codes from system ConsistentWithQualifierCS
+* codes from system ConsistentWithQualifierCS
 
 
 
@@ -15,7 +15,7 @@ Description:  "ConsistentWith Qualifier Value Set"
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
-  * #DifferentialDiagnosis "Differential diagnosis"
+* #DifferentialDiagnosis "Differential diagnosis"
     """
     More than one possibility for a diagnosis.
     The process of weighing the probability of one disease
@@ -23,17 +23,25 @@ Description: "ConsistentWithQualifier  code system"
     possibly accounting for a patient's illness.
     """
 
-  * #LikelyRepresents "Likely represents"
+* #LikelyRepresents "Likely represents"
     """
     Likely represents
     """
 
-  * #MostLikely "Most likely"
+* #MostLikely "Most likely"
     """
     Most likely
     """
 
-  * #Resembles "Resembles"
+* #Resembles "Resembles"
     """
     Resembles
     """
+
+
+// * include codes from system $SCT where concept descendent-of #106230009 "Qualifier for certainty of diagnosis (qualifier value)"
+// * include $SCT#47965005 "Differential diagnosis (contextual qualifier) (qualifier value)"
+
+// #Resembles "Resembles"
+// $FIXME
+// * include $SCT# ""

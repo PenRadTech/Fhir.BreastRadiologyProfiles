@@ -1,7 +1,7 @@
 ValueSet:  MarginVS
 Title: "Margin ValueSet"
 Description:  "Margin Value Set"
-  * codes from system MarginCS
+* codes from system MarginCS
 
 
 
@@ -9,14 +9,14 @@ Description:  "Margin Value Set"
 CodeSystem: MarginCS
 Title: "Margin CodeSystem"
 Description: "Margin code system."
-  * #AngularMargin "Angular margin"
+* #AngularMargin "Angular margin"
     """
     Some or all of the margin has sharp corners, often
     forming acute angles.
     The margin of the mass is not circumscribed.
     """
 
-  * #CircumscribedMargin "Circumscribed margin"
+* #CircumscribedMargin "Circumscribed margin"
     """
     A circumscribed margin is one that is well defined,
     with an abrupt transition between
@@ -27,7 +27,7 @@ Description: "Margin code system."
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 49]
     """
 
-  * #IndistinctMargin "Indistinct margin"
+* #IndistinctMargin "Indistinct margin"
     """
     There is no clear demarcation of the entire margin,
     or of any portion of the margin,
@@ -42,7 +42,7 @@ Description: "Margin code system."
     [Breast Imaging Reporting and Data System—Ultrasound, Second Edition page 23]
     """
 
-  * #IntraductalExtension "Intraductal extension"
+* #IntraductalExtension "Intraductal extension"
     """
     Intraductal tumor extension is a characteristic feature
     of primary breast carcinoma,
@@ -51,14 +51,14 @@ Description: "Margin code system."
     [www.ncbi.nlm.nih.gov/pubmed]
     """
 
-  * #IrregularMargin "Irregular margin"
+* #IrregularMargin "Irregular margin"
     """
     Edges around the soft tissue that don't look smooth.
     Indicative of some sort of growth or mass rather
     than a cyst.
     """
 
-  * #LobulatedMargin "Lobulated margin"
+* #LobulatedMargin "Lobulated margin"
     """
     The edge of the mass has broad bulges.
     Much like a 6 or 8 leaf clover.
@@ -66,7 +66,7 @@ Description: "Margin code system."
     lobulated.
     """
 
-  * #MacrolobulatedMargin "Macrolobulated margin"
+* #MacrolobulatedMargin "Macrolobulated margin"
     """
     Smooth margin with distinct separation between the
     mass and the surrounding border.
@@ -74,7 +74,7 @@ Description: "Margin code system."
     a wide rather than tall formation.
     """
 
-  * #MicrolobulatedMargin "Microlobulated margin"
+* #MicrolobulatedMargin "Microlobulated margin"
     """
     The margin is characterized by short-cycle undulations
     or scalloped appearance,and
@@ -82,7 +82,7 @@ Description: "Margin code system."
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 54]
     """
 
-  * #NonCircumscribedMargin "Non circumscribed margin"
+* #NonCircumscribedMargin "Non circumscribed margin"
     """
     The mass has one or more of the following features:
     indistinct,
@@ -93,7 +93,7 @@ Description: "Margin code system."
     [Breast Imaging Reporting and Data System—Mammography, Fifth Edition page 153]
     """
 
-  * #ObscuredMagin "Obscured magin"
+* #ObscuredMagin "Obscured magin"
     """
     It is hidden by superimposed or adjacent fibroglandular
     tissue.
@@ -102,14 +102,14 @@ Description: "Margin code system."
     the rest (more than 25%) is hidden.
     """
 
-  * #SmoothMargin "Smooth margin"
+* #SmoothMargin "Smooth margin"
     """
     The edges of the mass have a smooth appearance and
     distinct separation between the
     mass and surrounding tissue.
     """
 
-  * #SpiculatedMargin "Spiculated margin"
+* #SpiculatedMargin "Spiculated margin"
     """
     The margin is characterized by sharp lines radiating
     from the mass, often a sign
