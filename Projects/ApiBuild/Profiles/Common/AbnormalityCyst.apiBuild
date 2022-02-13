@@ -20,6 +20,12 @@
   }
 },
 {
+  "defineFragment" : {
+    "fragmentName" : "ShapeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#82/nProfiles/Common/AbnormalityCyst.mfsh#25/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityCyst",
     "fragmentName" : "ShapeFragment",

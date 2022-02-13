@@ -22,61 +22,54 @@
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
-    "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalityAsymmetry.mfsh#26/n"
-  }
-},
-{
-  "implementFragment" : {
-    "className" : "AbnormalityAsymmetry",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityAsymmetry.mfsh#26/n"
   }
 },
 {
   "defineFragment" : {
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#54/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#54/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityAsymmetry.mfsh#28/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityAsymmetry.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityAsymmetry.mfsh#29/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "AssociatedFeatureFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityAsymmetry.mfsh#32/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityAsymmetry.mfsh#31/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "ConsistentWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityAsymmetry.mfsh#33/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityAsymmetry.mfsh#32/n"
   }
 },
 {
   "defineClass" : {
     "className" : "AbnormalityAsymmetry",
-    "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#59/n"
+    "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#58/n"
   }
 },
