@@ -1,7 +1,7 @@
 /*
  ObservedSize Fragment
  Fragment that adds 'Observed Size' components to Observation.
- */
+*/
  
 #Fragment: Observation.Component.ObservedSizeFragment
 #Parent: Observation
@@ -28,11 +28,11 @@
   #	 """,
   # "ObservationComponentSliceCodesCS#obsSize")
   #
-  * component[obsSize].value[x] 1..1
-  * component[obsSize].value[x] only Quantity or Range
-  * component[obsSize].valueQuantity from UNITSOFLENGTH
-  * component[obsSize].valueRange.low from UNITSOFLENGTH
-  * component[obsSize].valueRange.high from UNITSOFLENGTH
+* component[obsSize].value[x] 1..1
+* component[obsSize].value[x] only Quantity or Range
+* component[obsSize].valueQuantity from UNITSOFLENGTH
+* component[obsSize].valueRange.low from UNITSOFLENGTH
+* component[obsSize].valueRange.high from UNITSOFLENGTH
 
   #// -----------------------------------------
   #// Graph Macros

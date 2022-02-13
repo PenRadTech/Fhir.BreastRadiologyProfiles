@@ -5,12 +5,12 @@ Description: """
     Associated Feature
     """
 
-  * . ^definition = """
+* . ^definition = """
     This resource contains information about an associated feature observation.
      
     The feature observed is defined by the featureType component slice.
     """
-  * component 1..2
+* component 1..2
   
   #apply Resource.Fix("1", "code", "ObservationCodesCS#associatedFeaturesObservation", "Code")
 

@@ -2,18 +2,18 @@
  Add a derivedFrom slice to an observation.
  This adds the component slicing discriminator.
  It does not constrain the derivedFrom target.
- */
+*/
 #macro Observation.DerivedFrom.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, Url)
   #apply Observation.DerivedFrom.Slice()
-  * derivedFrom contains SliceName Cardinality
-  * derivedFrom[SliceName] ^short = "ShortDesc component."
-  * derivedFrom[SliceName] ^comment = """
+* derivedFrom contains SliceName Cardinality
+* derivedFrom[SliceName] ^short = "ShortDesc component."
+* derivedFrom[SliceName] ^comment = """
     This observation is derived from a 'ShortDesc' observation.
     """
-  * derivedFrom[SliceName] ^definition = """
+* derivedFrom[SliceName] ^definition = """
     Definition
     """
-  * derivedFrom[SliceName] only Reference(Url)
+* derivedFrom[SliceName] only Reference(Url)
 
   #// -----------------------------------------
   #// Graph Macros

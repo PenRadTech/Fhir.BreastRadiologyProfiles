@@ -1,15 +1,15 @@
 #macro Extension.Quantity(SliceName, DisplayName, Cardinality, UnitsCS, Short, Definition)
   #apply Extension.Configure()
  
-  * extension contains SliceName Cardinality
-  * extension[SliceName] ^short = "Short"
-  * extension[SliceName] ^definition =
+* extension contains SliceName Cardinality
+* extension[SliceName] ^short = "Short"
+* extension[SliceName] ^definition =
     """
 	Definition
 	"""
-  * extension[SliceName].value[x] 1..1
-  * extension[SliceName].value[x] only Quantity
-  * extension[SliceName].valueQuantity from UNITSOFLENGTH
+* extension[SliceName].value[x] 1..1
+* extension[SliceName].value[x] only Quantity
+* extension[SliceName].valueQuantity from UNITSOFLENGTH
 
   #// -----------------------------------------
   #// Graph Macros

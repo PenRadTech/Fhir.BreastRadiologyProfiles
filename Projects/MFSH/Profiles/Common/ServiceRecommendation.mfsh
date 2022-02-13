@@ -7,8 +7,8 @@ Description: """
 
   #apply HeaderFragment()
 
-  * . ^definition = "Followup Service Recommendation."
-  * extension contains BreastLateralityExtension named breastLaterality 1..1
+* . ^definition = "Followup Service Recommendation."
+* extension contains BreastLateralityExtension named breastLaterality 1..1
 
   #apply Resource.Bind("1", "1..1", "code", "ServiceRecommendationsVS  (extensible)", "Code")
   
@@ -24,11 +24,11 @@ Description: """
     # </p>
     # <p>
     # This resource is a profile of ServiceRequest. It's ServiceRequest.code is bound to a value set of common
-    #  breast radiology recommendations. This list is not meant to be comprehensive, just commonly used items will
+    #  breast imaging recommendations. This list is not meant to be comprehensive, just commonly used items will
     #  will be included in the list.
     # </p>
     # <p>
-    # The Breast Radiology Report contains references to zero or more recommendations, which may include ServiceRecommendation instances
+    # The Breast Imaging Report contains references to zero or more recommendations, which may include ServiceRecommendation instances
     #  but is not limited to only ServiceRecommendation instances.
     # </p>
     #""")

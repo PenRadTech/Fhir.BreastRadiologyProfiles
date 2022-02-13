@@ -6,8 +6,8 @@ Description: """
     """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#breastAssessmentCategoryObservation", "Code")
-  #apply Resource.Bind("1", "1..1", "value[x]", "BiRadsAssessmentCategoryVS", "Value")
-  * value[x] only CodeableConcept
+  #apply Resource.Bind("1", "1..1", "value[x]", "BreastAssessmentCategoryVS", "Value")
+* value[x] only CodeableConcept
 
   #apply Observation.LeafFragment()
   #apply Observation.Component.Zero()

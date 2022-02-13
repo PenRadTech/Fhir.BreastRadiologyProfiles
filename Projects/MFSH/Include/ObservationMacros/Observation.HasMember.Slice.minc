@@ -1,6 +1,6 @@
 /*
  Slice Observation.hasMember.
- */
+*/
 #macro once Observation.HasMember.Slice()
   #incompatible Observation.LeafFragment
 

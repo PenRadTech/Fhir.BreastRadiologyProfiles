@@ -1,6 +1,6 @@
 /*
  Slice Observation.derivedFrom.
- */
+*/
 #macro once Observation.DerivedFrom.Slice()
 
   #apply Resource.Slice("derivedFrom", "url", "value", "derivedFrom slicing")

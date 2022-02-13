@@ -4,71 +4,71 @@
   #apply Group("BaseResources", 
   # "Main Resources", 
   # """
-  # This section contains the main top level resources that are defined in this Breast Radiology Implementation Guide.
+  # This section contains the main top level resources that are defined in this Breast Imaging Implementation Guide.
   # """)
 
   #apply Group("CommonResources", 
   # "Common Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide.
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide.
   # """)
 
   #apply Group("ExtensionResources", 
   # "Extension Resources", 
   # """
-  # This section contains extension resources that are defined in this Breast Radiology Implementation Guide.
+  # This section contains extension resources that are defined in this Breast Imaging Implementation Guide.
   # """)
 
   #apply Group("MGResources", 
   # "Mammography Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a mammography exam.
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide specifically in a mammography exam.
   # """)
 
 
   #apply Group("MRIResources", 
   # "MRI Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an MRI exam.
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide specifically in an MRI exam.
   # """)
 
   #apply Group("USResources", 
   # "Ultrasound Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in an ultrasound exam.
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide specifically in an ultrasound exam.
   # """)
 
   #apply Group("NMResources", 
   # "Nuclear Medicine Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide specifically in a nuclear medicine exam.
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide specifically in a nuclear medicine exam.
   # """)
 
   #apply Group("OtherResources", 
   # "Other Resources", 
   # """
-  # This section contains resources that are defined in this Breast Radiology Implementation Guide 
+  # This section contains resources that are defined in this Breast Imaging Implementation Guide 
   # that are not one of the predefined exam types.
   # """)
 
   #apply Group("CommonCodesVS", 
   # "Common ValueSets", 
   # """
-  # This section contains value sets that are defined in this Breast Radiology Implementation Guide.
+  # This section contains value sets that are defined in this Breast Imaging Implementation Guide.
   # """)
 
   #apply Group("CommonCodesCS", 
   # "Common CodeSystems", 
   # """
-  # This section contains code systems that are defined in this Breast Radiology Implementation Guide.
+  # This section contains code systems that are defined in this Breast Imaging Implementation Guide.
   # """)
 
   #apply Group("Fragments", 
   # "Resource Fragments", 
   # """
-  # This section contains resource fragments that are used in the construction of the Breast Radiology Profiles.
+  # This section contains resource fragments that are used in the construction of the Breast Imaging Profiles.
   #
   # They are included here only to better convey the structure and composition of the components that are used to create the
-  # Breast Radiology Resources.
+  # Breast Imaging Resources.
   # """)
 #end

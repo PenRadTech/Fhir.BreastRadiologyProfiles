@@ -8,16 +8,16 @@ Description: """
     Breast Body Location Extension
     """
 
-  * . ^short = "Breast Body Location extension"
+* . ^short = "Breast Body Location extension"
 
   #apply Extension.CodeableConcept("laterality", "Laterality", "0..1", "LateralityVS", "Body side",
   #  """
   #  The side of the body being examined.
   #  """)
 
-  #apply Extension.CodeableConcept("quadrant", "Quadrant", "0..1", "BreastBodyLocationQuadrantVS", "Quadrant of the body location",
+  #apply Extension.CodeableConcept("quadrant", "Quadrant", "0..1", "BreastQuadrantVS", "Breast quadrant location",
   #  """
-  #  The quadrant  of the body location.
+  #  The quadrant of the breast location.
   #  """)
 
   #apply Extension.CodeableConcept("region", "Region", "0..1", "BreastBodyLocationRegionVS", "Region of the body location",
@@ -25,7 +25,7 @@ Description: """
   #  The region  of the body location.
   #  """)
 
-  #apply Extension.CodeableConcept("clockDirection", "Clock Direction", "0..1", "BreastBodyLocationClockPositionsVS", "Clock direction of the body location",
+  #apply Extension.CodeableConcept("clockDirection", "Clock Position", "0..1", "ClockPositionsVS", "Clock Position of the body location",
   #  """
   #  The clock direction of the body location.
   # """)
@@ -64,10 +64,10 @@ Description: """
     # </p>
     # <p>
     # this extension defines the fields that are used to describe the
-    #  location of an observed item in a breast radiology report.
+    #  location of an observed item in a breast imaging report.
     # </p>
     # <p>
-    # Breast radiology exams have specific ways of defining a location that are unique to this field.
+    # Breast imaging exams have specific ways of defining a location that are unique to this field.
     # </p>
     #""")
 

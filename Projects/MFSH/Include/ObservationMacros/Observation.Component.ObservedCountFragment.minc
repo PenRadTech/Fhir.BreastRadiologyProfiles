@@ -1,7 +1,7 @@
 /*
  ObservedCount Fragment
  Fragment that adds 'Observed Count' element to profile.
- */
+*/
 
 #Fragment: Observation.Component.ObservedCountFragment
 #Parent: Observation
@@ -23,8 +23,8 @@
   #	  """,
   #   "ObservationComponentSliceCodesCS#obsCount")
   #
-  * component[observedCount].value[x] 1..1
-  * component[observedCount].value[x] only Quantity or Range
+* component[observedCount].value[x] 1..1
+* component[observedCount].value[x] only Quantity or Range
 
   #// -----------------------------------------
   #// Graph Macros

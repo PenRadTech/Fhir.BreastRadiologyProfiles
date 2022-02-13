@@ -1,12 +1,12 @@
 Profile: BreastMedicationRequest
 Parent: MedicationRequest
-Title: "Breast Radiology Medication Request"
+Title: "Breast Imaging Medication Request"
 Description: """
   Medication request with required breast laterality field.
   """
 
   #apply HeaderFragment()
-  * extension contains BreastLateralityExtension named breastLaterality 1..1
+* extension contains BreastLateralityExtension named breastLaterality 1..1
 
   #// -----------------------------------------
   #// IG Macros

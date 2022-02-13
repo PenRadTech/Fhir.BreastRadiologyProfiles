@@ -1,7 +1,7 @@
 /*
  BiRad Fragment
  Fragment that adds 'BiRad RadAssessment Category code' element to profile
- */
+*/
  
 #Fragment: Observation.Hasmember.BiRadAssessmentCategoryFragment
 #Parent: Observation

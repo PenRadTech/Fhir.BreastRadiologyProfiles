@@ -1,7 +1,7 @@
 Profile: FindingsBiLateralBreast
   #apply Observation.FindingBreastFragment("BiLateral")
   #apply Resource.Fix("1", "code", "ObservationCodesCS#findingsBiLateralBreastObservation", "Code")
-  #apply Resource.Fix("2", "bodySite", "SNOMED#181131000 \"Entire breast (body structure)\"", "Body Site")
+  #apply Resource.Fix("2", "bodySite", "$SCT#181131000 \"Entire breast (body structure)\"", "Body Site")
 
   #// -----------------------------------------
   #// IG Macros

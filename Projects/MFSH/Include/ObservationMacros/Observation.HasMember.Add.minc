@@ -2,7 +2,7 @@
  Add an Observation.hasMember slice to an observation.
  This adds the hasMember slicing discriminator.
  It does not constrain the hasMember target.
- */
+*/
 
 #macro Observation.HasMember.Add(SliceName, 
 #      Cardinality, 
@@ -11,9 +11,9 @@
 #      Definition)
   #incompatible Observation.LeafFragment
   #apply Observation.HasMember.Slice()
-  * hasMember contains SliceName Cardinality
-  * hasMember[SliceName] ^short = "ShortDesc hasMember."
-  * hasMember[SliceName] only Reference(Target)
+* hasMember contains SliceName Cardinality
+* hasMember[SliceName] ^short = "ShortDesc hasMember."
+* hasMember[SliceName] only Reference(Target)
 
   #// -----------------------------------------
   #// Graph Macros
