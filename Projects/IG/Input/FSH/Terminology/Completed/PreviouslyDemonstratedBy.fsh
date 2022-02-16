@@ -19,18 +19,4 @@ Description:  """
 * include $SCT#47079000 "Ultrasonography of breast (procedure)"
 * include $SCT#71651007 "Mammography (procedure)"
 * include $SCT#418432003 "Scintimammography (procedure)"
-
-
-  #// -----------------------------------------
-  #// IG Macros
-  #// -----------------------------------------
-  #use IG
-    #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
-  #end
-
-  #// -----------------------------------------
-  #// ValueSet API Macros
-  #// -----------------------------------------
-  #use ApiBuild
-    #apply DefineValueSet()
-  #end
+* include $SCT#416323006 " Positron emission tomography breast study (procedure)"
