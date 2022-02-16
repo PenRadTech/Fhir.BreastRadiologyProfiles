@@ -1,7 +1,9 @@
 Alias: $LOINC = http://loinc.org 
 Alias: $SCT = http://snomed.info/sct
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
-
+Alias: $UCUM = http://unitsofmeasure.org
+Alias: $UCUM = http://unitsofmeasure.org
+Alias: $RADLEX = http://radlex.org/
 
 Alias: BREASTRADBASEURL = http://hl7.org/fhir/us/breast-radiology
 Alias: COMPOSITIONURL = http://hl7.org/fhir/StructureDefinition/Composition
@@ -15,8 +17,6 @@ Alias: OBSERVATIONURL = http://hl7.org/fhir/StructureDefinition/Observation
 Alias: RESOURCEURL = http://hl7.org/fhir/StructureDefinition/Resource
 Alias: RISKASSESSMENTURL = http://hl7.org/fhir/StructureDefinition/RiskAssessment
 Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceRequest
-
-Alias: UCUM = http://unitsofmeasure.org
 
 Alias: CONTACTURL = http://hl7.org/Special/committees/cic
 
