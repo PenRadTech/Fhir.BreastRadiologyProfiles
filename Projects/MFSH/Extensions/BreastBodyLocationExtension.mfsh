@@ -41,7 +41,7 @@ Description: """
   #  Body landmark which defines the origin of the measurement.
   #  """)
 
-  #apply Extension.Quantity("distanceFromLandmark", "DistanceFromLandmark", "0..*", "UNITSOFLENGTH", "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark.", 
+  #apply Extension.Quantity("distanceFromLandmark", "DistanceFromLandmark", "0..*", "Distance from landmark. There is a one item here for each item in landmark. Each item is the distance from the coresponding landmark.", 
   #  """
   #	 Distance from body landmark to body location
   #
