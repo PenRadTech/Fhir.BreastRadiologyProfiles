@@ -97,9 +97,9 @@ Description: """
 * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
 * component[obsSize].value[x] 1..1
 * component[obsSize].value[x] only Quantity or Range
-* component[obsSize].valueQuantity = UCUM#mm
-* component[obsSize].valueRange.low = UCUM#mm
-* component[obsSize].valueRange.high = UCUM#mm
+* component[obsSize].valueQuantity = $UCUM#mm
+* component[obsSize].valueRange.low = $UCUM#mm
+* component[obsSize].valueRange.high = $UCUM#mm
 * hasMember ^slicing.discriminator.type = #value
 * hasMember ^slicing.discriminator.path = "url"
 * hasMember ^slicing.rules = #open

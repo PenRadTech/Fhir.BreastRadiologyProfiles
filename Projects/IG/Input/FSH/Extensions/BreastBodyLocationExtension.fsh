@@ -81,4 +81,4 @@ Description: """
 	"""
 * extension[distanceFromLandmark].value[x] 1..1
 * extension[distanceFromLandmark].value[x] only Quantity
-* extension[distanceFromLandmark].valueQuantity = UCUM#mm
+* extension[distanceFromLandmark].valueQuantity = $UCUM#mm

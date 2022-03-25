@@ -41,9 +41,9 @@ Description: """
 
 * value[x] 0..1
 * value[x] only Quantity or Range
-* valueQuantity = UCUM#mm
-* valueRange.low = UCUM#mm
-* valueRange.high = UCUM#mm
+* valueQuantity = $UCUM#mm
+* valueRange.low = $UCUM#mm
+* valueRange.high = $UCUM#mm
 
 * derivedFrom 0..1
 * derivedFrom ^slicing.discriminator.type = #value
