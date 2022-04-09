@@ -19,6 +19,17 @@
   `},
 #end
 
+// Define a CodeSystem.
+//
+#macro ApiBuild.DefineCodeSystem() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.ApiBuild"
+  `{
+  `  "defineCodeSystem" : {
+  `    "codeSystemName" : "%CodeSystemId%",
+  `    "traceMsg" : "%ApplyStackFrame%"
+  `  }
+  `},
+#end
+
 // Attach an fragment to class.
 #macro ApiBuild.ImplementFragment() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{

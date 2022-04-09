@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityFibroadenomaType.mfsh#20/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityFibroadenomaTypeCS",
+    "traceMsg" : "Terminology/AbnormalityFibroadenomaType.mfsh#59/n"
+  }
+},

@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AssociatedFeature.mfsh#19/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AssociatedFeatureCS",
+    "traceMsg" : "Terminology/AssociatedFeature.mfsh#368/n"
+  }
+},

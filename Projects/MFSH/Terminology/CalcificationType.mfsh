@@ -336,6 +336,13 @@ Description: "Mammography calcification type code system."
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+
 
 
 // * include codes from system $SCT where concept descendent-of #129748009 "Radiographic calcification finding (finding)"

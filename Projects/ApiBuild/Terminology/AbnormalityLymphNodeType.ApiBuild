@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityLymphNodeType.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityLymphNodeTypeCS",
+    "traceMsg" : "Terminology/AbnormalityLymphNodeType.mfsh#135/n"
+  }
+},

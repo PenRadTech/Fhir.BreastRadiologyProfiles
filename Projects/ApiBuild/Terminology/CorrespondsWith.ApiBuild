@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/CorrespondsWith.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "CorrespondsWithCS",
+    "traceMsg" : "Terminology/CorrespondsWith.mfsh#245/n"
+  }
+},

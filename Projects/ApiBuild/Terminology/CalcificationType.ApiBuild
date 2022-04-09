@@ -1,0 +1,6 @@
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "CalcificationTypeCS",
+    "traceMsg" : "Terminology/CalcificationType.mfsh#343/n"
+  }
+},

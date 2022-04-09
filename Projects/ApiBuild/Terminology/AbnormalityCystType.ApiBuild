@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityCystType.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityCystTypeCS",
+    "traceMsg" : "Terminology/AbnormalityCystType.mfsh#111/n"
+  }
+},

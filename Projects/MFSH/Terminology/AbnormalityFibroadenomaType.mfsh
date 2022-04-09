@@ -51,3 +51,11 @@ Description: "Fibroadenoma  type code system."
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
+
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+

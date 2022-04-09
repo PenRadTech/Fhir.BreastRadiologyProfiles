@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/ServiceRecommendations.mfsh#20/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "ServiceRecommendationsCS",
+    "traceMsg" : "Terminology/ServiceRecommendations.mfsh#896/n"
+  }
+},

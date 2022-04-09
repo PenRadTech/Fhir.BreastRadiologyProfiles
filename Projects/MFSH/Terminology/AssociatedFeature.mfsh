@@ -360,3 +360,11 @@ Description: "Associated Feature seen during a breast examination."
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
+
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+

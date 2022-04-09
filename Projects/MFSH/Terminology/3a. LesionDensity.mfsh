@@ -49,7 +49,12 @@ Description:
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
 
-
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
 
 
 // * include codes from system $SCT where concept descendent-of #129743000 "Lesion radiographic density modifiers (finding)"

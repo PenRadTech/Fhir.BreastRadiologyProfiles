@@ -56,4 +56,12 @@ Description: "Breast composition values code system."
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+
+
 // * include codes from system $SCT where concept descendent-of #129715009 "Mammographic breast composition finding (finding)"

@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/BreastBodyLocationDepth.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "BreastBodyLocationDepthCS",
+    "traceMsg" : "Terminology/BreastBodyLocationDepth.mfsh#69/n"
+  }
+},

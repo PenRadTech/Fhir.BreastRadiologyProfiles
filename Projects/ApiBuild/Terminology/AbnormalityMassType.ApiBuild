@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityMassType.mfsh#19/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityMassTypeCS",
+    "traceMsg" : "Terminology/AbnormalityMassType.mfsh#51/n"
+  }
+},

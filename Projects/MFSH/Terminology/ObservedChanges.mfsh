@@ -127,3 +127,10 @@ Description: "Observed changes in an abnormality code system."
   $FIXME NoLongerSeen "No longer seen"
   $FIXME RepresentsChange "Represents change"
   */
+
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end

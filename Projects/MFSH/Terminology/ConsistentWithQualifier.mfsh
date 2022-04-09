@@ -54,6 +54,13 @@ Description: "ConsistentWithQualifier  code system"
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
 
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+
 
 // * include codes from system $SCT where concept descendent-of #106230009 "Qualifier for certainty of diagnosis (qualifier value)"
 // * include $SCT#47965005 "Differential diagnosis (contextual qualifier) (qualifier value)"

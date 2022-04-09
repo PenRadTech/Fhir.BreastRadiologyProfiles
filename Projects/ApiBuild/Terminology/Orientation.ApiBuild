@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/Orientation.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "OrientationCS",
+    "traceMsg" : "Terminology/Orientation.mfsh#68/n"
+  }
+},

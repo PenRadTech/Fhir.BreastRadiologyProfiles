@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityDensityType.mfsh#21/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityDensityTypeCS",
+    "traceMsg" : "Terminology/AbnormalityDensityType.mfsh#65/n"
+  }
+},

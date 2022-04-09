@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityForeignObjectType.mfsh#19/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityForeignObjectTypeCS",
+    "traceMsg" : "Terminology/AbnormalityForeignObjectType.mfsh#213/n"
+  }
+},

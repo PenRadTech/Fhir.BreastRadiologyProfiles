@@ -237,3 +237,11 @@ Description:  "CorrespondsWith CodeSystem"
   #use IG
     #apply GroupMemberCodeSystem("CommonCodesCS", "%Title%")
   #end
+
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineCodeSystem()
+  #end
+

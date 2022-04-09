@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityDuctType.mfsh#20/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityDuctTypeCS",
+    "traceMsg" : "Terminology/AbnormalityDuctType.mfsh#70/n"
+  }
+},

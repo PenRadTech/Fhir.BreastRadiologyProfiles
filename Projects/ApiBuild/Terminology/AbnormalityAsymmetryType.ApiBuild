@@ -4,3 +4,9 @@
     "traceMsg" : "Terminology/AbnormalityAsymmetryType.mfsh#18/n"
   }
 },
+{
+  "defineCodeSystem" : {
+    "codeSystemName" : "AbnormalityAsymmetryTypeCS",
+    "traceMsg" : "Terminology/AbnormalityAsymmetryType.mfsh#83/n"
+  }
+},
