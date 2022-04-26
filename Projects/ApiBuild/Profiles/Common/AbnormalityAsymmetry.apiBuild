@@ -29,6 +29,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedCountFragment",
+    "fragmentType" : "Unknown",
+    "sliceName" : "",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#54/nProfiles/Common/AbnormalityAsymmetry.mfsh#27/n"
   }
 },

@@ -36,6 +36,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedSizeFragment",
+    "fragmentType" : "Unknown",
+    "sliceName" : "",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#61/nProfiles/Common/AbnormalityCalcification.mfsh#27/n"
   }
 },
@@ -49,6 +51,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedDistributionFragment",
+    "fragmentType" : "Unknown",
+    "sliceName" : "",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#81/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
   }
 },

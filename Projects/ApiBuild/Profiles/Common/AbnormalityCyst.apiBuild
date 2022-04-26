@@ -22,6 +22,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ShapeFragment",
+    "fragmentType" : "Unknown",
+    "sliceName" : "",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#82/nProfiles/Common/AbnormalityCyst.mfsh#25/n"
   }
 },
@@ -91,6 +93,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "TumorSatelliteFragment",
+    "fragmentType" : "Unknown",
+    "sliceName" : "",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#43/nProfiles/Common/AbnormalityCyst.mfsh#35/n"
   }
 },

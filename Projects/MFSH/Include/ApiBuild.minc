@@ -44,10 +44,12 @@
 
 
 // Define an Fragment Interface.
-#macro ApiBuild.DefineFragment() > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
+#macro ApiBuild.DefineFragment(FragmentType, SliceName) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{
   `  "defineFragment" : {
   `    "fragmentName" : "%FragmentId%",
+  `    "fragmentType" : "FragmentType",
+  `    "sliceName" : "SliceName",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
