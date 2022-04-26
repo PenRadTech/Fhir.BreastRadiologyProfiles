@@ -16,8 +16,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedChangesFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "obsChanges",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#44/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#14/n"
   }
 },
@@ -61,8 +61,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "CorrespondsWithFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "correspondsWith",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#48/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#17/n"
   }
 },
@@ -76,8 +76,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "prevDemBy",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#48/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#18/n"
   }
 },
