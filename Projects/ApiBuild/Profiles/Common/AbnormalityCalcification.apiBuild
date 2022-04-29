@@ -52,7 +52,7 @@
   "defineFragment" : {
     "fragmentName" : "ObservedDistributionFragment",
     "fragmentType" : "Components",
-    "sliceName" : "obsDistribution",
+    "sliceName" : "obsDistRegionSize",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#81/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
   }
 },

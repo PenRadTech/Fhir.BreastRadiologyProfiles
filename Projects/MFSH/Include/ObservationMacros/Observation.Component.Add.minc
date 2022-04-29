@@ -5,6 +5,7 @@
 */
 #macro Observation.Component.Add(SliceName, Cardinality, DisplayName, ShortDesc, Definition, ComponentCode)
   #incompatible Observation.Component.Zero
+  #set %ComponentSliceName% = "SliceName"
   #apply Observation.Component.Slice()
 * component contains SliceName Cardinality
 * component[SliceName] ^short = "ShortDesc component."
