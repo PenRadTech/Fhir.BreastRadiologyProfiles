@@ -23,61 +23,82 @@
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalityDuct.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#51/nProfiles/Common/AbnormalityDuct.mfsh#26/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct",
+    "fragmentName" : "DensityFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#50/nProfiles/Common/AbnormalityDuct.mfsh#27/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct",
+    "fragmentName" : "MarginFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#51/nProfiles/Common/AbnormalityDuct.mfsh#28/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityDuct",
+    "fragmentName" : "OrientationFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#51/nProfiles/Common/AbnormalityDuct.mfsh#29/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityDuct.mfsh#27/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityDuct.mfsh#30/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityDuct.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityDuct.mfsh#31/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "ObservedSizeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityDuct.mfsh#29/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityDuct.mfsh#32/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityDuct.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityDuct.mfsh#33/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityDuct.mfsh#31/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityDuct.mfsh#34/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityDuct.mfsh#32/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityDuct.mfsh#35/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityDuct",
     "fragmentName" : "ConsistentWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityDuct.mfsh#34/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityDuct.mfsh#37/n"
   }
 },
 {
   "defineClass" : {
     "className" : "AbnormalityDuct",
-    "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#65/n"
+    "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#68/n"
   }
 },

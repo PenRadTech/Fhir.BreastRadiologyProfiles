@@ -5,7 +5,7 @@
      <u style="font-size:large;">Description</u>
    </p>
    <p>
-   <b>Shape Component Fragment</b>
+   <b>Density Component Fragment</b>
    </p>
    <p>
      <u style="font-size:large;">Graphical Overview</u>
@@ -16,7 +16,7 @@
    <p>
      Click on any of the elements of the graph to go to a section describing that element.
    </p>
-   <object data="FragGraph-ShapeFragment.svg" type="image/svg+xml">
-     <img src="FragGraph-ShapeFragment.svg" alt="image/svg+xml" />
+   <object data="FragGraph-DensityFragment.svg" type="image/svg+xml">
+     <img src="FragGraph-DensityFragment.svg" alt="image/svg+xml" />
    </object>
  </div>

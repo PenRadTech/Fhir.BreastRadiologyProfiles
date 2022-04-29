@@ -23,75 +23,96 @@
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalitySkinLesion.mfsh#16/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#51/nProfiles/Common/AbnormalitySkinLesion.mfsh#16/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalitySkinLesion",
+    "fragmentName" : "DensityFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#50/nProfiles/Common/AbnormalitySkinLesion.mfsh#17/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalitySkinLesion",
+    "fragmentName" : "MarginFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#51/nProfiles/Common/AbnormalitySkinLesion.mfsh#18/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalitySkinLesion",
+    "fragmentName" : "OrientationFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#51/nProfiles/Common/AbnormalitySkinLesion.mfsh#19/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalitySkinLesion.mfsh#17/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalitySkinLesion.mfsh#20/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "ObservedSizeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalitySkinLesion.mfsh#18/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalitySkinLesion.mfsh#21/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalitySkinLesion.mfsh#19/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalitySkinLesion.mfsh#22/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalitySkinLesion.mfsh#20/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalitySkinLesion.mfsh#23/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalitySkinLesion.mfsh#21/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalitySkinLesion.mfsh#24/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalitySkinLesion.mfsh#22/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalitySkinLesion.mfsh#25/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "AssociatedFeatureFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#24/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#27/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "ConsistentWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#25/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#28/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalitySkinLesion",
     "fragmentName" : "TumorSatelliteFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalitySkinLesion.mfsh#29/n"
   }
 },
 {
   "defineClass" : {
     "className" : "AbnormalitySkinLesion",
-    "traceMsg" : "Profiles/Common/AbnormalitySkinLesion.mfsh#56/n"
+    "traceMsg" : "Profiles/Common/AbnormalitySkinLesion.mfsh#59/n"
   }
 },

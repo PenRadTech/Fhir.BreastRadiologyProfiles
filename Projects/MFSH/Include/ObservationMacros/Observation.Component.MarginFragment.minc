@@ -1,25 +1,25 @@
 /*
-  Shape Component Fragment
-  Adds Shape Component
+  Margin Component Fragment
+  Adds Margin Component
 */
   
-#Fragment: Observation.Component.ShapeFragment
+#Fragment: Observation.Component.MarginFragment
 #Parent: Observation
-#Title: "Shape Component Fragment"
+#Title: "Margin Component Fragment"
 #Description: """
-#  Adds Shape Component
+#  Adds Margin Component
 # """
 
 
-  // Define Shape Slice
-  #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
+  // Define Margin Slice
+  #apply Observation.Component.Add("margin", "0..1", "Margin", "Margin",
   #	 """
-  #  This slice contains the optional component that define the shape of the abnormality.
-  #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
+  #  This slice contains the optional component that define the margin of the abnormality.
+  #  The value of this component is a codeable concept chosen from the MarginVS valueset.
   #	 """,
-  #  "ObservationComponentSliceCodesCS#shape")
+  #  "ObservationComponentSliceCodesCS#margin")
   #
-  #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
+  #apply Observation.Component.SetConcept("margin", "1..1", "MarginVS")
 
 
   #// -----------------------------------------

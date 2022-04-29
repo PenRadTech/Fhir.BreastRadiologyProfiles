@@ -1,25 +1,24 @@
 /*
-  Shape Component Fragment
-  Adds Shape Component
+  Density Component Fragment
+  Adds Density Component
 */
   
-#Fragment: Observation.Component.ShapeFragment
+#Fragment: Observation.Component.DensityFragment
 #Parent: Observation
-#Title: "Shape Component Fragment"
+#Title: "Density Component Fragment"
 #Description: """
-#  Adds Shape Component
+#  Adds Density Component
 # """
 
-
-  // Define Shape Slice
-  #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
+  // Define Density Slice
+  #apply Observation.Component.Add("density", "0..1", "Density", "Density",
   #	 """
-  #  This slice contains the optional component that define the shape of the abnormality.
-  #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
+  #  This slice contains the optional component that define the density of the abnormality.
+  #  The value of this component is a codeable concept chosen from the LesionRadiographicDensityVS valueset.
   #	 """,
-  #  "ObservationComponentSliceCodesCS#shape")
+  #  "ObservationComponentSliceCodesCS#density")
   #
-  #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
+  #apply Observation.Component.SetConcept("density", "0..1", "LesionDensityVS")
 
 
   #// -----------------------------------------

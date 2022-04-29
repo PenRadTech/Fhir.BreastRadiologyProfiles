@@ -1,25 +1,25 @@
 /*
-  Shape Component Fragment
-  Adds Shape Component
+  Orientation Component Fragment
+  Adds Orientation
 */
   
-#Fragment: Observation.Component.ShapeFragment
+#Fragment: Observation.Component.OrientationFragment
 #Parent: Observation
-#Title: "Shape Component Fragment"
+#Title: "Orientation Component Fragment"
 #Description: """
-#  Adds Shape Component
+#  Adds Orientation Component
 # """
 
-
-  // Define Shape Slice
-  #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
+  // Define Orientation Slice
+  #apply Observation.Component.Add("orientation", "0..1", "Orientation", "Orientation",
   #	 """
-  #  This slice contains the optional component that define the shape of the abnormality.
-  #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
+  #  This slice contains the optional component that define the orientation of the abnormality.
+  #  The value of this component is a codeable concept chosen from the OrientationVS valueset.
   #	 """,
-  #  "ObservationComponentSliceCodesCS#shape")
+  #  "ObservationComponentSliceCodesCS#orientation")
   #
-  #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")
+  #apply Observation.Component.SetConcept("orientation", "1..1", "OrientationVS")
+
 
 
   #// -----------------------------------------
@@ -47,7 +47,7 @@
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply once DefineFragment("Unknown", "")
+    #apply once DefineFragment("Component", "")
     #apply ImplementFragment()
   #end
 #end

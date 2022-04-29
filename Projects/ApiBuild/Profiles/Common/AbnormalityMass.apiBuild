@@ -23,75 +23,96 @@
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalityMass.mfsh#25/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#51/nProfiles/Common/AbnormalityMass.mfsh#25/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityMass",
+    "fragmentName" : "DensityFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#50/nProfiles/Common/AbnormalityMass.mfsh#26/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityMass",
+    "fragmentName" : "MarginFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#51/nProfiles/Common/AbnormalityMass.mfsh#27/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityMass",
+    "fragmentName" : "OrientationFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#51/nProfiles/Common/AbnormalityMass.mfsh#28/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityMass.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityMass.mfsh#29/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "ObservedSizeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityMass.mfsh#27/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityMass.mfsh#30/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityMass.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityMass.mfsh#31/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityMass.mfsh#29/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityMass.mfsh#32/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityMass.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityMass.mfsh#33/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityMass.mfsh#31/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityMass.mfsh#34/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "AssociatedFeatureFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#33/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#36/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "ConsistentWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#34/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#37/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityMass",
     "fragmentName" : "TumorSatelliteFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#35/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalityMass.mfsh#38/n"
   }
 },
 {
   "defineClass" : {
     "className" : "AbnormalityMass",
-    "traceMsg" : "Profiles/Common/AbnormalityMass.mfsh#65/n"
+    "traceMsg" : "Profiles/Common/AbnormalityMass.mfsh#68/n"
   }
 },

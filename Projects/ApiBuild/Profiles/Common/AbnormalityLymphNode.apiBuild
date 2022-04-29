@@ -23,68 +23,89 @@
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "ShapeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#83/nProfiles/Common/AbnormalityLymphNode.mfsh#26/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#51/nProfiles/Common/AbnormalityLymphNode.mfsh#26/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityLymphNode",
+    "fragmentName" : "DensityFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#50/nProfiles/Common/AbnormalityLymphNode.mfsh#27/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityLymphNode",
+    "fragmentName" : "MarginFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#51/nProfiles/Common/AbnormalityLymphNode.mfsh#28/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "AbnormalityLymphNode",
+    "fragmentName" : "OrientationFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#51/nProfiles/Common/AbnormalityLymphNode.mfsh#29/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedCountFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityLymphNode.mfsh#27/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedCountFragment.minc#55/nProfiles/Common/AbnormalityLymphNode.mfsh#30/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedDistributionFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityLymphNode.mfsh#28/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#82/nProfiles/Common/AbnormalityLymphNode.mfsh#31/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "ObservedSizeFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityLymphNode.mfsh#29/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#62/nProfiles/Common/AbnormalityLymphNode.mfsh#32/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "NotPreviouslySeenFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityLymphNode.mfsh#30/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#47/nProfiles/Common/AbnormalityLymphNode.mfsh#33/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "CorrespondsWithFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityLymphNode.mfsh#31/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#49/nProfiles/Common/AbnormalityLymphNode.mfsh#34/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityLymphNode.mfsh#32/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#49/nProfiles/Common/AbnormalityLymphNode.mfsh#35/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "AssociatedFeatureFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityLymphNode.mfsh#34/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#44/nProfiles/Common/AbnormalityLymphNode.mfsh#37/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "AbnormalityLymphNode",
     "fragmentName" : "TumorSatelliteFragment",
-    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalityLymphNode.mfsh#35/n"
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#44/nProfiles/Common/AbnormalityLymphNode.mfsh#38/n"
   }
 },
 {
   "defineClass" : {
     "className" : "AbnormalityLymphNode",
-    "traceMsg" : "Profiles/Common/AbnormalityLymphNode.mfsh#69/n"
+    "traceMsg" : "Profiles/Common/AbnormalityLymphNode.mfsh#72/n"
   }
 },
