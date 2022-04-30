@@ -31,8 +31,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "BiRadAssessmentCategoryFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "HasMembers",
+    "sliceName" : "biRadAssessmentCategory",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadAssessmentCategoryFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
   }
 },
@@ -91,8 +91,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "AssociatedFeatureFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "HasMembers",
+    "sliceName" : "associatedFeature",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#20/n"
   }
 },
@@ -106,8 +106,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ConsistentWithFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "HasMembers",
+    "sliceName" : "consistentWith",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#21/n"
   }
 },

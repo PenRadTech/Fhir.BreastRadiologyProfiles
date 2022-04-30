@@ -22,8 +22,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ShapeFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "shape",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#25/n"
   }
 },
@@ -37,8 +37,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "DensityFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "density",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#49/nProfiles/Common/AbnormalityCyst.mfsh#26/n"
   }
 },
@@ -52,8 +52,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "MarginFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "margin",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#27/n"
   }
 },
@@ -67,8 +67,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "OrientationFragment",
-    "fragmentType" : "Component",
-    "sliceName" : "",
+    "fragmentType" : "Components",
+    "sliceName" : "orientation",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#28/n"
   }
 },
@@ -138,8 +138,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "TumorSatelliteFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "HasMembers",
+    "sliceName" : "tumorSatellite",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#43/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
   }
 },

@@ -46,7 +46,7 @@
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply once DefineFragment("Unknown", "")
+    #apply once DefineFragment("Components", "%ComponentSliceName%")
     #apply ImplementFragment()
   #end
 #end

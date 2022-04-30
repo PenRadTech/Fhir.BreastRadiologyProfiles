@@ -8,8 +8,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "BiRadBreastCompositionFragment",
-    "fragmentType" : "Unknown",
-    "sliceName" : "",
+    "fragmentType" : "HasMembers",
+    "sliceName" : "biRadsBreastComposition",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadBreastCompositionFragment.minc#43/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#23/nProfiles/Main/FindingsBiLateralBreast.mfsh#2/n"
   }
 },
