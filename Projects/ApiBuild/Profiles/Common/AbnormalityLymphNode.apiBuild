@@ -106,6 +106,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityLymphNode",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalityLymphNode.mfsh#72/n"
   }
 },

@@ -62,6 +62,7 @@ Description: """
 * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
 * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
 * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
+    //#apply once DefineFragment("Unknown", "")
 * component contains observedCount 0..1
 * component[observedCount] ^short = "Observed Count component. component."
 * component[observedCount] ^comment = """

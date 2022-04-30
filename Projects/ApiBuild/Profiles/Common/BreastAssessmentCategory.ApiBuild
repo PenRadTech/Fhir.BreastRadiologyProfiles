@@ -1,6 +1,7 @@
 {
   "defineClass" : {
     "className" : "BreastAssessmentCategory",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/BreastAssessmentCategory.mfsh#42/n"
   }
 },

@@ -1,6 +1,7 @@
 {
   "defineClass" : {
     "className" : "BreastMedicationRequest",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/BreastMedicationRequest.mfsh#40/n"
   }
 },

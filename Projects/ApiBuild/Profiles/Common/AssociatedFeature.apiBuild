@@ -15,6 +15,7 @@
 {
   "defineClass" : {
     "className" : "AssociatedFeature",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#67/n"
   }
 },

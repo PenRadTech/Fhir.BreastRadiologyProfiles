@@ -85,6 +85,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityFibroadenoma",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalityFibroadenoma.mfsh#65/n"
   }
 },

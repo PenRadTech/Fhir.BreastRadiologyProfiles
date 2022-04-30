@@ -99,6 +99,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityDuct",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalityDuct.mfsh#68/n"
   }
 },

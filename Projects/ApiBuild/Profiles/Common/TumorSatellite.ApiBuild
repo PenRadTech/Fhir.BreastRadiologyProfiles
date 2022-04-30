@@ -1,6 +1,7 @@
 {
   "defineClass" : {
     "className" : "TumorSatellite",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/TumorSatellite.mfsh#77/n"
   }
 },

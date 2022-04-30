@@ -113,6 +113,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityMass",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalityMass.mfsh#68/n"
   }
 },

@@ -1,6 +1,7 @@
 {
   "defineClass" : {
     "className" : "NMFinding",
+    "classType" : "Class",
     "traceMsg" : "Profiles/FindingNM/NMFinding.mfsh#47/n"
   }
 },

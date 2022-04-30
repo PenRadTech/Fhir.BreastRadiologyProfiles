@@ -113,6 +113,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalitySkinLesion",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalitySkinLesion.mfsh#59/n"
   }
 },

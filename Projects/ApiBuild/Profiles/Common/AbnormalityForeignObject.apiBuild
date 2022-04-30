@@ -64,6 +64,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityForeignObject",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Common/AbnormalityForeignObject.mfsh#66/n"
   }
 },

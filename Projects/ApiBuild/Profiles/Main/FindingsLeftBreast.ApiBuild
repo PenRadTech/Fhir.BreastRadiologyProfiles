@@ -15,6 +15,7 @@
 {
   "defineClass" : {
     "className" : "FindingsLeftBreast",
+    "classType" : "Class",
     "traceMsg" : "Profiles/Main/FindingsLeftBreast.mfsh#26/n"
   }
 },

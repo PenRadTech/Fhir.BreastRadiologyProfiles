@@ -62,5 +62,5 @@ Description: """
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply DefineClass()
+    #apply DefineClass("Class")
   #end
