@@ -1,0 +1,22 @@
+{
+  "defineFragment" : {
+    "fragmentName" : "ReportSectionFragment",
+    "fragmentType" : "CompositionSection",
+    "sliceName" : "report",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#51/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#21/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastRadiologyComposition",
+    "fragmentName" : "ReportSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#21/n"
+  }
+},
+{
+  "defineClass" : {
+    "className" : "BreastRadiologyComposition",
+    "classType" : "Class",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#84/n"
+  }
+},

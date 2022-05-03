@@ -1,72 +1,15 @@
 #macro once StartSectionSlicing()
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.rules = #open
-* section ^slicing.ordered = false
-* section ^slicing.description = """
-    Breast Imaging Report Section
-    """
-#end
-
-  /*
-   Composition section for Breast Imaging Report.
-*/
-#macro ReportSection(SliceName) 
-* section[SliceName] ^definition = """
-    This section references the Breast Imaging Report.
-
-    One and only one Breast Imaging Report must be included in this section.
-  """
-* section[SliceName] ^short = "Report Section."
-* section[SliceName].code = CompositionSectionSliceCodesCS#report
-* section[SliceName].title = "Breast Imaging Report"
-
-* section[SliceName].entry 1..1
-* section[SliceName].entry only Reference(BreastRadiologyReport)
-* section[SliceName].entry ^short = "Breast Imaging Report reference"
-* section[SliceName].entry ^definition = """
-    Reference to the Breast Imaging Report.
-	"""
+  #apply Resource.Slice("section", "code", "pattern", "Breast Imaging Report Section")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeElement("A", "section:SliceName", "Report Section")
+    #apply NodeElement("", "section", "Sections")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
+    #apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
   #end
 #end
-
-
-  /*
-   Composition section for Impressions.
-*/
-#macro ImpressionsSection(SliceName) 
-* section[SliceName] ^definition = """
-    This section contains references to the report's clinical impressions.
-    """
-* section[SliceName] ^short = "Clinical Impressions Section."
-* section[SliceName].code = CompositionSectionSliceCodesCS#report
-* section[SliceName].title = "Clinical Impressions"
-
-
-* section[SliceName].entry 0..*
-* section[SliceName].entry only Reference(ClinicalImpression)
-* section[SliceName].entry ^short = "Clinical Impression reference"
-* section[SliceName].entry ^definition = """
-    Reference to the clinical impression(s).
-    """
-
-  #// -----------------------------------------
-  #// Graph Macros
-  #// -----------------------------------------
-  #use Graph
-    #apply NodeElement("B", "section:SliceName", "Impressions Section")
-  #end
-#end
-
-
-
-
 
 
 /*
