@@ -28,8 +28,8 @@
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
+    #apply NodeElement("", "section:report", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
-    //#apply LinkByReference("frag", "^%FragmentId%/section:report", ".entry", "1", "Bas")
   #end
   
   #// -----------------------------------------

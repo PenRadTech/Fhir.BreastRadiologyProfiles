@@ -19,7 +19,7 @@ Description: """
 * section contains admin 0..1 MS
 
   #apply Composition.Section.ReportSectionFragment()
-  //#apply Composition.Section.ImpressionsSectionFragment()
+  #apply Composition.Section.ImpressionsSectionFragment()
   //#apply FindingsRightBreastSection("findingsRightBreast")
   //#apply FindingsLeftBreastSection("findingsLeftBreast")
   //#apply FindingsBiLateralBreastSection("findingsBiLateralBreast")
@@ -71,10 +71,10 @@ Description: """
   #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Composition")
-    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas,Ovr")
-    #apply LinkByReference("focus", "^%ProfileId%/section:impressions", ".entry", "1", "Bas")
-    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
-    #apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas,Ovr")
+    //#apply LinkByReference("focus", "^%ProfileId%/section:impressions", ".entry", "1", "Bas")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
+    //#apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
   #end
 
   #// -----------------------------------------

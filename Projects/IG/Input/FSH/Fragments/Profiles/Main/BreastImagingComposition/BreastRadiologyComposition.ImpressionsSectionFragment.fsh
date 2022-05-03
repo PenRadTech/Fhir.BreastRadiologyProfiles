@@ -25,4 +25,3 @@ Description: """
 * section[impressions].entry ^definition = """
     Reference to the clinical impression(s).
     """
-    //#apply LinkByReference("frag", "^ImpressionsSectionFragment/section:report", ".entry", "1", "Bas")

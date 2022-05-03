@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FocusGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="484.03" height="191.25">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="684.86" height="191.25">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -57,6 +57,32 @@
 </a>
 <a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section" target="_top">
 <text x="5.62" y="18.75" text-anchor="left" class="element">Sections</text>
+</a>
+</g>
+<line class="connector" marker-end="url(#arrowEnd)" x1="482.16" y1="16.88" x2="542.16" y2="16.88" />
+<text x="485.91" y="13.12" text-anchor="right" class="lhsText">1..1</text>
+<line class="connector" marker-end="url(#arrowEnd)" x1="482.16" y1="50.62" x2="542.16" y2="50.62" />
+<text x="485.91" y="46.88" text-anchor="right" class="lhsText">0..1</text>
+<line class="connector" marker-start="url(#arrowStart)" x1="452.16" y1="16.88" x2="482.16" y2="16.88" />
+<line class="connector" x1="482.16" y1="16.88" x2="482.16" y2="50.62" />
+</g>
+<g>
+<g transform="translate(542.16 3.75)">
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:report" target="_top">
+<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:report" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+</a>
+</g>
+</g>
+<g>
+<g transform="translate(542.16 37.5)">
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
+<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+</a>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
 </a>
 </g>
 </g>

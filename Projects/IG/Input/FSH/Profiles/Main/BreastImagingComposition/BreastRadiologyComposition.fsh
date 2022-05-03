@@ -37,10 +37,28 @@ Description: """
 * section[report].entry ^definition = """
     Reference to the Breast Imaging Report.
 	"""
-    //#apply LinkByReference("frag", "^ReportSectionFragment/section:report", ".entry", "1", "Bas")
-  //#apply Composition.Section.ImpressionsSectionFragment()
+
+* section contains impressions 0..1 MS
+* section[impressions] ^definition = """
+    This section contains references to the report's clinical impressions.
+    """
+* section[impressions] ^short = "Clinical Impressions Section."
+* section[impressions].code = CompositionSectionSliceCodesCS#report
+* section[impressions].title = "Clinical Impressions"
+
+
+* section[impressions].entry 0..*
+* section[impressions].entry only Reference(ClinicalImpression)
+* section[impressions].entry ^short = "Clinical Impression reference"
+* section[impressions].entry ^definition = """
+    Reference to the clinical impression(s).
+    """
   //#apply FindingsRightBreastSection("findingsRightBreast")
   //#apply FindingsLeftBreastSection("findingsLeftBreast")
   //#apply FindingsBiLateralBreastSection("findingsBiLateralBreast")
   //#apply RelatedResourcesSection("relatedResources")
   //#apply RecommendationsSection("recommendations")
+    //#apply LinkByName("focus", "^BreastRadiologyComposition/$", "^BreastRadiologyComposition/section:impressions", "0", "Bas,Ovr")
+    //#apply LinkByReference("focus", "^BreastRadiologyComposition/section:impressions", ".entry", "1", "Bas")
+    //#apply LinkByName("focus", "^BreastRadiologyComposition/$", "^BreastRadiologyComposition/section:", "0", "Cmp,Ovr")
+    //#apply LinkByReference("focus", "^BreastRadiologyComposition/section:", ".entry", "1", "Cmp,Ovr")

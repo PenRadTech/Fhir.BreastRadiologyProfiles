@@ -22,4 +22,3 @@ Description: """
 * section[report].entry ^definition = """
     Reference to the Breast Imaging Report.
 	"""
-    //#apply LinkByReference("frag", "^ReportSectionFragment/section:report", ".entry", "1", "Bas")
