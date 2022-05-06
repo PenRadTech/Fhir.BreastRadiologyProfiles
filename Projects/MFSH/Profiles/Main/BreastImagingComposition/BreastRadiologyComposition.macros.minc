@@ -41,5 +41,6 @@
   #// -----------------------------------------
   #use Graph
     #apply NodeElement("Order", "section:SliceName", "DisplayName")
+    #apply LinkByBinding("focus", "^%ProfileId%/section:SliceName/$", ".entry", "Cmp")
   #end
 #end
