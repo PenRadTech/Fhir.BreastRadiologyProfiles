@@ -9,22 +9,13 @@ Description: """
 * . ^short = "US Core Race Extension"
 * type = $LOINC#42132-1 "US Breast screening"
 
-  #apply StartSectionSlicing()
-
-* section contains findingsBiLateralBreast 0..1 MS
-* section contains findingsRightBreast 0..1 MS
-* section contains findingsLeftBreast 0..1 MS
-* section contains relatedResources 0..1 MS
-* section contains recommendations 0..1 MS
-* section contains admin 0..1 MS
-
   #apply Composition.Section.ReportSectionFragment()
   #apply Composition.Section.ImpressionsSectionFragment()
-  //#apply FindingsRightBreastSection("findingsRightBreast")
-  //#apply FindingsLeftBreastSection("findingsLeftBreast")
-  //#apply FindingsBiLateralBreastSection("findingsBiLateralBreast")
-  //#apply RelatedResourcesSection("relatedResources")
-  //#apply RecommendationsSection("recommendations")
+  #apply Composition.Section.FindingsLeftBreastSectionFragment()
+  #apply Composition.Section.FindingsRightBreastSectionFragment()
+  #apply Composition.Section.FindingsBiLateralBreastSectionFragment()
+  #apply Composition.Section.RelatedResourcesSectionFragment()
+  #apply Composition.Section.RecommendationsSectionFragment()
 
 
   #// -----------------------------------------

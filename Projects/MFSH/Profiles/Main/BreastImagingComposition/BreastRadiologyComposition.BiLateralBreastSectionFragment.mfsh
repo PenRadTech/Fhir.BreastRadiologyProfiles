@@ -1,0 +1,59 @@
+/*
+   Breast Composition FindingsBiLateralBreast Section Fragment.
+*/
+
+#Fragment: Composition.Section.FindingsBiLateralBreastSectionFragment
+#Parent: Composition
+#Title: "Composition Findings BiLateral Breast Section Fragment"
+#Description: """
+# Adds Findings BiLateral Breast Section to Composition
+# """
+#apply StartSectionSlicing()
+
+* section contains findingsBiLateralBreast 0..1 MS
+* section[findingsBiLateralBreast] ^definition = """
+    This section contains references to the report's findings 
+    for both (bi lateral) breasts.
+  """
+* section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section."
+* section[findingsBiLateralBreast].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
+* section[findingsBiLateralBreast].title = "Findings BiLateral Breast Section"
+
+* section[findingsBiLateralBreast].entry 0..*
+* section[findingsBiLateralBreast].entry only Reference(FindingsBiLateralBreast)
+* section[findingsBiLateralBreast].entry ^short = "Finding BiLateral breast reference"
+* section[findingsBiLateralBreast].entry ^definition = """
+  Reference to the finding for the BiLateral breast.
+  """
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply NodeElement("", "section:findingsBiLateralBreast", "DisplayName")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
+  #end
+  
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply once DefineFragment("CompositionSection", "findingsBiLateralBreast")
+    #apply ImplementFragment()
+  #end  
+#end
+
+

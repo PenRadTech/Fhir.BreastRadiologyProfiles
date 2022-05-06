@@ -1,0 +1,63 @@
+/*
+   Breast Composition RelatedResources Section Fragment.
+*/
+
+#Fragment: Composition.Section.RelatedResourcesSectionFragment
+#Parent: Composition
+#Title: "Composition Related Resources Section Fragment"
+#Description: """
+# Adds Related Resources Section to Composition
+# """
+#apply StartSectionSlicing()
+
+* section contains relatedResources 0..1 MS
+* section[relatedResources] ^definition = """
+    References to FHIR clinical resources used during the exam or referenced by this report.
+
+	Fhir resources that are related to this report, but dont fit into any of the other defined sections
+	may be placed here. This section allows 'other' resources that the report author wants
+	to be referenced by this report to be included without being constrained by only including
+	those resourced that fit into the other defined sections.
+  """
+* section[relatedResources] ^short = "Related Clinical Resources Section."
+* section[relatedResources].code = CompositionSectionSliceCodesCS#relatedResources
+* section[relatedResources].title = "Related Clinical Resources Section."
+
+* section[relatedResources].entry 0..*
+* section[relatedResources].entry only Reference(RESOURCEURL)
+* section[relatedResources].entry ^short = "Related Resources reference"
+* section[relatedResources].entry ^definition = """
+  Reference to related resources.
+  """
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply NodeElement("", "section:relatedResources", "DisplayName")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
+  #end
+  
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply once DefineFragment("CompositionSection", "relatedResources")
+    #apply ImplementFragment()
+  #end  
+#end
+
+
