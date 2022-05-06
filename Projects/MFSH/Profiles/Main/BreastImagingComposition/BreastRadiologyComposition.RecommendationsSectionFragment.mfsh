@@ -8,32 +8,25 @@ Breast Composition Recommendations Section Fragment.
 #Description: """
 # Adds Recommendations Section to Composition
 # """
-#apply StartSectionSlicing()
 
-
-* section contains recommendations 0..1 MS
-* section[recommendations] ^definition = """
-    This section contains references to recommended actions 
-	taken in response to the observations and findings of this report.
-  """
-* section[recommendations] ^short = "Recommendation/Follow up Resources Section."
-* section[recommendations].code = CompositionSectionSliceCodesCS#recommendations
-* section[recommendations].title = "Recommendations Section."
-
-* section[recommendations].entry 0..*
-* section[recommendations].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
-* section[recommendations].entry ^short = "Recommendation resources"
-* section[recommendations].entry ^definition = """
-  Reference to any recommendations.
-  """
-
+#apply Composition.Section.Add("C",
+#	"recommendations",
+#	"0..1", 
+#	"1..*", 
+#	"Recommendations", 
+#	"Recommendations", 
+#	"""
+#   This section contains references to recommended actions 
+#	aken in response to the observations and findings of this report.
+#	""",
+#	"CompositionSectionSliceCodesCS#recommendations",
+#	"BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply NodeElement("", "section:recommendations", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
   #end
   

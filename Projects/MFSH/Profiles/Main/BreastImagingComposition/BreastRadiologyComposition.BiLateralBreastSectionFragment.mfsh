@@ -8,30 +8,25 @@
 #Description: """
 # Adds Findings BiLateral Breast Section to Composition
 # """
-#apply StartSectionSlicing()
 
-* section contains findingsBiLateralBreast 0..1 MS
-* section[findingsBiLateralBreast] ^definition = """
-    This section contains references to the report's findings 
-    for both (bi lateral) breasts.
-  """
-* section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section."
-* section[findingsBiLateralBreast].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
-* section[findingsBiLateralBreast].title = "Findings BiLateral Breast Section"
-
-* section[findingsBiLateralBreast].entry 0..*
-* section[findingsBiLateralBreast].entry only Reference(FindingsBiLateralBreast)
-* section[findingsBiLateralBreast].entry ^short = "Finding BiLateral breast reference"
-* section[findingsBiLateralBreast].entry ^definition = """
-  Reference to the finding for the BiLateral breast.
-  """
+#apply Composition.Section.Add("B",
+#	"findingsBiLateralBreast",
+#	"0..1", 
+#	"1..1", 
+#	"BiLateral Breast", 
+#	"Findings BiLateral Breast", 
+#	"""
+#   This section contains references to the report's findings 
+#   for both (bi lateral) breasts.
+#	""",
+#	"CompositionSectionSliceCodesCS#findingsBiLateralBreast",
+#	"FindingsBiLateralBreast")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply NodeElement("", "section:findingsBiLateralBreast", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
   #end
   

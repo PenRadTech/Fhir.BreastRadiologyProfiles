@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/css" href="FocusGraph.css" ?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="684.86" height="356.25">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="727.01" height="356.25">
 <defs>
 <marker id="arrowStart" markerWidth="3.75" markerHeight="3.75" markerUnits="px" refX="1.88" refY="1.88">
 <circle class="connector" cx="1.88" cy="1.88" r="1.88" />
@@ -79,70 +79,70 @@
 <g>
 <g transform="translate(542.16 3.75)">
 <a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:report" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<rect class="element" x="0" y="0" width="62.29" height="26.25" rx="3.75" ry="3.75" />
 </a>
 <a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:report" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<text x="5.62" y="18.75" text-anchor="left" class="element">Report</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 37.5)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsRightBreast" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsBiLateralBreast" target="_top">
+<rect class="element" x="0" y="0" width="130.08" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsRightBreast" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsBiLateralBreast" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">BiLateral Breast</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 71.25)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:recommendations" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsLeftBreast" target="_top">
+<rect class="element" x="0" y="0" width="92.52" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:recommendations" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsLeftBreast" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">Left Breast</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 105)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsBiLateralBreast" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsRightBreast" target="_top">
+<rect class="element" x="0" y="0" width="103.51" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsBiLateralBreast" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsRightBreast" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">Right Breast</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 138.75)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:relatedResources" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
+<rect class="element" x="0" y="0" width="101.67" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:relatedResources" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">Impressions</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 172.5)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsLeftBreast" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:recommendations" target="_top">
+<rect class="element" x="0" y="0" width="150.22" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:findingsLeftBreast" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:recommendations" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">Recommendations</text>
 </a>
 </g>
 </g>
 <g>
 <g transform="translate(542.16 206.25)">
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
-<rect class="element" x="0" y="0" width="110.83" height="26.25" rx="3.75" ry="3.75" />
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:relatedResources" target="_top">
+<rect class="element" x="0" y="0" width="152.97" height="26.25" rx="3.75" ry="3.75" />
 </a>
-<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:impressions" target="_top">
-<text x="5.62" y="18.75" text-anchor="left" class="element">DisplayName</text>
+<a href="StructureDefinition-BreastRadiologyComposition-definitions.html#Composition.section:relatedResources" target="_top">
+<text x="5.62" y="18.75" text-anchor="left" class="element">Related Resources</text>
 </a>
 </g>
 </g>

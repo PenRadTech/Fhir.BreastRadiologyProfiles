@@ -1,5 +1,5 @@
-#macro once StartSectionSlicing()
-  #apply Resource.Slice("section", "code", "pattern", "Breast Imaging Report Section")
+#macro once Composition.Section.Slice()
+  #apply Resource.Slice("section", "code", "pattern", "Composition Section slicing")
 
   #// -----------------------------------------
   #// Graph Macros
@@ -13,28 +13,33 @@
 
 
 /*
-   Composition section for recommendations.
+ Add a section slice to a composition.
+ This adds the composition section slicing discriminator.
+ It does not constrain the section value.
 */
-#macro RecommendationsSection(SliceName) 
+#macro Composition.Section.Add(Order, SliceName, CardSection, CardEntry, DisplayName, ShortDesc, Definition, SectionCode, EntryReference)
+  #set %SectionSliceName% = "SliceName"
+  #apply Composition.Section.Slice()
+* section contains SliceName CardSection MS
 * section[SliceName] ^definition = """
-    This section contains references to recommended actions 
-	taken in response to the observations and findings of this report.
-  """
-* section[SliceName] ^short = "Recommendation/Follow up Resources Section."
-* section[SliceName].code = CompositionSectionSliceCodesCS#recommendations
-* section[SliceName].title = "Recommendations Section."
+	Definition
+    """
+* section[SliceName] ^short = "ShortDesc Section"
+* section[SliceName].code = SectionCode
+* section[SliceName].title = "ShortDesc Section"
 
-* section[SliceName].entry 0..*
-* section[SliceName].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
-* section[SliceName].entry ^short = "Recommendation resources"
+* section[SliceName].entry CardEntry
+* section[SliceName].entry only Reference(EntryReference)
+* section[SliceName].entry ^short = "EntryReference references"
 * section[SliceName].entry ^definition = """
-  Reference to any recommendations.
-  """
+	Definition
+    """
+
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeElement("D", "section:SliceName", "Recommendations/Section")
+    #apply NodeElement("Order", "section:SliceName", "DisplayName")
   #end
 #end

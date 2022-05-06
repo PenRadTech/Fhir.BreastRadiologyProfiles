@@ -8,20 +8,18 @@ Description: """
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
-* section ^slicing.description = "Breast Imaging Report Section"
-
+* section ^slicing.description = "Composition Section slicing"
 * section contains impressions 0..1 MS
 * section[impressions] ^definition = """
-    This section contains references to the report's clinical impressions.
+	This section contains references to the report's clinical impressions.
     """
-* section[impressions] ^short = "Clinical Impressions Section."
-* section[impressions].code = CompositionSectionSliceCodesCS#report
-* section[impressions].title = "Clinical Impressions"
+* section[impressions] ^short = "Impressions Section"
+* section[impressions].code = CompositionSectionSliceCodesCS#impressions
+* section[impressions].title = "Impressions Section"
 
-
-* section[impressions].entry 0..*
+* section[impressions].entry 1..*
 * section[impressions].entry only Reference(ClinicalImpression)
-* section[impressions].entry ^short = "Clinical Impression reference"
+* section[impressions].entry ^short = "ClinicalImpression references"
 * section[impressions].entry ^definition = """
-    Reference to the clinical impression(s).
+	This section contains references to the report's clinical impressions.
     """

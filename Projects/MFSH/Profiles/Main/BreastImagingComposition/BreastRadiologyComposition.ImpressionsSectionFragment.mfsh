@@ -8,30 +8,24 @@
 #Description: """
 # Adds Impressionst Section to Composition
 # """
-#apply StartSectionSlicing()
 
-* section contains impressions 0..1 MS
-* section[impressions] ^definition = """
-    This section contains references to the report's clinical impressions.
-    """
-* section[impressions] ^short = "Clinical Impressions Section."
-* section[impressions].code = CompositionSectionSliceCodesCS#report
-* section[impressions].title = "Clinical Impressions"
-
-
-* section[impressions].entry 0..*
-* section[impressions].entry only Reference(ClinicalImpression)
-* section[impressions].entry ^short = "Clinical Impression reference"
-* section[impressions].entry ^definition = """
-    Reference to the clinical impression(s).
-    """
+#apply Composition.Section.Add("C",
+#	"impressions",
+#	"0..1", 
+#	"1..*", 
+#	"Impressions", 
+#	"Impressions", 
+#	"""
+#   This section contains references to the report's clinical impressions.
+#	""",
+#	"CompositionSectionSliceCodesCS#impressions",
+#	"ClinicalImpression")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply NodeElement("", "section:impressions", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
   #end
   

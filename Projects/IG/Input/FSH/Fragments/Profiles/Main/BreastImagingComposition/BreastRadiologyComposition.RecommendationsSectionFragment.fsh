@@ -8,21 +8,20 @@ Description: """
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
-* section ^slicing.description = "Breast Imaging Report Section"
-
-
+* section ^slicing.description = "Composition Section slicing"
 * section contains recommendations 0..1 MS
 * section[recommendations] ^definition = """
-    This section contains references to recommended actions 
-	taken in response to the observations and findings of this report.
-  """
-* section[recommendations] ^short = "Recommendation/Follow up Resources Section."
+	   This section contains references to recommended actions 
+	aken in response to the observations and findings of this report.
+    """
+* section[recommendations] ^short = "Recommendations Section"
 * section[recommendations].code = CompositionSectionSliceCodesCS#recommendations
-* section[recommendations].title = "Recommendations Section."
+* section[recommendations].title = "Recommendations Section"
 
-* section[recommendations].entry 0..*
+* section[recommendations].entry 1..*
 * section[recommendations].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
-* section[recommendations].entry ^short = "Recommendation resources"
+* section[recommendations].entry ^short = "BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation references"
 * section[recommendations].entry ^definition = """
-  Reference to any recommendations.
-  """
+	   This section contains references to recommended actions 
+	aken in response to the observations and findings of this report.
+    """

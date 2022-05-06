@@ -9,26 +9,24 @@
 # Adds Report Section to Composition
 # One and only one Breast Imaging Report must be included in this section.
 # """
-#apply StartSectionSlicing()
 
-* section contains report 1..1 MS
-* section[report] ^short = "Report Section."
-* section[report].code = CompositionSectionSliceCodesCS#report
-* section[report].title = "Breast Imaging Report"
-
-* section[report].entry 1..1
-* section[report].entry only Reference(BreastRadiologyReport)
-* section[report].entry ^short = "Breast Imaging Report reference"
-* section[report].entry ^definition = """
-    Reference to the Breast Imaging Report.
-	"""
+#apply Composition.Section.Add("A",
+#	"report",
+#	"1..1", 
+#	"1..1", 
+#	"Report", 
+#	"Report", 
+#	"""
+#   This section contains the main breast imaging report.
+#	""",
+#	"CompositionSectionSliceCodesCS#report",
+#	"BreastRadiologyReport")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply NodeElement("", "section:report", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
   #end
   

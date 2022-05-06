@@ -8,30 +8,24 @@
 #Description: """
 # Adds Findings Right Breast Section to Composition
 # """
-#apply StartSectionSlicing()
-
-* section contains findingsRightBreast 0..1 MS
-* section[findingsRightBreast] ^definition = """
-    This section contains references to the report's findings 
-    for the right breast.
-  """
-* section[findingsRightBreast] ^short = "Findings Right Breast Section."
-* section[findingsRightBreast].code = CompositionSectionSliceCodesCS#findingsRightBreast
-* section[findingsRightBreast].title = "Findings Right Breast Section"
-
-* section[findingsRightBreast].entry 0..*
-* section[findingsRightBreast].entry only Reference(FindingsRightBreast)
-* section[findingsRightBreast].entry ^short = "Finding Right breast reference"
-* section[findingsRightBreast].entry ^definition = """
-  Reference to the finding for the Right breast.
-  """
+#apply Composition.Section.Add("B",
+#	"findingsRightBreast",
+#	"0..1", 
+#	"1..1", 
+#	"Right Breast", 
+#	"Findings Right Breast", 
+#	"""
+#   This section contains references to the report's findings 
+#   for the right breast.
+#	""",
+#	"CompositionSectionSliceCodesCS#findingsRightBreast",
+#	"FindingsRightBreast")
 
   #// -----------------------------------------
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
     #apply once NodeFragment("%FTitle%")
-    #apply NodeElement("", "section:findingsRightBreast", "DisplayName")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
   #end
   

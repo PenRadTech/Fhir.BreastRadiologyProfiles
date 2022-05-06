@@ -8,20 +8,20 @@ Description: """
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
-* section ^slicing.description = "Breast Imaging Report Section"
-
+* section ^slicing.description = "Composition Section slicing"
 * section contains findingsBiLateralBreast 0..1 MS
 * section[findingsBiLateralBreast] ^definition = """
-    This section contains references to the report's findings 
-    for both (bi lateral) breasts.
-  """
-* section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section."
+	This section contains references to the report's findings 
+	for both (bi lateral) breasts.
+    """
+* section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section"
 * section[findingsBiLateralBreast].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
 * section[findingsBiLateralBreast].title = "Findings BiLateral Breast Section"
 
-* section[findingsBiLateralBreast].entry 0..*
+* section[findingsBiLateralBreast].entry 1..1
 * section[findingsBiLateralBreast].entry only Reference(FindingsBiLateralBreast)
-* section[findingsBiLateralBreast].entry ^short = "Finding BiLateral breast reference"
+* section[findingsBiLateralBreast].entry ^short = "FindingsBiLateralBreast references"
 * section[findingsBiLateralBreast].entry ^definition = """
-  Reference to the finding for the BiLateral breast.
-  """
+	This section contains references to the report's findings 
+	for both (bi lateral) breasts.
+    """
