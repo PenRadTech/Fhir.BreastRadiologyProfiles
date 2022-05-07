@@ -8,7 +8,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedChangesFragment",
-    "fragmentType" : "Components",
+    "fragmentType" : "Observation.Components.Fragment",
     "sliceName" : "obsChanges",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedChangesFragment.minc#44/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#14/n"
   }
@@ -23,7 +23,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "BiRadAssessmentCategoryFragment",
-    "fragmentType" : "HasMembers",
+    "fragmentType" : "Observation.HasMembers.Fragment",
     "sliceName" : "biRadAssessmentCategory",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.BiRadAssessmentCategoryFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#15/n"
   }
@@ -38,7 +38,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "NotPreviouslySeenFragment",
-    "fragmentType" : "Components",
+    "fragmentType" : "Observation.Components.Fragment",
     "sliceName" : "notPreviouslySeen",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.NotPreviouslySeenFragment.minc#46/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#16/n"
   }
@@ -53,7 +53,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "CorrespondsWithFragment",
-    "fragmentType" : "Components",
+    "fragmentType" : "Observation.Components.Fragment",
     "sliceName" : "correspondsWith",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.CorrespondsWithFragment.minc#48/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#17/n"
   }
@@ -68,7 +68,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "PreviouslyDemonstratedByFragment",
-    "fragmentType" : "Components",
+    "fragmentType" : "Observation.Components.Fragment",
     "sliceName" : "prevDemBy",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.PreviouslyDemonstratedBy.minc#48/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#18/n"
   }
@@ -83,7 +83,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "AssociatedFeatureFragment",
-    "fragmentType" : "HasMembers",
+    "fragmentType" : "Observation.HasMembers.Fragment",
     "sliceName" : "associatedFeature",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.AssociatedFeatureFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#20/n"
   }
@@ -98,7 +98,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "ConsistentWithFragment",
-    "fragmentType" : "HasMembers",
+    "fragmentType" : "Observation.HasMembers.Fragment",
     "sliceName" : "consistentWith",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.ConsistentWithFragment.minc#43/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#21/n"
   }

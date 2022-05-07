@@ -9,7 +9,7 @@
 # Adds Impressionst Section to Composition
 # """
 
-#apply Composition.Section.Add("C",
+#apply Composition.Section.Add(
 #	"impressions",
 #	"0..1", 
 #	"1..*", 
@@ -49,7 +49,7 @@
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply once DefineFragment("CompositionSection", "report")
+    #apply once DefineFragment("Composition.Section.Fragment", "impressions")
     #apply ImplementFragment()
   #end  
 #end

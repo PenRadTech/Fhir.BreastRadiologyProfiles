@@ -10,7 +10,7 @@
 # One and only one Breast Imaging Report must be included in this section.
 # """
 
-#apply Composition.Section.Add("A",
+#apply Composition.Section.Add(
 #	"report",
 #	"1..1", 
 #	"1..1", 
@@ -50,7 +50,7 @@
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply once DefineFragment("CompositionSection", "report")
+    #apply once DefineFragment("Composition.Section.Fragment", "report")
     #apply ImplementFragment()
   #end  
 #end

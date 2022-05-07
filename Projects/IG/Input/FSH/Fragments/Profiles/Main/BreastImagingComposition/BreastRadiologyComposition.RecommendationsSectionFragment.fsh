@@ -25,5 +25,3 @@ Description: """
 	   This section contains references to recommended actions 
 	aken in response to the observations and findings of this report.
     """
-    //#apply NodeElement("C", "section:recommendations", "Recommendations")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:recommendations/$", ".entry", "Cmp")

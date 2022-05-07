@@ -33,5 +33,3 @@ Description: """
 	to be referenced by this report to be included without being constrained by only including
 	those resourced that fit into the other defined sections.
     """
-    //#apply NodeElement("C", "section:relatedResources", "Related Resources")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:relatedResources/$", ".entry", "Cmp")

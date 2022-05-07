@@ -25,5 +25,3 @@ Description: """
 	This section contains references to the report's findings 
 	for the left breast.
     """
-    //#apply NodeElement("B", "section:findingsLeftBreast", "Left Breast")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:findingsLeftBreast/$", ".entry", "Cmp")

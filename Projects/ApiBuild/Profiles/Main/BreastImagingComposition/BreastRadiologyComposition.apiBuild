@@ -1,7 +1,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "ReportSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "report",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#12/n"
   }
@@ -16,8 +16,8 @@
 {
   "defineFragment" : {
     "fragmentName" : "ImpressionsSectionFragment",
-    "fragmentType" : "CompositionSection",
-    "sliceName" : "report",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "impressions",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ImpressionsSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#13/n"
   }
 },
@@ -31,7 +31,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "FindingsLeftBreastSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "findingsLeftBreast",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsLeftBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#14/n"
   }
@@ -46,7 +46,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "FindingsRightBreastSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "findingsRightBreast",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsRightBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#15/n"
   }
@@ -61,7 +61,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "FindingsBiLateralBreastSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "findingsBiLateralBreast",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.BiLateralBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#16/n"
   }
@@ -76,7 +76,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "RelatedResourcesSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "relatedResources",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RelatedResourcesSectionFragment.mfsh#58/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#17/n"
   }
@@ -91,7 +91,7 @@
 {
   "defineFragment" : {
     "fragmentName" : "RecommendationsSectionFragment",
-    "fragmentType" : "CompositionSection",
+    "fragmentType" : "Composition.Section.Fragment",
     "sliceName" : "recommendations",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RecommendationsSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#18/n"
   }

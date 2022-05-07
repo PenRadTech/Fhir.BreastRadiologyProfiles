@@ -23,5 +23,3 @@ Description: """
 * section[impressions].entry ^definition = """
 	This section contains references to the report's clinical impressions.
     """
-    //#apply NodeElement("C", "section:impressions", "Impressions")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:impressions/$", ".entry", "Cmp")

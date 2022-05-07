@@ -32,8 +32,6 @@ Description: """
 * section[report].entry ^definition = """
 	This section contains the main breast imaging report.
     """
-    //#apply NodeElement("A", "section:report", "Report")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:report/$", ".entry", "Cmp")
 * section contains impressions 0..1 MS
 * section[impressions] ^definition = """
 	This section contains references to the report's clinical impressions.
@@ -48,8 +46,6 @@ Description: """
 * section[impressions].entry ^definition = """
 	This section contains references to the report's clinical impressions.
     """
-    //#apply NodeElement("C", "section:impressions", "Impressions")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:impressions/$", ".entry", "Cmp")
 * section contains findingsLeftBreast 0..1 MS
 * section[findingsLeftBreast] ^definition = """
 	This section contains references to the report's findings 
@@ -66,8 +62,6 @@ Description: """
 	This section contains references to the report's findings 
 	for the left breast.
     """
-    //#apply NodeElement("B", "section:findingsLeftBreast", "Left Breast")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:findingsLeftBreast/$", ".entry", "Cmp")
 * section contains findingsRightBreast 0..1 MS
 * section[findingsRightBreast] ^definition = """
 	This section contains references to the report's findings 
@@ -84,8 +78,6 @@ Description: """
 	This section contains references to the report's findings 
 	for the right breast.
     """
-    //#apply NodeElement("B", "section:findingsRightBreast", "Right Breast")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:findingsRightBreast/$", ".entry", "Cmp")
 * section contains findingsBiLateralBreast 0..1 MS
 * section[findingsBiLateralBreast] ^definition = """
 	This section contains references to the report's findings 
@@ -102,8 +94,6 @@ Description: """
 	This section contains references to the report's findings 
 	for both (bi lateral) breasts.
     """
-    //#apply NodeElement("B", "section:findingsBiLateralBreast", "BiLateral Breast")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:findingsBiLateralBreast/$", ".entry", "Cmp")
 * section contains relatedResources 0..1 MS
 * section[relatedResources] ^definition = """
 	   References to other related FHIR clinical resources used during the exam or referenced by this report.
@@ -128,8 +118,6 @@ Description: """
 	to be referenced by this report to be included without being constrained by only including
 	those resourced that fit into the other defined sections.
     """
-    //#apply NodeElement("C", "section:relatedResources", "Related Resources")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:relatedResources/$", ".entry", "Cmp")
 * section contains recommendations 0..1 MS
 * section[recommendations] ^definition = """
 	   This section contains references to recommended actions 
@@ -146,5 +134,3 @@ Description: """
 	   This section contains references to recommended actions 
 	aken in response to the observations and findings of this report.
     """
-    //#apply NodeElement("C", "section:recommendations", "Recommendations")
-    //#apply LinkByBinding("focus", "^BreastRadiologyComposition/section:recommendations/$", ".entry", "Cmp")

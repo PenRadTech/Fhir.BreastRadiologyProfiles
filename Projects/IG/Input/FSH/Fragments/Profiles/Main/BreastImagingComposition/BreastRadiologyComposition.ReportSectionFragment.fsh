@@ -24,5 +24,3 @@ Description: """
 * section[report].entry ^definition = """
 	This section contains the main breast imaging report.
     """
-    //#apply NodeElement("A", "section:report", "Report")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:report/$", ".entry", "Cmp")

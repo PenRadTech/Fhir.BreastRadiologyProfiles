@@ -8,7 +8,7 @@
 #Description: """
 # Adds Findings Left Breast Section to Composition
 # """
-#apply Composition.Section.Add("B",
+#apply Composition.Section.Add(
 #	"findingsLeftBreast",
 #	"0..1", 
 #	"1..1", 
@@ -49,7 +49,7 @@
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply once DefineFragment("CompositionSection", "findingsLeftBreast")
+    #apply once DefineFragment("Composition.Section.Fragment", "findingsLeftBreast")
     #apply ImplementFragment()
   #end  
 #end

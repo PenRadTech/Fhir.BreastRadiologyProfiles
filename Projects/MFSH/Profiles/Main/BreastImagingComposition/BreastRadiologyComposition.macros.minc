@@ -8,7 +8,7 @@
  This adds the composition section slicing discriminator.
  It does not constrain the section value.
 */
-#macro Composition.Section.Add(Order, SliceName, CardSection, CardEntry, DisplayName, ShortDesc, Definition, SectionCode, EntryReference)
+#macro Composition.Section.Add(SliceName, CardSection, CardEntry, DisplayName, ShortDesc, Definition, SectionCode, EntryReference)
   #set %SectionSliceName% = "SliceName"
   #apply Composition.Section.Slice()
 * section contains SliceName CardSection MS
@@ -25,13 +25,4 @@
 * section[SliceName].entry ^definition = """
 	Definition
     """
-
-
-  #// -----------------------------------------
-  #// Graph Macros
-  #// -----------------------------------------
-  #use Graph
-    //#apply NodeElement("Order", "section:SliceName", "DisplayName")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:SliceName/$", ".entry", "Cmp")
-  #end
 #end

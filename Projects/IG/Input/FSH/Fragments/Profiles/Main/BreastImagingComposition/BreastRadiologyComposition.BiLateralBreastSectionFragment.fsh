@@ -25,5 +25,3 @@ Description: """
 	This section contains references to the report's findings 
 	for both (bi lateral) breasts.
     """
-    //#apply NodeElement("B", "section:findingsBiLateralBreast", "BiLateral Breast")
-    //#apply LinkByBinding("focus", "^%ProfileId%/section:findingsBiLateralBreast/$", ".entry", "Cmp")
