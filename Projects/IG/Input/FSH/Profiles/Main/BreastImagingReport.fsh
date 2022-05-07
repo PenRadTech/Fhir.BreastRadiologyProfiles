@@ -1,4 +1,4 @@
-Profile: BreastRadiologyReport
+Profile: BreastImagingReport
 Parent: DiagnosticReport
 Title: "Breast Imaging Report"
 Description: """
@@ -12,7 +12,7 @@ Description: """
 * ^version = "0.0.2"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#US "United States of America"
 * code 1..1
-* code from BreastRadReportTypesVS
+* code from BreastImagingReportTypesVS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open

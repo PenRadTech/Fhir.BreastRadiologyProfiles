@@ -19,8 +19,8 @@ Description: """
 * section[report].title = "Report Section"
 
 * section[report].entry 1..1
-* section[report].entry only Reference(BreastRadiologyReport)
-* section[report].entry ^short = "BreastRadiologyReport references"
+* section[report].entry only Reference(BreastImagingReport)
+* section[report].entry ^short = "BreastImagingReport references"
 * section[report].entry ^definition = """
 	This section contains the main breast imaging report.
     """

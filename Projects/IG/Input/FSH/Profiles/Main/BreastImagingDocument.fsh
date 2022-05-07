@@ -1,4 +1,4 @@
-Profile: BreastRadiologyDocument
+Profile: BreastImagingDocument
 Parent: Bundle
 Title: "Breast Imaging Document"
 Description: """
@@ -20,4 +20,4 @@ Description: """
 * entry contains index 1..1
 * entry[index].fullUrl = "index"
 * entry[index].resource 1..1
-* entry[index].resource only BreastRadiologyComposition
+* entry[index].resource only BreastImagingComposition

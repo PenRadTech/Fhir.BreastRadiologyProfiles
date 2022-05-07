@@ -1,0 +1,112 @@
+{
+  "defineFragment" : {
+    "fragmentName" : "ReportSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "report",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.ReportSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#12/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "ReportSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.ReportSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#12/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "ImpressionsSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "impressions",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.ImpressionsSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#13/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "ImpressionsSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.ImpressionsSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#13/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "FindingsLeftBreastSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "findingsLeftBreast",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.FindingsLeftBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#14/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "FindingsLeftBreastSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.FindingsLeftBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#14/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "FindingsRightBreastSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "findingsRightBreast",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.FindingsRightBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#15/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "FindingsRightBreastSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.FindingsRightBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#15/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "FindingsBiLateralBreastSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "findingsBiLateralBreast",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.BiLateralBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#16/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "FindingsBiLateralBreastSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.BiLateralBreastSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#16/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "RelatedResourcesSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "relatedResources",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.RelatedResourcesSectionFragment.mfsh#58/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#17/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "RelatedResourcesSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.RelatedResourcesSectionFragment.mfsh#59/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#17/n"
+  }
+},
+{
+  "defineFragment" : {
+    "fragmentName" : "RecommendationsSectionFragment",
+    "fragmentType" : "Composition.Section.Fragment",
+    "sliceName" : "recommendations",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.RecommendationsSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#18/n"
+  }
+},
+{
+  "implementFragment" : {
+    "className" : "BreastImagingComposition",
+    "fragmentName" : "RecommendationsSectionFragment",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.RecommendationsSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#18/n"
+  }
+},
+{
+  "defineClass" : {
+    "className" : "BreastImagingComposition",
+    "classType" : "Class",
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#72/n"
+  }
+},

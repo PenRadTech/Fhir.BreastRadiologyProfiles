@@ -1,4 +1,4 @@
-Profile: BreastRadiologyDocument
+Profile: BreastImagingDocument
 Parent: Bundle
 Title: "Breast Imaging Document"
 Description: """
@@ -15,7 +15,7 @@ Description: """
 * entry contains index 1..1
 * entry[index].fullUrl = "index"
 * entry[index].resource 1..1
-* entry[index].resource only BreastRadiologyComposition
+* entry[index].resource only BreastImagingComposition
 
 
   #// -----------------------------------------
@@ -38,7 +38,7 @@ Description: """
     # <P>
     # The first entry in the bundle is a composition instance that provides an index
     # to all the other FHIR resource instances that are part of this document.
-    # This index composition entry must be an instance of the BreastRadiologyComposition profile.
+    # This index composition entry must be an instance of the BreastImagingComposition profile.
     # </P>
     # """)
 
@@ -51,7 +51,7 @@ Description: """
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeProfile("", "Breast/Radiology/Document")
+    #apply NodeProfile("", "Breast/Imaging/Document")
     #apply LinkByReference("focus", "^%ProfileId%/$", "Bundle.entry:index.resource", "0", "Bas,Ovr")
     #// Creates the legend graphical nodes.
     #apply Legend("focus", "Focus", "focus")

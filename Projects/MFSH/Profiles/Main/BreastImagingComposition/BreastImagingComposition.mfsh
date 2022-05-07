@@ -1,4 +1,4 @@
-Profile: BreastRadiologyComposition
+Profile: BreastImagingComposition
 Parent: Composition
 Title: "Breast Imaging Composition"
 Description: """

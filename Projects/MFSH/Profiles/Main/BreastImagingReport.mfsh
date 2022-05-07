@@ -1,4 +1,4 @@
-Profile: BreastRadiologyReport
+Profile: BreastImagingReport
 Parent: DiagnosticReport
 Title: "Breast Imaging Report"
 Description: """
@@ -7,7 +7,7 @@ Description: """
 
   #apply HeaderFragment()
 
-  #apply Resource.Bind("", "1..1", "code", "BreastRadReportTypesVS", "Report Type")
+  #apply Resource.Bind("", "1..1", "code", "BreastImagingReportTypesVS", "Report Type")
   #apply Resource.SetCategoryImaging()
 
 * conclusionCode ^slicing.discriminator.type = #pattern

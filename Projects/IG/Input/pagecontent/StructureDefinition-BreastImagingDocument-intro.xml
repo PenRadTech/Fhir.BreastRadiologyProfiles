@@ -19,7 +19,7 @@
    <P>
    The first entry in the bundle is a composition instance that provides an index
    to all the other FHIR resource instances that are part of this document.
-   This index composition entry must be an instance of the BreastRadiologyComposition profile.
+   This index composition entry must be an instance of the BreastImagingComposition profile.
    </P>
    <p>
      <u style="font-size:large;">Graphical Overview</u>
@@ -30,7 +30,7 @@
    <p>
      Click on any of the elements of the graph to go to a section describing that element.
    </p>
-   <object data="FocusGraph-BreastRadiologyDocument.svg" type="image/svg+xml">
-     <img src="FocusGraph-BreastRadiologyDocument.svg" alt="image/svg+xml" />
+   <object data="FocusGraph-BreastImagingDocument.svg" type="image/svg+xml">
+     <img src="FocusGraph-BreastImagingDocument.svg" alt="image/svg+xml" />
    </object>
  </div>

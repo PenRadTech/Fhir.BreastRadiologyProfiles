@@ -42,7 +42,7 @@
    <p>
      Click on any of the elements of the graph to go to a section describing that element.
    </p>
-   <object data="FocusGraph-BreastRadiologyComposition.svg" type="image/svg+xml">
-     <img src="FocusGraph-BreastRadiologyComposition.svg" alt="image/svg+xml" />
+   <object data="FocusGraph-BreastImagingComposition.svg" type="image/svg+xml">
+     <img src="FocusGraph-BreastImagingComposition.svg" alt="image/svg+xml" />
    </object>
  </div>

@@ -20,7 +20,7 @@
 #   This section contains the main breast imaging report.
 #	""",
 #	"CompositionSectionSliceCodesCS#report",
-#	"BreastRadiologyReport")
+#	"BreastImagingReport")
 
   #// -----------------------------------------
   #// Graph Macros
