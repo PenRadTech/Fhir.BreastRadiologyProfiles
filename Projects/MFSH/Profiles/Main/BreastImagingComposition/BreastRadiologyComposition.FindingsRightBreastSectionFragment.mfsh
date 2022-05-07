@@ -1,0 +1,57 @@
+/*
+   Breast Composition FindingsRightBreast Section Fragment.
+*/
+
+#Fragment: Composition.Section.FindingsRightBreastSectionFragment
+#Parent: Composition
+#Title: "Composition Findings Right Breast Section Fragment"
+#Description: """
+# Adds Findings Right Breast Section to Composition
+# """
+#apply Composition.Section.Add("B",
+#	"findingsRightBreast",
+#	"0..1", 
+#	"1..1", 
+#	"Right Breast", 
+#	"Findings Right Breast", 
+#	"""
+#   This section contains references to the report's findings 
+#   for the right breast.
+#	""",
+#	"CompositionSectionSliceCodesCS#findingsRightBreast",
+#	"FindingsRightBreast")
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
+    #apply NodeElement("C", "section:findingsRightBreast", "Findings/Right Breast/Section")
+	
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:findingsRightBreast", "0", "Cmp,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:findingsRightBreast", ".entry", "1", "Cmp,Ovr")
+   #end
+  
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply once DefineFragment("CompositionSection", "findingsRightBreast")
+    #apply ImplementFragment()
+  #end  
+#end
+
+

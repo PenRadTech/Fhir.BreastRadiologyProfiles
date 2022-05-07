@@ -1,0 +1,58 @@
+/*
+   Breast Composition Report Section Fragment.
+*/
+
+#Fragment: Composition.Section.ReportSectionFragment
+#Parent: Composition
+#Title: "Composition Report Section Fragment"
+#Description: """
+# Adds Report Section to Composition
+# One and only one Breast Imaging Report must be included in this section.
+# """
+
+#apply Composition.Section.Add("A",
+#	"report",
+#	"1..1", 
+#	"1..1", 
+#	"Report", 
+#	"Report", 
+#	"""
+#   This section contains the main breast imaging report.
+#	""",
+#	"CompositionSectionSliceCodesCS#report",
+#	"BreastRadiologyReport")
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
+    #apply NodeElement("A", "section:report", "Report Section")
+	
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:report", ".entry", "1", "Bas")
+  #end
+  
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply once DefineFragment("CompositionSection", "report")
+    #apply ImplementFragment()
+  #end  
+#end
+
+

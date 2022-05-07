@@ -1,0 +1,58 @@
+/*
+Breast Composition Recommendations Section Fragment.
+*/
+
+#Fragment: Composition.Section.RecommendationsSectionFragment
+#Parent: Composition
+#Title: "Composition Recommendations Section Fragment"
+#Description: """
+# Adds Recommendations Section to Composition
+# """
+
+#apply Composition.Section.Add("C",
+#	"recommendations",
+#	"0..1", 
+#	"1..*", 
+#	"Recommendations", 
+#	"Recommendations", 
+#	"""
+#   This section contains references to recommended actions 
+#	aken in response to the observations and findings of this report.
+#	""",
+#	"CompositionSectionSliceCodesCS#recommendations",
+#	"BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation")
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    #apply once NodeFragment("%FTitle%")
+    #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
+    #apply NodeElement("D", "section:recommendations", "Recommendations/Section")
+
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:recommendations", "0", "Cmp,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:recommendations", ".entry", "1", "Cmp,Ovr")
+  #end
+  
+  #// -----------------------------------------
+  #// IG Macros
+  #// -----------------------------------------
+  #use IG
+    #apply once IntroDocFragment("""
+    # <p>
+    # <b>%FTitle%</b>
+    # </p>
+    #""")
+    #apply once GroupMemberFragment("Fragments", "%FTitle%")
+  #end
+
+  #// -----------------------------------------
+  #// Code API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply once DefineFragment("CompositionSection", "recommendations")
+    #apply ImplementFragment()
+  #end  
+#end
+
+

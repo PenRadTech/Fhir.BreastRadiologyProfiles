@@ -1,0 +1,37 @@
+#macro once Composition.Section.Slice()
+  #apply Resource.Slice("section", "code", "pattern", "Composition Section slicing")
+#end
+
+
+/*
+ Add a section slice to a composition.
+ This adds the composition section slicing discriminator.
+ It does not constrain the section value.
+*/
+#macro Composition.Section.Add(Order, SliceName, CardSection, CardEntry, DisplayName, ShortDesc, Definition, SectionCode, EntryReference)
+  #set %SectionSliceName% = "SliceName"
+  #apply Composition.Section.Slice()
+* section contains SliceName CardSection MS
+* section[SliceName] ^definition = """
+	Definition
+    """
+* section[SliceName] ^short = "ShortDesc Section"
+* section[SliceName].code = SectionCode
+* section[SliceName].title = "ShortDesc Section"
+
+* section[SliceName].entry CardEntry
+* section[SliceName].entry only Reference(EntryReference)
+* section[SliceName].entry ^short = "EntryReference references"
+* section[SliceName].entry ^definition = """
+	Definition
+    """
+
+
+  #// -----------------------------------------
+  #// Graph Macros
+  #// -----------------------------------------
+  #use Graph
+    //#apply NodeElement("Order", "section:SliceName", "DisplayName")
+    //#apply LinkByBinding("focus", "^%ProfileId%/section:SliceName/$", ".entry", "Cmp")
+  #end
+#end

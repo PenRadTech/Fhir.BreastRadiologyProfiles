@@ -162,7 +162,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="567.33" y1="118.12" x2="627.33" y2="118.12" />
-<text x="571.08" y="114.38" text-anchor="right" class="lhsText">0..*</text>
+<text x="571.08" y="114.38" text-anchor="right" class="lhsText">1..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="537.33" y1="118.12" x2="567.33" y2="118.12" />
 <line class="connector" x1="567.33" y1="118.12" x2="567.33" y2="118.12" />
 </g>
@@ -192,7 +192,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="536.19" y1="161.25" x2="596.19" y2="161.25" />
-<text x="539.94" y="157.5" text-anchor="right" class="lhsText">0..*</text>
+<text x="539.94" y="157.5" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="506.19" y1="170.62" x2="536.19" y2="170.62" />
 <line class="connector" x1="536.19" y1="161.25" x2="536.19" y2="170.62" />
 </g>
@@ -12622,7 +12622,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="498.63" y1="14512.5" x2="558.63" y2="14512.5" />
-<text x="502.38" y="14508.75" text-anchor="right" class="lhsText">0..*</text>
+<text x="502.38" y="14508.75" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="468.63" y1="14521.88" x2="498.63" y2="14521.88" />
 <line class="connector" x1="498.63" y1="14512.5" x2="498.63" y2="14521.88" />
 </g>
@@ -25052,7 +25052,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="509.62" y1="28863.75" x2="569.62" y2="28863.75" />
-<text x="513.37" y="28860" text-anchor="right" class="lhsText">0..*</text>
+<text x="513.37" y="28860" text-anchor="right" class="lhsText">1..1</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="479.62" y1="28873.12" x2="509.62" y2="28873.12" />
 <line class="connector" x1="509.62" y1="28863.75" x2="509.62" y2="28873.12" />
 </g>
@@ -37479,11 +37479,11 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="556.34" y1="43205.62" x2="616.34" y2="43205.62" />
-<text x="560.09" y="43201.88" text-anchor="right" class="lhsText">0..*</text>
+<text x="560.09" y="43201.88" text-anchor="right" class="lhsText">1..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="556.34" y1="43239.38" x2="616.34" y2="43239.38" />
-<text x="560.09" y="43235.62" text-anchor="right" class="lhsText">0..*</text>
+<text x="560.09" y="43235.62" text-anchor="right" class="lhsText">1..*</text>
 <line class="connector" marker-end="url(#arrowEnd)" x1="556.34" y1="43273.12" x2="616.34" y2="43273.12" />
-<text x="560.09" y="43269.38" text-anchor="right" class="lhsText">0..*</text>
+<text x="560.09" y="43269.38" text-anchor="right" class="lhsText">1..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="526.34" y1="43215" x2="556.34" y2="43215" />
 <line class="connector" x1="556.34" y1="43205.62" x2="556.34" y2="43273.12" />
 </g>
@@ -37612,7 +37612,7 @@
 </a>
 </g>
 <line class="connector" marker-end="url(#arrowEnd)" x1="559.09" y1="43306.88" x2="619.09" y2="43306.88" />
-<text x="562.84" y="43303.12" text-anchor="right" class="lhsText">0..*</text>
+<text x="562.84" y="43303.12" text-anchor="right" class="lhsText">1..*</text>
 <line class="connector" marker-start="url(#arrowStart)" x1="529.09" y1="43316.25" x2="559.09" y2="43316.25" />
 <line class="connector" x1="559.09" y1="43306.88" x2="559.09" y2="43316.25" />
 </g>
