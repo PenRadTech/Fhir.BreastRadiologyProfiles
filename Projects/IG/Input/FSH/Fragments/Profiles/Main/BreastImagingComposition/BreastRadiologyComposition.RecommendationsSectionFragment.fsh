@@ -9,6 +9,9 @@ Description: """
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = "Composition Section slicing"
+    //#apply NodeElement("", "section", "Sections")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
+    //#apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
 * section contains recommendations 0..1 MS
 * section[recommendations] ^definition = """
 	   This section contains references to recommended actions 
@@ -25,3 +28,5 @@ Description: """
 	   This section contains references to recommended actions 
 	aken in response to the observations and findings of this report.
     """
+    //#apply NodeElement("C", "section:recommendations", "Recommendations")
+    //#apply LinkByBinding("focus", "^%ProfileId%/section:recommendations/$", ".entry", "Cmp")

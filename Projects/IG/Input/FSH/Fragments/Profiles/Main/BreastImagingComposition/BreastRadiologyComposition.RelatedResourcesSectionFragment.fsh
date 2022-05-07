@@ -9,6 +9,9 @@ Description: """
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = "Composition Section slicing"
+    //#apply NodeElement("", "section", "Sections")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
+    //#apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
 * section contains relatedResources 0..1 MS
 * section[relatedResources] ^definition = """
 	   References to other related FHIR clinical resources used during the exam or referenced by this report.
@@ -33,3 +36,5 @@ Description: """
 	to be referenced by this report to be included without being constrained by only including
 	those resourced that fit into the other defined sections.
     """
+    //#apply NodeElement("C", "section:relatedResources", "Related Resources")
+    //#apply LinkByBinding("focus", "^%ProfileId%/section:relatedResources/$", ".entry", "Cmp")

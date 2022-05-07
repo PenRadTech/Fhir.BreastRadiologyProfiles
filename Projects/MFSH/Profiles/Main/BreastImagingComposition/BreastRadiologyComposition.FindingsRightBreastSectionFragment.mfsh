@@ -27,7 +27,8 @@
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
-  #end
+    #apply NodeElement("C", "section:findingsRightBreast", "Findings/Right Breast/Section")
+   #end
   
   #// -----------------------------------------
   #// IG Macros

@@ -9,6 +9,9 @@ Description: """
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = "Composition Section slicing"
+    //#apply NodeElement("", "section", "Sections")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
+    //#apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
 * section contains findingsRightBreast 0..1 MS
 * section[findingsRightBreast] ^definition = """
 	This section contains references to the report's findings 
@@ -25,3 +28,5 @@ Description: """
 	This section contains references to the report's findings 
 	for the right breast.
     """
+    //#apply NodeElement("B", "section:findingsRightBreast", "Right Breast")
+    //#apply LinkByBinding("focus", "^%ProfileId%/section:findingsRightBreast/$", ".entry", "Cmp")

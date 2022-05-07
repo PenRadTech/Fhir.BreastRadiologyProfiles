@@ -62,10 +62,14 @@ Description: """
   #// -----------------------------------------
   #use Graph
     #apply NodeProfile("", "Breast/Radiology/Composition")
-    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas,Ovr")
-    //#apply LinkByReference("focus", "^%ProfileId%/section:impressions", ".entry", "1", "Bas")
-    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
-    //#apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:impressions", "0", "Bas,Ovr")
+	
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:", "0", "Cmp,Ovr")
+
+    #apply LinkByReference("focus", "^%ProfileId%/section:report", ".entry", "1", "Bas")
+    #apply LinkByReference("focus", "^%ProfileId%/section:impressions", ".entry", "1", "Bas")
+    #apply LinkByReference("focus", "^%ProfileId%/section:", ".entry", "1", "Cmp,Ovr")
   #end
 
   #// -----------------------------------------

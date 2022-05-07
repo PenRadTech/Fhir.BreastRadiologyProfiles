@@ -5,9 +5,9 @@
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeElement("", "section", "Sections")
-    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
-    #apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
+    //#apply NodeElement("", "section", "Sections")
+    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
+    //#apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
   #end
 #end
 
@@ -40,7 +40,7 @@
   #// Graph Macros
   #// -----------------------------------------
   #use Graph
-    #apply NodeElement("Order", "section:SliceName", "DisplayName")
-    #apply LinkByBinding("focus", "^%ProfileId%/section:SliceName/$", ".entry", "Cmp")
+    //#apply NodeElement("Order", "section:SliceName", "DisplayName")
+    //#apply LinkByBinding("focus", "^%ProfileId%/section:SliceName/$", ".entry", "Cmp")
   #end
 #end

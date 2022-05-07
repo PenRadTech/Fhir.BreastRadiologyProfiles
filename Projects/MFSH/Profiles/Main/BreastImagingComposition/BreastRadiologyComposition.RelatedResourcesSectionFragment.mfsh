@@ -33,7 +33,8 @@
   #use Graph
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
-  #end
+    #apply NodeElement("E", "section:relatedResources", "Related Resources/Section")
+   #end
   
   #// -----------------------------------------
   #// IG Macros
