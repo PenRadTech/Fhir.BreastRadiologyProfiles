@@ -9,9 +9,6 @@ Description: """
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = "Composition Section slicing"
-    //#apply NodeElement("", "section", "Sections")
-    //#apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section/$", "0", "Cmp")
-    //#apply LinkByName("focus", "^%ProfileId%/section/$", "^%ProfileId%/section:", "0", "Cmp")
 * section contains impressions 0..1 MS
 * section[impressions] ^definition = """
 	This section contains references to the report's clinical impressions.

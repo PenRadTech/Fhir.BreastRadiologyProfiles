@@ -29,6 +29,9 @@
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
     #apply NodeElement("A", "section:report", "Report Section")
+	
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:report", ".entry", "1", "Bas")
   #end
   
   #// -----------------------------------------

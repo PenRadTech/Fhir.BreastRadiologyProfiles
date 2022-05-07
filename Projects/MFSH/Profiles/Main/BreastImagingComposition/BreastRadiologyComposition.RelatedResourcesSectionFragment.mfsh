@@ -34,7 +34,10 @@
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
     #apply NodeElement("E", "section:relatedResources", "Related Resources/Section")
-   #end
+
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:relatedResources", "0", "Cmp,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:relatedResources", ".entry", "1", "Cmp,Ovr")
+  #end
   
   #// -----------------------------------------
   #// IG Macros

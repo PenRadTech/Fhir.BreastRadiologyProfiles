@@ -18,9 +18,6 @@ Description: """
 * section ^slicing.rules = #open
 * section ^slicing.ordered = false
 * section ^slicing.description = "Composition Section slicing"
-    //#apply NodeElement("", "section", "Sections")
-    //#apply LinkByName("focus", "^BreastRadiologyComposition/$", "^BreastRadiologyComposition/section/$", "0", "Cmp")
-    //#apply LinkByName("focus", "^BreastRadiologyComposition/section/$", "^BreastRadiologyComposition/section:", "0", "Cmp")
 * section contains report 1..1 MS
 * section[report] ^definition = """
 	This section contains the main breast imaging report.

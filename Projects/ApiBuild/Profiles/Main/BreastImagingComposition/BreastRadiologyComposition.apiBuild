@@ -3,14 +3,14 @@
     "fragmentName" : "ReportSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "report",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#12/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#12/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "ReportSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#51/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#12/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ReportSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#12/n"
   }
 },
 {
@@ -18,14 +18,14 @@
     "fragmentName" : "ImpressionsSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "report",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ImpressionsSectionFragment.mfsh#49/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#13/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ImpressionsSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#13/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "ImpressionsSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ImpressionsSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#13/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.ImpressionsSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#13/n"
   }
 },
 {
@@ -33,14 +33,14 @@
     "fragmentName" : "FindingsLeftBreastSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "findingsLeftBreast",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsLeftBreastSectionFragment.mfsh#49/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#14/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsLeftBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#14/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "FindingsLeftBreastSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsLeftBreastSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#14/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsLeftBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#14/n"
   }
 },
 {
@@ -48,14 +48,14 @@
     "fragmentName" : "FindingsRightBreastSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "findingsRightBreast",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsRightBreastSectionFragment.mfsh#49/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#15/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsRightBreastSectionFragment.mfsh#52/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#15/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "FindingsRightBreastSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsRightBreastSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#15/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.FindingsRightBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#15/n"
   }
 },
 {
@@ -63,14 +63,14 @@
     "fragmentName" : "FindingsBiLateralBreastSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "findingsBiLateralBreast",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.BiLateralBreastSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#16/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.BiLateralBreastSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#16/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "FindingsBiLateralBreastSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.BiLateralBreastSectionFragment.mfsh#51/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#16/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.BiLateralBreastSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#16/n"
   }
 },
 {
@@ -78,14 +78,14 @@
     "fragmentName" : "RelatedResourcesSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "relatedResources",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RelatedResourcesSectionFragment.mfsh#55/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#17/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RelatedResourcesSectionFragment.mfsh#58/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#17/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "RelatedResourcesSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RelatedResourcesSectionFragment.mfsh#56/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#17/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RelatedResourcesSectionFragment.mfsh#59/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#17/n"
   }
 },
 {
@@ -93,20 +93,20 @@
     "fragmentName" : "RecommendationsSectionFragment",
     "fragmentType" : "CompositionSection",
     "sliceName" : "recommendations",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RecommendationsSectionFragment.mfsh#50/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#18/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RecommendationsSectionFragment.mfsh#53/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#18/n"
   }
 },
 {
   "implementFragment" : {
     "className" : "BreastRadiologyComposition",
     "fragmentName" : "RecommendationsSectionFragment",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RecommendationsSectionFragment.mfsh#51/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#18/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.RecommendationsSectionFragment.mfsh#54/nProfiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#18/n"
   }
 },
 {
   "defineClass" : {
     "className" : "BreastRadiologyComposition",
     "classType" : "Class",
-    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#79/n"
+    "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastRadiologyComposition.mfsh#72/n"
   }
 },

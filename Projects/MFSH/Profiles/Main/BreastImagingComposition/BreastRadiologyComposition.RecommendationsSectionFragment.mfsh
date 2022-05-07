@@ -29,6 +29,9 @@ Breast Composition Recommendations Section Fragment.
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
     #apply NodeElement("D", "section:recommendations", "Recommendations/Section")
+
+    #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:recommendations", "0", "Cmp,Ovr")
+    #apply LinkByReference("focus", "^%ProfileId%/section:recommendations", ".entry", "1", "Cmp,Ovr")
   #end
   
   #// -----------------------------------------
