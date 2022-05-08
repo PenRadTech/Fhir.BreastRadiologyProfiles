@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "USFinding",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/FindingUS/USFinding.mfsh#46/n"
   }
 },

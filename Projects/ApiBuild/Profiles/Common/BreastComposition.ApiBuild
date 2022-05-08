@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "BreastComposition",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/BreastComposition.mfsh#42/n"
   }
 },

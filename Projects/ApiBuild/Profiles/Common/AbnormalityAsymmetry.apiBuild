@@ -72,7 +72,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityAsymmetry",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityAsymmetry.mfsh#58/n"
   }
 },

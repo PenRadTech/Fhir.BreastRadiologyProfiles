@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "OtherModalityFinding",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/FindingOther/OtherModalityFinding.mfsh#49/n"
   }
 },

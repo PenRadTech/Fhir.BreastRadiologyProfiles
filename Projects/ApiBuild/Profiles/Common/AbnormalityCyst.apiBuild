@@ -153,7 +153,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityCyst",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityCyst.mfsh#73/n"
   }
 },

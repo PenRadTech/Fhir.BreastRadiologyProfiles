@@ -1,9 +1,9 @@
 // Define a Class.
-#macro ApiBuild.DefineClass(FragmentType) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.ApiBuild"
+#macro ApiBuild.DefineClass(ClassType) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.ApiBuild"
   `{
   `  "defineClass" : {
   `    "className" : "%ProfileId%",
-  `    "classType" : "FragmentType",
+  `    "classType" : "ClassType",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},

@@ -106,7 +106,7 @@
 {
   "defineClass" : {
     "className" : "BreastImagingComposition",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Main/BreastImagingComposition/BreastImagingComposition.mfsh#72/n"
   }
 },

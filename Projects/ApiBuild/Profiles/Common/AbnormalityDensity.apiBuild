@@ -106,7 +106,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityDensity",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityDensity.mfsh#66/n"
   }
 },

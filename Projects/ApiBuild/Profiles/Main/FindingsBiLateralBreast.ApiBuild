@@ -23,7 +23,7 @@
 {
   "defineClass" : {
     "className" : "FindingsBiLateralBreast",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Main/FindingsBiLateralBreast.mfsh#26/n"
   }
 },

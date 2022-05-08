@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "ServiceRecommendation",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/ServiceRecommendation.mfsh#51/n"
   }
 },

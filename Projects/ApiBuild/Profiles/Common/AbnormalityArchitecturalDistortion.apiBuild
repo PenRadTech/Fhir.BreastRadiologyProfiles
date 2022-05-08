@@ -113,7 +113,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityArchitecturalDistortion",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityArchitecturalDistortion.mfsh#54/n"
   }
 },

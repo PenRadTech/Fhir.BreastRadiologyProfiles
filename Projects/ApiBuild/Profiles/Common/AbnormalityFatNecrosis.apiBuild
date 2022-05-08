@@ -106,7 +106,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityFatNecrosis",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityFatNecrosis.mfsh#62/n"
   }
 },

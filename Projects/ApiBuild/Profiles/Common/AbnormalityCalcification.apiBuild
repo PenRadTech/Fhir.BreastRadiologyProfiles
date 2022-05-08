@@ -94,7 +94,7 @@
 {
   "defineClass" : {
     "className" : "AbnormalityCalcification",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AbnormalityCalcification.mfsh#63/n"
   }
 },

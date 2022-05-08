@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "MGFinding",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/FindingMG/MGFinding.mfsh#126/n"
   }
 },

@@ -15,7 +15,7 @@
 {
   "defineClass" : {
     "className" : "AssociatedFeature",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/Common/AssociatedFeature.mfsh#67/n"
   }
 },

@@ -1,7 +1,7 @@
 {
   "defineClass" : {
     "className" : "MRIFinding",
-    "classType" : "Class",
+    "classType" : "DomainResource",
     "traceMsg" : "Profiles/FindingMRI/MRIFinding.mfsh#46/n"
   }
 },

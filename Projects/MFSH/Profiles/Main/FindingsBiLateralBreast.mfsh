@@ -23,5 +23,5 @@ Profile: FindingsBiLateralBreast
   #// Code API Macros
   #// -----------------------------------------
   #use ApiBuild
-    #apply DefineClass("Class")
+    #apply DefineClass("DomainResource")
   #end
