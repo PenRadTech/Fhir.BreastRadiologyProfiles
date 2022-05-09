@@ -9,8 +9,6 @@ Description:
 * codes from system BreastCompositionCS
 
 
-
-
 CodeSystem: BreastCompositionCS
 Title: "Breast Composition CodeSystem"
 Description: "Breast composition values code system."

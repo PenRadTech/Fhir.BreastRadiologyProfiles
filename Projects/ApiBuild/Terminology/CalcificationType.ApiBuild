@@ -1,6 +1,12 @@
 {
+  "defineValueSet" : {
+    "valueSetName" : "CalcificationTypeVS",
+    "traceMsg" : "Terminology/CalcificationType.mfsh#22/n"
+  }
+},
+{
   "defineCodeSystem" : {
     "codeSystemName" : "CalcificationTypeCS",
-    "traceMsg" : "Terminology/CalcificationType.mfsh#343/n"
+    "traceMsg" : "Terminology/CalcificationType.mfsh#348/n"
   }
 },

@@ -1,7 +1,0 @@
-{
-  "defineClass" : {
-    "className" : "BreastImagingDocument",
-    "classType" : "Resource",
-    "traceMsg" : "Profiles/Main/BreastImagingDocument.mfsh#70/n"
-  }
-},

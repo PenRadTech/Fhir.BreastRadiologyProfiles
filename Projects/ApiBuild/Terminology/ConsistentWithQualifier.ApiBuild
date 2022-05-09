@@ -1,6 +1,12 @@
 {
+  "defineValueSet" : {
+    "valueSetName" : "ConsistentWithQualifierVS",
+    "traceMsg" : "Terminology/ConsistentWithQualifier.mfsh#22/n"
+  }
+},
+{
   "defineCodeSystem" : {
     "codeSystemName" : "ConsistentWithQualifierCS",
-    "traceMsg" : "Terminology/ConsistentWithQualifier.mfsh#61/n"
+    "traceMsg" : "Terminology/ConsistentWithQualifier.mfsh#66/n"
   }
 },

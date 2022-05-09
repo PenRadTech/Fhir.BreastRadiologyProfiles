@@ -11,7 +11,14 @@ Description:  "ObservedChanges Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
-
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
+  
+  
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."

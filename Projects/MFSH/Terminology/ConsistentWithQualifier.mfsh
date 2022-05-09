@@ -15,7 +15,12 @@ Description:  "ConsistentWith Qualifier Value Set"
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
-
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
 
   
 /*

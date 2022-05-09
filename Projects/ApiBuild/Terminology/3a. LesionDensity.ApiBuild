@@ -1,6 +1,12 @@
 {
+  "defineValueSet" : {
+    "valueSetName" : "LesionDensityVS",
+    "traceMsg" : "Terminology/3a. LesionDensity.mfsh#19/n"
+  }
+},
+{
   "defineCodeSystem" : {
     "codeSystemName" : "LesionDensityCS",
-    "traceMsg" : "Terminology/3a. LesionDensity.mfsh#56/n"
+    "traceMsg" : "Terminology/3a. LesionDensity.mfsh#61/n"
   }
 },

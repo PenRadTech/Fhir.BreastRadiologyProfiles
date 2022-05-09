@@ -1,6 +1,12 @@
 {
+  "defineValueSet" : {
+    "valueSetName" : "BreastCompositionVS",
+    "traceMsg" : "Terminology/BreastCompositonVS.mfsh#24/n"
+  }
+},
+{
   "defineCodeSystem" : {
     "codeSystemName" : "BreastCompositionCS",
-    "traceMsg" : "Terminology/BreastCompositonVS.mfsh#63/n"
+    "traceMsg" : "Terminology/BreastCompositonVS.mfsh#68/n"
   }
 },

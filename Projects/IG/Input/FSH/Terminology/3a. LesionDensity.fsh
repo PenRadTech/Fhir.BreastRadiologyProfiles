@@ -4,8 +4,6 @@ Description:  "Lesion density ValueSet"
 * codes from system LesionDensityCS
 
 
-
-
 CodeSystem: LesionDensityCS
 Title: "Lesion density CodeSystem"
 Description: 

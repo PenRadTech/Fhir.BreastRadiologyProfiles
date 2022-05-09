@@ -63,9 +63,3 @@ Description: """
     #apply Legend("focus", "Value", "value")
   #end
   
-  #// -----------------------------------------
-  #// Code API Macros
-  #// -----------------------------------------
-  #use ApiBuild
-    #apply DefineClass("Resource")
-  #end

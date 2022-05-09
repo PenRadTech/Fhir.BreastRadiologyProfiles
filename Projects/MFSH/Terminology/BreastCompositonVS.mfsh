@@ -17,7 +17,12 @@ Description:
     #apply GroupMemberValueSet("CommonCodesVS", "%Title%")
   #end
 
-
+  #// -----------------------------------------
+  #// CodeSystem API Macros
+  #// -----------------------------------------
+  #use ApiBuild
+    #apply DefineValueSet()
+  #end
 
 
 CodeSystem: BreastCompositionCS
