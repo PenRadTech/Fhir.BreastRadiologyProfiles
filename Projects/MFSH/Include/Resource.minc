@@ -44,6 +44,11 @@
 * category ^slicing.description = "Observation Category = imaging"
 * category contains categoryImaging 1..1
 * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
+
+  #use ApiBuild
+    #apply DefineElement("category:categoryImaging", "CategoryImaging", "Category")
+    #apply SetElement("category:categoryImaging", "http://terminology.hl7.org/CodeSystem/observation-category#imaging")
+  #end
 #end
 
 

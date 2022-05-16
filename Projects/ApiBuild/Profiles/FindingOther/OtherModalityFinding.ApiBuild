@@ -1,4 +1,21 @@
 {
+  "defineElement" : {
+    "className" : "OtherModalityFinding",
+    "propertyName" : "Name",
+    "fieldName" : "Category",
+    "path" : "category:categoryImaging",
+    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingOther/OtherModalityFinding.mfsh#12/n"
+  }
+},
+{
+  "setElement" : {
+    "className" : "OtherModalityFinding",
+    "path" : "category:categoryImaging",
+    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
+    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingOther/OtherModalityFinding.mfsh#12/n"
+  }
+},
+{
   "defineClass" : {
     "className" : "OtherModalityFinding",
     "classType" : "DomainResource",

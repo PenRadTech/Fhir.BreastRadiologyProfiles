@@ -1,4 +1,21 @@
 {
+  "defineElement" : {
+    "className" : "FindingsLeftBreast",
+    "propertyName" : "Name",
+    "fieldName" : "Category",
+    "path" : "category:categoryImaging",
+    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#11/nProfiles/Main/FindingsLeftBreast.mfsh#2/n"
+  }
+},
+{
+  "setElement" : {
+    "className" : "FindingsLeftBreast",
+    "path" : "category:categoryImaging",
+    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
+    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nInclude/ObservationMacros/Observation.FindingBreastFragment.minc#11/nProfiles/Main/FindingsLeftBreast.mfsh#2/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "FindingsLeftBreast",
     "fragmentName" : "BiRadAssessmentCategoryFragment",

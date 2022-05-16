@@ -1,4 +1,21 @@
 {
+  "defineElement" : {
+    "className" : "AbnormalityArchitecturalDistortion",
+    "propertyName" : "Name",
+    "fieldName" : "Category",
+    "path" : "category:categoryImaging",
+    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#10/n"
+  }
+},
+{
+  "setElement" : {
+    "className" : "AbnormalityArchitecturalDistortion",
+    "path" : "category:categoryImaging",
+    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
+    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityArchitecturalDistortion.mfsh#10/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityArchitecturalDistortion",
     "fragmentName" : "BreastBodyLocationRequiredFragment",

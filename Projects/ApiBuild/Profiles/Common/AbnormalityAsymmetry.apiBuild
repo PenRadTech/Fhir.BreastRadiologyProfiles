@@ -1,4 +1,21 @@
 {
+  "defineElement" : {
+    "className" : "AbnormalityAsymmetry",
+    "propertyName" : "Name",
+    "fieldName" : "Category",
+    "path" : "category:categoryImaging",
+    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityAsymmetry.mfsh#20/n"
+  }
+},
+{
+  "setElement" : {
+    "className" : "AbnormalityAsymmetry",
+    "path" : "category:categoryImaging",
+    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
+    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityAsymmetry.mfsh#20/n"
+  }
+},
+{
   "implementFragment" : {
     "className" : "AbnormalityAsymmetry",
     "fragmentName" : "BreastBodyLocationRequiredFragment",

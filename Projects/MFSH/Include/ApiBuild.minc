@@ -55,3 +55,29 @@
   `  }
   `},
 #end
+
+
+// Mark an element to be set to a specific value in code.
+#macro ApiBuild.DefineElement(Path, PName, FName) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
+  `{
+  `  "defineElement" : {
+  `    "className" : "%ProfileId%",
+  `    "propertyName" : "Name",
+  `    "fieldName" : "FName",
+  `    "path" : "Path",
+  `    "traceMsg" : "%ApplyStackFrame%"
+  `  }
+  `},
+#end
+
+// Mark an element to be set to a specific value in code.
+#macro ApiBuild.SetElement(Path, Value) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
+  `{
+  `  "setElement" : {
+  `    "className" : "%ProfileId%",
+  `    "path" : "Path",
+  `    "value" : "Value",
+  `    "traceMsg" : "%ApplyStackFrame%"
+  `  }
+  `},
+#end
