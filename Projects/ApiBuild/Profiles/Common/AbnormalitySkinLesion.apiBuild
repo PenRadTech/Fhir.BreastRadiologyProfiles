@@ -1,7 +1,7 @@
 {
   "defineElement" : {
     "className" : "AbnormalitySkinLesion",
-    "propertyName" : "Name",
+    "propertyName" : "Category",
     "fieldName" : "Category",
     "path" : "category:categoryImaging",
     "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalitySkinLesion.mfsh#10/n"
@@ -11,6 +11,7 @@
   "setElement" : {
     "className" : "AbnormalitySkinLesion",
     "path" : "category:categoryImaging",
+    "propertyName" : "Category",
     "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
     "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalitySkinLesion.mfsh#10/n"
   }

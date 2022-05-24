@@ -1,7 +1,7 @@
 {
   "defineElement" : {
     "className" : "AbnormalityCalcification",
-    "propertyName" : "Name",
+    "propertyName" : "Category",
     "fieldName" : "Category",
     "path" : "category:categoryImaging",
     "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityCalcification.mfsh#19/n"
@@ -11,6 +11,7 @@
   "setElement" : {
     "className" : "AbnormalityCalcification",
     "path" : "category:categoryImaging",
+    "propertyName" : "Category",
     "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
     "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityCalcification.mfsh#19/n"
   }
@@ -53,8 +54,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedSizeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#61/nProfiles/Common/AbnormalityCalcification.mfsh#27/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "ObservedSizeFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "obsSize",
+    "itemName" : "ObservedSizeFragment",
+    "path" : "component:obsSize",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedSizeFragment.minc#61/nProfiles/Common/AbnormalityCalcification.mfsh#27/n"
   }
 },
@@ -68,8 +76,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "ObservedDistributionFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#81/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "ObservedDistributionFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "obsDistRegionSize",
+    "itemName" : "ObservedDistributionFragment",
+    "path" : "component:obsDistRegionSize",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ObservedDistributionFragment.minc#81/nProfiles/Common/AbnormalityCalcification.mfsh#28/n"
   }
 },

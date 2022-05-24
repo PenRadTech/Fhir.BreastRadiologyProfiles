@@ -43,14 +43,20 @@
 
 #end
 
-
 // Define an Fragment Interface.
-#macro ApiBuild.DefineFragment(FragmentType, SliceName) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
+#macro ApiBuild.DefineFragment(FragmentType, Path) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{
   `  "defineFragment" : {
   `    "fragmentName" : "%FragmentId%",
+  `    "traceMsg" : "%ApplyStackFrame%"
+  `  }
+  `},
+  `{
+  `  "defineFragmentItem" : {
+  `    "fragmentName" : "%FragmentId%",
   `    "fragmentType" : "FragmentType",
-  `    "sliceName" : "SliceName",
+  `    "itemName" : "%FragmentId%",
+  `    "path" : "Path",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }
   `},
@@ -62,7 +68,7 @@
   `{
   `  "defineElement" : {
   `    "className" : "%ProfileId%",
-  `    "propertyName" : "Name",
+  `    "propertyName" : "PName",
   `    "fieldName" : "FName",
   `    "path" : "Path",
   `    "traceMsg" : "%ApplyStackFrame%"
@@ -71,11 +77,13 @@
 #end
 
 // Mark an element to be set to a specific value in code.
-#macro ApiBuild.SetElement(Path, Value) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
+// Property propertyName must have been defined by a DefineElement command.
+#macro ApiBuild.SetElement(Path, PName, Value) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
   `{
   `  "setElement" : {
   `    "className" : "%ProfileId%",
   `    "path" : "Path",
+  `    "propertyName" : "PName",
   `    "value" : "Value",
   `    "traceMsg" : "%ApplyStackFrame%"
   `  }

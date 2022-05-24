@@ -1,7 +1,7 @@
 {
   "defineElement" : {
     "className" : "AbnormalityCyst",
-    "propertyName" : "Name",
+    "propertyName" : "Category",
     "fieldName" : "Category",
     "path" : "category:categoryImaging",
     "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityCyst.mfsh#19/n"
@@ -11,6 +11,7 @@
   "setElement" : {
     "className" : "AbnormalityCyst",
     "path" : "category:categoryImaging",
+    "propertyName" : "Category",
     "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
     "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Device.Zero.minc#7/nProfiles/Common/AbnormalityCyst.mfsh#19/n"
   }
@@ -39,8 +40,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "ShapeFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#25/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "ShapeFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "shape",
+    "itemName" : "ShapeFragment",
+    "path" : "component:shape",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.ShapeFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#25/n"
   }
 },
@@ -54,8 +62,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "DensityFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#49/nProfiles/Common/AbnormalityCyst.mfsh#26/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "DensityFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "density",
+    "itemName" : "DensityFragment",
+    "path" : "component:density",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.DensityFragment.minc#49/nProfiles/Common/AbnormalityCyst.mfsh#26/n"
   }
 },
@@ -69,8 +84,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "MarginFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#27/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "MarginFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "margin",
+    "itemName" : "MarginFragment",
+    "path" : "component:margin",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.MarginFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#27/n"
   }
 },
@@ -84,8 +106,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "OrientationFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#28/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "OrientationFragment",
     "fragmentType" : "Observation.Components.Fragment",
-    "sliceName" : "orientation",
+    "itemName" : "OrientationFragment",
+    "path" : "component:orientation",
     "traceMsg" : "Include/ObservationMacros/Observation.Component.OrientationFragment.minc#50/nProfiles/Common/AbnormalityCyst.mfsh#28/n"
   }
 },
@@ -155,8 +184,15 @@
 {
   "defineFragment" : {
     "fragmentName" : "TumorSatelliteFragment",
+    "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#43/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
+  }
+},
+{
+  "defineFragmentItem" : {
+    "fragmentName" : "TumorSatelliteFragment",
     "fragmentType" : "Observation.HasMembers.Fragment",
-    "sliceName" : "tumorSatellite",
+    "itemName" : "TumorSatelliteFragment",
+    "path" : "tumorSatellite",
     "traceMsg" : "Include/ObservationMacros/Observation.HasMember.TumorSatelliteFragment.minc#43/nProfiles/Common/AbnormalityCyst.mfsh#38/n"
   }
 },

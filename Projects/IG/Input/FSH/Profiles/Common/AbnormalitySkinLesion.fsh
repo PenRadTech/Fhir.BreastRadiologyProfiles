@@ -29,7 +29,6 @@ Description: """
 * bodySite.extension contains BreastBodyLocationExtension named breastBodyLocation 1..1
 * bodySite.extension[breastBodyLocation] ^short = "breastBodyLocation extension."
 * bodySite.extension[breastBodyLocation] ^definition = "This extension slice contains the breastBodyLocation extension."
-    //#apply once DefineFragment("Unknown", "")
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
