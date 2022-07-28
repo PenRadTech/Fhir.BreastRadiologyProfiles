@@ -46,8 +46,8 @@
 * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
 
   #use ApiBuild
-    #apply DefineElement("category:categoryImaging", "Category", "Category")
-    #apply SetElement("category:categoryImaging", "Category", "http://terminology.hl7.org/CodeSystem/observation-category#imaging")
+    ///#apply DefineElement("category:categoryImaging", "Category", "Category")
+    ///#apply SetElement("category:categoryImaging", "Category", "http://terminology.hl7.org/CodeSystem/observation-category#imaging")
   #end
 #end
 

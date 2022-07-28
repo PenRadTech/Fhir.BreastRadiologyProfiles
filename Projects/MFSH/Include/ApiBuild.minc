@@ -61,31 +61,3 @@
   `  }
   `},
 #end
-
-
-// Mark an element to be set to a specific value in code.
-#macro ApiBuild.DefineElement(Path, PName, FName) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
-  `{
-  `  "defineElement" : {
-  `    "className" : "%ProfileId%",
-  `    "propertyName" : "PName",
-  `    "fieldName" : "FName",
-  `    "path" : "Path",
-  `    "traceMsg" : "%ApplyStackFrame%"
-  `  }
-  `},
-#end
-
-// Mark an element to be set to a specific value in code.
-// Property propertyName must have been defined by a DefineElement command.
-#macro ApiBuild.SetElement(Path, PName, Value) > "%ApiBuildDir%\\%BaseDir%\\%BaseName%.apiBuild"
-  `{
-  `  "setElement" : {
-  `    "className" : "%ProfileId%",
-  `    "path" : "Path",
-  `    "propertyName" : "PName",
-  `    "value" : "Value",
-  `    "traceMsg" : "%ApplyStackFrame%"
-  `  }
-  `},
-#end
