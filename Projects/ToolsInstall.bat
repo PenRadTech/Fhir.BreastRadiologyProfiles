@@ -7,9 +7,9 @@ dotnet tool uninstall --global Eir.MFSH
 dotnet tool uninstall --global Eir.FGraph
 dotnet tool uninstall --global Eir.IGBuilder
 
-dotnet tool install --ignore-failed-sources --add-source https://api.nuget.org/v3/index.json --global Eir.AutoMate
-dotnet tool install --ignore-failed-sources --add-source https://api.nuget.org/v3/index.json --global Eir.MFSH
-dotnet tool install --ignore-failed-sources --add-source https://api.nuget.org/v3/index.json --global Eir.FGraph
-dotnet tool install --ignore-failed-sources --add-source https://api.nuget.org/v3/index.json --global Eir.IGBuilder
+dotnet tool install --configfile NuGet.ToolInstall.Config --global Eir.AutoMate
+dotnet tool install --configfile NuGet.ToolInstall.Config --global Eir.MFSH
+dotnet tool install --configfile NuGet.ToolInstall.Config --global Eir.FGraph
+dotnet tool install --configfile NuGet.ToolInstall.Config --global Eir.IGBuilder
 
 pause
