@@ -1,22 +1,4 @@
 {
-  "defineElement" : {
-    "className" : "NMFinding",
-    "propertyName" : "Category",
-    "fieldName" : "Category",
-    "path" : "category:categoryImaging",
-    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingNM/NMFinding.mfsh#10/n"
-  }
-},
-{
-  "setElement" : {
-    "className" : "NMFinding",
-    "path" : "category:categoryImaging",
-    "propertyName" : "Category",
-    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
-    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingNM/NMFinding.mfsh#10/n"
-  }
-},
-{
   "defineClass" : {
     "className" : "NMFinding",
     "classType" : "DomainResource",

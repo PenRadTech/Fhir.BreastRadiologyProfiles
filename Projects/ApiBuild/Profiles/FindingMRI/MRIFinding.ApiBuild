@@ -1,22 +1,4 @@
 {
-  "defineElement" : {
-    "className" : "MRIFinding",
-    "propertyName" : "Category",
-    "fieldName" : "Category",
-    "path" : "category:categoryImaging",
-    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingMRI/MRIFinding.mfsh#10/n"
-  }
-},
-{
-  "setElement" : {
-    "className" : "MRIFinding",
-    "path" : "category:categoryImaging",
-    "propertyName" : "Category",
-    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
-    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.SectionFragment.minc#5/nProfiles/FindingMRI/MRIFinding.mfsh#10/n"
-  }
-},
-{
   "defineClass" : {
     "className" : "MRIFinding",
     "classType" : "DomainResource",

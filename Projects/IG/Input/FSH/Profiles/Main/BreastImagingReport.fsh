@@ -20,6 +20,8 @@ Description: """
 * category ^slicing.description = "Observation Category = imaging"
 * category contains categoryImaging 1..1
 * category[categoryImaging] = http://terminology.hl7.org/CodeSystem/observation-category#imaging
+    ///#apply DefineElement("category:categoryImaging", "Category", "Category")
+    ///#apply SetElement("category:categoryImaging", "Category", "http://terminology.hl7.org/CodeSystem/observation-category#imaging")
 
 * conclusionCode ^slicing.discriminator.type = #pattern
 * conclusionCode ^slicing.discriminator.path = "$this"

@@ -69,6 +69,11 @@ Description: "Component Slice Codes code system"
     Code to identify the component slice CorrespondsWith.
     """
 
+* #density "Component code for 'density' slice"
+    """
+    Code to identify the component slice Density.
+    """
+
 * #prevDemBy "Component code for 'Previously Demonstrated By' slice"
     """
     Code to identify the component slice Previously Demonstrated By.

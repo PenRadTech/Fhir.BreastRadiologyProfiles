@@ -1,22 +1,4 @@
 {
-  "defineElement" : {
-    "className" : "BreastComposition",
-    "propertyName" : "Category",
-    "fieldName" : "Category",
-    "path" : "category:categoryImaging",
-    "traceMsg" : "Include/Resource.minc#49/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Component.Zero.minc#4/nProfiles/Common/BreastComposition.mfsh#13/n"
-  }
-},
-{
-  "setElement" : {
-    "className" : "BreastComposition",
-    "path" : "category:categoryImaging",
-    "propertyName" : "Category",
-    "value" : "http://terminology.hl7.org/CodeSystem/observation-category#imaging",
-    "traceMsg" : "Include/Resource.minc#50/nInclude/ObservationMacros/Observation.Fragment.minc#7/nInclude/ObservationMacros/Observation.Component.Zero.minc#4/nProfiles/Common/BreastComposition.mfsh#13/n"
-  }
-},
-{
   "defineClass" : {
     "className" : "BreastComposition",
     "classType" : "DomainResource",
