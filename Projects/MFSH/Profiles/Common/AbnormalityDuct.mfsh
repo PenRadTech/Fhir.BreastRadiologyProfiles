@@ -9,9 +9,9 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityDuctObservation", "Code")
 
   #apply Observation.Component.Add("ductType", "0..1", "Duct Abnormality", "Duct Abnormality",
-  #	 """
+  #  """
   #  This resource contains information about a duct abnormality observation.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#abnormalityDuctType")
 
   #apply Observation.Component.SetConcept("ductType", "1..1", "AbnormalityDuctTypeVS")

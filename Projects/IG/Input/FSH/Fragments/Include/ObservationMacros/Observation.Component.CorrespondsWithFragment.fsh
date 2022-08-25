@@ -23,7 +23,7 @@ Description: """
 * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
 * component[correspondsWith].code ^definition = """
     This code identifies the Abnormality Corresponds With component.
-	"""
+    """
 * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
 * component[correspondsWith].value[x] 1..1
 * component[correspondsWith].value[x] only CodeableConcept

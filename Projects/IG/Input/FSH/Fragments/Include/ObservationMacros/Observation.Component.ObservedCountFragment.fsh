@@ -28,7 +28,7 @@ Description: """
 * component[observedCount].code ^short = "Observed Count component. component code."
 * component[observedCount].code ^definition = """
     This code identifies the Observed Count component. component.
-	"""
+    """
 * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
 * component[observedCount].value[x] 1..1
 * component[observedCount].value[x] only Quantity or Range

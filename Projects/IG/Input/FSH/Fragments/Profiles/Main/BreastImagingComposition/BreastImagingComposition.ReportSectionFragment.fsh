@@ -12,7 +12,7 @@ Description: """
 * section ^slicing.description = "Composition Section slicing"
 * section contains report 1..1 MS
 * section[report] ^definition = """
-	This section contains the main breast imaging report.
+    This section contains the main breast imaging report.
     """
 * section[report] ^short = "Report Section"
 * section[report].code = CompositionSectionSliceCodesCS#report
@@ -22,5 +22,5 @@ Description: """
 * section[report].entry only Reference(BreastImagingReport)
 * section[report].entry ^short = "BreastImagingReport references"
 * section[report].entry ^definition = """
-	This section contains the main breast imaging report.
+    This section contains the main breast imaging report.
     """

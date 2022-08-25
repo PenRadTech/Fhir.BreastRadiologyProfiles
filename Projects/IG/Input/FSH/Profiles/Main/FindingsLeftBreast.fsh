@@ -2,8 +2,8 @@ Profile: FindingsLeftBreast
 Parent: Observation
 Title: "Findings Left Breast"
 Description: """
-	Findings Left Breast profile.
-	"""  
+    Findings Left Breast profile.
+    """  
 * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
 * ^contact[0].telecom.value = "http://hl7.org/Special/committees/cic"
 * ^date = "2019-11-01"

@@ -12,10 +12,10 @@
 # Adds CorrespondsWith component
 # """
   #apply Observation.Component.Add("correspondsWith", "0..*", "Corresponds With", "Abnormality Corresponds With",
-  #	 """
+  #  """
   #  This slice contains the optional components that define what this observation corresponds with.
   #  The value of this component is a codeable concept chosen from the CorrespondsWithVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#correspondsWith")
   #
   #apply Observation.Component.SetConcept("correspondsWith", "1..1", "CorrespondsWithVS")

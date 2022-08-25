@@ -10,9 +10,9 @@
 # Fragment that adds 'BiRad Assessment Category code' element to profile
 # """
   #apply Observation.HasMember.Add("biRadAssessmentCategory", "0..1", "BreastAssessmentCategory", "BiRads Assessment Category Code Code",
-  #	 """
-  #	 BiRads Assessment Category component.
-  #	 """)
+  #  """
+  #  BiRads Assessment Category component.
+  #  """)
   #
 
   #// -----------------------------------------

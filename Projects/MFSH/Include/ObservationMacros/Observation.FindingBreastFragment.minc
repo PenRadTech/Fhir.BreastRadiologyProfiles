@@ -5,8 +5,8 @@
 Parent: Observation
 Title: "Findings %Laterality% Breast"
 Description: """
-	Findings %Laterality% Breast profile.
-	"""  
+    Findings %Laterality% Breast profile.
+    """  
   #apply HeaderFragment()
   #apply Observation.Device.Zero()
 

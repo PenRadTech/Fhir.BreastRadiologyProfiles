@@ -32,7 +32,7 @@ Description: """
 * component[obsSize].code ^short = "Observed size. component code."
 * component[obsSize].code ^definition = """
     This code identifies the Observed size. component.
-	"""
+    """
 * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
 * component[obsSize].value[x] 1..1
 * component[obsSize].value[x] only Quantity or Range

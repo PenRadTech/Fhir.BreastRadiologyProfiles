@@ -13,7 +13,7 @@
   #
   // Define distribution region size.
   #apply Observation.Component.Add("obsSize", "0..3", "Observed Size", "Observed size.",
-  #	 """
+  #  """
   #  This component slice contains the size of an item observed.
   #  There may be one, two, or three values indicating a size of
   #  one dimension (length), two dimensions (area), or three dimensions (volume).
@@ -25,7 +25,7 @@
   # 
   #  If the upper bound of the range is set but not the lower bound,
   #  then the size is {upper bound} or less.
-  #	 """,
+  #  """,
   # "ObservationComponentSliceCodesCS#obsSize")
   #
 * component[obsSize].value[x] 1..1

@@ -24,7 +24,7 @@ Description: """
 * component[asymmetryType].code ^short = "Asymmetry Type component code."
 * component[asymmetryType].code ^definition = """
     This code identifies the Asymmetry Type component.
-	"""
+    """
 * component[asymmetryType].code = ObservationComponentSliceCodesCS#abnormalityAsymmetryType
 * component[asymmetryType].value[x] 1..1
 * component[asymmetryType].value[x] only CodeableConcept
@@ -67,7 +67,7 @@ Description: """
 * component[obsChanges].code ^short = "Observed Change In Abnormality component code."
 * component[obsChanges].code ^definition = """
     This code identifies the Observed Change In Abnormality component.
-	"""
+    """
 * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
 * component[obsChanges].value[x] 1..1
 * component[obsChanges].value[x] only CodeableConcept
@@ -95,7 +95,7 @@ Description: """
 * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."
 * component[notPreviouslySeen].code ^definition = """
     This code identifies the Not Previously Seen component.
-	"""
+    """
 * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
 * component[notPreviouslySeen].value[x] 1..1
 * component[notPreviouslySeen].value[x] only CodeableConcept
@@ -119,7 +119,7 @@ Description: """
 * component[observedCount].code ^short = "Observed Count component. component code."
 * component[observedCount].code ^definition = """
     This code identifies the Observed Count component. component.
-	"""
+    """
 * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
 * component[observedCount].value[x] 1..1
 * component[observedCount].value[x] only Quantity or Range
@@ -136,7 +136,7 @@ Description: """
 * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
 * component[correspondsWith].code ^definition = """
     This code identifies the Abnormality Corresponds With component.
-	"""
+    """
 * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
 * component[correspondsWith].value[x] 1..1
 * component[correspondsWith].value[x] only CodeableConcept
@@ -156,7 +156,7 @@ Description: """
 * component[prevDemBy].code ^short = "Previously Demonstrated by component code."
 * component[prevDemBy].code ^definition = """
     This code identifies the Previously Demonstrated by component.
-	"""
+    """
 * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
 * component[prevDemBy].value[x] 1..1
 * component[prevDemBy].value[x] only CodeableConcept

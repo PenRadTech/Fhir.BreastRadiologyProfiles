@@ -24,7 +24,7 @@ Description: """
 * component[density].code ^short = "Density component code."
 * component[density].code ^definition = """
     This code identifies the Density component.
-	"""
+    """
 * component[density].code = ObservationComponentSliceCodesCS#density
 * component[density].value[x] 0..1
 * component[density].value[x] only CodeableConcept

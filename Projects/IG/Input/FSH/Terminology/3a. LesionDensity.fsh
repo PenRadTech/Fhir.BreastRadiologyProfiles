@@ -9,7 +9,7 @@ Title: "Lesion density CodeSystem"
 Description: 
     """
     Lesion Density code system.
-	"""
+    """
 * #EqualDensity "Equal (Isodense) density"
     """
     Equal (Isodense) density

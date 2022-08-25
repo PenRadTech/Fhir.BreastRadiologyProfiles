@@ -25,7 +25,7 @@ Description: """
 * component[margin].code ^short = "Margin component code."
 * component[margin].code ^definition = """
     This code identifies the Margin component.
-	"""
+    """
 * component[margin].code = ObservationComponentSliceCodesCS#margin
 * component[margin].value[x] 1..1
 * component[margin].value[x] only CodeableConcept

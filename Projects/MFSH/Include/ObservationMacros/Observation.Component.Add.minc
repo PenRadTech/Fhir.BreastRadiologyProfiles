@@ -19,7 +19,7 @@
 * component[SliceName].code ^short = "ShortDesc component code."
 * component[SliceName].code ^definition = """
     This code identifies the ShortDesc component.
-	"""
+    """
 * component[SliceName].code = ComponentCode
 
   #// -----------------------------------------

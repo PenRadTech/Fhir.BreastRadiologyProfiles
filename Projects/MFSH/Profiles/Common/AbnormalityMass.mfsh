@@ -8,10 +8,10 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityMassObservation", "Code")
 
   #apply Observation.Component.Add("massType", "1..1", "Mass Abnormality Type", "Mass Abnormality Type",
-  #	 """
+  #  """
   #  This slice contains the optional component that refine the Mass Abnormality type.
   #  The value of this component is a codeable concept chosen from the AbnormalityMassTypeVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#abnormalityMassType")
 
   #apply Observation.Component.SetConcept("massType", "1..1", "AbnormalityMassTypeVS")

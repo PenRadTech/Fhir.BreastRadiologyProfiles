@@ -9,12 +9,12 @@
 #  Adds NotPreviously Seen Component slice.
 #  """
   #apply Observation.Component.Add("notPreviouslySeen", "0..*", "Not Previously Seen", "Not Previously Seen",
-  #	"""
+  # """
   # This optional slice indicates previous procedures in which this abnormality was not seen. The reason why the 
   # the abnormality was not seen is not defined, but is ofen related to mechanical positioning or other circumstances which
   # caused the abnormality to not show up on a previous procedure.
   # The value of this component is a codeable concept chosen from the NotPreviouslySeenVS valueset.
-  #	""",
+  # """,
   #   "ObservationComponentSliceCodesCS#notPreviouslySeen")
   #
   #apply Observation.Component.SetConcept("notPreviouslySeen", "1..1", "NotPreviouslySeenVS")

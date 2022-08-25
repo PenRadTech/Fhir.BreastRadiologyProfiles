@@ -9,10 +9,10 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityForeignObjectObservation", "Code")
 
   #apply Observation.Component.Add("abnormalityForeignObjectType", "1..1", "Foreign Object Type", "Foreign Object Type",
-  #	 """
+  #  """
   #  This slice contains the optional component that refine the foreign object type.
   #  The value of this component is a codeable concept chosen from the AbnormalityForeignObjectTypeVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#abnormalityForeignObjectType")
 
   #apply Observation.Component.SetConcept("abnormalityForeignObjectType", "1..1", "AbnormalityForeignObjectTypeVS")

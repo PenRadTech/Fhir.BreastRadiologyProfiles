@@ -2,8 +2,8 @@ Profile: BreastImagingReport
 Parent: DiagnosticReport
 Title: "Breast Imaging Report"
 Description: """
-	Breast Imaging Diagnostic Report.
-	"""
+    Breast Imaging Diagnostic Report.
+    """
 * ^contact[0].telecom.system = http://hl7.org/fhir/contact-point-system#url
 * ^contact[0].telecom.value = "http://hl7.org/Special/committees/cic"
 * ^date = "2019-11-01"
@@ -34,15 +34,15 @@ Description: """
 * conclusionCode[BiRads] ^definition = """
     A required summary conclusion of the breast imaging report. Typically this is the most severe BiRads code
     found in either of the right or left breast observation sections.
-	In general, it is expected that a BiRads conclusion code will be included, though there are cases 
-	where a BiRads conclusion code can not be included.
-	
-	In these cases the actual non-BiRads code will be found in a separate slice of the FHIR CodeableConcept element
-	that contains this value or alternately (though not preferred) described in the text section of the report.
+    In general, it is expected that a BiRads conclusion code will be included, though there are cases 
+    where a BiRads conclusion code can not be included.
 
-	An example of this being used: A procedure is performed to implant a surgical marker. There is no BiRads code
-	associated with this completion of the procedure, though regulation may require a specific non Birads 
-	code to be used to descibe the completion of this procedure.
+    In these cases the actual non-BiRads code will be found in a separate slice of the FHIR CodeableConcept element
+    that contains this value or alternately (though not preferred) described in the text section of the report.
+
+    An example of this being used: A procedure is performed to implant a surgical marker. There is no BiRads code
+    associated with this completion of the procedure, though regulation may require a specific non Birads 
+    code to be used to descibe the completion of this procedure.
     """
 * conclusionCode[BiRads] from BreastAssessmentCategoryVS
 

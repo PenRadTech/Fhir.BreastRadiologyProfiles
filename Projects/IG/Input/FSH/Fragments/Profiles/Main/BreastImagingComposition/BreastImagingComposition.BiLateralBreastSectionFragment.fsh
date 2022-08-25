@@ -11,8 +11,8 @@ Description: """
 * section ^slicing.description = "Composition Section slicing"
 * section contains findingsBiLateralBreast 0..1 MS
 * section[findingsBiLateralBreast] ^definition = """
-	This section contains references to the report's findings 
-	for both (bi lateral) breasts.
+    This section contains references to the report's findings 
+    for both (bi lateral) breasts.
     """
 * section[findingsBiLateralBreast] ^short = "Findings BiLateral Breast Section"
 * section[findingsBiLateralBreast].code = CompositionSectionSliceCodesCS#findingsBiLateralBreast
@@ -22,6 +22,6 @@ Description: """
 * section[findingsBiLateralBreast].entry only Reference(FindingsBiLateralBreast)
 * section[findingsBiLateralBreast].entry ^short = "FindingsBiLateralBreast references"
 * section[findingsBiLateralBreast].entry ^definition = """
-	This section contains references to the report's findings 
-	for both (bi lateral) breasts.
+    This section contains references to the report's findings 
+    for both (bi lateral) breasts.
     """

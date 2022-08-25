@@ -10,17 +10,17 @@
 # """
 
   #apply Composition.Section.Add( 
-  #	"findingsBiLateralBreast",
-  #	"0..1", 
-  #	"1..1", 
-  #	"BiLateral Breast", 
-  #	"Findings BiLateral Breast", 
-  #	"""
-  #   This section contains references to the report's findings 
-  #   for both (bi lateral) breasts.
-  #	""",
-  #	"CompositionSectionSliceCodesCS#findingsBiLateralBreast",
-  #	"FindingsBiLateralBreast")
+  # "findingsBiLateralBreast",
+  # "0..1", 
+  # "1..1", 
+  # "BiLateral Breast", 
+  # "Findings BiLateral Breast", 
+  # """
+  # This section contains references to the report's findings 
+  # for both (bi lateral) breasts.
+  # """,
+  # "CompositionSectionSliceCodesCS#findingsBiLateralBreast",
+  # "FindingsBiLateralBreast")
   
   #// -----------------------------------------
   #// Graph Macros

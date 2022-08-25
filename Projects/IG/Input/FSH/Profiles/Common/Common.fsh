@@ -20,4 +20,4 @@ Alias: SERVICEREQUESTURL = http://hl7.org/fhir/StructureDefinition/ServiceReques
 
 Alias: CONTACTURL = http://hl7.org/Special/committees/cic
 
-Alias: PUBLICATIONSTATUS = 	http://hl7.org/fhir/publication-status
+Alias: PUBLICATIONSTATUS = http://hl7.org/fhir/publication-status

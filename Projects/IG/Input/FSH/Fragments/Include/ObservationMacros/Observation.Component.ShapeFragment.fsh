@@ -25,7 +25,7 @@ Description: """
 * component[shape].code ^short = "Shape component code."
 * component[shape].code ^definition = """
     This code identifies the Shape component.
-	"""
+    """
 * component[shape].code = ObservationComponentSliceCodesCS#shape
 * component[shape].value[x] 1..1
 * component[shape].value[x] only CodeableConcept

@@ -7,7 +7,7 @@ Description: """
 
 * . ^definition = """
     Consistent With Observation.
-	"""
+    """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#consistentWithObservation", "Code")
 
@@ -17,13 +17,13 @@ Description: """
 
   // Define Consistent With Slice
   #apply Observation.Component.Add("consistentWith", "1..1", "Consistent With", "Consistent With",
-  #	"""
+  #   """
   #   This slice contains the required component that defines what this 
   #   observation is consistent with.
   #
   #   The value of this component is a codeable concept chosen from the 
   #   ConsistentWithVS valueset.
-  #	""",
+  #   """,
   #   "ObservationComponentSliceCodesCS#consistentWithValue")
 
   #apply Observation.Component.SetConcept("consistentWith", "1..1", "ConsistentWithVS")
@@ -31,10 +31,10 @@ Description: """
 
   // Define Consistent With Qualifier Slice
   #apply Observation.Component.Add("qualifier", "0..*", "Qualifier", "Consistent With Qualifier",
-  #	"""
+  #   """
   #   This slice contains the optional components that qualify the 'consistentWith' slice component value.
   #   The value of this component is a codeable concept chosen from the ConsistentWithQualifierVS valueset.
-  #	""",
+  #   """,
   #   "ObservationComponentSliceCodesCS#consistentWithQualifier")
 
   #apply Observation.Component.SetConcept("qualifier", "0..1", "ConsistentWithQualifierVS")

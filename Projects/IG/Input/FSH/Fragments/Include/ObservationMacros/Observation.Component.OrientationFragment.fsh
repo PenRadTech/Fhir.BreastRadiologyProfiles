@@ -24,7 +24,7 @@ Description: """
 * component[orientation].code ^short = "Orientation component code."
 * component[orientation].code ^definition = """
     This code identifies the Orientation component.
-	"""
+    """
 * component[orientation].code = ObservationComponentSliceCodesCS#orientation
 * component[orientation].value[x] 1..1
 * component[orientation].value[x] only CodeableConcept

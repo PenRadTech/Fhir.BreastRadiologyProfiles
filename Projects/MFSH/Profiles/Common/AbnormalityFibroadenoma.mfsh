@@ -9,10 +9,10 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityFibroadenomaObservation", "Code")
 
   #apply Observation.Component.Add("fibroAdenomaType", "0..1", "Fibroadenoma Abnormality", "Fibroadenoma Abnormality",
-  #	 """
+  #  """
   #  This resource contains
   #  information about a Fibroadenoma abnormality observation.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#abnormalityFibroAdenomaType")
 
   #apply Observation.Component.SetConcept("fibroAdenomaType", "1..1", "AbnormalityFibroAdenomaTypeVS")

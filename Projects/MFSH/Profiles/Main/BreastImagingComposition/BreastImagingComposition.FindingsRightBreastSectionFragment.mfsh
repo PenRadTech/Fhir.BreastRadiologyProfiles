@@ -9,17 +9,17 @@
 # Adds Findings Right Breast Section to Composition
 # """
 #apply Composition.Section.Add(
-#	"findingsRightBreast",
-#	"0..1", 
-#	"1..1", 
-#	"Right Breast", 
-#	"Findings Right Breast", 
-#	"""
+#   "findingsRightBreast",
+#   "0..1", 
+#   "1..1", 
+#   "Right Breast", 
+#   "Findings Right Breast", 
+#   """
 #   This section contains references to the report's findings 
 #   for the right breast.
-#	""",
-#	"CompositionSectionSliceCodesCS#findingsRightBreast",
-#	"FindingsRightBreast")
+#   """,
+#   "CompositionSectionSliceCodesCS#findingsRightBreast",
+#   "FindingsRightBreast")
 
   #// -----------------------------------------
   #// Graph Macros
@@ -28,7 +28,7 @@
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
     #apply NodeElement("C", "section:findingsRightBreast", "Findings/Right Breast/Section")
-	
+
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:findingsRightBreast", "0", "Cmp,Ovr")
     #apply LinkByReference("focus", "^%ProfileId%/section:findingsRightBreast", ".entry", "1", "Cmp,Ovr")
    #end

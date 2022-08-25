@@ -11,16 +11,16 @@
 # """
 
 #apply Composition.Section.Add(
-#	"report",
-#	"1..1", 
-#	"1..1", 
-#	"Report", 
-#	"Report", 
-#	"""
+#   "report",
+#   "1..1", 
+#   "1..1", 
+#   "Report", 
+#   "Report", 
+#   """
 #   This section contains the main breast imaging report.
-#	""",
-#	"CompositionSectionSliceCodesCS#report",
-#	"BreastImagingReport")
+#   """,
+#   "CompositionSectionSliceCodesCS#report",
+#   "BreastImagingReport")
 
   #// -----------------------------------------
   #// Graph Macros
@@ -29,7 +29,7 @@
     #apply once NodeFragment("%FTitle%")
     #apply LinkByName("frag", "^%FragmentId%/$", "^%ProfileId%/$", "0", "Bas,Ovr")
     #apply NodeElement("A", "section:report", "Report Section")
-	
+
     #apply LinkByName("focus", "^%ProfileId%/$", "^%ProfileId%/section:report", "0", "Bas,Ovr")
     #apply LinkByReference("focus", "^%ProfileId%/section:report", ".entry", "1", "Bas")
   #end

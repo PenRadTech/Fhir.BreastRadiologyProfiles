@@ -11,7 +11,7 @@ Description: """
 * section ^slicing.description = "Composition Section slicing"
 * section contains impressions 0..1 MS
 * section[impressions] ^definition = """
-	This section contains references to the report's clinical impressions.
+    This section contains references to the report's clinical impressions.
     """
 * section[impressions] ^short = "Impressions Section"
 * section[impressions].code = CompositionSectionSliceCodesCS#impressions
@@ -21,5 +21,5 @@ Description: """
 * section[impressions].entry only Reference(ClinicalImpression)
 * section[impressions].entry ^short = "ClinicalImpression references"
 * section[impressions].entry ^definition = """
-	This section contains references to the report's clinical impressions.
+    This section contains references to the report's clinical impressions.
     """

@@ -10,17 +10,17 @@ Breast Composition Recommendations Section Fragment.
 # """
 
 #apply Composition.Section.Add(
-#	"recommendations",
-#	"0..1", 
-#	"1..*", 
-#	"Recommendations", 
-#	"Recommendations", 
-#	"""
+#   "recommendations",
+#   "0..1", 
+#   "1..*", 
+#   "Recommendations", 
+#   "Recommendations", 
+#   """
 #   This section contains references to recommended actions 
-#	aken in response to the observations and findings of this report.
-#	""",
-#	"CompositionSectionSliceCodesCS#recommendations",
-#	"BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation")
+#   aken in response to the observations and findings of this report.
+#   """,
+#   "CompositionSectionSliceCodesCS#recommendations",
+#   "BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation")
 
   #// -----------------------------------------
   #// Graph Macros

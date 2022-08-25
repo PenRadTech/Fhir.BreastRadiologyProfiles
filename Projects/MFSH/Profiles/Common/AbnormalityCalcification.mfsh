@@ -8,7 +8,7 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityCalcificationObservation", "Code")
   
   #apply Observation.Component.Add("calcificationType", "1..1", "Calcification Type", "Calcification Type",
-  #	 """
+  #  """
   #  This slice contains the optional component that refines the calcification type.
   #  The value of this component is a codeable concept chosen from the CalcificationTypeVS valueset.
   #  """,

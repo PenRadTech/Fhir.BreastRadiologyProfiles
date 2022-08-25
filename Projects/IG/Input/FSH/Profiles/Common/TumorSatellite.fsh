@@ -37,7 +37,7 @@ Description: """
 
 * . ^definition = """
     Tumor Satellite Observation.
-	"""
+    """
 * code = ObservationCodesCS#tumorSatelliteObservation
 * code 1..1
 

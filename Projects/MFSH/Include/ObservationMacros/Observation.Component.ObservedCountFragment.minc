@@ -11,7 +11,7 @@
 #  """
   #incompatible Observation.Component.Zero
   #apply Observation.Component.Add("observedCount", "0..1", "Observed Count", "Observed Count component.",
-  #	  """
+  #   """
   #   This component slice contains the number of items observed.
   #   This can be a quantity (i.e. 5), or a range (1 to 5).
   # 
@@ -20,7 +20,7 @@
   # 
   #   If the lower bound of the range is not set but the upper bound is,
   #   then it means {upper bound} or less.
-  #	  """,
+  #   """,
   #   "ObservationComponentSliceCodesCS#obsCount")
   #
 * component[observedCount].value[x] 1..1

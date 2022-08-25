@@ -11,8 +11,8 @@ Description: """
 * section ^slicing.description = "Composition Section slicing"
 * section contains recommendations 0..1 MS
 * section[recommendations] ^definition = """
-	   This section contains references to recommended actions 
-	aken in response to the observations and findings of this report.
+    This section contains references to recommended actions 
+    aken in response to the observations and findings of this report.
     """
 * section[recommendations] ^short = "Recommendations Section"
 * section[recommendations].code = CompositionSectionSliceCodesCS#recommendations
@@ -22,6 +22,6 @@ Description: """
 * section[recommendations].entry only Reference(BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation)
 * section[recommendations].entry ^short = "BreastMedicationRequest or BreastServiceRequest or ServiceRecommendation references"
 * section[recommendations].entry ^definition = """
-	   This section contains references to recommended actions 
-	aken in response to the observations and findings of this report.
+    This section contains references to recommended actions 
+    aken in response to the observations and findings of this report.
     """

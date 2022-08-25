@@ -13,7 +13,7 @@
   #apply Composition.Section.Slice()
 * section contains SliceName CardSection MS
 * section[SliceName] ^definition = """
-	Definition
+    Definition
     """
 * section[SliceName] ^short = "ShortDesc Section"
 * section[SliceName].code = SectionCode
@@ -23,6 +23,6 @@
 * section[SliceName].entry only Reference(EntryReference)
 * section[SliceName].entry ^short = "EntryReference references"
 * section[SliceName].entry ^definition = """
-	Definition
+    Definition
     """
 #end

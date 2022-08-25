@@ -9,17 +9,17 @@
 # Adds Findings Left Breast Section to Composition
 # """
 #apply Composition.Section.Add(
-#	"findingsLeftBreast",
-#	"0..1", 
-#	"1..1", 
-#	"Left Breast", 
-#	"Findings Left Breast", 
-#	"""
-#    This section contains references to the report's findings 
-#    for the left breast.
-#	""",
-#	"CompositionSectionSliceCodesCS#findingsLeftBreast",
-#	"FindingsLeftBreast")
+# "findingsLeftBreast",
+# "0..1", 
+# "1..1", 
+# "Left Breast", 
+# "Findings Left Breast", 
+# """
+# This section contains references to the report's findings 
+# for the left breast.
+# """,
+# "CompositionSectionSliceCodesCS#findingsLeftBreast",
+# "FindingsLeftBreast")
 
   #// -----------------------------------------
   #// Graph Macros

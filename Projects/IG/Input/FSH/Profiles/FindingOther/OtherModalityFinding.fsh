@@ -3,8 +3,8 @@ Parent: Observation
 Title: "Other Finding"
 Description: """
     Other Finding.
-	This provides a location to place modality specific finding that don't fit under any of the other
-	finding groups (i.e. MRIFinding, USFinding, MGFinding, etc).
+    This provides a location to place modality specific finding that don't fit under any of the other
+    finding groups (i.e. MRIFinding, USFinding, MGFinding, etc).
     """
 * code = ObservationCodesCS#otherModalityFindingObservation
 * code 1..1

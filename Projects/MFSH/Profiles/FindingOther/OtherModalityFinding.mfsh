@@ -3,8 +3,8 @@ Parent: Observation
 Title: "Other Finding"
 Description: """
     Other Finding.
-	This provides a location to place modality specific finding that don't fit under any of the other
-	finding groups (i.e. MRIFinding, USFinding, MGFinding, etc).
+    This provides a location to place modality specific finding that don't fit under any of the other
+    finding groups (i.e. MRIFinding, USFinding, MGFinding, etc).
     """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#otherModalityFindingObservation", "Code")
@@ -23,7 +23,7 @@ Description: """
     # <p>
     # This Observation contains all references to all the observations
     # and exam information related to an exam that is not one of the predefined types
-    # (i.e. not an US, MG, NM, etc).
+    # i.e. not an US, MG, NM, etc).
     # </p>
     # <p>
     # As of this ballot, the child observations of this profile have not

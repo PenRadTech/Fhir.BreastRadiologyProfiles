@@ -24,7 +24,7 @@ Description: """
 * component[prevDemBy].code ^short = "Previously Demonstrated by component code."
 * component[prevDemBy].code ^definition = """
     This code identifies the Previously Demonstrated by component.
-	"""
+    """
 * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
 * component[prevDemBy].value[x] 1..1
 * component[prevDemBy].value[x] only CodeableConcept

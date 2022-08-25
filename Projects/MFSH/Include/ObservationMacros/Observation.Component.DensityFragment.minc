@@ -12,10 +12,10 @@
 
   // Define Density Slice
   #apply Observation.Component.Add("density", "0..1", "Density", "Density",
-  #	 """
+  #  """
   #  This slice contains the optional component that define the density of the abnormality.
   #  The value of this component is a codeable concept chosen from the LesionRadiographicDensityVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#density")
   #
   #apply Observation.Component.SetConcept("density", "0..1", "LesionDensityVS")

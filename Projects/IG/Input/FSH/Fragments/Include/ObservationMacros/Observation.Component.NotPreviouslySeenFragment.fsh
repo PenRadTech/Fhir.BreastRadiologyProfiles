@@ -24,7 +24,7 @@ Description: """
 * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."
 * component[notPreviouslySeen].code ^definition = """
     This code identifies the Not Previously Seen component.
-	"""
+    """
 * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
 * component[notPreviouslySeen].value[x] 1..1
 * component[notPreviouslySeen].value[x] only CodeableConcept

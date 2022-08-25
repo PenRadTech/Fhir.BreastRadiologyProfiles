@@ -12,10 +12,10 @@
 
   // Define Orientation Slice
   #apply Observation.Component.Add("orientation", "0..1", "Orientation", "Orientation",
-  #	 """
+  #  """
   #  This slice contains the optional component that define the orientation of the abnormality.
   #  The value of this component is a codeable concept chosen from the OrientationVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#orientation")
   #
   #apply Observation.Component.SetConcept("orientation", "1..1", "OrientationVS")

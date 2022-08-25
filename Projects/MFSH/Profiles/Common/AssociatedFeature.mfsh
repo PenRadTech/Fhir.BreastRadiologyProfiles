@@ -15,7 +15,7 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#associatedFeaturesObservation", "Code")
 
   #apply Observation.Component.Add("featureType", "1..1", "Feature Type", "Associated Feature Type",
-  #	 """
+  #  """
   #  This slice contains the required component that 
   #  defines the observed feature. The value of this 
   #  component is a codeable concept chosen from the 

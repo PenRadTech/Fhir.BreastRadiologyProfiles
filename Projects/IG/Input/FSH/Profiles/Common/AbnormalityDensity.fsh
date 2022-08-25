@@ -24,7 +24,7 @@ Description: """
 * component[densityType].code ^short = "Density Type component code."
 * component[densityType].code ^definition = """
     This code identifies the Density Type component.
-	"""
+    """
 * component[densityType].code = ObservationComponentSliceCodesCS#abnormalityDensityType
 * component[densityType].value[x] 1..1
 * component[densityType].value[x] only CodeableConcept
@@ -67,7 +67,7 @@ Description: """
 * component[obsChanges].code ^short = "Observed Change In Abnormality component code."
 * component[obsChanges].code ^definition = """
     This code identifies the Observed Change In Abnormality component.
-	"""
+    """
 * component[obsChanges].code = ObservationComponentSliceCodesCS#obsChanges
 * component[obsChanges].value[x] 1..1
 * component[obsChanges].value[x] only CodeableConcept
@@ -96,7 +96,7 @@ Description: """
 * component[shape].code ^short = "Shape component code."
 * component[shape].code ^definition = """
     This code identifies the Shape component.
-	"""
+    """
 * component[shape].code = ObservationComponentSliceCodesCS#shape
 * component[shape].value[x] 1..1
 * component[shape].value[x] only CodeableConcept
@@ -116,7 +116,7 @@ Description: """
 * component[density].code ^short = "Density component code."
 * component[density].code ^definition = """
     This code identifies the Density component.
-	"""
+    """
 * component[density].code = ObservationComponentSliceCodesCS#density
 * component[density].value[x] 0..1
 * component[density].value[x] only CodeableConcept
@@ -137,7 +137,7 @@ Description: """
 * component[margin].code ^short = "Margin component code."
 * component[margin].code ^definition = """
     This code identifies the Margin component.
-	"""
+    """
 * component[margin].code = ObservationComponentSliceCodesCS#margin
 * component[margin].value[x] 1..1
 * component[margin].value[x] only CodeableConcept
@@ -157,7 +157,7 @@ Description: """
 * component[orientation].code ^short = "Orientation component code."
 * component[orientation].code ^definition = """
     This code identifies the Orientation component.
-	"""
+    """
 * component[orientation].code = ObservationComponentSliceCodesCS#orientation
 * component[orientation].value[x] 1..1
 * component[orientation].value[x] only CodeableConcept
@@ -177,7 +177,7 @@ Description: """
 * component[notPreviouslySeen].code ^short = "Not Previously Seen component code."
 * component[notPreviouslySeen].code ^definition = """
     This code identifies the Not Previously Seen component.
-	"""
+    """
 * component[notPreviouslySeen].code = ObservationComponentSliceCodesCS#notPreviouslySeen
 * component[notPreviouslySeen].value[x] 1..1
 * component[notPreviouslySeen].value[x] only CodeableConcept
@@ -201,7 +201,7 @@ Description: """
 * component[observedCount].code ^short = "Observed Count component. component code."
 * component[observedCount].code ^definition = """
     This code identifies the Observed Count component. component.
-	"""
+    """
 * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
 * component[observedCount].value[x] 1..1
 * component[observedCount].value[x] only Quantity or Range
@@ -228,7 +228,7 @@ Description: """
 * component[obsSize].code ^short = "Observed size. component code."
 * component[obsSize].code ^definition = """
     This code identifies the Observed size. component.
-	"""
+    """
 * component[obsSize].code = ObservationComponentSliceCodesCS#obsSize
 * component[obsSize].value[x] 1..1
 * component[obsSize].value[x] only Quantity or Range
@@ -251,7 +251,7 @@ Description: """
 * component[obsDistribution].code ^short = "Observed distribution of abnormalities component code."
 * component[obsDistribution].code ^definition = """
     This code identifies the Observed distribution of abnormalities component.
-	"""
+    """
 * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
 * component[obsDistribution].value[x] 1..1
 * component[obsDistribution].value[x] only CodeableConcept
@@ -283,7 +283,7 @@ Description: """
 * component[obsDistRegionSize].code ^short = "Observed size of distribution region. component code."
 * component[obsDistRegionSize].code ^definition = """
     This code identifies the Observed size of distribution region. component.
-	"""
+    """
 * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
 
 * component[obsDistRegionSize].value[x] 1..1
@@ -304,7 +304,7 @@ Description: """
 * component[correspondsWith].code ^short = "Abnormality Corresponds With component code."
 * component[correspondsWith].code ^definition = """
     This code identifies the Abnormality Corresponds With component.
-	"""
+    """
 * component[correspondsWith].code = ObservationComponentSliceCodesCS#correspondsWith
 * component[correspondsWith].value[x] 1..1
 * component[correspondsWith].value[x] only CodeableConcept
@@ -324,7 +324,7 @@ Description: """
 * component[prevDemBy].code ^short = "Previously Demonstrated by component code."
 * component[prevDemBy].code ^definition = """
     This code identifies the Previously Demonstrated by component.
-	"""
+    """
 * component[prevDemBy].code = ObservationComponentSliceCodesCS#prevDemBy
 * component[prevDemBy].value[x] 1..1
 * component[prevDemBy].value[x] only CodeableConcept

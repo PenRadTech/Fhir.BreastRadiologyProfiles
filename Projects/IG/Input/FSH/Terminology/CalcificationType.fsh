@@ -1,10 +1,10 @@
 ValueSet:  CalcificationTypeVS
 Title: "Calcification Type Value Set"
 Description:  """
-	Calcification Type Value Set
-	This value set describes the types of calcification findings that may be found
-	during an exam.
-	"""
+    Calcification Type Value Set
+    This value set describes the types of calcification findings that may be found
+    during an exam.
+    """
 * codes from system CalcificationTypeCS
 
 

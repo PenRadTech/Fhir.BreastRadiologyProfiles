@@ -25,7 +25,7 @@ Description: """
 * component[obsDistribution].code ^short = "Observed distribution of abnormalities component code."
 * component[obsDistribution].code ^definition = """
     This code identifies the Observed distribution of abnormalities component.
-	"""
+    """
 * component[obsDistribution].code = ObservationComponentSliceCodesCS#obsDistribution
 * component[obsDistribution].value[x] 1..1
 * component[obsDistribution].value[x] only CodeableConcept
@@ -57,7 +57,7 @@ Description: """
 * component[obsDistRegionSize].code ^short = "Observed size of distribution region. component code."
 * component[obsDistRegionSize].code ^definition = """
     This code identifies the Observed size of distribution region. component.
-	"""
+    """
 * component[obsDistRegionSize].code = ObservationComponentSliceCodesCS#obsDistRegionSize
 
 * component[obsDistRegionSize].value[x] 1..1

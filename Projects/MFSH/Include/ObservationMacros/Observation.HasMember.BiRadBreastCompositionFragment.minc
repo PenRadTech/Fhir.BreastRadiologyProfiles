@@ -10,9 +10,9 @@
 # Fragment that adds 'BiRad Breast Composition code' element to profile
 # """
   #apply Observation.HasMember.Add("biRadsBreastComposition", "0..1", "BreastComposition", "BiRads Breast Composition Code",
-  #	 """
-  #	 BiRads Breast Composition component.
-  #	 """)
+  #  """
+  #  BiRads Breast Composition component.
+  #  """)
   #
 
   #// -----------------------------------------

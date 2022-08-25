@@ -9,7 +9,7 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityAsymmetryObservation", "Code")
 
   #apply Observation.Component.Add("asymmetryType", "1..1", "Asymmetry Type", "Asymmetry Type",
-  #	 """
+  #  """
   #  This slice contains the optional component that refine the asymmetry type.
   #  The value of this component is a codeable concept chosen from the AbnormalityAsymmetryTypeVS valueset.
   #  """,

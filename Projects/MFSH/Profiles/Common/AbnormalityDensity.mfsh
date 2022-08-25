@@ -8,7 +8,7 @@ Description: """
   #apply Resource.Fix("1", "code", "ObservationCodesCS#abnormalityDensityObservation", "Code")
 
   #apply Observation.Component.Add("densityType", "1..1", "Density Type", "Density Type",
-  #	 """
+  #  """
   #  This slice contains the optional component that refines the density type.
   #  The value of this component is a codeable concept chosen from the AbnormalityDensityTypeVS valueset.
   #  """,

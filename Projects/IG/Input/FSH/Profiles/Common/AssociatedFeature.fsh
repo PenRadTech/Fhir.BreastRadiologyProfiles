@@ -33,7 +33,7 @@ Description: """
 * component[featureType].code ^short = "Associated Feature Type component code."
 * component[featureType].code ^definition = """
     This code identifies the Associated Feature Type component.
-	"""
+    """
 * component[featureType].code = ObservationComponentSliceCodesCS#featureType
 * component[featureType].value[x] 1..1
 * component[featureType].value[x] only CodeableConcept
@@ -83,7 +83,7 @@ Description: """
 * component[observedCount].code ^short = "Observed Count component. component code."
 * component[observedCount].code ^definition = """
     This code identifies the Observed Count component. component.
-	"""
+    """
 * component[observedCount].code = ObservationComponentSliceCodesCS#obsCount
 * component[observedCount].value[x] 1..1
 * component[observedCount].value[x] only Quantity or Range

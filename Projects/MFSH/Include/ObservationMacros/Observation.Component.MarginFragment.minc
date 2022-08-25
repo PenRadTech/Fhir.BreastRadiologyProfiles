@@ -13,10 +13,10 @@
 
   // Define Margin Slice
   #apply Observation.Component.Add("margin", "0..1", "Margin", "Margin",
-  #	 """
+  #  """
   #  This slice contains the optional component that define the margin of the abnormality.
   #  The value of this component is a codeable concept chosen from the MarginVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#margin")
   #
   #apply Observation.Component.SetConcept("margin", "1..1", "MarginVS")

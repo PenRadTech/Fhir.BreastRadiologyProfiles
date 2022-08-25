@@ -13,10 +13,10 @@
 
   // Define Shape Slice
   #apply Observation.Component.Add("shape", "0..1", "Shape", "Shape",
-  #	 """
+  #  """
   #  This slice contains the optional component that define the shape of the abnormality.
   #  The value of this component is a codeable concept chosen from the ShapeVS valueset.
-  #	 """,
+  #  """,
   #  "ObservationComponentSliceCodesCS#shape")
   #
   #apply Observation.Component.SetConcept("shape", "1..1", "ShapeVS")

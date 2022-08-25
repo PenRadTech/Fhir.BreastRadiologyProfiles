@@ -2,7 +2,7 @@ Profile: BreastImagingDocument
 Parent: Bundle
 Title: "Breast Imaging Document"
 Description: """
-	Breast Imaging Document Bundle.
+    Breast Imaging Document Bundle.
     """
 
   #apply HeaderFragment()

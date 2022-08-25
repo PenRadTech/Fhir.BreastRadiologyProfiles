@@ -1,11 +1,11 @@
 ValueSet:  BreastCompositionVS
 Title: "Breast Composition ValueSet"
 Description:
-	"""
-	Breast Composition Value Set
-	Codes that describe the observed composition of 
-	the breast.
-	"""
+    """
+    Breast Composition Value Set
+    Codes that describe the observed composition of 
+    the breast.
+    """
 * codes from system BreastCompositionCS
 
 

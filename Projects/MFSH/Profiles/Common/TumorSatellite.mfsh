@@ -16,7 +16,7 @@ Description: """
 
 * . ^definition = """
     Tumor Satellite Observation.
-	"""
+    """
 
   #apply Resource.Fix("1", "code", "ObservationCodesCS#tumorSatelliteObservation", "Code")
 
