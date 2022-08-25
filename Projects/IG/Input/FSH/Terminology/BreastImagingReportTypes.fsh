@@ -2,7 +2,7 @@
 ValueSet:  BreastImagingReportTypesVS
 Title: "Breast Imaging Report Types ValueSet"
 Description:  """
-  This value set defines that allowable codes that BreastRadiologyReport.code can be set to.
+  This value set defines that allowable codes that BreastImagingReport.code can be set to.
   BreastImagingReport.code defines the type of breast imaging report that this is.
   
   This needs to have the complete set of desired report types added.

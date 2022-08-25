@@ -12,8 +12,8 @@
 id: hl7.fhir.us.breast-radiology
 canonical: http://hl7.org/fhir/us/breast-radiology
 version: 0.3.0
-name: BreastRadiologyReporting2ndSTUballot
-title: Breast Radiology Reporting - 2nd STU ballot
+name: BreastImagingReporting2ndSTUballot
+title: Breast Imaging Reporting - 2nd STU ballot
 status: active
 publisher:
   name: HL7 International - Clinical Interoperability Council
@@ -42,7 +42,7 @@ jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 #     Background: background.html
 #   Specification:
 #     Complete Graph of Elements: fullGraph.html
-#     " Breast Radiology Document": StructureDefinition-BreastRadiologyDocument.html
+#     " Breast Imaging Document": StructureDefinition-BreastImagingDocument.html
 #     Mammography Finding: StructureDefinition-MGFinding.html
 #     Ultrasound Finding: StructureDefinition-USFinding.html
 #     MRI Finding: StructureDefinition-MRIFinding.html

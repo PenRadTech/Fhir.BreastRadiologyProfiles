@@ -1,2 +1,2 @@
-# BreastRadiologyProfilesV3
-Version 3 of Breast Radiology Profiles. FSH version
+# BreastImagingProfilesV3
+Version 3 of Breast Imaging Profiles. FSH version
