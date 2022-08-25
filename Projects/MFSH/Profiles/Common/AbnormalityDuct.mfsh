@@ -46,7 +46,7 @@ Description: """
     # <b>Duct Abnormality Observation</b>
     # </p>
     # <p>
-    # This resource contains information about a duct abnormality observation. 
+    # This resource contains information about a duct abnormality observation.
     # </p>
     # """)
 

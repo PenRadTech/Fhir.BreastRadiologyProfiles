@@ -14,7 +14,7 @@
   #  This slice contains the optional components that specifies what this observation 
   #  has been previously demonstrated by.
   #  The value of this component is a codeable concept chosen from the 
-  #  PreviouslyDemonstratedByVS valueset.  
+  #  PreviouslyDemonstratedByVS valueset.
   #  """,
   #  "ObservationComponentSliceCodesCS#prevDemBy")
   #

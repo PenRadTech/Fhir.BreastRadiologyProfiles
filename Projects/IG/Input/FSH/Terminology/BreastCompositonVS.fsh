@@ -12,6 +12,7 @@ Description:
 CodeSystem: BreastCompositionCS
 Title: "Breast Composition CodeSystem"
 Description: "Breast composition values code system."
+* insert CodeSystem_Common
 * #AlmostEntirelyFat "(a) Almost entirely fat"
     """
     A term used to describe breast tissue that is made

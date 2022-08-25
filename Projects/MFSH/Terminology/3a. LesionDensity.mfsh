@@ -26,6 +26,7 @@ Description:
     """
     Lesion Density code system.
     """
+* insert CodeSystem_Common
 * #EqualDensity "Equal (Isodense) density"
     """
     Equal (Isodense) density

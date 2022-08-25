@@ -12,6 +12,7 @@ Description:  """
 CodeSystem: CalcificationTypeCS
 Title: "Calcification Type CodeSystem"
 Description: "Mammography calcification type code system."
+* insert CodeSystem_Common
 * #Amorphous "Amorphous"
     """
     (historically, 'indistinct')

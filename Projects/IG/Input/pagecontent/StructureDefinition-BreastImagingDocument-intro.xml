@@ -5,7 +5,7 @@
      <u style="font-size:large;">Description</u>
    </p>
    <P>
-   A Breast Imaging Document is an implementation of a FHIR Document. 
+   A Breast Imaging Document is an implementation of a FHIR Document.
    </P>
    <P>
    A FHIR Document is a Bundle that provides a single item containing all the 

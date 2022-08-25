@@ -13,6 +13,7 @@ Description:  "ConsistentWith Qualifier Value Set"
 CodeSystem: ConsistentWithQualifierCS
 Title: "ConsistentWith Qualifier CodeSystem"
 Description: "ConsistentWithQualifier  code system"
+* insert CodeSystem_Common
 * #DifferentialDiagnosis "Differential diagnosis"
     """
     More than one possibility for a diagnosis.

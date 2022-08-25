@@ -50,7 +50,7 @@ Description: """
     # <b>Cyst Abnormality Observation</b>
     # </p>
     # <p>
-    # This resource contains information about a cyst abnormality observation. 
+    # This resource contains information about a cyst abnormality observation.
     # </p>
     #""")
 

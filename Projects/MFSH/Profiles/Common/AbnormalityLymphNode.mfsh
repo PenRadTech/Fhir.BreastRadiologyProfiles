@@ -50,7 +50,7 @@ Description: """
     # <b>LymphNode Abnormality Observation</b>
     # </p>
     # <p>
-    # This resource contains information about a lymph node abnormality observation. 
+    # This resource contains information about a lymph node abnormality observation.
     # </p>
     #""")
 

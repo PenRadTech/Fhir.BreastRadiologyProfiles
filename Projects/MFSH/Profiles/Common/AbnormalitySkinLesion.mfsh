@@ -38,7 +38,7 @@ Description: """
     # <b>Skin Lesion Abnormality Observation</b>
     # </p>
     # <p>
-    # This resource contains information about a skin lesion abnormality observation. 
+    # This resource contains information about a skin lesion abnormality observation.
     # </p>
     #""")
 

@@ -7,6 +7,7 @@ Description:  "ObservedChanges Value Set"
 CodeSystem: ObservedChangesCS
 Title: "Observed Changes CodeSystem"
 Description: "Observed changes in an abnormality code system."
+* insert CodeSystem_Common
 * #DecreaseInCalcifications "Decrease in calcifications"
     """
     There is an decrease in the number of calcifications associated with the item being observed.

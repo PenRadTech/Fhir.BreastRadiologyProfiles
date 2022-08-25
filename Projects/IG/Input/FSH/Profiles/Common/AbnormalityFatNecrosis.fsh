@@ -300,7 +300,7 @@ Description: """
     This slice contains the optional components that specifies what this observation 
     has been previously demonstrated by.
     The value of this component is a codeable concept chosen from the 
-    PreviouslyDemonstratedByVS valueset.  
+    PreviouslyDemonstratedByVS valueset.
     """
 * component[prevDemBy].code 1..1
 * component[prevDemBy].code ^short = "Previously Demonstrated by component code."

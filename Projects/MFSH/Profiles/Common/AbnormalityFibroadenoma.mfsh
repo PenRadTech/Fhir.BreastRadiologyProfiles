@@ -44,7 +44,7 @@ Description: """
     # <b>Fibroadenoma Abnormality Observation</b>
     # </p>
     # <p>
-    # This resource contains information about a fibroadenoma abnormality observation. 
+    # This resource contains information about a fibroadenoma abnormality observation.
     # </p>
     #""")
 
